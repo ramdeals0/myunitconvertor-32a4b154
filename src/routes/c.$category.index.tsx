@@ -65,7 +65,7 @@ export const Route = createFileRoute("/c/$category/")({
   loader: ({ params }) => {
     const c = CATEGORY_MAP[params.category];
     if (!c) throw notFound();
-    return { category: c };
+    return { categoryId: c.id };
   },
   component: CategoryPage,
   notFoundComponent: () => (
@@ -76,7 +76,8 @@ export const Route = createFileRoute("/c/$category/")({
 });
 
 function CategoryPage() {
-  const { category } = Route.useLoaderData() as { category: Category };
+  const { categoryId } = Route.useLoaderData() as { categoryId: string };
+  const category = CATEGORY_MAP[categoryId];
   const related = CATEGORIES.filter((c) => c.group === category.group && c.id !== category.id).slice(0, 6);
 
   // Featured pair for explainer (first popular, or first two distinct units)
