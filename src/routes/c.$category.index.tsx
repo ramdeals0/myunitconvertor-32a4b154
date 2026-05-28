@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
-
+import type { Category } from "@/lib/converters/types";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/c/$category/")({
@@ -65,7 +65,7 @@ export const Route = createFileRoute("/c/$category/")({
   loader: ({ params }) => {
     const c = CATEGORY_MAP[params.category];
     if (!c) throw notFound();
-    return { categoryId: c.id };
+    return { category: c };
   },
   component: CategoryPage,
   notFoundComponent: () => (
@@ -76,8 +76,7 @@ export const Route = createFileRoute("/c/$category/")({
 });
 
 function CategoryPage() {
-  const { categoryId } = Route.useLoaderData() as { categoryId: string };
-  const category = CATEGORY_MAP[categoryId];
+  const { category } = Route.useLoaderData() as { category: Category };
   const related = CATEGORIES.filter((c) => c.group === category.group && c.id !== category.id).slice(0, 6);
 
   // Featured pair for explainer (first popular, or first two distinct units)

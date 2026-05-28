@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
-import type { Unit } from "@/lib/converters/types";
+import type { Category, Unit } from "@/lib/converters/types";
 
 export const Route = createFileRoute("/c/$category/$pair")({
   head: ({ params }) => {
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/c/$category/$pair")({
     const f = c.units.find((u: Unit) => u.id === from);
     const t = c.units.find((u: Unit) => u.id === to);
     if (!f || !t) throw notFound();
-    return { categoryId: c.id, from: f.id, to: t.id };
+    return { category: c, from: f.id, to: t.id };
   },
   component: PairPage,
 });
@@ -96,9 +96,8 @@ function parsePair(pair: string): [string, string] {
 }
 
 function PairPage() {
-  const data = Route.useLoaderData() as { categoryId: string; from: string; to: string };
-  const category = CATEGORY_MAP[data.categoryId];
-  const { from, to } = data;
+  const data = Route.useLoaderData() as { category: Category; from: string; to: string };
+  const { category, from, to } = data;
   const f = category.units.find((u) => u.id === from)!;
   const t = category.units.find((u) => u.id === to)!;
 
