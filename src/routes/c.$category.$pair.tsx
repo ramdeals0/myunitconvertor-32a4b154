@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
-import type { Category, Unit } from "@/lib/converters/types";
+import type { Unit } from "@/lib/converters/types";
 
 export const Route = createFileRoute("/c/$category/$pair")({
   head: ({ params }) => {
