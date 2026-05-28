@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
-import type { Category } from "@/lib/converters/types";
+
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/c/$category/")({
