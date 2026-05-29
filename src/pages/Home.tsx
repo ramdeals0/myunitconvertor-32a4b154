@@ -6,6 +6,8 @@ import { AdBanner } from "@/components/AdBanner";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
 import { GROUP_LABELS } from "@/lib/converters/types";
 import { useI18n } from "@/lib/i18n";
+import logo from "@/assets/logo.png";
+
 import {
   Search, ArrowRight, Ruler, Weight, Thermometer, Beaker, Square, Gauge, Zap, Clock,
   Wind, Compass, HardDrive, Fuel, BadgeCheck, Bolt, Lock, Waves, Activity, Wrench, RefreshCw, Droplet,
@@ -71,6 +73,11 @@ export default function HomePage() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <section className="mb-10">
           <div className="text-center mb-8 max-w-3xl mx-auto">
+            <img
+              src={logo}
+              alt="Turbo Unit Converter logo"
+              className="mx-auto mb-6 h-20 md:h-28 w-auto drop-shadow-[0_4px_24px_hsl(var(--primary)/0.25)]"
+            />
             <div className="inline-flex items-center gap-2 rounded-full bg-primary-soft px-3 py-1 text-xs font-semibold text-primary mb-5">
               <BadgeCheck className="h-3.5 w-3.5" /> {t("home.badge")}
             </div>
@@ -81,6 +88,7 @@ export default function HomePage() {
               {t("home.subtitle")}
             </p>
           </div>
+
 
           <div className="flex flex-wrap gap-2 justify-center mb-6">
             {QUICK_CATEGORIES.map((id) => {
