@@ -19,7 +19,7 @@ export default function CategoryPage() {
 
   const title = `${category.name} Converter — Turbo Unit Converter`;
   const description = `${category.name} converter with ${category.units.length} units. ${category.description}`.slice(0, 160);
-  const url = `https://myunitconvertor.lovable.app/c/${category.id}`;
+  const url = `https://turbounitconverter.vercel.app/c/${category.id}`;
 
   return (
     <>
@@ -32,7 +32,7 @@ export default function CategoryPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://myunitconvertor.lovable.app/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
               { "@type": "ListItem", position: 2, name: category.name, item: url },
             ],
           },

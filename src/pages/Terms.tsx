@@ -10,7 +10,7 @@ export default function TermsPage() {
       <Seo
         title="Terms of Service — Turbo Unit Converter"
         description="Turbo Unit Converter Terms of Service. Read the terms and conditions governing your use of our free unit conversion tools."
-        canonical="https://myunitconvertor.lovable.app/terms"
+        canonical="https://turbounitconverter.vercel.app/terms"
       />
       <div className="min-h-screen bg-background">
         <section className="bg-surface-elevated border-b border-border">

@@ -66,7 +66,7 @@ export default function HomePage() {
       <Seo
         title="Turbo Unit Converter — Professional Unit Converter & Engineering Tools"
         description="Convert length, weight, temperature, volume, and dozens more — instantly and accurately, with engineering-grade precision."
-        canonical="https://myunitconvertor.lovable.app/"
+        canonical="https://turbounitconverter.vercel.app/"
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <section className="mb-10">
