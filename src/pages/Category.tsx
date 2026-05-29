@@ -21,22 +21,53 @@ export default function CategoryPage() {
   const description = `${category.name} converter with ${category.units.length} units. ${category.description}`.slice(0, 160);
   const url = `https://turbounitconverter.vercel.app/c/${category.id}`;
 
+  const faqs = [
+    { q: "How precise is this tool?", a: "We use 12-digit precision constants aligned with international metrology standards." },
+    { q: `Which ${category.name.toLowerCase()} units are supported?`, a: `${category.units.length} units across SI, US Customary, and Imperial systems where applicable.` },
+    { q: "Is it free to use?", a: "Yes, the web tool is completely free for personal, educational, and professional use." },
+  ];
+
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
+        { "@type": "ListItem", position: 2, name: category.name, item: url },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((q) => ({
+        "@type": "Question",
+        name: q.q,
+        acceptedAnswer: { "@type": "Answer", text: q.a },
+      })),
+    },
+  ];
+
+  if (f && t && factor !== null) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: `How to convert ${f.name.toLowerCase()} to ${t.name.toLowerCase()}`,
+      description: `Step-by-step instructions to convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}).`,
+      step: [
+        { "@type": "HowToStep", position: 1, name: `Enter the ${f.name.toLowerCase()} value`, text: `Type the number of ${f.name.toLowerCase()} you want to convert into the input field.` },
+        { "@type": "HowToStep", position: 2, name: "Apply the conversion factor", text: `Multiply the value by ${formatResult(factor)}, the exact factor from ${f.symbol} to ${t.symbol}.` },
+        { "@type": "HowToStep", position: 3, name: `Read the ${t.name.toLowerCase()} result`, text: `The output field shows the equivalent value in ${t.name.toLowerCase()} (${t.symbol}).` },
+      ],
+    });
+  }
+
   return (
     <>
       <Seo
         title={title}
         description={description}
         canonical={url}
-        jsonLd={[
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
-              { "@type": "ListItem", position: 2, name: category.name, item: url },
-            ],
-          },
-        ]}
+        jsonLd={jsonLd}
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
