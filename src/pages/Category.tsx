@@ -157,11 +157,7 @@ export default function CategoryPage() {
             <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
               <h2 className="text-lg font-semibold mb-4">Frequently asked questions</h2>
               <div className="divide-y divide-border">
-                {[
-                  { q: "How precise is this tool?", a: "We use 12-digit precision constants aligned with international metrology standards." },
-                  { q: `Which ${category.name.toLowerCase()} units are supported?`, a: `${category.units.length} units across SI, US Customary, and Imperial systems where applicable.` },
-                  { q: "Is it free to use?", a: "Yes, the web tool is completely free for personal, educational, and professional use." },
-                ].map((item) => (
+                {faqs.map((item) => (
                   <details key={item.q} className="group py-3">
                     <summary className="cursor-pointer list-none flex items-center justify-between text-sm font-semibold">
                       {item.q}
