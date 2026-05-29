@@ -9,7 +9,7 @@ export default function AboutPage() {
       <Seo
         title="About Us — Turbo Unit Converter"
         description="Learn about Turbo Unit Converter, the professional unit converter built for accuracy."
-        canonical="https://myunitconvertor.lovable.app/about"
+        canonical="https://turbounitconverter.vercel.app/about"
       />
       <div className="min-h-screen bg-background">
         <section className="bg-surface-elevated border-b border-border">

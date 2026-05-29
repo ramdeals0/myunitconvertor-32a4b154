@@ -10,7 +10,7 @@ export default function PrivacyPage() {
       <Seo
         title="Privacy Policy — Turbo Unit Converter"
         description="Turbo Unit Converter Privacy Policy. We do not collect personal information and all conversions happen locally in your browser."
-        canonical="https://myunitconvertor.lovable.app/privacy"
+        canonical="https://turbounitconverter.vercel.app/privacy"
       />
       <div className="min-h-screen bg-background">
         <section className="bg-surface-elevated border-b border-border">

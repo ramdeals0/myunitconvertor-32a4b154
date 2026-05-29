@@ -35,7 +35,7 @@ export default function ConvertersPage() {
       <Seo
         title="All Converters — Turbo Unit Converter"
         description="Browse our complete directory of professional-grade conversion tools, organized by scientific and engineering disciplines."
-        canonical="https://myunitconvertor.lovable.app/converters"
+        canonical="https://turbounitconverter.vercel.app/converters"
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="mb-10 text-center max-w-3xl mx-auto">
