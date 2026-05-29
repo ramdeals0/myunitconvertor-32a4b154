@@ -1,532 +1,532 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://turbounitconverter.vercel.app/</loc>
+    <loc>https://turbounitconverter.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/converters</loc>
+    <loc>https://turbounitconverter.com/converters</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/about</loc>
+    <loc>https://turbounitconverter.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/privacy</loc>
+    <loc>https://turbounitconverter.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/terms</loc>
+    <loc>https://turbounitconverter.com/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length</loc>
+    <loc>https://turbounitconverter.com/c/length</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/cm-to-in</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/in-to-cm</loc>
+    <loc>https://turbounitconverter.com/c/length/cm-to-in</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/mm-to-in</loc>
+    <loc>https://turbounitconverter.com/c/length/in-to-cm</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/in-to-mm</loc>
+    <loc>https://turbounitconverter.com/c/length/mm-to-in</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/m-to-ft</loc>
+    <loc>https://turbounitconverter.com/c/length/in-to-mm</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/ft-to-m</loc>
+    <loc>https://turbounitconverter.com/c/length/m-to-ft</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/km-to-mi</loc>
+    <loc>https://turbounitconverter.com/c/length/ft-to-m</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/length/mi-to-km</loc>
+    <loc>https://turbounitconverter.com/c/length/km-to-mi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/weight</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/weight/kg-to-lb</loc>
+    <loc>https://turbounitconverter.com/c/length/mi-to-km</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/weight/lb-to-kg</loc>
+    <loc>https://turbounitconverter.com/c/weight</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/weight/kg-to-lb</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/weight/g-to-oz</loc>
+    <loc>https://turbounitconverter.com/c/weight/lb-to-kg</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/weight/oz-to-g</loc>
+    <loc>https://turbounitconverter.com/c/weight/g-to-oz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/temperature</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/temperature/c-to-f</loc>
+    <loc>https://turbounitconverter.com/c/weight/oz-to-g</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/temperature/f-to-c</loc>
+    <loc>https://turbounitconverter.com/c/temperature</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/temperature/c-to-f</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/temperature/c-to-k</loc>
+    <loc>https://turbounitconverter.com/c/temperature/f-to-c</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/temperature/k-to-c</loc>
+    <loc>https://turbounitconverter.com/c/temperature/c-to-k</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume/L-to-gal_us</loc>
+    <loc>https://turbounitconverter.com/c/temperature/k-to-c</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume/gal_us-to-L</loc>
+    <loc>https://turbounitconverter.com/c/volume</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/volume/L-to-gal_us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume/mL-to-floz</loc>
+    <loc>https://turbounitconverter.com/c/volume/gal_us-to-L</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume/floz-to-mL</loc>
+    <loc>https://turbounitconverter.com/c/volume/mL-to-floz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/area</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/pressure</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/energy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/power</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/power/hp-to-kW</loc>
+    <loc>https://turbounitconverter.com/c/volume/floz-to-mL</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/power/kW-to-hp</loc>
+    <loc>https://turbounitconverter.com/c/area</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/pressure</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/energy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/power</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/power/hp-to-kW</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/force</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/time</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/speed</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/speed/mph-to-kph</loc>
+    <loc>https://turbounitconverter.com/c/power/kW-to-hp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/speed/kph-to-mph</loc>
+    <loc>https://turbounitconverter.com/c/force</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/time</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/speed</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/speed/mph-to-kph</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/angle</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.vercel.app/c/angle/deg-to-rad</loc>
+    <loc>https://turbounitconverter.com/c/speed/kph-to-mph</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/angle/rad-to-deg</loc>
+    <loc>https://turbounitconverter.com/c/angle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/angle/deg-to-rad</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/fuel</loc>
+    <loc>https://turbounitconverter.com/c/angle/rad-to-deg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/fuel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/data</loc>
+    <loc>https://turbounitconverter.com/c/data</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/frequency</loc>
+    <loc>https://turbounitconverter.com/c/frequency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/density</loc>
+    <loc>https://turbounitconverter.com/c/density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/acceleration</loc>
+    <loc>https://turbounitconverter.com/c/acceleration</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/torque</loc>
+    <loc>https://turbounitconverter.com/c/torque</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/current</loc>
+    <loc>https://turbounitconverter.com/c/current</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/voltage</loc>
+    <loc>https://turbounitconverter.com/c/voltage</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/resistance</loc>
+    <loc>https://turbounitconverter.com/c/resistance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/flow</loc>
+    <loc>https://turbounitconverter.com/c/flow</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/velocity-angular</loc>
+    <loc>https://turbounitconverter.com/c/velocity-angular</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/acceleration-angular</loc>
+    <loc>https://turbounitconverter.com/c/acceleration-angular</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/specific-volume</loc>
+    <loc>https://turbounitconverter.com/c/specific-volume</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/moment-of-inertia</loc>
+    <loc>https://turbounitconverter.com/c/moment-of-inertia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/moment-of-force</loc>
+    <loc>https://turbounitconverter.com/c/moment-of-force</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/fuel-efficiency-mass</loc>
+    <loc>https://turbounitconverter.com/c/fuel-efficiency-mass</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/fuel-efficiency-volume</loc>
+    <loc>https://turbounitconverter.com/c/fuel-efficiency-volume</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/temperature-interval</loc>
+    <loc>https://turbounitconverter.com/c/temperature-interval</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/thermal-expansion</loc>
+    <loc>https://turbounitconverter.com/c/thermal-expansion</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/thermal-resistance</loc>
+    <loc>https://turbounitconverter.com/c/thermal-resistance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/thermal-conductivity</loc>
+    <loc>https://turbounitconverter.com/c/thermal-conductivity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/specific-heat-capacity</loc>
+    <loc>https://turbounitconverter.com/c/specific-heat-capacity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/heat-density</loc>
+    <loc>https://turbounitconverter.com/c/heat-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/heat-flux-density</loc>
+    <loc>https://turbounitconverter.com/c/heat-flux-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/heat-transfer-coefficient</loc>
+    <loc>https://turbounitconverter.com/c/heat-transfer-coefficient</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/flow-mass</loc>
+    <loc>https://turbounitconverter.com/c/flow-mass</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/flow-molar</loc>
+    <loc>https://turbounitconverter.com/c/flow-molar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/mass-flux-density</loc>
+    <loc>https://turbounitconverter.com/c/mass-flux-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/concentration-molar</loc>
+    <loc>https://turbounitconverter.com/c/concentration-molar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/concentration-solution</loc>
+    <loc>https://turbounitconverter.com/c/concentration-solution</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/viscosity-dynamic</loc>
+    <loc>https://turbounitconverter.com/c/viscosity-dynamic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/viscosity-kinematic</loc>
+    <loc>https://turbounitconverter.com/c/viscosity-kinematic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/surface-tension</loc>
+    <loc>https://turbounitconverter.com/c/surface-tension</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/permeability</loc>
+    <loc>https://turbounitconverter.com/c/permeability</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/luminance</loc>
+    <loc>https://turbounitconverter.com/c/luminance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/luminous-intensity</loc>
+    <loc>https://turbounitconverter.com/c/luminous-intensity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/illumination</loc>
+    <loc>https://turbounitconverter.com/c/illumination</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/digital-image-resolution</loc>
+    <loc>https://turbounitconverter.com/c/digital-image-resolution</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/charge</loc>
+    <loc>https://turbounitconverter.com/c/charge</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/linear-charge-density</loc>
+    <loc>https://turbounitconverter.com/c/linear-charge-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/surface-charge-density</loc>
+    <loc>https://turbounitconverter.com/c/surface-charge-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume-charge-density</loc>
+    <loc>https://turbounitconverter.com/c/volume-charge-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/linear-current-density</loc>
+    <loc>https://turbounitconverter.com/c/linear-current-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/surface-current-density</loc>
+    <loc>https://turbounitconverter.com/c/surface-current-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/electric-field-strength</loc>
+    <loc>https://turbounitconverter.com/c/electric-field-strength</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/electric-resistivity</loc>
+    <loc>https://turbounitconverter.com/c/electric-resistivity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/electric-conductance</loc>
+    <loc>https://turbounitconverter.com/c/electric-conductance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/electric-conductivity</loc>
+    <loc>https://turbounitconverter.com/c/electric-conductivity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/capacitance</loc>
+    <loc>https://turbounitconverter.com/c/capacitance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/inductance</loc>
+    <loc>https://turbounitconverter.com/c/inductance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/magnetomotive-force</loc>
+    <loc>https://turbounitconverter.com/c/magnetomotive-force</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/magnetic-field-strength</loc>
+    <loc>https://turbounitconverter.com/c/magnetic-field-strength</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/magnetic-flux</loc>
+    <loc>https://turbounitconverter.com/c/magnetic-flux</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/magnetic-flux-density</loc>
+    <loc>https://turbounitconverter.com/c/magnetic-flux-density</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/radiation</loc>
+    <loc>https://turbounitconverter.com/c/radiation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/radiation-activity</loc>
+    <loc>https://turbounitconverter.com/c/radiation-activity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/radiation-exposure</loc>
+    <loc>https://turbounitconverter.com/c/radiation-exposure</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/radiation-absorbed-dose</loc>
+    <loc>https://turbounitconverter.com/c/radiation-absorbed-dose</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/prefixes</loc>
+    <loc>https://turbounitconverter.com/c/prefixes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/data-transfer</loc>
+    <loc>https://turbounitconverter.com/c/data-transfer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/typography</loc>
+    <loc>https://turbounitconverter.com/c/typography</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume-lumber</loc>
+    <loc>https://turbounitconverter.com/c/volume-lumber</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://turbounitconverter.vercel.app/c/volume-dry</loc>
+    <loc>https://turbounitconverter.com/c/volume-dry</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
