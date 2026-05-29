@@ -138,9 +138,9 @@ export default function PairPage() {
           </div>
         </section>
 
-        <section className="mt-12">
+        <section className="mt-12 grid md:grid-cols-2 gap-6">
           <div className="bg-surface-elevated border border-border rounded-xl p-6">
-            <h2 className="font-semibold mb-3">Conversion table</h2>
+            <h2 className="font-semibold mb-3">{f.name} → {t.name} table</h2>
             <table className="w-full text-sm">
               <tbody className="divide-y divide-border">
                 {examples.map((v) => (
@@ -154,7 +154,69 @@ export default function PairPage() {
               </tbody>
             </table>
           </div>
+          <div className="bg-surface-elevated border border-border rounded-xl p-6">
+            <h2 className="font-semibold mb-3">Reverse: {t.name} → {f.name}</h2>
+            <p className="text-sm text-muted-foreground mb-3">
+              Multiply {t.name.toLowerCase()} by{" "}
+              <span className="font-mono-num text-foreground font-semibold">{formatResult(inverse)}</span> to get {f.name.toLowerCase()}.
+            </p>
+            <table className="w-full text-sm">
+              <tbody className="divide-y divide-border">
+                {examples.map((v) => (
+                  <tr key={v}>
+                    <td className="py-2 font-mono-num">{v} {t.symbol}</td>
+                    <td className="py-2 text-right font-mono-num text-primary font-semibold">
+                      {formatResult(convert(category, v, t.id, f.id))} {f.symbol}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </section>
+
+        <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+          <h2 className="text-lg font-semibold mb-4">Step-by-step: convert {f.name.toLowerCase()} to {t.name.toLowerCase()}</h2>
+          <ol className="space-y-3">
+            {howToSteps.map((s, i) => (
+              <li key={s.name} className="flex gap-3">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">{i + 1}</span>
+                <div>
+                  <div className="text-sm font-semibold">{s.name}</div>
+                  <div className="text-sm text-muted-foreground">{s.text}</div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6">
+          <h2 className="text-lg font-semibold mb-3">Worked example</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Suppose you need to convert <span className="font-mono-num text-foreground font-semibold">25 {f.symbol}</span> to {t.name.toLowerCase()}.
+            Multiply by the conversion factor:
+          </p>
+          <div className="mt-3 rounded-lg border border-dashed border-border bg-muted/30 p-4 font-mono-num text-sm">
+            25 × {formatResult(factor)} = <span className="text-primary font-semibold">{formatResult(convert(category, 25, f.id, t.id))}</span> {t.symbol}
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+            The same approach works for any value — the relationship between {f.name.toLowerCase()} and {t.name.toLowerCase()} is strictly linear.
+          </p>
+        </section>
+
+        {category.units.filter((u) => u.id !== f.id).length > 0 && (
+          <section className="mt-12">
+            <h2 className="text-xl font-semibold mb-4">Other {f.name.toLowerCase()} conversions</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              {category.units.filter((u) => u.id !== f.id).slice(0, 8).map((u) => (
+                <Link key={u.id} to={`/c/${category.id}/${f.id}-to-${u.id}`}
+                  className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center">
+                  {f.symbol} → {u.symbol}
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </>
   );
