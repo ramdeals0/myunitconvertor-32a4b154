@@ -20,6 +20,7 @@ export default function PairPage() {
 
   const examples = [1, 2, 5, 10, 25, 50, 100, 250, 500, 1000];
   const factor = convert(category, 1, f.id, t.id);
+  const inverse = convert(category, 1, t.id, f.id);
 
   const title = `${f.name} to ${t.name} — Turbo Unit Converter`;
   const desc = `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly with engineering-grade precision.`.slice(0, 160);
@@ -29,8 +30,17 @@ export default function PairPage() {
   const faqs = [
     { q: `How do I convert ${f.name.toLowerCase()} to ${t.name.toLowerCase()}?`, a: `Multiply the ${f.name.toLowerCase()} value by ${formatResult(factor)} to get the equivalent in ${t.name.toLowerCase()}.` },
     { q: `What is 1 ${f.name.toLowerCase()} in ${t.name.toLowerCase()}?`, a: `1 ${f.symbol} equals ${formatResult(factor)} ${t.symbol}.` },
+    { q: `How do I convert ${t.name.toLowerCase()} back to ${f.name.toLowerCase()}?`, a: `Multiply the ${t.name.toLowerCase()} value by ${formatResult(inverse)} (or divide by ${formatResult(factor)}) to get ${f.name.toLowerCase()}.` },
+    { q: `What is the formula for ${f.symbol} to ${t.symbol}?`, a: `${t.name} = ${f.name} × ${formatResult(factor)}. This factor is derived from the SI definitions of both units.` },
     { q: "How precise is this tool?", a: "We use 12-digit precision constants aligned with international metrology standards." },
     { q: "Is it free to use?", a: "Yes — the web converter is completely free for personal and professional use." },
+  ];
+
+  const howToSteps = [
+    { name: `Enter the ${f.name.toLowerCase()} value`, text: `Type the number of ${f.name.toLowerCase()} (${f.symbol}) you want to convert into the input field above.` },
+    { name: "Apply the conversion factor", text: `Multiply the value by ${formatResult(factor)} — the exact ${f.symbol} to ${t.symbol} factor.` },
+    { name: `Read the ${t.name.toLowerCase()} result`, text: `The output instantly displays the equivalent value in ${t.name.toLowerCase()} (${t.symbol}).` },
+    { name: "Verify with the reference table", text: `Cross-check common values such as 1, 10, or 100 ${f.symbol} in the conversion table below.` },
   ];
 
   return (
@@ -58,6 +68,13 @@ export default function PairPage() {
               name: q.q,
               acceptedAnswer: { "@type": "Answer", text: q.a },
             })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: `How to convert ${f.name.toLowerCase()} to ${t.name.toLowerCase()}`,
+            description: `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) using the exact factor ${formatResult(factor)}.`,
+            step: howToSteps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
           },
         ]}
       />
