@@ -37,6 +37,7 @@ export default function App() {
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/c/:category" element={<CategoryPage />} />
             <Route path="/c/:category/:pair" element={<PairPage />} />
+            <Route path="/convert/:pair" element={<ConvertPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
