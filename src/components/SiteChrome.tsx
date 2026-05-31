@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun, Menu, X, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useI18n, LANGUAGES, Lang } from "@/lib/i18n";
-import logo from "@/assets/Logo-nb.webp";
+import logo from "@/assets/Logo.webp";
 
 export function SiteHeader() {
   const [dark, setDark] = useState(false);
