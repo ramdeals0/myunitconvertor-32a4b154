@@ -11,6 +11,7 @@ import PrivacyPage from "@/pages/Privacy";
 import TermsPage from "@/pages/Terms";
 import CategoryPage from "@/pages/Category";
 import PairPage from "@/pages/Pair";
+import ConvertPage from "@/pages/Convert";
 import NotFoundPage from "@/pages/NotFound";
 
 function ScrollToTop() {
@@ -36,6 +37,7 @@ export default function App() {
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/c/:category" element={<CategoryPage />} />
             <Route path="/c/:category/:pair" element={<PairPage />} />
+            <Route path="/convert/:pair" element={<ConvertPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
