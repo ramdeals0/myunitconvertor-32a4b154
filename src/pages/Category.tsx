@@ -3,6 +3,7 @@ import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
+import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { ArrowRight } from "lucide-react";
 
 export default function CategoryPage() {
