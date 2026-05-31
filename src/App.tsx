@@ -11,6 +11,7 @@ import PrivacyPage from "@/pages/Privacy";
 import TermsPage from "@/pages/Terms";
 import CategoryPage from "@/pages/Category";
 import PairPage from "@/pages/Pair";
+import ConvertPage from "@/pages/Convert";
 import NotFoundPage from "@/pages/NotFound";
 
 function ScrollToTop() {
