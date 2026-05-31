@@ -98,9 +98,51 @@ export default function CategoryPage() {
 
         <AdBanner className="mt-10" />
 
+        <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
+          <h2 className="text-xl md:text-2xl font-semibold mb-3">About the {category.name.toLowerCase()} converter</h2>
+          <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+            The {category.name} Converter translates values between {category.units.length} different {category.name.toLowerCase()} units
+            — including SI, US Customary, and Imperial measures where applicable — using 12-digit precision constants aligned with
+            international metrology standards. {category.description} Enter any value on the left and the result updates instantly,
+            so you can compare units, double-check a calculation, or generate reference tables without leaving the page.
+          </p>
+
+          <h3 className="text-base md:text-lg font-semibold mt-6 mb-2">Common real-world scenarios</h3>
+          <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground leading-relaxed">
+            {GROUP_SCENARIOS[category.group].map((s) => (
+              <li key={s}>{s}</li>
+            ))}
+          </ul>
+
+          {f && t && factor !== null && (
+            <>
+              <h3 className="text-base md:text-lg font-semibold mt-6 mb-2">Formula</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Most {category.name.toLowerCase()} conversions are linear — each unit relates to the SI base unit
+                (<span className="font-mono-num text-foreground">{category.baseUnit}</span>) by a fixed factor. To convert
+                {" "}{f.name.toLowerCase()} to {t.name.toLowerCase()}, apply:
+              </p>
+              <div className="mt-3 rounded-lg border border-dashed border-border bg-muted/30 p-4 font-mono-num text-sm">
+                {t.name} = {f.name} × {formatResult(factor)}
+              </div>
+
+              <h3 className="text-base md:text-lg font-semibold mt-6 mb-2">Worked example</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Suppose you need to convert <span className="font-mono-num text-foreground font-semibold">10 {f.symbol}</span> to {t.name.toLowerCase()}:
+              </p>
+              <ol className="mt-3 space-y-2 text-sm">
+                <li><span className="font-semibold">Step 1.</span> Identify the source unit: <span className="font-mono-num">{f.name} ({f.symbol})</span>.</li>
+                <li><span className="font-semibold">Step 2.</span> Look up the conversion factor: <span className="font-mono-num">1 {f.symbol} = {formatResult(factor)} {t.symbol}</span>.</li>
+                <li><span className="font-semibold">Step 3.</span> Multiply: <span className="font-mono-num">10 × {formatResult(factor)} = {formatResult(convert(category, 10, f.id, t.id))} {t.symbol}</span>.</li>
+              </ol>
+            </>
+          )}
+        </section>
+
         {category.popular?.length ? (
           <section className="mt-12">
             <h2 className="text-xl md:text-2xl font-semibold mb-4">Popular {category.name.toLowerCase()} conversions</h2>
+
             <div className="bg-surface-elevated border border-border rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
               <table className="w-full text-sm">
                 <thead className="bg-muted/40 text-xs uppercase tracking-wider text-muted-foreground">
