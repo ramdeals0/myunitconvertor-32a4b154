@@ -105,6 +105,26 @@ export default function PairPage() {
 
         <AdBanner className="mt-10" />
 
+        <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
+          <h2 className="text-xl md:text-2xl font-semibold mb-3">About {f.name.toLowerCase()} to {t.name.toLowerCase()} conversion</h2>
+          <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+            This tool converts {f.name} ({f.symbol}) to {t.name} ({t.symbol}) using the exact factor{" "}
+            <span className="font-mono-num text-foreground font-semibold">{formatResult(factor)}</span>, derived from the SI
+            definitions of both units. Both {f.name.toLowerCase()} and {t.name.toLowerCase()} are units of {category.name.toLowerCase()},
+            so the relationship is strictly linear — multiply the input by the factor and you have your answer. Use it for
+            quick reference, double-checking calculations, or generating tables of common values.
+          </p>
+
+          <h3 className="text-base md:text-lg font-semibold mt-6 mb-2">Common real-world scenarios</h3>
+          <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground leading-relaxed">
+            {GROUP_SCENARIOS[category.group].slice(0, 3).map((s) => (
+              <li key={s}>{s}</li>
+            ))}
+          </ul>
+        </section>
+
+
+
         <section className="mt-12 grid md:grid-cols-2 gap-6">
           <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
             <h2 className="text-lg font-semibold mb-3">How to convert {f.name.toLowerCase()} to {t.name.toLowerCase()}</h2>
