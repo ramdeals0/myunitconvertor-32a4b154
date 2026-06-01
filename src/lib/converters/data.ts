@@ -25,10 +25,16 @@ const length: Category = {
     u("pc", "Parsec", "pc", 3.0857e16),
   ],
   popular: [
+    // Curated from real US search volume (Semrush): mm→cm 74k, in→ft 60k, ft→in 40k, m→cm 40k, nm→m 27k, yd→ft 10k, km→mi & mi→km
     { from: "cm", to: "in" }, { from: "in", to: "cm" },
     { from: "mm", to: "in" }, { from: "in", to: "mm" },
+    { from: "mm", to: "cm" }, { from: "cm", to: "mm" },
     { from: "m", to: "ft" }, { from: "ft", to: "m" },
+    { from: "m", to: "cm" }, { from: "cm", to: "m" },
+    { from: "ft", to: "in" }, { from: "in", to: "ft" },
+    { from: "yd", to: "ft" }, { from: "ft", to: "yd" },
     { from: "km", to: "mi" }, { from: "mi", to: "km" },
+    { from: "nm", to: "m" }, { from: "m", to: "nm" },
   ],
 };
 
@@ -52,8 +58,15 @@ const weight: Category = {
     u("ton_uk", "UK Ton (long)", "ton", 1016.0469088),
   ].filter((x, i, a) => a.findIndex((y) => y.id === x.id) === i),
   popular: [
+    // Curated: lb↔oz 90k, mg→g 60k, g→kg 49k, ton→lb 4k, stone→lb
     { from: "kg", to: "lb" }, { from: "lb", to: "kg" },
     { from: "g", to: "oz" }, { from: "oz", to: "g" },
+    { from: "lb", to: "oz" }, { from: "oz", to: "lb" },
+    { from: "g", to: "kg" }, { from: "kg", to: "g" },
+    { from: "mg", to: "g" }, { from: "g", to: "mg" },
+    { from: "t", to: "kg" }, { from: "kg", to: "t" },
+    { from: "st", to: "lb" }, { from: "lb", to: "st" },
+    { from: "ton_us", to: "lb" }, { from: "lb", to: "ton_us" },
   ],
 };
 
@@ -113,8 +126,15 @@ const volume: Category = {
     u("bbl", "Oil Barrel", "bbl", 158.987294928),
   ],
   popular: [
+    // Curated: ml→oz 246k, oz→ml 165k, L→gal 110k, gal→L 27k, tsp/cup/tbsp→ml
     { from: "L", to: "gal_us" }, { from: "gal_us", to: "L" },
     { from: "mL", to: "floz" }, { from: "floz", to: "mL" },
+    { from: "cup", to: "mL" }, { from: "mL", to: "cup" },
+    { from: "tbsp", to: "mL" }, { from: "mL", to: "tbsp" },
+    { from: "tsp", to: "mL" }, { from: "mL", to: "tsp" },
+    { from: "qt", to: "L" }, { from: "L", to: "qt" },
+    { from: "pt", to: "mL" }, { from: "mL", to: "pt" },
+    { from: "gal_uk", to: "L" }, { from: "L", to: "gal_uk" },
   ],
 };
 
@@ -137,6 +157,14 @@ const area: Category = {
     u("yd2", "Square Yard", "yd²", 0.83612736),
     u("mi2", "Square Mile", "mi²", 2589988.110336),
   ],
+  popular: [
+    // acre↔sqft 14k, hectare↔acre 10k, sqm↔sqft 8k
+    { from: "ac", to: "ft2" }, { from: "ft2", to: "ac" },
+    { from: "ha", to: "ac" }, { from: "ac", to: "ha" },
+    { from: "m2", to: "ft2" }, { from: "ft2", to: "m2" },
+    { from: "km2", to: "mi2" }, { from: "mi2", to: "km2" },
+    { from: "cm2", to: "in2" }, { from: "in2", to: "cm2" },
+  ],
 };
 
 // Pressure — base Pascal
@@ -156,6 +184,15 @@ const pressure: Category = {
     u("atm", "Atmosphere", "atm", 101325),
     u("torr", "Torr", "Torr", 133.322368421),
     u("mmHg", "Millimeter of Mercury", "mmHg", 133.322387415),
+  ],
+  popular: [
+    // bar↔psi 33k+15k, kpa→psi 27k
+    { from: "bar", to: "psi" }, { from: "psi", to: "bar" },
+    { from: "kPa", to: "psi" }, { from: "psi", to: "kPa" },
+    { from: "Pa", to: "psi" }, { from: "psi", to: "Pa" },
+    { from: "atm", to: "psi" }, { from: "psi", to: "atm" },
+    { from: "mmHg", to: "psi" }, { from: "psi", to: "mmHg" },
+    { from: "bar", to: "kPa" }, { from: "kPa", to: "bar" },
   ],
 };
 
@@ -177,6 +214,14 @@ const energy: Category = {
     u("eV", "Electronvolt", "eV", 1.602176634e-19),
     u("ftlb", "Foot-pound", "ft·lb", 1.35581794833),
   ],
+  popular: [
+    // joules↔calories 8k, kcal→kJ 5k, btu→kwh
+    { from: "J", to: "cal" }, { from: "cal", to: "J" },
+    { from: "kcal", to: "kJ" }, { from: "kJ", to: "kcal" },
+    { from: "kWh", to: "J" }, { from: "J", to: "kWh" },
+    { from: "BTU", to: "kWh" }, { from: "kWh", to: "BTU" },
+    { from: "Wh", to: "J" }, { from: "J", to: "Wh" },
+  ],
 };
 
 // Power — base Watt
@@ -195,7 +240,13 @@ const power: Category = {
     u("BTU_h", "BTU/hour", "BTU/h", 0.29307107),
     u("ftlb_s", "Foot-pound/second", "ft·lb/s", 1.3558179483),
   ],
-  popular: [{ from: "hp", to: "kW" }, { from: "kW", to: "hp" }],
+  popular: [
+    // kw↔hp 22k+10k, MW↔hp
+    { from: "hp", to: "kW" }, { from: "kW", to: "hp" },
+    { from: "W", to: "hp" }, { from: "hp", to: "W" },
+    { from: "kW", to: "BTU_h" }, { from: "BTU_h", to: "kW" },
+    { from: "MW", to: "hp" }, { from: "hp", to: "MW" },
+  ],
 };
 
 // Force — base Newton
@@ -211,6 +262,11 @@ const force: Category = {
     u("lbf", "Pound-force", "lbf", 4.4482216152605),
     u("kgf", "Kilogram-force", "kgf", 9.80665),
     u("dyn", "Dyne", "dyn", 1e-5),
+  ],
+  popular: [
+    { from: "N", to: "lbf" }, { from: "lbf", to: "N" },
+    { from: "kN", to: "lbf" }, { from: "lbf", to: "kN" },
+    { from: "kgf", to: "N" }, { from: "N", to: "kgf" },
   ],
 };
 
@@ -232,6 +288,15 @@ const time: Category = {
     u("mo", "Month (30 d)", "mo", 2592000),
     u("yr", "Year (365 d)", "yr", 31536000),
   ],
+  popular: [
+    // minutes↔hours 33k, seconds↔minutes 22k, days↔hours
+    { from: "min", to: "h" }, { from: "h", to: "min" },
+    { from: "s", to: "min" }, { from: "min", to: "s" },
+    { from: "d", to: "h" }, { from: "h", to: "d" },
+    { from: "ms", to: "s" }, { from: "s", to: "ms" },
+    { from: "yr", to: "d" }, { from: "d", to: "yr" },
+    { from: "wk", to: "d" }, { from: "d", to: "wk" },
+  ],
 };
 
 // Speed — base m/s
@@ -249,7 +314,15 @@ const speed: Category = {
     u("knot", "Knot", "kn", 0.514444),
     u("mach", "Mach (sea level)", "M", 340.29),
   ],
-  popular: [{ from: "mph", to: "kph" }, { from: "kph", to: "mph" }],
+  popular: [
+    // knots→mph 60k, fps↔mph
+    { from: "mph", to: "kph" }, { from: "kph", to: "mph" },
+    { from: "knot", to: "mph" }, { from: "mph", to: "knot" },
+    { from: "knot", to: "kph" }, { from: "kph", to: "knot" },
+    { from: "mps", to: "mph" }, { from: "mph", to: "mps" },
+    { from: "mps", to: "kph" }, { from: "kph", to: "mps" },
+    { from: "fps", to: "mph" }, { from: "mph", to: "fps" },
+  ],
 };
 
 // Angle — base radian
@@ -321,6 +394,15 @@ const frequency: Category = {
     u("GHz", "Gigahertz", "GHz", 1e9),
     u("THz", "Terahertz", "THz", 1e12),
     u("rpm", "Revolutions/min", "rpm", 1 / 60),
+  ],
+  popular: [
+    // mb↔gb 53k, kb→mb 33k, gb↔tb
+    { from: "MB", to: "GB" }, { from: "GB", to: "MB" },
+    { from: "KB", to: "MB" }, { from: "MB", to: "KB" },
+    { from: "GB", to: "TB" }, { from: "TB", to: "GB" },
+    { from: "B", to: "KB" }, { from: "KB", to: "B" },
+    { from: "b", to: "B" }, { from: "B", to: "b" },
+    { from: "MiB", to: "MB" }, { from: "GiB", to: "GB" },
   ],
 };
 
