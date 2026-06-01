@@ -2,9 +2,12 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
+import { TurboSearchBar } from "@/components/TurboSearchBar";
+import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { ArrowRight } from "lucide-react";
+
 
 export default function CategoryPage() {
   const { category: categoryId } = useParams<{ category: string }>();
