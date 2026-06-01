@@ -21,8 +21,8 @@ export default function CategoryPage() {
   const t = category.units.find((u) => u.id === featured.to);
   const factor = f && t ? convert(category, 1, f.id, t.id) : null;
 
-  const title = `${category.name} Converter — Turbo Unit Converter`;
-  const description = `${category.name} converter with ${category.units.length} units. ${category.description}`.slice(0, 160);
+  const title = `All-in-One ${category.name} Unit Converter | Turbo Unit Converter`;
+  const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
   const url = `https://turbounitconverter.com/c/${category.id}`;
 
   const faqs = [

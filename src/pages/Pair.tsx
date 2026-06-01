@@ -23,8 +23,8 @@ export default function PairPage() {
   const factor = convert(category, 1, f.id, t.id);
   const inverse = convert(category, 1, t.id, f.id);
 
-  const title = `${f.name} to ${t.name} — Turbo Unit Converter`;
-  const desc = `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly with engineering-grade precision.`.slice(0, 160);
+  const title = `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
+  const desc = `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`.slice(0, 160);
   const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
   const catUrl = `https://turbounitconverter.com/c/${category.id}`;
 
