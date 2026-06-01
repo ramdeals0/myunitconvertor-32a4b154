@@ -3,8 +3,11 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { inject } from "@vercel/analytics";
 import App from "./App";
 import "./styles.css";
+
+inject();
 
 const queryClient = new QueryClient();
 
