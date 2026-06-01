@@ -75,13 +75,13 @@ export default function HomePage() {
 
   const groups = Array.from(new Set(CATEGORIES.map((c) => c.group)));
 
-  const SITE_URL = "https://turbounitconverter.vercel.app";
+  const SITE_URL = "https://turbounitconverter.com";
   return (
     <>
       <Seo
         title="Turbo Unit Converter — Professional Unit Converter & Engineering Tools"
         description="Convert length, weight, temperature, volume, and dozens more — instantly and accurately, with engineering-grade precision."
-        canonical="https://turbounitconverter.vercel.app/"
+        canonical="https://turbounitconverter.com/"
         jsonLd={[
           {
             "@context": "https://schema.org",

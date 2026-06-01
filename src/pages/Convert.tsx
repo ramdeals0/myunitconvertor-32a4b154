@@ -52,7 +52,7 @@ export default function ConvertPage() {
 
   const title = `Fast ${fLabel} to ${tLabel} Converter | Instant ${f.name} to ${t.name} Results`.slice(0, 65);
   const desc = `Instantly convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) online — free, accurate, and engineering-grade precise. 1 ${f.symbol} = ${formatResult(factor)} ${t.symbol}.`.slice(0, 160);
-  const url = `https://turbounitconverter.vercel.app/convert/${fSlug}-to-${tSlug}`;
+  const url = `https://turbounitconverter.com/convert/${fSlug}-to-${tSlug}`;
 
   const faqs = [
     { q: `How many ${t.name.toLowerCase()} are in a ${f.name.toLowerCase()}?`, a: `1 ${f.symbol} equals ${formatResult(factor)} ${t.symbol}.` },
@@ -80,7 +80,7 @@ export default function ConvertPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
               { "@type": "ListItem", position: 2, name: `${fLabel} to ${tLabel}`, item: url },
             ],
           },
