@@ -59,11 +59,24 @@ async function main() {
 
   for (const cat of categories) {
     entries.push(urlTag(`${BASE}/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
+
     const pairs = new Set();
+    // 1. Author-declared popular pairs (both directions)
     for (const p of cat.popular ?? []) {
       pairs.add(`${p.from}-to-${p.to}`);
-      pairs.add(`${p.to}-to-${p.from}`); // both directions for SEO coverage
+      pairs.add(`${p.to}-to-${p.from}`);
     }
+    // 2. Auto-derive base-unit ↔ top units so every category gets pair coverage
+    const base = cat.baseUnit;
+    const baseUnit = cat.units.find((u) => u.id === base);
+    if (baseUnit) {
+      const topUnits = cat.units.filter((u) => u.id !== base).slice(0, 6);
+      for (const u of topUnits) {
+        pairs.add(`${base}-to-${u.id}`);
+        pairs.add(`${u.id}-to-${base}`);
+      }
+    }
+
     for (const pair of pairs) {
       entries.push(urlTag(`${BASE}/c/${cat.id}/${pair}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
     }
