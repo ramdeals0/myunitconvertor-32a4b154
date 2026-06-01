@@ -263,6 +263,11 @@ const force: Category = {
     u("kgf", "Kilogram-force", "kgf", 9.80665),
     u("dyn", "Dyne", "dyn", 1e-5),
   ],
+  popular: [
+    { from: "N", to: "lbf" }, { from: "lbf", to: "N" },
+    { from: "kN", to: "lbf" }, { from: "lbf", to: "kN" },
+    { from: "kgf", to: "N" }, { from: "N", to: "kgf" },
+  ],
 };
 
 // Time — base second
@@ -282,11 +287,6 @@ const time: Category = {
     u("wk", "Week", "wk", 604800),
     u("mo", "Month (30 d)", "mo", 2592000),
     u("yr", "Year (365 d)", "yr", 31536000),
-  ],
-  popular: [
-    { from: "N", to: "lbf" }, { from: "lbf", to: "N" },
-    { from: "kN", to: "lbf" }, { from: "lbf", to: "kN" },
-    { from: "kgf", to: "N" }, { from: "N", to: "kgf" },
   ],
   popular: [
     // minutes↔hours 33k, seconds↔minutes 22k, days↔hours
