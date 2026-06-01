@@ -3,9 +3,12 @@ import { useState } from "react";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
+import { TurboSearchBar } from "@/components/TurboSearchBar";
+import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
 import { GROUP_LABELS } from "@/lib/converters/types";
 import { useI18n } from "@/lib/i18n";
+
 import logo from "@/assets/Logo.webp";
 
 import {
@@ -13,6 +16,7 @@ import {
   Wind, Compass, HardDrive, Fuel, BadgeCheck, Bolt, Lock, Waves, Activity, Wrench, RefreshCw, Droplet,
   Atom, Magnet, Radiation, Type, TreePine, Sigma, Lightbulb, Sun, Aperture, Grid3x3, FlaskConical,
 } from "lucide-react";
+
 
 const ICONS: Record<string, any> = {
   length: Ruler, weight: Weight, temperature: Thermometer, volume: Beaker,
@@ -113,11 +117,6 @@ export default function HomePage() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <section className="mb-10">
           <div className="text-center mb-8 max-w-3xl mx-auto">
-            <img
-              src={logo}
-              alt="Turbo Unit Converter — Free Online Unit Converter Tool"
-              className="mx-auto mb-6 h-20 md:h-28 w-auto drop-shadow-[0_4px_24px_hsl(var(--primary)/0.25)]"
-            />
             <div className="inline-flex items-center gap-2 rounded-full bg-primary-soft px-3 py-1 text-xs font-semibold text-primary mb-5">
               <BadgeCheck className="h-3.5 w-3.5" /> {t("home.badge")}
             </div>
@@ -133,6 +132,8 @@ export default function HomePage() {
           </div>
 
 
+          <TurboSearchBar className="max-w-3xl mx-auto mb-8" />
+
           <div className="flex flex-wrap gap-2 justify-center mb-6">
             {QUICK_CATEGORIES.map((id) => {
               const c = CATEGORY_MAP[id];
@@ -142,7 +143,7 @@ export default function HomePage() {
                 <button
                   key={id}
                   onClick={() => setCategoryId(id)}
-                  className={`flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold transition border ${
+                  className={`flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold transition border min-h-[44px] ${
                     active
                       ? "bg-primary text-primary-foreground border-primary"
                       : "bg-surface-elevated text-foreground border-border hover:border-primary/40"
@@ -155,10 +156,13 @@ export default function HomePage() {
             })}
           </div>
 
-          <Converter category={category} />
+          <Converter category={category} smartDefaults />
+
+          <RecentConversions className="mt-8" />
         </section>
 
         <AdBanner className="mb-14" />
+
 
         <section className="mb-16">
           <SectionHeader title="Convert Celsius to Fahrenheit, kg to lbs & More Instantly" subtitle={t("home.common.subtitle")} />
