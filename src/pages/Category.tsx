@@ -42,6 +42,17 @@ export default function CategoryPage() {
     },
     {
       "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: `${category.name} Unit Converter`,
+      url,
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Any",
+      browserRequirements: "Requires JavaScript. Works in any modern browser.",
+      description: `Free online ${category.name.toLowerCase()} converter with ${category.units.length} units.`,
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map((q) => ({
         "@type": "Question",
