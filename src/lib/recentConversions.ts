@@ -79,7 +79,9 @@ export function useFavoritePairForCategory(categoryId: string): { fromId: string
   counts.forEach((v) => {
     if (!best || v.n > best.n) best = v;
   });
-  return best ? { fromId: best.fromId, toId: best.toId } : null;
+  const b = best as { fromId: string; toId: string; n: number } | null;
+  return b ? { fromId: b.fromId, toId: b.toId } : null;
 }
+
 
 export const __useCallbackRef = useCallback; // keep tree-shake friendly export
