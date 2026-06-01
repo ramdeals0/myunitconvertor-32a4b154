@@ -85,7 +85,12 @@ export default function CategoryPage() {
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{category.description}</p>
         </header>
 
-        <Converter category={category} />
+        <TurboSearchBar className="max-w-3xl mx-auto mb-6" />
+
+        <Converter category={category} smartDefaults />
+
+        <RecentConversions className="mt-6" categoryId={category.id} />
+
 
         {f && t && factor !== null && (
           <div className="mt-6 bg-primary-soft border border-primary/15 rounded-xl p-5 text-center">
