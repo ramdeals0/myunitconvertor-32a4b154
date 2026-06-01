@@ -23,10 +23,10 @@ export default function PairPage() {
   const factor = convert(category, 1, f.id, t.id);
   const inverse = convert(category, 1, t.id, f.id);
 
-  const title = `${f.name} to ${t.name} — Turbo Unit Converter`;
-  const desc = `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly with engineering-grade precision.`.slice(0, 160);
-  const url = `https://turbounitconverter.vercel.app/c/${category.id}/${pair}`;
-  const catUrl = `https://turbounitconverter.vercel.app/c/${category.id}`;
+  const title = `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
+  const desc = `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`.slice(0, 160);
+  const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
+  const catUrl = `https://turbounitconverter.com/c/${category.id}`;
 
   const faqs = [
     { q: `How do I convert ${f.name.toLowerCase()} to ${t.name.toLowerCase()}?`, a: `Multiply the ${f.name.toLowerCase()} value by ${formatResult(factor)} to get the equivalent in ${t.name.toLowerCase()}.` },
@@ -56,7 +56,7 @@ export default function PairPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
               { "@type": "ListItem", position: 2, name: category.name, item: catUrl },
               { "@type": "ListItem", position: 3, name: `${f.name} to ${t.name}`, item: url },
             ],
