@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
+import { TurboSearchBar } from "@/components/TurboSearchBar";
+import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
 import { GROUP_LABELS } from "@/lib/converters/types";
 import { useI18n } from "@/lib/i18n";
@@ -13,6 +15,7 @@ import {
   Wind, Compass, HardDrive, Fuel, BadgeCheck, Bolt, Lock, Waves, Activity, Wrench, RefreshCw, Droplet,
   Atom, Magnet, Radiation, Type, TreePine, Sigma, Lightbulb, Sun, Aperture, Grid3x3, FlaskConical,
 } from "lucide-react";
+
 
 const ICONS: Record<string, any> = {
   length: Ruler, weight: Weight, temperature: Thermometer, volume: Beaker,
