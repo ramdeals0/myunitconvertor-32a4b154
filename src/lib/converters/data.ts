@@ -25,10 +25,16 @@ const length: Category = {
     u("pc", "Parsec", "pc", 3.0857e16),
   ],
   popular: [
+    // Curated from real US search volume (Semrush): mm→cm 74k, in→ft 60k, ft→in 40k, m→cm 40k, nm→m 27k, yd→ft 10k, km→mi & mi→km
     { from: "cm", to: "in" }, { from: "in", to: "cm" },
     { from: "mm", to: "in" }, { from: "in", to: "mm" },
+    { from: "mm", to: "cm" }, { from: "cm", to: "mm" },
     { from: "m", to: "ft" }, { from: "ft", to: "m" },
+    { from: "m", to: "cm" }, { from: "cm", to: "m" },
+    { from: "ft", to: "in" }, { from: "in", to: "ft" },
+    { from: "yd", to: "ft" }, { from: "ft", to: "yd" },
     { from: "km", to: "mi" }, { from: "mi", to: "km" },
+    { from: "nm", to: "m" }, { from: "m", to: "nm" },
   ],
 };
 
@@ -52,8 +58,15 @@ const weight: Category = {
     u("ton_uk", "UK Ton (long)", "ton", 1016.0469088),
   ].filter((x, i, a) => a.findIndex((y) => y.id === x.id) === i),
   popular: [
+    // Curated: lb↔oz 90k, mg→g 60k, g→kg 49k, ton→lb 4k, stone→lb
     { from: "kg", to: "lb" }, { from: "lb", to: "kg" },
     { from: "g", to: "oz" }, { from: "oz", to: "g" },
+    { from: "lb", to: "oz" }, { from: "oz", to: "lb" },
+    { from: "g", to: "kg" }, { from: "kg", to: "g" },
+    { from: "mg", to: "g" }, { from: "g", to: "mg" },
+    { from: "t", to: "kg" }, { from: "kg", to: "t" },
+    { from: "st", to: "lb" }, { from: "lb", to: "st" },
+    { from: "ton_us", to: "lb" }, { from: "lb", to: "ton_us" },
   ],
 };
 
@@ -113,8 +126,15 @@ const volume: Category = {
     u("bbl", "Oil Barrel", "bbl", 158.987294928),
   ],
   popular: [
+    // Curated: ml→oz 246k, oz→ml 165k, L→gal 110k, gal→L 27k, tsp/cup/tbsp→ml
     { from: "L", to: "gal_us" }, { from: "gal_us", to: "L" },
     { from: "mL", to: "floz" }, { from: "floz", to: "mL" },
+    { from: "cup", to: "mL" }, { from: "mL", to: "cup" },
+    { from: "tbsp", to: "mL" }, { from: "mL", to: "tbsp" },
+    { from: "tsp", to: "mL" }, { from: "mL", to: "tsp" },
+    { from: "qt", to: "L" }, { from: "L", to: "qt" },
+    { from: "pt", to: "mL" }, { from: "mL", to: "pt" },
+    { from: "gal_uk", to: "L" }, { from: "L", to: "gal_uk" },
   ],
 };
 
