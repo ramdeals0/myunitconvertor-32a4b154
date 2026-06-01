@@ -101,21 +101,15 @@ export function parseConversionQuery(raw: string): ParsedQuery | null {
 
       // Compound: accumulate left matches all in same category, summed in `from` unit's base value
       if (leftMatches.length > 1) {
-        let baseTotal = fromUnit.toBase
-          ? fromUnit.toBase(leftMatches[0].value)
-          : leftMatches[0].value * (fromUnit.factor ?? 1);
+        let baseTotal = fromUnit.toBase(leftMatches[0].value);
         let allMatched = true;
         for (let i = 1; i < leftMatches.length; i++) {
           const cand = findUnit(leftMatches[i].token, rCat);
           if (!cand.length) { allMatched = false; break; }
-          const u = cand[0].unit;
-          baseTotal += u.toBase ? u.toBase(leftMatches[i].value) : leftMatches[i].value * (u.factor ?? 1);
+          baseTotal += cand[0].unit.toBase(leftMatches[i].value);
         }
         if (!allMatched) continue;
-        // Convert baseTotal back into fromUnit
-        const valueInFrom = fromUnit.fromBase
-          ? fromUnit.fromBase(baseTotal)
-          : baseTotal / (fromUnit.factor ?? 1);
+        const valueInFrom = fromUnit.fromBase(baseTotal);
         return { category: rCat, from: fromUnit, to: rUnit, value: valueInFrom, compound: true };
       }
 
@@ -125,3 +119,4 @@ export function parseConversionQuery(raw: string): ParsedQuery | null {
 
   return null;
 }
+
