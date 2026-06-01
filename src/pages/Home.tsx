@@ -63,13 +63,45 @@ export default function HomePage() {
 
   const groups = Array.from(new Set(CATEGORIES.map((c) => c.group)));
 
+  const SITE_URL = "https://turbounitconverter.vercel.app";
   return (
     <>
       <Seo
         title="Turbo Unit Converter — Professional Unit Converter & Engineering Tools"
         description="Convert length, weight, temperature, volume, and dozens more — instantly and accurately, with engineering-grade precision."
         canonical="https://turbounitconverter.vercel.app/"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: "Turbo Unit Converter",
+            url: SITE_URL,
+            applicationCategory: "UtilitiesApplication",
+            operatingSystem: "Any",
+            browserRequirements: "Requires JavaScript. Works in any modern browser.",
+            description: "Fast, accurate online unit converter for 75+ categories — length, weight, temperature, volume, and more.",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+            featureList: CATEGORIES.map((c) => c.name).join(", "),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          },
+        ]}
       />
+
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <section className="mb-10">
           <div className="text-center mb-8 max-w-3xl mx-auto">
