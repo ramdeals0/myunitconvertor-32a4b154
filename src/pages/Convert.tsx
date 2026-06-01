@@ -122,7 +122,7 @@ export default function ConvertPage() {
           </p>
         </div>
 
-        <Converter category={category} initialFrom={f.id} initialTo={t.id} />
+        <Converter category={category} initialFrom={f.id} initialTo={t.id} persistValueInUrl />
 
         <div className="mt-6 bg-primary-soft border border-primary/15 rounded-xl p-5 text-center">
           <div className="text-[11px] uppercase tracking-[0.08em] font-semibold text-primary/80">Conversion factor</div>
