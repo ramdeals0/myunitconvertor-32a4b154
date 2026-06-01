@@ -8,7 +8,7 @@ import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
 import { GROUP_LABELS } from "@/lib/converters/types";
 import { useI18n } from "@/lib/i18n";
-import logo from "@/assets/logo.png";
+
 
 import {
   Search, ArrowRight, Ruler, Weight, Thermometer, Beaker, Square, Gauge, Zap, Clock,
