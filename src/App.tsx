@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { ScientificCalculator } from "@/components/ScientificCalculator";
 import { I18nProvider } from "@/lib/i18n";
@@ -47,6 +48,7 @@ export default function App() {
         <SiteFooter />
       </div>
       <ScientificCalculator />
+      <SpeedInsights />
     </I18nProvider>
   );
 }
