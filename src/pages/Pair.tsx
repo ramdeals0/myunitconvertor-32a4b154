@@ -126,6 +126,56 @@ export default function PairPage() {
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
             description: desc,
           },
+          {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            name: `Standards & references for ${f.name} to ${t.name} conversion`,
+            headline: `Standards & references for ${f.name} to ${t.name} conversion`,
+            url,
+            inLanguage: "en",
+            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+            about: {
+              "@type": "Thing",
+              name: `${f.name} to ${t.name} unit conversion`,
+              description: `Conversion factor: ${formatResult(factor)} ${t.symbol} per ${f.symbol}`,
+            },
+            citation: [
+              {
+                "@type": "ScholarlyArticle",
+                name: "NIST SP 811 — Guide for the Use of the International System of Units",
+                url: "https://www.nist.gov/pml/special-publication-811",
+                publisher: { "@type": "GovernmentOrganization", name: "National Institute of Standards and Technology" },
+              },
+              {
+                "@type": "ScholarlyArticle",
+                name: "NIST SP 811 Appendix B — Conversion Factors",
+                url: "https://physics.nist.gov/cuu/pdf/sp811.pdf#page=45",
+                isPartOf: {
+                  "@type": "ScholarlyArticle",
+                  name: "NIST SP 811 — Guide for the Use of the International System of Units",
+                  url: "https://www.nist.gov/pml/special-publication-811",
+                },
+                publisher: { "@type": "GovernmentOrganization", name: "National Institute of Standards and Technology" },
+              },
+              {
+                "@type": "ScholarlyArticle",
+                name: "BIPM — The International System of Units (SI Brochure)",
+                url: "https://www.bipm.org/en/publications/si-brochure",
+                publisher: { "@type": "GovernmentOrganization", name: "Bureau International des Poids et Mesures" },
+              },
+              {
+                "@type": "ScholarlyArticle",
+                name: "IEEE/ASTM SI 10 — American National Standard for Metric Practice",
+                publisher: { "@type": "Organization", name: "IEEE / ASTM International" },
+              },
+              {
+                "@type": "WebPage",
+                name: "Turbo Unit Converter — Methodology",
+                url: "https://turbounitconverter.com/methodology",
+                isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+              },
+            ],
+          },
         ]}
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
