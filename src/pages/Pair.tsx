@@ -433,6 +433,64 @@ export default function PairPage() {
             </>
           );
         })()}
+
+        <section
+          className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]"
+          aria-labelledby="standards-refs"
+        >
+          <h2 id="standards-refs" className="text-lg font-semibold mb-2">
+            Standards &amp; references
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            The {f.symbol} → {t.symbol} factor used on this page (
+            <span className="font-mono-num text-foreground font-semibold">{formatResult(factor)}</span>
+            ) follows the guidelines of NIST Special Publication 811 and the SI definitions
+            maintained by the BIPM. Turbo Unit Converter is an independent tool and is not
+            certified or endorsed by NIST.
+          </p>
+          <ul className="mt-3 space-y-1.5 text-sm">
+            <li>
+              <a
+                href="https://www.nist.gov/pml/special-publication-811"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                NIST SP 811 — Guide for the Use of the International System of Units
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://physics.nist.gov/cuu/pdf/sp811.pdf#page=45"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                NIST SP 811 Appendix B — Conversion Factors
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.bipm.org/en/publications/si-brochure"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                BIPM — The International System of Units (SI Brochure)
+              </a>
+            </li>
+            <li>
+              <span className="text-muted-foreground">
+                IEEE/ASTM SI 10 — American National Standard for Metric Practice
+              </span>
+            </li>
+            <li>
+              <Link to="/methodology" className="text-primary hover:underline">
+                Read our full methodology →
+              </Link>
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   );
