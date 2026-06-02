@@ -7,6 +7,7 @@ import { I18nProvider } from "@/lib/i18n";
 import { AdBanner } from "@/components/AdBanner";
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
+import MethodologyPage from "@/pages/Methodology";
 import ConvertersPage from "@/pages/Converters";
 import PrivacyPage from "@/pages/Privacy";
 import TermsPage from "@/pages/Terms";
