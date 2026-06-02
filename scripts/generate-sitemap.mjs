@@ -13,6 +13,7 @@ import { createRequire } from "node:module";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
 const BASE = "https://turbounitconverter.com";
+const LANGUAGES = ["en", "es", "hi"];
 
 // Use tsx to load the TS module — falls back to a regex parse if unavailable.
 async function loadCategories() {
@@ -25,17 +26,32 @@ async function loadCategories() {
   }
 }
 
-function urlTag(loc, { changefreq = "monthly", priority = "0.6", lastmod } = {}) {
-  return [
-    "  <url>",
-    `    <loc>${loc}</loc>`,
-    lastmod ? `    <lastmod>${lastmod}</lastmod>` : null,
-    changefreq ? `    <changefreq>${changefreq}</changefreq>` : null,
-    priority ? `    <priority>${priority}</priority>` : null,
-    "  </url>",
-  ]
-    .filter(Boolean)
-    .join("\n");
+function urlTag(path, { changefreq = "monthly", priority = "0.6", lastmod } = {}) {
+  const entries = LANGUAGES.map((lang) => {
+    const localizedPath = lang === "en" ? path : `/${lang}${path}`.replace(/\/+$/, "");
+    const loc = `${BASE}${localizedPath === "" ? "/" : localizedPath}`;
+
+    const hreflangs = LANGUAGES.map((l) => {
+      const hPath = l === "en" ? path : `/${l}${path}`.replace(/\/+$/, "");
+      return `    <xhtml:link rel="alternate" hreflang="${l}" href="${BASE}${hPath === "" ? "/" : hPath}" />`;
+    });
+    // Add x-default
+    hreflangs.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE}${path}" />`);
+
+    return [
+      "  <url>",
+      `    <loc>${loc}</loc>`,
+      ...hreflangs,
+      lastmod ? `    <lastmod>${lastmod}</lastmod>` : null,
+      changefreq ? `    <changefreq>${changefreq}</changefreq>` : null,
+      priority ? `    <priority>${priority}</priority>` : null,
+      "  </url>",
+    ]
+      .filter(Boolean)
+      .join("\n");
+  });
+
+  return entries.join("\n");
 }
 
 const STATIC_ROUTES = [
@@ -90,17 +106,17 @@ async function main() {
   }
 
   const entries = [];
-  for (const r of STATIC_ROUTES) entries.push(urlTag(`${BASE}${r.path}`, { ...r, lastmod: today }));
+  for (const r of STATIC_ROUTES) entries.push(urlTag(r.path, { ...r, lastmod: today }));
 
   for (const cat of categories) {
-    entries.push(urlTag(`${BASE}/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
+    entries.push(urlTag(`/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
   }
 
   // Pair pages: only those in the pSEO launch set.
   if (pseoPairs.size > 0) {
     for (const key of pseoPairs.keys()) {
       const [catId, slug] = key.split("/");
-      entries.push(urlTag(`${BASE}/c/${catId}/${slug}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
+      entries.push(urlTag(`/c/${catId}/${slug}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
     }
   } else {
     // Fallback: original popular + auto-derived behavior
@@ -120,14 +136,14 @@ async function main() {
         }
       }
       for (const pair of pairs) {
-        entries.push(urlTag(`${BASE}/c/${cat.id}/${pair}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
+        entries.push(urlTag(`/c/${cat.id}/${pair}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
       }
     }
   }
 
   const xml = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...entries,
     "</urlset>",
     "",
