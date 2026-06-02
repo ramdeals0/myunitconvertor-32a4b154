@@ -4,6 +4,7 @@ import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
+import { getPseoOverride } from "@/lib/converters/pseoGrid";
 
 function parsePair(pair: string): [string, string] {
   const parts = pair.split("-to-");
@@ -23,8 +24,13 @@ export default function PairPage() {
   const factor = convert(category, 1, f.id, t.id);
   const inverse = convert(category, 1, t.id, f.id);
 
-  const title = `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
-  const desc = `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`.slice(0, 160);
+  // pSEO overrides from the build-time CSV grid (by category + slug).
+  const pseo = getPseoOverride(category.id, `${f.id}-to-${t.id}`);
+  const title = pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
+  const desc = (pseo?.metaDescription ||
+    `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`
+  ).slice(0, 160);
+  const heading = pseo?.h1 || `${f.name} to ${t.name}`;
   const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
   const catUrl = `https://turbounitconverter.com/c/${category.id}`;
 
@@ -89,7 +95,7 @@ export default function PairPage() {
         </nav>
 
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight">{f.name} to {t.name}</h1>
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight">{heading}</h1>
           <p className="text-muted-foreground mt-2">Convert {f.symbol} to {t.symbol} with precision.</p>
         </div>
 
