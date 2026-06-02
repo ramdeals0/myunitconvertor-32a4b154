@@ -457,7 +457,9 @@ function validate(results: WriteResult[]): ValidationReport {
     const m = r.content.meta;
     byTitle.set(m.title, [...(byTitle.get(m.title) ?? []), r.path]);
     byDesc.set(m.description, [...(byDesc.get(m.description) ?? []), r.path]);
-    slugCount.set(r.content.seo.canonicalSlug, (slugCount.get(r.content.seo.canonicalSlug) ?? 0) + 1);
+    // Scope slug uniqueness per-category — same slug across categories is fine.
+    const key = `${r.content.seo.category}/${r.content.seo.canonicalSlug}`;
+    slugCount.set(key, (slugCount.get(key) ?? 0) + 1);
     const totalChars = Object.values(r.content.content).join(" ").length;
     if (totalChars < MIN_CONTENT_CHARS) thin.push({ path: r.path, chars: totalChars });
   }
