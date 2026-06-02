@@ -33,12 +33,16 @@ export default function PairPage() {
   const inverse = convert(category, 1, t.id, f.id);
 
   // pSEO overrides from the build-time CSV grid (by category + slug).
-  const pseo = getPseoOverride(category.id, `${f.id}-to-${t.id}`);
-  const title = pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
-  const desc = (pseo?.metaDescription ||
+  const slug = `${f.id}-to-${t.id}`;
+  const pseo = getPseoOverride(category.id, slug);
+  // Cached long-form JSON written by scripts/generate-pseo.ts (may be undefined for non-launch pairs).
+  const gen = getGeneratedPair(category.id, slug);
+
+  const title = gen?.meta.title || pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
+  const desc = (gen?.meta.description || pseo?.metaDescription ||
     `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`
   ).slice(0, 160);
-  const heading = pseo?.h1 || `${f.name} to ${t.name}`;
+  const heading = gen?.meta.h1 || pseo?.h1 || `${f.name} to ${t.name}`;
   const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
   const catUrl = `https://turbounitconverter.com/c/${category.id}`;
 
