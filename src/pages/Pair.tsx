@@ -115,6 +115,17 @@ export default function PairPage() {
             description: `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) using the exact factor ${formatResult(factor)}.`,
             step: howToSteps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
           },
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: `${f.name} to ${t.name} Converter`,
+            url,
+            applicationCategory: "UtilitiesApplication",
+            operatingSystem: "Any (Web)",
+            browserRequirements: "Requires JavaScript. Modern browser.",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+            description: desc,
+          },
         ]}
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
