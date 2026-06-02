@@ -5,7 +5,7 @@ import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 import path from "node:path";
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), cssInjectedByJsPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
