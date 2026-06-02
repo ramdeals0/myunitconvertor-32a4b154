@@ -143,6 +143,87 @@ export default function PairPage() {
 
         <AdBanner className="mt-10" />
 
+        {gen ? (
+          <>
+            <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
+              <h2 className="text-xl md:text-2xl font-semibold mb-3">
+                About {f.name.toLowerCase()} to {t.name.toLowerCase()}
+              </h2>
+              <MdParagraphs text={gen.content.intro} />
+              <div className="mt-4">
+                <MdParagraphs text={gen.content.result_section} />
+              </div>
+            </section>
+
+            <section className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-3">
+                  Formula: {f.name.toLowerCase()} → {t.name.toLowerCase()}
+                </h2>
+                <MdParagraphs text={gen.content.formula_section} />
+              </div>
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-4">Frequently asked questions</h2>
+                <MdFaq text={gen.content.faq} />
+              </div>
+            </section>
+
+            <section className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-surface-elevated border border-border rounded-xl p-6">
+                <h2 className="font-semibold mb-3">{f.name} → {t.name} table</h2>
+                <MdTable text={gen.content.conversion_table} />
+              </div>
+              <div className="bg-surface-elevated border border-border rounded-xl p-6">
+                <h2 className="font-semibold mb-3">Reverse: {t.name} → {f.name}</h2>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Multiply {t.name.toLowerCase()} by{" "}
+                  <span className="font-mono-num text-foreground font-semibold">{formatResult(inverse)}</span> to get {f.name.toLowerCase()}.
+                </p>
+                <table className="w-full text-sm">
+                  <tbody className="divide-y divide-border">
+                    {examples.map((v) => (
+                      <tr key={v}>
+                        <td className="py-2 font-mono-num">{v} {t.symbol}</td>
+                        <td className="py-2 text-right font-mono-num text-primary font-semibold">
+                          {formatResult(convert(category, v, t.id, f.id))} {f.symbol}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-4">Common use cases</h2>
+                <MdBulletList text={gen.content.use_cases} />
+              </div>
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-4">Tips</h2>
+                <MdParagraphs text={gen.content.tips} />
+              </div>
+            </section>
+
+            <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+              <h2 className="text-lg font-semibold mb-4">
+                Step-by-step: convert {f.name.toLowerCase()} to {t.name.toLowerCase()}
+              </h2>
+              <ol className="space-y-3">
+                {howToSteps.map((s, i) => (
+                  <li key={s.name} className="flex gap-3">
+                    <span className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">{i + 1}</span>
+                    <div>
+                      <div className="text-sm font-semibold">{s.name}</div>
+                      <div className="text-sm text-muted-foreground">{s.text}</div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          </>
+        ) : (
+          <>
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About {f.name.toLowerCase()} to {t.name.toLowerCase()} conversion</h2>
           <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -262,6 +343,9 @@ export default function PairPage() {
             The same approach works for any value — the relationship between {f.name.toLowerCase()} and {t.name.toLowerCase()} is strictly linear.
           </p>
         </section>
+          </>
+        )}
+
 
         {(() => {
           const currentKey = `${category.id}/${f.id}-to-${t.id}`;
