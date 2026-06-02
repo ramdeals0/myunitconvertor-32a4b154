@@ -88,3 +88,19 @@ export function getPseoOverride(categoryId: string, slug: string): PseoOverride 
 export function listPseoEntries(): PseoOverride[] {
   return Array.from(INDEX.values());
 }
+
+/** Launch-set pairs for a given category, sorted by estimated search volume desc. */
+export function getLaunchPairsByCategory(categoryId: string, limit?: number): PseoOverride[] {
+  const out = Array.from(INDEX.values())
+    .filter((e) => e.category === categoryId)
+    .sort((a, b) => b.searchVolumeEst - a.searchVolumeEst);
+  return typeof limit === "number" ? out.slice(0, limit) : out;
+}
+
+/** Top launch-set pairs across all categories, optionally excluding a slug key. */
+export function getTopLaunchPairs(limit: number, excludeKey?: string): PseoOverride[] {
+  return Array.from(INDEX.values())
+    .filter((e) => !excludeKey || `${e.category}/${e.slug}` !== excludeKey)
+    .sort((a, b) => b.searchVolumeEst - a.searchVolumeEst)
+    .slice(0, limit);
+}
