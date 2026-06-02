@@ -54,31 +54,74 @@ async function main() {
     return;
   }
 
+  // Load the pSEO launch set — the single source of truth for indexable pair pages.
+  // Pairs outside this set still render (handled by Pair.tsx) but are intentionally
+  // kept out of the sitemap so Google focuses crawl budget on the strong set.
+  const { readFileSync } = await import("node:fs");
+  const csvPath = resolve(root, "src/lib/converters/pseo-grid.csv");
+  let pseoPairs = new Map(); // key: `${catId}/${slug}` -> true
+  try {
+    const raw = readFileSync(csvPath, "utf8");
+    const lines = raw.split(/\r?\n/).filter(Boolean);
+    const header = lines.shift().split(",");
+    const ci = (n) => header.indexOf(n);
+    for (const line of lines) {
+      // CSV cells are quoted; a simple split works because none of our values contain commas
+      // outside of quotes — but to be safe, parse with a tiny state machine.
+      const cells = [];
+      let cur = "", inQ = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (inQ) {
+          if (ch === '"' && line[i + 1] === '"') { cur += '"'; i++; }
+          else if (ch === '"') inQ = false;
+          else cur += ch;
+        } else if (ch === '"') inQ = true;
+        else if (ch === ",") { cells.push(cur); cur = ""; }
+        else cur += ch;
+      }
+      cells.push(cur);
+      const cat = cells[ci("category")];
+      const slug = cells[ci("slug")];
+      if (cat && slug) pseoPairs.set(`${cat}/${slug}`, true);
+    }
+  } catch (err) {
+    console.warn("[sitemap] could not read pseo-grid.csv, falling back to popular+auto pairs:", err.message);
+  }
+
   const entries = [];
   for (const r of STATIC_ROUTES) entries.push(urlTag(`${BASE}${r.path}`, { ...r, lastmod: today }));
 
   for (const cat of categories) {
     entries.push(urlTag(`${BASE}/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
+  }
 
-    const pairs = new Set();
-    // 1. Author-declared popular pairs (both directions)
-    for (const p of cat.popular ?? []) {
-      pairs.add(`${p.from}-to-${p.to}`);
-      pairs.add(`${p.to}-to-${p.from}`);
+  // Pair pages: only those in the pSEO launch set.
+  if (pseoPairs.size > 0) {
+    for (const key of pseoPairs.keys()) {
+      const [catId, slug] = key.split("/");
+      entries.push(urlTag(`${BASE}/c/${catId}/${slug}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
     }
-    // 2. Auto-derive base-unit ↔ top units so every category gets pair coverage
-    const base = cat.baseUnit;
-    const baseUnit = cat.units.find((u) => u.id === base);
-    if (baseUnit) {
-      const topUnits = cat.units.filter((u) => u.id !== base).slice(0, 6);
-      for (const u of topUnits) {
-        pairs.add(`${base}-to-${u.id}`);
-        pairs.add(`${u.id}-to-${base}`);
+  } else {
+    // Fallback: original popular + auto-derived behavior
+    for (const cat of categories) {
+      const pairs = new Set();
+      for (const p of cat.popular ?? []) {
+        pairs.add(`${p.from}-to-${p.to}`);
+        pairs.add(`${p.to}-to-${p.from}`);
       }
-    }
-
-    for (const pair of pairs) {
-      entries.push(urlTag(`${BASE}/c/${cat.id}/${pair}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
+      const base = cat.baseUnit;
+      const baseUnit = cat.units.find((u) => u.id === base);
+      if (baseUnit) {
+        const topUnits = cat.units.filter((u) => u.id !== base).slice(0, 6);
+        for (const u of topUnits) {
+          pairs.add(`${base}-to-${u.id}`);
+          pairs.add(`${u.id}-to-${base}`);
+        }
+      }
+      for (const pair of pairs) {
+        entries.push(urlTag(`${BASE}/c/${cat.id}/${pair}`, { changefreq: "monthly", priority: "0.7", lastmod: today }));
+      }
     }
   }
 
