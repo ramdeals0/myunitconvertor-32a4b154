@@ -6,7 +6,8 @@ import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
-import { ArrowRight } from "lucide-react";
+import { getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
+import { ArrowRight, TrendingUp } from "lucide-react";
 
 
 export default function CategoryPage() {
@@ -177,44 +178,50 @@ export default function CategoryPage() {
           )}
         </section>
 
-        {category.popular?.length ? (
-          <section className="mt-12">
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">Popular {category.name.toLowerCase()} conversions</h2>
-
-            <div className="bg-surface-elevated border border-border rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
-              <table className="w-full text-sm">
-                <thead className="bg-muted/40 text-xs uppercase tracking-wider text-muted-foreground">
-                  <tr>
-                    <th className="text-left p-3 font-semibold">From</th>
-                    <th className="text-left p-3 font-semibold">To</th>
-                    <th className="text-right p-3 font-semibold">Open</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  {category.popular.flatMap((p) => {
-                    const pf = category.units.find((u) => u.id === p.from);
-                    const pt = category.units.find((u) => u.id === p.to);
-                    if (!pf || !pt) return [];
-                    return [1, 5, 10, 25].map((v) => (
-                      <tr key={`${p.from}-${p.to}-${v}`} className="hover:bg-muted/30">
-                        <td className="p-3 font-mono-num">{v} {pf.name}</td>
-                        <td className="p-3 font-mono-num text-primary font-semibold">
-                          {formatResult(convert(category, v, pf.id, pt.id))} {pt.name}
-                        </td>
-                        <td className="p-3 text-right">
-                          <Link to={`/c/${category.id}/${pf.id}-to-${pt.id}`}
-                            className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
-                            {pf.symbol} <ArrowRight className="h-3 w-3" /> {pt.symbol}
-                          </Link>
-                        </td>
-                      </tr>
-                    ));
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        ) : null}
+        {(() => {
+          const launchPairs = getLaunchPairsByCategory(category.id, 12);
+          if (!launchPairs.length) return null;
+          return (
+            <section className="mt-12">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="h-5 w-5 text-primary" />
+                <h2 className="text-xl md:text-2xl font-semibold">
+                  Popular {category.name.toLowerCase()} conversions
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground mb-5 max-w-2xl">
+                The most-searched {category.name.toLowerCase()} pairs. Each opens a dedicated converter with
+                formula, examples, and FAQs.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {launchPairs.map((p) => {
+                  const pf = category.units.find((u) => u.id === p.fromUnit);
+                  const pt = category.units.find((u) => u.id === p.toUnit);
+                  if (!pf || !pt) return null;
+                  const f1 = convert(category, 1, pf.id, pt.id);
+                  return (
+                    <Link
+                      key={p.slug}
+                      to={`/c/${category.id}/${p.slug}`}
+                      className="group bg-surface-elevated border border-border rounded-xl p-4 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
+                    >
+                      <div className="flex items-center justify-between text-sm font-semibold">
+                        <span>{pf.symbol} <ArrowRight className="inline h-3 w-3 mx-0.5 text-muted-foreground" /> {pt.symbol}</span>
+                        <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition" />
+                      </div>
+                      <div className="mt-2 font-mono-num text-xs text-muted-foreground">
+                        1 {pf.symbol} = <span className="text-primary font-semibold">{formatResult(f1)}</span> {pt.symbol}
+                      </div>
+                      <div className="mt-1 text-[11px] text-muted-foreground capitalize">
+                        {pf.name.toLowerCase()} to {pt.name.toLowerCase()}
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })()}
 
         {f && t && factor !== null && (
           <section className="mt-12 grid md:grid-cols-2 gap-6">

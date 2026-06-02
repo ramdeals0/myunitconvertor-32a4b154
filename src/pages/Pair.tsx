@@ -1,10 +1,11 @@
 import { Link, useParams, Navigate } from "react-router-dom";
+import { ArrowRight as ArrowRightIcon } from "lucide-react";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
 import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
-import { getPseoOverride } from "@/lib/converters/pseoGrid";
+import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 
 function parsePair(pair: string): [string, string] {
   const parts = pair.split("-to-");
@@ -251,19 +252,81 @@ export default function PairPage() {
           </p>
         </section>
 
-        {category.units.filter((u) => u.id !== f.id).length > 0 && (
-          <section className="mt-12">
-            <h2 className="text-xl font-semibold mb-4">Other {f.name.toLowerCase()} conversions</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {category.units.filter((u) => u.id !== f.id).slice(0, 8).map((u) => (
-                <Link key={u.id} to={`/c/${category.id}/${f.id}-to-${u.id}`}
-                  className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center">
-                  {f.symbol} → {u.symbol}
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
+        {(() => {
+          const currentKey = `${category.id}/${f.id}-to-${t.id}`;
+          const reverseSlug = `${t.id}-to-${f.id}`;
+          const hasReverse = !!getPseoOverride(category.id, reverseSlug);
+          const sameCat = getLaunchPairsByCategory(category.id, 9).filter((p) => p.slug !== `${f.id}-to-${t.id}`).slice(0, 8);
+          const crossCat = getTopLaunchPairs(8, currentKey).filter((p) => p.category !== category.id).slice(0, 6);
+          return (
+            <>
+              {hasReverse && (
+                <section className="mt-12 bg-primary-soft border border-primary/15 rounded-xl p-5 flex items-center justify-between gap-4">
+                  <div>
+                    <div className="text-[11px] uppercase tracking-[0.08em] font-semibold text-primary/80">Reverse direction</div>
+                    <div className="mt-1 text-sm font-semibold text-foreground">
+                      Need to go the other way? Convert {t.name.toLowerCase()} to {f.name.toLowerCase()} instead.
+                    </div>
+                  </div>
+                  <Link
+                    to={`/c/${category.id}/${reverseSlug}`}
+                    className="flex-shrink-0 inline-flex items-center gap-1.5 bg-primary text-primary-foreground rounded-lg px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
+                  >
+                    {t.symbol} <ArrowRightIcon className="h-3.5 w-3.5" /> {f.symbol}
+                  </Link>
+                </section>
+              )}
+
+              {sameCat.length > 0 && (
+                <section className="mt-12">
+                  <h2 className="text-xl font-semibold mb-4">
+                    Next: popular {category.name.toLowerCase()} conversions
+                  </h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                    {sameCat.map((p) => {
+                      const pf = category.units.find((u) => u.id === p.fromUnit);
+                      const pt = category.units.find((u) => u.id === p.toUnit);
+                      if (!pf || !pt) return null;
+                      return (
+                        <Link
+                          key={p.slug}
+                          to={`/c/${category.id}/${p.slug}`}
+                          className="group bg-surface-elevated border border-border rounded-xl p-3 hover:border-primary transition"
+                        >
+                          <div className="text-sm font-semibold flex items-center justify-between">
+                            <span>{pf.symbol} → {pt.symbol}</span>
+                            <ArrowRightIcon className="h-3.5 w-3.5 text-muted-foreground group-hover:text-primary transition" />
+                          </div>
+                          <div className="mt-1 text-[11px] text-muted-foreground capitalize">
+                            {pf.name.toLowerCase()} to {pt.name.toLowerCase()}
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+
+              {crossCat.length > 0 && (
+                <section className="mt-12">
+                  <h2 className="text-xl font-semibold mb-4">Trending across other categories</h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                    {crossCat.map((p) => (
+                      <Link
+                        key={`${p.category}/${p.slug}`}
+                        to={`/c/${p.category}/${p.slug}`}
+                        className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center"
+                      >
+                        <div className="font-semibold">{p.fromUnit} → {p.toUnit}</div>
+                        <div className="text-[11px] text-muted-foreground capitalize mt-0.5">{p.category}</div>
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </>
+          );
+        })()}
       </div>
     </>
   );
