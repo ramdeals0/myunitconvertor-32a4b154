@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Specific Volume Converter — Convert Cubic meter/kilogram and More",
+    "description": "Free specific volume converter for 4+ units including Cubic meter/kilogram, Cubic centimeter/gram, Liter/kilogram. Instant, accurate, browser-based.",
+    "h1": "Specific Volume Converter"
+  },
+  "content": {
+    "intro": "m³/kg, cm³/g, ft³/lb. Convert between 4 specific volume units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for specific volume in this tool is **m3kg**; every conversion routes through it for consistency.",
+    "formula_section": "Most specific volume conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Cubic meter/kilogram | m³/kg |\n| Cubic centimeter/gram | cm³/g |\n| Liter/kilogram | L/kg |\n| Cubic foot/pound | ft³/lb |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this specific volume converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Cubic meter/kilogram (m³/kg), Cubic centimeter/gram (cm³/g), Liter/kilogram (L/kg), Cubic foot/pound (ft³/lb)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Cubic meter/kilogram to Cubic centimeter/gram",
+      "href": "/c/specific-volume/m3kg-to-cm3g"
+    },
+    {
+      "anchor": "Cubic centimeter/gram to Cubic meter/kilogram",
+      "href": "/c/specific-volume/cm3g-to-m3kg"
+    },
+    {
+      "anchor": "Liter/kilogram to Cubic meter/kilogram",
+      "href": "/c/specific-volume/lkg-to-m3kg"
+    },
+    {
+      "anchor": "Cubic foot/pound to Cubic meter/kilogram",
+      "href": "/c/specific-volume/ft3lb-to-m3kg"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "specific-volume",
+    "canonicalUrl": "https://turbounitconverter.com/c/specific-volume",
+    "category": "specific-volume",
+    "pageType": "category",
+    "keywords": [
+      "specific volume converter",
+      "convert specific volume"
+    ]
+  },
+  "contentHash": "4de1a9c91a00"
+}

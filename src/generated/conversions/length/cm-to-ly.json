@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "cm to ly Converter — Centimeter to Light Year",
+    "description": "Convert Centimeter (cm) to Light Year (ly) instantly. 1 cm = 1.057004e-18 ly. Free, accurate, browser-based.",
+    "h1": "Centimeter to Light Year Converter"
+  },
+  "content": {
+    "intro": "Convert centimeters (cm) to light years (ly) instantly. Both measure length, so the relationship is strictly linear: each centimeter equals 1.057004e-18 light years. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One centimeter is equal to **1.057004e-18 light years**. To go the other way, one light year equals **9.460700e+17 centimeters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> light years = centimeters × 1.057004e-18\n\nWorked example — converting 10 centimeters:\n\n10 × 1.057004e-18 = **1.057004e-17 ly**.\n\nTo invert, divide by 1.057004e-18 (or multiply by 9.460700e+17).",
+    "conversion_table": "| centimeters | light years |\n| --- | --- |\n| 1 cm | 1.057004e-18 ly |\n| 2 cm | 2.114008e-18 ly |\n| 5 cm | 5.285021e-18 ly |\n| 10 cm | 1.057004e-17 ly |\n| 25 cm | 2.642511e-17 ly |\n| 50 cm | 5.285021e-17 ly |\n| 100 cm | 1.057004e-16 ly |\n| 250 cm | 2.642511e-16 ly |\n| 500 cm | 5.285021e-16 ly |\n| 1000 cm | 1.057004e-15 ly |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 cm ≈ 1.057004e-18 ly. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Centimeter and Light Year both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many light years are in 1 centimeter?\n**A:** 1.057004e-18 light years.\n\n**Q:** What's the formula to convert cm to ly?\n**A:** light years = centimeters × 1.057004e-18.\n\n**Q:** How do I convert ly back to cm?\n**A:** Multiply by 9.460700e+17 (or divide by 1.057004e-18).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this cm to ly converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Light Year to Centimeter converter",
+      "href": "/c/length/ly-to-cm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "cm-to-ly",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/cm-to-ly",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "centimeter to light year",
+      "cm to ly",
+      "convert cm to ly"
+    ]
+  },
+  "contentHash": "cad2490287c3"
+}

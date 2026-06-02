@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Volume — Lumber Converter — Convert Cubic meter and More",
+    "description": "Free volume — lumber converter for 8+ units including Cubic meter, Cubic foot, Cubic inch. Instant, accurate, browser-based.",
+    "h1": "Volume — Lumber Converter"
+  },
+  "content": {
+    "intro": "Board feet, cubic meter, cord. Convert between 8 volume — lumber units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for volume — lumber in this tool is **m3**; every conversion routes through it for consistency.",
+    "formula_section": "Most volume — lumber conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Cubic meter | m³ |\n| Cubic foot | ft³ |\n| Cubic inch | in³ |\n| Board foot | FBM |\n| Thousand board feet | MBF |\n| Cord | cord |\n| Cord foot | cord-ft |\n| Cunit | cu |",
+    "use_cases": "- Engineering reference and cross-discipline calculations.\n- Scientific paper unit harmonization.\n- International standards compliance.\n- Procurement and supplier negotiation.\n- Education and tutoring contexts.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this volume — lumber converter?\n**A:** It uses 8 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Cubic meter (m³), Cubic foot (ft³), Cubic inch (in³), Board foot (FBM), Thousand board feet (MBF), Cord (cord), Cord foot (cord-ft), Cunit (cu)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Cubic meter to Cubic foot",
+      "href": "/c/volume-lumber/m3-to-ft3"
+    },
+    {
+      "anchor": "Cubic foot to Cubic meter",
+      "href": "/c/volume-lumber/ft3-to-m3"
+    },
+    {
+      "anchor": "Cubic inch to Cubic meter",
+      "href": "/c/volume-lumber/in3-to-m3"
+    },
+    {
+      "anchor": "Board foot to Cubic meter",
+      "href": "/c/volume-lumber/bf-to-m3"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "volume-lumber",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume-lumber",
+    "category": "volume-lumber",
+    "pageType": "category",
+    "keywords": [
+      "volume — lumber converter",
+      "convert volume — lumber"
+    ]
+  },
+  "contentHash": "e5d25c50062c"
+}

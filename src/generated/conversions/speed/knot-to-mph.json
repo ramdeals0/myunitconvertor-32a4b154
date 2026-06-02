@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "kn to mph — Convert Knot to Mile/hour | Turbo Unit Converter",
+    "description": "Convert Knot (kn) to Mile/hour (mph) instantly. 1 kn = 1.1507785 mph. Free, accurate, engineering-grade precision.",
+    "h1": "kn to mph Converter"
+  },
+  "content": {
+    "intro": "Convert knots (kn) to mile/hours (mph) instantly. Both measure speed, so the relationship is strictly linear: each knot equals 1.1507785 mile/hours. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One knot is equal to **1.1507785 mile/hours**. To go the other way, one mile/hour equals **0.86897699 knots**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> mile/hours = knots × 1.1507785\n\nWorked example — converting 10 knots:\n\n10 × 1.1507785 = **11.507785 mph**.\n\nTo invert, divide by 1.1507785 (or multiply by 0.86897699).",
+    "conversion_table": "| knots | mile/hours |\n| --- | --- |\n| 1 kn | 1.1507785 mph |\n| 2 kn | 2.3015569 mph |\n| 5 kn | 5.7538923 mph |\n| 10 kn | 11.507785 mph |\n| 25 kn | 28.769461 mph |\n| 50 kn | 57.538923 mph |\n| 100 kn | 115.07785 mph |\n| 250 kn | 287.69461 mph |\n| 500 kn | 575.38923 mph |\n| 1000 kn | 1150.778 mph |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 kn ≈ 1.1507785 mph. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Knot and Mile/hour both measure speed; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many mile/hours are in 1 knot?\n**A:** 1.1507785 mile/hours.\n\n**Q:** What's the formula to convert kn to mph?\n**A:** mile/hours = knots × 1.1507785.\n\n**Q:** How do I convert mph back to kn?\n**A:** Multiply by 0.86897699 (or divide by 1.1507785).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this kn to mph converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile/hour to Knot converter",
+      "href": "/c/speed/mph-to-knot"
+    },
+    {
+      "anchor": "All speed conversions",
+      "href": "/c/speed"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "knot-to-mph",
+    "canonicalUrl": "https://turbounitconverter.com/c/speed/knot-to-mph",
+    "category": "speed",
+    "pageType": "pair",
+    "keywords": [
+      "knot to mile/hour",
+      "kn to mph",
+      "convert knot to mile/hour",
+      "how many mile/hour in a knot",
+      "knot in mile/hour",
+      "kn to mph converter",
+      "knot vs mile/hour",
+      "knot to mile/hour formula",
+      "knot to mile/hour calculator"
+    ]
+  },
+  "contentHash": "056eb3cbb7a1"
+}

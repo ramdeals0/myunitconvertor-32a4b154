@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to yd Converter — Astronomical Unit to Yard",
+    "description": "Convert Astronomical Unit (AU) to Yard (yd) instantly. 1 AU = 1.636022e+11 yd. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Yard Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to yards (yd) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 1.636022e+11 yards. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **1.636022e+11 yards**. To go the other way, one yard equals **6.112386e-12 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> yards = astronomical units × 1.636022e+11\n\nWorked example — converting 10 astronomical units:\n\n10 × 1.636022e+11 = **1.636022e+12 yd**.\n\nTo invert, divide by 1.636022e+11 (or multiply by 6.112386e-12).",
+    "conversion_table": "| astronomical units | yards |\n| --- | --- |\n| 1 AU | 1.636022e+11 yd |\n| 2 AU | 3.272044e+11 yd |\n| 5 AU | 8.180111e+11 yd |\n| 10 AU | 1.636022e+12 yd |\n| 25 AU | 4.090056e+12 yd |\n| 50 AU | 8.180111e+12 yd |\n| 100 AU | 1.636022e+13 yd |\n| 250 AU | 4.090056e+13 yd |\n| 500 AU | 8.180111e+13 yd |\n| 1000 AU | 1.636022e+14 yd |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 1.636022e+11 yd. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Yard both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many yards are in 1 astronomical unit?\n**A:** 1.636022e+11 yards.\n\n**Q:** What's the formula to convert AU to yd?\n**A:** yards = astronomical units × 1.636022e+11.\n\n**Q:** How do I convert yd back to AU?\n**A:** Multiply by 6.112386e-12 (or divide by 1.636022e+11).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to yd converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Yard to Astronomical Unit converter",
+      "href": "/c/length/yd-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-yd",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-yd",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to yard",
+      "AU to yd",
+      "convert AU to yd"
+    ]
+  },
+  "contentHash": "a5b19c664484"
+}

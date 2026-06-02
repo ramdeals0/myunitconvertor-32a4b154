@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Linear Current Density Converter — Convert Ampere/meter and More",
+    "description": "Free linear current density converter for 3+ units including Ampere/meter, Ampere/centimeter, Ampere/inch. Instant, accurate, browser-based.",
+    "h1": "Linear Current Density Converter"
+  },
+  "content": {
+    "intro": "A/m, A/cm, A/in. Convert between 3 linear current density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for linear current density in this tool is **Am**; every conversion routes through it for consistency.",
+    "formula_section": "Most linear current density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Ampere/meter | A/m |\n| Ampere/centimeter | A/cm |\n| Ampere/inch | A/in |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this linear current density converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Ampere/meter (A/m), Ampere/centimeter (A/cm), Ampere/inch (A/in)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Ampere/meter to Ampere/centimeter",
+      "href": "/c/linear-current-density/am-to-acm"
+    },
+    {
+      "anchor": "Ampere/centimeter to Ampere/meter",
+      "href": "/c/linear-current-density/acm-to-am"
+    },
+    {
+      "anchor": "Ampere/inch to Ampere/meter",
+      "href": "/c/linear-current-density/ain-to-am"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "linear-current-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/linear-current-density",
+    "category": "linear-current-density",
+    "pageType": "category",
+    "keywords": [
+      "linear current density converter",
+      "convert linear current density"
+    ]
+  },
+  "contentHash": "c20ac21b9be1"
+}

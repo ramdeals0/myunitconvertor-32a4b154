@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Power Converter — Convert Watt and More",
+    "description": "Free power converter for 7+ units including Watt, Kilowatt, Megawatt. Instant, accurate, browser-based.",
+    "h1": "Power Converter"
+  },
+  "content": {
+    "intro": "Watts, horsepower, kilowatts. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 7 power units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for power in this tool is **W**; every conversion routes through it for consistency.",
+    "formula_section": "Most power conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Watt | W |\n| Kilowatt | kW |\n| Megawatt | MW |\n| Horsepower (mech) | hp |\n| Horsepower (metric) | hp (M) |\n| BTU/hour | BTU/h |\n| Foot-pound/second | ft·lb/s |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this power converter?\n**A:** It uses 7 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Watt (W), Kilowatt (kW), Megawatt (MW), Horsepower (mech) (hp), Horsepower (metric) (hp (M)), BTU/hour (BTU/h), Foot-pound/second (ft·lb/s)."
+  },
+  "internal_links": [
+    {
+      "anchor": "hp to kW Converter",
+      "href": "/c/power/hp-to-kW"
+    },
+    {
+      "anchor": "kW to hp Converter",
+      "href": "/c/power/kW-to-hp"
+    },
+    {
+      "anchor": "W to hp Converter",
+      "href": "/c/power/W-to-hp"
+    },
+    {
+      "anchor": "hp to W Converter",
+      "href": "/c/power/hp-to-W"
+    },
+    {
+      "anchor": "W to kW Converter",
+      "href": "/c/power/W-to-kW"
+    },
+    {
+      "anchor": "kW to W Converter",
+      "href": "/c/power/kW-to-W"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "power",
+    "canonicalUrl": "https://turbounitconverter.com/c/power",
+    "category": "power",
+    "pageType": "category",
+    "keywords": [
+      "power converter",
+      "convert power"
+    ]
+  },
+  "contentHash": "a1b42d6da37b"
+}

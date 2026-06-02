@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "K to °C — Convert Kelvin to Celsius | Turbo Unit Converter",
+    "description": "Convert Kelvin (K) to Celsius (°C) instantly. 1 K = -272.15 °C. Free, accurate, engineering-grade precision.",
+    "h1": "K to °C Converter"
+  },
+  "content": {
+    "intro": "Convert kelvins (K) to celsiuss (°C) instantly. Both measure temperature, so the relationship is strictly linear: each kelvin equals -272.15 celsiuss. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kelvin is equal to **-272.15 celsiuss**. To go the other way, one celsius equals **274.15 kelvins**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> celsiuss = kelvins × -272.15\n\nWorked example — converting 10 kelvins:\n\n10 × -272.15 = **-263.15 °C**.\n\nTo invert, divide by -272.15 (or multiply by 274.15).",
+    "conversion_table": "| kelvins | celsiuss |\n| --- | --- |\n| 1 K | -272.15 °C |\n| 2 K | -271.15 °C |\n| 5 K | -268.15 °C |\n| 10 K | -263.15 °C |\n| 25 K | -248.15 °C |\n| 50 K | -223.15 °C |\n| 100 K | -173.15 °C |\n| 250 K | -23.15 °C |\n| 500 K | 226.85 °C |\n| 1000 K | 726.85 °C |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 K ≈ -272.15 °C. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kelvin and Celsius both measure temperature; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many celsiuss are in 1 kelvin?\n**A:** -272.15 celsiuss.\n\n**Q:** What's the formula to convert K to °C?\n**A:** celsiuss = kelvins × -272.15.\n\n**Q:** How do I convert °C back to K?\n**A:** Multiply by 274.15 (or divide by -272.15).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this K to °C converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Celsius to Kelvin converter",
+      "href": "/c/temperature/c-to-k"
+    },
+    {
+      "anchor": "All temperature conversions",
+      "href": "/c/temperature"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "k-to-c",
+    "canonicalUrl": "https://turbounitconverter.com/c/temperature/k-to-c",
+    "category": "temperature",
+    "pageType": "pair",
+    "keywords": [
+      "kelvin to celsius",
+      "k to °c",
+      "convert kelvin to celsius",
+      "how many celsius in a kelvin",
+      "kelvin in celsius",
+      "k to °c converter",
+      "kelvin vs celsius",
+      "kelvin to celsius formula",
+      "kelvin to celsius calculator"
+    ]
+  },
+  "contentHash": "8d0640245168"
+}

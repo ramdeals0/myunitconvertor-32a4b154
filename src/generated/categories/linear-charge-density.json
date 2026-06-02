@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Linear Charge Density Converter — Convert Coulomb/meter and More",
+    "description": "Free linear charge density converter for 3+ units including Coulomb/meter, Coulomb/centimeter, Coulomb/inch. Instant, accurate, browser-based.",
+    "h1": "Linear Charge Density Converter"
+  },
+  "content": {
+    "intro": "C/m, C/cm, C/in. Convert between 3 linear charge density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for linear charge density in this tool is **Cm**; every conversion routes through it for consistency.",
+    "formula_section": "Most linear charge density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Coulomb/meter | C/m |\n| Coulomb/centimeter | C/cm |\n| Coulomb/inch | C/in |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this linear charge density converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Coulomb/meter (C/m), Coulomb/centimeter (C/cm), Coulomb/inch (C/in)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Coulomb/meter to Coulomb/centimeter",
+      "href": "/c/linear-charge-density/cm-to-ccm"
+    },
+    {
+      "anchor": "Coulomb/centimeter to Coulomb/meter",
+      "href": "/c/linear-charge-density/ccm-to-cm"
+    },
+    {
+      "anchor": "Coulomb/inch to Coulomb/meter",
+      "href": "/c/linear-charge-density/cin-to-cm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "linear-charge-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/linear-charge-density",
+    "category": "linear-charge-density",
+    "pageType": "category",
+    "keywords": [
+      "linear charge density converter",
+      "convert linear charge density"
+    ]
+  },
+  "contentHash": "9754511b8d75"
+}

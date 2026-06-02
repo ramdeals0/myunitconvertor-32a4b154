@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Angular Velocity Converter — Convert Radian/second and More",
+    "description": "Free angular velocity converter for 5+ units including Radian/second, Degree/second, Revolution/second. Instant, accurate, browser-based.",
+    "h1": "Angular Velocity Converter"
+  },
+  "content": {
+    "intro": "rad/s, deg/s, rpm and more. Convert between 5 angular velocity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for angular velocity in this tool is **radps**; every conversion routes through it for consistency.",
+    "formula_section": "Most angular velocity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Radian/second | rad/s |\n| Degree/second | °/s |\n| Revolution/second | rev/s |\n| Revolution/minute | rpm |\n| Revolution/hour | rev/h |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this angular velocity converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Radian/second (rad/s), Degree/second (°/s), Revolution/second (rev/s), Revolution/minute (rpm), Revolution/hour (rev/h)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Radian/second to Degree/second",
+      "href": "/c/velocity-angular/radps-to-degps"
+    },
+    {
+      "anchor": "Degree/second to Radian/second",
+      "href": "/c/velocity-angular/degps-to-radps"
+    },
+    {
+      "anchor": "Revolution/second to Radian/second",
+      "href": "/c/velocity-angular/revps-to-radps"
+    },
+    {
+      "anchor": "Revolution/minute to Radian/second",
+      "href": "/c/velocity-angular/rpm-to-radps"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "velocity-angular",
+    "canonicalUrl": "https://turbounitconverter.com/c/velocity-angular",
+    "category": "velocity-angular",
+    "pageType": "category",
+    "keywords": [
+      "angular velocity converter",
+      "convert angular velocity"
+    ]
+  },
+  "contentHash": "247ce39abfa6"
+}

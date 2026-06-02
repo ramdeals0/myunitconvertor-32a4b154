@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to µm Converter — Astronomical Unit to Micrometer",
+    "description": "Convert Astronomical Unit (AU) to Micrometer (µm) instantly. 1 AU = 1.495979e+17 µm. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Micrometer Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to micrometers (µm) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 1.495979e+17 micrometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **1.495979e+17 micrometers**. To go the other way, one micrometer equals **6.684587e-18 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> micrometers = astronomical units × 1.495979e+17\n\nWorked example — converting 10 astronomical units:\n\n10 × 1.495979e+17 = **1.495979e+18 µm**.\n\nTo invert, divide by 1.495979e+17 (or multiply by 6.684587e-18).",
+    "conversion_table": "| astronomical units | micrometers |\n| --- | --- |\n| 1 AU | 1.495979e+17 µm |\n| 2 AU | 2.991957e+17 µm |\n| 5 AU | 7.479894e+17 µm |\n| 10 AU | 1.495979e+18 µm |\n| 25 AU | 3.739947e+18 µm |\n| 50 AU | 7.479894e+18 µm |\n| 100 AU | 1.495979e+19 µm |\n| 250 AU | 3.739947e+19 µm |\n| 500 AU | 7.479894e+19 µm |\n| 1000 AU | 1.495979e+20 µm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 1.495979e+17 µm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Micrometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many micrometers are in 1 astronomical unit?\n**A:** 1.495979e+17 micrometers.\n\n**Q:** What's the formula to convert AU to µm?\n**A:** micrometers = astronomical units × 1.495979e+17.\n\n**Q:** How do I convert µm back to AU?\n**A:** Multiply by 6.684587e-18 (or divide by 1.495979e+17).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to µm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Micrometer to Astronomical Unit converter",
+      "href": "/c/length/um-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-um",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-um",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to micrometer",
+      "AU to µm",
+      "convert AU to µm"
+    ]
+  },
+  "contentHash": "1381dc1f0d85"
+}

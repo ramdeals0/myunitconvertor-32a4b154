@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "yd to cm Converter — Yard to Centimeter",
+    "description": "Convert Yard (yd) to Centimeter (cm) instantly. 1 yd = 91.44 cm. Free, accurate, browser-based.",
+    "h1": "Yard to Centimeter Converter"
+  },
+  "content": {
+    "intro": "Convert yards (yd) to centimeters (cm) instantly. Both measure length, so the relationship is strictly linear: each yard equals 91.44 centimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One yard is equal to **91.44 centimeters**. To go the other way, one centimeter equals **0.010936133 yards**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> centimeters = yards × 91.44\n\nWorked example — converting 10 yards:\n\n10 × 91.44 = **914.4 cm**.\n\nTo invert, divide by 91.44 (or multiply by 0.010936133).",
+    "conversion_table": "| yards | centimeters |\n| --- | --- |\n| 1 yd | 91.44 cm |\n| 2 yd | 182.88 cm |\n| 5 yd | 457.2 cm |\n| 10 yd | 914.4 cm |\n| 25 yd | 2286 cm |\n| 50 yd | 4572 cm |\n| 100 yd | 9144 cm |\n| 250 yd | 22860 cm |\n| 500 yd | 45720 cm |\n| 1000 yd | 91440 cm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 yd ≈ 91.44 cm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Yard and Centimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many centimeters are in 1 yard?\n**A:** 91.44 centimeters.\n\n**Q:** What's the formula to convert yd to cm?\n**A:** centimeters = yards × 91.44.\n\n**Q:** How do I convert cm back to yd?\n**A:** Multiply by 0.010936133 (or divide by 91.44).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this yd to cm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Centimeter to Yard converter",
+      "href": "/c/length/cm-to-yd"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "yd-to-cm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/yd-to-cm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "yard to centimeter",
+      "yd to cm",
+      "convert yd to cm"
+    ]
+  },
+  "contentHash": "e176ca827b4f"
+}

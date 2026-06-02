@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mi to ft Converter — Mile to Foot",
+    "description": "Convert Mile (mi) to Foot (ft) instantly. 1 mi = 5280 ft. Free, accurate, browser-based.",
+    "h1": "Mile to Foot Converter"
+  },
+  "content": {
+    "intro": "Convert miles (mi) to feet (ft) instantly. Both measure length, so the relationship is strictly linear: each mile equals 5280 feet. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One mile is equal to **5280 feet**. To go the other way, one foot equals **0.00018939394 miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> feet = miles × 5280\n\nWorked example — converting 10 miles:\n\n10 × 5280 = **52800 ft**.\n\nTo invert, divide by 5280 (or multiply by 0.00018939394).",
+    "conversion_table": "| miles | feet |\n| --- | --- |\n| 1 mi | 5280 ft |\n| 2 mi | 10560 ft |\n| 5 mi | 26400 ft |\n| 10 mi | 52800 ft |\n| 25 mi | 132000 ft |\n| 50 mi | 264000 ft |\n| 100 mi | 528000 ft |\n| 250 mi | 1320000 ft |\n| 500 mi | 2640000 ft |\n| 1000 mi | 5280000 ft |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mi ≈ 5280 ft. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Mile and Foot both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many feet are in 1 mile?\n**A:** 5280 feet.\n\n**Q:** What's the formula to convert mi to ft?\n**A:** feet = miles × 5280.\n\n**Q:** How do I convert ft back to mi?\n**A:** Multiply by 0.00018939394 (or divide by 5280).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mi to ft converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Foot to Mile converter",
+      "href": "/c/length/ft-to-mi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mi-to-ft",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mi-to-ft",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "mile to foot",
+      "mi to ft",
+      "convert mi to ft"
+    ]
+  },
+  "contentHash": "40e5fc7c1c95"
+}

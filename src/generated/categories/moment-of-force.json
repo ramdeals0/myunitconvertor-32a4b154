@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Moment of Force Converter — Convert Newton-meter and More",
+    "description": "Free moment of force converter for 6+ units including Newton-meter, Kilonewton-meter, Millinewton-meter. Instant, accurate, browser-based.",
+    "h1": "Moment of Force Converter"
+  },
+  "content": {
+    "intro": "Newton-meter, kgf·m, lbf·ft. Convert between 6 moment of force units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for moment of force in this tool is **Nm**; every conversion routes through it for consistency.",
+    "formula_section": "Most moment of force conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Newton-meter | N·m |\n| Kilonewton-meter | kN·m |\n| Millinewton-meter | mN·m |\n| Kilogram-force meter | kgf·m |\n| Pound-force foot | lbf·ft |\n| Pound-force inch | lbf·in |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this moment of force converter?\n**A:** It uses 6 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Newton-meter (N·m), Kilonewton-meter (kN·m), Millinewton-meter (mN·m), Kilogram-force meter (kgf·m), Pound-force foot (lbf·ft), Pound-force inch (lbf·in)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Newton-meter to Kilonewton-meter",
+      "href": "/c/moment-of-force/nm-to-knm"
+    },
+    {
+      "anchor": "Kilonewton-meter to Newton-meter",
+      "href": "/c/moment-of-force/knm-to-nm"
+    },
+    {
+      "anchor": "Millinewton-meter to Newton-meter",
+      "href": "/c/moment-of-force/mnm-to-nm"
+    },
+    {
+      "anchor": "Kilogram-force meter to Newton-meter",
+      "href": "/c/moment-of-force/kgfm-to-nm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "moment-of-force",
+    "canonicalUrl": "https://turbounitconverter.com/c/moment-of-force",
+    "category": "moment-of-force",
+    "pageType": "category",
+    "keywords": [
+      "moment of force converter",
+      "convert moment of force"
+    ]
+  },
+  "contentHash": "be114a6b83d7"
+}

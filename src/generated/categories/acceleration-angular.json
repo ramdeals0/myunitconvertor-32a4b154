@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Angular Acceleration Converter — Convert Radian/second² and More",
+    "description": "Free angular acceleration converter for 4+ units including Radian/second², Degree/second², Revolution/second². Instant, accurate, browser-based.",
+    "h1": "Angular Acceleration Converter"
+  },
+  "content": {
+    "intro": "rad/s², deg/s², rev/s². Convert between 4 angular acceleration units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for angular acceleration in this tool is **radps2**; every conversion routes through it for consistency.",
+    "formula_section": "Most angular acceleration conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Radian/second² | rad/s² |\n| Degree/second² | °/s² |\n| Revolution/second² | rev/s² |\n| Revolution/minute² | rev/min² |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this angular acceleration converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Radian/second² (rad/s²), Degree/second² (°/s²), Revolution/second² (rev/s²), Revolution/minute² (rev/min²)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Radian/second² to Degree/second²",
+      "href": "/c/acceleration-angular/radps2-to-degps2"
+    },
+    {
+      "anchor": "Degree/second² to Radian/second²",
+      "href": "/c/acceleration-angular/degps2-to-radps2"
+    },
+    {
+      "anchor": "Revolution/second² to Radian/second²",
+      "href": "/c/acceleration-angular/revps2-to-radps2"
+    },
+    {
+      "anchor": "Revolution/minute² to Radian/second²",
+      "href": "/c/acceleration-angular/revpm2-to-radps2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "acceleration-angular",
+    "canonicalUrl": "https://turbounitconverter.com/c/acceleration-angular",
+    "category": "acceleration-angular",
+    "pageType": "category",
+    "keywords": [
+      "angular acceleration converter",
+      "convert angular acceleration"
+    ]
+  },
+  "contentHash": "8563f7dc2338"
+}

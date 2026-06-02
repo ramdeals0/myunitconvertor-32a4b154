@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mm to ly Converter — Millimeter to Light Year",
+    "description": "Convert Millimeter (mm) to Light Year (ly) instantly. 1 mm = 1.057004e-19 ly. Free, accurate, browser-based.",
+    "h1": "Millimeter to Light Year Converter"
+  },
+  "content": {
+    "intro": "Convert millimeters (mm) to light years (ly) instantly. Both measure length, so the relationship is strictly linear: each millimeter equals 1.057004e-19 light years. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One millimeter is equal to **1.057004e-19 light years**. To go the other way, one light year equals **9.460700e+18 millimeters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> light years = millimeters × 1.057004e-19\n\nWorked example — converting 10 millimeters:\n\n10 × 1.057004e-19 = **1.057004e-18 ly**.\n\nTo invert, divide by 1.057004e-19 (or multiply by 9.460700e+18).",
+    "conversion_table": "| millimeters | light years |\n| --- | --- |\n| 1 mm | 1.057004e-19 ly |\n| 2 mm | 2.114008e-19 ly |\n| 5 mm | 5.285021e-19 ly |\n| 10 mm | 1.057004e-18 ly |\n| 25 mm | 2.642511e-18 ly |\n| 50 mm | 5.285021e-18 ly |\n| 100 mm | 1.057004e-17 ly |\n| 250 mm | 2.642511e-17 ly |\n| 500 mm | 5.285021e-17 ly |\n| 1000 mm | 1.057004e-16 ly |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mm ≈ 1.057004e-19 ly. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Millimeter and Light Year both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many light years are in 1 millimeter?\n**A:** 1.057004e-19 light years.\n\n**Q:** What's the formula to convert mm to ly?\n**A:** light years = millimeters × 1.057004e-19.\n\n**Q:** How do I convert ly back to mm?\n**A:** Multiply by 9.460700e+18 (or divide by 1.057004e-19).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mm to ly converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Light Year to Millimeter converter",
+      "href": "/c/length/ly-to-mm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mm-to-ly",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mm-to-ly",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "millimeter to light year",
+      "mm to ly",
+      "convert mm to ly"
+    ]
+  },
+  "contentHash": "9384a037cde9"
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "nm to m — Convert Nanometer to Meter | Turbo Unit Converter",
+    "description": "Convert Nanometer (nm) to Meter (m) instantly. 1 nm = 1.000000e-9 m. Free, accurate, engineering-grade precision.",
+    "h1": "nm to m Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to meters (m) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 1.000000e-9 meters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **1.000000e-9 meters**. To go the other way, one meter equals **1000000000 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> meters = nanometers × 1.000000e-9\n\nWorked example — converting 10 nanometers:\n\n10 × 1.000000e-9 = **1.000000e-8 m**.\n\nTo invert, divide by 1.000000e-9 (or multiply by 1000000000).",
+    "conversion_table": "| nanometers | meters |\n| --- | --- |\n| 1 nm | 1.000000e-9 m |\n| 2 nm | 2.000000e-9 m |\n| 5 nm | 5.000000e-9 m |\n| 10 nm | 1.000000e-8 m |\n| 25 nm | 2.500000e-8 m |\n| 50 nm | 5.000000e-8 m |\n| 100 nm | 1.000000e-7 m |\n| 250 nm | 2.500000e-7 m |\n| 500 nm | 5.000000e-7 m |\n| 1000 nm | 1.000000e-6 m |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 1.000000e-9 m. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Meter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many meters are in 1 nanometer?\n**A:** 1.000000e-9 meters.\n\n**Q:** What's the formula to convert nm to m?\n**A:** meters = nanometers × 1.000000e-9.\n\n**Q:** How do I convert m back to nm?\n**A:** Multiply by 1000000000 (or divide by 1.000000e-9).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to m converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter to Nanometer converter",
+      "href": "/c/length/m-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-m",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-m",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to meter",
+      "nm to m",
+      "convert nanometer to meter",
+      "how many meter in a nanometer",
+      "nanometer in meter",
+      "nm to m converter",
+      "nanometer vs meter",
+      "nanometer to meter formula",
+      "nanometer to meter calculator"
+    ]
+  },
+  "contentHash": "24f323cd979b"
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mi to in Converter — Mile to Inch",
+    "description": "Convert Mile (mi) to Inch (in) instantly. 1 mi = 63360 in. Free, accurate, browser-based.",
+    "h1": "Mile to Inch Converter"
+  },
+  "content": {
+    "intro": "Convert miles (mi) to inches (in) instantly. Both measure length, so the relationship is strictly linear: each mile equals 63360 inches. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One mile is equal to **63360 inches**. To go the other way, one inch equals **1.578283e-5 miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> inches = miles × 63360\n\nWorked example — converting 10 miles:\n\n10 × 63360 = **633600 in**.\n\nTo invert, divide by 63360 (or multiply by 1.578283e-5).",
+    "conversion_table": "| miles | inches |\n| --- | --- |\n| 1 mi | 63360 in |\n| 2 mi | 126720 in |\n| 5 mi | 316800 in |\n| 10 mi | 633600 in |\n| 25 mi | 1584000 in |\n| 50 mi | 3168000 in |\n| 100 mi | 6336000 in |\n| 250 mi | 15800000 in |\n| 500 mi | 31700000 in |\n| 1000 mi | 63400000 in |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mi ≈ 63360 in. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Mile and Inch both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many inches are in 1 mile?\n**A:** 63360 inches.\n\n**Q:** What's the formula to convert mi to in?\n**A:** inches = miles × 63360.\n\n**Q:** How do I convert in back to mi?\n**A:** Multiply by 1.578283e-5 (or divide by 63360).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mi to in converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Inch to Mile converter",
+      "href": "/c/length/in-to-mi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mi-to-in",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mi-to-in",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "mile to inch",
+      "mi to in",
+      "convert mi to in"
+    ]
+  },
+  "contentHash": "b1da7ba8d2b0"
+}

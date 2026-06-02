@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "mg to g — Convert Milligram to Gram | Turbo Unit Converter",
+    "description": "Convert Milligram (mg) to Gram (g) instantly. 1 mg = 0.001 g. Free, accurate, engineering-grade precision.",
+    "h1": "mg to g Converter"
+  },
+  "content": {
+    "intro": "Convert milligrams (mg) to grams (g) instantly. Both measure weight & mass, so the relationship is strictly linear: each milligram equals 0.001 grams. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One milligram is equal to **0.001 grams**. To go the other way, one gram equals **1000 milligrams**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> grams = milligrams × 0.001\n\nWorked example — converting 10 milligrams:\n\n10 × 0.001 = **0.01 g**.\n\nTo invert, divide by 0.001 (or multiply by 1000).",
+    "conversion_table": "| milligrams | grams |\n| --- | --- |\n| 1 mg | 0.001 g |\n| 2 mg | 0.002 g |\n| 5 mg | 0.005 g |\n| 10 mg | 0.01 g |\n| 25 mg | 0.025 g |\n| 50 mg | 0.05 g |\n| 100 mg | 0.1 g |\n| 250 mg | 0.25 g |\n| 500 mg | 0.5 g |\n| 1000 mg | 1 g |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mg ≈ 0.001 g. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Milligram and Gram both measure weight & mass; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many grams are in 1 milligram?\n**A:** 0.001 grams.\n\n**Q:** What's the formula to convert mg to g?\n**A:** grams = milligrams × 0.001.\n\n**Q:** How do I convert g back to mg?\n**A:** Multiply by 1000 (or divide by 0.001).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mg to g converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Gram to Milligram converter",
+      "href": "/c/weight/g-to-mg"
+    },
+    {
+      "anchor": "All weight & mass conversions",
+      "href": "/c/weight"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mg-to-g",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight/mg-to-g",
+    "category": "weight",
+    "pageType": "pair",
+    "keywords": [
+      "milligram to gram",
+      "mg to g",
+      "convert milligram to gram",
+      "how many gram in a milligram",
+      "milligram in gram",
+      "mg to g converter",
+      "milligram vs gram",
+      "milligram to gram formula",
+      "milligram to gram calculator"
+    ]
+  },
+  "contentHash": "057d4b65c18b"
+}

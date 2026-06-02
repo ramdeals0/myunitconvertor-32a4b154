@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "µm to km Converter — Micrometer to Kilometer",
+    "description": "Convert Micrometer (µm) to Kilometer (km) instantly. 1 µm = 1.000000e-9 km. Free, accurate, browser-based.",
+    "h1": "Micrometer to Kilometer Converter"
+  },
+  "content": {
+    "intro": "Convert micrometers (µm) to kilometers (km) instantly. Both measure length, so the relationship is strictly linear: each micrometer equals 1.000000e-9 kilometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One micrometer is equal to **1.000000e-9 kilometers**. To go the other way, one kilometer equals **1000000000 micrometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometers = micrometers × 1.000000e-9\n\nWorked example — converting 10 micrometers:\n\n10 × 1.000000e-9 = **1.000000e-8 km**.\n\nTo invert, divide by 1.000000e-9 (or multiply by 1000000000).",
+    "conversion_table": "| micrometers | kilometers |\n| --- | --- |\n| 1 µm | 1.000000e-9 km |\n| 2 µm | 2.000000e-9 km |\n| 5 µm | 5.000000e-9 km |\n| 10 µm | 1.000000e-8 km |\n| 25 µm | 2.500000e-8 km |\n| 50 µm | 5.000000e-8 km |\n| 100 µm | 1.000000e-7 km |\n| 250 µm | 2.500000e-7 km |\n| 500 µm | 5.000000e-7 km |\n| 1000 µm | 1.000000e-6 km |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 µm ≈ 1.000000e-9 km. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Micrometer and Kilometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometers are in 1 micrometer?\n**A:** 1.000000e-9 kilometers.\n\n**Q:** What's the formula to convert µm to km?\n**A:** kilometers = micrometers × 1.000000e-9.\n\n**Q:** How do I convert km back to µm?\n**A:** Multiply by 1000000000 (or divide by 1.000000e-9).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this µm to km converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer to Micrometer converter",
+      "href": "/c/length/km-to-um"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "um-to-km",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/um-to-km",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "micrometer to kilometer",
+      "µm to km",
+      "convert µm to km"
+    ]
+  },
+  "contentHash": "c08f51988384"
+}

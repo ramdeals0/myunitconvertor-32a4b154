@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "yd to pc Converter — Yard to Parsec",
+    "description": "Convert Yard (yd) to Parsec (pc) instantly. 1 yd = 2.963347e-17 pc. Free, accurate, browser-based.",
+    "h1": "Yard to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert yards (yd) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each yard equals 2.963347e-17 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One yard is equal to **2.963347e-17 parsecs**. To go the other way, one parsec equals **3.374563e+16 yards**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = yards × 2.963347e-17\n\nWorked example — converting 10 yards:\n\n10 × 2.963347e-17 = **2.963347e-16 pc**.\n\nTo invert, divide by 2.963347e-17 (or multiply by 3.374563e+16).",
+    "conversion_table": "| yards | parsecs |\n| --- | --- |\n| 1 yd | 2.963347e-17 pc |\n| 2 yd | 5.926694e-17 pc |\n| 5 yd | 1.481674e-16 pc |\n| 10 yd | 2.963347e-16 pc |\n| 25 yd | 7.408368e-16 pc |\n| 50 yd | 1.481674e-15 pc |\n| 100 yd | 2.963347e-15 pc |\n| 250 yd | 7.408368e-15 pc |\n| 500 yd | 1.481674e-14 pc |\n| 1000 yd | 2.963347e-14 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 yd ≈ 2.963347e-17 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Yard and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 yard?\n**A:** 2.963347e-17 parsecs.\n\n**Q:** What's the formula to convert yd to pc?\n**A:** parsecs = yards × 2.963347e-17.\n\n**Q:** How do I convert pc back to yd?\n**A:** Multiply by 3.374563e+16 (or divide by 2.963347e-17).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this yd to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Yard converter",
+      "href": "/c/length/pc-to-yd"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "yd-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/yd-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "yard to parsec",
+      "yd to pc",
+      "convert yd to pc"
+    ]
+  },
+  "contentHash": "e16df150c036"
+}

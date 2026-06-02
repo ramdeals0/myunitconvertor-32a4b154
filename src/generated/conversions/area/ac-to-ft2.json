@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "ac to ft² — Convert Acre to Square Foot | Turbo Unit Convert",
+    "description": "Convert Acre (ac) to Square Foot (ft²) instantly. 1 ac = 43560 ft². Free, accurate, engineering-grade precision.",
+    "h1": "ac to ft² Converter"
+  },
+  "content": {
+    "intro": "Convert acres (ac) to square foots (ft²) instantly. Both measure area, so the relationship is strictly linear: each acre equals 43560 square foots. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One acre is equal to **43560 square foots**. To go the other way, one square foot equals **2.295684e-5 acres**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> square foots = acres × 43560\n\nWorked example — converting 10 acres:\n\n10 × 43560 = **435600 ft²**.\n\nTo invert, divide by 43560 (or multiply by 2.295684e-5).",
+    "conversion_table": "| acres | square foots |\n| --- | --- |\n| 1 ac | 43560 ft² |\n| 2 ac | 87120 ft² |\n| 5 ac | 217800 ft² |\n| 10 ac | 435600 ft² |\n| 25 ac | 1089000 ft² |\n| 50 ac | 2178000 ft² |\n| 100 ac | 4356000 ft² |\n| 250 ac | 10900000 ft² |\n| 500 ac | 21800000 ft² |\n| 1000 ac | 43600000 ft² |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ac ≈ 43560 ft². For rough mental math, round to the nearest sensible digit.\n\nMind the units. Acre and Square Foot both measure area; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many square foots are in 1 acre?\n**A:** 43560 square foots.\n\n**Q:** What's the formula to convert ac to ft²?\n**A:** square foots = acres × 43560.\n\n**Q:** How do I convert ft² back to ac?\n**A:** Multiply by 2.295684e-5 (or divide by 43560).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ac to ft² converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Square Foot to Acre converter",
+      "href": "/c/area/ft2-to-ac"
+    },
+    {
+      "anchor": "All area conversions",
+      "href": "/c/area"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ac-to-ft2",
+    "canonicalUrl": "https://turbounitconverter.com/c/area/ac-to-ft2",
+    "category": "area",
+    "pageType": "pair",
+    "keywords": [
+      "acre to square foot",
+      "ac to ft²",
+      "convert acre to square foot",
+      "how many square foot in a acre",
+      "acre in square foot",
+      "ac to ft² converter",
+      "acre vs square foot",
+      "acre to square foot formula",
+      "acre to square foot calculator"
+    ]
+  },
+  "contentHash": "b26c14772c67"
+}

@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Electric Charge Converter — Convert Coulomb and More",
+    "description": "Free electric charge converter for 8+ units including Coulomb, Millicoulomb, Microcoulomb. Instant, accurate, browser-based.",
+    "h1": "Electric Charge Converter"
+  },
+  "content": {
+    "intro": "Coulomb, ampere-hour, electron charge. Convert between 8 electric charge units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electric charge in this tool is **C**; every conversion routes through it for consistency.",
+    "formula_section": "Most electric charge conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Coulomb | C |\n| Millicoulomb | mC |\n| Microcoulomb | µC |\n| Nanocoulomb | nC |\n| Kilocoulomb | kC |\n| Ampere-hour | Ah |\n| Milliampere-hour | mAh |\n| Electron charge | e |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electric charge converter?\n**A:** It uses 8 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Coulomb (C), Millicoulomb (mC), Microcoulomb (µC), Nanocoulomb (nC), Kilocoulomb (kC), Ampere-hour (Ah), Milliampere-hour (mAh), Electron charge (e)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Coulomb to Millicoulomb",
+      "href": "/c/charge/c-to-mc"
+    },
+    {
+      "anchor": "Millicoulomb to Coulomb",
+      "href": "/c/charge/mc-to-c"
+    },
+    {
+      "anchor": "Microcoulomb to Coulomb",
+      "href": "/c/charge/uc-to-c"
+    },
+    {
+      "anchor": "Nanocoulomb to Coulomb",
+      "href": "/c/charge/nc-to-c"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "charge",
+    "canonicalUrl": "https://turbounitconverter.com/c/charge",
+    "category": "charge",
+    "pageType": "category",
+    "keywords": [
+      "electric charge converter",
+      "convert electric charge"
+    ]
+  },
+  "contentHash": "c4e92f1253a7"
+}

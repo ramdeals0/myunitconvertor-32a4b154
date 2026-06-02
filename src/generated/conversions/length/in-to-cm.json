@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "in to cm — Convert Inch to Centimeter | Turbo Unit Converter",
+    "description": "Convert Inch (in) to Centimeter (cm) instantly. 1 in = 2.54 cm. Free, accurate, engineering-grade precision.",
+    "h1": "in to cm Converter"
+  },
+  "content": {
+    "intro": "Convert inches (in) to centimeters (cm) instantly. Both measure length, so the relationship is strictly linear: each inch equals 2.54 centimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One inch is equal to **2.54 centimeters**. To go the other way, one centimeter equals **0.39370079 inches**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> centimeters = inches × 2.54\n\nWorked example — converting 10 inches:\n\n10 × 2.54 = **25.4 cm**.\n\nTo invert, divide by 2.54 (or multiply by 0.39370079).",
+    "conversion_table": "| inches | centimeters |\n| --- | --- |\n| 1 in | 2.54 cm |\n| 2 in | 5.08 cm |\n| 5 in | 12.7 cm |\n| 10 in | 25.4 cm |\n| 25 in | 63.5 cm |\n| 50 in | 127 cm |\n| 100 in | 254 cm |\n| 250 in | 635 cm |\n| 500 in | 1270 cm |\n| 1000 in | 2540 cm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 in ≈ 2.54 cm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Inch and Centimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many centimeters are in 1 inch?\n**A:** 2.54 centimeters.\n\n**Q:** What's the formula to convert in to cm?\n**A:** centimeters = inches × 2.54.\n\n**Q:** How do I convert cm back to in?\n**A:** Multiply by 0.39370079 (or divide by 2.54).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this in to cm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Centimeter to Inch converter",
+      "href": "/c/length/cm-to-in"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "in-to-cm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/in-to-cm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "inch to centimeter",
+      "in to cm",
+      "convert inch to centimeter",
+      "how many centimeter in a inch",
+      "inch in centimeter",
+      "in to cm converter",
+      "inch vs centimeter",
+      "inch to centimeter formula",
+      "inch to centimeter calculator"
+    ]
+  },
+  "contentHash": "e86c75aa40f5"
+}

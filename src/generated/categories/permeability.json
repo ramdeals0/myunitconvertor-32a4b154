@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Permeability Converter — Convert Kilogram/(Pa·s·m²) and More",
+    "description": "Free permeability converter for 3+ units including Kilogram/(Pa·s·m²), Perm (0°C), Perm·inch (0°C). Instant, accurate, browser-based.",
+    "h1": "Permeability Converter"
+  },
+  "content": {
+    "intro": "kg/(Pa·s·m²) and related units. Convert between 3 permeability units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for permeability in this tool is **kgPasm2**; every conversion routes through it for consistency.",
+    "formula_section": "Most permeability conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram/(Pa·s·m²) | kg/(Pa·s·m²) |\n| Perm (0°C) | perm |\n| Perm·inch (0°C) | perm·in |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this permeability converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram/(Pa·s·m²) (kg/(Pa·s·m²)), Perm (0°C) (perm), Perm·inch (0°C) (perm·in)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilogram/(Pa·s·m²) to Perm (0°C)",
+      "href": "/c/permeability/kgpasm2-to-permsi"
+    },
+    {
+      "anchor": "Perm (0°C) to Kilogram/(Pa·s·m²)",
+      "href": "/c/permeability/permsi-to-kgpasm2"
+    },
+    {
+      "anchor": "Perm·inch (0°C) to Kilogram/(Pa·s·m²)",
+      "href": "/c/permeability/perminsi-to-kgpasm2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "permeability",
+    "canonicalUrl": "https://turbounitconverter.com/c/permeability",
+    "category": "permeability",
+    "pageType": "category",
+    "keywords": [
+      "permeability converter",
+      "convert permeability"
+    ]
+  },
+  "contentHash": "6e510e25a943"
+}

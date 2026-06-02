@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nm to pc Converter — Nanometer to Parsec",
+    "description": "Convert Nanometer (nm) to Parsec (pc) instantly. 1 nm = 3.240756e-26 pc. Free, accurate, browser-based.",
+    "h1": "Nanometer to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 3.240756e-26 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **3.240756e-26 parsecs**. To go the other way, one parsec equals **3.085700e+25 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = nanometers × 3.240756e-26\n\nWorked example — converting 10 nanometers:\n\n10 × 3.240756e-26 = **3.240756e-25 pc**.\n\nTo invert, divide by 3.240756e-26 (or multiply by 3.085700e+25).",
+    "conversion_table": "| nanometers | parsecs |\n| --- | --- |\n| 1 nm | 3.240756e-26 pc |\n| 2 nm | 6.481511e-26 pc |\n| 5 nm | 1.620378e-25 pc |\n| 10 nm | 3.240756e-25 pc |\n| 25 nm | 8.101889e-25 pc |\n| 50 nm | 1.620378e-24 pc |\n| 100 nm | 3.240756e-24 pc |\n| 250 nm | 8.101889e-24 pc |\n| 500 nm | 1.620378e-23 pc |\n| 1000 nm | 3.240756e-23 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 3.240756e-26 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 nanometer?\n**A:** 3.240756e-26 parsecs.\n\n**Q:** What's the formula to convert nm to pc?\n**A:** parsecs = nanometers × 3.240756e-26.\n\n**Q:** How do I convert pc back to nm?\n**A:** Multiply by 3.085700e+25 (or divide by 3.240756e-26).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Nanometer converter",
+      "href": "/c/length/pc-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to parsec",
+      "nm to pc",
+      "convert nm to pc"
+    ]
+  },
+  "contentHash": "b6a97692a02b"
+}

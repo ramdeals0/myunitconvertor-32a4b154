@@ -6,6 +6,13 @@ import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
+import {
+  getGeneratedPair,
+  MdParagraphs,
+  MdBulletList,
+  MdTable,
+  MdFaq,
+} from "@/lib/converters/generatedContent";
 
 function parsePair(pair: string): [string, string] {
   const parts = pair.split("-to-");
@@ -26,12 +33,16 @@ export default function PairPage() {
   const inverse = convert(category, 1, t.id, f.id);
 
   // pSEO overrides from the build-time CSV grid (by category + slug).
-  const pseo = getPseoOverride(category.id, `${f.id}-to-${t.id}`);
-  const title = pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
-  const desc = (pseo?.metaDescription ||
+  const slug = `${f.id}-to-${t.id}`;
+  const pseo = getPseoOverride(category.id, slug);
+  // Cached long-form JSON written by scripts/generate-pseo.ts (may be undefined for non-launch pairs).
+  const gen = getGeneratedPair(category.id, slug);
+
+  const title = gen?.meta.title || pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
+  const desc = (gen?.meta.description || pseo?.metaDescription ||
     `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`
   ).slice(0, 160);
-  const heading = pseo?.h1 || `${f.name} to ${t.name}`;
+  const heading = gen?.meta.h1 || pseo?.h1 || `${f.name} to ${t.name}`;
   const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
   const catUrl = `https://turbounitconverter.com/c/${category.id}`;
 
@@ -104,6 +115,17 @@ export default function PairPage() {
             description: `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) using the exact factor ${formatResult(factor)}.`,
             step: howToSteps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
           },
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: `${f.name} to ${t.name} Converter`,
+            url,
+            applicationCategory: "UtilitiesApplication",
+            operatingSystem: "Any (Web)",
+            browserRequirements: "Requires JavaScript. Modern browser.",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+            description: desc,
+          },
         ]}
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
@@ -132,6 +154,87 @@ export default function PairPage() {
 
         <AdBanner className="mt-10" />
 
+        {gen ? (
+          <>
+            <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
+              <h2 className="text-xl md:text-2xl font-semibold mb-3">
+                About {f.name.toLowerCase()} to {t.name.toLowerCase()}
+              </h2>
+              <MdParagraphs text={gen.content.intro} />
+              <div className="mt-4">
+                <MdParagraphs text={gen.content.result_section} />
+              </div>
+            </section>
+
+            <section className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-3">
+                  Formula: {f.name.toLowerCase()} → {t.name.toLowerCase()}
+                </h2>
+                <MdParagraphs text={gen.content.formula_section} />
+              </div>
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-4">Frequently asked questions</h2>
+                <MdFaq text={gen.content.faq} />
+              </div>
+            </section>
+
+            <section className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-surface-elevated border border-border rounded-xl p-6">
+                <h2 className="font-semibold mb-3">{f.name} → {t.name} table</h2>
+                <MdTable text={gen.content.conversion_table} />
+              </div>
+              <div className="bg-surface-elevated border border-border rounded-xl p-6">
+                <h2 className="font-semibold mb-3">Reverse: {t.name} → {f.name}</h2>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Multiply {t.name.toLowerCase()} by{" "}
+                  <span className="font-mono-num text-foreground font-semibold">{formatResult(inverse)}</span> to get {f.name.toLowerCase()}.
+                </p>
+                <table className="w-full text-sm">
+                  <tbody className="divide-y divide-border">
+                    {examples.map((v) => (
+                      <tr key={v}>
+                        <td className="py-2 font-mono-num">{v} {t.symbol}</td>
+                        <td className="py-2 text-right font-mono-num text-primary font-semibold">
+                          {formatResult(convert(category, v, t.id, f.id))} {f.symbol}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-4">Common use cases</h2>
+                <MdBulletList text={gen.content.use_cases} />
+              </div>
+              <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <h2 className="text-lg font-semibold mb-4">Tips</h2>
+                <MdParagraphs text={gen.content.tips} />
+              </div>
+            </section>
+
+            <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+              <h2 className="text-lg font-semibold mb-4">
+                Step-by-step: convert {f.name.toLowerCase()} to {t.name.toLowerCase()}
+              </h2>
+              <ol className="space-y-3">
+                {howToSteps.map((s, i) => (
+                  <li key={s.name} className="flex gap-3">
+                    <span className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">{i + 1}</span>
+                    <div>
+                      <div className="text-sm font-semibold">{s.name}</div>
+                      <div className="text-sm text-muted-foreground">{s.text}</div>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          </>
+        ) : (
+          <>
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About {f.name.toLowerCase()} to {t.name.toLowerCase()} conversion</h2>
           <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -251,6 +354,9 @@ export default function PairPage() {
             The same approach works for any value — the relationship between {f.name.toLowerCase()} and {t.name.toLowerCase()} is strictly linear.
           </p>
         </section>
+          </>
+        )}
+
 
         {(() => {
           const currentKey = `${category.id}/${f.id}-to-${t.id}`;

@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Illumination Converter — Convert Lux and More",
+    "description": "Free illumination converter for 4+ units including Lux, Phot, Footcandle. Instant, accurate, browser-based.",
+    "h1": "Illumination Converter"
+  },
+  "content": {
+    "intro": "Lux, phot, footcandle. Convert between 4 illumination units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for illumination in this tool is **lx**; every conversion routes through it for consistency.",
+    "formula_section": "Most illumination conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Lux | lx |\n| Phot | ph |\n| Footcandle | fc |\n| Nox | nox |",
+    "use_cases": "- Photography exposure planning across lumen and lux references.\n- Workspace lighting design to meet ergonomic targets.\n- Display brightness and ambient-light comparisons.\n- Plant-grow lighting setups.\n- Stage and event lighting design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this illumination converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Lux (lx), Phot (ph), Footcandle (fc), Nox (nox)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Lux to Phot",
+      "href": "/c/illumination/lx-to-ph"
+    },
+    {
+      "anchor": "Phot to Lux",
+      "href": "/c/illumination/ph-to-lx"
+    },
+    {
+      "anchor": "Footcandle to Lux",
+      "href": "/c/illumination/fc-to-lx"
+    },
+    {
+      "anchor": "Nox to Lux",
+      "href": "/c/illumination/nox-to-lx"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "illumination",
+    "canonicalUrl": "https://turbounitconverter.com/c/illumination",
+    "category": "illumination",
+    "pageType": "category",
+    "keywords": [
+      "illumination converter",
+      "convert illumination"
+    ]
+  },
+  "contentHash": "9aed6603d1d9"
+}

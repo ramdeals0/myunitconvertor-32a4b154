@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to ft Converter — Astronomical Unit to Foot",
+    "description": "Convert Astronomical Unit (AU) to Foot (ft) instantly. 1 AU = 4.908067e+11 ft. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Foot Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to feet (ft) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 4.908067e+11 feet. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **4.908067e+11 feet**. To go the other way, one foot equals **2.037462e-12 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> feet = astronomical units × 4.908067e+11\n\nWorked example — converting 10 astronomical units:\n\n10 × 4.908067e+11 = **4.908067e+12 ft**.\n\nTo invert, divide by 4.908067e+11 (or multiply by 2.037462e-12).",
+    "conversion_table": "| astronomical units | feet |\n| --- | --- |\n| 1 AU | 4.908067e+11 ft |\n| 2 AU | 9.816133e+11 ft |\n| 5 AU | 2.454033e+12 ft |\n| 10 AU | 4.908067e+12 ft |\n| 25 AU | 1.227017e+13 ft |\n| 50 AU | 2.454033e+13 ft |\n| 100 AU | 4.908067e+13 ft |\n| 250 AU | 1.227017e+14 ft |\n| 500 AU | 2.454033e+14 ft |\n| 1000 AU | 4.908067e+14 ft |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 4.908067e+11 ft. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Foot both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many feet are in 1 astronomical unit?\n**A:** 4.908067e+11 feet.\n\n**Q:** What's the formula to convert AU to ft?\n**A:** feet = astronomical units × 4.908067e+11.\n\n**Q:** How do I convert ft back to AU?\n**A:** Multiply by 2.037462e-12 (or divide by 4.908067e+11).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to ft converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Foot to Astronomical Unit converter",
+      "href": "/c/length/ft-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-ft",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-ft",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to foot",
+      "AU to ft",
+      "convert AU to ft"
+    ]
+  },
+  "contentHash": "fbe67f0e97fa"
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Heat Transfer Coefficient Converter — Convert Watt/(m²·K) and Mor",
+    "description": "Free heat transfer coefficient converter for 3+ units including Watt/(m²·K), cal/(s·cm²·°C), BTU/(h·ft²·°F). Instant, accurate, browser-based.",
+    "h1": "Heat Transfer Coefficient Converter"
+  },
+  "content": {
+    "intro": "W/(m²·K), BTU/(h·ft²·°F). Convert between 3 heat transfer coefficient units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for heat transfer coefficient in this tool is **Wm2K**; every conversion routes through it for consistency.",
+    "formula_section": "Most heat transfer coefficient conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Watt/(m²·K) | W/(m²·K) |\n| cal/(s·cm²·°C) | cal/(s·cm²·°C) |\n| BTU/(h·ft²·°F) | BTU/(h·ft²·°F) |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this heat transfer coefficient converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Watt/(m²·K) (W/(m²·K)), cal/(s·cm²·°C) (cal/(s·cm²·°C)), BTU/(h·ft²·°F) (BTU/(h·ft²·°F))."
+  },
+  "internal_links": [
+    {
+      "anchor": "Watt/(m²·K) to cal/(s·cm²·°C)",
+      "href": "/c/heat-transfer-coefficient/wm2k-to-calscm2c"
+    },
+    {
+      "anchor": "cal/(s·cm²·°C) to Watt/(m²·K)",
+      "href": "/c/heat-transfer-coefficient/calscm2c-to-wm2k"
+    },
+    {
+      "anchor": "BTU/(h·ft²·°F) to Watt/(m²·K)",
+      "href": "/c/heat-transfer-coefficient/btuhft2f-to-wm2k"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "heat-transfer-coefficient",
+    "canonicalUrl": "https://turbounitconverter.com/c/heat-transfer-coefficient",
+    "category": "heat-transfer-coefficient",
+    "pageType": "category",
+    "keywords": [
+      "heat transfer coefficient converter",
+      "convert heat transfer coefficient"
+    ]
+  },
+  "contentHash": "b02ae6ee6b53"
+}

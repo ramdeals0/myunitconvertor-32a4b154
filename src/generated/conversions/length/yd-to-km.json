@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "yd to km Converter — Yard to Kilometer",
+    "description": "Convert Yard (yd) to Kilometer (km) instantly. 1 yd = 0.0009144 km. Free, accurate, browser-based.",
+    "h1": "Yard to Kilometer Converter"
+  },
+  "content": {
+    "intro": "Convert yards (yd) to kilometers (km) instantly. Both measure length, so the relationship is strictly linear: each yard equals 0.0009144 kilometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One yard is equal to **0.0009144 kilometers**. To go the other way, one kilometer equals **1093.613 yards**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometers = yards × 0.0009144\n\nWorked example — converting 10 yards:\n\n10 × 0.0009144 = **0.009144 km**.\n\nTo invert, divide by 0.0009144 (or multiply by 1093.613).",
+    "conversion_table": "| yards | kilometers |\n| --- | --- |\n| 1 yd | 0.0009144 km |\n| 2 yd | 0.0018288 km |\n| 5 yd | 0.004572 km |\n| 10 yd | 0.009144 km |\n| 25 yd | 0.02286 km |\n| 50 yd | 0.04572 km |\n| 100 yd | 0.09144 km |\n| 250 yd | 0.2286 km |\n| 500 yd | 0.4572 km |\n| 1000 yd | 0.9144 km |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 yd ≈ 0.0009144 km. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Yard and Kilometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometers are in 1 yard?\n**A:** 0.0009144 kilometers.\n\n**Q:** What's the formula to convert yd to km?\n**A:** kilometers = yards × 0.0009144.\n\n**Q:** How do I convert km back to yd?\n**A:** Multiply by 1093.613 (or divide by 0.0009144).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this yd to km converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer to Yard converter",
+      "href": "/c/length/km-to-yd"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "yd-to-km",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/yd-to-km",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "yard to kilometer",
+      "yd to km",
+      "convert yd to km"
+    ]
+  },
+  "contentHash": "88cd2ba276c0"
+}

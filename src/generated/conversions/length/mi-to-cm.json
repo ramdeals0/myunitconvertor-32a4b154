@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mi to cm Converter — Mile to Centimeter",
+    "description": "Convert Mile (mi) to Centimeter (cm) instantly. 1 mi = 160930 cm. Free, accurate, browser-based.",
+    "h1": "Mile to Centimeter Converter"
+  },
+  "content": {
+    "intro": "Convert miles (mi) to centimeters (cm) instantly. Both measure length, so the relationship is strictly linear: each mile equals 160930 centimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One mile is equal to **160930 centimeters**. To go the other way, one centimeter equals **6.213712e-6 miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> centimeters = miles × 160930\n\nWorked example — converting 10 miles:\n\n10 × 160930 = **1609000 cm**.\n\nTo invert, divide by 160930 (or multiply by 6.213712e-6).",
+    "conversion_table": "| miles | centimeters |\n| --- | --- |\n| 1 mi | 160930 cm |\n| 2 mi | 321870 cm |\n| 5 mi | 804670 cm |\n| 10 mi | 1609000 cm |\n| 25 mi | 4023000 cm |\n| 50 mi | 8047000 cm |\n| 100 mi | 16100000 cm |\n| 250 mi | 40200000 cm |\n| 500 mi | 80500000 cm |\n| 1000 mi | 160000000 cm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mi ≈ 160930 cm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Mile and Centimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many centimeters are in 1 mile?\n**A:** 160930 centimeters.\n\n**Q:** What's the formula to convert mi to cm?\n**A:** centimeters = miles × 160930.\n\n**Q:** How do I convert cm back to mi?\n**A:** Multiply by 6.213712e-6 (or divide by 160930).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mi to cm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Centimeter to Mile converter",
+      "href": "/c/length/cm-to-mi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mi-to-cm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mi-to-cm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "mile to centimeter",
+      "mi to cm",
+      "convert mi to cm"
+    ]
+  },
+  "contentHash": "3ad5673163b9"
+}

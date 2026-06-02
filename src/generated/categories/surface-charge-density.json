@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Surface Charge Density Converter — Convert Coulomb/m² and More",
+    "description": "Free surface charge density converter for 3+ units including Coulomb/m², Coulomb/cm², Coulomb/in². Instant, accurate, browser-based.",
+    "h1": "Surface Charge Density Converter"
+  },
+  "content": {
+    "intro": "C/m², C/cm², C/in². Convert between 3 surface charge density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for surface charge density in this tool is **Cm2**; every conversion routes through it for consistency.",
+    "formula_section": "Most surface charge density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Coulomb/m² | C/m² |\n| Coulomb/cm² | C/cm² |\n| Coulomb/in² | C/in² |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this surface charge density converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Coulomb/m² (C/m²), Coulomb/cm² (C/cm²), Coulomb/in² (C/in²)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Coulomb/m² to Coulomb/cm²",
+      "href": "/c/surface-charge-density/cm2-to-ccm2"
+    },
+    {
+      "anchor": "Coulomb/cm² to Coulomb/m²",
+      "href": "/c/surface-charge-density/ccm2-to-cm2"
+    },
+    {
+      "anchor": "Coulomb/in² to Coulomb/m²",
+      "href": "/c/surface-charge-density/cin2-to-cm2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "surface-charge-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/surface-charge-density",
+    "category": "surface-charge-density",
+    "pageType": "category",
+    "keywords": [
+      "surface charge density converter",
+      "convert surface charge density"
+    ]
+  },
+  "contentHash": "2246e40150de"
+}

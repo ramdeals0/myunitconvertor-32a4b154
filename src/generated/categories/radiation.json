@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Radiation Dose Equivalent Converter — Convert Sievert and More",
+    "description": "Free radiation dose equivalent converter for 5+ units including Sievert, Millisievert, Microsievert. Instant, accurate, browser-based.",
+    "h1": "Radiation Dose Equivalent Converter"
+  },
+  "content": {
+    "intro": "Sievert, rem. Convert between 5 radiation dose equivalent units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for radiation dose equivalent in this tool is **Sv**; every conversion routes through it for consistency.",
+    "formula_section": "Most radiation dose equivalent conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Sievert | Sv |\n| Millisievert | mSv |\n| Microsievert | µSv |\n| Rem | rem |\n| Millirem | mrem |",
+    "use_cases": "- Medical imaging dose tracking.\n- Radiation protection calculations.\n- Material activity assays.\n- Lab radiation source labeling.\n- Industrial NDT inspections.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this radiation dose equivalent converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Sievert (Sv), Millisievert (mSv), Microsievert (µSv), Rem (rem), Millirem (mrem)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Sievert to Millisievert",
+      "href": "/c/radiation/sv-to-msv"
+    },
+    {
+      "anchor": "Millisievert to Sievert",
+      "href": "/c/radiation/msv-to-sv"
+    },
+    {
+      "anchor": "Microsievert to Sievert",
+      "href": "/c/radiation/usv-to-sv"
+    },
+    {
+      "anchor": "Rem to Sievert",
+      "href": "/c/radiation/rem-to-sv"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "radiation",
+    "canonicalUrl": "https://turbounitconverter.com/c/radiation",
+    "category": "radiation",
+    "pageType": "category",
+    "keywords": [
+      "radiation dose equivalent converter",
+      "convert radiation dose equivalent"
+    ]
+  },
+  "contentHash": "497fe7994a90"
+}

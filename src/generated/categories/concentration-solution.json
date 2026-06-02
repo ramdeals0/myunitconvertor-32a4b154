@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Solution Concentration Converter — Convert Kilogram/m³ and More",
+    "description": "Free solution concentration converter for 5+ units including Kilogram/m³, Gram/liter, Milligram/liter. Instant, accurate, browser-based.",
+    "h1": "Solution Concentration Converter"
+  },
+  "content": {
+    "intro": "kg/m³, g/L, mg/L. Convert between 5 solution concentration units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for solution concentration in this tool is **kgm3**; every conversion routes through it for consistency.",
+    "formula_section": "Most solution concentration conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram/m³ | kg/m³ |\n| Gram/liter | g/L |\n| Milligram/liter | mg/L |\n| Parts per million | ppm |\n| Ounce/gallon (US) | oz/gal |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this solution concentration converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram/m³ (kg/m³), Gram/liter (g/L), Milligram/liter (mg/L), Parts per million (ppm), Ounce/gallon (US) (oz/gal)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilogram/m³ to Gram/liter",
+      "href": "/c/concentration-solution/kgm3-to-gl"
+    },
+    {
+      "anchor": "Gram/liter to Kilogram/m³",
+      "href": "/c/concentration-solution/gl-to-kgm3"
+    },
+    {
+      "anchor": "Milligram/liter to Kilogram/m³",
+      "href": "/c/concentration-solution/mgl-to-kgm3"
+    },
+    {
+      "anchor": "Parts per million to Kilogram/m³",
+      "href": "/c/concentration-solution/ppm-to-kgm3"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "concentration-solution",
+    "canonicalUrl": "https://turbounitconverter.com/c/concentration-solution",
+    "category": "concentration-solution",
+    "pageType": "category",
+    "keywords": [
+      "solution concentration converter",
+      "convert solution concentration"
+    ]
+  },
+  "contentHash": "1edf5f9f30f6"
+}

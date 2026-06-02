@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Area Converter — Convert Square Meter and More",
+    "description": "Free area converter for 10+ units including Square Meter, Square Kilometer, Square Centimeter. Instant, accurate, browser-based.",
+    "h1": "Area Converter"
+  },
+  "content": {
+    "intro": "Square meters, acres, hectares, square feet. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 10 area units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for area in this tool is **m2**; every conversion routes through it for consistency.",
+    "formula_section": "Most area conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Square Meter | m² |\n| Square Kilometer | km² |\n| Square Centimeter | cm² |\n| Square Millimeter | mm² |\n| Hectare | ha |\n| Acre | ac |\n| Square Foot | ft² |\n| Square Inch | in² |\n| Square Yard | yd² |\n| Square Mile | mi² |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this area converter?\n**A:** It uses 10 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Square Meter (m²), Square Kilometer (km²), Square Centimeter (cm²), Square Millimeter (mm²), Hectare (ha), Acre (ac), Square Foot (ft²), Square Inch (in²), Square Yard (yd²), Square Mile (mi²)."
+  },
+  "internal_links": [
+    {
+      "anchor": "ft² to m² Converter",
+      "href": "/c/area/ft2-to-m2"
+    },
+    {
+      "anchor": "m² to ft² Converter",
+      "href": "/c/area/m2-to-ft2"
+    },
+    {
+      "anchor": "ac to ft² Converter",
+      "href": "/c/area/ac-to-ft2"
+    },
+    {
+      "anchor": "ft² to ac Converter",
+      "href": "/c/area/ft2-to-ac"
+    },
+    {
+      "anchor": "ha to ac Converter",
+      "href": "/c/area/ha-to-ac"
+    },
+    {
+      "anchor": "ac to ha Converter",
+      "href": "/c/area/ac-to-ha"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "area",
+    "canonicalUrl": "https://turbounitconverter.com/c/area",
+    "category": "area",
+    "pageType": "category",
+    "keywords": [
+      "area converter",
+      "convert area"
+    ]
+  },
+  "contentHash": "412e0ba812a8"
+}

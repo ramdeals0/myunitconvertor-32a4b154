@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "qt to gal — Convert US Quart to US Gallon | Turbo Unit Conve",
+    "description": "Convert US Quart (qt) to US Gallon (gal) instantly. 1 qt = 0.25 gal. Free, accurate, engineering-grade precision.",
+    "h1": "qt to gal Converter"
+  },
+  "content": {
+    "intro": "Convert us quarts (qt) to us gallons (gal) instantly. Both measure volume, so the relationship is strictly linear: each us quart equals 0.25 us gallons. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One us quart is equal to **0.25 us gallons**. To go the other way, one us gallon equals **4 us quarts**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> us gallons = us quarts × 0.25\n\nWorked example — converting 10 us quarts:\n\n10 × 0.25 = **2.5 gal**.\n\nTo invert, divide by 0.25 (or multiply by 4).",
+    "conversion_table": "| us quarts | us gallons |\n| --- | --- |\n| 1 qt | 0.25 gal |\n| 2 qt | 0.5 gal |\n| 5 qt | 1.25 gal |\n| 10 qt | 2.5 gal |\n| 25 qt | 6.25 gal |\n| 50 qt | 12.5 gal |\n| 100 qt | 25 gal |\n| 250 qt | 62.5 gal |\n| 500 qt | 125 gal |\n| 1000 qt | 250 gal |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 qt ≈ 0.25 gal. For rough mental math, round to the nearest sensible digit.\n\nMind the units. US Quart and US Gallon both measure volume; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many us gallons are in 1 us quart?\n**A:** 0.25 us gallons.\n\n**Q:** What's the formula to convert qt to gal?\n**A:** us gallons = us quarts × 0.25.\n\n**Q:** How do I convert gal back to qt?\n**A:** Multiply by 4 (or divide by 0.25).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this qt to gal converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "US Gallon to US Quart converter",
+      "href": "/c/volume/gal_us-to-qt"
+    },
+    {
+      "anchor": "All volume conversions",
+      "href": "/c/volume"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "qt-to-gal_us",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume/qt-to-gal_us",
+    "category": "volume",
+    "pageType": "pair",
+    "keywords": [
+      "us quart to us gallon",
+      "qt to gal",
+      "convert us quart to us gallon",
+      "how many us gallon in a us quart",
+      "us quart in us gallon",
+      "qt to gal converter",
+      "us quart vs us gallon",
+      "us quart to us gallon formula",
+      "us quart to us gallon calculator"
+    ]
+  },
+  "contentHash": "c5ae9e4159db"
+}

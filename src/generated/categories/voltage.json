@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Electric Potential Converter — Convert Volt and More",
+    "description": "Free electric potential converter for 4+ units including Volt, Millivolt, Kilovolt. Instant, accurate, browser-based.",
+    "h1": "Electric Potential Converter"
+  },
+  "content": {
+    "intro": "Volts, millivolts, kilovolts. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 4 electric potential units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electric potential in this tool is **V**; every conversion routes through it for consistency.",
+    "formula_section": "Most electric potential conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Volt | V |\n| Millivolt | mV |\n| Kilovolt | kV |\n| Megavolt | MV |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electric potential converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Volt (V), Millivolt (mV), Kilovolt (kV), Megavolt (MV)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Volt to Millivolt",
+      "href": "/c/voltage/v-to-mv"
+    },
+    {
+      "anchor": "Millivolt to Volt",
+      "href": "/c/voltage/mv-to-v"
+    },
+    {
+      "anchor": "Kilovolt to Volt",
+      "href": "/c/voltage/kv-to-v"
+    },
+    {
+      "anchor": "Megavolt to Volt",
+      "href": "/c/voltage/mv-to-v"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "voltage",
+    "canonicalUrl": "https://turbounitconverter.com/c/voltage",
+    "category": "voltage",
+    "pageType": "category",
+    "keywords": [
+      "electric potential converter",
+      "convert electric potential"
+    ]
+  },
+  "contentHash": "f56b64ab04ff"
+}

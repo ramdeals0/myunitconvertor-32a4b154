@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "SI Prefixes Converter — Convert One and More",
+    "description": "Free si prefixes converter for 17+ units including One, Deca, Hecto. Instant, accurate, browser-based.",
+    "h1": "SI Prefixes Converter"
+  },
+  "content": {
+    "intro": "Kilo, mega, giga, milli, micro and more. Convert between 17 si prefixes units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for si prefixes in this tool is **one**; every conversion routes through it for consistency.",
+    "formula_section": "Most si prefixes conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| One | 1 |\n| Deca | da |\n| Hecto | h |\n| Kilo | k |\n| Mega | M |\n| Giga | G |\n| Tera | T |\n| Peta | P |\n| Exa | E |\n| Deci | d |\n| Centi | c |\n| Milli | m |\n| Micro | µ |\n| Nano | n |\n| Pico | p |\n| Femto | f |\n| Atto | a |",
+    "use_cases": "- Engineering reference and cross-discipline calculations.\n- Scientific paper unit harmonization.\n- International standards compliance.\n- Procurement and supplier negotiation.\n- Education and tutoring contexts.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this si prefixes converter?\n**A:** It uses 17 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** One (1), Deca (da), Hecto (h), Kilo (k), Mega (M), Giga (G), Tera (T), Peta (P), Exa (E), Deci (d), Centi (c), Milli (m), Micro (µ), Nano (n), Pico (p), Femto (f), Atto (a)."
+  },
+  "internal_links": [
+    {
+      "anchor": "One to Deca",
+      "href": "/c/prefixes/one-to-deca"
+    },
+    {
+      "anchor": "Deca to One",
+      "href": "/c/prefixes/deca-to-one"
+    },
+    {
+      "anchor": "Hecto to One",
+      "href": "/c/prefixes/hecto-to-one"
+    },
+    {
+      "anchor": "Kilo to One",
+      "href": "/c/prefixes/kilo-to-one"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "prefixes",
+    "canonicalUrl": "https://turbounitconverter.com/c/prefixes",
+    "category": "prefixes",
+    "pageType": "category",
+    "keywords": [
+      "si prefixes converter",
+      "convert si prefixes"
+    ]
+  },
+  "contentHash": "750baac255ff"
+}

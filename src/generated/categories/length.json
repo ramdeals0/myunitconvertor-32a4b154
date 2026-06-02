@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Length Converter — Convert Meter and More",
+    "description": "Free length converter for 14+ units including Meter, Kilometer, Centimeter. Instant, accurate, browser-based.",
+    "h1": "Length Converter"
+  },
+  "content": {
+    "intro": "Convert meters, feet, inches, miles, kilometers and more. Convert between 14 length units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for length in this tool is **m**; every conversion routes through it for consistency.",
+    "formula_section": "Most length conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Meter | m |\n| Kilometer | km |\n| Centimeter | cm |\n| Millimeter | mm |\n| Micrometer | µm |\n| Nanometer | nm |\n| Mile | mi |\n| Yard | yd |\n| Foot | ft |\n| Inch | in |\n| Nautical Mile | nmi |\n| Light Year | ly |\n| Astronomical Unit | AU |\n| Parsec | pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this length converter?\n**A:** It uses 14 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Meter (m), Kilometer (km), Centimeter (cm), Millimeter (mm), Micrometer (µm), Nanometer (nm), Mile (mi), Yard (yd), Foot (ft), Inch (in), Nautical Mile (nmi), Light Year (ly), Astronomical Unit (AU), Parsec (pc)."
+  },
+  "internal_links": [
+    {
+      "anchor": "cm to in Converter",
+      "href": "/c/length/cm-to-in"
+    },
+    {
+      "anchor": "in to cm Converter",
+      "href": "/c/length/in-to-cm"
+    },
+    {
+      "anchor": "mm to in Converter",
+      "href": "/c/length/mm-to-in"
+    },
+    {
+      "anchor": "in to mm Converter",
+      "href": "/c/length/in-to-mm"
+    },
+    {
+      "anchor": "m to ft Converter",
+      "href": "/c/length/m-to-ft"
+    },
+    {
+      "anchor": "ft to m Converter",
+      "href": "/c/length/ft-to-m"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "length",
+    "canonicalUrl": "https://turbounitconverter.com/c/length",
+    "category": "length",
+    "pageType": "category",
+    "keywords": [
+      "length converter",
+      "convert length"
+    ]
+  },
+  "contentHash": "dd0f2094e354"
+}

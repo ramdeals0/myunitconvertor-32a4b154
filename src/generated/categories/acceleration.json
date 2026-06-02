@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Acceleration Converter — Convert Meter/sec² and More",
+    "description": "Free acceleration converter for 4+ units including Meter/sec², Standard Gravity, Foot/sec². Instant, accurate, browser-based.",
+    "h1": "Acceleration Converter"
+  },
+  "content": {
+    "intro": "m/s², g-force, ft/s². Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 4 acceleration units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for acceleration in this tool is **mps2**; every conversion routes through it for consistency.",
+    "formula_section": "Most acceleration conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Meter/sec² | m/s² |\n| Standard Gravity | g |\n| Foot/sec² | ft/s² |\n| Galileo | Gal |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this acceleration converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Meter/sec² (m/s²), Standard Gravity (g), Foot/sec² (ft/s²), Galileo (Gal)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter/sec² to Standard Gravity",
+      "href": "/c/acceleration/mps2-to-g"
+    },
+    {
+      "anchor": "Standard Gravity to Meter/sec²",
+      "href": "/c/acceleration/g-to-mps2"
+    },
+    {
+      "anchor": "Foot/sec² to Meter/sec²",
+      "href": "/c/acceleration/fps2-to-mps2"
+    },
+    {
+      "anchor": "Galileo to Meter/sec²",
+      "href": "/c/acceleration/gal-to-mps2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "acceleration",
+    "canonicalUrl": "https://turbounitconverter.com/c/acceleration",
+    "category": "acceleration",
+    "pageType": "category",
+    "keywords": [
+      "acceleration converter",
+      "convert acceleration"
+    ]
+  },
+  "contentHash": "c3a2ee568156"
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "atm to psi — Convert Atmosphere to Pound per Sq. Inch | Turb",
+    "description": "Convert Atmosphere (atm) to Pound per Sq. Inch (psi) instantly. 1 atm = 14.695949 psi. Free, accurate, engineering-grade precision.",
+    "h1": "atm to psi Converter"
+  },
+  "content": {
+    "intro": "Convert atmospheres (atm) to pound per sq. inchs (psi) instantly. Both measure pressure, so the relationship is strictly linear: each atmosphere equals 14.695949 pound per sq. inchs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One atmosphere is equal to **14.695949 pound per sq. inchs**. To go the other way, one pound per sq. inch equals **0.068045964 atmospheres**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> pound per sq. inchs = atmospheres × 14.695949\n\nWorked example — converting 10 atmospheres:\n\n10 × 14.695949 = **146.95949 psi**.\n\nTo invert, divide by 14.695949 (or multiply by 0.068045964).",
+    "conversion_table": "| atmospheres | pound per sq. inchs |\n| --- | --- |\n| 1 atm | 14.695949 psi |\n| 2 atm | 29.391898 psi |\n| 5 atm | 73.479744 psi |\n| 10 atm | 146.95949 psi |\n| 25 atm | 367.39872 psi |\n| 50 atm | 734.79744 psi |\n| 100 atm | 1469.595 psi |\n| 250 atm | 3673.987 psi |\n| 500 atm | 7347.974 psi |\n| 1000 atm | 14695.9 psi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 atm ≈ 14.695949 psi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Atmosphere and Pound per Sq. Inch both measure pressure; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many pound per sq. inchs are in 1 atmosphere?\n**A:** 14.695949 pound per sq. inchs.\n\n**Q:** What's the formula to convert atm to psi?\n**A:** pound per sq. inchs = atmospheres × 14.695949.\n\n**Q:** How do I convert psi back to atm?\n**A:** Multiply by 0.068045964 (or divide by 14.695949).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this atm to psi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Pound per Sq. Inch to Atmosphere converter",
+      "href": "/c/pressure/psi-to-atm"
+    },
+    {
+      "anchor": "All pressure conversions",
+      "href": "/c/pressure"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "atm-to-psi",
+    "canonicalUrl": "https://turbounitconverter.com/c/pressure/atm-to-psi",
+    "category": "pressure",
+    "pageType": "pair",
+    "keywords": [
+      "atmosphere to pound per sq. inch",
+      "atm to psi",
+      "convert atmosphere to pound per sq. inch",
+      "how many pound per sq. inch in a atmosphere",
+      "atmosphere in pound per sq. inch",
+      "atm to psi converter",
+      "atmosphere vs pound per sq. inch",
+      "atmosphere to pound per sq. inch formula",
+      "atmosphere to pound per sq. inch calculator"
+    ]
+  },
+  "contentHash": "1695bcc0e7ba"
+}
