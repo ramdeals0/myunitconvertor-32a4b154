@@ -26,8 +26,65 @@ import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 
 import { CATEGORIES, convert, formatResult } from "../src/lib/converters/data";
-import { listPseoEntries, getPseoOverride } from "../src/lib/converters/pseoGrid";
 import type { Category, Unit } from "../src/lib/converters/types";
+
+// ---------- pSEO CSV loader (tsx-safe; avoids the Vite ?raw import) ----------
+
+interface PseoOverride {
+  category: string;
+  slug: string;
+  pageTitle: string;
+  h1: string;
+  metaDescription: string;
+  primaryKeyword: string;
+  secondaryKeywords: string[];
+}
+
+function parseCsv(text: string): string[][] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let cur = "";
+  let inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQ) {
+      if (ch === '"') {
+        if (text[i + 1] === '"') { cur += '"'; i++; } else { inQ = false; }
+      } else cur += ch;
+    } else if (ch === '"') inQ = true;
+    else if (ch === ",") { row.push(cur); cur = ""; }
+    else if (ch === "\n") { row.push(cur); rows.push(row); row = []; cur = ""; }
+    else if (ch !== "\r") cur += ch;
+  }
+  if (cur.length || row.length) { row.push(cur); rows.push(row); }
+  return rows.filter((r) => r.length > 1 || (r.length === 1 && r[0] !== ""));
+}
+
+const PSEO_INDEX: Map<string, PseoOverride> = (() => {
+  const map = new Map<string, PseoOverride>();
+  const csvPath = join(dirname(fileURLToPath(import.meta.url)), "..", "src/lib/converters/pseo-grid.csv");
+  if (!existsSync(csvPath)) return map;
+  const rows = parseCsv(readFileSync(csvPath, "utf8"));
+  if (!rows.length) return map;
+  const [header, ...body] = rows;
+  const idx = (n: string) => header.indexOf(n);
+  const cCat = idx("category"), cSlug = idx("slug"), cTitle = idx("page_title"),
+        cH1 = idx("h1"), cDesc = idx("meta_description"),
+        cPk = idx("primary_keyword"), cSk = idx("secondary_keywords");
+  for (const r of body) {
+    if (!r[cCat] || !r[cSlug]) continue;
+    map.set(`${r[cCat]}/${r[cSlug]}`, {
+      category: r[cCat], slug: r[cSlug],
+      pageTitle: r[cTitle] ?? "", h1: r[cH1] ?? "", metaDescription: r[cDesc] ?? "",
+      primaryKeyword: r[cPk] ?? "",
+      secondaryKeywords: (r[cSk] ?? "").split("|").map((s) => s.trim()).filter(Boolean),
+    });
+  }
+  return map;
+})();
+
+const getPseoOverride = (cat: string, slug: string) => PSEO_INDEX.get(`${cat}/${slug}`);
+const listPseoEntries = () => Array.from(PSEO_INDEX.values());
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
