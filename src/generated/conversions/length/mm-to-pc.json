@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mm to pc Converter — Millimeter to Parsec",
+    "description": "Convert Millimeter (mm) to Parsec (pc) instantly. 1 mm = 3.240756e-20 pc. Free, accurate, browser-based.",
+    "h1": "Millimeter to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert millimeters (mm) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each millimeter equals 3.240756e-20 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One millimeter is equal to **3.240756e-20 parsecs**. To go the other way, one parsec equals **3.085700e+19 millimeters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = millimeters × 3.240756e-20\n\nWorked example — converting 10 millimeters:\n\n10 × 3.240756e-20 = **3.240756e-19 pc**.\n\nTo invert, divide by 3.240756e-20 (or multiply by 3.085700e+19).",
+    "conversion_table": "| millimeters | parsecs |\n| --- | --- |\n| 1 mm | 3.240756e-20 pc |\n| 2 mm | 6.481511e-20 pc |\n| 5 mm | 1.620378e-19 pc |\n| 10 mm | 3.240756e-19 pc |\n| 25 mm | 8.101889e-19 pc |\n| 50 mm | 1.620378e-18 pc |\n| 100 mm | 3.240756e-18 pc |\n| 250 mm | 8.101889e-18 pc |\n| 500 mm | 1.620378e-17 pc |\n| 1000 mm | 3.240756e-17 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mm ≈ 3.240756e-20 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Millimeter and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 millimeter?\n**A:** 3.240756e-20 parsecs.\n\n**Q:** What's the formula to convert mm to pc?\n**A:** parsecs = millimeters × 3.240756e-20.\n\n**Q:** How do I convert pc back to mm?\n**A:** Multiply by 3.085700e+19 (or divide by 3.240756e-20).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mm to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Millimeter converter",
+      "href": "/c/length/pc-to-mm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mm-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mm-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "millimeter to parsec",
+      "mm to pc",
+      "convert mm to pc"
+    ]
+  },
+  "contentHash": "6d474f04edda"
+}

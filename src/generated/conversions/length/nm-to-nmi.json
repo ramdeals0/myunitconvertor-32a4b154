@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nm to nmi Converter — Nanometer to Nautical Mile",
+    "description": "Convert Nanometer (nm) to Nautical Mile (nmi) instantly. 1 nm = 5.399568e-13 nmi. Free, accurate, browser-based.",
+    "h1": "Nanometer to Nautical Mile Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to nautical miles (nmi) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 5.399568e-13 nautical miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **5.399568e-13 nautical miles**. To go the other way, one nautical mile equals **1.852000e+12 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nautical miles = nanometers × 5.399568e-13\n\nWorked example — converting 10 nanometers:\n\n10 × 5.399568e-13 = **5.399568e-12 nmi**.\n\nTo invert, divide by 5.399568e-13 (or multiply by 1.852000e+12).",
+    "conversion_table": "| nanometers | nautical miles |\n| --- | --- |\n| 1 nm | 5.399568e-13 nmi |\n| 2 nm | 1.079914e-12 nmi |\n| 5 nm | 2.699784e-12 nmi |\n| 10 nm | 5.399568e-12 nmi |\n| 25 nm | 1.349892e-11 nmi |\n| 50 nm | 2.699784e-11 nmi |\n| 100 nm | 5.399568e-11 nmi |\n| 250 nm | 1.349892e-10 nmi |\n| 500 nm | 2.699784e-10 nmi |\n| 1000 nm | 5.399568e-10 nmi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 5.399568e-13 nmi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Nautical Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nautical miles are in 1 nanometer?\n**A:** 5.399568e-13 nautical miles.\n\n**Q:** What's the formula to convert nm to nmi?\n**A:** nautical miles = nanometers × 5.399568e-13.\n\n**Q:** How do I convert nmi back to nm?\n**A:** Multiply by 1.852000e+12 (or divide by 5.399568e-13).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to nmi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nautical Mile to Nanometer converter",
+      "href": "/c/length/nmi-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-nmi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-nmi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to nautical mile",
+      "nm to nmi",
+      "convert nm to nmi"
+    ]
+  },
+  "contentHash": "e9fe4b5e1090"
+}

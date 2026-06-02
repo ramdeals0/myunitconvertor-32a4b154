@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "yd to mi Converter — Yard to Mile",
+    "description": "Convert Yard (yd) to Mile (mi) instantly. 1 yd = 0.00056818182 mi. Free, accurate, browser-based.",
+    "h1": "Yard to Mile Converter"
+  },
+  "content": {
+    "intro": "Convert yards (yd) to miles (mi) instantly. Both measure length, so the relationship is strictly linear: each yard equals 0.00056818182 miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One yard is equal to **0.00056818182 miles**. To go the other way, one mile equals **1760 yards**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles = yards × 0.00056818182\n\nWorked example — converting 10 yards:\n\n10 × 0.00056818182 = **0.0056818182 mi**.\n\nTo invert, divide by 0.00056818182 (or multiply by 1760).",
+    "conversion_table": "| yards | miles |\n| --- | --- |\n| 1 yd | 0.00056818182 mi |\n| 2 yd | 0.0011363636 mi |\n| 5 yd | 0.0028409091 mi |\n| 10 yd | 0.0056818182 mi |\n| 25 yd | 0.014204545 mi |\n| 50 yd | 0.028409091 mi |\n| 100 yd | 0.056818182 mi |\n| 250 yd | 0.14204545 mi |\n| 500 yd | 0.28409091 mi |\n| 1000 yd | 0.56818182 mi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 yd ≈ 0.00056818182 mi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Yard and Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles are in 1 yard?\n**A:** 0.00056818182 miles.\n\n**Q:** What's the formula to convert yd to mi?\n**A:** miles = yards × 0.00056818182.\n\n**Q:** How do I convert mi back to yd?\n**A:** Multiply by 1760 (or divide by 0.00056818182).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this yd to mi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile to Yard converter",
+      "href": "/c/length/mi-to-yd"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "yd-to-mi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/yd-to-mi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "yard to mile",
+      "yd to mi",
+      "convert yd to mi"
+    ]
+  },
+  "contentHash": "5cb86a4e5829"
+}

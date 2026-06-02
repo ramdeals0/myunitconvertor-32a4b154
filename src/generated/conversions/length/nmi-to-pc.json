@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nmi to pc Converter — Nautical Mile to Parsec",
+    "description": "Convert Nautical Mile (nmi) to Parsec (pc) instantly. 1 nmi = 6.001880e-14 pc. Free, accurate, browser-based.",
+    "h1": "Nautical Mile to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert nautical miles (nmi) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each nautical mile equals 6.001880e-14 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nautical mile is equal to **6.001880e-14 parsecs**. To go the other way, one parsec equals **1.666145e+13 nautical miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = nautical miles × 6.001880e-14\n\nWorked example — converting 10 nautical miles:\n\n10 × 6.001880e-14 = **6.001880e-13 pc**.\n\nTo invert, divide by 6.001880e-14 (or multiply by 1.666145e+13).",
+    "conversion_table": "| nautical miles | parsecs |\n| --- | --- |\n| 1 nmi | 6.001880e-14 pc |\n| 2 nmi | 1.200376e-13 pc |\n| 5 nmi | 3.000940e-13 pc |\n| 10 nmi | 6.001880e-13 pc |\n| 25 nmi | 1.500470e-12 pc |\n| 50 nmi | 3.000940e-12 pc |\n| 100 nmi | 6.001880e-12 pc |\n| 250 nmi | 1.500470e-11 pc |\n| 500 nmi | 3.000940e-11 pc |\n| 1000 nmi | 6.001880e-11 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nmi ≈ 6.001880e-14 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nautical Mile and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 nautical mile?\n**A:** 6.001880e-14 parsecs.\n\n**Q:** What's the formula to convert nmi to pc?\n**A:** parsecs = nautical miles × 6.001880e-14.\n\n**Q:** How do I convert pc back to nmi?\n**A:** Multiply by 1.666145e+13 (or divide by 6.001880e-14).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nmi to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Nautical Mile converter",
+      "href": "/c/length/pc-to-nmi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nmi-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nmi-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nautical mile to parsec",
+      "nmi to pc",
+      "convert nmi to pc"
+    ]
+  },
+  "contentHash": "db5e32d85b7f"
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "in to yd Converter — Inch to Yard",
+    "description": "Convert Inch (in) to Yard (yd) instantly. 1 in = 0.027777778 yd. Free, accurate, browser-based.",
+    "h1": "Inch to Yard Converter"
+  },
+  "content": {
+    "intro": "Convert inches (in) to yards (yd) instantly. Both measure length, so the relationship is strictly linear: each inch equals 0.027777778 yards. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One inch is equal to **0.027777778 yards**. To go the other way, one yard equals **36 inches**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> yards = inches × 0.027777778\n\nWorked example — converting 10 inches:\n\n10 × 0.027777778 = **0.27777778 yd**.\n\nTo invert, divide by 0.027777778 (or multiply by 36).",
+    "conversion_table": "| inches | yards |\n| --- | --- |\n| 1 in | 0.027777778 yd |\n| 2 in | 0.055555556 yd |\n| 5 in | 0.13888889 yd |\n| 10 in | 0.27777778 yd |\n| 25 in | 0.69444444 yd |\n| 50 in | 1.3888889 yd |\n| 100 in | 2.7777778 yd |\n| 250 in | 6.9444444 yd |\n| 500 in | 13.888889 yd |\n| 1000 in | 27.777778 yd |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 in ≈ 0.027777778 yd. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Inch and Yard both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many yards are in 1 inch?\n**A:** 0.027777778 yards.\n\n**Q:** What's the formula to convert in to yd?\n**A:** yards = inches × 0.027777778.\n\n**Q:** How do I convert yd back to in?\n**A:** Multiply by 36 (or divide by 0.027777778).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this in to yd converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Yard to Inch converter",
+      "href": "/c/length/yd-to-in"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "in-to-yd",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/in-to-yd",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "inch to yard",
+      "in to yd",
+      "convert in to yd"
+    ]
+  },
+  "contentHash": "2d065ddbe418"
+}

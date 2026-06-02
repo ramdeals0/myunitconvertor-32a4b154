@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nmi to mi Converter — Nautical Mile to Mile",
+    "description": "Convert Nautical Mile (nmi) to Mile (mi) instantly. 1 nmi = 1.1507794 mi. Free, accurate, browser-based.",
+    "h1": "Nautical Mile to Mile Converter"
+  },
+  "content": {
+    "intro": "Convert nautical miles (nmi) to miles (mi) instantly. Both measure length, so the relationship is strictly linear: each nautical mile equals 1.1507794 miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nautical mile is equal to **1.1507794 miles**. To go the other way, one mile equals **0.86897624 nautical miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles = nautical miles × 1.1507794\n\nWorked example — converting 10 nautical miles:\n\n10 × 1.1507794 = **11.507794 mi**.\n\nTo invert, divide by 1.1507794 (or multiply by 0.86897624).",
+    "conversion_table": "| nautical miles | miles |\n| --- | --- |\n| 1 nmi | 1.1507794 mi |\n| 2 nmi | 2.3015589 mi |\n| 5 nmi | 5.7538972 mi |\n| 10 nmi | 11.507794 mi |\n| 25 nmi | 28.769486 mi |\n| 50 nmi | 57.538972 mi |\n| 100 nmi | 115.07794 mi |\n| 250 nmi | 287.69486 mi |\n| 500 nmi | 575.38972 mi |\n| 1000 nmi | 1150.779 mi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nmi ≈ 1.1507794 mi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nautical Mile and Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles are in 1 nautical mile?\n**A:** 1.1507794 miles.\n\n**Q:** What's the formula to convert nmi to mi?\n**A:** miles = nautical miles × 1.1507794.\n\n**Q:** How do I convert mi back to nmi?\n**A:** Multiply by 0.86897624 (or divide by 1.1507794).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nmi to mi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile to Nautical Mile converter",
+      "href": "/c/length/mi-to-nmi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nmi-to-mi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nmi-to-mi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nautical mile to mile",
+      "nmi to mi",
+      "convert nmi to mi"
+    ]
+  },
+  "contentHash": "ecc7db547f4b"
+}

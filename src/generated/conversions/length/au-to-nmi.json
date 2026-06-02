@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to nmi Converter — Astronomical Unit to Nautical Mile",
+    "description": "Convert Astronomical Unit (AU) to Nautical Mile (nmi) instantly. 1 AU = 80800000 nmi. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Nautical Mile Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to nautical miles (nmi) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 80800000 nautical miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **80800000 nautical miles**. To go the other way, one nautical mile equals **1.237986e-8 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nautical miles = astronomical units × 80800000\n\nWorked example — converting 10 astronomical units:\n\n10 × 80800000 = **810000000 nmi**.\n\nTo invert, divide by 80800000 (or multiply by 1.237986e-8).",
+    "conversion_table": "| astronomical units | nautical miles |\n| --- | --- |\n| 1 AU | 80800000 nmi |\n| 2 AU | 160000000 nmi |\n| 5 AU | 400000000 nmi |\n| 10 AU | 810000000 nmi |\n| 25 AU | 2000000000 nmi |\n| 50 AU | 4000000000 nmi |\n| 100 AU | 8000000000 nmi |\n| 250 AU | 2.019410e+10 nmi |\n| 500 AU | 4.038819e+10 nmi |\n| 1000 AU | 8.077639e+10 nmi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 80800000 nmi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Nautical Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nautical miles are in 1 astronomical unit?\n**A:** 80800000 nautical miles.\n\n**Q:** What's the formula to convert AU to nmi?\n**A:** nautical miles = astronomical units × 80800000.\n\n**Q:** How do I convert nmi back to AU?\n**A:** Multiply by 1.237986e-8 (or divide by 80800000).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to nmi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nautical Mile to Astronomical Unit converter",
+      "href": "/c/length/nmi-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-nmi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-nmi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to nautical mile",
+      "AU to nmi",
+      "convert AU to nmi"
+    ]
+  },
+  "contentHash": "6b22e13cddbf"
+}

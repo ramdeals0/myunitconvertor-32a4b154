@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "yd to mm Converter — Yard to Millimeter",
+    "description": "Convert Yard (yd) to Millimeter (mm) instantly. 1 yd = 914.4 mm. Free, accurate, browser-based.",
+    "h1": "Yard to Millimeter Converter"
+  },
+  "content": {
+    "intro": "Convert yards (yd) to millimeters (mm) instantly. Both measure length, so the relationship is strictly linear: each yard equals 914.4 millimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One yard is equal to **914.4 millimeters**. To go the other way, one millimeter equals **0.0010936133 yards**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> millimeters = yards × 914.4\n\nWorked example — converting 10 yards:\n\n10 × 914.4 = **9144 mm**.\n\nTo invert, divide by 914.4 (or multiply by 0.0010936133).",
+    "conversion_table": "| yards | millimeters |\n| --- | --- |\n| 1 yd | 914.4 mm |\n| 2 yd | 1828.8 mm |\n| 5 yd | 4572 mm |\n| 10 yd | 9144 mm |\n| 25 yd | 22860 mm |\n| 50 yd | 45720 mm |\n| 100 yd | 91440 mm |\n| 250 yd | 228600 mm |\n| 500 yd | 457200 mm |\n| 1000 yd | 914400 mm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 yd ≈ 914.4 mm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Yard and Millimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many millimeters are in 1 yard?\n**A:** 914.4 millimeters.\n\n**Q:** What's the formula to convert yd to mm?\n**A:** millimeters = yards × 914.4.\n\n**Q:** How do I convert mm back to yd?\n**A:** Multiply by 0.0010936133 (or divide by 914.4).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this yd to mm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Millimeter to Yard converter",
+      "href": "/c/length/mm-to-yd"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "yd-to-mm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/yd-to-mm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "yard to millimeter",
+      "yd to mm",
+      "convert yd to mm"
+    ]
+  },
+  "contentHash": "2ae63e52678b"
+}

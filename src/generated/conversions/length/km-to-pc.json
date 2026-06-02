@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "km to pc Converter — Kilometer to Parsec",
+    "description": "Convert Kilometer (km) to Parsec (pc) instantly. 1 km = 3.240756e-14 pc. Free, accurate, browser-based.",
+    "h1": "Kilometer to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert kilometers (km) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each kilometer equals 3.240756e-14 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer is equal to **3.240756e-14 parsecs**. To go the other way, one parsec equals **3.085700e+13 kilometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = kilometers × 3.240756e-14\n\nWorked example — converting 10 kilometers:\n\n10 × 3.240756e-14 = **3.240756e-13 pc**.\n\nTo invert, divide by 3.240756e-14 (or multiply by 3.085700e+13).",
+    "conversion_table": "| kilometers | parsecs |\n| --- | --- |\n| 1 km | 3.240756e-14 pc |\n| 2 km | 6.481511e-14 pc |\n| 5 km | 1.620378e-13 pc |\n| 10 km | 3.240756e-13 pc |\n| 25 km | 8.101889e-13 pc |\n| 50 km | 1.620378e-12 pc |\n| 100 km | 3.240756e-12 pc |\n| 250 km | 8.101889e-12 pc |\n| 500 km | 1.620378e-11 pc |\n| 1000 km | 3.240756e-11 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km ≈ 3.240756e-14 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 kilometer?\n**A:** 3.240756e-14 parsecs.\n\n**Q:** What's the formula to convert km to pc?\n**A:** parsecs = kilometers × 3.240756e-14.\n\n**Q:** How do I convert pc back to km?\n**A:** Multiply by 3.085700e+13 (or divide by 3.240756e-14).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Kilometer converter",
+      "href": "/c/length/pc-to-km"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "km-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/km-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer to parsec",
+      "km to pc",
+      "convert km to pc"
+    ]
+  },
+  "contentHash": "de61c10776e1"
+}

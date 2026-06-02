@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ly to µm Converter — Light Year to Micrometer",
+    "description": "Convert Light Year (ly) to Micrometer (µm) instantly. 1 ly = 9.460700e+21 µm. Free, accurate, browser-based.",
+    "h1": "Light Year to Micrometer Converter"
+  },
+  "content": {
+    "intro": "Convert light years (ly) to micrometers (µm) instantly. Both measure length, so the relationship is strictly linear: each light year equals 9.460700e+21 micrometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One light year is equal to **9.460700e+21 micrometers**. To go the other way, one micrometer equals **1.057004e-22 light years**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> micrometers = light years × 9.460700e+21\n\nWorked example — converting 10 light years:\n\n10 × 9.460700e+21 = **9.460700e+22 µm**.\n\nTo invert, divide by 9.460700e+21 (or multiply by 1.057004e-22).",
+    "conversion_table": "| light years | micrometers |\n| --- | --- |\n| 1 ly | 9.460700e+21 µm |\n| 2 ly | 1.892140e+22 µm |\n| 5 ly | 4.730350e+22 µm |\n| 10 ly | 9.460700e+22 µm |\n| 25 ly | 2.365175e+23 µm |\n| 50 ly | 4.730350e+23 µm |\n| 100 ly | 9.460700e+23 µm |\n| 250 ly | 2.365175e+24 µm |\n| 500 ly | 4.730350e+24 µm |\n| 1000 ly | 9.460700e+24 µm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ly ≈ 9.460700e+21 µm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Light Year and Micrometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many micrometers are in 1 light year?\n**A:** 9.460700e+21 micrometers.\n\n**Q:** What's the formula to convert ly to µm?\n**A:** micrometers = light years × 9.460700e+21.\n\n**Q:** How do I convert µm back to ly?\n**A:** Multiply by 1.057004e-22 (or divide by 9.460700e+21).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ly to µm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Micrometer to Light Year converter",
+      "href": "/c/length/um-to-ly"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ly-to-um",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ly-to-um",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "light year to micrometer",
+      "ly to µm",
+      "convert ly to µm"
+    ]
+  },
+  "contentHash": "fa7e6e5e0a52"
+}

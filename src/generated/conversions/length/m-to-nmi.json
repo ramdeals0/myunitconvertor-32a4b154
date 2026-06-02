@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "m to nmi Converter — Meter to Nautical Mile",
+    "description": "Convert Meter (m) to Nautical Mile (nmi) instantly. 1 m = 0.0005399568 nmi. Free, accurate, browser-based.",
+    "h1": "Meter to Nautical Mile Converter"
+  },
+  "content": {
+    "intro": "Convert meters (m) to nautical miles (nmi) instantly. Both measure length, so the relationship is strictly linear: each meter equals 0.0005399568 nautical miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One meter is equal to **0.0005399568 nautical miles**. To go the other way, one nautical mile equals **1852 meters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nautical miles = meters × 0.0005399568\n\nWorked example — converting 10 meters:\n\n10 × 0.0005399568 = **0.005399568 nmi**.\n\nTo invert, divide by 0.0005399568 (or multiply by 1852).",
+    "conversion_table": "| meters | nautical miles |\n| --- | --- |\n| 1 m | 0.0005399568 nmi |\n| 2 m | 0.0010799136 nmi |\n| 5 m | 0.002699784 nmi |\n| 10 m | 0.005399568 nmi |\n| 25 m | 0.01349892 nmi |\n| 50 m | 0.02699784 nmi |\n| 100 m | 0.05399568 nmi |\n| 250 m | 0.1349892 nmi |\n| 500 m | 0.2699784 nmi |\n| 1000 m | 0.5399568 nmi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 m ≈ 0.0005399568 nmi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Meter and Nautical Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nautical miles are in 1 meter?\n**A:** 0.0005399568 nautical miles.\n\n**Q:** What's the formula to convert m to nmi?\n**A:** nautical miles = meters × 0.0005399568.\n\n**Q:** How do I convert nmi back to m?\n**A:** Multiply by 1852 (or divide by 0.0005399568).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this m to nmi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nautical Mile to Meter converter",
+      "href": "/c/length/nmi-to-m"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "m-to-nmi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/m-to-nmi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "meter to nautical mile",
+      "m to nmi",
+      "convert m to nmi"
+    ]
+  },
+  "contentHash": "bcd61d77148e"
+}

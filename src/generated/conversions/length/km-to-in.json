@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "km to in Converter — Kilometer to Inch",
+    "description": "Convert Kilometer (km) to Inch (in) instantly. 1 km = 39370.1 in. Free, accurate, browser-based.",
+    "h1": "Kilometer to Inch Converter"
+  },
+  "content": {
+    "intro": "Convert kilometers (km) to inches (in) instantly. Both measure length, so the relationship is strictly linear: each kilometer equals 39370.1 inches. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer is equal to **39370.1 inches**. To go the other way, one inch equals **2.540000e-5 kilometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> inches = kilometers × 39370.1\n\nWorked example — converting 10 kilometers:\n\n10 × 39370.1 = **393700 in**.\n\nTo invert, divide by 39370.1 (or multiply by 2.540000e-5).",
+    "conversion_table": "| kilometers | inches |\n| --- | --- |\n| 1 km | 39370.1 in |\n| 2 km | 78740.2 in |\n| 5 km | 196850 in |\n| 10 km | 393700 in |\n| 25 km | 984250 in |\n| 50 km | 1969000 in |\n| 100 km | 3937000 in |\n| 250 km | 9843000 in |\n| 500 km | 19700000 in |\n| 1000 km | 39400000 in |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km ≈ 39370.1 in. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer and Inch both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many inches are in 1 kilometer?\n**A:** 39370.1 inches.\n\n**Q:** What's the formula to convert km to in?\n**A:** inches = kilometers × 39370.1.\n\n**Q:** How do I convert in back to km?\n**A:** Multiply by 2.540000e-5 (or divide by 39370.1).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km to in converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Inch to Kilometer converter",
+      "href": "/c/length/in-to-km"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "km-to-in",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/km-to-in",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer to inch",
+      "km to in",
+      "convert km to in"
+    ]
+  },
+  "contentHash": "651ebd6a55c3"
+}
