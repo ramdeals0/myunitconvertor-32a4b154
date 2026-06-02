@@ -105,7 +105,12 @@ async function main() {
         document.head.appendChild(m);
       });
 
-      const html = await page.content();
+      let html = await page.content();
+
+      // Inline the built CSS so it is not a render-blocking request.
+      // The bundle is small (~14 KiB) so inlining is a net win for LCP/FCP.
+      html = await inlineCss(html);
+
       const outDir = path === "/" ? distDir : join(distDir, path.replace(/^\/+/, ""));
       await mkdir(outDir, { recursive: true });
       await writeFile(join(outDir, "index.html"), html, "utf-8");
@@ -122,6 +127,32 @@ async function main() {
   await browser.close();
   server.close();
   console.log(`[prerender] done. ok=${ok} fail=${fail}`);
+}
+
+// Cache CSS file contents across pages.
+const cssCache = new Map();
+async function inlineCss(html) {
+  const linkRe = /<link\b[^>]*rel=["']stylesheet["'][^>]*>/gi;
+  const links = html.match(linkRe);
+  if (!links) return html;
+  for (const tag of links) {
+    const hrefMatch = tag.match(/href=["']([^"']+\.css)["']/i);
+    if (!hrefMatch) continue;
+    const href = hrefMatch[1];
+    // Only inline same-origin assets emitted to dist/.
+    if (!href.startsWith("/")) continue;
+    let css = cssCache.get(href);
+    if (css === undefined) {
+      const filePath = join(distDir, href.replace(/^\/+/, ""));
+      try { css = await readFile(filePath, "utf-8"); }
+      catch { css = null; }
+      cssCache.set(href, css);
+    }
+    if (!css) continue;
+    const styleTag = `<style data-inlined-href="${href}">${css}</style>`;
+    html = html.replace(tag, styleTag);
+  }
+  return html;
 }
 
 main().catch((err) => {
