@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "bar to psi — Convert Bar to Pound per Sq. Inch | Turbo Unit ",
+    "description": "Convert Bar (bar) to Pound per Sq. Inch (psi) instantly. 1 bar = 14.503774 psi. Free, accurate, engineering-grade precision.",
+    "h1": "bar to psi Converter"
+  },
+  "content": {
+    "intro": "Convert bars (bar) to pound per sq. inchs (psi) instantly. Both measure pressure, so the relationship is strictly linear: each bar equals 14.503774 pound per sq. inchs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One bar is equal to **14.503774 pound per sq. inchs**. To go the other way, one pound per sq. inch equals **0.068947573 bars**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> pound per sq. inchs = bars × 14.503774\n\nWorked example — converting 10 bars:\n\n10 × 14.503774 = **145.03774 psi**.\n\nTo invert, divide by 14.503774 (or multiply by 0.068947573).",
+    "conversion_table": "| bars | pound per sq. inchs |\n| --- | --- |\n| 1 bar | 14.503774 psi |\n| 2 bar | 29.007548 psi |\n| 5 bar | 72.518869 psi |\n| 10 bar | 145.03774 psi |\n| 25 bar | 362.59434 psi |\n| 50 bar | 725.18869 psi |\n| 100 bar | 1450.377 psi |\n| 250 bar | 3625.943 psi |\n| 500 bar | 7251.887 psi |\n| 1000 bar | 14503.8 psi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 bar ≈ 14.503774 psi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Bar and Pound per Sq. Inch both measure pressure; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many pound per sq. inchs are in 1 bar?\n**A:** 14.503774 pound per sq. inchs.\n\n**Q:** What's the formula to convert bar to psi?\n**A:** pound per sq. inchs = bars × 14.503774.\n\n**Q:** How do I convert psi back to bar?\n**A:** Multiply by 0.068947573 (or divide by 14.503774).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this bar to psi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Pound per Sq. Inch to Bar converter",
+      "href": "/c/pressure/psi-to-bar"
+    },
+    {
+      "anchor": "All pressure conversions",
+      "href": "/c/pressure"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "bar-to-psi",
+    "canonicalUrl": "https://turbounitconverter.com/c/pressure/bar-to-psi",
+    "category": "pressure",
+    "pageType": "pair",
+    "keywords": [
+      "bar to pound per sq. inch",
+      "bar to psi",
+      "convert bar to pound per sq. inch",
+      "how many pound per sq. inch in a bar",
+      "bar in pound per sq. inch",
+      "bar to psi converter",
+      "bar vs pound per sq. inch",
+      "bar to pound per sq. inch formula",
+      "bar to pound per sq. inch calculator"
+    ]
+  },
+  "contentHash": "a597b0e78872"
+}

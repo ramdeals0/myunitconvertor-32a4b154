@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ft to pc Converter — Foot to Parsec",
+    "description": "Convert Foot (ft) to Parsec (pc) instantly. 1 ft = 9.877824e-18 pc. Free, accurate, browser-based.",
+    "h1": "Foot to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert feet (ft) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each foot equals 9.877824e-18 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One foot is equal to **9.877824e-18 parsecs**. To go the other way, one parsec equals **1.012369e+17 feet**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = feet × 9.877824e-18\n\nWorked example — converting 10 feet:\n\n10 × 9.877824e-18 = **9.877824e-17 pc**.\n\nTo invert, divide by 9.877824e-18 (or multiply by 1.012369e+17).",
+    "conversion_table": "| feet | parsecs |\n| --- | --- |\n| 1 ft | 9.877824e-18 pc |\n| 2 ft | 1.975565e-17 pc |\n| 5 ft | 4.938912e-17 pc |\n| 10 ft | 9.877824e-17 pc |\n| 25 ft | 2.469456e-16 pc |\n| 50 ft | 4.938912e-16 pc |\n| 100 ft | 9.877824e-16 pc |\n| 250 ft | 2.469456e-15 pc |\n| 500 ft | 4.938912e-15 pc |\n| 1000 ft | 9.877824e-15 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ft ≈ 9.877824e-18 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Foot and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 foot?\n**A:** 9.877824e-18 parsecs.\n\n**Q:** What's the formula to convert ft to pc?\n**A:** parsecs = feet × 9.877824e-18.\n\n**Q:** How do I convert pc back to ft?\n**A:** Multiply by 1.012369e+17 (or divide by 9.877824e-18).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ft to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Foot converter",
+      "href": "/c/length/pc-to-ft"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ft-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ft-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "foot to parsec",
+      "ft to pc",
+      "convert ft to pc"
+    ]
+  },
+  "contentHash": "6af1b819263b"
+}

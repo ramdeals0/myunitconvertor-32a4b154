@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mm to km Converter — Millimeter to Kilometer",
+    "description": "Convert Millimeter (mm) to Kilometer (km) instantly. 1 mm = 1.000000e-6 km. Free, accurate, browser-based.",
+    "h1": "Millimeter to Kilometer Converter"
+  },
+  "content": {
+    "intro": "Convert millimeters (mm) to kilometers (km) instantly. Both measure length, so the relationship is strictly linear: each millimeter equals 1.000000e-6 kilometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One millimeter is equal to **1.000000e-6 kilometers**. To go the other way, one kilometer equals **1000000 millimeters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometers = millimeters × 1.000000e-6\n\nWorked example — converting 10 millimeters:\n\n10 × 1.000000e-6 = **1.000000e-5 km**.\n\nTo invert, divide by 1.000000e-6 (or multiply by 1000000).",
+    "conversion_table": "| millimeters | kilometers |\n| --- | --- |\n| 1 mm | 1.000000e-6 km |\n| 2 mm | 2.000000e-6 km |\n| 5 mm | 5.000000e-6 km |\n| 10 mm | 1.000000e-5 km |\n| 25 mm | 2.500000e-5 km |\n| 50 mm | 5.000000e-5 km |\n| 100 mm | 0.0001 km |\n| 250 mm | 0.00025 km |\n| 500 mm | 0.0005 km |\n| 1000 mm | 0.001 km |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mm ≈ 1.000000e-6 km. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Millimeter and Kilometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometers are in 1 millimeter?\n**A:** 1.000000e-6 kilometers.\n\n**Q:** What's the formula to convert mm to km?\n**A:** kilometers = millimeters × 1.000000e-6.\n\n**Q:** How do I convert km back to mm?\n**A:** Multiply by 1000000 (or divide by 1.000000e-6).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mm to km converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer to Millimeter converter",
+      "href": "/c/length/km-to-mm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mm-to-km",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mm-to-km",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "millimeter to kilometer",
+      "mm to km",
+      "convert mm to km"
+    ]
+  },
+  "contentHash": "228d3f1d4b3b"
+}

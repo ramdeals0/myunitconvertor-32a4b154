@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "min to s — Convert Minute to Second | Turbo Unit Converter",
+    "description": "Convert Minute (min) to Second (s) instantly. 1 min = 60 s. Free, accurate, engineering-grade precision.",
+    "h1": "min to s Converter"
+  },
+  "content": {
+    "intro": "Convert minutes (min) to seconds (s) instantly. Both measure time, so the relationship is strictly linear: each minute equals 60 seconds. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One minute is equal to **60 seconds**. To go the other way, one second equals **0.016666667 minutes**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> seconds = minutes × 60\n\nWorked example — converting 10 minutes:\n\n10 × 60 = **600 s**.\n\nTo invert, divide by 60 (or multiply by 0.016666667).",
+    "conversion_table": "| minutes | seconds |\n| --- | --- |\n| 1 min | 60 s |\n| 2 min | 120 s |\n| 5 min | 300 s |\n| 10 min | 600 s |\n| 25 min | 1500 s |\n| 50 min | 3000 s |\n| 100 min | 6000 s |\n| 250 min | 15000 s |\n| 500 min | 30000 s |\n| 1000 min | 60000 s |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 min ≈ 60 s. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Minute and Second both measure time; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many seconds are in 1 minute?\n**A:** 60 seconds.\n\n**Q:** What's the formula to convert min to s?\n**A:** seconds = minutes × 60.\n\n**Q:** How do I convert s back to min?\n**A:** Multiply by 0.016666667 (or divide by 60).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this min to s converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Second to Minute converter",
+      "href": "/c/time/s-to-min"
+    },
+    {
+      "anchor": "All time conversions",
+      "href": "/c/time"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "min-to-s",
+    "canonicalUrl": "https://turbounitconverter.com/c/time/min-to-s",
+    "category": "time",
+    "pageType": "pair",
+    "keywords": [
+      "minute to second",
+      "min to s",
+      "convert minute to second",
+      "how many second in a minute",
+      "minute in second",
+      "min to s converter",
+      "minute vs second",
+      "minute to second formula",
+      "minute to second calculator"
+    ]
+  },
+  "contentHash": "9a726c57f80a"
+}

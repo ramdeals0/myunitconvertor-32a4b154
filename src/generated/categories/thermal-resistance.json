@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Thermal Resistance Converter — Convert Kelvin/Watt and More",
+    "description": "Free thermal resistance converter for 2+ units including Kelvin/Watt, °F·h/BTU. Instant, accurate, browser-based.",
+    "h1": "Thermal Resistance Converter"
+  },
+  "content": {
+    "intro": "K/W, °F·h/BTU. Convert between 2 thermal resistance units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for thermal resistance in this tool is **KW**; every conversion routes through it for consistency.",
+    "formula_section": "Most thermal resistance conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kelvin/Watt | K/W |\n| °F·h/BTU | °F·h/BTU |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this thermal resistance converter?\n**A:** It uses 2 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kelvin/Watt (K/W), °F·h/BTU (°F·h/BTU)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kelvin/Watt to °F·h/BTU",
+      "href": "/c/thermal-resistance/kw-to-fhbtu"
+    },
+    {
+      "anchor": "°F·h/BTU to Kelvin/Watt",
+      "href": "/c/thermal-resistance/fhbtu-to-kw"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "thermal-resistance",
+    "canonicalUrl": "https://turbounitconverter.com/c/thermal-resistance",
+    "category": "thermal-resistance",
+    "pageType": "category",
+    "keywords": [
+      "thermal resistance converter",
+      "convert thermal resistance"
+    ]
+  },
+  "contentHash": "67619ed80397"
+}

@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Moment of Inertia Converter — Convert Kilogram·meter² and More",
+    "description": "Free moment of inertia converter for 5+ units including Kilogram·meter², Gram·centimeter², Pound·foot². Instant, accurate, browser-based.",
+    "h1": "Moment of Inertia Converter"
+  },
+  "content": {
+    "intro": "kg·m², lb·ft², lb·in². Convert between 5 moment of inertia units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for moment of inertia in this tool is **kgm2**; every conversion routes through it for consistency.",
+    "formula_section": "Most moment of inertia conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram·meter² | kg·m² |\n| Gram·centimeter² | g·cm² |\n| Pound·foot² | lb·ft² |\n| Pound·inch² | lb·in² |\n| Slug·foot² | slug·ft² |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this moment of inertia converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram·meter² (kg·m²), Gram·centimeter² (g·cm²), Pound·foot² (lb·ft²), Pound·inch² (lb·in²), Slug·foot² (slug·ft²)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilogram·meter² to Gram·centimeter²",
+      "href": "/c/moment-of-inertia/kgm2-to-gcm2"
+    },
+    {
+      "anchor": "Gram·centimeter² to Kilogram·meter²",
+      "href": "/c/moment-of-inertia/gcm2-to-kgm2"
+    },
+    {
+      "anchor": "Pound·foot² to Kilogram·meter²",
+      "href": "/c/moment-of-inertia/lbft2-to-kgm2"
+    },
+    {
+      "anchor": "Pound·inch² to Kilogram·meter²",
+      "href": "/c/moment-of-inertia/lbin2-to-kgm2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "moment-of-inertia",
+    "canonicalUrl": "https://turbounitconverter.com/c/moment-of-inertia",
+    "category": "moment-of-inertia",
+    "pageType": "category",
+    "keywords": [
+      "moment of inertia converter",
+      "convert moment of inertia"
+    ]
+  },
+  "contentHash": "6fc896c051d2"
+}

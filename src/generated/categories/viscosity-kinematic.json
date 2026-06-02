@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Kinematic Viscosity Converter — Convert Square meter/second and M",
+    "description": "Free kinematic viscosity converter for 5+ units including Square meter/second, Square millimeter/second, Stokes. Instant, accurate, browser-based.",
+    "h1": "Kinematic Viscosity Converter"
+  },
+  "content": {
+    "intro": "m²/s, stokes, centistokes. Convert between 5 kinematic viscosity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for kinematic viscosity in this tool is **m2s**; every conversion routes through it for consistency.",
+    "formula_section": "Most kinematic viscosity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Square meter/second | m²/s |\n| Square millimeter/second | mm²/s |\n| Stokes | St |\n| Centistokes | cSt |\n| Square foot/second | ft²/s |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this kinematic viscosity converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Square meter/second (m²/s), Square millimeter/second (mm²/s), Stokes (St), Centistokes (cSt), Square foot/second (ft²/s)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Square meter/second to Square millimeter/second",
+      "href": "/c/viscosity-kinematic/m2s-to-mm2s"
+    },
+    {
+      "anchor": "Square millimeter/second to Square meter/second",
+      "href": "/c/viscosity-kinematic/mm2s-to-m2s"
+    },
+    {
+      "anchor": "Stokes to Square meter/second",
+      "href": "/c/viscosity-kinematic/st-to-m2s"
+    },
+    {
+      "anchor": "Centistokes to Square meter/second",
+      "href": "/c/viscosity-kinematic/cst-to-m2s"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "viscosity-kinematic",
+    "canonicalUrl": "https://turbounitconverter.com/c/viscosity-kinematic",
+    "category": "viscosity-kinematic",
+    "pageType": "category",
+    "keywords": [
+      "kinematic viscosity converter",
+      "convert kinematic viscosity"
+    ]
+  },
+  "contentHash": "6e3d363bbd6b"
+}

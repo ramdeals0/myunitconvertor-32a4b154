@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "km to nmi Converter — Kilometer to Nautical Mile",
+    "description": "Convert Kilometer (km) to Nautical Mile (nmi) instantly. 1 km = 0.5399568 nmi. Free, accurate, browser-based.",
+    "h1": "Kilometer to Nautical Mile Converter"
+  },
+  "content": {
+    "intro": "Convert kilometers (km) to nautical miles (nmi) instantly. Both measure length, so the relationship is strictly linear: each kilometer equals 0.5399568 nautical miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer is equal to **0.5399568 nautical miles**. To go the other way, one nautical mile equals **1.852 kilometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nautical miles = kilometers × 0.5399568\n\nWorked example — converting 10 kilometers:\n\n10 × 0.5399568 = **5.399568 nmi**.\n\nTo invert, divide by 0.5399568 (or multiply by 1.852).",
+    "conversion_table": "| kilometers | nautical miles |\n| --- | --- |\n| 1 km | 0.5399568 nmi |\n| 2 km | 1.0799136 nmi |\n| 5 km | 2.699784 nmi |\n| 10 km | 5.399568 nmi |\n| 25 km | 13.49892 nmi |\n| 50 km | 26.99784 nmi |\n| 100 km | 53.99568 nmi |\n| 250 km | 134.9892 nmi |\n| 500 km | 269.9784 nmi |\n| 1000 km | 539.9568 nmi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km ≈ 0.5399568 nmi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer and Nautical Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nautical miles are in 1 kilometer?\n**A:** 0.5399568 nautical miles.\n\n**Q:** What's the formula to convert km to nmi?\n**A:** nautical miles = kilometers × 0.5399568.\n\n**Q:** How do I convert nmi back to km?\n**A:** Multiply by 1.852 (or divide by 0.5399568).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km to nmi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nautical Mile to Kilometer converter",
+      "href": "/c/length/nmi-to-km"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "km-to-nmi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/km-to-nmi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer to nautical mile",
+      "km to nmi",
+      "convert km to nmi"
+    ]
+  },
+  "contentHash": "963c9a833fde"
+}

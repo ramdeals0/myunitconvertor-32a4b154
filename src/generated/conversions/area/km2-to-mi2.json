@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "km² to mi² — Convert Square Kilometer to Square Mile | Turbo",
+    "description": "Convert Square Kilometer (km²) to Square Mile (mi²) instantly. 1 km² = 0.38610216 mi². Free, accurate, engineering-grade precision.",
+    "h1": "km² to mi² Converter"
+  },
+  "content": {
+    "intro": "Convert square kilometers (km²) to square miles (mi²) instantly. Both measure area, so the relationship is strictly linear: each square kilometer equals 0.38610216 square miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One square kilometer is equal to **0.38610216 square miles**. To go the other way, one square mile equals **2.5899881 square kilometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> square miles = square kilometers × 0.38610216\n\nWorked example — converting 10 square kilometers:\n\n10 × 0.38610216 = **3.8610216 mi²**.\n\nTo invert, divide by 0.38610216 (or multiply by 2.5899881).",
+    "conversion_table": "| square kilometers | square miles |\n| --- | --- |\n| 1 km² | 0.38610216 mi² |\n| 2 km² | 0.77220432 mi² |\n| 5 km² | 1.9305108 mi² |\n| 10 km² | 3.8610216 mi² |\n| 25 km² | 9.652554 mi² |\n| 50 km² | 19.305108 mi² |\n| 100 km² | 38.610216 mi² |\n| 250 km² | 96.52554 mi² |\n| 500 km² | 193.05108 mi² |\n| 1000 km² | 386.10216 mi² |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km² ≈ 0.38610216 mi². For rough mental math, round to the nearest sensible digit.\n\nMind the units. Square Kilometer and Square Mile both measure area; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many square miles are in 1 square kilometer?\n**A:** 0.38610216 square miles.\n\n**Q:** What's the formula to convert km² to mi²?\n**A:** square miles = square kilometers × 0.38610216.\n\n**Q:** How do I convert mi² back to km²?\n**A:** Multiply by 2.5899881 (or divide by 0.38610216).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km² to mi² converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Square Mile to Square Kilometer converter",
+      "href": "/c/area/mi2-to-km2"
+    },
+    {
+      "anchor": "All area conversions",
+      "href": "/c/area"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "km2-to-mi2",
+    "canonicalUrl": "https://turbounitconverter.com/c/area/km2-to-mi2",
+    "category": "area",
+    "pageType": "pair",
+    "keywords": [
+      "square kilometer to square mile",
+      "km² to mi²",
+      "convert square kilometer to square mile",
+      "how many square mile in a square kilometer",
+      "square kilometer in square mile",
+      "km² to mi² converter",
+      "square kilometer vs square mile",
+      "square kilometer to square mile formula",
+      "square kilometer to square mile calculator"
+    ]
+  },
+  "contentHash": "cb56709e244c"
+}

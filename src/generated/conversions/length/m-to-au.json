@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "m to AU Converter — Meter to Astronomical Unit",
+    "description": "Convert Meter (m) to Astronomical Unit (AU) instantly. 1 m = 6.684587e-12 AU. Free, accurate, browser-based.",
+    "h1": "Meter to Astronomical Unit Converter"
+  },
+  "content": {
+    "intro": "Convert meters (m) to astronomical units (AU) instantly. Both measure length, so the relationship is strictly linear: each meter equals 6.684587e-12 astronomical units. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One meter is equal to **6.684587e-12 astronomical units**. To go the other way, one astronomical unit equals **1.495979e+11 meters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> astronomical units = meters × 6.684587e-12\n\nWorked example — converting 10 meters:\n\n10 × 6.684587e-12 = **6.684587e-11 AU**.\n\nTo invert, divide by 6.684587e-12 (or multiply by 1.495979e+11).",
+    "conversion_table": "| meters | astronomical units |\n| --- | --- |\n| 1 m | 6.684587e-12 AU |\n| 2 m | 1.336917e-11 AU |\n| 5 m | 3.342294e-11 AU |\n| 10 m | 6.684587e-11 AU |\n| 25 m | 1.671147e-10 AU |\n| 50 m | 3.342294e-10 AU |\n| 100 m | 6.684587e-10 AU |\n| 250 m | 1.671147e-9 AU |\n| 500 m | 3.342294e-9 AU |\n| 1000 m | 6.684587e-9 AU |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 m ≈ 6.684587e-12 AU. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Meter and Astronomical Unit both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many astronomical units are in 1 meter?\n**A:** 6.684587e-12 astronomical units.\n\n**Q:** What's the formula to convert m to AU?\n**A:** astronomical units = meters × 6.684587e-12.\n\n**Q:** How do I convert AU back to m?\n**A:** Multiply by 1.495979e+11 (or divide by 6.684587e-12).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this m to AU converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Astronomical Unit to Meter converter",
+      "href": "/c/length/au-to-m"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "m-to-au",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/m-to-au",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "meter to astronomical unit",
+      "m to AU",
+      "convert m to AU"
+    ]
+  },
+  "contentHash": "e53e931a9b6b"
+}

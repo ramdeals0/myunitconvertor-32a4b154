@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "m² to ha — Convert Square Meter to Hectare | Turbo Unit Conv",
+    "description": "Convert Square Meter (m²) to Hectare (ha) instantly. 1 m² = 0.0001 ha. Free, accurate, engineering-grade precision.",
+    "h1": "m² to ha Converter"
+  },
+  "content": {
+    "intro": "Convert square meters (m²) to hectares (ha) instantly. Both measure area, so the relationship is strictly linear: each square meter equals 0.0001 hectares. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One square meter is equal to **0.0001 hectares**. To go the other way, one hectare equals **10000 square meters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> hectares = square meters × 0.0001\n\nWorked example — converting 10 square meters:\n\n10 × 0.0001 = **0.001 ha**.\n\nTo invert, divide by 0.0001 (or multiply by 10000).",
+    "conversion_table": "| square meters | hectares |\n| --- | --- |\n| 1 m² | 0.0001 ha |\n| 2 m² | 0.0002 ha |\n| 5 m² | 0.0005 ha |\n| 10 m² | 0.001 ha |\n| 25 m² | 0.0025 ha |\n| 50 m² | 0.005 ha |\n| 100 m² | 0.01 ha |\n| 250 m² | 0.025 ha |\n| 500 m² | 0.05 ha |\n| 1000 m² | 0.1 ha |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 m² ≈ 0.0001 ha. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Square Meter and Hectare both measure area; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many hectares are in 1 square meter?\n**A:** 0.0001 hectares.\n\n**Q:** What's the formula to convert m² to ha?\n**A:** hectares = square meters × 0.0001.\n\n**Q:** How do I convert ha back to m²?\n**A:** Multiply by 10000 (or divide by 0.0001).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this m² to ha converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Hectare to Square Meter converter",
+      "href": "/c/area/ha-to-m2"
+    },
+    {
+      "anchor": "All area conversions",
+      "href": "/c/area"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "m2-to-ha",
+    "canonicalUrl": "https://turbounitconverter.com/c/area/m2-to-ha",
+    "category": "area",
+    "pageType": "pair",
+    "keywords": [
+      "square meter to hectare",
+      "m² to ha",
+      "convert square meter to hectare",
+      "how many hectare in a square meter",
+      "square meter in hectare",
+      "m² to ha converter",
+      "square meter vs hectare",
+      "square meter to hectare formula",
+      "square meter to hectare calculator"
+    ]
+  },
+  "contentHash": "f3b8b118b005"
+}

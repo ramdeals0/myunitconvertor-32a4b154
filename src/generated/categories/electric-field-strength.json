@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Electric Field Strength Converter — Convert Volt/meter and More",
+    "description": "Free electric field strength converter for 4+ units including Volt/meter, Volt/centimeter, Volt/inch. Instant, accurate, browser-based.",
+    "h1": "Electric Field Strength Converter"
+  },
+  "content": {
+    "intro": "V/m, V/cm, V/in, kV/m. Convert between 4 electric field strength units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electric field strength in this tool is **Vm**; every conversion routes through it for consistency.",
+    "formula_section": "Most electric field strength conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Volt/meter | V/m |\n| Volt/centimeter | V/cm |\n| Volt/inch | V/in |\n| Kilovolt/meter | kV/m |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electric field strength converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Volt/meter (V/m), Volt/centimeter (V/cm), Volt/inch (V/in), Kilovolt/meter (kV/m)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Volt/meter to Volt/centimeter",
+      "href": "/c/electric-field-strength/vm-to-vcm"
+    },
+    {
+      "anchor": "Volt/centimeter to Volt/meter",
+      "href": "/c/electric-field-strength/vcm-to-vm"
+    },
+    {
+      "anchor": "Volt/inch to Volt/meter",
+      "href": "/c/electric-field-strength/vin-to-vm"
+    },
+    {
+      "anchor": "Kilovolt/meter to Volt/meter",
+      "href": "/c/electric-field-strength/kvm-to-vm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "electric-field-strength",
+    "canonicalUrl": "https://turbounitconverter.com/c/electric-field-strength",
+    "category": "electric-field-strength",
+    "pageType": "category",
+    "keywords": [
+      "electric field strength converter",
+      "convert electric field strength"
+    ]
+  },
+  "contentHash": "52bf796febf3"
+}

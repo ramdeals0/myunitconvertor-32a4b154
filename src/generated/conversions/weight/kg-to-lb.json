@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "kg to lb — Convert Kilogram to Pound | Turbo Unit Converter",
+    "description": "Convert Kilogram (kg) to Pound (lb) instantly. 1 kg = 2.2046226 lb. Free, accurate, engineering-grade precision.",
+    "h1": "kg to lb Converter"
+  },
+  "content": {
+    "intro": "Convert kilograms (kg) to lbs (lb) instantly. Both measure weight & mass, so the relationship is strictly linear: each kilogram equals 2.2046226 lbs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilogram is equal to **2.2046226 lbs**. To go the other way, one pound equals **0.45359237 kilograms**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> lbs = kilograms × 2.2046226\n\nWorked example — converting 10 kilograms:\n\n10 × 2.2046226 = **22.046226 lb**.\n\nTo invert, divide by 2.2046226 (or multiply by 0.45359237).",
+    "conversion_table": "| kilograms | lbs |\n| --- | --- |\n| 1 kg | 2.2046226 lb |\n| 2 kg | 4.4092452 lb |\n| 5 kg | 11.023113 lb |\n| 10 kg | 22.046226 lb |\n| 25 kg | 55.115566 lb |\n| 50 kg | 110.23113 lb |\n| 100 kg | 220.46226 lb |\n| 250 kg | 551.15566 lb |\n| 500 kg | 1102.311 lb |\n| 1000 kg | 2204.623 lb |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 kg ≈ 2.2046226 lb. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilogram and Pound both measure weight & mass; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many lbs are in 1 kilogram?\n**A:** 2.2046226 lbs.\n\n**Q:** What's the formula to convert kg to lb?\n**A:** lbs = kilograms × 2.2046226.\n\n**Q:** How do I convert lb back to kg?\n**A:** Multiply by 0.45359237 (or divide by 2.2046226).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this kg to lb converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Pound to Kilogram converter",
+      "href": "/c/weight/lb-to-kg"
+    },
+    {
+      "anchor": "All weight & mass conversions",
+      "href": "/c/weight"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "kg-to-lb",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight/kg-to-lb",
+    "category": "weight",
+    "pageType": "pair",
+    "keywords": [
+      "kilogram to pound",
+      "kg to lb",
+      "convert kilogram to pound",
+      "how many pound in a kilogram",
+      "kilogram in pound",
+      "kg to lb converter",
+      "kilogram vs pound",
+      "kilogram to pound formula",
+      "kilogram to pound calculator"
+    ]
+  },
+  "contentHash": "f4584409aaa1"
+}

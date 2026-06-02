@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Volume — Dry Converter — Convert Liter and More",
+    "description": "Free volume — dry converter for 8+ units including Liter, US Dry Pint, US Dry Quart. Instant, accurate, browser-based.",
+    "h1": "Volume — Dry Converter"
+  },
+  "content": {
+    "intro": "Dry pint, dry quart, peck, bushel. Convert between 8 volume — dry units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for volume — dry in this tool is **L**; every conversion routes through it for consistency.",
+    "formula_section": "Most volume — dry conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Liter | L |\n| US Dry Pint | dry pt |\n| US Dry Quart | dry qt |\n| US Dry Gallon | dry gal |\n| US Peck | pk |\n| US Bushel | bu |\n| UK Peck | pk (UK) |\n| UK Bushel | bu (UK) |",
+    "use_cases": "- Engineering reference and cross-discipline calculations.\n- Scientific paper unit harmonization.\n- International standards compliance.\n- Procurement and supplier negotiation.\n- Education and tutoring contexts.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this volume — dry converter?\n**A:** It uses 8 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Liter (L), US Dry Pint (dry pt), US Dry Quart (dry qt), US Dry Gallon (dry gal), US Peck (pk), US Bushel (bu), UK Peck (pk (UK)), UK Bushel (bu (UK))."
+  },
+  "internal_links": [
+    {
+      "anchor": "Liter to US Dry Pint",
+      "href": "/c/volume-dry/l-to-dpt_us"
+    },
+    {
+      "anchor": "US Dry Pint to Liter",
+      "href": "/c/volume-dry/dpt_us-to-l"
+    },
+    {
+      "anchor": "US Dry Quart to Liter",
+      "href": "/c/volume-dry/dqt_us-to-l"
+    },
+    {
+      "anchor": "US Dry Gallon to Liter",
+      "href": "/c/volume-dry/dgal_us-to-l"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "volume-dry",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume-dry",
+    "category": "volume-dry",
+    "pageType": "category",
+    "keywords": [
+      "volume — dry converter",
+      "convert volume — dry"
+    ]
+  },
+  "contentHash": "ed9ffd21fe18"
+}

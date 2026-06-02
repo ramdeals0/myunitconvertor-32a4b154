@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "cm to nm Converter — Centimeter to Nanometer",
+    "description": "Convert Centimeter (cm) to Nanometer (nm) instantly. 1 cm = 10000000 nm. Free, accurate, browser-based.",
+    "h1": "Centimeter to Nanometer Converter"
+  },
+  "content": {
+    "intro": "Convert centimeters (cm) to nanometers (nm) instantly. Both measure length, so the relationship is strictly linear: each centimeter equals 10000000 nanometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One centimeter is equal to **10000000 nanometers**. To go the other way, one nanometer equals **1.000000e-7 centimeters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nanometers = centimeters × 10000000\n\nWorked example — converting 10 centimeters:\n\n10 × 10000000 = **100000000 nm**.\n\nTo invert, divide by 10000000 (or multiply by 1.000000e-7).",
+    "conversion_table": "| centimeters | nanometers |\n| --- | --- |\n| 1 cm | 10000000 nm |\n| 2 cm | 20000000 nm |\n| 5 cm | 50000000 nm |\n| 10 cm | 100000000 nm |\n| 25 cm | 250000000 nm |\n| 50 cm | 500000000 nm |\n| 100 cm | 1000000000 nm |\n| 250 cm | 3000000000 nm |\n| 500 cm | 5000000000 nm |\n| 1000 cm | 1.000000e+10 nm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 cm ≈ 10000000 nm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Centimeter and Nanometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nanometers are in 1 centimeter?\n**A:** 10000000 nanometers.\n\n**Q:** What's the formula to convert cm to nm?\n**A:** nanometers = centimeters × 10000000.\n\n**Q:** How do I convert nm back to cm?\n**A:** Multiply by 1.000000e-7 (or divide by 10000000).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this cm to nm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nanometer to Centimeter converter",
+      "href": "/c/length/nm-to-cm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "cm-to-nm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/cm-to-nm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "centimeter to nanometer",
+      "cm to nm",
+      "convert cm to nm"
+    ]
+  },
+  "contentHash": "c7210fef2099"
+}

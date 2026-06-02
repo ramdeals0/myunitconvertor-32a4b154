@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Dynamic Viscosity Converter — Convert Pascal·second and More",
+    "description": "Free dynamic viscosity converter for 5+ units including Pascal·second, Millipascal·second, Poise. Instant, accurate, browser-based.",
+    "h1": "Dynamic Viscosity Converter"
+  },
+  "content": {
+    "intro": "Pa·s, poise, centipoise. Convert between 5 dynamic viscosity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for dynamic viscosity in this tool is **Pas**; every conversion routes through it for consistency.",
+    "formula_section": "Most dynamic viscosity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Pascal·second | Pa·s |\n| Millipascal·second | mPa·s |\n| Poise | P |\n| Centipoise | cP |\n| lbf·s/ft² | lbf·s/ft² |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this dynamic viscosity converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Pascal·second (Pa·s), Millipascal·second (mPa·s), Poise (P), Centipoise (cP), lbf·s/ft² (lbf·s/ft²)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Pascal·second to Millipascal·second",
+      "href": "/c/viscosity-dynamic/pas-to-mpas"
+    },
+    {
+      "anchor": "Millipascal·second to Pascal·second",
+      "href": "/c/viscosity-dynamic/mpas-to-pas"
+    },
+    {
+      "anchor": "Poise to Pascal·second",
+      "href": "/c/viscosity-dynamic/p-to-pas"
+    },
+    {
+      "anchor": "Centipoise to Pascal·second",
+      "href": "/c/viscosity-dynamic/cp-to-pas"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "viscosity-dynamic",
+    "canonicalUrl": "https://turbounitconverter.com/c/viscosity-dynamic",
+    "category": "viscosity-dynamic",
+    "pageType": "category",
+    "keywords": [
+      "dynamic viscosity converter",
+      "convert dynamic viscosity"
+    ]
+  },
+  "contentHash": "74605c408e44"
+}

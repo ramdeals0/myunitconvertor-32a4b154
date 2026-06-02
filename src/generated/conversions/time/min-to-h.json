@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "min to h — Convert Minute to Hour | Turbo Unit Converter",
+    "description": "Convert Minute (min) to Hour (h) instantly. 1 min = 0.016666667 h. Free, accurate, engineering-grade precision.",
+    "h1": "min to h Converter"
+  },
+  "content": {
+    "intro": "Convert minutes (min) to hours (h) instantly. Both measure time, so the relationship is strictly linear: each minute equals 0.016666667 hours. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One minute is equal to **0.016666667 hours**. To go the other way, one hour equals **60 minutes**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> hours = minutes × 0.016666667\n\nWorked example — converting 10 minutes:\n\n10 × 0.016666667 = **0.16666667 h**.\n\nTo invert, divide by 0.016666667 (or multiply by 60).",
+    "conversion_table": "| minutes | hours |\n| --- | --- |\n| 1 min | 0.016666667 h |\n| 2 min | 0.033333333 h |\n| 5 min | 0.083333333 h |\n| 10 min | 0.16666667 h |\n| 25 min | 0.41666667 h |\n| 50 min | 0.83333333 h |\n| 100 min | 1.6666667 h |\n| 250 min | 4.1666667 h |\n| 500 min | 8.3333333 h |\n| 1000 min | 16.666667 h |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 min ≈ 0.016666667 h. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Minute and Hour both measure time; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many hours are in 1 minute?\n**A:** 0.016666667 hours.\n\n**Q:** What's the formula to convert min to h?\n**A:** hours = minutes × 0.016666667.\n\n**Q:** How do I convert h back to min?\n**A:** Multiply by 60 (or divide by 0.016666667).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this min to h converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Hour to Minute converter",
+      "href": "/c/time/h-to-min"
+    },
+    {
+      "anchor": "All time conversions",
+      "href": "/c/time"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "min-to-h",
+    "canonicalUrl": "https://turbounitconverter.com/c/time/min-to-h",
+    "category": "time",
+    "pageType": "pair",
+    "keywords": [
+      "minute to hour",
+      "min to h",
+      "convert minute to hour",
+      "how many hour in a minute",
+      "minute in hour",
+      "min to h converter",
+      "minute vs hour",
+      "minute to hour formula",
+      "minute to hour calculator"
+    ]
+  },
+  "contentHash": "33a4960d9af9"
+}

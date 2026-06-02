@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ly to km Converter — Light Year to Kilometer",
+    "description": "Convert Light Year (ly) to Kilometer (km) instantly. 1 ly = 9.460700e+12 km. Free, accurate, browser-based.",
+    "h1": "Light Year to Kilometer Converter"
+  },
+  "content": {
+    "intro": "Convert light years (ly) to kilometers (km) instantly. Both measure length, so the relationship is strictly linear: each light year equals 9.460700e+12 kilometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One light year is equal to **9.460700e+12 kilometers**. To go the other way, one kilometer equals **1.057004e-13 light years**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometers = light years × 9.460700e+12\n\nWorked example — converting 10 light years:\n\n10 × 9.460700e+12 = **9.460700e+13 km**.\n\nTo invert, divide by 9.460700e+12 (or multiply by 1.057004e-13).",
+    "conversion_table": "| light years | kilometers |\n| --- | --- |\n| 1 ly | 9.460700e+12 km |\n| 2 ly | 1.892140e+13 km |\n| 5 ly | 4.730350e+13 km |\n| 10 ly | 9.460700e+13 km |\n| 25 ly | 2.365175e+14 km |\n| 50 ly | 4.730350e+14 km |\n| 100 ly | 9.460700e+14 km |\n| 250 ly | 2.365175e+15 km |\n| 500 ly | 4.730350e+15 km |\n| 1000 ly | 9.460700e+15 km |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ly ≈ 9.460700e+12 km. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Light Year and Kilometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometers are in 1 light year?\n**A:** 9.460700e+12 kilometers.\n\n**Q:** What's the formula to convert ly to km?\n**A:** kilometers = light years × 9.460700e+12.\n\n**Q:** How do I convert km back to ly?\n**A:** Multiply by 1.057004e-13 (or divide by 9.460700e+12).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ly to km converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer to Light Year converter",
+      "href": "/c/length/km-to-ly"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ly-to-km",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ly-to-km",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "light year to kilometer",
+      "ly to km",
+      "convert ly to km"
+    ]
+  },
+  "contentHash": "2bab5838b4bf"
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "ft² to m² — Convert Square Foot to Square Meter | Turbo Unit",
+    "description": "Convert Square Foot (ft²) to Square Meter (m²) instantly. 1 ft² = 0.09290304 m². Free, accurate, engineering-grade precision.",
+    "h1": "ft² to m² Converter"
+  },
+  "content": {
+    "intro": "Convert square foots (ft²) to square meters (m²) instantly. Both measure area, so the relationship is strictly linear: each square foot equals 0.09290304 square meters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One square foot is equal to **0.09290304 square meters**. To go the other way, one square meter equals **10.76391 square foots**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> square meters = square foots × 0.09290304\n\nWorked example — converting 10 square foots:\n\n10 × 0.09290304 = **0.9290304 m²**.\n\nTo invert, divide by 0.09290304 (or multiply by 10.76391).",
+    "conversion_table": "| square foots | square meters |\n| --- | --- |\n| 1 ft² | 0.09290304 m² |\n| 2 ft² | 0.18580608 m² |\n| 5 ft² | 0.4645152 m² |\n| 10 ft² | 0.9290304 m² |\n| 25 ft² | 2.322576 m² |\n| 50 ft² | 4.645152 m² |\n| 100 ft² | 9.290304 m² |\n| 250 ft² | 23.22576 m² |\n| 500 ft² | 46.45152 m² |\n| 1000 ft² | 92.90304 m² |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ft² ≈ 0.09290304 m². For rough mental math, round to the nearest sensible digit.\n\nMind the units. Square Foot and Square Meter both measure area; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many square meters are in 1 square foot?\n**A:** 0.09290304 square meters.\n\n**Q:** What's the formula to convert ft² to m²?\n**A:** square meters = square foots × 0.09290304.\n\n**Q:** How do I convert m² back to ft²?\n**A:** Multiply by 10.76391 (or divide by 0.09290304).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ft² to m² converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Square Meter to Square Foot converter",
+      "href": "/c/area/m2-to-ft2"
+    },
+    {
+      "anchor": "All area conversions",
+      "href": "/c/area"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ft2-to-m2",
+    "canonicalUrl": "https://turbounitconverter.com/c/area/ft2-to-m2",
+    "category": "area",
+    "pageType": "pair",
+    "keywords": [
+      "square foot to square meter",
+      "ft² to m²",
+      "convert square foot to square meter",
+      "how many square meter in a square foot",
+      "square foot in square meter",
+      "ft² to m² converter",
+      "square foot vs square meter",
+      "square foot to square meter formula",
+      "square foot to square meter calculator"
+    ]
+  },
+  "contentHash": "3c01d8eb959e"
+}

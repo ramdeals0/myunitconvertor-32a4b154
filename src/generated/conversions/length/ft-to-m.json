@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "ft to m — Convert Foot to Meter | Turbo Unit Converter",
+    "description": "Convert Foot (ft) to Meter (m) instantly. 1 ft = 0.3048 m. Free, accurate, engineering-grade precision.",
+    "h1": "ft to m Converter"
+  },
+  "content": {
+    "intro": "Convert feet (ft) to meters (m) instantly. Both measure length, so the relationship is strictly linear: each foot equals 0.3048 meters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One foot is equal to **0.3048 meters**. To go the other way, one meter equals **3.2808399 feet**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> meters = feet × 0.3048\n\nWorked example — converting 10 feet:\n\n10 × 0.3048 = **3.048 m**.\n\nTo invert, divide by 0.3048 (or multiply by 3.2808399).",
+    "conversion_table": "| feet | meters |\n| --- | --- |\n| 1 ft | 0.3048 m |\n| 2 ft | 0.6096 m |\n| 5 ft | 1.524 m |\n| 10 ft | 3.048 m |\n| 25 ft | 7.62 m |\n| 50 ft | 15.24 m |\n| 100 ft | 30.48 m |\n| 250 ft | 76.2 m |\n| 500 ft | 152.4 m |\n| 1000 ft | 304.8 m |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ft ≈ 0.3048 m. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Foot and Meter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many meters are in 1 foot?\n**A:** 0.3048 meters.\n\n**Q:** What's the formula to convert ft to m?\n**A:** meters = feet × 0.3048.\n\n**Q:** How do I convert m back to ft?\n**A:** Multiply by 3.2808399 (or divide by 0.3048).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ft to m converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter to Foot converter",
+      "href": "/c/length/m-to-ft"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ft-to-m",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ft-to-m",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "foot to meter",
+      "ft to m",
+      "convert foot to meter",
+      "how many meter in a foot",
+      "foot in meter",
+      "ft to m converter",
+      "foot vs meter",
+      "foot to meter formula",
+      "foot to meter calculator"
+    ]
+  },
+  "contentHash": "2ee2189f1869"
+}

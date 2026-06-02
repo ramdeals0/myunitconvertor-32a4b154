@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ly to nm Converter — Light Year to Nanometer",
+    "description": "Convert Light Year (ly) to Nanometer (nm) instantly. 1 ly = 9.460700e+24 nm. Free, accurate, browser-based.",
+    "h1": "Light Year to Nanometer Converter"
+  },
+  "content": {
+    "intro": "Convert light years (ly) to nanometers (nm) instantly. Both measure length, so the relationship is strictly linear: each light year equals 9.460700e+24 nanometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One light year is equal to **9.460700e+24 nanometers**. To go the other way, one nanometer equals **1.057004e-25 light years**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nanometers = light years × 9.460700e+24\n\nWorked example — converting 10 light years:\n\n10 × 9.460700e+24 = **9.460700e+25 nm**.\n\nTo invert, divide by 9.460700e+24 (or multiply by 1.057004e-25).",
+    "conversion_table": "| light years | nanometers |\n| --- | --- |\n| 1 ly | 9.460700e+24 nm |\n| 2 ly | 1.892140e+25 nm |\n| 5 ly | 4.730350e+25 nm |\n| 10 ly | 9.460700e+25 nm |\n| 25 ly | 2.365175e+26 nm |\n| 50 ly | 4.730350e+26 nm |\n| 100 ly | 9.460700e+26 nm |\n| 250 ly | 2.365175e+27 nm |\n| 500 ly | 4.730350e+27 nm |\n| 1000 ly | 9.460700e+27 nm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ly ≈ 9.460700e+24 nm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Light Year and Nanometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nanometers are in 1 light year?\n**A:** 9.460700e+24 nanometers.\n\n**Q:** What's the formula to convert ly to nm?\n**A:** nanometers = light years × 9.460700e+24.\n\n**Q:** How do I convert nm back to ly?\n**A:** Multiply by 1.057004e-25 (or divide by 9.460700e+24).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ly to nm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nanometer to Light Year converter",
+      "href": "/c/length/nm-to-ly"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ly-to-nm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ly-to-nm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "light year to nanometer",
+      "ly to nm",
+      "convert ly to nm"
+    ]
+  },
+  "contentHash": "3424b8a9b5c0"
+}

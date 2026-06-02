@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ly to yd Converter — Light Year to Yard",
+    "description": "Convert Light Year (ly) to Yard (yd) instantly. 1 ly = 1.034635e+16 yd. Free, accurate, browser-based.",
+    "h1": "Light Year to Yard Converter"
+  },
+  "content": {
+    "intro": "Convert light years (ly) to yards (yd) instantly. Both measure length, so the relationship is strictly linear: each light year equals 1.034635e+16 yards. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One light year is equal to **1.034635e+16 yards**. To go the other way, one yard equals **9.665247e-17 light years**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> yards = light years × 1.034635e+16\n\nWorked example — converting 10 light years:\n\n10 × 1.034635e+16 = **1.034635e+17 yd**.\n\nTo invert, divide by 1.034635e+16 (or multiply by 9.665247e-17).",
+    "conversion_table": "| light years | yards |\n| --- | --- |\n| 1 ly | 1.034635e+16 yd |\n| 2 ly | 2.069269e+16 yd |\n| 5 ly | 5.173174e+16 yd |\n| 10 ly | 1.034635e+17 yd |\n| 25 ly | 2.586587e+17 yd |\n| 50 ly | 5.173174e+17 yd |\n| 100 ly | 1.034635e+18 yd |\n| 250 ly | 2.586587e+18 yd |\n| 500 ly | 5.173174e+18 yd |\n| 1000 ly | 1.034635e+19 yd |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ly ≈ 1.034635e+16 yd. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Light Year and Yard both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many yards are in 1 light year?\n**A:** 1.034635e+16 yards.\n\n**Q:** What's the formula to convert ly to yd?\n**A:** yards = light years × 1.034635e+16.\n\n**Q:** How do I convert yd back to ly?\n**A:** Multiply by 9.665247e-17 (or divide by 1.034635e+16).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ly to yd converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Yard to Light Year converter",
+      "href": "/c/length/yd-to-ly"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ly-to-yd",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ly-to-yd",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "light year to yard",
+      "ly to yd",
+      "convert ly to yd"
+    ]
+  },
+  "contentHash": "16da5ac3c34b"
+}

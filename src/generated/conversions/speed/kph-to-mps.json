@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "km/h to m/s — Convert Kilometer/hour to Meter/second | Turbo",
+    "description": "Convert Kilometer/hour (km/h) to Meter/second (m/s) instantly. 1 km/h = 0.27777778 m/s. Free, accurate, engineering-grade precision.",
+    "h1": "km/h to m/s Converter"
+  },
+  "content": {
+    "intro": "Convert kilometer/hours (km/h) to meter/seconds (m/s) instantly. Both measure speed, so the relationship is strictly linear: each kilometer/hour equals 0.27777778 meter/seconds. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer/hour is equal to **0.27777778 meter/seconds**. To go the other way, one meter/second equals **3.6 kilometer/hours**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> meter/seconds = kilometer/hours × 0.27777778\n\nWorked example — converting 10 kilometer/hours:\n\n10 × 0.27777778 = **2.7777778 m/s**.\n\nTo invert, divide by 0.27777778 (or multiply by 3.6).",
+    "conversion_table": "| kilometer/hours | meter/seconds |\n| --- | --- |\n| 1 km/h | 0.27777778 m/s |\n| 2 km/h | 0.55555556 m/s |\n| 5 km/h | 1.3888889 m/s |\n| 10 km/h | 2.7777778 m/s |\n| 25 km/h | 6.9444444 m/s |\n| 50 km/h | 13.888889 m/s |\n| 100 km/h | 27.777778 m/s |\n| 250 km/h | 69.444444 m/s |\n| 500 km/h | 138.88889 m/s |\n| 1000 km/h | 277.77778 m/s |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km/h ≈ 0.27777778 m/s. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer/hour and Meter/second both measure speed; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many meter/seconds are in 1 kilometer/hour?\n**A:** 0.27777778 meter/seconds.\n\n**Q:** What's the formula to convert km/h to m/s?\n**A:** meter/seconds = kilometer/hours × 0.27777778.\n\n**Q:** How do I convert m/s back to km/h?\n**A:** Multiply by 3.6 (or divide by 0.27777778).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km/h to m/s converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter/second to Kilometer/hour converter",
+      "href": "/c/speed/mps-to-kph"
+    },
+    {
+      "anchor": "All speed conversions",
+      "href": "/c/speed"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "kph-to-mps",
+    "canonicalUrl": "https://turbounitconverter.com/c/speed/kph-to-mps",
+    "category": "speed",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer/hour to meter/second",
+      "km/h to m/s",
+      "convert kilometer/hour to meter/second",
+      "how many meter/second in a kilometer/hour",
+      "kilometer/hour in meter/second",
+      "km/h to m/s converter",
+      "kilometer/hour vs meter/second",
+      "kilometer/hour to meter/second formula",
+      "kilometer/hour to meter/second calculator"
+    ]
+  },
+  "contentHash": "3dd376ecf8d8"
+}

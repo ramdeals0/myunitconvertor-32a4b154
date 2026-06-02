@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to pc Converter — Astronomical Unit to Parsec",
+    "description": "Convert Astronomical Unit (AU) to Parsec (pc) instantly. 1 AU = 4.848102e-6 pc. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Parsec Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to parsecs (pc) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 4.848102e-6 parsecs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **4.848102e-6 parsecs**. To go the other way, one parsec equals **206270 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> parsecs = astronomical units × 4.848102e-6\n\nWorked example — converting 10 astronomical units:\n\n10 × 4.848102e-6 = **4.848102e-5 pc**.\n\nTo invert, divide by 4.848102e-6 (or multiply by 206270).",
+    "conversion_table": "| astronomical units | parsecs |\n| --- | --- |\n| 1 AU | 4.848102e-6 pc |\n| 2 AU | 9.696203e-6 pc |\n| 5 AU | 2.424051e-5 pc |\n| 10 AU | 4.848102e-5 pc |\n| 25 AU | 0.00012120254 pc |\n| 50 AU | 0.00024240508 pc |\n| 100 AU | 0.00048481016 pc |\n| 250 AU | 0.0012120254 pc |\n| 500 AU | 0.0024240508 pc |\n| 1000 AU | 0.0048481016 pc |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 4.848102e-6 pc. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Parsec both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many parsecs are in 1 astronomical unit?\n**A:** 4.848102e-6 parsecs.\n\n**Q:** What's the formula to convert AU to pc?\n**A:** parsecs = astronomical units × 4.848102e-6.\n\n**Q:** How do I convert pc back to AU?\n**A:** Multiply by 206270 (or divide by 4.848102e-6).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to pc converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Parsec to Astronomical Unit converter",
+      "href": "/c/length/pc-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-pc",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-pc",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to parsec",
+      "AU to pc",
+      "convert AU to pc"
+    ]
+  },
+  "contentHash": "9176a34d093e"
+}

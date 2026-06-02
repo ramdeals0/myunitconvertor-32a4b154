@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to ly Converter — Astronomical Unit to Light Year",
+    "description": "Convert Astronomical Unit (AU) to Light Year (ly) instantly. 1 AU = 1.581256e-5 ly. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Light Year Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to light years (ly) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 1.581256e-5 light years. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **1.581256e-5 light years**. To go the other way, one light year equals **63240.9 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> light years = astronomical units × 1.581256e-5\n\nWorked example — converting 10 astronomical units:\n\n10 × 1.581256e-5 = **0.00015812558 ly**.\n\nTo invert, divide by 1.581256e-5 (or multiply by 63240.9).",
+    "conversion_table": "| astronomical units | light years |\n| --- | --- |\n| 1 AU | 1.581256e-5 ly |\n| 2 AU | 3.162512e-5 ly |\n| 5 AU | 7.906279e-5 ly |\n| 10 AU | 0.00015812558 ly |\n| 25 AU | 0.00039531396 ly |\n| 50 AU | 0.00079062792 ly |\n| 100 AU | 0.0015812558 ly |\n| 250 AU | 0.0039531396 ly |\n| 500 AU | 0.0079062792 ly |\n| 1000 AU | 0.015812558 ly |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 1.581256e-5 ly. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Light Year both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many light years are in 1 astronomical unit?\n**A:** 1.581256e-5 light years.\n\n**Q:** What's the formula to convert AU to ly?\n**A:** light years = astronomical units × 1.581256e-5.\n\n**Q:** How do I convert ly back to AU?\n**A:** Multiply by 63240.9 (or divide by 1.581256e-5).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to ly converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Light Year to Astronomical Unit converter",
+      "href": "/c/length/ly-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-ly",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-ly",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to light year",
+      "AU to ly",
+      "convert AU to ly"
+    ]
+  },
+  "contentHash": "6487c26c9110"
+}

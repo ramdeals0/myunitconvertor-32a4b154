@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nm to mi Converter — Nanometer to Mile",
+    "description": "Convert Nanometer (nm) to Mile (mi) instantly. 1 nm = 6.213712e-13 mi. Free, accurate, browser-based.",
+    "h1": "Nanometer to Mile Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to miles (mi) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 6.213712e-13 miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **6.213712e-13 miles**. To go the other way, one mile equals **1.609344e+12 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles = nanometers × 6.213712e-13\n\nWorked example — converting 10 nanometers:\n\n10 × 6.213712e-13 = **6.213712e-12 mi**.\n\nTo invert, divide by 6.213712e-13 (or multiply by 1.609344e+12).",
+    "conversion_table": "| nanometers | miles |\n| --- | --- |\n| 1 nm | 6.213712e-13 mi |\n| 2 nm | 1.242742e-12 mi |\n| 5 nm | 3.106856e-12 mi |\n| 10 nm | 6.213712e-12 mi |\n| 25 nm | 1.553428e-11 mi |\n| 50 nm | 3.106856e-11 mi |\n| 100 nm | 6.213712e-11 mi |\n| 250 nm | 1.553428e-10 mi |\n| 500 nm | 3.106856e-10 mi |\n| 1000 nm | 6.213712e-10 mi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 6.213712e-13 mi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles are in 1 nanometer?\n**A:** 6.213712e-13 miles.\n\n**Q:** What's the formula to convert nm to mi?\n**A:** miles = nanometers × 6.213712e-13.\n\n**Q:** How do I convert mi back to nm?\n**A:** Multiply by 1.609344e+12 (or divide by 6.213712e-13).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to mi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile to Nanometer converter",
+      "href": "/c/length/mi-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-mi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-mi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to mile",
+      "nm to mi",
+      "convert nm to mi"
+    ]
+  },
+  "contentHash": "431fbe69f700"
+}

@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Data Transfer Converter — Convert Bit/second and More",
+    "description": "Free data transfer converter for 11+ units including Bit/second, Kilobit/second, Megabit/second. Instant, accurate, browser-based.",
+    "h1": "Data Transfer Converter"
+  },
+  "content": {
+    "intro": "bit/s, kbps, Mbps, Gbps. Convert between 11 data transfer units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for data transfer in this tool is **bps**; every conversion routes through it for consistency.",
+    "formula_section": "Most data transfer conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Bit/second | bit/s |\n| Kilobit/second | kbit/s |\n| Megabit/second | Mbit/s |\n| Gigabit/second | Gbit/s |\n| Terabit/second | Tbit/s |\n| Byte/second | B/s |\n| Kilobyte/second | KB/s |\n| Megabyte/second | MB/s |\n| Gigabyte/second | GB/s |\n| Kibibit/second | Kibit/s |\n| Mebibit/second | Mibit/s |",
+    "use_cases": "- Engineering reference and cross-discipline calculations.\n- Scientific paper unit harmonization.\n- International standards compliance.\n- Procurement and supplier negotiation.\n- Education and tutoring contexts.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this data transfer converter?\n**A:** It uses 11 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Bit/second (bit/s), Kilobit/second (kbit/s), Megabit/second (Mbit/s), Gigabit/second (Gbit/s), Terabit/second (Tbit/s), Byte/second (B/s), Kilobyte/second (KB/s), Megabyte/second (MB/s), Gigabyte/second (GB/s), Kibibit/second (Kibit/s), Mebibit/second (Mibit/s)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Bit/second to Kilobit/second",
+      "href": "/c/data-transfer/bps-to-kbps"
+    },
+    {
+      "anchor": "Kilobit/second to Bit/second",
+      "href": "/c/data-transfer/kbps-to-bps"
+    },
+    {
+      "anchor": "Megabit/second to Bit/second",
+      "href": "/c/data-transfer/mbps-to-bps"
+    },
+    {
+      "anchor": "Gigabit/second to Bit/second",
+      "href": "/c/data-transfer/gbps-to-bps"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "data-transfer",
+    "canonicalUrl": "https://turbounitconverter.com/c/data-transfer",
+    "category": "data-transfer",
+    "pageType": "category",
+    "keywords": [
+      "data transfer converter",
+      "convert data transfer"
+    ]
+  },
+  "contentHash": "0f313d663834"
+}

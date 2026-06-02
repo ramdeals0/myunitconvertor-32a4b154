@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Radiation Exposure Converter — Convert Coulomb/kilogram and More",
+    "description": "Free radiation exposure converter for 3+ units including Coulomb/kilogram, Millicoulomb/kilogram, Roentgen. Instant, accurate, browser-based.",
+    "h1": "Radiation Exposure Converter"
+  },
+  "content": {
+    "intro": "Coulomb/kg, roentgen. Convert between 3 radiation exposure units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for radiation exposure in this tool is **Ckg**; every conversion routes through it for consistency.",
+    "formula_section": "Most radiation exposure conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Coulomb/kilogram | C/kg |\n| Millicoulomb/kilogram | mC/kg |\n| Roentgen | R |",
+    "use_cases": "- Medical imaging dose tracking.\n- Radiation protection calculations.\n- Material activity assays.\n- Lab radiation source labeling.\n- Industrial NDT inspections.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this radiation exposure converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Coulomb/kilogram (C/kg), Millicoulomb/kilogram (mC/kg), Roentgen (R)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Coulomb/kilogram to Millicoulomb/kilogram",
+      "href": "/c/radiation-exposure/ckg-to-mckg"
+    },
+    {
+      "anchor": "Millicoulomb/kilogram to Coulomb/kilogram",
+      "href": "/c/radiation-exposure/mckg-to-ckg"
+    },
+    {
+      "anchor": "Roentgen to Coulomb/kilogram",
+      "href": "/c/radiation-exposure/r-to-ckg"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "radiation-exposure",
+    "canonicalUrl": "https://turbounitconverter.com/c/radiation-exposure",
+    "category": "radiation-exposure",
+    "pageType": "category",
+    "keywords": [
+      "radiation exposure converter",
+      "convert radiation exposure"
+    ]
+  },
+  "contentHash": "dbe961498629"
+}

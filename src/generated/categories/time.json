@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Time Converter — Convert Second and More",
+    "description": "Free time converter for 9+ units including Second, Millisecond, Microsecond. Instant, accurate, browser-based.",
+    "h1": "Time Converter"
+  },
+  "content": {
+    "intro": "Seconds, minutes, hours, days, years. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 9 time units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for time in this tool is **s**; every conversion routes through it for consistency.",
+    "formula_section": "Most time conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Second | s |\n| Millisecond | ms |\n| Microsecond | µs |\n| Minute | min |\n| Hour | h |\n| Day | d |\n| Week | wk |\n| Month (30 d) | mo |\n| Year (365 d) | yr |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this time converter?\n**A:** It uses 9 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Second (s), Millisecond (ms), Microsecond (µs), Minute (min), Hour (h), Day (d), Week (wk), Month (30 d) (mo), Year (365 d) (yr)."
+  },
+  "internal_links": [
+    {
+      "anchor": "min to h Converter",
+      "href": "/c/time/min-to-h"
+    },
+    {
+      "anchor": "h to min Converter",
+      "href": "/c/time/h-to-min"
+    },
+    {
+      "anchor": "s to min Converter",
+      "href": "/c/time/s-to-min"
+    },
+    {
+      "anchor": "min to s Converter",
+      "href": "/c/time/min-to-s"
+    },
+    {
+      "anchor": "d to h Converter",
+      "href": "/c/time/d-to-h"
+    },
+    {
+      "anchor": "h to d Converter",
+      "href": "/c/time/h-to-d"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "time",
+    "canonicalUrl": "https://turbounitconverter.com/c/time",
+    "category": "time",
+    "pageType": "category",
+    "keywords": [
+      "time converter",
+      "convert time"
+    ]
+  },
+  "contentHash": "23fa8e244e9e"
+}

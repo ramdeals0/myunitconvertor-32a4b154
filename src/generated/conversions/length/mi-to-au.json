@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "mi to AU Converter — Mile to Astronomical Unit",
+    "description": "Convert Mile (mi) to Astronomical Unit (AU) instantly. 1 mi = 1.075780e-8 AU. Free, accurate, browser-based.",
+    "h1": "Mile to Astronomical Unit Converter"
+  },
+  "content": {
+    "intro": "Convert miles (mi) to astronomical units (AU) instantly. Both measure length, so the relationship is strictly linear: each mile equals 1.075780e-8 astronomical units. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One mile is equal to **1.075780e-8 astronomical units**. To go the other way, one astronomical unit equals **93000000 miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> astronomical units = miles × 1.075780e-8\n\nWorked example — converting 10 miles:\n\n10 × 1.075780e-8 = **1.075780e-7 AU**.\n\nTo invert, divide by 1.075780e-8 (or multiply by 93000000).",
+    "conversion_table": "| miles | astronomical units |\n| --- | --- |\n| 1 mi | 1.075780e-8 AU |\n| 2 mi | 2.151560e-8 AU |\n| 5 mi | 5.378900e-8 AU |\n| 10 mi | 1.075780e-7 AU |\n| 25 mi | 2.689450e-7 AU |\n| 50 mi | 5.378900e-7 AU |\n| 100 mi | 1.075780e-6 AU |\n| 250 mi | 2.689450e-6 AU |\n| 500 mi | 5.378900e-6 AU |\n| 1000 mi | 1.075780e-5 AU |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mi ≈ 1.075780e-8 AU. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Mile and Astronomical Unit both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many astronomical units are in 1 mile?\n**A:** 1.075780e-8 astronomical units.\n\n**Q:** What's the formula to convert mi to AU?\n**A:** astronomical units = miles × 1.075780e-8.\n\n**Q:** How do I convert AU back to mi?\n**A:** Multiply by 93000000 (or divide by 1.075780e-8).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mi to AU converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Astronomical Unit to Mile converter",
+      "href": "/c/length/au-to-mi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mi-to-au",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/mi-to-au",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "mile to astronomical unit",
+      "mi to AU",
+      "convert mi to AU"
+    ]
+  },
+  "contentHash": "09e0583e4628"
+}

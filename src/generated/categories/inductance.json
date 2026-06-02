@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Inductance Converter — Convert Henry and More",
+    "description": "Free inductance converter for 4+ units including Henry, Millihenry, Microhenry. Instant, accurate, browser-based.",
+    "h1": "Inductance Converter"
+  },
+  "content": {
+    "intro": "Henry, millihenry, microhenry. Convert between 4 inductance units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for inductance in this tool is **H**; every conversion routes through it for consistency.",
+    "formula_section": "Most inductance conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Henry | H |\n| Millihenry | mH |\n| Microhenry | µH |\n| Nanohenry | nH |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this inductance converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Henry (H), Millihenry (mH), Microhenry (µH), Nanohenry (nH)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Henry to Millihenry",
+      "href": "/c/inductance/h-to-mh"
+    },
+    {
+      "anchor": "Millihenry to Henry",
+      "href": "/c/inductance/mh-to-h"
+    },
+    {
+      "anchor": "Microhenry to Henry",
+      "href": "/c/inductance/uh-to-h"
+    },
+    {
+      "anchor": "Nanohenry to Henry",
+      "href": "/c/inductance/nh-to-h"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "inductance",
+    "canonicalUrl": "https://turbounitconverter.com/c/inductance",
+    "category": "inductance",
+    "pageType": "category",
+    "keywords": [
+      "inductance converter",
+      "convert inductance"
+    ]
+  },
+  "contentHash": "b693022fc62c"
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Magnetic Field Strength Converter — Convert Ampere/meter and More",
+    "description": "Free magnetic field strength converter for 3+ units including Ampere/meter, Ampere/centimeter, Oersted. Instant, accurate, browser-based.",
+    "h1": "Magnetic Field Strength Converter"
+  },
+  "content": {
+    "intro": "A/m, oersted. Convert between 3 magnetic field strength units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for magnetic field strength in this tool is **Am**; every conversion routes through it for consistency.",
+    "formula_section": "Most magnetic field strength conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Ampere/meter | A/m |\n| Ampere/centimeter | A/cm |\n| Oersted | Oe |",
+    "use_cases": "- MRI, NMR, and scientific-instrument field strength.\n- Magnet selection for industrial holding applications.\n- Sensor calibration in gauss vs tesla.\n- Audio and speaker magnet specs.\n- Magnetic shielding design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this magnetic field strength converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Ampere/meter (A/m), Ampere/centimeter (A/cm), Oersted (Oe)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Ampere/meter to Ampere/centimeter",
+      "href": "/c/magnetic-field-strength/am-to-acm"
+    },
+    {
+      "anchor": "Ampere/centimeter to Ampere/meter",
+      "href": "/c/magnetic-field-strength/acm-to-am"
+    },
+    {
+      "anchor": "Oersted to Ampere/meter",
+      "href": "/c/magnetic-field-strength/oe-to-am"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "magnetic-field-strength",
+    "canonicalUrl": "https://turbounitconverter.com/c/magnetic-field-strength",
+    "category": "magnetic-field-strength",
+    "pageType": "category",
+    "keywords": [
+      "magnetic field strength converter",
+      "convert magnetic field strength"
+    ]
+  },
+  "contentHash": "5473c7afc711"
+}

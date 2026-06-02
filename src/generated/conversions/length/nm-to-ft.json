@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nm to ft Converter — Nanometer to Foot",
+    "description": "Convert Nanometer (nm) to Foot (ft) instantly. 1 nm = 3.280840e-9 ft. Free, accurate, browser-based.",
+    "h1": "Nanometer to Foot Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to feet (ft) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 3.280840e-9 feet. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **3.280840e-9 feet**. To go the other way, one foot equals **300000000 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> feet = nanometers × 3.280840e-9\n\nWorked example — converting 10 nanometers:\n\n10 × 3.280840e-9 = **3.280840e-8 ft**.\n\nTo invert, divide by 3.280840e-9 (or multiply by 300000000).",
+    "conversion_table": "| nanometers | feet |\n| --- | --- |\n| 1 nm | 3.280840e-9 ft |\n| 2 nm | 6.561680e-9 ft |\n| 5 nm | 1.640420e-8 ft |\n| 10 nm | 3.280840e-8 ft |\n| 25 nm | 8.202100e-8 ft |\n| 50 nm | 1.640420e-7 ft |\n| 100 nm | 3.280840e-7 ft |\n| 250 nm | 8.202100e-7 ft |\n| 500 nm | 1.640420e-6 ft |\n| 1000 nm | 3.280840e-6 ft |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 3.280840e-9 ft. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Foot both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many feet are in 1 nanometer?\n**A:** 3.280840e-9 feet.\n\n**Q:** What's the formula to convert nm to ft?\n**A:** feet = nanometers × 3.280840e-9.\n\n**Q:** How do I convert ft back to nm?\n**A:** Multiply by 300000000 (or divide by 3.280840e-9).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to ft converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Foot to Nanometer converter",
+      "href": "/c/length/ft-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-ft",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-ft",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to foot",
+      "nm to ft",
+      "convert nm to ft"
+    ]
+  },
+  "contentHash": "ea3787d0ef9f"
+}

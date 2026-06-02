@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Speed Converter — Convert Meter/second and More",
+    "description": "Free speed converter for 6+ units including Meter/second, Kilometer/hour, Mile/hour. Instant, accurate, browser-based.",
+    "h1": "Speed Converter"
+  },
+  "content": {
+    "intro": "m/s, km/h, mph, knots. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 6 speed units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for speed in this tool is **mps**; every conversion routes through it for consistency.",
+    "formula_section": "Most speed conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Meter/second | m/s |\n| Kilometer/hour | km/h |\n| Mile/hour | mph |\n| Foot/second | ft/s |\n| Knot | kn |\n| Mach (sea level) | M |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this speed converter?\n**A:** It uses 6 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Meter/second (m/s), Kilometer/hour (km/h), Mile/hour (mph), Foot/second (ft/s), Knot (kn), Mach (sea level) (M)."
+  },
+  "internal_links": [
+    {
+      "anchor": "mph to km/h Converter",
+      "href": "/c/speed/mph-to-kph"
+    },
+    {
+      "anchor": "km/h to mph Converter",
+      "href": "/c/speed/kph-to-mph"
+    },
+    {
+      "anchor": "m/s to km/h Converter",
+      "href": "/c/speed/mps-to-kph"
+    },
+    {
+      "anchor": "km/h to m/s Converter",
+      "href": "/c/speed/kph-to-mps"
+    },
+    {
+      "anchor": "m/s to mph Converter",
+      "href": "/c/speed/mps-to-mph"
+    },
+    {
+      "anchor": "mph to m/s Converter",
+      "href": "/c/speed/mph-to-mps"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "speed",
+    "canonicalUrl": "https://turbounitconverter.com/c/speed",
+    "category": "speed",
+    "pageType": "category",
+    "keywords": [
+      "speed converter",
+      "convert speed"
+    ]
+  },
+  "contentHash": "6cdd357d59a8"
+}

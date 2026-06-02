@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "kg to st — Convert Kilogram to Stone | Turbo Unit Converter",
+    "description": "Convert Kilogram (kg) to Stone (st) instantly. 1 kg = 0.15747304 st. Free, accurate, engineering-grade precision.",
+    "h1": "kg to st Converter"
+  },
+  "content": {
+    "intro": "Convert kilograms (kg) to stones (st) instantly. Both measure weight & mass, so the relationship is strictly linear: each kilogram equals 0.15747304 stones. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilogram is equal to **0.15747304 stones**. To go the other way, one stone equals **6.3502932 kilograms**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> stones = kilograms × 0.15747304\n\nWorked example — converting 10 kilograms:\n\n10 × 0.15747304 = **1.5747304 st**.\n\nTo invert, divide by 0.15747304 (or multiply by 6.3502932).",
+    "conversion_table": "| kilograms | stones |\n| --- | --- |\n| 1 kg | 0.15747304 st |\n| 2 kg | 0.31494609 st |\n| 5 kg | 0.78736522 st |\n| 10 kg | 1.5747304 st |\n| 25 kg | 3.9368261 st |\n| 50 kg | 7.8736522 st |\n| 100 kg | 15.747304 st |\n| 250 kg | 39.368261 st |\n| 500 kg | 78.736522 st |\n| 1000 kg | 157.47304 st |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 kg ≈ 0.15747304 st. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilogram and Stone both measure weight & mass; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many stones are in 1 kilogram?\n**A:** 0.15747304 stones.\n\n**Q:** What's the formula to convert kg to st?\n**A:** stones = kilograms × 0.15747304.\n\n**Q:** How do I convert st back to kg?\n**A:** Multiply by 6.3502932 (or divide by 0.15747304).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this kg to st converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Stone to Kilogram converter",
+      "href": "/c/weight/st-to-kg"
+    },
+    {
+      "anchor": "All weight & mass conversions",
+      "href": "/c/weight"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "kg-to-st",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight/kg-to-st",
+    "category": "weight",
+    "pageType": "pair",
+    "keywords": [
+      "kilogram to stone",
+      "kg to st",
+      "convert kilogram to stone",
+      "how many stone in a kilogram",
+      "kilogram in stone",
+      "kg to st converter",
+      "kilogram vs stone",
+      "kilogram to stone formula",
+      "kilogram to stone calculator"
+    ]
+  },
+  "contentHash": "cbeb394ec39a"
+}

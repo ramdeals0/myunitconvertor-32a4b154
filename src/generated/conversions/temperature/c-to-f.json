@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "°C to °F — Convert Celsius to Fahrenheit | Turbo Unit Conver",
+    "description": "Convert Celsius (°C) to Fahrenheit (°F) instantly. 1 °C = 33.8 °F. Free, accurate, engineering-grade precision.",
+    "h1": "°C to °F Converter"
+  },
+  "content": {
+    "intro": "Convert celsiuss (°C) to fahrenheits (°F) instantly. Both measure temperature, so the relationship is strictly linear: each celsius equals 33.8 fahrenheits. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One celsius is equal to **33.8 fahrenheits**. To go the other way, one fahrenheit equals **-17.222222 celsiuss**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> fahrenheits = celsiuss × 33.8\n\nWorked example — converting 10 celsiuss:\n\n10 × 33.8 = **50 °F**.\n\nTo invert, divide by 33.8 (or multiply by -17.222222).",
+    "conversion_table": "| celsiuss | fahrenheits |\n| --- | --- |\n| 1 °C | 33.8 °F |\n| 2 °C | 35.6 °F |\n| 5 °C | 41 °F |\n| 10 °C | 50 °F |\n| 25 °C | 77 °F |\n| 50 °C | 122 °F |\n| 100 °C | 212 °F |\n| 250 °C | 482 °F |\n| 500 °C | 932 °F |\n| 1000 °C | 1832 °F |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 °C ≈ 33.8 °F. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Celsius and Fahrenheit both measure temperature; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many fahrenheits are in 1 celsius?\n**A:** 33.8 fahrenheits.\n\n**Q:** What's the formula to convert °C to °F?\n**A:** fahrenheits = celsiuss × 33.8.\n\n**Q:** How do I convert °F back to °C?\n**A:** Multiply by -17.222222 (or divide by 33.8).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this °C to °F converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Fahrenheit to Celsius converter",
+      "href": "/c/temperature/f-to-c"
+    },
+    {
+      "anchor": "All temperature conversions",
+      "href": "/c/temperature"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "c-to-f",
+    "canonicalUrl": "https://turbounitconverter.com/c/temperature/c-to-f",
+    "category": "temperature",
+    "pageType": "pair",
+    "keywords": [
+      "celsius to fahrenheit",
+      "°c to °f",
+      "convert celsius to fahrenheit",
+      "how many fahrenheit in a celsius",
+      "celsius in fahrenheit",
+      "°c to °f converter",
+      "celsius vs fahrenheit",
+      "celsius to fahrenheit formula",
+      "celsius to fahrenheit calculator"
+    ]
+  },
+  "contentHash": "0d952c5a6d8c"
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "ft to yd — Convert Foot to Yard | Turbo Unit Converter",
+    "description": "Convert Foot (ft) to Yard (yd) instantly. 1 ft = 0.33333333 yd. Free, accurate, engineering-grade precision.",
+    "h1": "ft to yd Converter"
+  },
+  "content": {
+    "intro": "Convert feet (ft) to yards (yd) instantly. Both measure length, so the relationship is strictly linear: each foot equals 0.33333333 yards. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One foot is equal to **0.33333333 yards**. To go the other way, one yard equals **3 feet**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> yards = feet × 0.33333333\n\nWorked example — converting 10 feet:\n\n10 × 0.33333333 = **3.3333333 yd**.\n\nTo invert, divide by 0.33333333 (or multiply by 3).",
+    "conversion_table": "| feet | yards |\n| --- | --- |\n| 1 ft | 0.33333333 yd |\n| 2 ft | 0.66666667 yd |\n| 5 ft | 1.6666667 yd |\n| 10 ft | 3.3333333 yd |\n| 25 ft | 8.3333333 yd |\n| 50 ft | 16.666667 yd |\n| 100 ft | 33.333333 yd |\n| 250 ft | 83.333333 yd |\n| 500 ft | 166.66667 yd |\n| 1000 ft | 333.33333 yd |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ft ≈ 0.33333333 yd. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Foot and Yard both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many yards are in 1 foot?\n**A:** 0.33333333 yards.\n\n**Q:** What's the formula to convert ft to yd?\n**A:** yards = feet × 0.33333333.\n\n**Q:** How do I convert yd back to ft?\n**A:** Multiply by 3 (or divide by 0.33333333).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ft to yd converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Yard to Foot converter",
+      "href": "/c/length/yd-to-ft"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ft-to-yd",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ft-to-yd",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "foot to yard",
+      "ft to yd",
+      "convert foot to yard",
+      "how many yard in a foot",
+      "foot in yard",
+      "ft to yd converter",
+      "foot vs yard",
+      "foot to yard formula",
+      "foot to yard calculator"
+    ]
+  },
+  "contentHash": "31e786a87ab6"
+}

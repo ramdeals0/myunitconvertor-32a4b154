@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ly to ft Converter — Light Year to Foot",
+    "description": "Convert Light Year (ly) to Foot (ft) instantly. 1 ly = 3.103904e+16 ft. Free, accurate, browser-based.",
+    "h1": "Light Year to Foot Converter"
+  },
+  "content": {
+    "intro": "Convert light years (ly) to feet (ft) instantly. Both measure length, so the relationship is strictly linear: each light year equals 3.103904e+16 feet. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One light year is equal to **3.103904e+16 feet**. To go the other way, one foot equals **3.221749e-17 light years**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> feet = light years × 3.103904e+16\n\nWorked example — converting 10 light years:\n\n10 × 3.103904e+16 = **3.103904e+17 ft**.\n\nTo invert, divide by 3.103904e+16 (or multiply by 3.221749e-17).",
+    "conversion_table": "| light years | feet |\n| --- | --- |\n| 1 ly | 3.103904e+16 ft |\n| 2 ly | 6.207808e+16 ft |\n| 5 ly | 1.551952e+17 ft |\n| 10 ly | 3.103904e+17 ft |\n| 25 ly | 7.759760e+17 ft |\n| 50 ly | 1.551952e+18 ft |\n| 100 ly | 3.103904e+18 ft |\n| 250 ly | 7.759760e+18 ft |\n| 500 ly | 1.551952e+19 ft |\n| 1000 ly | 3.103904e+19 ft |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ly ≈ 3.103904e+16 ft. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Light Year and Foot both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many feet are in 1 light year?\n**A:** 3.103904e+16 feet.\n\n**Q:** What's the formula to convert ly to ft?\n**A:** feet = light years × 3.103904e+16.\n\n**Q:** How do I convert ft back to ly?\n**A:** Multiply by 3.221749e-17 (or divide by 3.103904e+16).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ly to ft converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Foot to Light Year converter",
+      "href": "/c/length/ft-to-ly"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ly-to-ft",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ly-to-ft",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "light year to foot",
+      "ly to ft",
+      "convert ly to ft"
+    ]
+  },
+  "contentHash": "e9f113596aa9"
+}

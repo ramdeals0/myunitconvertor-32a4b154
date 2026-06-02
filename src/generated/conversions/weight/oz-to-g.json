@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "oz to g — Convert Ounce to Gram | Turbo Unit Converter",
+    "description": "Convert Ounce (oz) to Gram (g) instantly. 1 oz = 28.349523 g. Free, accurate, engineering-grade precision.",
+    "h1": "oz to g Converter"
+  },
+  "content": {
+    "intro": "Convert ounces (oz) to grams (g) instantly. Both measure weight & mass, so the relationship is strictly linear: each ounce equals 28.349523 grams. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One ounce is equal to **28.349523 grams**. To go the other way, one gram equals **0.035273962 ounces**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> grams = ounces × 28.349523\n\nWorked example — converting 10 ounces:\n\n10 × 28.349523 = **283.49523 g**.\n\nTo invert, divide by 28.349523 (or multiply by 0.035273962).",
+    "conversion_table": "| ounces | grams |\n| --- | --- |\n| 1 oz | 28.349523 g |\n| 2 oz | 56.699046 g |\n| 5 oz | 141.74762 g |\n| 10 oz | 283.49523 g |\n| 25 oz | 708.73808 g |\n| 50 oz | 1417.476 g |\n| 100 oz | 2834.952 g |\n| 250 oz | 7087.381 g |\n| 500 oz | 14174.8 g |\n| 1000 oz | 28349.5 g |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 oz ≈ 28.349523 g. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Ounce and Gram both measure weight & mass; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many grams are in 1 ounce?\n**A:** 28.349523 grams.\n\n**Q:** What's the formula to convert oz to g?\n**A:** grams = ounces × 28.349523.\n\n**Q:** How do I convert g back to oz?\n**A:** Multiply by 0.035273962 (or divide by 28.349523).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this oz to g converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Gram to Ounce converter",
+      "href": "/c/weight/g-to-oz"
+    },
+    {
+      "anchor": "All weight & mass conversions",
+      "href": "/c/weight"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "oz-to-g",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight/oz-to-g",
+    "category": "weight",
+    "pageType": "pair",
+    "keywords": [
+      "ounce to gram",
+      "oz to g",
+      "convert ounce to gram",
+      "how many gram in a ounce",
+      "ounce in gram",
+      "oz to g converter",
+      "ounce vs gram",
+      "ounce to gram formula",
+      "ounce to gram calculator"
+    ]
+  },
+  "contentHash": "312b05282303"
+}
