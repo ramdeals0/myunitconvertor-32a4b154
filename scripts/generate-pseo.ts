@@ -25,7 +25,10 @@ import { resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 
-import { CATEGORIES, convert, formatResult } from "../src/lib/converters/data";
+import { CATEGORIES, convert, formatResult as rawFormatResult } from "../src/lib/converters/data";
+const formatResult = (v: number): string => {
+  try { return rawFormatResult(v); } catch { return Number(v).toExponential(6); }
+};
 import type { Category, Unit } from "../src/lib/converters/types";
 
 // ---------- pSEO CSV loader (tsx-safe; avoids the Vite ?raw import) ----------
