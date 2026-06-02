@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Thermal Conductivity Converter — Convert Watt/(m·K) and More",
+    "description": "Free thermal conductivity converter for 4+ units including Watt/(m·K), cal/(s·cm·°C), BTU/(h·ft·°F). Instant, accurate, browser-based.",
+    "h1": "Thermal Conductivity Converter"
+  },
+  "content": {
+    "intro": "W/(m·K), BTU/(h·ft·°F). Convert between 4 thermal conductivity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for thermal conductivity in this tool is **WmK**; every conversion routes through it for consistency.",
+    "formula_section": "Most thermal conductivity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Watt/(m·K) | W/(m·K) |\n| cal/(s·cm·°C) | cal/(s·cm·°C) |\n| BTU/(h·ft·°F) | BTU/(h·ft·°F) |\n| BTU·in/(h·ft²·°F) | BTU·in/(h·ft²·°F) |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this thermal conductivity converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Watt/(m·K) (W/(m·K)), cal/(s·cm·°C) (cal/(s·cm·°C)), BTU/(h·ft·°F) (BTU/(h·ft·°F)), BTU·in/(h·ft²·°F) (BTU·in/(h·ft²·°F))."
+  },
+  "internal_links": [
+    {
+      "anchor": "Watt/(m·K) to cal/(s·cm·°C)",
+      "href": "/c/thermal-conductivity/wmk-to-calscm"
+    },
+    {
+      "anchor": "cal/(s·cm·°C) to Watt/(m·K)",
+      "href": "/c/thermal-conductivity/calscm-to-wmk"
+    },
+    {
+      "anchor": "BTU/(h·ft·°F) to Watt/(m·K)",
+      "href": "/c/thermal-conductivity/btuhft-to-wmk"
+    },
+    {
+      "anchor": "BTU·in/(h·ft²·°F) to Watt/(m·K)",
+      "href": "/c/thermal-conductivity/btuinft2-to-wmk"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "thermal-conductivity",
+    "canonicalUrl": "https://turbounitconverter.com/c/thermal-conductivity",
+    "category": "thermal-conductivity",
+    "pageType": "category",
+    "keywords": [
+      "thermal conductivity converter",
+      "convert thermal conductivity"
+    ]
+  },
+  "contentHash": "7dd108a73bb9"
+}

@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Volume Converter — Convert Liter and More",
+    "description": "Free volume converter for 13+ units including Liter, Milliliter, Cubic Meter. Instant, accurate, browser-based.",
+    "h1": "Volume Converter"
+  },
+  "content": {
+    "intro": "Liters, gallons, cups, milliliters and more. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 13 volume units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for volume in this tool is **L**; every conversion routes through it for consistency.",
+    "formula_section": "Most volume conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Liter | L |\n| Milliliter | mL |\n| Cubic Meter | m³ |\n| Cubic Centimeter | cm³ |\n| US Gallon | gal |\n| UK Gallon | gal (UK) |\n| US Quart | qt |\n| US Pint | pt |\n| US Cup | cup |\n| US Fluid Ounce | fl oz |\n| Tablespoon | tbsp |\n| Teaspoon | tsp |\n| Oil Barrel | bbl |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this volume converter?\n**A:** It uses 13 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Liter (L), Milliliter (mL), Cubic Meter (m³), Cubic Centimeter (cm³), US Gallon (gal), UK Gallon (gal (UK)), US Quart (qt), US Pint (pt), US Cup (cup), US Fluid Ounce (fl oz), Tablespoon (tbsp), Teaspoon (tsp), Oil Barrel (bbl)."
+  },
+  "internal_links": [
+    {
+      "anchor": "L to gal Converter",
+      "href": "/c/volume/L-to-gal_us"
+    },
+    {
+      "anchor": "gal to L Converter",
+      "href": "/c/volume/gal_us-to-L"
+    },
+    {
+      "anchor": "mL to fl oz Converter",
+      "href": "/c/volume/mL-to-floz"
+    },
+    {
+      "anchor": "fl oz to mL Converter",
+      "href": "/c/volume/floz-to-mL"
+    },
+    {
+      "anchor": "cup to mL Converter",
+      "href": "/c/volume/cup-to-mL"
+    },
+    {
+      "anchor": "mL to cup Converter",
+      "href": "/c/volume/mL-to-cup"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "volume",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume",
+    "category": "volume",
+    "pageType": "category",
+    "keywords": [
+      "volume converter",
+      "convert volume"
+    ]
+  },
+  "contentHash": "8dd91d67af58"
+}

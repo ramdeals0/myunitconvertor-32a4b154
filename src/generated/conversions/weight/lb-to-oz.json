@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "lb to oz — Convert Pound to Ounce | Turbo Unit Converter",
+    "description": "Convert Pound (lb) to Ounce (oz) instantly. 1 lb = 16 oz. Free, accurate, engineering-grade precision.",
+    "h1": "lb to oz Converter"
+  },
+  "content": {
+    "intro": "Convert lbs (lb) to ounces (oz) instantly. Both measure weight & mass, so the relationship is strictly linear: each pound equals 16 ounces. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One pound is equal to **16 ounces**. To go the other way, one ounce equals **0.0625 lbs**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> ounces = lbs × 16\n\nWorked example — converting 10 lbs:\n\n10 × 16 = **160 oz**.\n\nTo invert, divide by 16 (or multiply by 0.0625).",
+    "conversion_table": "| lbs | ounces |\n| --- | --- |\n| 1 lb | 16 oz |\n| 2 lb | 32 oz |\n| 5 lb | 80 oz |\n| 10 lb | 160 oz |\n| 25 lb | 400 oz |\n| 50 lb | 800 oz |\n| 100 lb | 1600 oz |\n| 250 lb | 4000 oz |\n| 500 lb | 8000 oz |\n| 1000 lb | 16000 oz |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 lb ≈ 16 oz. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Pound and Ounce both measure weight & mass; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many ounces are in 1 pound?\n**A:** 16 ounces.\n\n**Q:** What's the formula to convert lb to oz?\n**A:** ounces = lbs × 16.\n\n**Q:** How do I convert oz back to lb?\n**A:** Multiply by 0.0625 (or divide by 16).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this lb to oz converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Ounce to Pound converter",
+      "href": "/c/weight/oz-to-lb"
+    },
+    {
+      "anchor": "All weight & mass conversions",
+      "href": "/c/weight"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "lb-to-oz",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight/lb-to-oz",
+    "category": "weight",
+    "pageType": "pair",
+    "keywords": [
+      "pound to ounce",
+      "lb to oz",
+      "convert pound to ounce",
+      "how many ounce in a pound",
+      "pound in ounce",
+      "lb to oz converter",
+      "pound vs ounce",
+      "pound to ounce formula",
+      "pound to ounce calculator"
+    ]
+  },
+  "contentHash": "9999577fd1c0"
+}

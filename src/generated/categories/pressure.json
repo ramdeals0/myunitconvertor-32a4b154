@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Pressure Converter — Convert Pascal and More",
+    "description": "Free pressure converter for 9+ units including Pascal, Kilopascal, Megapascal. Instant, accurate, browser-based.",
+    "h1": "Pressure Converter"
+  },
+  "content": {
+    "intro": "Pascals, bars, PSI, atmospheres. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 9 pressure units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for pressure in this tool is **Pa**; every conversion routes through it for consistency.",
+    "formula_section": "Most pressure conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Pascal | Pa |\n| Kilopascal | kPa |\n| Megapascal | MPa |\n| Bar | bar |\n| Millibar | mbar |\n| Pound per Sq. Inch | psi |\n| Atmosphere | atm |\n| Torr | Torr |\n| Millimeter of Mercury | mmHg |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this pressure converter?\n**A:** It uses 9 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Pascal (Pa), Kilopascal (kPa), Megapascal (MPa), Bar (bar), Millibar (mbar), Pound per Sq. Inch (psi), Atmosphere (atm), Torr (Torr), Millimeter of Mercury (mmHg)."
+  },
+  "internal_links": [
+    {
+      "anchor": "psi to bar Converter",
+      "href": "/c/pressure/psi-to-bar"
+    },
+    {
+      "anchor": "bar to psi Converter",
+      "href": "/c/pressure/bar-to-psi"
+    },
+    {
+      "anchor": "psi to kPa Converter",
+      "href": "/c/pressure/psi-to-kPa"
+    },
+    {
+      "anchor": "kPa to psi Converter",
+      "href": "/c/pressure/kPa-to-psi"
+    },
+    {
+      "anchor": "bar to kPa Converter",
+      "href": "/c/pressure/bar-to-kPa"
+    },
+    {
+      "anchor": "kPa to bar Converter",
+      "href": "/c/pressure/kPa-to-bar"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "pressure",
+    "canonicalUrl": "https://turbounitconverter.com/c/pressure",
+    "category": "pressure",
+    "pageType": "category",
+    "keywords": [
+      "pressure converter",
+      "convert pressure"
+    ]
+  },
+  "contentHash": "963c854fa9ae"
+}

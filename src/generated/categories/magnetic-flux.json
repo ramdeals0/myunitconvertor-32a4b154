@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Magnetic Flux Converter — Convert Weber and More",
+    "description": "Free magnetic flux converter for 4+ units including Weber, Milliweber, Microweber. Instant, accurate, browser-based.",
+    "h1": "Magnetic Flux Converter"
+  },
+  "content": {
+    "intro": "Weber, maxwell. Convert between 4 magnetic flux units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for magnetic flux in this tool is **Wb**; every conversion routes through it for consistency.",
+    "formula_section": "Most magnetic flux conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Weber | Wb |\n| Milliweber | mWb |\n| Microweber | µWb |\n| Maxwell | Mx |",
+    "use_cases": "- MRI, NMR, and scientific-instrument field strength.\n- Magnet selection for industrial holding applications.\n- Sensor calibration in gauss vs tesla.\n- Audio and speaker magnet specs.\n- Magnetic shielding design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this magnetic flux converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Weber (Wb), Milliweber (mWb), Microweber (µWb), Maxwell (Mx)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Weber to Milliweber",
+      "href": "/c/magnetic-flux/wb-to-mwb"
+    },
+    {
+      "anchor": "Milliweber to Weber",
+      "href": "/c/magnetic-flux/mwb-to-wb"
+    },
+    {
+      "anchor": "Microweber to Weber",
+      "href": "/c/magnetic-flux/uwb-to-wb"
+    },
+    {
+      "anchor": "Maxwell to Weber",
+      "href": "/c/magnetic-flux/mx-to-wb"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "magnetic-flux",
+    "canonicalUrl": "https://turbounitconverter.com/c/magnetic-flux",
+    "category": "magnetic-flux",
+    "pageType": "category",
+    "keywords": [
+      "magnetic flux converter",
+      "convert magnetic flux"
+    ]
+  },
+  "contentHash": "c07e57196cef"
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "g to lb — Convert Gram to Pound | Turbo Unit Converter",
+    "description": "Convert Gram (g) to Pound (lb) instantly. 1 g = 0.0022046226 lb. Free, accurate, engineering-grade precision.",
+    "h1": "g to lb Converter"
+  },
+  "content": {
+    "intro": "Convert grams (g) to lbs (lb) instantly. Both measure weight & mass, so the relationship is strictly linear: each gram equals 0.0022046226 lbs. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One gram is equal to **0.0022046226 lbs**. To go the other way, one pound equals **453.59237 grams**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> lbs = grams × 0.0022046226\n\nWorked example — converting 10 grams:\n\n10 × 0.0022046226 = **0.022046226 lb**.\n\nTo invert, divide by 0.0022046226 (or multiply by 453.59237).",
+    "conversion_table": "| grams | lbs |\n| --- | --- |\n| 1 g | 0.0022046226 lb |\n| 2 g | 0.0044092452 lb |\n| 5 g | 0.011023113 lb |\n| 10 g | 0.022046226 lb |\n| 25 g | 0.055115566 lb |\n| 50 g | 0.11023113 lb |\n| 100 g | 0.22046226 lb |\n| 250 g | 0.55115566 lb |\n| 500 g | 1.1023113 lb |\n| 1000 g | 2.2046226 lb |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 g ≈ 0.0022046226 lb. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Gram and Pound both measure weight & mass; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many lbs are in 1 gram?\n**A:** 0.0022046226 lbs.\n\n**Q:** What's the formula to convert g to lb?\n**A:** lbs = grams × 0.0022046226.\n\n**Q:** How do I convert lb back to g?\n**A:** Multiply by 453.59237 (or divide by 0.0022046226).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this g to lb converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Pound to Gram converter",
+      "href": "/c/weight/lb-to-g"
+    },
+    {
+      "anchor": "All weight & mass conversions",
+      "href": "/c/weight"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "g-to-lb",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight/g-to-lb",
+    "category": "weight",
+    "pageType": "pair",
+    "keywords": [
+      "gram to pound",
+      "g to lb",
+      "convert gram to pound",
+      "how many pound in a gram",
+      "gram in pound",
+      "g to lb converter",
+      "gram vs pound",
+      "gram to pound formula",
+      "gram to pound calculator"
+    ]
+  },
+  "contentHash": "14b2ed9226c1"
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "fl oz to cup — Convert US Fluid Ounce to US Cup | Turbo Unit",
+    "description": "Convert US Fluid Ounce (fl oz) to US Cup (cup) instantly. 1 fl oz = 0.125 cup. Free, accurate, engineering-grade precision.",
+    "h1": "fl oz to cup Converter"
+  },
+  "content": {
+    "intro": "Convert us fluid ounces (fl oz) to us cups (cup) instantly. Both measure volume, so the relationship is strictly linear: each us fluid ounce equals 0.125 us cups. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One us fluid ounce is equal to **0.125 us cups**. To go the other way, one us cup equals **8 us fluid ounces**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> us cups = us fluid ounces × 0.125\n\nWorked example — converting 10 us fluid ounces:\n\n10 × 0.125 = **1.25 cup**.\n\nTo invert, divide by 0.125 (or multiply by 8).",
+    "conversion_table": "| us fluid ounces | us cups |\n| --- | --- |\n| 1 fl oz | 0.125 cup |\n| 2 fl oz | 0.25 cup |\n| 5 fl oz | 0.625 cup |\n| 10 fl oz | 1.25 cup |\n| 25 fl oz | 3.125 cup |\n| 50 fl oz | 6.25 cup |\n| 100 fl oz | 12.5 cup |\n| 250 fl oz | 31.25 cup |\n| 500 fl oz | 62.5 cup |\n| 1000 fl oz | 125 cup |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 fl oz ≈ 0.125 cup. For rough mental math, round to the nearest sensible digit.\n\nMind the units. US Fluid Ounce and US Cup both measure volume; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many us cups are in 1 us fluid ounce?\n**A:** 0.125 us cups.\n\n**Q:** What's the formula to convert fl oz to cup?\n**A:** us cups = us fluid ounces × 0.125.\n\n**Q:** How do I convert cup back to fl oz?\n**A:** Multiply by 8 (or divide by 0.125).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this fl oz to cup converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "US Cup to US Fluid Ounce converter",
+      "href": "/c/volume/cup-to-floz"
+    },
+    {
+      "anchor": "All volume conversions",
+      "href": "/c/volume"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "floz-to-cup",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume/floz-to-cup",
+    "category": "volume",
+    "pageType": "pair",
+    "keywords": [
+      "us fluid ounce to us cup",
+      "fl oz to cup",
+      "convert us fluid ounce to us cup",
+      "how many us cup in a us fluid ounce",
+      "us fluid ounce in us cup",
+      "fl oz to cup converter",
+      "us fluid ounce vs us cup",
+      "us fluid ounce to us cup formula",
+      "us fluid ounce to us cup calculator"
+    ]
+  },
+  "contentHash": "e0e0c746b0e4"
+}

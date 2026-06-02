@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Fuel Efficiency (Volume) Converter — Convert Joule/cubic meter an",
+    "description": "Free fuel efficiency (volume) converter for 5+ units including Joule/cubic meter, Kilojoule/cubic meter, Calorie/cubic centimeter. Instant, accurate, browser-ba",
+    "h1": "Fuel Efficiency (Volume) Converter"
+  },
+  "content": {
+    "intro": "J/m³, kJ/m³, BTU/ft³. Convert between 5 fuel efficiency (volume) units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for fuel efficiency (volume) in this tool is **Jm3**; every conversion routes through it for consistency.",
+    "formula_section": "Most fuel efficiency (volume) conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Joule/cubic meter | J/m³ |\n| Kilojoule/cubic meter | kJ/m³ |\n| Calorie/cubic centimeter | cal/cm³ |\n| BTU/cubic foot | BTU/ft³ |\n| Therm/US gallon | therm/gal |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this fuel efficiency (volume) converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Joule/cubic meter (J/m³), Kilojoule/cubic meter (kJ/m³), Calorie/cubic centimeter (cal/cm³), BTU/cubic foot (BTU/ft³), Therm/US gallon (therm/gal)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Joule/cubic meter to Kilojoule/cubic meter",
+      "href": "/c/fuel-efficiency-volume/jm3-to-kjm3"
+    },
+    {
+      "anchor": "Kilojoule/cubic meter to Joule/cubic meter",
+      "href": "/c/fuel-efficiency-volume/kjm3-to-jm3"
+    },
+    {
+      "anchor": "Calorie/cubic centimeter to Joule/cubic meter",
+      "href": "/c/fuel-efficiency-volume/calcm3-to-jm3"
+    },
+    {
+      "anchor": "BTU/cubic foot to Joule/cubic meter",
+      "href": "/c/fuel-efficiency-volume/btuft3-to-jm3"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "fuel-efficiency-volume",
+    "canonicalUrl": "https://turbounitconverter.com/c/fuel-efficiency-volume",
+    "category": "fuel-efficiency-volume",
+    "pageType": "category",
+    "keywords": [
+      "fuel efficiency (volume) converter",
+      "convert fuel efficiency (volume)"
+    ]
+  },
+  "contentHash": "f1f46be72674"
+}

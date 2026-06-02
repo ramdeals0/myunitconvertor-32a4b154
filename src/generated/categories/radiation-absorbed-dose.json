@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Radiation Absorbed Dose Converter — Convert Gray and More",
+    "description": "Free radiation absorbed dose converter for 5+ units including Gray, Milligray, Microgray. Instant, accurate, browser-based.",
+    "h1": "Radiation Absorbed Dose Converter"
+  },
+  "content": {
+    "intro": "Gray, rad. Convert between 5 radiation absorbed dose units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for radiation absorbed dose in this tool is **Gy**; every conversion routes through it for consistency.",
+    "formula_section": "Most radiation absorbed dose conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Gray | Gy |\n| Milligray | mGy |\n| Microgray | µGy |\n| Rad | rad |\n| Millirad | mrad |",
+    "use_cases": "- Medical imaging dose tracking.\n- Radiation protection calculations.\n- Material activity assays.\n- Lab radiation source labeling.\n- Industrial NDT inspections.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this radiation absorbed dose converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Gray (Gy), Milligray (mGy), Microgray (µGy), Rad (rad), Millirad (mrad)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Gray to Milligray",
+      "href": "/c/radiation-absorbed-dose/gy-to-mgy"
+    },
+    {
+      "anchor": "Milligray to Gray",
+      "href": "/c/radiation-absorbed-dose/mgy-to-gy"
+    },
+    {
+      "anchor": "Microgray to Gray",
+      "href": "/c/radiation-absorbed-dose/ugy-to-gy"
+    },
+    {
+      "anchor": "Rad to Gray",
+      "href": "/c/radiation-absorbed-dose/rad-to-gy"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "radiation-absorbed-dose",
+    "canonicalUrl": "https://turbounitconverter.com/c/radiation-absorbed-dose",
+    "category": "radiation-absorbed-dose",
+    "pageType": "category",
+    "keywords": [
+      "radiation absorbed dose converter",
+      "convert radiation absorbed dose"
+    ]
+  },
+  "contentHash": "3470e5da0859"
+}

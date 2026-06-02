@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "L/100km to mpg — Convert Liter/100 km to Miles/Gallon (US) |",
+    "description": "Convert Liter/100 km (L/100km) to Miles/Gallon (US) (mpg) instantly. 1 L/100km = 235.21458 mpg. Free, accurate, engineering-grade precision.",
+    "h1": "L/100km to mpg Converter"
+  },
+  "content": {
+    "intro": "Convert liter/100 kms (L/100km) to miles/gallon (us)s (mpg) instantly. Both measure fuel consumption, so the relationship is strictly linear: each liter/100 km equals 235.21458 miles/gallon (us)s. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One liter/100 km is equal to **235.21458 miles/gallon (us)s**. To go the other way, one miles/gallon (us) equals **235.21458 liter/100 kms**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles/gallon (us)s = liter/100 kms × 235.21458\n\nWorked example — converting 10 liter/100 kms:\n\n10 × 235.21458 = **23.521458 mpg**.\n\nTo invert, divide by 235.21458 (or multiply by 235.21458).",
+    "conversion_table": "| liter/100 kms | miles/gallon (us)s |\n| --- | --- |\n| 1 L/100km | 235.21458 mpg |\n| 2 L/100km | 117.60729 mpg |\n| 5 L/100km | 47.042917 mpg |\n| 10 L/100km | 23.521458 mpg |\n| 25 L/100km | 9.4085833 mpg |\n| 50 L/100km | 4.7042917 mpg |\n| 100 L/100km | 2.3521458 mpg |\n| 250 L/100km | 0.94085833 mpg |\n| 500 L/100km | 0.47042917 mpg |\n| 1000 L/100km | 0.23521458 mpg |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 L/100km ≈ 235.21458 mpg. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Liter/100 km and Miles/Gallon (US) both measure fuel consumption; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles/gallon (us)s are in 1 liter/100 km?\n**A:** 235.21458 miles/gallon (us)s.\n\n**Q:** What's the formula to convert L/100km to mpg?\n**A:** miles/gallon (us)s = liter/100 kms × 235.21458.\n\n**Q:** How do I convert mpg back to L/100km?\n**A:** Multiply by 235.21458 (or divide by 235.21458).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this L/100km to mpg converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Miles/Gallon (US) to Liter/100 km converter",
+      "href": "/c/fuel/mpg_us-to-lp100km"
+    },
+    {
+      "anchor": "All fuel consumption conversions",
+      "href": "/c/fuel"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "lp100km-to-mpg_us",
+    "canonicalUrl": "https://turbounitconverter.com/c/fuel/lp100km-to-mpg_us",
+    "category": "fuel",
+    "pageType": "pair",
+    "keywords": [
+      "liter/100 km to miles/gallon (us)",
+      "l/100km to mpg",
+      "convert liter/100 km to miles/gallon (us)",
+      "how many miles/gallon (us) in a liter/100 km",
+      "liter/100 km in miles/gallon (us)",
+      "l/100km to mpg converter",
+      "liter/100 km vs miles/gallon (us)",
+      "liter/100 km to miles/gallon (us) formula",
+      "liter/100 km to miles/gallon (us) calculator"
+    ]
+  },
+  "contentHash": "da58262e5ddd"
+}

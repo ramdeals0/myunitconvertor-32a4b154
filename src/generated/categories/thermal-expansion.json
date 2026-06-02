@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Thermal Expansion Converter — Convert 1/Kelvin and More",
+    "description": "Free thermal expansion converter for 4+ units including 1/Kelvin, 1/Celsius, 1/Fahrenheit. Instant, accurate, browser-based.",
+    "h1": "Thermal Expansion Converter"
+  },
+  "content": {
+    "intro": "Coefficient of linear expansion. Convert between 4 thermal expansion units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for thermal expansion in this tool is **perK**; every conversion routes through it for consistency.",
+    "formula_section": "Most thermal expansion conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| 1/Kelvin | 1/K |\n| 1/Celsius | 1/°C |\n| 1/Fahrenheit | 1/°F |\n| 1/Rankine | 1/°R |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this thermal expansion converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** 1/Kelvin (1/K), 1/Celsius (1/°C), 1/Fahrenheit (1/°F), 1/Rankine (1/°R)."
+  },
+  "internal_links": [
+    {
+      "anchor": "1/Kelvin to 1/Celsius",
+      "href": "/c/thermal-expansion/perk-to-perc"
+    },
+    {
+      "anchor": "1/Celsius to 1/Kelvin",
+      "href": "/c/thermal-expansion/perc-to-perk"
+    },
+    {
+      "anchor": "1/Fahrenheit to 1/Kelvin",
+      "href": "/c/thermal-expansion/perf-to-perk"
+    },
+    {
+      "anchor": "1/Rankine to 1/Kelvin",
+      "href": "/c/thermal-expansion/perr-to-perk"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "thermal-expansion",
+    "canonicalUrl": "https://turbounitconverter.com/c/thermal-expansion",
+    "category": "thermal-expansion",
+    "pageType": "category",
+    "keywords": [
+      "thermal expansion converter",
+      "convert thermal expansion"
+    ]
+  },
+  "contentHash": "52b051432b54"
+}

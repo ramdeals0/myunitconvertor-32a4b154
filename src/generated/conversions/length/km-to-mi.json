@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "km to mi — Convert Kilometer to Mile | Turbo Unit Converter",
+    "description": "Convert Kilometer (km) to Mile (mi) instantly. 1 km = 0.62137119 mi. Free, accurate, engineering-grade precision.",
+    "h1": "km to mi Converter"
+  },
+  "content": {
+    "intro": "Convert kilometers (km) to miles (mi) instantly. Both measure length, so the relationship is strictly linear: each kilometer equals 0.62137119 miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer is equal to **0.62137119 miles**. To go the other way, one mile equals **1.609344 kilometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles = kilometers × 0.62137119\n\nWorked example — converting 10 kilometers:\n\n10 × 0.62137119 = **6.2137119 mi**.\n\nTo invert, divide by 0.62137119 (or multiply by 1.609344).",
+    "conversion_table": "| kilometers | miles |\n| --- | --- |\n| 1 km | 0.62137119 mi |\n| 2 km | 1.2427424 mi |\n| 5 km | 3.106856 mi |\n| 10 km | 6.2137119 mi |\n| 25 km | 15.53428 mi |\n| 50 km | 31.06856 mi |\n| 100 km | 62.137119 mi |\n| 250 km | 155.3428 mi |\n| 500 km | 310.6856 mi |\n| 1000 km | 621.37119 mi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km ≈ 0.62137119 mi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer and Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles are in 1 kilometer?\n**A:** 0.62137119 miles.\n\n**Q:** What's the formula to convert km to mi?\n**A:** miles = kilometers × 0.62137119.\n\n**Q:** How do I convert mi back to km?\n**A:** Multiply by 1.609344 (or divide by 0.62137119).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km to mi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile to Kilometer converter",
+      "href": "/c/length/mi-to-km"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "km-to-mi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/km-to-mi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer to mile",
+      "km to mi",
+      "convert kilometer to mile",
+      "how many mile in a kilometer",
+      "kilometer in mile",
+      "km to mi converter",
+      "kilometer vs mile",
+      "kilometer to mile formula",
+      "kilometer to mile calculator"
+    ]
+  },
+  "contentHash": "1cb7d9cd305f"
+}

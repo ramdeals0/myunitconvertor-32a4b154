@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Angle Converter — Convert Radian and More",
+    "description": "Free angle converter for 6+ units including Radian, Degree, Gradian. Instant, accurate, browser-based.",
+    "h1": "Angle Converter"
+  },
+  "content": {
+    "intro": "Degrees, radians, gradians. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 6 angle units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for angle in this tool is **rad**; every conversion routes through it for consistency.",
+    "formula_section": "Most angle conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Radian | rad |\n| Degree | ° |\n| Gradian | grad |\n| Arcminute | ' |\n| Arcsecond | \" |\n| Turn | tr |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this angle converter?\n**A:** It uses 6 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Radian (rad), Degree (°), Gradian (grad), Arcminute ('), Arcsecond (\"), Turn (tr)."
+  },
+  "internal_links": [
+    {
+      "anchor": "° to rad Converter",
+      "href": "/c/angle/deg-to-rad"
+    },
+    {
+      "anchor": "rad to ° Converter",
+      "href": "/c/angle/rad-to-deg"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "angle",
+    "canonicalUrl": "https://turbounitconverter.com/c/angle",
+    "category": "angle",
+    "pageType": "category",
+    "keywords": [
+      "angle converter",
+      "convert angle"
+    ]
+  },
+  "contentHash": "00a7890de143"
+}

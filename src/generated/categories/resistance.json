@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Electric Resistance Converter — Convert Ohm and More",
+    "description": "Free electric resistance converter for 4+ units including Ohm, Kiloohm, Megaohm. Instant, accurate, browser-based.",
+    "h1": "Electric Resistance Converter"
+  },
+  "content": {
+    "intro": "Ohms, kiloohms, megaohms. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 4 electric resistance units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electric resistance in this tool is **ohm**; every conversion routes through it for consistency.",
+    "formula_section": "Most electric resistance conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Ohm | Ω |\n| Kiloohm | kΩ |\n| Megaohm | MΩ |\n| Milliohm | mΩ |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electric resistance converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Ohm (Ω), Kiloohm (kΩ), Megaohm (MΩ), Milliohm (mΩ)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Ohm to Kiloohm",
+      "href": "/c/resistance/ohm-to-kohm"
+    },
+    {
+      "anchor": "Kiloohm to Ohm",
+      "href": "/c/resistance/kohm-to-ohm"
+    },
+    {
+      "anchor": "Megaohm to Ohm",
+      "href": "/c/resistance/mohm-to-ohm"
+    },
+    {
+      "anchor": "Milliohm to Ohm",
+      "href": "/c/resistance/mohm-to-ohm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "resistance",
+    "canonicalUrl": "https://turbounitconverter.com/c/resistance",
+    "category": "resistance",
+    "pageType": "category",
+    "keywords": [
+      "electric resistance converter",
+      "convert electric resistance"
+    ]
+  },
+  "contentHash": "f579079d9a2b"
+}

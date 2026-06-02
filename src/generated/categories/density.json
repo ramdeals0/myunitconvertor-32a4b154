@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Density Converter — Convert Kilogram/m³ and More",
+    "description": "Free density converter for 5+ units including Kilogram/m³, Gram/cm³, Gram/mL. Instant, accurate, browser-based.",
+    "h1": "Density Converter"
+  },
+  "content": {
+    "intro": "Kilogram/m³, g/cm³, lb/ft³. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 5 density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for density in this tool is **kgm3**; every conversion routes through it for consistency.",
+    "formula_section": "Most density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram/m³ | kg/m³ |\n| Gram/cm³ | g/cm³ |\n| Gram/mL | g/mL |\n| Pound/ft³ | lb/ft³ |\n| Pound/in³ | lb/in³ |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this density converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram/m³ (kg/m³), Gram/cm³ (g/cm³), Gram/mL (g/mL), Pound/ft³ (lb/ft³), Pound/in³ (lb/in³)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilogram/m³ to Gram/cm³",
+      "href": "/c/density/kgm3-to-gcm3"
+    },
+    {
+      "anchor": "Gram/cm³ to Kilogram/m³",
+      "href": "/c/density/gcm3-to-kgm3"
+    },
+    {
+      "anchor": "Gram/mL to Kilogram/m³",
+      "href": "/c/density/gml-to-kgm3"
+    },
+    {
+      "anchor": "Pound/ft³ to Kilogram/m³",
+      "href": "/c/density/lbft3-to-kgm3"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "density",
+    "canonicalUrl": "https://turbounitconverter.com/c/density",
+    "category": "density",
+    "pageType": "category",
+    "keywords": [
+      "density converter",
+      "convert density"
+    ]
+  },
+  "contentHash": "3892f8b976d9"
+}

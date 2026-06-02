@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "yd to m — Convert Yard to Meter | Turbo Unit Converter",
+    "description": "Convert Yard (yd) to Meter (m) instantly. 1 yd = 0.9144 m. Free, accurate, engineering-grade precision.",
+    "h1": "yd to m Converter"
+  },
+  "content": {
+    "intro": "Convert yards (yd) to meters (m) instantly. Both measure length, so the relationship is strictly linear: each yard equals 0.9144 meters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One yard is equal to **0.9144 meters**. To go the other way, one meter equals **1.0936133 yards**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> meters = yards × 0.9144\n\nWorked example — converting 10 yards:\n\n10 × 0.9144 = **9.144 m**.\n\nTo invert, divide by 0.9144 (or multiply by 1.0936133).",
+    "conversion_table": "| yards | meters |\n| --- | --- |\n| 1 yd | 0.9144 m |\n| 2 yd | 1.8288 m |\n| 5 yd | 4.572 m |\n| 10 yd | 9.144 m |\n| 25 yd | 22.86 m |\n| 50 yd | 45.72 m |\n| 100 yd | 91.44 m |\n| 250 yd | 228.6 m |\n| 500 yd | 457.2 m |\n| 1000 yd | 914.4 m |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 yd ≈ 0.9144 m. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Yard and Meter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many meters are in 1 yard?\n**A:** 0.9144 meters.\n\n**Q:** What's the formula to convert yd to m?\n**A:** meters = yards × 0.9144.\n\n**Q:** How do I convert m back to yd?\n**A:** Multiply by 1.0936133 (or divide by 0.9144).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this yd to m converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter to Yard converter",
+      "href": "/c/length/m-to-yd"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "yd-to-m",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/yd-to-m",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "yard to meter",
+      "yd to m",
+      "convert yard to meter",
+      "how many meter in a yard",
+      "yard in meter",
+      "yd to m converter",
+      "yard vs meter",
+      "yard to meter formula",
+      "yard to meter calculator"
+    ]
+  },
+  "contentHash": "ac98850d7405"
+}

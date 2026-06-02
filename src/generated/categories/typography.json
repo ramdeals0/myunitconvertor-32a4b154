@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Typography Converter — Convert Meter and More",
+    "description": "Free typography converter for 8+ units including Meter, Centimeter, Millimeter. Instant, accurate, browser-based.",
+    "h1": "Typography Converter"
+  },
+  "content": {
+    "intro": "Points, picas, twips, pixels. Convert between 8 typography units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for typography in this tool is **m**; every conversion routes through it for consistency.",
+    "formula_section": "Most typography conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Meter | m |\n| Centimeter | cm |\n| Millimeter | mm |\n| Inch | in |\n| Point | pt |\n| Pica | pc |\n| Twip | twip |\n| Pixel (96 DPI) | px |",
+    "use_cases": "- Engineering reference and cross-discipline calculations.\n- Scientific paper unit harmonization.\n- International standards compliance.\n- Procurement and supplier negotiation.\n- Education and tutoring contexts.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this typography converter?\n**A:** It uses 8 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Meter (m), Centimeter (cm), Millimeter (mm), Inch (in), Point (pt), Pica (pc), Twip (twip), Pixel (96 DPI) (px)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter to Centimeter",
+      "href": "/c/typography/m-to-cm"
+    },
+    {
+      "anchor": "Centimeter to Meter",
+      "href": "/c/typography/cm-to-m"
+    },
+    {
+      "anchor": "Millimeter to Meter",
+      "href": "/c/typography/mm-to-m"
+    },
+    {
+      "anchor": "Inch to Meter",
+      "href": "/c/typography/in-to-m"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "typography",
+    "canonicalUrl": "https://turbounitconverter.com/c/typography",
+    "category": "typography",
+    "pageType": "category",
+    "keywords": [
+      "typography converter",
+      "convert typography"
+    ]
+  },
+  "contentHash": "3fe519e1d155"
+}

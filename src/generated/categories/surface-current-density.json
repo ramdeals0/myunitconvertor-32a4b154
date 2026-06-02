@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Surface Current Density Converter — Convert Ampere/m² and More",
+    "description": "Free surface current density converter for 3+ units including Ampere/m², Ampere/cm², Ampere/in². Instant, accurate, browser-based.",
+    "h1": "Surface Current Density Converter"
+  },
+  "content": {
+    "intro": "A/m², A/cm², A/in². Convert between 3 surface current density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for surface current density in this tool is **Am2**; every conversion routes through it for consistency.",
+    "formula_section": "Most surface current density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Ampere/m² | A/m² |\n| Ampere/cm² | A/cm² |\n| Ampere/in² | A/in² |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this surface current density converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Ampere/m² (A/m²), Ampere/cm² (A/cm²), Ampere/in² (A/in²)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Ampere/m² to Ampere/cm²",
+      "href": "/c/surface-current-density/am2-to-acm2"
+    },
+    {
+      "anchor": "Ampere/cm² to Ampere/m²",
+      "href": "/c/surface-current-density/acm2-to-am2"
+    },
+    {
+      "anchor": "Ampere/in² to Ampere/m²",
+      "href": "/c/surface-current-density/ain2-to-am2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "surface-current-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/surface-current-density",
+    "category": "surface-current-density",
+    "pageType": "category",
+    "keywords": [
+      "surface current density converter",
+      "convert surface current density"
+    ]
+  },
+  "contentHash": "7a80226a3569"
+}

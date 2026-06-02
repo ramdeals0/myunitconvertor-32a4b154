@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Electric Conductance Converter — Convert Siemens and More",
+    "description": "Free electric conductance converter for 4+ units including Siemens, Millisiemens, Microsiemens. Instant, accurate, browser-based.",
+    "h1": "Electric Conductance Converter"
+  },
+  "content": {
+    "intro": "Siemens, mho. Convert between 4 electric conductance units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electric conductance in this tool is **S**; every conversion routes through it for consistency.",
+    "formula_section": "Most electric conductance conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Siemens | S |\n| Millisiemens | mS |\n| Microsiemens | µS |\n| Mho | ℧ |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electric conductance converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Siemens (S), Millisiemens (mS), Microsiemens (µS), Mho (℧)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Siemens to Millisiemens",
+      "href": "/c/electric-conductance/s-to-ms"
+    },
+    {
+      "anchor": "Millisiemens to Siemens",
+      "href": "/c/electric-conductance/ms-to-s"
+    },
+    {
+      "anchor": "Microsiemens to Siemens",
+      "href": "/c/electric-conductance/us-to-s"
+    },
+    {
+      "anchor": "Mho to Siemens",
+      "href": "/c/electric-conductance/mho-to-s"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "electric-conductance",
+    "canonicalUrl": "https://turbounitconverter.com/c/electric-conductance",
+    "category": "electric-conductance",
+    "pageType": "category",
+    "keywords": [
+      "electric conductance converter",
+      "convert electric conductance"
+    ]
+  },
+  "contentHash": "c4ec3a279b42"
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Luminous Intensity Converter — Convert Candela and More",
+    "description": "Free luminous intensity converter for 3+ units including Candela, Candlepower, Hefner candle. Instant, accurate, browser-based.",
+    "h1": "Luminous Intensity Converter"
+  },
+  "content": {
+    "intro": "Candela, candlepower. Convert between 3 luminous intensity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for luminous intensity in this tool is **cd**; every conversion routes through it for consistency.",
+    "formula_section": "Most luminous intensity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Candela | cd |\n| Candlepower | cp |\n| Hefner candle | HK |",
+    "use_cases": "- Photography exposure planning across lumen and lux references.\n- Workspace lighting design to meet ergonomic targets.\n- Display brightness and ambient-light comparisons.\n- Plant-grow lighting setups.\n- Stage and event lighting design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this luminous intensity converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Candela (cd), Candlepower (cp), Hefner candle (HK)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Candela to Candlepower",
+      "href": "/c/luminous-intensity/cd-to-cp"
+    },
+    {
+      "anchor": "Candlepower to Candela",
+      "href": "/c/luminous-intensity/cp-to-cd"
+    },
+    {
+      "anchor": "Hefner candle to Candela",
+      "href": "/c/luminous-intensity/hk-to-cd"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "luminous-intensity",
+    "canonicalUrl": "https://turbounitconverter.com/c/luminous-intensity",
+    "category": "luminous-intensity",
+    "pageType": "category",
+    "keywords": [
+      "luminous intensity converter",
+      "convert luminous intensity"
+    ]
+  },
+  "contentHash": "5d7de9e16823"
+}
