@@ -130,8 +130,10 @@ export function SiteFooter() {
           <div>
             <span className="font-semibold text-foreground">Turbo Unit Converter</span> — {t("footer.tagline")}
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap justify-center">
             <Link to="/about" className="hover:text-foreground transition-colors">{t("footer.about")}</Link>
+            <span className="text-border">|</span>
+            <Link to="/methodology" className="hover:text-foreground transition-colors">Methodology</Link>
             <span className="text-border">|</span>
             <Link to="/privacy" className="hover:text-foreground transition-colors">{t("footer.privacy")}</Link>
             <span className="text-border">|</span>
