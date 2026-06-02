@@ -34,6 +34,25 @@ export default function CategoryPage() {
   const jsonLd: Record<string, unknown>[] = [
     {
       "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: title,
+      description,
+      url,
+      inLanguage: "en",
+      isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+      mainEntity: {
+        "@type": "WebApplication",
+        name: `${category.name} Unit Converter`,
+        applicationCategory: "UtilitiesApplication",
+      },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `https://turbounitconverter.com/?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },

@@ -60,6 +60,26 @@ export default function PairPage() {
         jsonLd={[
           {
             "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: heading,
+            description: desc,
+            url,
+            inLanguage: "en",
+            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+            primaryImageOfPage: undefined,
+            mainEntity: {
+              "@type": "HowTo",
+              name: `Convert ${f.name} to ${t.name}`,
+              description: `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) using the exact factor ${formatResult(factor)}.`,
+            },
+            potentialAction: {
+              "@type": "SearchAction",
+              target: `https://turbounitconverter.com/?q={search_term_string}`,
+              "query-input": "required name=search_term_string",
+            },
+          },
+          {
+            "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
