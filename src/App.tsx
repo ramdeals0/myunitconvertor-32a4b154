@@ -7,6 +7,7 @@ import { I18nProvider } from "@/lib/i18n";
 import { AdBanner } from "@/components/AdBanner";
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
+import MethodologyPage from "@/pages/Methodology";
 import ConvertersPage from "@/pages/Converters";
 import PrivacyPage from "@/pages/Privacy";
 import TermsPage from "@/pages/Terms";
@@ -33,6 +34,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/methodology" element={<MethodologyPage />} />
             <Route path="/converters" element={<ConvertersPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
