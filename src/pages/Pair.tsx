@@ -6,6 +6,13 @@ import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
+import {
+  getGeneratedPair,
+  MdParagraphs,
+  MdBulletList,
+  MdTable,
+  MdFaq,
+} from "@/lib/converters/generatedContent";
 
 function parsePair(pair: string): [string, string] {
   const parts = pair.split("-to-");
