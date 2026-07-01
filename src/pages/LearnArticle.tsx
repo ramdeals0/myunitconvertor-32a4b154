@@ -182,7 +182,7 @@ export default function LearnArticlePage() {
 
         <section className="mt-10 border-t border-border pt-6">
           <p className="text-xs text-muted-foreground">
-            This article was written by {article.author.name} and last reviewed on {article.updated} against{" "}
+            This article was written by {article.author.name} ({article.author.role}) and last reviewed on {article.reviewed ?? article.updated} against{" "}
             <a href="https://www.nist.gov/pml/special-publication-811" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NIST SP 811</a>{" "}
             and the{" "}
             <a href="https://www.bipm.org/en/publications/si-brochure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BIPM SI Brochure</a>.
