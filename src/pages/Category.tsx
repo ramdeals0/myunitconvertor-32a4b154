@@ -31,11 +31,8 @@ export default function CategoryPage() {
   const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
   const url = `https://turbounitconverter.com/c/${category.id}`;
 
-  const faqs = [
-    { q: "How precise is this tool?", a: "We use 12-digit precision constants aligned with international metrology standards." },
-    { q: `Which ${category.name.toLowerCase()} units are supported?`, a: `${category.units.length} units across SI, US Customary, and Imperial systems where applicable.` },
-    { q: "Is it free to use?", a: "Yes, the web tool is completely free for personal, educational, and professional use." },
-  ];
+  const content = getCategoryContent(category);
+  const faqs = content.faqs.map((item) => ({ q: item.q, a: item.a }));
 
   const jsonLd: Record<string, unknown>[] = [
     {
