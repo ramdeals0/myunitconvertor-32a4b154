@@ -493,6 +493,38 @@ export default function PairPage() {
           );
         })()}
 
+        {(() => {
+          const hinted = getArticlesByCategoryHint(category.id, 2);
+          const fallback = getAllArticles().slice(0, 2);
+          const articles = (hinted.length ? hinted : fallback).slice(0, 2);
+          if (!articles.length) return null;
+          return (
+            <section className="mt-12">
+              <h2 className="text-xl font-semibold mb-4">Read more in the learning centre</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                {articles.map((a) => (
+                  <Link
+                    key={a.slug}
+                    to={`/learn/${a.slug}`}
+                    className="group bg-surface-elevated border border-border rounded-xl p-5 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
+                  >
+                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
+                      {a.category} · {a.readingMinutes} min read
+                    </div>
+                    <div className="mt-2 font-semibold leading-snug group-hover:text-primary transition">
+                      {a.title}
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                      {a.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
+
+
         <section
           className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]"
           aria-labelledby="standards-refs"
