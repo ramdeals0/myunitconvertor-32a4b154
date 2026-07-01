@@ -2,7 +2,6 @@ import { Link, useParams, Navigate } from "react-router-dom";
 
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdSlot } from "@/components/AdSlot";
 import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
@@ -140,7 +139,6 @@ export default function CategoryPage() {
           </div>
         )}
 
-        <AdSlot allowed={adsAllowed} wordCount={launchPairCount * 100} context="category-below-converter" className="mt-10" />
 
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About the {category.name.toLowerCase()} converter</h2>

@@ -1,6 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import { Seo } from "@/components/Seo";
-import { AdSlot } from "@/components/AdSlot";
 import { getAllArticles, getArticle } from "@/content/articles";
 import { countWords } from "@/lib/seo/indexability";
 import { Clock, ShieldCheck, ArrowRight } from "lucide-react";
@@ -130,7 +129,6 @@ export default function LearnArticlePage() {
           })}
         </div>
 
-        <AdSlot allowed={adsAllowed} wordCount={wordCount} context="article-body" className="my-10" />
 
         <section className="mt-10 bg-surface-elevated border border-border rounded-2xl p-6">
           <h2 className="text-xl font-semibold mb-4">Try the converters mentioned in this article</h2>

@@ -3,7 +3,6 @@ import { ArrowRight as ArrowRightIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdSlot } from "@/components/AdSlot";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
@@ -211,7 +210,6 @@ export default function PairPage() {
           <div className="text-xs text-muted-foreground mt-1">Calculated with engineering-grade precision.</div>
         </div>
 
-        <AdSlot allowed={idx.adsAllowed} wordCount={idx.wordCount} context="pair-below-converter" className="mt-10" />
 
         {gen ? (
           <>
