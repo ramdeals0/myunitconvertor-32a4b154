@@ -31,9 +31,12 @@ export default function LearnArticlePage() {
             description: article.description,
             url,
             inLanguage: "en",
-            datePublished: article.updated,
+            datePublished: article.published ?? article.updated,
             dateModified: article.updated,
             author: { "@type": "Person", name: article.author.name, jobTitle: article.author.role },
+            ...(article.reviewer && {
+              reviewedBy: { "@type": "Person", name: article.reviewer.name, jobTitle: article.reviewer.credential },
+            }),
             publisher: {
               "@type": "Organization",
               name: "Turbo Unit Converter",
