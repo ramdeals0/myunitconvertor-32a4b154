@@ -140,12 +140,13 @@ export default function CategoryPage() {
 
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About the {category.name.toLowerCase()} converter</h2>
-          <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-            The {category.name} Converter translates values between {category.units.length} different {category.name.toLowerCase()} units
-            — including SI, US Customary, and Imperial measures where applicable — using 12-digit precision constants aligned with
-            international metrology standards. {category.description} Enter any value on the left and the result updates instantly,
-            so you can compare units, double-check a calculation, or generate reference tables without leaving the page.
-          </p>
+          <div className="space-y-4">
+            {content.intro.map((paragraph, i) => (
+              <p key={i} className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
 
           <h3 className="text-base md:text-lg font-semibold mt-6 mb-2">Common real-world scenarios</h3>
           <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground leading-relaxed">
