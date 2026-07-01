@@ -18,10 +18,17 @@ export interface Article {
   description: string;
   category: string;
   readingMinutes: number;
-  updated: string; // ISO date
+  /** ISO date the article was first published. Falls back to `updated` when omitted. */
+  published?: string;
+  /** ISO date the article was last content-edited. */
+  updated: string;
+  /** ISO date the article was last technically reviewed. Falls back to `updated`. */
+  reviewed?: string;
   author: {
     name: string;
     role: string;
+    /** Optional short bio line, one sentence. */
+    bio?: string;
   };
   reviewer?: {
     name: string;
