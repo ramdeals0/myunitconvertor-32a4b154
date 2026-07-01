@@ -1,0 +1,38 @@
+{
+  "slug": "mbps-vs-mbs-the-x8-trap",
+  "title": "Mbps vs MB/s: The ×8 Trap That Tricks Every New Broadband Customer",
+  "h1": "Mbps vs MB/s: the ×8 trap on your internet plan",
+  "description": "Your 100 Mbps plan does not download at 100 MB per second — it downloads at 12.5 MB/s. Here is why, and where the network overhead goes.",
+  "category": "Data rate",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "The single most-shouted-about ISP argument on the internet is really a units problem: your gigabit plan does not deliver a gigabyte per second, and here is exactly why.",
+  "body": [
+    "Every broadband plan is sold in megabits per second (Mbps). Every file browser reports downloads in megabytes per second (MB/s). One byte is 8 bits. So the download that Chrome reports as 12 MB/s is 96 Mbps, and if you are paying for 100 Mbps that is basically the entire pipe — the ISP is delivering what you paid for. If you were expecting 100 MB/s on a 100 Mbps plan, you were expecting eight times what the plan actually promises.",
+    "## The exact factor",
+    "> 1 Mbps = 0.125 MB/s (megabytes)\n> 1 MB/s = 8 Mbps\n> 1 Gbps = 125 MB/s",
+    "There is a second subtlety hiding in the letter case: **b** means bit, **B** means byte. Networking equipment vendors use the lowercase b throughout — Mbps, Gbps, Tbps. Operating systems and file browsers use the uppercase B — MB, GB, TB. The units page on every enterprise switch you will ever buy is careful about this; consumer software is not.",
+    "## Where the missing bandwidth actually goes",
+    "Even accounting for the /8, real downloads land a few percent below the raw plan speed. The gap is protocol overhead. TCP/IP headers add roughly 3–5% to the payload. Ethernet framing adds another 1–2%. WiFi throws in retransmissions on top of everything. On a 1 Gbps fibre plan you will typically see 900–940 Mbps to a well-provisioned test server, or 112–118 MB/s in the browser. That is normal and not something your ISP is stealing from you.",
+    "## Base-10 vs base-2 (the second, sneakier, factor of ~5%)",
+    "The megabyte adds one more layer. Storage manufacturers use base-10: 1 MB = 1,000,000 bytes, 1 GB = 1,000,000,000. Windows and most software use base-2: 1 MiB = 1,048,576 bytes, 1 GiB = 1,073,741,824. That is why a hard drive sold as 500 GB shows up in Windows as about 465 GB — the drive maker used base-10 and Windows displayed base-2. The two definitions differ by 4.9% at the gigabyte scale and 7.4% at the terabyte scale.",
+    "The IEC standardised the base-2 prefixes as **kibi (Ki), mebi (Mi), gibi (Gi), tebi (Ti)** back in 1998 to end the ambiguity. Almost nobody uses them in consumer software. Data-centre and Linux tools do — `ls -h` reports MiB, GiB.",
+    "## Practical download-time table",
+    "> 1 GB file at 100 Mbps = 1000 MB × 8 / 100 Mbps = 80 s (best case)\n> 1 GB file at 1 Gbps = 8 s (best case)\n> 4 GB Netflix movie at 25 Mbps = 21 min",
+    "In every case add roughly 10% for real-world overhead. If your download is nowhere near these numbers, the bottleneck is almost never the ISP's last mile — it is usually WiFi, disk write speed, or a slow server on the other end.",
+    "## Five-second recap",
+    "Divide Mbps by 8 to get MB/s. If your download speed in the browser is about one eighth of your plan speed, the ISP is doing what it said it would. If it is far below that, test on a wired connection to a modern speed test server before blaming the provider."
+  ],
+  "faqs": [
+    { "q": "How fast is a 100 Mbps plan in MB/s?", "a": "100 Mbps ÷ 8 = 12.5 MB/s at the network layer. Real-world downloads usually see about 11–12 MB/s after protocol overhead." },
+    { "q": "Is Mb the same as MB?", "a": "No. Mb is megabits, MB is megabytes. There are 8 megabits in a megabyte, so MB is 8× bigger." },
+    { "q": "Why does my hard drive show less space than the label?", "a": "Manufacturers count 1 GB = 1,000,000,000 bytes (base 10). Windows counts 1 GB = 1,073,741,824 bytes (base 2). A 1 TB drive shows as ~931 GB in Windows." },
+    { "q": "What is a gigabit in bytes per second?", "a": "1 Gbps = 125 MB/s in the base-10 sense, or about 119 MiB/s in the base-2 sense Windows uses." }
+  ],
+  "related": [
+    { "label": "Mbps to MB/s converter", "href": "/c/data_transfer/Mbps-to-MBps" },
+    { "label": "GB to MB converter", "href": "/c/data/GB-to-MB" },
+    { "label": "GiB to GB converter", "href": "/c/data/GiB-to-GB" }
+  ]
+}

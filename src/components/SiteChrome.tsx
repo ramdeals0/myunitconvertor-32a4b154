@@ -17,8 +17,8 @@ export function SiteHeader() {
     { to: "/c/length", label: t("nav.length") },
     { to: "/c/weight", label: t("nav.weight") },
     { to: "/c/temperature", label: t("nav.temperature") },
-    { to: "/c/volume", label: t("nav.volume") },
     { to: "/converters", label: t("nav.all") },
+    { to: "/learn", label: "Learn" },
   ];
 
   useEffect(() => {
@@ -131,9 +131,13 @@ export function SiteFooter() {
             <span className="font-semibold text-foreground">Turbo Unit Converter</span> — {t("footer.tagline")}
           </div>
           <div className="flex items-center gap-4 flex-wrap justify-center">
+            <Link to="/learn" className="hover:text-foreground transition-colors">Learn</Link>
+            <span className="text-border">|</span>
             <Link to="/about" className="hover:text-foreground transition-colors">{t("footer.about")}</Link>
             <span className="text-border">|</span>
             <Link to="/methodology" className="hover:text-foreground transition-colors">Methodology</Link>
+            <span className="text-border">|</span>
+            <Link to="/editorial-policy" className="hover:text-foreground transition-colors">Editorial policy</Link>
             <span className="text-border">|</span>
             <Link to="/privacy" className="hover:text-foreground transition-colors">{t("footer.privacy")}</Link>
             <span className="text-border">|</span>

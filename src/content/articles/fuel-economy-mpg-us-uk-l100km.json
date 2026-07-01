@@ -1,0 +1,38 @@
+{
+  "slug": "fuel-economy-mpg-us-uk-l100km",
+  "title": "MPG (US) vs MPG (UK) vs L/100km: Fuel Economy Without Bragging Rights",
+  "h1": "MPG (US) vs MPG (UK) vs L/100 km: fuel economy without the marketing spin",
+  "description": "A 40 mpg car in the US and a 40 mpg car in the UK do not sip fuel at the same rate. Here is the exact conversion and why L/100 km is the honest metric.",
+  "category": "Fuel economy",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "Three regions, three different fuel economy numbers, and one weirdly inverted unit that makes cross-shopping cars a maths problem.",
+  "body": [
+    "Fuel economy is the last consumer number that is still routinely reported in three different units. In the US, cars are rated in miles per US gallon (mpg-US). In the UK, the same car may be rated in miles per Imperial gallon (mpg-UK), and everywhere else in the world it is litres per 100 kilometres (L/100 km). The three numbers all describe the same car but they are not the same value — and one of them runs in the opposite direction to the other two.",
+    "## The three factors",
+    "> 1 US gallon = 3.785411784 L\n> 1 Imperial gallon = 4.54609 L\n> 1 mile = 1.609344 km",
+    "From that: **mpg-US → L/100 km** is `235.2145833 / mpg`. **mpg-UK → L/100 km** is `282.4809363 / mpg`. **mpg-US → mpg-UK** is multiplied by 1.20095 (because the Imperial gallon is 20.1% larger). This last factor is why UK marketing brochures always look better than their US equivalents: the same physical car gets a bigger mpg number in the UK simply because a UK gallon is bigger.",
+    "## Worked example: a real EPA number",
+    "A 2024 Toyota Corolla Hybrid is EPA-rated at 47 mpg combined. In the UK the same drivetrain achieves 47 × 1.20095 = 56.4 mpg (Imperial). In L/100 km terms both convert to 5.0 L/100 km — the honest, apples-to-apples number.",
+    "## Why L/100 km flips your intuition",
+    "Miles per gallon is a *bigger is better* metric — the further you travel on the same fuel, the higher the number. L/100 km is *smaller is better* — the less fuel you use to cover the same distance, the lower the number. This flips two useful intuitions.",
+    "First, it exposes diminishing returns. Going from 20 mpg to 25 mpg saves the same amount of fuel over 10,000 miles as going from 33 mpg to 50 mpg — but the L/100 km numbers make that obvious: 20 mpg = 11.76 L/100km, 25 mpg = 9.41, a saving of 2.35 L/100km, versus 33 mpg = 7.13 to 50 mpg = 4.70, a saving of 2.43. Nearly identical.",
+    "Second, it makes fleet averages arithmetic. If half your fleet does 8 L/100 km and half does 12 L/100 km, the fleet average is 10 L/100 km. In mpg you cannot just average — you have to convert to L/100 km, average, then convert back.",
+    "## Regional oddities",
+    "Canada switched from mpg-UK to L/100 km in the 1970s but many drivers still convert to mpg mentally — usually the Imperial version. Australia and New Zealand use L/100 km on every new car sticker. Japan reports km/L (kilometres per litre), which is L/100 km inverted and multiplied by 100.",
+    "## Five-second cheat sheet",
+    "US mpg × 0.4251 = km/L. US mpg × 1.20095 = UK mpg. L/100 km × US mpg = 235.21. If you cannot remember the factor, remember that a UK gallon is roughly 20% bigger, so UK mpg is always the flattering number. And when you see a manufacturer quote a fuel economy improvement, convert both numbers to L/100 km before deciding whether the marketing team is exaggerating."
+  ],
+  "faqs": [
+    { "q": "How many US mpg is 5 L/100 km?", "a": "235.2146 / 5 = 47.04 mpg (US)." },
+    { "q": "Why is UK mpg higher than US mpg for the same car?", "a": "Because an Imperial gallon (4.546 L) is about 20% larger than a US gallon (3.785 L). The car travels the same distance on the same fuel; the unit is just bigger." },
+    { "q": "Is L/100 km the same as km/L?", "a": "No — they are reciprocals. 10 km/L = 10 L/100 km, 5 km/L = 20 L/100 km." },
+    { "q": "Which unit should I use to compare cars?", "a": "L/100 km. It is linear in fuel use and averages correctly across a fleet, unlike mpg." }
+  ],
+  "related": [
+    { "label": "mpg (US) to L/100 km converter", "href": "/c/fuel/mpg_us-to-lp100km" },
+    { "label": "L/100 km to mpg (US) converter", "href": "/c/fuel/lp100km-to-mpg_us" },
+    { "label": "mpg (UK) to L/100 km converter", "href": "/c/fuel/mpg_uk-to-lp100km" }
+  ]
+}

@@ -1,11 +1,13 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight as ArrowRightIcon } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
+import { pairIndexability } from "@/lib/seo/indexability";
+import { getArticlesByCategoryHint, getAllArticles } from "@/content/articles";
 import {
   getGeneratedPair,
   MdParagraphs,
@@ -37,6 +39,7 @@ export default function PairPage() {
   const pseo = getPseoOverride(category.id, slug);
   // Cached long-form JSON written by scripts/generate-pseo.ts (may be undefined for non-launch pairs).
   const gen = getGeneratedPair(category.id, slug);
+  const idx = pairIndexability(category.id, slug);
 
   const title = gen?.meta.title || pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
   const desc = (gen?.meta.description || pseo?.metaDescription ||
@@ -68,7 +71,7 @@ export default function PairPage() {
         title={title}
         description={desc}
         canonical={url}
-        ogType="article"
+        ogType="website"
         jsonLd={[
           {
             "@context": "https://schema.org",
@@ -178,6 +181,11 @@ export default function PairPage() {
           },
         ]}
       />
+      {!idx.indexable && (
+        <Helmet>
+          <meta name="robots" content="noindex,follow" />
+        </Helmet>
+      )}
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
           <Link to="/" className="hover:text-primary">Home</Link>
@@ -202,7 +210,6 @@ export default function PairPage() {
           <div className="text-xs text-muted-foreground mt-1">Calculated with engineering-grade precision.</div>
         </div>
 
-        <AdBanner className="mt-10" />
 
         {gen ? (
           <>
@@ -483,6 +490,38 @@ export default function PairPage() {
             </>
           );
         })()}
+
+        {(() => {
+          const hinted = getArticlesByCategoryHint(category.id, 2);
+          const fallback = getAllArticles().slice(0, 2);
+          const articles = (hinted.length ? hinted : fallback).slice(0, 2);
+          if (!articles.length) return null;
+          return (
+            <section className="mt-12">
+              <h2 className="text-xl font-semibold mb-4">Read more in the learning centre</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                {articles.map((a) => (
+                  <Link
+                    key={a.slug}
+                    to={`/learn/${a.slug}`}
+                    className="group bg-surface-elevated border border-border rounded-xl p-5 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
+                  >
+                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
+                      {a.category} · {a.readingMinutes} min read
+                    </div>
+                    <div className="mt-2 font-semibold leading-snug group-hover:text-primary transition">
+                      {a.title}
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                      {a.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
+
 
         <section
           className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]"

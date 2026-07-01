@@ -1,0 +1,39 @@
+{
+  "slug": "cooking-conversions-grams-vs-cups",
+  "title": "Cooking Conversions: Why Grams Beat Cups Every Time",
+  "h1": "Cooking conversions: why grams beat cups every single time",
+  "description": "A US cup of flour can weigh anywhere from 120 g to 155 g depending on the scoop. Here is why serious bakers weigh, and how to convert cup recipes reliably.",
+  "category": "Cooking & Volume",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "American recipes measure by volume, European recipes measure by weight, and the results are more different than people realise. Here is how to switch between them without ruining the loaf.",
+  "body": [
+    "The physical volume of a cup is a well-defined number — 236.5882365 mL for a US customary cup, 250 mL for a metric cup used across Europe and Australia, and 284.131 mL for the almost-extinct Imperial cup. What is not well-defined is *what fits inside one*. Dry ingredients pack differently depending on how you dip, tap, sift and level. That is why a cup of flour can honestly weigh anywhere from 120 g (sifted, spooned) to 155 g (scoop-and-tap) — a 30% range for the same nominal measurement.",
+    "## The three cups, exact",
+    "> 1 US customary cup = 236.5882365 mL\n> 1 metric cup = 250 mL (exact, ISO)\n> 1 Imperial cup = 284.131 mL (rarely used now)",
+    "For liquids, the cup you use matters. For solids, weight matters more than any cup definition, because ingredient density varies with humidity, packing and even how coarsely the mill grinds. This is why every serious cookbook published in the last decade includes weight in grams — often as the primary unit — and every professional baker owns a digital scale.",
+    "## Convention weights the pros actually use",
+    "Kitchen standards vary slightly between publishers, but these are the values used by King Arthur Baking, Bake From Scratch, and most European bakeries — accurate to ±5%.",
+    "> All-purpose / plain flour: 120 g per US cup\n> Bread flour: 128 g per US cup\n> Granulated sugar: 200 g per US cup\n> Brown sugar (packed): 213 g per US cup\n> Butter: 227 g per US cup (2 sticks)\n> Rolled oats: 90 g per US cup\n> Cocoa powder: 85 g per US cup",
+    "Notice that butter — a solid measured by tradition in cups — has an official convention because a stick is 1/4 lb = 113.4 g. This is why American recipes say \"1 stick of butter\" and mean 113 g exactly, not 227 g.",
+    "## Cross-Atlantic recipe conversion",
+    "**A metric recipe on a US kitchen.** Convert every gram measurement to grams — buy a digital scale, they are $15 and end the argument. If you cannot, use the weights above. \"250 g flour\" is roughly 2 US cups plus 1 tablespoon, but a scale is far less painful than eyeballing a cup for the twelfth time.",
+    "**A US cup recipe in a metric kitchen.** For flour, multiply cups by 120 g. For sugar, by 200 g. For liquids, by 237 mL (one US cup). This gets you within the natural noise of the recipe. Bread and pastry, where hydration matters to the percent, benefit from finding the same recipe in a professional baking source that gives grams directly.",
+    "## Spoons are surprisingly reliable",
+    "Teaspoons and tablespoons are defined the same in both systems (with one exception): 1 US tsp = 4.92892 mL, 1 US tbsp = 14.7868 mL, 1 metric tsp = 5 mL, 1 metric tbsp = 15 mL. The Australian tablespoon is the odd one out at 20 mL (four teaspoons instead of three), so recipes from Australia that use tablespoons will look under-dosed if you use a US spoon.",
+    "## The five-second recap",
+    "Weigh everything solid in grams. Measure liquids in mL. When you must convert a cup, use the pro weights above. A $15 digital kitchen scale eliminates the entire class of unit mistake and pays for itself in one over-floured loaf."
+  ],
+  "faqs": [
+    { "q": "Is a US cup the same as a metric cup?", "a": "No. A US cup is 236.6 mL, a metric cup is 250 mL — about 5.6% larger." },
+    { "q": "How many grams in a cup of flour?", "a": "Convention is 120 g per US cup for all-purpose flour. In practice this varies ±15% depending on how you scoop." },
+    { "q": "Why do European recipes use weights?", "a": "Weights are reproducible; volumes of solids depend on packing. European cookbooks standardised on grams decades ago." },
+    { "q": "Is a tablespoon the same everywhere?", "a": "Almost. US = 14.79 mL, UK/metric = 15 mL, Australian = 20 mL. The Australian one is the exception worth watching." }
+  ],
+  "related": [
+    { "label": "cup to mL converter", "href": "/c/volume/cup_us-to-mL" },
+    { "label": "oz to g converter", "href": "/c/weight/oz-to-g" },
+    { "label": "tbsp to mL converter", "href": "/c/volume/tbsp_us-to-mL" }
+  ]
+}

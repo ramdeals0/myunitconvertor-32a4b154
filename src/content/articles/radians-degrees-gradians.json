@@ -1,0 +1,48 @@
+{
+  "slug": "radians-degrees-gradians",
+  "title": "Radians, Degrees and Gradians: Which and When",
+  "h1": "Radians, degrees and gradians — which angle unit to use where",
+  "description": "Degrees for humans, radians for calculus, gradians for surveyors, mils for artillery. A pragmatic guide to picking the right angle unit and converting cleanly.",
+  "category": "Angle",
+  "readingMinutes": 6,
+  "published": "2026-05-22",
+  "updated": "2026-06-26",
+  "reviewed": "2026-06-26",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied mathematics & geospatial",
+    "bio": "Reference material for surveyors, CAD engineers, navigators and anyone routinely translating angular measurements between fields."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against BIPM SI Brochure §4.1 and ISO 80000-3" },
+  "hero": "Every angle unit is a way of dividing a full turn into equal slices. Which slice count you pick reveals which century — and which profession — set the convention.",
+  "body": [
+    "A radian, a degree, a gradian and a mil are four different rulers laid on the same circle. Every trigonometry engine, every CAD program and every navigation system quietly picks one and expects you to know which. This article is the pragmatic cheat sheet for choosing the right unit for a job and converting cleanly when systems disagree.",
+    "## The four in one line",
+    "> 2π rad = 360° = 400 gon (gradians) = 6,400 mil (NATO) = 1 full turn\n> 1 rad = 180/π ≈ 57.29578°\n> 1° = π/180 ≈ 0.0174533 rad = 60 arcminutes = 3,600 arcseconds",
+    "The radian is dimensionless by construction: it is the ratio of arc length to radius. That is why calculus works cleanly in radians and gets messy in degrees — the derivative of sin(x) is cos(x) only when x is in radians. Convert to degrees and a factor of π/180 appears in every derivative.",
+    "## Where each unit belongs",
+    "**Radians** — physics, calculus, computer graphics rotation math, and every serious math library. If you are calling Math.sin(x) in code, x is almost always in radians unless the API name explicitly says otherwise.",
+    "**Degrees** — everyday geometry, angles on drawings, compass bearings, latitude and longitude, telescope mounts, wind direction. Degrees survive because 360 divides evenly into 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 18, 20, 24, 30, 36, 40, 45, 60, 72, 90, 120 and 180 — the most factor-rich choice for hand geometry.",
+    "**Gradians (gon)** — continental European surveying. 100 gon in a right angle makes cadastral maths decimal-friendly. Modern total stations let you switch, but survey drawings from France, Germany and Switzerland still frequently print gon.",
+    "**Mils** — artillery, tank sights, rifle scopes. The NATO mil divides a full circle into 6,400 parts (one mil ≈ the angle subtended by a 1 m target at 1,000 m distance, close enough for indirect fire). The Warsaw Pact used 6,000 mils; Sweden used 6,300. Milliradians (true mrad, 1/6,283.185 of a circle) are what most modern precision rifle optics actually use, despite being marketed as \"mils\".",
+    "## Arcminutes and arcseconds",
+    "One degree splits into 60 arcminutes ('), and each arcminute into 60 arcseconds (\"). Astronomy leans on these heavily: the angular diameter of the Moon is about 31 arcminutes; a milliarcsecond (1/1000 of an arcsecond) is the resolution of modern very-long-baseline radio interferometry. GPS latitude/longitude is quoted in degrees-minutes-seconds or in decimal degrees; converting between the two is a common source of coordinate bugs.",
+    "## The programming trap",
+    "Most languages default trigonometric functions to radians. Excel is a notable exception — its SIN, COS and TAN take radians, but users routinely paste degree values in and get nonsense; hence the DEGREES() and RADIANS() helpers. Python's math module takes radians; math.degrees() and math.radians() convert. JavaScript, C, Java, Rust, Go — all radians. If your rotation code produces a spinning object at 60× the expected speed, you probably passed degrees to a radian API (2π/360 ≈ 1/57).",
+    "## Worked example — a survey angle",
+    "A boundary corner is called out as 87.5 gon. Convert to degrees: 87.5 × 0.9 = 78.75° (because 400 gon = 360°, so 1 gon = 0.9°). Converting further to radians: 78.75 × π/180 = 1.3744 rad. All three describe the same rotation off a reference line. The gon reading tells you the surveyor probably worked in France, Germany or Switzerland; if the drawing set is being handed to a US contractor, either lock the CAD template to degrees or print both values on every callout.",
+    "## The five-second recap",
+    "Radians for maths. Degrees for geometry, navigation and everyday drawings. Gon for continental surveying. Mils for artillery and shooting sports. Multiply degrees by π/180 to get radians. Multiply gon by 0.9 to get degrees. And check what your programming language expects — a factor of 57 is the classic sign you got the units wrong."
+  ],
+  "faqs": [
+    { "q": "Why do calculators have a 'DEG/RAD/GRAD' switch?", "a": "So trig functions produce the value you expect for the unit you are working in. Take sin(90): 1 in DEG mode, 0.894 in RAD mode, 1 in GRAD mode. Mismatching mode and unit is the single most common source of trig homework errors." },
+    { "q": "How many radians in 180 degrees?", "a": "π radians ≈ 3.14159. Which is why 180° is the standard reference for radian-degree conversions." },
+    { "q": "Is a milliradian the same as a NATO mil?", "a": "No — closely related but not identical. 1 mrad = 1/6283.185 of a circle; 1 NATO mil = 1/6400 of a circle. The difference is about 1.9%, enough to miss a small target at 1,000 m if you mix them up." },
+    { "q": "How do I convert decimal degrees to DMS?", "a": "Take the integer part as degrees. Multiply the fractional part by 60; integer part is arcminutes. Multiply the remaining fractional part by 60; that is arcseconds. Example: 47.5678° = 47° 34' 04.08\"." }
+  ],
+  "related": [
+    { "label": "degrees to radians converter", "href": "/c/angle/deg-to-rad" },
+    { "label": "radians to degrees converter", "href": "/c/angle/rad-to-deg" },
+    { "label": "gradians to degrees converter", "href": "/c/angle/gon-to-deg" }
+  ]
+}

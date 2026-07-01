@@ -1,7 +1,6 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
 import { CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import type { Category, Unit } from "@/lib/converters/types";
@@ -50,7 +49,7 @@ export default function ConvertPage() {
   const fLabel = f.symbol.toUpperCase();
   const tLabel = t.symbol.toUpperCase();
 
-  const title = `Fast ${fLabel} to ${tLabel} Converter | Instant ${f.name} to ${t.name} Results`.slice(0, 65);
+  const title = `${fLabel} to ${tLabel} Converter — ${f.name} to ${t.name}`.slice(0, 60);
   const desc = `Instantly convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) online — free, accurate, and engineering-grade precise. 1 ${f.symbol} = ${formatResult(factor)} ${t.symbol}.`.slice(0, 160);
   const url = `https://turbounitconverter.com/convert/${fSlug}-to-${tSlug}`;
 
@@ -74,7 +73,7 @@ export default function ConvertPage() {
         title={title}
         description={desc}
         canonical={url}
-        ogType="article"
+        ogType="website"
         jsonLd={[
           {
             "@context": "https://schema.org",
@@ -131,7 +130,6 @@ export default function ConvertPage() {
           </div>
         </div>
 
-        <AdBanner className="mt-10" />
 
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About {fLabel} to {tLabel}</h2>
