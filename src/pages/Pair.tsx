@@ -72,7 +72,7 @@ export default function PairPage() {
         title={title}
         description={desc}
         canonical={url}
-        ogType="article"
+        ogType="website"
         jsonLd={[
           {
             "@context": "https://schema.org",

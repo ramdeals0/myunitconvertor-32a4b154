@@ -27,7 +27,7 @@ export default function CategoryPage() {
   const adsAllowed = launchPairCount >= 3;
   // Non-launch category hubs stay indexable (they list units) but are lower priority.
 
-  const title = `All-in-One ${category.name} Unit Converter | Turbo Unit Converter`;
+  const title = `${category.name} Converter — Turbo Unit Converter`;
   const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
   const url = `https://turbounitconverter.com/c/${category.id}`;
 

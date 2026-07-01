@@ -50,7 +50,7 @@ export default function ConvertPage() {
   const fLabel = f.symbol.toUpperCase();
   const tLabel = t.symbol.toUpperCase();
 
-  const title = `Fast ${fLabel} to ${tLabel} Converter | Instant ${f.name} to ${t.name} Results`.slice(0, 65);
+  const title = `${fLabel} to ${tLabel} Converter — ${f.name} to ${t.name}`.slice(0, 60);
   const desc = `Instantly convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) online — free, accurate, and engineering-grade precise. 1 ${f.symbol} = ${formatResult(factor)} ${t.symbol}.`.slice(0, 160);
   const url = `https://turbounitconverter.com/convert/${fSlug}-to-${tSlug}`;
 
@@ -74,7 +74,7 @@ export default function ConvertPage() {
         title={title}
         description={desc}
         canonical={url}
-        ogType="article"
+        ogType="website"
         jsonLd={[
           {
             "@context": "https://schema.org",
