@@ -1,11 +1,14 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight as ArrowRightIcon } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
+import { AdSlot } from "@/components/AdSlot";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
+import { pairIndexability } from "@/lib/seo/indexability";
+import { getArticlesByCategoryHint, getAllArticles } from "@/content/articles";
 import {
   getGeneratedPair,
   MdParagraphs,
