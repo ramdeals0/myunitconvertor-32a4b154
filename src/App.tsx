@@ -8,12 +8,15 @@ import { AdBanner } from "@/components/AdBanner";
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
 import MethodologyPage from "@/pages/Methodology";
+import EditorialPolicyPage from "@/pages/EditorialPolicy";
 import ConvertersPage from "@/pages/Converters";
 import PrivacyPage from "@/pages/Privacy";
 import TermsPage from "@/pages/Terms";
 import CategoryPage from "@/pages/Category";
 import PairPage from "@/pages/Pair";
 import ConvertPage from "@/pages/Convert";
+import LearnPage from "@/pages/Learn";
+import LearnArticlePage from "@/pages/LearnArticle";
 import NotFoundPage from "@/pages/NotFound";
 
 function ScrollToTop() {
