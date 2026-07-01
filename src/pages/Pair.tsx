@@ -182,6 +182,11 @@ export default function PairPage() {
           },
         ]}
       />
+      {!idx.indexable && (
+        <Helmet>
+          <meta name="robots" content="noindex,follow" />
+        </Helmet>
+      )}
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
           <Link to="/" className="hover:text-primary">Home</Link>
