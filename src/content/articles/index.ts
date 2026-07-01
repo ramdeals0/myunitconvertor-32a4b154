@@ -59,3 +59,15 @@ export function getArticle(slug: string): Article | undefined {
 export function getArticlesByCategoryHint(categoryId: string, limit = 3): Article[] {
   return list.filter((a) => a.category === categoryId).slice(0, limit);
 }
+
+export function getArticlesGroupedByCategory(): { category: string; articles: Article[] }[] {
+  const map = new Map<string, Article[]>();
+  for (const a of list) {
+    const bucket = map.get(a.category) ?? [];
+    bucket.push(a);
+    map.set(a.category, bucket);
+  }
+  return Array.from(map.entries())
+    .map(([category, articles]) => ({ category, articles }))
+    .sort((a, b) => a.category.localeCompare(b.category));
+}
