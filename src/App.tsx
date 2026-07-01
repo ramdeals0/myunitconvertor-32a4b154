@@ -38,6 +38,9 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/methodology" element={<MethodologyPage />} />
+            <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
+            <Route path="/learn" element={<LearnPage />} />
+            <Route path="/learn/:slug" element={<LearnArticlePage />} />
             <Route path="/converters" element={<ConvertersPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
