@@ -1,0 +1,40 @@
+{
+  "slug": "celsius-fahrenheit-deltas-vs-points",
+  "title": "Celsius vs Fahrenheit: The Delta Trap Nobody Warns You About",
+  "h1": "Celsius, Fahrenheit and the delta trap nobody warns you about",
+  "description": "Converting 20 °C to Fahrenheit is one formula. Converting a 20 °C temperature rise is a different formula. Here is how to keep them straight.",
+  "category": "Temperature",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "Nine out of ten temperature conversions online use the wrong formula for one specific — very common — case. Here is the case, and the fix.",
+  "body": [
+    "The formula everyone learns for converting Celsius to Fahrenheit is `F = C × 9/5 + 32`. It works perfectly for a single temperature reading — outside is 20 °C, that is 68 °F, done. It gives the wrong answer for a temperature *difference*, and \"a temperature difference\" is what half of all real conversions actually are.",
+    "## The two rules, spelled out",
+    "> A *point* on the scale converts with an offset: F = C × 9/5 + 32\n> A *difference* on the scale converts without an offset: ΔF = ΔC × 9/5",
+    "\"The reactor climbed by 20 °C\" is a difference. Convert it with `ΔF = 20 × 9/5 = 36 °F`. Not 68. The 32 in the point formula shifts between the two zero points (0 °C = the freezing point of water, 0 °F ≈ the coldest a saltwater mix will freeze), and there is no zero-point shift when you are talking about a change. If you leave the 32 in for a delta you are effectively adding the freezing point of water to your temperature change, which is obviously wrong once you write it out.",
+    "## Where this bites",
+    "**Cooking.** \"Reduce the oven by 20 °C\" translates to \"reduce by 36 °F\", not \"reduce to 68 °F.\" Google search results for this exact phrasing routinely get it wrong.",
+    "**HVAC.** A datasheet claiming a \"20 °C rise across the coil\" means a 36 °F rise. The correct absolute inlet/outlet numbers depend on the intake temperature.",
+    "**Engineering specs.** A material with thermal expansion of 12 µm/m per °C has thermal expansion of 6.667 µm/m per °F — divide by 1.8, do not add 32.",
+    "**Weather forecasts.** \"Temperatures will fall by 15 degrees tonight\" is a delta. If the source is Fahrenheit, that is a 15 °F drop = an 8.3 °C drop.",
+    "## Rate units follow the delta rule",
+    "Anything with °C or °F in the denominator — thermal expansion, specific heat capacity, heat-transfer coefficient, temperature coefficient of resistance — uses only the ×9/5 factor with no offset. Specific heat of water is 4.186 J/g·°C = 2.326 J/g·°F. Convert by dividing by 1.8, never by adding 32.",
+    "## And then there's Kelvin",
+    "Kelvin is the SI unit of temperature and it is a *thermodynamic* scale — zero really is zero energy, not the freezing point of water. `K = C + 273.15` exactly. Deltas are the same in Kelvin and Celsius: `ΔK = ΔC`. This is why physics equations use Kelvin: absolute-zero-referenced values behave nicely under multiplication and division, and there is no offset to worry about.",
+    "There is a fourth scale, **Rankine (°R)**, which is to Fahrenheit what Kelvin is to Celsius — 0 °R = absolute zero, size of degree same as Fahrenheit. American thermodynamics textbooks use it. `°R = °F + 459.67`.",
+    "## Five-second rule",
+    "For a single reading, use the offset formula. For a change, difference, rate, or anything with °C in the denominator, use only ×9/5 (or ÷1.8 going the other way). If you are unsure whether a value is a point or a delta, ask what happens when the input is zero — a 0 °C point is 32 °F; a 0 °C change is 0 °F."
+  ],
+  "faqs": [
+    { "q": "How do I convert a 20 °C temperature rise to Fahrenheit?", "a": "20 × 9/5 = 36 °F rise. Do not add 32 — that offset only applies to converting a temperature reading, not a difference." },
+    { "q": "Is a 1 °C change the same size as 1 K?", "a": "Yes, exactly. Celsius and Kelvin have identically sized degrees; only their zero points differ." },
+    { "q": "What is absolute zero in Fahrenheit?", "a": "-459.67 °F, or 0 °R (Rankine)." },
+    { "q": "Why is the freezing point of water not zero in Fahrenheit?", "a": "Fahrenheit set his zero at the coldest temperature he could reliably reproduce — a brine of ice, water and ammonium chloride. Water freezing was defined as 32 °F later." }
+  ],
+  "related": [
+    { "label": "C to F converter", "href": "/c/temperature/c-to-f" },
+    { "label": "F to C converter", "href": "/c/temperature/f-to-c" },
+    { "label": "C to K converter", "href": "/c/temperature/c-to-k" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "meters-to-feet-and-the-us-survey-foot",
+  "title": "Meters to Feet — and the US Survey Foot Nobody Talks About",
+  "h1": "Meters to feet — and the US survey foot nobody talks about",
+  "description": "There are two feet in the United States. Confusing them puts survey markers hundreds of feet off across a country. Here is the story.",
+  "category": "Length",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "One foot is 0.3048 metres exactly. Another foot — used in every US state survey for over a century — was 0.30480060960 metres. The gap ended a hundred-year headache in 2023.",
+  "body": [
+    "The international foot has been defined as 0.3048 metres exactly since the 1959 International Yard and Pound Agreement. Everything on modern maps, aircraft altimeters, and consumer products uses this foot. It is the one our converter calls \"foot\" and the one you almost certainly want. It is not, however, the only foot the United States used until very recently.",
+    "## The US survey foot",
+    "The **US survey foot** was legally defined as 1200/3937 metres — approximately 0.30480060960121920 metres. It is longer than the international foot by two parts per million. That sounds tiny, and for one measurement it is: two parts per million of six feet is about 4 microns, thinner than a hair. But state surveys work in miles, and 2 ppm × 100 miles is 1.06 feet. Over the width of a US state that adds up to hundreds of feet of accumulated difference.",
+    "The National Geodetic Survey retired the US survey foot on 1 January 2023. Every new coordinate system now uses the international foot. Legacy datasets — property boundaries, state plane coordinate systems, older GIS layers — still carry the survey foot, and merging them without conversion introduces drift.",
+    "## The exact numbers",
+    "> 1 international foot = 0.3048 m (exact)\n> 1 US survey foot = 1200/3937 m ≈ 0.30480060960 m\n> 1 metre = 3.28083989501312 international feet\n> Difference: 2 ppm — 1 mile of int'l feet is 5280 ft; 1 mile of survey feet is 5279.9894 int'l ft",
+    "## Where the two feet still collide",
+    "**GIS.** Any US state plane coordinate system published before 2023 was defined in survey feet. Overlaying such data on modern satellite imagery (which is in metres) without applying the 2 ppm scale produces a shift that grows with distance from the projection origin.",
+    "**Surveying and property boundaries.** Old deeds, subdivision plats, and mineral rights are written in feet without specifying which foot. Legal convention in each state usually says which — but the assumption matters for large parcels.",
+    "**Engineering.** Modern bridge and highway drawings use the international foot. Interfacing them with a legacy survey control network needs an explicit conversion, not \"they are the same, right?\"",
+    "## For everyday conversions",
+    "None of this matters if you are converting your height or a room measurement — the international foot is what your tape measure reads. The 2 ppm difference on a 1.8 m person is 3.6 microns, invisible. Use the international foot (our default) and move on.",
+    "## The five-second recap",
+    "Multiply metres by 3.28084 to get feet. Multiply feet by 0.3048 to get metres. If you are working with US survey data older than 2023, check whether the coordinates are in survey feet — the values look nearly identical but drift over long distances. For every other purpose, one foot is 0.3048 metres and that is the end of the story."
+  ],
+  "faqs": [
+    { "q": "How many feet in a metre?", "a": "1 m = 3.28083989501312 international feet." },
+    { "q": "What is the US survey foot?", "a": "A slightly longer foot (1200/3937 m ≈ 0.3048006 m) used by the US National Geodetic Survey until it was retired on 1 January 2023." },
+    { "q": "How much is 6 feet in metres?", "a": "6 × 0.3048 = 1.8288 m." },
+    { "q": "Do I ever need the survey foot in daily life?", "a": "No. It only matters for legacy US surveying and GIS work." }
+  ],
+  "related": [
+    { "label": "m to ft converter", "href": "/c/length/m-to-ft" },
+    { "label": "ft to m converter", "href": "/c/length/ft-to-m" },
+    { "label": "cm to in converter", "href": "/c/length/cm-to-in" }
+  ]
+}

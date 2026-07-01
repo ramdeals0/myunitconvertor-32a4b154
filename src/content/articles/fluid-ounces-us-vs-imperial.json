@@ -1,0 +1,37 @@
+{
+  "slug": "fluid-ounces-us-vs-imperial",
+  "title": "Fluid Ounces: US vs Imperial and the 4% Recipe Error",
+  "h1": "US fluid ounces vs Imperial: the 4% error hiding in every recipe",
+  "description": "The US fluid ounce and the Imperial fluid ounce are not the same volume. Here is exactly how far off they are, and why cooking, cocktails and skincare care.",
+  "category": "Volume",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "The word \"ounce\" hides two different volumes. If your cocktail tastes off, or your face serum is running out early, the fluid ounce is usually why.",
+  "body": [
+    "There are two fluid ounces in common use and they are not equal. The US fluid ounce is exactly 29.5735295625 mL. The Imperial fluid ounce, used in the UK, Ireland, Canada, Australia and much of the Commonwealth, is exactly 28.4130625 mL. The Imperial ounce is smaller by about 4%. That difference is invisible in a single sip of coffee, obvious in a 750 mL bottle of spirits, and structurally important in a chemistry lab.",
+    "## Where the two ounces came from",
+    "Both units are derived from their respective gallons, not the other way around. The US gallon is defined as 231 cubic inches exactly (a definition inherited from the Queen Anne wine gallon of 1707). The Imperial gallon was redefined in 1824 as the volume of 10 pounds of water at 62 °F, which works out to 4.54609 L exactly. Each gallon has 128 US or 160 Imperial fluid ounces respectively — different subdivisions of different totals.",
+    "> 1 US fl oz = 29.5735295625 mL\n> 1 Imperial fl oz = 28.4130625 mL\n> 1 US fl oz = 1.04084 Imperial fl oz",
+    "## Where the 4% actually shows up",
+    "**Cocktails.** A classic Negroni is one part gin, one part Campari, one part sweet vermouth. Following a US recipe with an Imperial jigger under-pours every ingredient by 4% — a small drink, but 4% weaker across the board. Following an Imperial recipe with a US jigger over-pours by 4%.",
+    "**Skincare and pharmacy.** A 1 fl oz serum bottle is 29.57 mL if made in the US and 28.41 mL if made in the UK. Over 50 uses that is roughly one extra application per bottle.",
+    "**Beer glasses.** A US pint is 16 US fl oz = 473.18 mL. An Imperial pint is 20 Imperial fl oz = 568.26 mL. The Imperial pint is roughly 20% larger despite the smaller ounce, because it contains four more of them.",
+    "**Cooking.** For dry ingredients — flour, sugar, oats — the safe answer is to weigh in grams. \"One cup of flour\" varies by ±20% depending on how you scoop; the ounce/mL argument is a rounding error next to that.",
+    "## When to use which",
+    "The rule most kitchens follow: if the recipe writer is in the US, treat every fluid ounce as 29.57 mL. If the recipe was published in the UK, Ireland, Canada or Australia, treat it as 28.41 mL. Modern British recipe writers usually give volumes in millilitres to avoid the ambiguity entirely — a smart move.",
+    "## The five-second cheat sheet",
+    "1 US fl oz ≈ 30 mL. 1 Imperial fl oz ≈ 28 mL. 1 US cup = 236.6 mL, 1 metric cup = 250 mL, and 1 Imperial cup is not really used any more but was 284 mL. If you only remember one thing, remember that the US ounce is larger and that a US pint (473 mL) is smaller than an Imperial pint (568 mL), because the two systems chose different total sizes for their gallons. Our converter carries both fluid ounces separately — pick the right one and the maths becomes trivial."
+  ],
+  "faqs": [
+    { "q": "How many mL in a US fluid ounce?", "a": "Exactly 29.5735295625 mL, derived from the US gallon of 231 cubic inches divided by 128." },
+    { "q": "How many mL in an Imperial fluid ounce?", "a": "Exactly 28.4130625 mL, derived from the Imperial gallon of 4.54609 L divided by 160." },
+    { "q": "Which is bigger, a US pint or a UK pint?", "a": "A UK (Imperial) pint at 568.26 mL is about 20% larger than a US pint at 473.18 mL." },
+    { "q": "Does the US or UK still use fluid ounces?", "a": "Both do informally, but scientific and pharmaceutical labelling is in millilitres or litres in both countries." }
+  ],
+  "related": [
+    { "label": "US fl oz to mL converter", "href": "/c/volume/floz_us-to-mL" },
+    { "label": "mL to US fl oz converter", "href": "/c/volume/mL-to-floz_us" },
+    { "label": "gal (US) to L converter", "href": "/c/volume/gal_us-to-L" }
+  ]
+}
