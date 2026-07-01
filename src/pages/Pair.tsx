@@ -40,6 +40,7 @@ export default function PairPage() {
   const pseo = getPseoOverride(category.id, slug);
   // Cached long-form JSON written by scripts/generate-pseo.ts (may be undefined for non-launch pairs).
   const gen = getGeneratedPair(category.id, slug);
+  const idx = pairIndexability(category.id, slug);
 
   const title = gen?.meta.title || pseo?.pageTitle || `${f.name} to ${t.name} Converter | Turbo Unit Converter`;
   const desc = (gen?.meta.description || pseo?.metaDescription ||
@@ -205,7 +206,7 @@ export default function PairPage() {
           <div className="text-xs text-muted-foreground mt-1">Calculated with engineering-grade precision.</div>
         </div>
 
-        <AdBanner className="mt-10" />
+        <AdSlot allowed={idx.adsAllowed} wordCount={idx.wordCount} context="pair-below-converter" className="mt-10" />
 
         {gen ? (
           <>
