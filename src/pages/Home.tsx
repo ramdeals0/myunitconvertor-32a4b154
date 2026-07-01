@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdSlot } from "@/components/AdSlot";
 import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
@@ -161,7 +160,6 @@ export default function HomePage() {
           <RecentConversions className="mt-8" />
         </section>
 
-        <AdSlot allowed wordCount={1200} context="home-below-hero" className="mb-14" />
 
 
         <section className="mb-16">
