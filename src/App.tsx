@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { ScientificCalculator } from "@/components/ScientificCalculator";
 import { I18nProvider } from "@/lib/i18n";
-import { AdBanner } from "@/components/AdBanner";
+
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
 import MethodologyPage from "@/pages/Methodology";
@@ -50,9 +50,6 @@ export default function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
-        <div className="max-w-6xl mx-auto px-4 md:px-6 w-full">
-          <AdBanner className="mt-10" />
-        </div>
         <SiteFooter />
       </div>
       <ScientificCalculator />
