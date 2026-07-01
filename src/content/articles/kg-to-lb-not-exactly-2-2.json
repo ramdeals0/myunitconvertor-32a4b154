@@ -21,8 +21,7 @@
     "There are a few pounds that are not the international pound. The **troy pound**, used for precious metals, is 373.2417216 g — about 18% lighter. When a gold bar is quoted at 10 troy pounds, that is 3.732 kg, not 4.536 kg. The **avoirdupois** pound is the one everyone else uses; it is what we mean by \"pound\" throughout our converters unless explicitly labelled otherwise.",
     "There is also the distinction between **mass and force**. A pound-force (lbf) is the gravitational pull on one pound-mass at standard gravity. Kilograms measure mass; kilograms-force are almost never used any more. On Earth's surface the numeric distinction rarely matters, but in orbital mechanics, propulsion or spring calibration it absolutely does.",
     "## The five-second version",
-    "For a mental estimate, multiply kilograms by 2.2 and add 10%. For anything that will be printed, weighed, dosed or invoiced, use the exact factor 2.20462262184878. Our{" ",
-    "converter uses the exact factor, so results you copy from it will match a laboratory scale to at least six significant figures."
+    "For a mental estimate, multiply kilograms by 2.2 and add 10%. For anything that will be printed, weighed, dosed or invoiced, use the exact factor 2.20462262184878. Our converter uses the exact factor, so results you copy from it will match a laboratory scale to at least six significant figures."
   ],
   "faqs": [
     { "q": "What is the exact factor from kg to lb?", "a": "1 kg = 2.20462262184878 lb, derived from the 1959 definition 1 lb = 0.45359237 kg exactly." },
