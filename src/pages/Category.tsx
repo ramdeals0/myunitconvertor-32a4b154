@@ -6,6 +6,7 @@ import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
+import { getCategoryContent } from "@/lib/converters/categoryContent";
 import { getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 import { ArrowRight, TrendingUp } from "lucide-react";
 
