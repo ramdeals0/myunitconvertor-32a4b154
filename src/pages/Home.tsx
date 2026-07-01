@@ -79,7 +79,7 @@ export default function HomePage() {
   return (
     <>
       <Seo
-        title="Turbo Unit Converter — Professional Unit Converter & Engineering Tools"
+        title="Turbo Unit Converter — Professional Engineering Tools"
         description="Convert length, weight, temperature, volume, and dozens more — instantly and accurately, with engineering-grade precision."
         canonical="https://turbounitconverter.com/"
         jsonLd={[
