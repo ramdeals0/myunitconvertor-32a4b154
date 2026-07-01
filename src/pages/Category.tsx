@@ -1,7 +1,8 @@
 import { Link, useParams, Navigate } from "react-router-dom";
+
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
+import { AdSlot } from "@/components/AdSlot";
 import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
@@ -21,6 +22,10 @@ export default function CategoryPage() {
   const f = category.units.find((u) => u.id === featured.from);
   const t = category.units.find((u) => u.id === featured.to);
   const factor = f && t ? convert(category, 1, f.id, t.id) : null;
+  const launchPairCount = getLaunchPairsByCategory(category.id, 24).length;
+  // Only serve ads on hubs that anchor a real launch cluster (≥3 pair pages of long copy).
+  const adsAllowed = launchPairCount >= 3;
+  // Non-launch category hubs stay indexable (they list units) but are lower priority.
 
   const title = `All-in-One ${category.name} Unit Converter | Turbo Unit Converter`;
   const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
@@ -135,7 +140,7 @@ export default function CategoryPage() {
           </div>
         )}
 
-        <AdBanner className="mt-10" />
+        <AdSlot allowed={adsAllowed} wordCount={launchPairCount * 100} context="category-below-converter" className="mt-10" />
 
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About the {category.name.toLowerCase()} converter</h2>

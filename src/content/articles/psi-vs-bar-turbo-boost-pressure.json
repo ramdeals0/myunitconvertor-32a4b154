@@ -1,0 +1,43 @@
+{
+  "slug": "psi-vs-bar-turbo-boost-pressure",
+  "title": "Psi vs Bar: Turbo Boost Pressure, Finally Explained",
+  "h1": "Psi vs Bar: turbo boost pressure, finally explained",
+  "description": "Why turbo boost gauges argue about psi and bar, how the two relate, and the mistake almost every first-time tuner makes about absolute vs gauge pressure.",
+  "category": "Pressure",
+  "readingMinutes": 6,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "reviewer": { "name": "Reviewed against NIST SP 811 §B.8", "credential": "pressure conversion factors" },
+  "hero": "Boost gauges from different countries disagree — a bit. Here is exactly why, and the one mental model that makes psi, bar and kPa click.",
+  "body": [
+    "If you look at boost gauges from three different tuners you will usually see three different scales: US and UK aftermarket parts speak in pounds per square inch (psi), European OEMs and most modern data loggers speak in bar or kilopascals (kPa), and Japanese factory service manuals often print all three. The numbers look wildly different — 14.5 vs 1.0 vs 100 — but they describe the same physical pressure. This guide is the shortest path we know to reading, converting and trusting any of them.",
+    "## The exact factor you actually need",
+    "One bar is defined as exactly 100,000 pascals. One psi is defined as one pound-force per square inch, and the international pound-force is exactly 4.4482216152605 newtons acting on 0.00064516 m². Divide the two and you get 1 bar = 14.503773773 psi. That factor is what our pressure converter uses; everything else in this article is downstream of that number.",
+    "> 1 bar = 14.503773773 psi = 100 kPa = 0.9869 atm",
+    "For quick mental maths, 1 bar ≈ 14.5 psi is accurate to 0.03%. If you see a spec sheet claim 15 psi ≈ 1 bar, that is a 3.4% shortcut and you should assume the author rounded.",
+    "## The gauge vs absolute trap",
+    "The single biggest mistake first-time tuners make is comparing a gauge pressure to an absolute pressure and thinking the turbo suddenly grew a bar of boost overnight. A boost gauge reads zero when the engine is off at sea level. A MAP sensor reads about 1 bar — atmospheric pressure — under exactly the same conditions. They differ by 1 atmosphere by design.",
+    "The convention is simple: `absolute = gauge + 1 atm`. If a log shows 2.5 bar MAP at wide open throttle, that is 1.5 bar of boost above ambient. If the same car climbs a mountain pass where ambient drops to 0.85 bar, a 1.5 bar boost target now shows up as only 2.35 bar MAP even though the turbo is doing exactly the same work.",
+    "## Where the confusion comes from",
+    "There are four common pressure units on automotive tools and each has a slightly different lineage. Psi comes from the old British engineering system. Bar was invented in 1909 to be almost exactly equal to atmospheric pressure, which made pilots' lives easier. The pascal is the SI unit — small enough (~0.000145 psi) that people use kilopascals or bars in practice. Finally, inches of mercury (inHg) still appears on vacuum gauges: 1 bar = 29.53 inHg.",
+    "## Worked example — a 15 psi tune",
+    "A common Stage 1 tune on a small European turbo aims for 15 psi of boost. Convert to bar for the ECU map: 15 / 14.5038 = 1.034 bar. Add ambient (about 1.013 bar at sea level) and the ECU should see 2.047 bar of manifold absolute pressure at peak. If your log tops out at 1.93 bar MAP at the top of the run, the wastegate is closing early or the intercooler is choking — the tune is not making the 15 psi you asked for.",
+    "## What this means for tuning notes and forum posts",
+    "Whenever you read a spec online, look for the unit and whether it is gauge or absolute. \"1.2 bar\" from a European forum almost always means 1.2 bar gauge (about 17.4 psi of boost). \"32 psi peak\" from a US drag racer almost always means gauge. \"2.1 bar MAP\" is absolute. Convert everything into the same units and the same reference before comparing.",
+    "## When precision actually matters",
+    "For street tuning, 0.1 psi of resolution is plenty. For emissions certification and engineering test cells, factors are kept to at least six significant figures because a 0.5% pressure error compounds through mass-airflow calculations and shows up as measurable BSFC drift. This is why NIST SP 811 publishes conversion factors with far more precision than any hobbyist will ever need — the engineers writing those factors are converting between them dozens of times per calculation.",
+    "## The three-second recap",
+    "Multiply bar by 14.5038 to get psi. Multiply psi by 0.0689476 to get bar. Add 1 (approximately) to convert gauge to absolute at sea level. And whenever you see two boost numbers that disagree by roughly 14.5, someone almost certainly forgot which unit they were reading."
+  ],
+  "faqs": [
+    { "q": "Is 1 bar the same as 1 atmosphere?", "a": "Almost. 1 bar = 100,000 Pa exactly, and 1 standard atmosphere = 101,325 Pa. They differ by about 1.3%, which is close enough for weather and boost gauges but not for calibration work." },
+    { "q": "Why does my boost gauge read zero at idle?", "a": "It is a gauge, not an absolute sensor. It reads the difference between manifold pressure and ambient. At idle the throttle is closed and manifold pressure is below ambient, so many gauges pin at zero or show vacuum." },
+    { "q": "Are psi and psia the same?", "a": "No. Psi with no suffix is normally gauge (psig). Psia is absolute. A tire filled to 32 psi gauge is at 46.7 psia at sea level." },
+    { "q": "How many bar is 30 psi?", "a": "30 psi × 0.0689476 = 2.068 bar." }
+  ],
+  "related": [
+    { "label": "psi to bar converter", "href": "/c/pressure/psi-to-bar" },
+    { "label": "bar to psi converter", "href": "/c/pressure/bar-to-psi" },
+    { "label": "kPa to psi converter", "href": "/c/pressure/kpa-to-psi" }
+  ]
+}

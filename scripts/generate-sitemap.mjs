@@ -41,10 +41,26 @@ function urlTag(loc, { changefreq = "monthly", priority = "0.6", lastmod } = {})
 const STATIC_ROUTES = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/converters", changefreq: "weekly", priority: "0.9" },
+  { path: "/learn", changefreq: "weekly", priority: "0.9" },
   { path: "/about", changefreq: "monthly", priority: "0.5" },
+  { path: "/methodology", changefreq: "monthly", priority: "0.6" },
+  { path: "/editorial-policy", changefreq: "yearly", priority: "0.3" },
   { path: "/privacy", changefreq: "yearly", priority: "0.3" },
   { path: "/terms", changefreq: "yearly", priority: "0.3" },
 ];
+
+// Learning-centre articles — discovered by scanning src/content/articles/*.json.
+async function loadArticleSlugs() {
+  try {
+    const { readdirSync } = await import("node:fs");
+    const dir = resolve(root, "src/content/articles");
+    return readdirSync(dir)
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => f.replace(/\.json$/, ""));
+  } catch {
+    return [];
+  }
+}
 
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
@@ -91,6 +107,11 @@ async function main() {
 
   const entries = [];
   for (const r of STATIC_ROUTES) entries.push(urlTag(`${BASE}${r.path}`, { ...r, lastmod: today }));
+
+  const articleSlugs = await loadArticleSlugs();
+  for (const slug of articleSlugs) {
+    entries.push(urlTag(`${BASE}/learn/${slug}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
+  }
 
   for (const cat of categories) {
     entries.push(urlTag(`${BASE}/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));

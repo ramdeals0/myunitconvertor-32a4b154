@@ -1,0 +1,39 @@
+{
+  "slug": "torque-units-nm-lbft-kgfm",
+  "title": "Torque Wrench Units: Nm, lb-ft and kgf·m Without the Guesswork",
+  "h1": "Nm, lb-ft, kgf·m: torque wrench units without the guesswork",
+  "description": "Your torque spec is in Nm and your wrench is in lb-ft — or vice versa. Here is the exact conversion and the sign of trouble when they disagree.",
+  "category": "Torque",
+  "readingMinutes": 6,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "Getting a wheel back on the car with the wrong torque number is one of the most common — and most dangerous — unit mistakes in a home garage. Here is how to never make it.",
+  "body": [
+    "Nearly every workshop manual quotes torque in one unit and every torque wrench measures in another. The good news: the conversion is a single multiplication and the maths is boring. The bad news: getting the multiplication wrong on a critical fastener has real consequences, up to and including a wheel leaving the vehicle. This article is deliberately short on theory and long on the numbers you need.",
+    "## The three factors, exact",
+    "> 1 N·m = 0.737562149277 lb-ft\n> 1 lb-ft = 1.35581794833 N·m\n> 1 kgf·m = 9.80665 N·m (exact) = 7.23301 lb-ft",
+    "Newton-metres are the SI unit. Pound-feet is what US and older UK torque wrenches read. Kilogram-force metre (kgf·m, sometimes written kg·m or mkg) still appears on Japanese and older European service manuals — 1 kgf·m is defined as the torque produced by 1 kilogram-force acting at a 1 metre radius, and kilogram-force is fixed by the standard gravity value 9.80665 m/s². All three units describe the same physical quantity: force × distance.",
+    "## The one mistake to avoid: pound-feet vs inch-pounds",
+    "A 1/4-inch drive torque wrench often reads in inch-pounds, not pound-feet. 1 lb-ft = 12 in-lb. If your spec is 20 lb-ft and you set the wrench to 20 in-lb because the display just says \"20\", you have applied one twelfth of the intended torque. Do the reverse — 240 in-lb dialled onto a small fastener called out at 20 in-lb — and the fastener will strip or the bolt will shear.",
+    "Always check which pound-unit your wrench is calibrated in. The dial usually says lb-ft, ft-lb, in-lb or in-oz explicitly. \"lb-ft\" and \"ft-lb\" are the same unit.",
+    "## Worked example: wheel nuts",
+    "A common torque spec for aluminium alloy wheels on a mid-size sedan is 120 N·m. Convert to lb-ft: 120 × 0.737562 = 88.5 lb-ft. On a modern German service manual you would see \"120 Nm\"; on a US aftermarket tyre bay procedure you would see \"85–90 ft-lb\". Both are correct. If a friend tells you to \"just torque them to 100 you'll be fine\", ask which unit — 100 N·m is 74 lb-ft (loose) and 100 lb-ft is 136 N·m (over-torqued).",
+    "## Worked example: a Japanese cylinder head",
+    "An older 4-cylinder Japanese engine manual might read \"Torque cylinder head bolts to 5.5 kgf·m, then a further 90°.\" 5.5 × 9.80665 = 53.94 N·m, or 5.5 × 7.23301 = 39.8 lb-ft. A modern reprint of the same manual almost always gives the value in N·m directly; if you are working from the original, always convert before you pick up the wrench.",
+    "## Precision that actually matters",
+    "For fasteners on suspension, brakes, cylinder heads, wheels, and anything else safety-critical, torque wrenches should be accurate to ±4% of the reading. The unit conversion is only one error term in that budget; wrench calibration age, thread lubrication, and tightening speed all add up. Use the exact factor when converting a torque spec, then let the wrench's own tolerance eat the rest.",
+    "## Cheat-sheet",
+    "Multiply Nm by 0.7376 to get lb-ft. Multiply lb-ft by 1.3558 to get Nm. Multiply kgf·m by 9.8067 to get Nm. And if the number you have looks suspiciously round in one unit (100, 50, 25) chances are the original spec was in that unit and someone rounded during conversion — go back to the source manual before trusting it."
+  ],
+  "faqs": [
+    { "q": "How many Nm is 100 lb-ft?", "a": "100 × 1.35581794833 = 135.58 N·m." },
+    { "q": "Are ft-lb and lb-ft the same?", "a": "Yes. Both mean pound-force × foot; the order of the words is a stylistic choice." },
+    { "q": "Why does my wrench display kg·m?", "a": "It means kgf·m, kilogram-force metre. 1 kgf·m = 9.80665 N·m exactly." },
+    { "q": "What is the difference between torque and power?", "a": "Torque is a twisting force. Power is the rate at which torque does work — power (W) = torque (N·m) × angular velocity (rad/s)." }
+  ],
+  "related": [
+    { "label": "Nm to lb-ft converter", "href": "/c/torque/Nm-to-lbf_ft" },
+    { "label": "lb-ft to Nm converter", "href": "/c/torque/lbf_ft-to-Nm" },
+    { "label": "kW to hp converter", "href": "/c/power/kW-to-hp" }
+  ]
+}

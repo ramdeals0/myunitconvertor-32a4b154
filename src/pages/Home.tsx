@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
+import { AdSlot } from "@/components/AdSlot";
 import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
 import { GROUP_LABELS } from "@/lib/converters/types";
+import { getAllArticles } from "@/content/articles";
 import { useI18n } from "@/lib/i18n";
 
-import logo from "@/assets/Logo.webp";
 
 import {
   Search, ArrowRight, Ruler, Weight, Thermometer, Beaker, Square, Gauge, Zap, Clock,
@@ -161,7 +161,7 @@ export default function HomePage() {
           <RecentConversions className="mt-8" />
         </section>
 
-        <AdBanner className="mb-14" />
+        <AdSlot allowed wordCount={1200} context="home-below-hero" className="mb-14" />
 
 
         <section className="mb-16">
@@ -285,6 +285,116 @@ export default function HomePage() {
             })}
           </div>
         </section>
+
+        <section className="mb-16 max-w-3xl mx-auto">
+          <SectionHeader title="Why unit conversion accuracy matters" subtitle="A rounded factor is almost always fine — until the one time it isn't." />
+          <div className="prose prose-neutral dark:prose-invert max-w-none text-muted-foreground text-base leading-relaxed space-y-4">
+            <p>
+              Unit conversion looks like a solved problem — every phone, spreadsheet and search box will give
+              you an answer. The problem is that most of them use rounded shortcut factors like <em>2.2 pounds per
+              kilogram</em> or <em>3.28 feet per metre</em>. Those numbers are wrong by 0.05% and 0.03% respectively.
+              They are perfect for weighing a suitcase and dangerous for weighing a paediatric drug dose.
+            </p>
+            <p>
+              Turbo Unit Converter uses the exact conversion factors defined in{" "}
+              <Link to="/methodology" className="text-primary hover:underline">
+                NIST Special Publication 811
+              </Link>
+              , with 12 significant figures kept end-to-end. The result you copy from the tool matches what a
+              calibrated laboratory scale, torque wrench or altimeter would read — not a two-decimal approximation
+              of it. If you are a student checking homework, a mechanic torquing wheel nuts, a nurse dosing by
+              weight, or an engineer converting a European datasheet into US drawing units, the exact factor is
+              the one you want.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16 max-w-3xl mx-auto">
+          <SectionHeader title="How Turbo Unit Converter is built" subtitle="A short, honest description of what the numbers on this site actually are." />
+          <div className="prose prose-neutral dark:prose-invert max-w-none text-muted-foreground text-base leading-relaxed space-y-4">
+            <p>
+              Every category on this site is defined by a base unit — metre for length, kilogram for weight,
+              second for time — and each other unit is stored as an exact multiplier against that base. When you
+              convert 12 inches to metres, we do not chain approximations: we look up the exact factor
+              (1 inch = 0.0254 metre by definition), multiply once, and print the result. Where a conversion is
+              non-linear — Celsius to Fahrenheit, dBm to milliwatts — the exact formula is applied rather than a
+              lookup.
+            </p>
+            <p>
+              Factor sources come from three primary references: the{" "}
+              <a href="https://www.bipm.org/en/publications/si-brochure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BIPM SI Brochure</a>{" "}
+              for the SI unit definitions, NIST SP 811 Appendix B for the extensive US customary and Imperial
+              factor tables, and IEEE/ASTM SI 10 for engineering metric practice. We publish our full{" "}
+              <Link to="/methodology" className="text-primary hover:underline">methodology</Link>{" "}
+              and{" "}
+              <Link to="/editorial-policy" className="text-primary hover:underline">editorial policy</Link>{" "}
+              so any number on the site can be traced back to a primary source.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16 max-w-3xl mx-auto">
+          <SectionHeader title="Choosing the right converter" subtitle="A decision guide for the conversions that trip people up." />
+          <div className="prose prose-neutral dark:prose-invert max-w-none text-muted-foreground text-base leading-relaxed space-y-4">
+            <p>
+              Most conversions have a single obvious answer. A handful do not — usually because the same word
+              describes more than one unit. If you are converting <strong>fluid ounces</strong>, always check
+              whether the recipe or spec sheet is US or Imperial: the US fluid ounce (29.57 mL) is about 4%
+              larger than the Imperial one (28.41 mL), and it is a difference big enough to notice in a cocktail.
+              If you are converting <strong>horsepower</strong>, check whether the figure is mechanical hp
+              (745.7 W) or metric PS (735.5 W) — European car brochures typically use PS, US ones use hp, and
+              the two disagree by 1.4%.
+            </p>
+            <p>
+              The other common ambiguity is <strong>gauge versus absolute pressure</strong>. Boost gauges,
+              tire-pressure gauges and blood-pressure cuffs all read <em>gauge</em>, meaning the difference from
+              ambient atmospheric pressure. MAP sensors, aircraft altimeters and lab instruments read
+              <em> absolute</em>. Comparing a gauge value to an absolute value differs by roughly 1 atmosphere
+              (14.5 psi / 1.013 bar) — which is precisely the boost pressure your street-tuned turbo is trying
+              to make, so mistakes here have consequences.
+            </p>
+            <p>
+              When in doubt, open the relevant article in our{" "}
+              <Link to="/learn" className="text-primary hover:underline">learning centre</Link>{" "}
+              — each article walks through the units, the exact factors, and one or two worked examples so you
+              can sanity-check any answer.
+            </p>
+          </div>
+        </section>
+
+        {(() => {
+          const articles = getAllArticles().slice(0, 6);
+          return (
+            <section className="mb-16">
+              <SectionHeader title="Featured guides from our learning centre" subtitle="In-depth articles on the conversions engineers actually run into." />
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {articles.map((a) => (
+                  <Link
+                    key={a.slug}
+                    to={`/learn/${a.slug}`}
+                    className="group bg-surface-elevated border border-border rounded-2xl p-5 hover:border-primary hover:shadow-[var(--shadow-card)] transition flex flex-col"
+                  >
+                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
+                      {a.category} · {a.readingMinutes} min
+                    </div>
+                    <div className="mt-2 font-semibold leading-snug group-hover:text-primary transition">
+                      {a.title}
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-3 flex-1">
+                      {a.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-6 text-center">
+                <Link to="/learn" className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
+                  Browse all guides <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </section>
+          );
+        })()}
+
 
         <section>
           <SectionHeader title={t("home.faq.title")} subtitle={t("home.faq.subtitle")} centered />
