@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Seo } from "@/components/Seo";
-import { getAllArticles } from "@/content/articles";
-import { BookOpen, Clock } from "lucide-react";
+import { getAllArticles, getArticlesGroupedByCategory } from "@/content/articles";
+import { BookOpen, Clock, User } from "lucide-react";
 
 export default function LearnPage() {
   const articles = getAllArticles();
+  const groups = getArticlesGroupedByCategory();
   const url = "https://turbounitconverter.com/learn";
 
   return (
@@ -29,7 +30,7 @@ export default function LearnPage() {
               "@type": "Article",
               headline: a.h1,
               url: `https://turbounitconverter.com/learn/${a.slug}`,
-              datePublished: a.updated,
+              datePublished: a.published ?? a.updated,
               dateModified: a.updated,
               author: { "@type": "Person", name: a.author.name },
             })),
@@ -53,10 +54,11 @@ export default function LearnPage() {
             Unit conversion, explained by engineers
           </h1>
           <p className="text-muted-foreground mt-4 text-base md:text-lg leading-relaxed">
-            Deep, practical guides for the conversions that trip people up in
-            real work — turbo boost pressure, torque wrench units, fuel economy
-            across regions, data rate confusion, and more. Every article is
-            written and checked against{" "}
+            {articles.length} deep, practical guides for the conversions that
+            trip people up in real work — turbo boost pressure, torque wrench
+            units, fuel economy across regions, radiation dose, data rate
+            confusion, and more. Every article is written by our engineering
+            desk and reviewed against{" "}
             <Link to="/methodology" className="text-primary hover:underline">
               NIST SP 811 and the BIPM SI Brochure
             </Link>
@@ -64,32 +66,49 @@ export default function LearnPage() {
           </p>
         </header>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {articles.map((a) => (
-            <Link
-              key={a.slug}
-              to={`/learn/${a.slug}`}
-              className="group bg-surface-elevated border border-border rounded-2xl p-6 hover:border-primary hover:shadow-[var(--shadow-card)] transition flex flex-col"
-            >
-              <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
-                {a.category}
-              </div>
-              <h2 className="mt-2 text-lg font-semibold leading-snug group-hover:text-primary transition">
-                {a.title}
+        {groups.map((group) => (
+          <section key={group.category} className="mb-14">
+            <div className="flex items-baseline justify-between mb-5">
+              <h2 className="text-xl md:text-2xl font-semibold tracking-tight">
+                {group.category}
               </h2>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-3 flex-1">
-                {a.description}
-              </p>
-              <div className="mt-4 flex items-center gap-3 text-xs text-muted-foreground">
-                <span className="flex items-center gap-1">
-                  <Clock className="h-3 w-3" /> {a.readingMinutes} min read
-                </span>
-                <span>·</span>
-                <span>Updated {a.updated}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
+              <span className="text-xs text-muted-foreground">
+                {group.articles.length} article{group.articles.length === 1 ? "" : "s"}
+              </span>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {group.articles.map((a) => (
+                <Link
+                  key={a.slug}
+                  to={`/learn/${a.slug}`}
+                  className="group bg-surface-elevated border border-border rounded-2xl p-6 hover:border-primary hover:shadow-[var(--shadow-card)] transition flex flex-col"
+                >
+                  <h3 className="text-lg font-semibold leading-snug group-hover:text-primary transition">
+                    {a.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed line-clamp-3 flex-1">
+                    {a.description}
+                  </p>
+                  <div className="mt-4 space-y-1.5 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-1.5">
+                      <User className="h-3 w-3" />
+                      <span className="font-medium text-foreground/80">{a.author.name}</span>
+                      <span className="text-muted-foreground/60">·</span>
+                      <span>{a.author.role}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="flex items-center gap-1">
+                        <Clock className="h-3 w-3" /> {a.readingMinutes} min read
+                      </span>
+                      <span>·</span>
+                      <span>Reviewed {a.reviewed ?? a.updated}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
     </>
   );

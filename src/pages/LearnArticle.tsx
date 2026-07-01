@@ -31,9 +31,12 @@ export default function LearnArticlePage() {
             description: article.description,
             url,
             inLanguage: "en",
-            datePublished: article.updated,
+            datePublished: article.published ?? article.updated,
             dateModified: article.updated,
             author: { "@type": "Person", name: article.author.name, jobTitle: article.author.role },
+            ...(article.reviewer && {
+              reviewedBy: { "@type": "Person", name: article.reviewer.name, jobTitle: article.reviewer.credential },
+            }),
             publisher: {
               "@type": "Organization",
               name: "Turbo Unit Converter",
@@ -81,21 +84,37 @@ export default function LearnArticlePage() {
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             {article.hero}
           </p>
-          <div className="mt-5 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
-            <span className="font-semibold text-foreground">{article.author.name}</span>
-            <span>·</span>
-            <span>{article.author.role}</span>
-            <span>·</span>
-            <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {article.readingMinutes} min read</span>
-            <span>·</span>
-            <span>Updated {article.updated}</span>
-          </div>
-          {article.reviewer && (
-            <div className="mt-3 inline-flex items-center gap-2 text-xs bg-primary-soft text-primary rounded-full px-3 py-1 font-semibold">
-              <ShieldCheck className="h-3.5 w-3.5" />
-              Reviewed by {article.reviewer.name} — {article.reviewer.credential}
+          <div className="mt-6 rounded-xl border border-border bg-surface-elevated p-4 md:p-5">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
+              <span className="font-semibold text-foreground">By {article.author.name}</span>
+              <span>·</span>
+              <span>{article.author.role}</span>
+              <span>·</span>
+              <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {article.readingMinutes} min read</span>
             </div>
-          )}
+            {article.author.bio && (
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{article.author.bio}</p>
+            )}
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] uppercase tracking-wider text-muted-foreground/80">
+              {article.published && (
+                <span>
+                  Published <span className="text-foreground/80 normal-case tracking-normal font-mono-num">{article.published}</span>
+                </span>
+              )}
+              <span>
+                Last updated <span className="text-foreground/80 normal-case tracking-normal font-mono-num">{article.updated}</span>
+              </span>
+              <span>
+                Last reviewed <span className="text-foreground/80 normal-case tracking-normal font-mono-num">{article.reviewed ?? article.updated}</span>
+              </span>
+            </div>
+            {article.reviewer && (
+              <div className="mt-3 inline-flex items-center gap-2 text-xs bg-primary-soft text-primary rounded-full px-3 py-1 font-semibold">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                Reviewed by {article.reviewer.name} — {article.reviewer.credential}
+              </div>
+            )}
+          </div>
         </header>
 
         <div className="prose prose-neutral dark:prose-invert max-w-none">
@@ -163,7 +182,7 @@ export default function LearnArticlePage() {
 
         <section className="mt-10 border-t border-border pt-6">
           <p className="text-xs text-muted-foreground">
-            This article was written by {article.author.name} and last reviewed on {article.updated} against{" "}
+            This article was written by {article.author.name} ({article.author.role}) and last reviewed on {article.reviewed ?? article.updated} against{" "}
             <a href="https://www.nist.gov/pml/special-publication-811" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NIST SP 811</a>{" "}
             and the{" "}
             <a href="https://www.bipm.org/en/publications/si-brochure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BIPM SI Brochure</a>.
