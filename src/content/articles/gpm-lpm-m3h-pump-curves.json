@@ -1,0 +1,47 @@
+{
+  "slug": "gpm-lpm-m3h-pump-curves",
+  "title": "GPM, L/min and m³/h: Reading Pump Curves Across Regions",
+  "h1": "GPM, L/min and m³/h — reading pump and flow curves across regions",
+  "description": "Pump catalogs from three continents use three different flow units. Here is how to read a curve, apply the right correction, and avoid the US-vs-UK gallon trap.",
+  "category": "Volumetric Flow",
+  "readingMinutes": 7,
+  "published": "2026-05-26",
+  "updated": "2026-06-27",
+  "reviewed": "2026-06-27",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Fluid systems & process engineering",
+    "bio": "Reference material for HVAC, plumbing, irrigation and process engineers routinely reading multi-region pump and valve datasheets."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8 and ISO 80000-4" },
+  "hero": "A pump curve is a promise about flow at a given head. Read it in the wrong unit — or the wrong gallon — and you will size a system that never quite performs as expected.",
+  "body": [
+    "Pump curves look the same everywhere: flow on the x-axis, head or pressure on the y-axis, a family of impeller curves sloping downward. What varies is the units. US catalogs plot GPM against feet of head. European catalogs plot m³/h against metres of head. Asian datasheets often plot L/min or L/s. This article covers the exact conversions and the three pitfalls that catch engineers going between them.",
+    "## The exact factors",
+    "> 1 US gallon = 3.785411784 L (exact)\n> 1 Imperial (UK) gallon = 4.54609 L (exact)\n> 1 US GPM = 3.785 L/min = 0.2271 m³/h = 6.309 × 10⁻⁵ m³/s\n> 1 L/s = 60 L/min = 3.6 m³/h = 15.85 US GPM = 13.20 UK GPM",
+    "The US-vs-UK gallon gap is 20%. It is the same factor that shows up in fuel economy and it causes the same errors: a British irrigation pump rated 100 GPM at 60 psi is delivering 100 UK gallons per minute = 120 US gallons per minute. Import that pump into a US irrigation design tool that assumes US GPM and you have systematically over-sized every downstream pipe, valve and controller by 20%.",
+    "## Reading a pump curve — step by step",
+    "1. Note the datasheet's unit system (usually printed in the axis label or the footer). \n2. Convert your required flow into the sheet's unit — do this once, cleanly, before you look at the curve. \n3. Trace up from the flow value to the impeller diameter you want. \n4. Read across to the head/pressure axis. \n5. Note the efficiency and NPSH (net positive suction head) at that operating point — both matter, and both are printed in the datasheet's unit system too.",
+    "## The 'nominal size' trap",
+    "European pump datasheets typically list nominal flow in m³/h at a specific operating point. Actual capacity can be 20% higher or lower depending on head, impeller trim and speed. Do not size a pipe from the model name (\"PN-40-125\") — always read the curve at the specified head. This is a common mistake when substituting equivalent pumps across brands.",
+    "## Wire-to-water: pump power in mixed units",
+    "The general shaft-power equation in SI is P (kW) = Q (m³/s) × ρ (kg/m³) × g (m/s²) × H (m) ÷ η. For water at 1,000 kg/m³ and gₙ = 9.807 m/s², this simplifies to P (kW) ≈ Q (m³/h) × H (m) × 0.00272 ÷ η. In US units the equivalent is P (hp) = Q (GPM) × H (ft) ÷ (3960 × η). The 3,960 constant hides ρ, g, and unit conversions all at once — memorising both forms saves you from re-deriving them in the middle of a specification review.",
+    "## Worked example — a 60 m³/h chiller loop",
+    "A European chiller specifies 60 m³/h at 20 m of head, using a pump with 78% hydraulic efficiency. Shaft power = 60 × 20 × 0.00272 ÷ 0.78 = 4.19 kW. Converting flow for a US contractor: 60 m³/h × 4.403 = 264 US GPM. Converting head: 20 m × 3.281 = 65.6 ft. Same pump duty, same physics — just two different projections onto the local units. Publishing both on the specification sheet prevents field misinterpretation.",
+    "## Firefighting flow — a common override",
+    "Fire codes worldwide are unit-strict: NFPA design flows are in US GPM; European EN 12845 flows are in L/min. A sprinkler head rated 80 L/min at 1 bar is not automatically the same as one rated 21 GPM at 14.5 psi — the K-factor definition changes with the unit system (K in SI is L/min per √bar; K in US is GPM per √psi). Always cross-check the manufacturer's dual-unit table rather than converting a K-factor arithmetically.",
+    "## The five-second recap",
+    "Multiply US GPM by 0.2271 for m³/h. Multiply m³/h by 4.403 for US GPM. UK GPM is 20% larger than US GPM. Always read a pump curve in the units the curve was printed in — convert your requirement first, then look at the chart."
+  ],
+  "faqs": [
+    { "q": "How many L/min in a US GPM?", "a": "1 US GPM = 3.785411784 L/min. 1 UK GPM = 4.54609 L/min." },
+    { "q": "Which gallon does a European pump datasheet use?", "a": "Neither in practice. European datasheets use m³/h or L/min directly. If you see 'GPM' on a European document it is almost always UK Imperial — but always verify from context (kW ratings, EN certifications)." },
+    { "q": "What is a typical residential shower flow rate?", "a": "US low-flow: 1.8 GPM (6.8 L/min). Standard US: 2.5 GPM (9.5 L/min). Modern EU: 6–9 L/min (1.6–2.4 US GPM)." },
+    { "q": "How do I convert flow to pipe velocity?", "a": "Velocity = flow / cross-section area. For a 50 mm pipe (A = 0.001963 m²) carrying 1 L/s (0.001 m³/s), velocity is 0.51 m/s. Design targets for potable water are typically 1–2 m/s to balance friction losses against pipe size." }
+  ],
+  "related": [
+    { "label": "GPM to L/min converter", "href": "/c/flow/gpm-to-lpm" },
+    { "label": "L/s to m³/h converter", "href": "/c/flow/ls-to-m3h" },
+    { "label": "GPM to m³/h converter", "href": "/c/flow/gpm-to-m3h" }
+  ]
+}
