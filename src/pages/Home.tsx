@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
+import { AdSlot } from "@/components/AdSlot";
 import { TurboSearchBar } from "@/components/TurboSearchBar";
 import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORIES, CATEGORY_MAP } from "@/lib/converters/data";
 import { GROUP_LABELS } from "@/lib/converters/types";
+import { getAllArticles } from "@/content/articles";
 import { useI18n } from "@/lib/i18n";
 
-import logo from "@/assets/Logo.webp";
 
 import {
   Search, ArrowRight, Ruler, Weight, Thermometer, Beaker, Square, Gauge, Zap, Clock,
@@ -161,7 +161,7 @@ export default function HomePage() {
           <RecentConversions className="mt-8" />
         </section>
 
-        <AdBanner className="mb-14" />
+        <AdSlot allowed wordCount={1200} context="home-below-hero" className="mb-14" />
 
 
         <section className="mb-16">
