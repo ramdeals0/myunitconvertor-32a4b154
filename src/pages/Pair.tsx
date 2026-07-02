@@ -89,8 +89,8 @@ export default function PairPage() {
             name: heading,
             description: desc,
             url,
-            inLanguage: "en",
-            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+            inLanguage: langTag,
+            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
             primaryImageOfPage: undefined,
             mainEntity: {
               "@type": "HowTo",
@@ -99,7 +99,7 @@ export default function PairPage() {
             },
             potentialAction: {
               "@type": "SearchAction",
-              target: `https://turbounitconverter.com/?q={search_term_string}`,
+              target: `${SITE_URL}/?q={search_term_string}`,
               "query-input": "required name=search_term_string",
             },
           },
@@ -107,7 +107,7 @@ export default function PairPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
               { "@type": "ListItem", position: 2, name: category.name, item: catUrl },
               { "@type": "ListItem", position: 3, name: `${f.name} to ${t.name}`, item: url },
             ],
