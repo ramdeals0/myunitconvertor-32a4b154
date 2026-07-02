@@ -51,7 +51,7 @@ export function SiteHeader() {
   return (
     <header className="bg-surface-elevated/80 backdrop-blur-md border-b border-border fixed top-0 inset-x-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between h-16 px-4 md:px-6">
-        <Link to="/" className="flex items-center gap-2" aria-label="Turbo Unit Converter">
+        <Link to={localizedTo("/")} className="flex items-center gap-2" aria-label="Turbo Unit Converter">
           <img src={logo} alt="Turbo Unit Converter" className="h-9 md:h-10 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-7">
@@ -86,7 +86,15 @@ export function SiteHeader() {
                 {LANGUAGES.map((l) => (
                   <button
                     key={l.code}
-                    onClick={() => { setLang(l.code as Lang); setLangOpen(false); }}
+                    onClick={() => {
+                      const next = l.code as Lang;
+                      setLang(next);
+                      setLangOpen(false);
+                      // Navigate to the equivalent URL under the chosen locale
+                      // so the visible content and canonical stay consistent.
+                      const target = withLocalePrefix(stripLocalePrefix(path), next);
+                      navigate(target);
+                    }}
                     className={`w-full text-left px-3 py-2 text-sm hover:bg-muted transition flex items-center justify-between ${
                       l.code === lang ? "text-primary font-semibold" : "text-foreground"
                     }`}
