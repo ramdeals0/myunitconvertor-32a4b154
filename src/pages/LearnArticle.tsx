@@ -17,6 +17,15 @@ export default function LearnArticlePage() {
 
   const others = getAllArticles().filter((a) => a.slug !== article.slug).slice(0, 3);
 
+  // Auto-generate keyword list from title, category, related converter labels.
+  const keywordSet = new Set<string>();
+  keywordSet.add(article.category.toLowerCase());
+  keywordSet.add("unit conversion");
+  article.title.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2).forEach((w) => keywordSet.add(w));
+  article.related.forEach((r) => keywordSet.add(r.label.toLowerCase()));
+  const keywords = Array.from(keywordSet).slice(0, 15).join(", ");
+  const publishedIso = article.published ?? article.updated;
+
   return (
     <>
       <Seo
