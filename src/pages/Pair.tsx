@@ -9,6 +9,7 @@ import { getRealWorldExamples } from "@/lib/converters/realWorldExamples";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 import { pairIndexability } from "@/lib/seo/indexability";
 import { getArticlesByCategoryHint, getAllArticles } from "@/content/articles";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 import {
   getGeneratedPair,
@@ -25,12 +26,15 @@ function parsePair(pair: string): [string, string] {
 
 export default function PairPage() {
   const { category: categoryId, pair } = useParams<{ category: string; pair: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const category = categoryId ? CATEGORY_MAP[categoryId] : undefined;
   const [fromId, toId] = pair ? parsePair(pair) : ["", ""];
   const f = category?.units.find((u) => u.id === fromId);
   const t = category?.units.find((u) => u.id === toId);
 
-  if (!category || !f || !t) return <Navigate to="/404" replace />;
+  if (!category || !f || !t) return <Navigate to={L("/404")} replace />;
 
   const examples = [1, 2, 5, 10, 25, 50, 100, 250, 500, 1000];
   const factor = convert(category, 1, f.id, t.id);
@@ -50,8 +54,10 @@ export default function PairPage() {
     `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`
   ).slice(0, 160);
   const heading = gen?.meta.h1 || pseo?.h1 || `${f.name} to ${t.name}`;
-  const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
-  const catUrl = `https://turbounitconverter.com/c/${category.id}`;
+  const url = LU(`/c/${category.id}/${pair}`);
+  const catUrl = LU(`/c/${category.id}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const faqs = [
     { q: `How do I convert ${f.name.toLowerCase()} to ${t.name.toLowerCase()}?`, a: `Multiply the ${f.name.toLowerCase()} value by ${formatResult(factor)} to get the equivalent in ${t.name.toLowerCase()}.` },
@@ -83,8 +89,8 @@ export default function PairPage() {
             name: heading,
             description: desc,
             url,
-            inLanguage: "en",
-            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+            inLanguage: langTag,
+            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
             primaryImageOfPage: undefined,
             mainEntity: {
               "@type": "HowTo",
@@ -93,7 +99,7 @@ export default function PairPage() {
             },
             potentialAction: {
               "@type": "SearchAction",
-              target: `https://turbounitconverter.com/?q={search_term_string}`,
+              target: `${SITE_URL}/?q={search_term_string}`,
               "query-input": "required name=search_term_string",
             },
           },
@@ -101,7 +107,7 @@ export default function PairPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
               { "@type": "ListItem", position: 2, name: category.name, item: catUrl },
               { "@type": "ListItem", position: 3, name: `${f.name} to ${t.name}`, item: url },
             ],
@@ -139,8 +145,8 @@ export default function PairPage() {
             name: `Standards & references for ${f.name} to ${t.name} conversion`,
             headline: `Standards & references for ${f.name} to ${t.name} conversion`,
             url,
-            inLanguage: "en",
-            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+            inLanguage: langTag,
+            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
             about: {
               "@type": "Thing",
               name: `${f.name} to ${t.name} unit conversion`,
@@ -178,8 +184,8 @@ export default function PairPage() {
               {
                 "@type": "WebPage",
                 name: "Turbo Unit Converter — Methodology",
-                url: "https://turbounitconverter.com/methodology",
-                isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+                url: LU("/methodology"),
+                isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
               },
             ],
           },
@@ -192,9 +198,9 @@ export default function PairPage() {
       )}
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
-          <Link to="/" className="hover:text-primary">Home</Link>
+          <Link to={L("/")} className="hover:text-primary">Home</Link>
           <span className="mx-2">/</span>
-          <Link to={`/c/${category.id}`} className="hover:text-primary">{category.name}</Link>
+          <Link to={L(`/c/${category.id}`)} className="hover:text-primary">{category.name}</Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{f.symbol} → {t.symbol}</span>
         </nav>
@@ -469,7 +475,7 @@ export default function PairPage() {
                     </div>
                   </div>
                   <Link
-                    to={`/c/${category.id}/${reverseSlug}`}
+                    to={L(`/c/${category.id}/${reverseSlug}`)}
                     className="flex-shrink-0 inline-flex items-center gap-1.5 bg-primary text-primary-foreground rounded-lg px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
                   >
                     {t.symbol} <ArrowRightIcon className="h-3.5 w-3.5" /> {f.symbol}
@@ -490,7 +496,7 @@ export default function PairPage() {
                       return (
                         <Link
                           key={p.slug}
-                          to={`/c/${category.id}/${p.slug}`}
+                          to={L(`/c/${category.id}/${p.slug}`)}
                           className="group bg-surface-elevated border border-border rounded-xl p-3 hover:border-primary transition"
                         >
                           <div className="text-sm font-semibold flex items-center justify-between">
@@ -514,7 +520,7 @@ export default function PairPage() {
                     {crossCat.map((p) => (
                       <Link
                         key={`${p.category}/${p.slug}`}
-                        to={`/c/${p.category}/${p.slug}`}
+                        to={L(`/c/${p.category}/${p.slug}`)}
                         className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center"
                       >
                         <div className="font-semibold">{p.fromUnit} → {p.toUnit}</div>
@@ -540,7 +546,7 @@ export default function PairPage() {
                 {articles.map((a) => (
                   <Link
                     key={a.slug}
-                    to={`/learn/${a.slug}`}
+                    to={L(`/learn/${a.slug}`)}
                     className="group bg-surface-elevated border border-border rounded-xl p-5 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
                   >
                     <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
@@ -611,7 +617,7 @@ export default function PairPage() {
               </span>
             </li>
             <li>
-              <Link to="/methodology" className="text-primary hover:underline">
+              <Link to={L("/methodology")} className="text-primary hover:underline">
                 Read our full methodology →
               </Link>
             </li>

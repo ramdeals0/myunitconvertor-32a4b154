@@ -9,13 +9,17 @@ import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getCategoryContent } from "@/lib/converters/categoryContent";
 import { getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 import { ArrowRight, TrendingUp } from "lucide-react";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 
 export default function CategoryPage() {
   const { category: categoryId } = useParams<{ category: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const category = categoryId ? CATEGORY_MAP[categoryId] : undefined;
 
-  if (!category) return <Navigate to="/404" replace />;
+  if (!category) return <Navigate to={L("/404")} replace />;
 
   const related = CATEGORIES.filter((c) => c.group === category.group && c.id !== category.id).slice(0, 6);
   const featured = category.popular?.[0] ?? { from: category.units[0]?.id, to: category.units[1]?.id };
@@ -29,7 +33,9 @@ export default function CategoryPage() {
 
   const title = `${category.name} Converter — Turbo Unit Converter`;
   const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
-  const url = `https://turbounitconverter.com/c/${category.id}`;
+  const url = LU(`/c/${category.id}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const content = getCategoryContent(category);
   const faqs = content.faqs.map((item) => ({ q: item.q, a: item.a }));
@@ -41,8 +47,8 @@ export default function CategoryPage() {
       name: title,
       description,
       url,
-      inLanguage: "en",
-      isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+      inLanguage: langTag,
+      isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
       mainEntity: {
         "@type": "WebApplication",
         name: `${category.name} Unit Converter`,
@@ -50,7 +56,7 @@ export default function CategoryPage() {
       },
       potentialAction: {
         "@type": "SearchAction",
-        target: `https://turbounitconverter.com/?q={search_term_string}`,
+        target: `${SITE_URL}/?q={search_term_string}`,
         "query-input": "required name=search_term_string",
       },
     },
@@ -58,7 +64,7 @@ export default function CategoryPage() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
+        { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
         { "@type": "ListItem", position: 2, name: category.name, item: url },
       ],
     },
@@ -108,7 +114,7 @@ export default function CategoryPage() {
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
-          <Link to="/" className="hover:text-primary">Home</Link>
+          <Link to={L("/")} className="hover:text-primary">Home</Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{category.name}</span>
         </nav>
@@ -204,7 +210,7 @@ export default function CategoryPage() {
                   return (
                     <Link
                       key={p.slug}
-                      to={`/c/${category.id}/${p.slug}`}
+                      to={L(`/c/${category.id}/${p.slug}`)}
                       className="group bg-surface-elevated border border-border rounded-xl p-4 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
                     >
                       <div className="flex items-center justify-between text-sm font-semibold">
@@ -238,7 +244,7 @@ export default function CategoryPage() {
               <div className="mt-4 rounded-lg border border-dashed border-border bg-muted/30 p-4 font-mono-num text-sm">
                 {t.name} = {f.name} × {formatResult(factor)}
               </div>
-              <Link to={`/c/${category.id}/${f.id}-to-${t.id}`}
+              <Link to={L(`/c/${category.id}/${f.id}-to-${t.id}`)}
                 className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
                 Read full technical guide <ArrowRight className="h-4 w-4" />
               </Link>
@@ -306,7 +312,7 @@ export default function CategoryPage() {
                 return (
                   <Link
                     key={r.id}
-                    to={`/c/${r.id}`}
+                    to={L(`/c/${r.id}`)}
                     className="group bg-surface-elevated border border-border rounded-xl p-4 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
                   >
                     <div className="flex items-center justify-between">
@@ -326,7 +332,7 @@ export default function CategoryPage() {
             <h2 className="text-xl font-semibold mb-4">More in {category.group === "other" ? "this group" : `${category.group}`}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {related.map((c) => (
-                <Link key={c.id} to={`/c/${c.id}`}
+                <Link key={c.id} to={L(`/c/${c.id}`)}
                   className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center">
                   {c.name}
                 </Link>

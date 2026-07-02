@@ -439,3 +439,18 @@ export function useI18n() {
   if (!ctx) throw new Error("useI18n must be used within I18nProvider");
   return ctx;
 }
+
+/** Hook: returns a fn that prefixes an app path with the active locale. */
+export function useLocalizedPath() {
+  const { lang } = useI18n();
+  return (path: string) => withLocalePrefix(path, lang);
+}
+
+/** Hook: returns a fn that builds a fully-qualified canonical URL for the active locale. */
+export function useLocalizedUrl() {
+  const { lang } = useI18n();
+  return (path: string) => `${SITE_URL}${withLocalePrefix(path, lang)}`;
+}
+
+/** Map our internal Lang code to a BCP-47 tag suitable for `inLanguage` / `lang`. */
+export const BCP47: Record<Lang, string> = { en: "en", es: "es", hi: "hi" };

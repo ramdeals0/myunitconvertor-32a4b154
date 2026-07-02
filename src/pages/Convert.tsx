@@ -4,6 +4,7 @@ import { Converter } from "@/components/Converter";
 import { CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import type { Category, Unit } from "@/lib/converters/types";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 function normalize(s: string) {
   return s.toLowerCase().replace(/[\s_]+/g, "-");
@@ -36,8 +37,11 @@ function resolvePair(pair: string): { category: Category; from: Unit; to: Unit }
 
 export default function ConvertPage() {
   const { pair } = useParams<{ pair: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const resolved = pair ? resolvePair(pair) : null;
-  if (!resolved) return <Navigate to="/404" replace />;
+  if (!resolved) return <Navigate to={L("/404")} replace />;
   const { category, from: f, to: t } = resolved;
 
   const factor = convert(category, 1, f.id, t.id);
@@ -51,7 +55,9 @@ export default function ConvertPage() {
 
   const title = `${fLabel} to ${tLabel} Converter — ${f.name} to ${t.name}`.slice(0, 60);
   const desc = `Instantly convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) online — free, accurate, and engineering-grade precise. 1 ${f.symbol} = ${formatResult(factor)} ${t.symbol}.`.slice(0, 160);
-  const url = `https://turbounitconverter.com/convert/${fSlug}-to-${tSlug}`;
+  const url = LU(`/convert/${fSlug}-to-${tSlug}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const faqs = [
     { q: `How many ${t.name.toLowerCase()} are in a ${f.name.toLowerCase()}?`, a: `1 ${f.symbol} equals ${formatResult(factor)} ${t.symbol}.` },
@@ -79,7 +85,7 @@ export default function ConvertPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.com/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
               { "@type": "ListItem", position: 2, name: `${fLabel} to ${tLabel}`, item: url },
             ],
           },
@@ -102,9 +108,9 @@ export default function ConvertPage() {
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
-          <Link to="/" className="hover:text-primary">Home</Link>
+          <Link to={L("/")} className="hover:text-primary">Home</Link>
           <span className="mx-2">/</span>
-          <Link to={`/c/${category.id}`} className="hover:text-primary">{category.name}</Link>
+          <Link to={L(`/c/${category.id}`)} className="hover:text-primary">{category.name}</Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{fLabel} → {tLabel}</span>
         </nav>
@@ -180,7 +186,7 @@ export default function ConvertPage() {
 
         <section className="mt-10 text-center">
           <Link
-            to={`/c/${category.id}/${f.id}-to-${t.id}`}
+            to={L(`/c/${category.id}/${f.id}-to-${t.id}`)}
             className="text-sm text-primary hover:underline"
           >
             View detailed {f.name} → {t.name} reference →
