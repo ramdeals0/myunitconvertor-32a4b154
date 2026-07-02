@@ -1149,6 +1149,164 @@ const volumeDry: Category = {
   ],
 };
 
+// ---------- New categories (parity with everyunitconverter.com) ----------
+
+// Sound Level — base decibel (dB). Neper: 1 Np = 20/ln(10) dB ≈ 8.685889638 dB.
+const soundLevel: Category = {
+  id: "sound-level", name: "Sound Level",
+  description: "Decibel, bel, neper. Convert sound pressure and power levels.",
+  group: "other", baseUnit: "dB",
+  units: [
+    u("dB", "Decibel", "dB", 1),
+    u("B", "Bel", "B", 10),
+    u("Np", "Neper", "Np", 8.685889638065035),
+    u("cNp", "Centineper", "cNp", 0.08685889638065),
+  ],
+  popular: [
+    { from: "dB", to: "Np" }, { from: "Np", to: "dB" },
+    { from: "dB", to: "B" }, { from: "B", to: "dB" },
+  ],
+};
+
+// Luminous Flux — base lumen (lm). 1 cd·sr = 1 lm.
+const luminousFlux: Category = {
+  id: "luminous-flux", name: "Luminous Flux",
+  description: "Lumen, millilumen, kilolumen and candela-steradian. Light output units.",
+  group: "light", baseUnit: "lm",
+  units: [
+    u("lm", "Lumen", "lm", 1),
+    u("mlm", "Millilumen", "mlm", 1e-3),
+    u("klm", "Kilolumen", "klm", 1e3),
+    u("cdsr", "Candela-steradian", "cd·sr", 1),
+  ],
+  popular: [
+    { from: "lm", to: "klm" }, { from: "klm", to: "lm" },
+    { from: "lm", to: "mlm" }, { from: "mlm", to: "lm" },
+  ],
+};
+
+// Radiation Equivalent Dose — base sievert (Sv). 1 rem = 0.01 Sv.
+const radiationEquivalentDose: Category = {
+  id: "radiation-equivalent-dose", name: "Radiation Equivalent Dose",
+  description: "Sievert, millisievert, rem. Biological effect of ionising radiation.",
+  group: "radiology", baseUnit: "Sv",
+  units: [
+    u("Sv", "Sievert", "Sv", 1),
+    u("mSv", "Millisievert", "mSv", 1e-3),
+    u("uSv", "Microsievert", "µSv", 1e-6),
+    u("rem", "Rem", "rem", 0.01),
+    u("mrem", "Millirem", "mrem", 1e-5),
+  ],
+  popular: [
+    { from: "Sv", to: "rem" }, { from: "rem", to: "Sv" },
+    { from: "mSv", to: "mrem" }, { from: "mrem", to: "mSv" },
+    { from: "uSv", to: "mrem" }, { from: "Sv", to: "mSv" },
+  ],
+};
+
+// Heat Capacity — base J/K.
+const heatCapacity: Category = {
+  id: "heat-capacity", name: "Heat Capacity",
+  description: "J/K, kJ/K, cal/°C, BTU/°F. Total heat capacity of an object.",
+  group: "heat", baseUnit: "J/K",
+  units: [
+    u("J_K", "Joule per kelvin", "J/K", 1),
+    u("kJ_K", "Kilojoule per kelvin", "kJ/K", 1000),
+    u("cal_C", "Calorie per °C", "cal/°C", 4.184),
+    u("kcal_C", "Kilocalorie per °C", "kcal/°C", 4184),
+    u("BTU_F", "BTU per °F", "BTU/°F", 1899.100534716),
+  ],
+  popular: [
+    { from: "J_K", to: "kJ_K" }, { from: "kJ_K", to: "J_K" },
+    { from: "kcal_C", to: "BTU_F" }, { from: "BTU_F", to: "kJ_K" },
+  ],
+};
+
+// Molality — base mol/kg.
+const molality: Category = {
+  id: "molality", name: "Molality",
+  description: "Moles of solute per kilogram of solvent. mol/kg, mmol/kg, µmol/kg.",
+  group: "fluids", baseUnit: "mol/kg",
+  units: [
+    u("mol_kg", "Mole per kilogram", "mol/kg", 1),
+    u("mmol_kg", "Millimole per kilogram", "mmol/kg", 1e-3),
+    u("umol_kg", "Micromole per kilogram", "µmol/kg", 1e-6),
+    u("mol_g", "Mole per gram", "mol/g", 1000),
+  ],
+  popular: [
+    { from: "mol_kg", to: "mmol_kg" }, { from: "mmol_kg", to: "mol_kg" },
+    { from: "mol_kg", to: "umol_kg" },
+  ],
+};
+
+// Osmolarity — base Osm/L.
+const osmolarity: Category = {
+  id: "osmolarity", name: "Osmolarity",
+  description: "Osm/L, mOsm/L. Osmotic concentration of solutions.",
+  group: "fluids", baseUnit: "Osm/L",
+  units: [
+    u("Osm_L", "Osmole per liter", "Osm/L", 1),
+    u("mOsm_L", "Milliosmole per liter", "mOsm/L", 1e-3),
+    u("Osm_m3", "Osmole per m³", "Osm/m³", 1e-3),
+    u("mOsm_mL", "Milliosmole per mL", "mOsm/mL", 1),
+  ],
+  popular: [
+    { from: "Osm_L", to: "mOsm_L" }, { from: "mOsm_L", to: "Osm_L" },
+  ],
+};
+
+// Permittivity — base F/m.
+const permittivity: Category = {
+  id: "permittivity", name: "Permittivity",
+  description: "Farad per meter, picofarad per meter. Electric permittivity of media.",
+  group: "electricity", baseUnit: "F/m",
+  units: [
+    u("F_m", "Farad per meter", "F/m", 1),
+    u("mF_m", "Millifarad per meter", "mF/m", 1e-3),
+    u("uF_m", "Microfarad per meter", "µF/m", 1e-6),
+    u("nF_m", "Nanofarad per meter", "nF/m", 1e-9),
+    u("pF_m", "Picofarad per meter", "pF/m", 1e-12),
+  ],
+  popular: [
+    { from: "F_m", to: "pF_m" }, { from: "pF_m", to: "F_m" },
+  ],
+};
+
+// Specific Enthalpy — base J/kg.
+const enthalpy: Category = {
+  id: "enthalpy", name: "Specific Enthalpy",
+  description: "J/kg, kJ/kg, kcal/kg, BTU/lb. Enthalpy per unit mass.",
+  group: "heat", baseUnit: "J/kg",
+  units: [
+    u("J_kg", "Joule per kilogram", "J/kg", 1),
+    u("kJ_kg", "Kilojoule per kilogram", "kJ/kg", 1000),
+    u("cal_g", "Calorie per gram", "cal/g", 4184),
+    u("kcal_kg", "Kilocalorie per kilogram", "kcal/kg", 4184),
+    u("BTU_lb", "BTU per pound", "BTU/lb", 2326.0),
+  ],
+  popular: [
+    { from: "kJ_kg", to: "BTU_lb" }, { from: "BTU_lb", to: "kJ_kg" },
+    { from: "kcal_kg", to: "kJ_kg" },
+  ],
+};
+
+// Specific Entropy — base J/(kg·K).
+const entropy: Category = {
+  id: "entropy", name: "Specific Entropy",
+  description: "J/(kg·K), kJ/(kg·K), kcal/(kg·°C), BTU/(lb·°F).",
+  group: "heat", baseUnit: "J/(kg·K)",
+  units: [
+    u("J_kgK", "Joule per kilogram-kelvin", "J/(kg·K)", 1),
+    u("kJ_kgK", "Kilojoule per kilogram-kelvin", "kJ/(kg·K)", 1000),
+    u("cal_gC", "Calorie per gram-°C", "cal/(g·°C)", 4184),
+    u("kcal_kgC", "Kilocalorie per kilogram-°C", "kcal/(kg·°C)", 4184),
+    u("BTU_lbF", "BTU per pound-°F", "BTU/(lb·°F)", 4186.8),
+  ],
+  popular: [
+    { from: "kJ_kgK", to: "BTU_lbF" }, { from: "BTU_lbF", to: "kJ_kgK" },
+  ],
+};
+
 export const CATEGORIES: Category[] = [
   length, weight, temperature, volume, area, pressure, energy, power, force,
   time, speed, angle, fuel, data, frequency, density, acceleration, torque,
@@ -1158,22 +1316,26 @@ export const CATEGORIES: Category[] = [
   // Heat
   fuelEffMass, fuelEffVolume, tempInterval, thermalExpansion, thermalResistance,
   thermalConductivity, specificHeat, heatDensity, heatFluxDensity, heatTransferCoef,
+  heatCapacity, enthalpy, entropy,
   // Fluids
   flowMass, flowMolar, massFluxDensity, concentrationMolar, concentrationSolution,
   viscosityDynamic, viscosityKinematic, surfaceTension, permeability,
+  molality, osmolarity,
   // Light
-  luminance, luminousIntensity, illumination, dpi,
+  luminance, luminousIntensity, luminousFlux, illumination, dpi,
   // Electricity
   charge, linearChargeDensity, surfaceChargeDensity, volumeChargeDensity,
   linearCurrentDensity, surfaceCurrentDensity, eFieldStrength, eResistivity,
-  eConductance, eConductivity, capacitance, inductance,
+  eConductance, eConductivity, capacitance, inductance, permittivity,
   // Magnetism
   mmf, magneticFieldStrength, magneticFlux, magneticFluxDensity,
   // Radiology
   radiation, radiationActivity, radiationExposure, radiationAbsorbed,
+  radiationEquivalentDose,
   // Other
-  prefixes, dataTransfer, typography, volumeLumber, volumeDry,
+  prefixes, dataTransfer, typography, volumeLumber, volumeDry, soundLevel,
 ];
+
 
 export const CATEGORY_MAP: Record<string, Category> = Object.fromEntries(
   CATEGORIES.map((c) => [c.id, c]),

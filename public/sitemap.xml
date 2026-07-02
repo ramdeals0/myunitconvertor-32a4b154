@@ -391,6 +391,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://turbounitconverter.com/c/heat-capacity</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/enthalpy</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/entropy</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://turbounitconverter.com/c/flow-mass</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -445,6 +463,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://turbounitconverter.com/c/molality</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/osmolarity</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://turbounitconverter.com/c/luminance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -452,6 +482,12 @@
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/luminous-intensity</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/luminous-flux</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -541,6 +577,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://turbounitconverter.com/c/permittivity</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://turbounitconverter.com/c/magnetomotive-force</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -589,6 +631,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://turbounitconverter.com/c/radiation-equivalent-dose</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://turbounitconverter.com/c/prefixes</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -614,6 +662,12 @@
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/volume-dry</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/c/sound-level</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
