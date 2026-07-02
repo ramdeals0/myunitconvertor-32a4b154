@@ -14,15 +14,46 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
 const BASE = "https://turbounitconverter.com";
 
+// Supported UI locales — must match src/lib/i18n.tsx LOCALES.
+// English lives at the root; other locales live under /{lang}/… prefixes.
+const LOCALES = ["en", "es", "hi"];
+const DEFAULT_LOCALE = "en";
+function localePath(path, lang) {
+  if (lang === DEFAULT_LOCALE) return path;
+  return path === "/" ? `/${lang}` : `/${lang}${path}`;
+}
+
 // Use tsx to load the TS module — falls back to a regex parse if unavailable.
 async function loadCategories() {
   try {
-    // Prefer dynamic TS import (requires tsx runtime, which is invoked from npm script)
     const mod = await import(resolve(root, "src/lib/converters/data.ts"));
     return mod.CATEGORIES;
   } catch {
     return null;
   }
+}
+
+// A URL entry with hreflang alternates for each supported UI locale.
+function urlTagLocalized(path, { changefreq = "monthly", priority = "0.6", lastmod } = {}) {
+  const loc = `${BASE}${path}`;
+  const alternates = LOCALES.map(
+    (l) =>
+      `    <xhtml:link rel="alternate" hreflang="${l}" href="${BASE}${localePath(path, l)}" />`,
+  );
+  alternates.push(
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE}${localePath(path, DEFAULT_LOCALE)}" />`,
+  );
+  return [
+    "  <url>",
+    `    <loc>${loc}</loc>`,
+    lastmod ? `    <lastmod>${lastmod}</lastmod>` : null,
+    changefreq ? `    <changefreq>${changefreq}</changefreq>` : null,
+    priority ? `    <priority>${priority}</priority>` : null,
+    ...alternates,
+    "  </url>",
+  ]
+    .filter(Boolean)
+    .join("\n");
 }
 
 function urlTag(loc, { changefreq = "monthly", priority = "0.6", lastmod } = {}) {
