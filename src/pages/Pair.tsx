@@ -475,7 +475,7 @@ export default function PairPage() {
                     </div>
                   </div>
                   <Link
-                    to={`/c/${category.id}/${reverseSlug}`}
+                    to={L(`/c/${category.id}/${reverseSlug}`)}
                     className="flex-shrink-0 inline-flex items-center gap-1.5 bg-primary text-primary-foreground rounded-lg px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
                   >
                     {t.symbol} <ArrowRightIcon className="h-3.5 w-3.5" /> {f.symbol}
@@ -496,7 +496,7 @@ export default function PairPage() {
                       return (
                         <Link
                           key={p.slug}
-                          to={`/c/${category.id}/${p.slug}`}
+                          to={L(`/c/${category.id}/${p.slug}`)}
                           className="group bg-surface-elevated border border-border rounded-xl p-3 hover:border-primary transition"
                         >
                           <div className="text-sm font-semibold flex items-center justify-between">
@@ -520,7 +520,7 @@ export default function PairPage() {
                     {crossCat.map((p) => (
                       <Link
                         key={`${p.category}/${p.slug}`}
-                        to={`/c/${p.category}/${p.slug}`}
+                        to={L(`/c/${p.category}/${p.slug}`)}
                         className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center"
                       >
                         <div className="font-semibold">{p.fromUnit} → {p.toUnit}</div>
@@ -546,7 +546,7 @@ export default function PairPage() {
                 {articles.map((a) => (
                   <Link
                     key={a.slug}
-                    to={`/learn/${a.slug}`}
+                    to={L(`/learn/${a.slug}`)}
                     className="group bg-surface-elevated border border-border rounded-xl p-5 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
                   >
                     <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
@@ -617,7 +617,7 @@ export default function PairPage() {
               </span>
             </li>
             <li>
-              <Link to="/methodology" className="text-primary hover:underline">
+              <Link to={L("/methodology")} className="text-primary hover:underline">
                 Read our full methodology →
               </Link>
             </li>
