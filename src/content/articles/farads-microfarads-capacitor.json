@@ -1,0 +1,37 @@
+{
+  "slug": "farads-microfarads-capacitor",
+  "title": "Farads and Microfarads: Reading Capacitor Codes",
+  "h1": "Farads, microfarads, nanofarads, picofarads — decoding capacitor markings",
+  "description": "A '104' capacitor is 100 nF. Here is the three-digit EIA code and the F/µF/nF/pF ladder every electronics hobbyist needs.",
+  "category": "Capacitance",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Electronics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against EIA-198 and IEC 60062" },
+  "hero": "A farad is enormous. Every real capacitor is µF, nF, or pF. Once you can read the three-digit EIA code, every part number becomes obvious.",
+  "body": [
+    "Capacitance in farads: unrealistic for discrete components. A 1 F capacitor is the size of a small can and stores enough charge to weld metal. Real electronics uses microfarads to picofarads, and each range has its own marking convention.",
+    "## The exact ladder",
+    "> 1 F = 10⁶ µF = 10⁹ nF = 10¹² pF\n> 1 µF = 1,000 nF = 10⁶ pF\n> 1 nF = 1,000 pF\n> Bulk power supply: 100–10,000 µF (electrolytic)\n> Decoupling: 0.1 µF = 100 nF (ceramic)\n> RF tuning: 1–100 pF",
+    "## The three-digit code",
+    "For ceramic caps, three digits mean 'first digit × 10^second digit, in pF'. So '104' = 10 × 10⁴ pF = 100,000 pF = 100 nF = 0.1 µF. '473' = 47 × 10³ pF = 47 nF. '221' = 22 × 10¹ = 220 pF. Two-digit codes (like '47') are literal in pF. The system is universal across manufacturers.",
+    "## Ceramic tolerance codes",
+    "The letter after the value is the tolerance: J = ±5%, K = ±10%, M = ±20%, Z = +80%/−20% (typical for high-K ceramics used in decoupling). A '104K' cap is 100 nF ±10%. High-K ceramics also drop 30–70% of their capacitance at rated DC bias — a fact that shocks first-time designers.",
+    "## Worked example — decoupling an MCU",
+    "A microcontroller datasheet calls for '0.1 µF decoupling on each power pin'. 0.1 µF = 100 nF = '104' on a ceramic cap marking. Add a 10 µF bulk cap (code 106) for lower-frequency ripple. Total per rail: two caps, ~10 cents. This exact pair appears on essentially every consumer PCB built in the last 30 years.",
+    "## The five-second recap",
+    "1 µF = 1000 nF = 10⁶ pF. Three-digit code: first two × 10^third, in pF. '104' = 100 nF. Letter suffix = tolerance."
+  ],
+  "faqs": [
+    { "q": "What is a supercapacitor?", "a": "A capacitor with capacitance in the farad range (1–3000 F common). Used for backup power and energy buffering; not a drop-in replacement for electrolytics due to low voltage rating (2.5–2.7 V per cell)." },
+    { "q": "Why does my measured capacitance not match the label?", "a": "Ceramic caps lose capacitance under DC bias (up to 70% at rated voltage). Electrolytics have ±20% tolerance and lose capacitance with age. Always measure at the operating voltage." },
+    { "q": "Is 'MFD' the same as µF?", "a": "Yes — 'MFD' (microfarad) is a legacy US marking, still seen on motor-run capacitors. Modern electronics uses µF." }
+  ],
+  "related": [
+    { "label": "µF to nF converter", "href": "/c/capacitance/uf-to-nf" },
+    { "label": "nF to pF converter", "href": "/c/capacitance/nf-to-pf" },
+    { "label": "F to µF converter", "href": "/c/capacitance/f-to-uf" }
+  ]
+}
