@@ -14,9 +14,12 @@ import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/l
 
 export default function CategoryPage() {
   const { category: categoryId } = useParams<{ category: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const category = categoryId ? CATEGORY_MAP[categoryId] : undefined;
 
-  if (!category) return <Navigate to="/404" replace />;
+  if (!category) return <Navigate to={L("/404")} replace />;
 
   const related = CATEGORIES.filter((c) => c.group === category.group && c.id !== category.id).slice(0, 6);
   const featured = category.popular?.[0] ?? { from: category.units[0]?.id, to: category.units[1]?.id };
@@ -30,7 +33,9 @@ export default function CategoryPage() {
 
   const title = `${category.name} Converter — Turbo Unit Converter`;
   const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
-  const url = `https://turbounitconverter.com/c/${category.id}`;
+  const url = LU(`/c/${category.id}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const content = getCategoryContent(category);
   const faqs = content.faqs.map((item) => ({ q: item.q, a: item.a }));
