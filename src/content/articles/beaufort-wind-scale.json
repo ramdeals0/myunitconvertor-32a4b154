@@ -1,0 +1,37 @@
+{
+  "slug": "beaufort-wind-scale",
+  "title": "The Beaufort Wind Scale in mph, km/h and knots",
+  "h1": "The Beaufort scale — from calm to hurricane in 13 steps",
+  "description": "Beaufort 8 is 'gale force'. But what is that in knots or km/h? Here is the full 0–12 scale with modern-unit equivalents.",
+  "category": "Speed",
+  "readingMinutes": 4,
+  "published": "2026-06-22",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Meteorology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against WMO Manual on the Global Data-processing System" },
+  "hero": "Beaufort force is not a linear scale. Force 6 to force 12 spans 25–63 knots — each step up gets bigger.",
+  "body": [
+    "Admiral Francis Beaufort designed the scale in 1805 as a way for ship officers to record wind by observed effects on sail and sea. The scale is qualitative in origin but was formally tied to wind speed ranges in 1946, and it remains the standard for marine forecasts worldwide.",
+    "## The scale (10-minute mean wind at 10 m)",
+    "> 0 Calm — 0–1 kn (0–2 km/h)\n> 1 Light air — 1–3 kn\n> 2 Light breeze — 4–6 kn\n> 3 Gentle breeze — 7–10 kn\n> 4 Moderate breeze — 11–16 kn\n> 5 Fresh breeze — 17–21 kn\n> 6 Strong breeze — 22–27 kn\n> 7 Near gale — 28–33 kn\n> 8 Gale — 34–40 kn\n> 9 Strong gale — 41–47 kn\n> 10 Storm — 48–55 kn\n> 11 Violent storm — 56–63 kn\n> 12 Hurricane — 64+ kn",
+    "## When to trust it",
+    "Beaufort was designed for wind at sea, measured 10 m above the surface. Onshore anemometers, low-altitude readings, and gusty terrain all give different numbers. The values above are 10-minute means — a gust in a 'strong breeze' warning can easily hit gale force momentarily.",
+    "## The formula",
+    "For quick calculation, wind speed in knots ≈ (Beaufort force)^1.5 × 1.87. Force 6: 6^1.5 × 1.87 = 27.5 kn. Force 10: 10^1.5 × 1.87 = 59.1 kn. Close enough to the table for mental math.",
+    "## Worked example — sail reduction",
+    "A cruising yacht typically reefs the mainsail at Beaufort 5 (17–21 kn = 31–39 km/h). At Beaufort 7, most cruising boats have gone to storm sails. At Beaufort 10 (48–55 kn = 89–102 km/h), the boat is fighting for survival regardless of sail plan.",
+    "## The five-second recap",
+    "Force 4 = 11–16 kn (moderate breeze, sailboats happy). Force 8 = gale (~34–40 kn, freighters slow). Force 12 = 64+ kn (hurricane). Beaufort^1.5 × 1.87 gives kn."
+  ],
+  "faqs": [
+    { "q": "Is Beaufort used on land?", "a": "Yes — the WMO defines land equivalents (leaves rustling at force 2, umbrellas invert at force 8, roofs damaged at force 10)." },
+    { "q": "What is 'hurricane force' in km/h?", "a": "Beaufort 12: 118+ km/h. In the Saffir-Simpson hurricane scale, that is Category 1 minimum." },
+    { "q": "Why 10 minutes and not instantaneous?", "a": "Averaging over 10 minutes filters gusts. WMO standard for reported wind speed uses this window." }
+  ],
+  "related": [
+    { "label": "knots to mph converter", "href": "/c/speed/knot-to-mph" },
+    { "label": "km/h to knots converter", "href": "/c/speed/kph-to-knot" },
+    { "label": "m/s to knots converter", "href": "/c/speed/mps-to-knot" }
+  ]
+}

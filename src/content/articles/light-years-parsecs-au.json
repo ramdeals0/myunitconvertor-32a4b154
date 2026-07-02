@@ -1,0 +1,37 @@
+{
+  "slug": "light-years-parsecs-au",
+  "title": "Light-years, Parsecs and Astronomical Units",
+  "h1": "Light-years, parsecs and AU — the three scales of astronomy",
+  "description": "Astronomers switch units by discipline: AU for planets, parsecs for stars, light-years for the public. Here is how the three scales relate and when each is used.",
+  "category": "Length",
+  "readingMinutes": 6,
+  "published": "2026-06-03",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Astronomy & physics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IAU 2012 resolutions" },
+  "hero": "The parsec is defined by geometry. The light-year is defined by time. The AU is defined by our own orbit. Three units, three eras, one very big sky.",
+  "body": [
+    "Astronomers rarely use metres. Distances are enormous, and the units that survive in professional literature match the measurement technique. Radar-ranged planets get AU. Parallax-measured stars get parsecs. Everything else gets light-years, mostly for the press release.",
+    "## The exact factors",
+    "> 1 AU = 149,597,870,700 m (exact, IAU 2012)\n> 1 light-year = 9.4607 × 10¹⁵ m ≈ 63,241 AU\n> 1 parsec = 3.0857 × 10¹⁶ m ≈ 3.2616 ly\n> 1 kiloparsec = 3,261.6 ly; 1 megaparsec = 3.26 million ly",
+    "## Why parsecs and not light-years",
+    "A parsec is the distance at which 1 AU subtends 1 arcsecond of parallax. That definition matches directly to what a telescope measures — an angle over six months as Earth swings around the Sun. Converting parallax to a light-year distance adds a factor of 3.26 that carries no physical meaning, so professionals skip the step.",
+    "## The AU and Kepler's third law",
+    "In AU-and-years units, Kepler's third law reduces to T² = a³ for objects orbiting the Sun. A planet at 4 AU orbits in 8 years. A comet at 100 AU aphelion takes 500-year loops. The unit choice makes the physics fall out cleanly — one reason the IAU keeps the AU alive alongside SI metres.",
+    "## Worked example — Proxima Centauri",
+    "Proxima Centauri sits at a parallax of 0.7687 arcsec, giving 1/0.7687 = 1.301 parsecs = 4.244 light-years = 268,553 AU = 4.014 × 10¹⁶ m. Each unit tells a different story: the parsec tells you the measurement was clean, the light-year tells you the signal delay is 4.24 years, the AU compares it to the Solar System (2,700× wider than Neptune's orbit).",
+    "## The five-second recap",
+    "AU for planets, parsec for stars, light-year for anything you need a general audience to feel. And 1 pc ≈ 3.26 ly, always."
+  ],
+  "faqs": [
+    { "q": "Is the Kessel Run in 12 parsecs a mistake?", "a": "A parsec is a distance, not a time — but Star Wars justified it as a shorter route around a black hole cluster. It still bothers astronomers." },
+    { "q": "How far is the nearest galaxy in parsecs?", "a": "Andromeda is at about 780 kiloparsecs, or 2.54 million light-years." },
+    { "q": "Why 149,597,870,700 m for the AU?", "a": "It was redefined as an exact conventional value in 2012 so that AU-based calculations no longer depend on measuring the Sun's mass." }
+  ],
+  "related": [
+    { "label": "AU to km converter", "href": "/c/length/au-to-km" },
+    { "label": "light-year to km converter", "href": "/c/length/ly-to-km" },
+    { "label": "parsec to light-year converter", "href": "/c/length/pc-to-ly" }
+  ]
+}

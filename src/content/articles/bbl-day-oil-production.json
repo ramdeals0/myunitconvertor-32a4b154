@@ -1,0 +1,37 @@
+{
+  "slug": "bbl-day-oil-production",
+  "title": "Barrels per Day: The Oil Industry's Flow Unit",
+  "h1": "Barrels per day (bbl/d) — the unit that runs global oil markets",
+  "description": "OPEC quotes production in million barrels per day. Here is how bbl/d converts to m³/h, litres/second and real refinery throughput.",
+  "category": "Flow",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Oil & gas engineering" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against API standards and EIA reporting conventions" },
+  "hero": "1 million bbl/d = 1,839 m³/h = 511 L/s. The unit is quaint; the numbers it produces are enormous.",
+  "body": [
+    "Oil production and consumption are quoted almost universally in barrels per day (bbl/d, bpd, or b/d), even in metric countries. A supertanker carrying 2 million bbl is holding 318,000 m³ of crude — the numbers work equally well in either unit, but bbl/d dominates every OPEC bulletin, EIA weekly report and futures contract.",
+    "## The exact factors",
+    "> 1 bbl = 158.987 L = 0.158987 m³\n> 1 bbl/d = 6.6245 L/hr = 1.84 × 10⁻³ m³/hr\n> 1 million bbl/d (Mbbl/d) = 158,987 m³/d = 1,839 m³/h = 511 L/s\n> 1 bbl/d ≈ 0.05 tonnes/day (medium crude)",
+    "## Global anchors",
+    "Saudi Arabia production capacity: ~12 Mbbl/d. US production 2024: 13.2 Mbbl/d. Global consumption 2024: ~102 Mbbl/d. Strategic petroleum reserves: US SPR maximum 727 million bbl; typical release rate 1 Mbbl/d for 6 months. A single 500,000 bbl/d refinery processes about one supertanker every four days.",
+    "## Refinery yield",
+    "A barrel of crude yields typically: 20 gal gasoline, 10 gal diesel, 4 gal jet fuel, 8 gal other. That is 42 gal in = 42 gal out — the volumetric expansion of cracking cancels the reduction from residuals. Mass is conserved; volume is not. This is why refinery output is quoted in bbl even when input is in tonnes.",
+    "## Worked example — a country's 3 Mbbl/d import bill",
+    "3 Mbbl/d × 365 = 1,095 Mbbl/year × $80/bbl = $87.6 billion. Physical volume: 173.8 million m³ = a cube 558 m on a side, or 25 supertankers per week. This is roughly Japan's or Korea's typical oil import rate.",
+    "## The five-second recap",
+    "1 Mbbl/d = 1,839 m³/h = 511 L/s. 1 bbl = 159 L. OPEC, EIA and every futures contract quote bbl/d — no matter where the country sits on the metric map."
+  ],
+  "faqs": [
+    { "q": "How many bbl in a supertanker?", "a": "A VLCC (Very Large Crude Carrier) holds 2 million bbl. An ULCC (Ultra Large) holds 3 million bbl. About 4.5% of world demand sits in transit on tankers at any moment." },
+    { "q": "Is bbl the same as an oil drum?", "a": "The 42-gal oil barrel is a pricing unit. The physical 55-gal drum is a container. They share a lineage but are not interchangeable — a 55-gal drum holds 1.31 oil bbl." },
+    { "q": "Why 42 gallons?", "a": "Adopted in Pennsylvania in 1866, matching the tierce (a wine cask). 42 gal was a size one man could handle rolling across a dock." }
+  ],
+  "related": [
+    { "label": "bbl to L converter", "href": "/c/volume/bbl-to-l" },
+    { "label": "bbl to m³ converter", "href": "/c/volume/bbl-to-m3" },
+    { "label": "L to bbl converter", "href": "/c/volume/l-to-bbl" }
+  ]
+}

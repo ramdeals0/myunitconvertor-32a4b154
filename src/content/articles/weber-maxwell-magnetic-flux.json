@@ -1,0 +1,37 @@
+{
+  "slug": "weber-maxwell-magnetic-flux",
+  "title": "Webers and Maxwells: Magnetic Flux Units",
+  "h1": "Webers and maxwells — the flux linking a coil",
+  "description": "The weber is the SI unit of magnetic flux. The maxwell is its CGS ancestor, 10⁸ times smaller. Here is where each still appears.",
+  "category": "Magnetic Flux",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Electromagnetism" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8" },
+  "hero": "1 Wb = 10⁸ Mx. The weber is enormous; magnetic circuits routinely deal in microwebers. Transformer cores are sized around it.",
+  "body": [
+    "Magnetic flux Φ is the integral of magnetic field over an area. It shows up in every electromagnetic induction problem: Faraday's law relates the rate of change of flux to an induced EMF. The unit choice (Wb vs Mx) depends on whether the paper is SI or CGS.",
+    "## The exact factors",
+    "> 1 Wb = 1 V·s (definition via Faraday)\n> 1 Wb = 10⁸ Mx (maxwell, CGS)\n> 1 Mx = 10⁻⁸ Wb\n> 1 Wb/m² = 1 T (tesla, flux density)\n> Small transformer core flux: 1–10 mWb",
+    "## Faraday's law",
+    "EMF (volts) = −dΦ/dt (webers per second). A 1 V generator produces 1 weber of flux change per second in a single-turn coil. Multi-turn coils multiply the EMF: N turns × dΦ/dt gives total EMF. Every transformer, motor and generator design starts with this equation.",
+    "## Transformer sizing",
+    "A 50 Hz transformer core operating at peak flux density B̂ (typically 1.5–1.7 T for silicon steel) with core cross-section A has peak flux Φ̂ = B̂ × A. Volts per turn = 4.44 × f × Φ̂. A 230 V primary at 50 Hz needing 2 V/turn requires 115 turns. Core cross-section for 1.5 T peak: A = 2 / (4.44 × 50 × 1.5) = 6 × 10⁻³ m² = 60 cm² — a modest transformer.",
+    "## Where maxwells still appear",
+    "Legacy magnetics textbooks, old motor rewinding notes, and CGS-tradition physics papers. Modern engineering uses webers exclusively. Both units survive together in graduate physics because CGS formulations of Maxwell's equations are cleaner (no 4π factors) than SI.",
+    "## The five-second recap",
+    "1 Wb = 1 V·s = 10⁸ Mx. Faraday: EMF = N × dΦ/dt. Transformer volts/turn = 4.44 × f × Φ̂. Cores sized by cross-section and peak flux density."
+  ],
+  "faqs": [
+    { "q": "How is flux different from flux density?", "a": "Flux Φ (Wb) is total; flux density B (T) is per unit area. B = Φ / A. A larger area at the same B has more total flux." },
+    { "q": "Why '4.44' in the transformer equation?", "a": "4.44 = 2π/√2 — from the RMS-to-peak conversion of a sinusoidal EMF." },
+    { "q": "Can flux be negative?", "a": "Yes — flux is a signed quantity, direction defined by the surface normal. Sign flips give the negative in Faraday's law." }
+  ],
+  "related": [
+    { "label": "Wb to Mx converter", "href": "/c/magnetic-flux/wb-to-mx" },
+    { "label": "T to G converter", "href": "/c/magnetic-flux-density/t-to-g" },
+    { "label": "µWb to Wb converter", "href": "/c/magnetic-flux/uwb-to-wb" }
+  ]
+}

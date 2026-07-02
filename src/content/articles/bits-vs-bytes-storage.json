@@ -1,0 +1,39 @@
+{
+  "slug": "bits-vs-bytes-storage",
+  "title": "Bits vs Bytes: Marketing Storage Sizes",
+  "h1": "Bits vs bytes vs bibytes — the storage-industry ambiguity",
+  "description": "A 1 TB drive holds 931 GiB of files. Here is why the storage industry uses decimal units while your operating system uses binary, and what that means for you.",
+  "category": "Data",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Storage & systems" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEC 60027-2 and JEDEC JESD 100B" },
+  "hero": "Storage vendors sell in decimal terabytes. Operating systems display in binary tebibytes. The 7% gap is the source of the 'missing space' complaint on every new drive.",
+  "body": [
+    "The bit vs byte distinction (1 byte = 8 bits) is old news. The interesting confusion is the SI-vs-binary prefix collision: is a 'kilobyte' 1,000 or 1,024 bytes? Both, depending on who is writing the label.",
+    "## The exact factors",
+    "> 1 byte = 8 bits\n> 1 kB (decimal) = 1,000 bytes\n> 1 KiB (binary, kibibyte) = 1,024 bytes\n> 1 MB = 1,000,000 B; 1 MiB = 1,048,576 B (~4.9% larger)\n> 1 GB = 10⁹ B; 1 GiB = 2³⁰ B (~7.4% larger)\n> 1 TB = 10¹² B; 1 TiB = 2⁴⁰ B (~9.9% larger)",
+    "## Who uses which",
+    "Storage vendors (SSD, HDD, flash cards): decimal — SI-consistent, larger numbers on the box. Network transfer rates: decimal — a '1 Gbps' link is 10⁹ bits/s. RAM: binary — DIMMs are physically 2ⁿ bytes. Windows file sizes: binary but labels as 'GB' (technically wrong). macOS since 10.6: decimal, labelled 'GB' correctly.",
+    "## Worked example — 'why is my 1 TB drive only 931 GB?'",
+    "1 TB = 10¹² bytes = 1,000,000,000,000 B. Windows divides by 2⁴⁰ = 1,099,511,627,776 to get 931 'GB' (actually GiB). Nothing is missing — Windows is measuring in binary while labelling as decimal. macOS shows the same drive as 1.00 TB because it uses decimal consistently.",
+    "## Network speeds vs file transfer",
+    "'1 Gbps' Ethernet = 10⁹ bits/s = 125 × 10⁶ bytes/s = 119 MiB/s. A 1 GiB file at line speed: 1,073,741,824 / 125,000,000 = 8.59 s minimum. Real-world overheads (TCP, encryption, protocol) typically consume 15–25%, so 10–12 s is realistic. Marketing rarely mentions this.",
+    "## Why IEC prefixes never caught on",
+    "IEC introduced KiB, MiB, GiB, TiB in 1998 to end the ambiguity. Academic and engineering documents use them consistently. Consumer software mostly ignores them because 'megabyte' is a familiar word and 'mebibyte' sounds like a joke.",
+    "## The five-second recap",
+    "Storage vendors: decimal (1 TB = 10¹² B). Windows: binary but labelled wrong. Networks: decimal. Multiply file size by 1.1 to convert TB → TiB, or by 0.91 the other way."
+  ],
+  "faqs": [
+    { "q": "How many bytes in a gigabit?", "a": "1 Gb = 10⁹ bits = 125 × 10⁶ bytes = 125 MB decimal = 119.2 MiB binary." },
+    { "q": "Is DDR memory sized decimal or binary?", "a": "Binary. A '16 GB' DIMM contains exactly 2³⁴ = 17,179,869,184 bytes = 16 GiB." },
+    { "q": "Why does an SD card lose space?", "a": "Same reason as a hard drive — decimal label vs binary measurement — plus file-system overhead (FAT tables, allocation, wear-levelling) taking 1–5% of the raw capacity." }
+  ],
+  "related": [
+    { "label": "GB to GiB converter", "href": "/c/data/gb-to-gib" },
+    { "label": "bit to byte converter", "href": "/c/data/bit-to-byte" },
+    { "label": "Mbps to MB/s converter", "href": "/c/data-transfer/mbps-to-mbs" }
+  ]
+}

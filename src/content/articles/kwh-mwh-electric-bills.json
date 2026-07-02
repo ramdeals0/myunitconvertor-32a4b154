@@ -1,0 +1,39 @@
+{
+  "slug": "kwh-mwh-electric-bills",
+  "title": "kWh and MWh: Reading an Electric Bill",
+  "h1": "kWh, MWh, GWh — the energy units on every utility invoice",
+  "description": "Your house is billed in kWh. Your factory is billed in MWh. A power plant produces GWh. Here is how the units scale and how to sanity-check a bill.",
+  "category": "Energy",
+  "readingMinutes": 5,
+  "published": "2026-06-25",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Energy & utilities" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against US EIA Form 861 methodology" },
+  "hero": "A kilowatt-hour is a watt sustained for a thousand hours — or, equivalently, a thousand watts sustained for one hour. Bills come in three factors of a thousand between homes and power stations.",
+  "body": [
+    "The kilowatt-hour is the most successful metric-imperial hybrid ever created. It combines a metric power (kW) with a customary time unit (hour) and is the billing basis for every electric utility in the world.",
+    "## The exact factors",
+    "> 1 kWh = 3,600,000 J = 3.6 MJ (exact)\n> 1 MWh = 1,000 kWh\n> 1 GWh = 1,000,000 kWh\n> 1 TWh = 10⁹ kWh (annual national scale)\n> 1 kWh = 3,412.14 BTU",
+    "## Sanity-check anchors",
+    "US home average: 900 kWh/month = 30 kWh/day = 1.25 kW average draw. LED bulb: 10 W = 0.24 kWh/day if on all day. Fridge: 1.5 kWh/day. Electric water heater: 12 kWh/day. Central AC: 3 kW × 8 hrs = 24 kWh/day in summer. Tesla Model 3 charge: 60 kWh for 350 km range.",
+    "## Rate structures",
+    "US average residential rate: $0.16/kWh (varies from $0.10 in Idaho to $0.44 in Hawaii, 2025). Time-of-use rates can spread peak/off-peak by 3–5×. Industrial customers billed on MWh with demand charges: a factory paying $0.08/kWh may also pay $15/kW-month for its peak 15-minute draw — often more than the energy cost itself.",
+    "## Worked example — a 5 kW solar array",
+    "A 5 kW rooftop PV system in Los Angeles produces ~5 × 5.5 sun-hours/day = 27.5 kWh/day = 825 kWh/month = 9,900 kWh/year. At $0.30/kWh (California residential), that offsets $2,970/year. Payback on a $15,000 installed cost: ~5 years. Northern climates get about half that.",
+    "## Grid vs plant scale",
+    "A modern gas turbine: 500 MW output, run 8,000 hours/year = 4 TWh/year. A nuclear reactor: 1,000 MW × 8,500 hrs = 8.5 TWh/year. Total US electricity consumption 2024: ~4,100 TWh. So a single nuclear reactor supplies about 0.2% of US demand — which is why decarbonising the grid takes hundreds of large plants.",
+    "## The five-second recap",
+    "kWh = homes. MWh = factories. GWh = towns. TWh = nations. Divide watts by 1,000, multiply by hours, that's kWh."
+  ],
+  "faqs": [
+    { "q": "Why not just use joules?", "a": "1 kWh = 3.6 MJ. Utility bills would show 90 GJ per household per month — awkward and unfamiliar. kWh survived because the numbers are the right size." },
+    { "q": "What is a demand charge?", "a": "A fee based on your peak instantaneous power draw, typically averaged over 15 minutes. Common on commercial bills; separate from energy (kWh) charges." },
+    { "q": "How much CO₂ per kWh?", "a": "US grid average: ~380 g CO₂/kWh. Coal: 900 g/kWh. Natural gas: 400 g/kWh. Wind/solar/nuclear: <50 g/kWh lifecycle." }
+  ],
+  "related": [
+    { "label": "kWh to MJ converter", "href": "/c/energy/kwh-to-mj" },
+    { "label": "kWh to BTU converter", "href": "/c/energy/kwh-to-btu" },
+    { "label": "J to kWh converter", "href": "/c/energy/j-to-kwh" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ohms-cable-resistance",
+  "title": "Ohms and Milliohms: Cable Resistance and Voltage Drop",
+  "h1": "Ohms and milliohms — cable resistance, voltage drop, wire gauge",
+  "description": "A 100 A load through 20 m of 6 mm² copper drops nearly 6 volts. Here is the resistance math behind wire sizing.",
+  "category": "Resistance",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Electrical engineering" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NEC Chapter 9 Table 8 and IEC 60228" },
+  "hero": "Copper is 17 milliohm-mm per metre. That single number, plus a cross-section, tells you every voltage drop calculation in a house or vehicle.",
+  "body": [
+    "Wire resistance is often ignored — until it isn't. Undersized battery cables ruin cranking amps. Undersized branch circuits waste real power in heat. The math is straightforward once you have the resistivity constant.",
+    "## The exact factors",
+    "> Copper resistivity ρ = 1.68 × 10⁻⁸ Ω·m at 20°C\n> Aluminium ρ = 2.65 × 10⁻⁸ Ω·m (about 60% more resistive than copper)\n> R = ρ × L / A\n> 1 Ω = 1,000 mΩ = 10⁶ µΩ\n> Rule of thumb: copper wire 1 mm² × 1 m ≈ 17.2 mΩ",
+    "## Wire gauge",
+    "AWG (American Wire Gauge) is a logarithmic scale — each 3 gauges halves the cross-sectional area. 10 AWG = 5.26 mm². 6 AWG = 13.3 mm². 2 AWG = 33.6 mm². Metric wire is sized directly in mm² of cross-section. Convert: mm² = 0.5067 × (92 / (36 / AWG − 2)) — or just use a table.",
+    "## Voltage drop and NEC 3% rule",
+    "NEC recommends branch circuit voltage drop ≤3% at rated load, feeder ≤5%. A 20 A 120 V circuit dropping 3% (3.6 V) can lose up to 72 W just heating the wire — a full LED bulb per outlet in wasted energy. Longer runs need larger wire.",
+    "## Worked example — a 100 A load, 20 m of 6 mm² copper",
+    "R = 1.68 × 10⁻⁸ × 20 / (6 × 10⁻⁶) = 0.056 Ω per conductor. Round trip = 0.112 Ω. Voltage drop = 100 × 0.112 = 11.2 V. On a 230 V circuit: 4.9% drop — over the NEC limit. Upgrade to 10 mm² gives 6.72 V drop (2.9%). Power lost as heat in the 10 mm² cable: 672 W continuously.",
+    "## Battery cables and starter motors",
+    "A car starter draws 200–400 A briefly. A 30 mΩ cable (typical for a corroded connection) drops 6–12 V during cranking — enough to prevent starting on cold days. This is why 'clean your battery terminals' is the first suggestion for hard-start problems.",
+    "## The five-second recap",
+    "Copper: ~17 mΩ per m per mm². R = ρL/A. Voltage drop = I × R. Aim for ≤3% on branch circuits, ≤5% on feeders."
+  ],
+  "faqs": [
+    { "q": "Is aluminium wire OK for house wiring?", "a": "Yes, at larger cross-sections. Aluminium has ~60% higher resistance than copper for the same area but is 50% cheaper. Common for service entries, less common for branch circuits due to termination oxidation issues." },
+    { "q": "How much does resistance change with temperature?", "a": "Copper: +0.393%/°C. A 20°C rise increases resistance by 8%. Hot cables get progressively hotter — a runaway path if oversizing was marginal." },
+    { "q": "Are superconductors used in transmission?", "a": "A few pilot projects (Essen, LIPA on Long Island). Cost and cryogenics keep them niche. Conventional aluminium ACSR still dominates power transmission." }
+  ],
+  "related": [
+    { "label": "Ω to mΩ converter", "href": "/c/resistance/ohm-to-mohm" },
+    { "label": "mΩ to µΩ converter", "href": "/c/resistance/mohm-to-uohm" },
+    { "label": "Ω to kΩ converter", "href": "/c/resistance/ohm-to-kohm" }
+  ]
+}

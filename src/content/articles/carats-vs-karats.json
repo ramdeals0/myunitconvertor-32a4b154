@@ -1,0 +1,37 @@
+{
+  "slug": "carats-vs-karats",
+  "title": "Carats vs Karats: Diamonds and Gold Purity",
+  "h1": "Carats vs karats — one is mass, one is purity",
+  "description": "A 2-carat diamond weighs 0.4 g. A 14-karat gold ring is 58.3% pure. Same word, different meaning. Here is the disambiguation.",
+  "category": "Weight",
+  "readingMinutes": 4,
+  "published": "2026-06-17",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Jewellery & gemmology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against GIA and WGC standards" },
+  "hero": "Carats measure diamond mass. Karats measure gold purity out of 24. The spelling differs in the US and merges everywhere else.",
+  "body": [
+    "Both words come from the Greek 'keration', the carob seed used historically as a small counterweight. The two modern meanings diverged in medieval trade — one for gem mass, one for gold purity — and English preserved both. Confusingly, most of the world spells both 'carat'.",
+    "## The exact factors",
+    "> Diamond carat (ct) = 200 mg = 0.2 g exactly\n> Gold karat (US) / carat (UK): fraction of 24\n> 24k = 99.9% pure gold (999 fineness)\n> 22k = 91.67%\n> 18k = 75.0%\n> 14k = 58.33%\n> 10k = 41.67% (US legal minimum for 'gold')\n> 9k = 37.5% (UK legal minimum)",
+    "## Diamond size perception",
+    "A 1 ct round diamond is about 6.5 mm across. A 2 ct is 8.2 mm — only 26% wider despite doubling the mass, because volume scales with the cube of diameter. This is why per-carat pricing is not linear: a 2 ct diamond is typically 3–4× the price of a 1 ct of the same quality.",
+    "## Gold alloys and their colours",
+    "Rose gold: copper alloy. White gold: nickel or palladium alloy, often rhodium-plated. Green gold: silver alloy. All can be sold at any karat mark, because karat rates only the gold content — the balance can be any base metal, subject to hallmarking rules.",
+    "## Worked example — a 14k gold ring, 5 grams",
+    "5 g × 58.33% = 2.917 g of pure gold = 0.0938 troy oz. At a gold spot price of $2,300/troy oz, the gold content is worth $215.70. Retail price will include workmanship, retailer margin, and any diamond content — often 3–10× the raw gold value.",
+    "## The five-second recap",
+    "Carat (ct) = 0.2 g of diamond. Karat (k) = /24 of gold purity. The words look alike; the units are unrelated."
+  ],
+  "faqs": [
+    { "q": "Why 200 mg for a carat?", "a": "The 'metric carat' was standardised in 1907. Before that, carats varied from 188 to 213 mg regionally." },
+    { "q": "Is 24k gold pure?", "a": "Practically yes — 99.9%. True 100% pure gold does not exist commercially; it is too soft to work and always contains trace impurities." },
+    { "q": "Do platinum rings use karats?", "a": "No — platinum uses parts-per-thousand marks (Pt950 = 95% pure). Karat is a gold-only convention." }
+  ],
+  "related": [
+    { "label": "carat to g converter", "href": "/c/weight/ct-to-g" },
+    { "label": "g to carat converter", "href": "/c/weight/g-to-ct" },
+    { "label": "troy oz to g converter", "href": "/c/weight/ozt-to-g" }
+  ]
+}

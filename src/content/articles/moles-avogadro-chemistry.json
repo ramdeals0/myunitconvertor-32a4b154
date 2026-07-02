@@ -1,0 +1,39 @@
+{
+  "slug": "moles-avogadro-chemistry",
+  "title": "Moles and Molarity: Reading Chemistry Recipes",
+  "h1": "The mole and molarity — Avogadro's number in a bottle",
+  "description": "One mole is 6.022 × 10²³ particles. Here is how to weigh out a mole, dilute a molar solution, and convert between molarity and mass concentration.",
+  "category": "Concentration Molar",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Chemistry" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IUPAC Gold Book and 2019 SI redefinition" },
+  "hero": "The mole is a count. 1 mol = 6.022 × 10²³ particles, whatever those particles are. Everything else in analytical chemistry is downstream of that one number.",
+  "body": [
+    "Chemistry works in moles because reactions happen atom-to-atom, and Avogadro's number is the bridge from countable atoms to weighable grams. Since 2019, the mole is defined by the exact value 6.02214076 × 10²³ — no longer tied to the mass of carbon-12.",
+    "## The exact factors",
+    "> 1 mol = 6.02214076 × 10²³ particles (exact since 2019)\n> Molar mass of a compound (g/mol) = sum of atomic masses\n> Molarity (M) = mol/L = mmol/mL\n> Molality (m) = mol/kg of solvent\n> 1 M = 1 mol/L = 1,000 mM = 10⁶ µM",
+    "## Weighing out a mole",
+    "NaCl molar mass = 22.99 + 35.45 = 58.44 g/mol. To make 1 L of 1 M NaCl, dissolve 58.44 g in enough water to reach 1,000 mL total volume. Note: not '1,000 mL of water plus 58.44 g' — the salt displaces some volume.",
+    "## Dilution — C₁V₁ = C₂V₂",
+    "To dilute a 5 M stock to 250 mL of 0.1 M: V₁ = C₂V₂/C₁ = 0.1 × 250 / 5 = 5 mL of stock diluted to 250 mL. This formula is the workhorse of every analytical protocol. Solvent volume added = 245 mL, but always dilute to the final volume mark, not by adding a fixed volume of solvent.",
+    "## Molarity vs molality",
+    "Molarity depends on volume, which depends on temperature. Molality is per kg of solvent, temperature-independent. Physical chemistry and colligative property calculations use molality. Routine solutions use molarity.",
+    "## Worked example — physiological saline",
+    "0.9% NaCl (w/v) means 0.9 g NaCl per 100 mL = 9 g/L. Divide by molar mass: 9/58.44 = 0.154 M = 154 mM. This is why '154 mM NaCl' and '0.9% saline' refer to the same solution — they are the same concentration in two units.",
+    "## The five-second recap",
+    "1 mol = 6.022 × 10²³. Molar mass in g/mol from the periodic table. Molarity = mol/L. C₁V₁ = C₂V₂ for dilution."
+  ],
+  "faqs": [
+    { "q": "Why 6.022 × 10²³ specifically?", "a": "Historical: chosen so 1 mole of C-12 weighs exactly 12 g. Since 2019, the number is fixed by definition and 12 g of C-12 is now measured, not defined." },
+    { "q": "What is 'formality'?", "a": "Analytical concentration ignoring dissociation. For dissolved ionic solids, formality equals the molarity of the formula unit before ionisation." },
+    { "q": "Is ppm the same as µg/g?", "a": "For dilute aqueous solutions where 1 mL ≈ 1 g, 1 ppm ≈ 1 mg/L. For gases, ppm is a mole ratio, not a mass ratio." }
+  ],
+  "related": [
+    { "label": "M to mM converter", "href": "/c/concentration-molar/m-to-mm" },
+    { "label": "mmol/L to µmol/L converter", "href": "/c/concentration-molar/mmoll-to-umoll" },
+    { "label": "mM to µM converter", "href": "/c/concentration-molar/mm-to-um" }
+  ]
+}

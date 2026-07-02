@@ -1,0 +1,39 @@
+{
+  "slug": "pascal-mmhg-blood-pressure",
+  "title": "Pascals and mmHg: Why Blood Pressure Stayed Old-School",
+  "h1": "Pascals and millimetres of mercury — the blood-pressure holdout",
+  "description": "Every medical blood-pressure reading is in mmHg. SI would say kPa. Here is why medicine kept mmHg and how the two convert.",
+  "category": "Pressure",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Medical physics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ISO 81060-1 and JNC 8 guidelines" },
+  "hero": "120/80 mmHg is 16.0/10.7 kPa. Medicine keeps mmHg because the original instruments were literal mercury columns — and the number scale is too familiar to change.",
+  "body": [
+    "Every clinical blood-pressure guideline in the world is written in mmHg. The pascal-based equivalent (kPa) is technically correct but has never displaced the mercury column, which was the physical measurement device until digital cuffs took over in the 2000s.",
+    "## The exact factors",
+    "> 1 mmHg = 133.322 Pa (near-exact for mercury at 0°C, standard g)\n> 1 kPa = 7.500 mmHg\n> 120 mmHg = 15.999 kPa\n> 80 mmHg = 10.666 kPa\n> 1 atm = 760 mmHg = 101.325 kPa",
+    "## Why mercury",
+    "The Riva-Rocci sphygmomanometer (1896) used a mercury column because mercury's density (13,595 kg/m³) makes a manageable-sized instrument — 760 mm reads 1 atmosphere. A water column reading the same pressure would be 10.3 m tall. Medicine standardised around the mercury column, and the unit outlived the device.",
+    "## Modern instruments",
+    "Digital cuffs use piezoresistive pressure sensors, calibrated in kPa internally, then displayed in mmHg for clinician familiarity. WHO discourages mercury sphygmomanometers over environmental toxicity concerns, but a majority of clinical trials since 2000 still report readings in mmHg because comparability with historical data demands it.",
+    "## Worked example — a 140/90 hypertensive reading",
+    "140 mmHg × 0.1333 = 18.67 kPa systolic. 90 mmHg × 0.1333 = 12.00 kPa diastolic. Pulse pressure = 50 mmHg = 6.67 kPa. Mean arterial pressure ≈ diastolic + 1/3 × pulse pressure = 90 + 16.7 = 106.7 mmHg = 14.2 kPa. Every calculation works in either unit — clinicians just prefer the historical scale.",
+    "## Other medical pressures",
+    "Intraocular pressure: mmHg (normal 10–21). Cerebrospinal fluid pressure: mmH₂O or cmH₂O (10 mmH₂O = 0.736 mmHg). Ventilator peak airway pressure: cmH₂O. Central venous pressure: mmHg or cmH₂O depending on hospital tradition. Each specialty picked its own convention decades ago.",
+    "## The five-second recap",
+    "1 mmHg = 133 Pa. 120/80 = 16.0/10.7 kPa. Medicine stays with mmHg because every guideline and every trial does. Digital cuffs display it internally translated."
+  ],
+  "faqs": [
+    { "q": "Why isn't torr used in medicine?", "a": "1 torr = 1 mmHg to 6 significant figures, so 'torr' and 'mmHg' are interchangeable. Physics uses torr; medicine uses mmHg. Same number." },
+    { "q": "Do European hospitals use kPa?", "a": "A minority (Netherlands, Scandinavia) report BP in kPa. Most European medicine follows global convention: mmHg." },
+    { "q": "Is high altitude BP different?", "a": "Not systematically. Cardiovascular BP responds to acute hypoxia (increased sympathetic tone) but returns to baseline over weeks of acclimatisation." }
+  ],
+  "related": [
+    { "label": "mmHg to kPa converter", "href": "/c/pressure/mmhg-to-kpa" },
+    { "label": "kPa to mmHg converter", "href": "/c/pressure/kpa-to-mmhg" },
+    { "label": "mmHg to psi converter", "href": "/c/pressure/mmhg-to-psi" }
+  ]
+}

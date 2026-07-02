@@ -1,0 +1,39 @@
+{
+  "slug": "grains-bullets-pharmacy",
+  "title": "Grains: From Wheat Kernels to Bullet Weights",
+  "h1": "Grains — the oldest weight unit still on modern spec sheets",
+  "description": "Bullet weights, arrow-shaft weights and old pharmacy prescriptions are all in grains. Here is the 64.8 mg factor and where it still matters.",
+  "category": "Weight",
+  "readingMinutes": 4,
+  "published": "2026-06-20",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Historical metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8" },
+  "hero": "One grain = 64.8 mg. Originally the mass of a single barleycorn. Now measuring bullets, arrows and gunpowder charges.",
+  "body": [
+    "The grain is the oldest weight unit still in commercial use in the English-speaking world. It survived because ballistics — bullet weight, powder charge, projectile drop calculations — was worked out in grains from the 17th century onward, and rewriting a century of load data in milligrams offered no benefit to anyone.",
+    "## The exact factors",
+    "> 1 grain (gr) = 64.79891 mg = 0.06480 g (exact)\n> 1 g = 15.4324 gr\n> 1 avoirdupois lb = 7,000 gr\n> 1 troy oz = 480 gr\n> 1 pennyweight = 24 gr",
+    "## Bullet weights",
+    "A 9 mm Luger typically fires a 115 gr (7.45 g) bullet at 380 m/s. A .308 rifle round fires a 168 gr (10.9 g) match bullet. The grain is universal in North American ammunition catalogues; European catalogues typically list grams alongside. Reloaders work exclusively in grains for both powder charges and projectile masses.",
+    "## Arrows and archery",
+    "Modern arrow shafts and arrow points are sold in grains. A hunting arrow assembly is typically 400–500 grains total. Kinetic energy formulas in archery use grains directly: KE (ft·lb) = mass (gr) × velocity² (fps) / 450,240.",
+    "## Historic apothecary use",
+    "Pre-metric pharmacies dispensed in grains. 'One-quarter grain morphine' meant 16.2 mg. This convention persisted in the US until the 1970s and still appears in period medical fiction. Modern US pharmacies dispense in milligrams exclusively.",
+    "## Worked example — a 55-grain .223 bullet",
+    "55 gr × 64.8 mg = 3,564 mg = 3.56 g. Fired at 3,240 fps, kinetic energy = 55 × 3,240² / 450,240 = 1,282 ft·lb = 1,738 J. Every load-data book in the US works out this calculation in grains and feet-per-second — converting to SI first would double the reader's work.",
+    "## The five-second recap",
+    "1 gr = 64.8 mg. 7,000 gr = 1 lb. Bullets, powder charges and arrows are all in grains. Ammunition catalogues rarely convert."
+  ],
+  "faqs": [
+    { "q": "Why is a pound 7,000 grains?", "a": "Historical accident. The Roman pound was 5,760 grains; the merchant pound was 7,200; the avoirdupois pound settled on 7,000 in the 16th century." },
+    { "q": "Are grains used in medicine today?", "a": "Only in a few legacy references. Aspirin was 'five grains' = 325 mg per tablet historically; modern labelling is mg exclusively." },
+    { "q": "How much powder in a rifle load?", "a": "Typically 25–50 grains (1.6–3.2 g) for a rifle cartridge. Reloading manuals list charges to 0.1 grain resolution." }
+  ],
+  "related": [
+    { "label": "gr to g converter", "href": "/c/weight/gr-to-g" },
+    { "label": "gr to mg converter", "href": "/c/weight/gr-to-mg" },
+    { "label": "g to gr converter", "href": "/c/weight/g-to-gr" }
+  ]
+}

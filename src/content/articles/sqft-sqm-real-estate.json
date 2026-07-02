@@ -1,0 +1,37 @@
+{
+  "slug": "sqft-sqm-real-estate",
+  "title": "Square Feet and Square Meters in Real Estate",
+  "h1": "Square feet and square metres — the real-estate conversion nobody double-checks",
+  "description": "Apartments listed at 800 sq ft rarely convert to a round metric number. Here is the exact factor, and the local measurement conventions that shift the number by 10%.",
+  "category": "Area",
+  "readingMinutes": 5,
+  "published": "2026-06-05",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Real estate & surveying" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8 and RICS Property Measurement" },
+  "hero": "The math is one factor. The trap is what each country counts as 'floor area' — balconies, walls, shafts and all.",
+  "body": [
+    "1 sq ft = 0.09290304 m² exactly. That is the easy part. The hard part is that a 100 m² Parisian apartment measured under the Loi Carrez and a 100 m² Tokyo apartment measured under the Japanese senyuu-menseki refer to different physical spaces. The unit is the same; the definition of what to measure is not.",
+    "## The exact factors",
+    "> 1 ft² = 0.09290304 m² (exact)\n> 1 m² = 10.7639 ft²\n> 1,000 sq ft ≈ 92.9 m²; 100 m² ≈ 1,076 sq ft",
+    "## What each region actually counts",
+    "The US typically quotes gross living area — inside faces of exterior walls, including interior walls but excluding garages. France's Loi Carrez excludes any space with less than 1.8 m ceiling height. Japan's senyuu-menseki excludes balconies and shared corridors entirely. The UK's RICS IPMS 3 sits between the two.",
+    "## Worked example — a 90 m² London flat",
+    "A 90 m² flat under RICS IPMS 3 converts to 969 sq ft. If the same physical space were remeasured under the US 'gross living area' convention including a 6 m² balcony, it becomes 96 m² = 1,033 sq ft. A 7% listing difference from the same walls — before anyone rounds.",
+    "## The rounding tell",
+    "Any listing showing 800 sq ft = 74 m² is doing honest maths. Any listing showing 800 sq ft = 80 m² is either rounding or reporting two different measurements. Multiply sq ft by 0.0929 as a spot-check.",
+    "## The five-second recap",
+    "Multiply sq ft by 0.0929 for m². Multiply m² by 10.76 for sq ft. And always ask which measurement standard the number was captured under."
+  ],
+  "faqs": [
+    { "q": "What is a 'tsubo'?", "a": "A Japanese area unit equal to about 3.306 m² (~35.6 sq ft). Still used for property price comparisons in Japan." },
+    { "q": "Do balconies count in floor area?", "a": "Depends entirely on jurisdiction. US: sometimes. France: no if ceiling under 1.8 m. Japan: never." },
+    { "q": "How big is 1 acre in square metres?", "a": "4,046.86 m² — or roughly a 63.6 m × 63.6 m square." }
+  ],
+  "related": [
+    { "label": "sq ft to m² converter", "href": "/c/area/ft2-to-m2" },
+    { "label": "m² to sq ft converter", "href": "/c/area/m2-to-ft2" },
+    { "label": "acre to m² converter", "href": "/c/area/ac-to-m2" }
+  ]
+}

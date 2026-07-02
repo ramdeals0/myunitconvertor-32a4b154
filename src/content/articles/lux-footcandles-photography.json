@@ -1,0 +1,37 @@
+{
+  "slug": "lux-footcandles-photography",
+  "title": "Lux and Foot-Candles: Lighting Design",
+  "h1": "Lux and foot-candles — the illuminance units that split by border",
+  "description": "US lighting codes quote foot-candles. Everywhere else quotes lux. Here is the exact factor and how to hit an IES-recommended illuminance in either.",
+  "category": "Illumination",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Lighting design" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IES Lighting Handbook 11th ed and CIBSE SLL Code for Lighting" },
+  "hero": "1 foot-candle = 10.76 lux. The IES recommends 500 lux for office work — that is 46 fc if you are reading a US spec.",
+  "body": [
+    "Illuminance measures how much visible light falls on a surface. The photometric definitions are unambiguous; the units are not. Every US lighting spec is in foot-candles; every European spec is in lux. Design targets translate reasonably but not exactly.",
+    "## The exact factors",
+    "> 1 fc = 10.7639 lx (exact — one lumen per ft² vs one lumen per m²)\n> 1 lx = 0.0929 fc\n> Sunlight: ~100,000 lx = 9,290 fc\n> Overcast day: ~1,000 lx = 93 fc\n> Office task: 500 lx = 46 fc\n> Living room: 100 lx = 9.3 fc\n> Full moon: 0.3 lx = 0.028 fc",
+    "## What lux actually measures",
+    "Illuminance = luminous flux per unit area. A 1,000-lumen bulb illuminating 1 m² produces 1,000 lx; the same bulb illuminating 10 m² gives 100 lx. It is not the same as brightness (which is luminance in cd/m² — a property of the surface, not the incident light).",
+    "## IES vs CIBSE recommendations",
+    "IES-RP-1 for offices: 300–500 lx on task, 200 lx ambient. CIBSE LG7: 500 lx on task. EN 12464-1: 500 lx for office reading. Retail: 300–500 lx general, 1,000+ lx accent. Surgery: 20,000–100,000 lx at the operating field. All three organisations align within about 20% on target illuminances — the split is only in the unit shown on the drawing.",
+    "## Worked example — sizing office downlights",
+    "A 6 m × 8 m open office, 2.7 m ceiling, target 500 lx on the desk (75 cm floor-to-desk = 1.95 m mounting to task). Room lumens needed = area × illuminance / coefficient of utilisation × light loss factor. 48 m² × 500 lx / (0.65 × 0.85) = 43,400 lm. With 3,000 lm LED downlights: 15 fixtures. Same calculation in US units: 517 ft² × 46 fc / (0.65 × 0.85) = 43,100 lm (arithmetic identical — lumens are the same in both systems).",
+    "## The five-second recap",
+    "1 fc = 10.76 lx. Office target: 500 lx = 46 fc. Sunlight: 100,000 lx = 9,290 fc. Same photometry, two labels."
+  ],
+  "faqs": [
+    { "q": "How many lux from a candle at 1 metre?", "a": "1 lux, by definition — the lux is 1 lumen/m², and 1 candela at 1 m produces 1 lumen/m² on a perpendicular surface." },
+    { "q": "Is 500 lux enough for reading?", "a": "For text, yes. For fine work (electronics, dental, watchmaking), 1,000–5,000 lx is standard. Older adults benefit from higher levels." },
+    { "q": "Why not just measure brightness?", "a": "Brightness (luminance, cd/m²) depends on surface reflectance. Illuminance is what the source delivers regardless of surface — the right specification for design." }
+  ],
+  "related": [
+    { "label": "lux to fc converter", "href": "/c/illumination/lx-to-fc" },
+    { "label": "fc to lux converter", "href": "/c/illumination/fc-to-lx" },
+    { "label": "cd/m² to nit converter", "href": "/c/luminance/cdm2-to-nit" }
+  ]
+}

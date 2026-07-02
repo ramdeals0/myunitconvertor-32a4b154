@@ -1,0 +1,39 @@
+{
+  "slug": "curie-becquerel-radiation",
+  "title": "Curie and Becquerel: Radiation Activity Units",
+  "h1": "Curie and becquerel — measuring how radioactive something is",
+  "description": "The becquerel is one decay per second. The curie is 37 billion. Here is why both units exist and where each is used.",
+  "category": "Radiation",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Nuclear medicine & health physics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ICRU Report 85" },
+  "hero": "1 becquerel = 1 decay/s. 1 curie = 37 billion decays/s — the activity of 1 gram of radium-226. The becquerel is SI; the curie is history.",
+  "body": [
+    "The activity of a radioactive source is how many nuclei decay per second. The becquerel is the SI unit — trivially small. The curie is enormous. Most real sources sit in the megabecquerel-to-gigabecquerel range, or equivalently the microcurie-to-millicurie range. Neither unit produces friendly numbers alone, so both remain in use.",
+    "## The exact factors",
+    "> 1 Bq = 1 decay/second (SI)\n> 1 Ci = 3.7 × 10¹⁰ Bq = 37 GBq (exact)\n> 1 mCi = 37 MBq\n> 1 µCi = 37 kBq\n> Natural K-40 in an adult: ~4,400 Bq (0.12 µCi)\n> Smoke detector Am-241: ~30 kBq (0.8 µCi)",
+    "## Why 37 billion?",
+    "The curie was defined as the activity of one gram of radium-226 — historically, the most-studied radioisotope. When the numerical value was pinned down (3.7 × 10¹⁰ decays/s), it was frozen as a defined constant. The becquerel replaced it as the SI unit in 1975, but nuclear medicine, radiography and health physics kept the curie for continuity with decades of dose records.",
+    "## Regional convention",
+    "US medical isotopes: mCi and µCi still dominate prescriptions and shipping labels. European medical isotopes: MBq. Radiography sources for industrial NDT: Ci (US), TBq (EU). All modern instruments display both, and safety data sheets list both.",
+    "## Worked example — a thyroid I-131 treatment",
+    "A hyperthyroidism ablation dose is typically 5–15 mCi = 185–555 MBq of iodine-131. The patient's thyroid concentrates most of it within 24 hours. I-131 half-life is 8.02 days, so after 8 days the activity halves; after 40 days (5 half-lives) it is 3% of the original — one reason iodine ablation isolation is 3–7 days for hospital treatment.",
+    "## Activity vs dose",
+    "Activity (Bq) tells you how many decays. Dose (Sv) tells you what those decays do to tissue. A 1 GBq source outside your body is much less harmful than a 1 kBq source inside your lung, because dose depends on the type of radiation, the exposure time and the tissue distance. Do not conflate them.",
+    "## The five-second recap",
+    "1 Bq = 1 decay/s. 1 Ci = 37 GBq. Medical isotopes: mCi (US) or MBq (EU). Activity is not dose — Bq is not Sv."
+  ],
+  "faqs": [
+    { "q": "How radioactive is a banana?", "a": "About 15 Bq from natural K-40 — negligible dose (~0.1 µSv from eating one)." },
+    { "q": "What is a 'critical mass'?", "a": "The minimum mass of a fissile isotope needed for a self-sustaining chain reaction. About 52 kg of pure U-235 or 10 kg of Pu-239 for a bare sphere; less with a reflector." },
+    { "q": "How long does a radioisotope stay radioactive?", "a": "Depends entirely on half-life. Technetium-99m: 6 hours. Iodine-131: 8 days. Cesium-137: 30 years. Plutonium-239: 24,100 years." }
+  ],
+  "related": [
+    { "label": "Ci to Bq converter", "href": "/c/radiation-activity/ci-to-bq" },
+    { "label": "mCi to MBq converter", "href": "/c/radiation-activity/mci-to-mbq" },
+    { "label": "Bq to Ci converter", "href": "/c/radiation-activity/bq-to-ci" }
+  ]
+}
