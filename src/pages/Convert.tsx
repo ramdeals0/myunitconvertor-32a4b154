@@ -4,6 +4,7 @@ import { Converter } from "@/components/Converter";
 import { CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import type { Category, Unit } from "@/lib/converters/types";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 function normalize(s: string) {
   return s.toLowerCase().replace(/[\s_]+/g, "-");
