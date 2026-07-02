@@ -78,6 +78,17 @@ export default function LearnArticlePage() {
           },
         ]}
       />
+      <Helmet>
+        <meta name="keywords" content={keywords} />
+        <meta name="author" content={article.author.name} />
+        <meta name="article:published_time" content={publishedIso} />
+        <meta name="article:modified_time" content={article.updated} />
+        <meta property="article:published_time" content={publishedIso} />
+        <meta property="article:modified_time" content={article.updated} />
+        <meta property="article:author" content={article.author.name} />
+        <meta property="article:section" content={article.category} />
+        <meta property="article:tag" content={article.category} />
+      </Helmet>
       <article className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-14">
         <nav className="text-xs text-muted-foreground mb-4">
           <Link to="/" className="hover:text-primary">Home</Link>
