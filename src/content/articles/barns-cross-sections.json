@@ -1,0 +1,35 @@
+{
+  "slug": "barns-cross-sections",
+  "title": "Barns: The Unit Nuclear Physicists Named as a Joke",
+  "h1": "Barns — the sub-atomic area unit with a WWII origin",
+  "description": "1 barn = 10⁻²⁸ m². Nuclear physicists named it because a uranium nucleus is 'as big as a barn' at that scale. Here is where the unit shows up and how to convert.",
+  "category": "Area",
+  "readingMinutes": 4,
+  "published": "2026-06-06",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Nuclear & particle physics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST fundamental constants" },
+  "hero": "A barn is 10⁻²⁸ m² — the effective 'size' of a uranium nucleus from a neutron's point of view. The joke stuck; the unit outlived the classified project that coined it.",
+  "body": [
+    "During the Manhattan Project, physicists needed an area unit for nuclear cross sections that would not accidentally reveal the size scale in classified telegrams. They chose 'barn' as a wry code — the nucleus was 'as big as a barn' compared to the tiny cross sections expected. The joke unit became standard and still appears in every reactor calculation today.",
+    "## The exact factors",
+    "> 1 barn (b) = 10⁻²⁸ m² = 10⁻²⁴ cm² (exact)\n> 1 millibarn (mb) = 10⁻³¹ m²\n> 1 microbarn (µb) = 10⁻³⁴ m²\n> 1 outhouse = 10⁻⁶ b (real joke unit, occasionally used)\n> 1 shed = 10⁻²⁴ b (also real)",
+    "## What a cross section actually is",
+    "A cross section is not a geometric area. It is the effective target area a particle presents for a given interaction. A U-235 nucleus has a geometric radius of about 7.4 fm — a physical area of 172 fm² = 1.72 b. But its thermal neutron fission cross section is 585 b — 340× bigger, because the interaction probability is dominated by nuclear resonances, not by geometry.",
+    "## Worked example — a reactor calculation",
+    "A thermal neutron traversing 1 cm of U-235 metal (density 19.1 g/cm³, atomic mass 235) encounters 4.89 × 10²² atoms/cm² per cm path. With a fission cross section of 585 b = 5.85 × 10⁻²² cm², the mean interaction rate per neutron per cm is 4.89 × 10²² × 5.85 × 10⁻²² = 28.6. In other words, a thermal neutron in bulk U-235 fissions within a fraction of a millimetre — which is exactly why enriched uranium goes critical so quickly.",
+    "## The five-second recap",
+    "1 barn = 10⁻²⁴ cm². It is not a real area — it is a probability dressed up in units. And yes, 'outhouse' and 'shed' are real units, in one paper each."
+  ],
+  "faqs": [
+    { "q": "Why not just use m²?", "a": "Cross sections in m² are numbers like 10⁻²⁴, which are painful to compare. Barns produce nice single- and triple-digit values." },
+    { "q": "What is a millibarn used for?", "a": "Particle physics reaction rates. LHC cross sections are quoted in fb (femtobarn) or pb (picobarn) — the collider produces so many collisions that even 10⁻¹⁵ b interactions are visible." },
+    { "q": "Is barn an SI unit?", "a": "No, but it is 'accepted for use with the SI' by the CIPM specifically because nuclear physics refused to abandon it." }
+  ],
+  "related": [
+    { "label": "barn to m² converter", "href": "/c/area/barn-to-m2" },
+    { "label": "cm² to m² converter", "href": "/c/area/cm2-to-m2" },
+    { "label": "ha to m² converter", "href": "/c/area/ha-to-m2" }
+  ]
+}

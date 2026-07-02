@@ -1,0 +1,37 @@
+{
+  "slug": "cst-sus-motor-oil-kinematic",
+  "title": "Centistokes and SUS: Kinematic Viscosity of Lubricants",
+  "h1": "Centistokes and Saybolt Universal Seconds — legacy lubricant grades",
+  "description": "Old motor-oil catalogs list SUS instead of cSt. Here is how the two relate and why modern spec sheets have quietly dropped SUS.",
+  "category": "Viscosity Kinematic",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Lubrication & tribology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ASTM D2161 and D445" },
+  "hero": "SUS is the time it takes 60 mL of oil to drain through a calibrated orifice. cSt is a physical viscosity. Both describe the same oil; only the latter is on modern datasheets.",
+  "body": [
+    "Saybolt Universal Seconds (SUS or SSU) was the US standard for lubricant viscosity until the 1980s. It survives on legacy US industrial oil datasheets and old machinery manuals. The rest of the world uses centistokes.",
+    "## The exact factors",
+    "> 1 cSt = 1 mm²/s = 10⁻⁶ m²/s\n> SUS conversion (ASTM D2161, at 100°F):\n>   cSt ≈ 0.226 × SUS − 195/SUS for SUS ≤ 100\n>   cSt ≈ 0.220 × SUS − 135/SUS for SUS > 100\n> Rule of thumb: cSt ≈ SUS / 4.635 for SUS > 250",
+    "## Why SUS was ever used",
+    "The Saybolt viscometer was cheap, robust, and gave a single-number reading (seconds for a fixed volume to drain). It required no thermometric integration or density measurement. Every oil-changing shop in the US had one from 1919 through the 1970s. The switch to cSt tracked the adoption of digital viscometers and international standardisation.",
+    "## ISO VG numbering",
+    "ISO VG grades are cSt at 40°C (rounded to 20-cSt bins from 32 up). ISO VG 46: 41.4–50.6 cSt at 40°C. That corresponds to roughly 214 SUS at 100°F on a mineral oil. Modern industrial oils are always sold by ISO VG number; the SUS equivalent is calculated only for legacy datasheet compatibility.",
+    "## Worked example — a legacy hydraulic system",
+    "A 1970s Cincinnati machine tool manual specifies '150 SUS oil at 100°F' for the hydraulic reservoir. From ASTM D2161: cSt = 0.220 × 150 − 135/150 = 33.0 − 0.9 = 32.1 cSt at 40°C. That is ISO VG 32 — the modern equivalent. Any current ISO VG 32 hydraulic oil is a direct replacement.",
+    "## The five-second recap",
+    "cSt is mm²/s. SUS is drain time. For SUS >250, divide by 4.64 to get cSt. ISO VG numbers = cSt at 40°C."
+  ],
+  "faqs": [
+    { "q": "Are SUS and SSU the same?", "a": "Yes — 'Saybolt Universal Seconds' and 'Seconds Saybolt Universal'. Interchangeable in every US spec." },
+    { "q": "Is Redwood or Engler viscosity related?", "a": "Yes — both are similar drain-time methods, historical in UK (Redwood) and Central Europe (Engler). Also converted via ASTM tables to cSt." },
+    { "q": "Why does viscosity change so much with temperature?", "a": "Mineral-oil viscosity typically drops 5× from 40°C to 100°C. This is why the SAE and ISO grades specify a temperature — a number alone means nothing." }
+  ],
+  "related": [
+    { "label": "cSt to m²/s converter", "href": "/c/viscosity-kinematic/cst-to-m2s" },
+    { "label": "cSt to SUS converter", "href": "/c/viscosity-kinematic/cst-to-sus" },
+    { "label": "St to cSt converter", "href": "/c/viscosity-kinematic/st-to-cst" }
+  ]
+}

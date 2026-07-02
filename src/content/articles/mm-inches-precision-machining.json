@@ -1,0 +1,37 @@
+{
+  "slug": "mm-inches-precision-machining",
+  "title": "Millimeters and Inches on the Shop Floor",
+  "h1": "Millimeters and inches — precision machining without the drift",
+  "description": "A 0.001-inch tolerance is not a 0.01 mm tolerance. Here is how to convert cleanly between mm and inches without accumulating rounding error on the drawing.",
+  "category": "Length",
+  "readingMinutes": 5,
+  "published": "2026-06-01",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Manufacturing & metrology", "bio": "Reference for machinists, tool-makers and mechanical engineers moving between metric and imperial drawings." },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8 and ASME Y14.5" },
+  "hero": "One inch is exactly 25.4 mm — but the interesting numbers are the ones downstream: thou, tenths, microns and the tolerance stacks they turn into.",
+  "body": [
+    "The international inch was pinned to exactly 25.4 mm in 1959. Every conversion between the two units traces back to that single factor. Yet plenty of drawings still round it, and the accumulated error shows up as a part that fits in CAD but jams on the bench.",
+    "## The exact factors",
+    "> 1 in = 25.4 mm (exact)\n> 1 thou (0.001 in) = 25.4 µm = 0.0254 mm\n> 1 tenth (0.0001 in) = 2.54 µm\n> 1 µm = 39.3701 µin",
+    "## The tolerance-band mismatch",
+    "A drawing calling for ±0.001 in defines a 0.0508 mm band. A drawing calling for ±0.01 mm defines a 0.0004 in band — four times tighter. Converting a US tolerance to metric by rounding to two decimal places routinely tightens or loosens the callout by an order of magnitude. Always convert with the full 25.4 factor, then decide whether to round the nominal or the tolerance separately.",
+    "## Drill sizes and the letter-and-number chaos",
+    "US drill charts use fractional, wire-gauge and letter series that do not line up with metric preferred sizes. A No. 7 drill is 0.201 in = 5.105 mm — close to but not the same as a 5 mm drill. When a print calls for a tapped hole, the pilot must match the tap standard, not the closest metric drill.",
+    "## Worked example — a bearing seat",
+    "A 25 mm shaft with an h6 fit sits between 24.987 mm and 25.000 mm. Converting to inches: 0.98374 to 0.98425 in — a 0.00051 in band. If a US shop makes the same seat to ±0.0005 in around 0.984 in, the top of that band lands at 0.9845 in = 25.006 mm — 6 microns above the metric maximum. That is exactly how a bearing that should slide on ends up needing a mallet.",
+    "## The five-second recap",
+    "Convert with 25.4, exactly, every time. Round the drawing dimension only after the conversion. And when in doubt, work in microns — they are small enough to make either system's tolerance visible."
+  ],
+  "faqs": [
+    { "q": "How many microns in a thou?", "a": "1 thou = 25.4 µm exactly." },
+    { "q": "Is the US survey inch different?", "a": "It was, by 2 parts per million, until it was officially retired in 2022. Modern US work uses the international inch (25.4 mm exact)." },
+    { "q": "What is a 'tenth' in machining slang?", "a": "One ten-thousandth of an inch (0.0001 in), or 2.54 µm. It is the practical resolution limit of a good manual mill." }
+  ],
+  "related": [
+    { "label": "mm to inches converter", "href": "/c/length/mm-to-in" },
+    { "label": "inches to mm converter", "href": "/c/length/in-to-mm" },
+    { "label": "µm to thou converter", "href": "/c/length/um-to-thou" }
+  ]
+}

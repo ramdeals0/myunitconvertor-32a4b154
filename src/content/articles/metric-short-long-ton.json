@@ -1,0 +1,37 @@
+{
+  "slug": "metric-short-long-ton",
+  "title": "Metric Tonne, Short Ton, Long Ton: Three Tons",
+  "h1": "Metric tonne, short ton, long ton — the three-way ambiguity",
+  "description": "A 100-ton crane rated in the US, UK and EU lifts three different weights. Here is the exact difference between metric, short and long tons.",
+  "category": "Weight",
+  "readingMinutes": 4,
+  "published": "2026-06-16",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Industrial metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.9" },
+  "hero": "One word, three definitions, up to 12% spread. When a spec sheet says 'tons' with no qualifier, assume the wrong one and hurt yourself.",
+  "body": [
+    "The word 'ton' is unqualified in most conversation. In engineering it never is. Every ton has a fixed definition, and mixing them is one of the most consequential unit errors in shipping, construction and mining.",
+    "## The exact factors",
+    "> Metric tonne (t) = 1,000 kg = 2,204.62 lb\n> Short ton (US ton) = 2,000 lb = 907.185 kg = 0.9072 t\n> Long ton (UK ton) = 2,240 lb = 1,016.05 kg = 1.0160 t\n> Displacement ton (shipping) = 2,240 lb = 1 long ton\n> Register ton (ship volume) = 100 ft³ = 2.832 m³ — not a mass at all",
+    "## Regional convention",
+    "US: short ton unless otherwise specified. UK: metric tonne in modern use; long ton in shipping and older documents. EU: metric tonne exclusively. Australia: metric tonne since 1974. Ship deadweight tonnage: always long tons.",
+    "## Worked example — a 100-ton crane",
+    "US 100-ton hydraulic crane: 100 × 907 = 90,700 kg = 90.7 t. UK '100-ton' crane in a 1960s spec: 100 × 1,016 = 101,600 kg = 101.6 t. European 100-tonne crane: 100 × 1,000 = 100,000 kg. A 12% capacity spread — enough to determine whether a load can be lifted or not.",
+    "## Shipping tonnage vs cargo tonnage",
+    "A ship's gross tonnage is a volume measure (not a mass) derived from a formula in the International Convention on Tonnage Measurement of Ships. Deadweight tonnage is the mass the ship can carry — in long tons for legacy specifications, in metric tonnes for modern ones. Container ships are typically quoted in TEU (twenty-foot equivalent units), not tons at all.",
+    "## The five-second recap",
+    "Metric tonne = 1,000 kg. US short ton = 907 kg. UK long ton = 1,016 kg. Always specify which ton — or use kilograms."
+  ],
+  "faqs": [
+    { "q": "How much does a car weigh in tons?", "a": "A typical mid-size sedan is about 1.5 t = 1.65 short tons = 1.48 long tons." },
+    { "q": "What is a metric ton vs a tonne?", "a": "Identical — 'tonne' is the international spelling, 'metric ton' is the US alternative for the same 1,000 kg unit." },
+    { "q": "Why does the UK still use long tons anywhere?", "a": "Legacy shipping documents and 19th-century engineering references. Modern UK practice is metric tonnes exclusively." }
+  ],
+  "related": [
+    { "label": "metric ton to lb converter", "href": "/c/weight/t-to-lb" },
+    { "label": "short ton to kg converter", "href": "/c/weight/ton_us-to-kg" },
+    { "label": "long ton to kg converter", "href": "/c/weight/ton_uk-to-kg" }
+  ]
+}

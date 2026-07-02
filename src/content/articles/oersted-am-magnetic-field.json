@@ -1,0 +1,37 @@
+{
+  "slug": "oersted-am-magnetic-field",
+  "title": "Oersteds and A/m: Magnetic Field Strength",
+  "h1": "Oersteds and amperes per metre — magnetising force vs flux density",
+  "description": "The oersted is the CGS unit of H-field. The A/m is its SI equivalent. Here is why permanent-magnet datasheets still use oersteds and how they map to A/m.",
+  "category": "Magnetic Field Strength",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Magnetics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEC 60404-1 and NIST SP 811" },
+  "hero": "1 Oe = 79.577 A/m. Permanent-magnet datasheets keep oersteds because a century of BH curves is drawn in them.",
+  "body": [
+    "Magnetic field strength H (also called magnetising force) is what drives magnetic flux density B in a material. H is measured in A/m (SI) or oersted (CGS). They describe the same physical quantity with different sizes.",
+    "## The exact factors",
+    "> 1 Oe = 1000/(4π) A/m = 79.5775 A/m\n> 1 A/m = 4π/1000 Oe = 0.01257 Oe\n> 1 kA/m = 12.57 Oe\n> Coercivity of neodymium magnet: ~10,000 Oe = 796 kA/m\n> Earth's field near surface: ~40 A/m = 0.5 Oe",
+    "## B vs H",
+    "In vacuum, B = µ₀H with µ₀ = 4π × 10⁻⁷ T·m/A. In a material, B = µ₀(H + M) where M is magnetisation. The BH curve plots one against the other — the loop area is the hysteresis energy loss per cycle, key to core-loss calculations in transformers.",
+    "## Coercivity — why permanent magnets stay magnetised",
+    "Coercivity Hc is the reverse H-field needed to demagnetise a material. Soft iron: <100 A/m. Alnico: 40 kA/m. Ferrite: 200 kA/m. Neodymium NdFeB: 800–1,200 kA/m (10,000–15,000 Oe). Higher coercivity = harder to demagnetise = more useful as a permanent magnet.",
+    "## Worked example — sizing a solenoid",
+    "A 100-turn solenoid, 10 cm long, carrying 2 A produces H = NI/L = 100 × 2 / 0.1 = 2,000 A/m = 25.1 Oe. In air-core, B = µ₀H = 2.51 mT = 25.1 G. Insert a steel core with relative permeability µr = 5000: B = 5,000 × 2.51 mT = 12.6 T — except real steel saturates at 1.5–2 T long before this. Saturation is what caps electromagnetic devices.",
+    "## The five-second recap",
+    "1 Oe = 79.58 A/m. H is the magnetising force; B is the resulting flux density. Coercivity in Oe or kA/m tells you how hard a permanent magnet is."
+  ],
+  "faqs": [
+    { "q": "What is the difference between B and H?", "a": "H is the field a coil creates; B is what actually threads through the material. In free space they are proportional; in a magnetisable material they diverge dramatically." },
+    { "q": "Are gauss and oersted the same?", "a": "Numerically similar (both dimensionally derived), but gauss is flux density (B), oersted is field strength (H). In CGS Gaussian units the numbers coincidentally match in vacuum." },
+    { "q": "Do MRI magnets use oersteds?", "a": "MRI specifies B in tesla (typically 1.5 T or 3 T). H is rarely quoted because the field is in air and the two are simply proportional." }
+  ],
+  "related": [
+    { "label": "Oe to A/m converter", "href": "/c/magnetic-field-strength/oe-to-am" },
+    { "label": "A/m to Oe converter", "href": "/c/magnetic-field-strength/am-to-oe" },
+    { "label": "kA/m to A/m converter", "href": "/c/magnetic-field-strength/kam-to-am" }
+  ]
+}

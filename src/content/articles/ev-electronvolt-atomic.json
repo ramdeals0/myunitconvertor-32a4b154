@@ -1,0 +1,37 @@
+{
+  "slug": "ev-electronvolt-atomic",
+  "title": "Electronvolts: The Currency of Atomic Physics",
+  "h1": "The electronvolt — energy at the atomic scale",
+  "description": "Chemistry uses eV. Nuclear physics uses MeV. Particle physics uses GeV and TeV. Here is what an electronvolt actually is and where each scale fits.",
+  "category": "Energy",
+  "readingMinutes": 5,
+  "published": "2026-06-26",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Physics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against CODATA 2018 fundamental constants" },
+  "hero": "One electronvolt is the energy an electron gains falling through 1 volt. That gives every particle physics energy a direct link to the voltage on the accelerator.",
+  "body": [
+    "The electronvolt is not a joule and its size is not memorable — 1.602 × 10⁻¹⁹ J. But once you accept it as the natural unit for one electron falling through one volt, every atomic and nuclear energy fits into a simple ladder: chemistry at eV, X-rays at keV, nuclear reactions at MeV, and colliders at TeV.",
+    "## The exact factor",
+    "> 1 eV = 1.602176634 × 10⁻¹⁹ J (exact since 2019 redefinition)\n> 1 keV = 10³ eV; 1 MeV = 10⁶ eV; 1 GeV = 10⁹ eV; 1 TeV = 10¹²eV\n> 1 eV/particle = 96.485 kJ/mol (chemistry conversion)",
+    "## The energy ladder",
+    "Hydrogen ionisation: 13.6 eV. Visible photon: 1.6–3.1 eV. Chemical bonds: 1–10 eV. X-ray photon: 1–100 keV. Nuclear binding per nucleon: ~8 MeV. Muon rest mass: 106 MeV. Proton rest mass: 938 MeV. Higgs boson: 125 GeV. LHC per-proton beam energy: 6.5 TeV.",
+    "## Mass and energy in the same unit",
+    "Particle physicists write masses in eV/c² because E = mc². The electron rest mass is 511 keV/c², the proton 938 MeV/c². The 'c²' is often dropped in speech (\"a 125-GeV Higgs\") because everyone knows what is meant. This convention lets you read a particle-physics paper without switching between joules, kilograms and eV.",
+    "## Worked example — an X-ray from a copper anode",
+    "The Kα emission of copper is 8.04 keV = 1.289 × 10⁻¹⁵ J per photon = 1.541 Å wavelength. A dental X-ray tube running at 70 kV produces bremsstrahlung with maximum photon energy 70 keV. Both are directly connected to the tube voltage — which is exactly why the unit was invented.",
+    "## The five-second recap",
+    "1 eV = 1.6 × 10⁻¹⁹ J. Atoms live at eV. Nuclei live at MeV. LHC lives at TeV. And mass in eV/c² is just energy divided by c²."
+  ],
+  "faqs": [
+    { "q": "What is 1 eV in kelvin?", "a": "kT = 1 eV when T = 11,605 K. Room temperature (300 K) corresponds to about 25.7 meV per particle — a useful anchor in semiconductor physics." },
+    { "q": "How does LHC compare to a lightning bolt?", "a": "A lightning bolt has ~10⁹ J of energy. LHC beam: 6.5 TeV per proton × 3 × 10¹⁴ protons = 3.1 × 10⁸ J — roughly a third of a lightning bolt, but focused on a beam 20 µm across." },
+    { "q": "Is eV an SI unit?", "a": "No, but 'accepted for use with the SI'. Its value in joules is exact since 2019." }
+  ],
+  "related": [
+    { "label": "eV to J converter", "href": "/c/energy/ev-to-j" },
+    { "label": "keV to J converter", "href": "/c/energy/kev-to-j" },
+    { "label": "MeV to J converter", "href": "/c/energy/mev-to-j" }
+  ]
+}

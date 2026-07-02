@@ -1,0 +1,37 @@
+{
+  "slug": "inch-fractions-decimals",
+  "title": "Inch Fractions and Decimals: A Reference Chart",
+  "h1": "Inch fractions and decimals — the workshop cheat sheet",
+  "description": "A 3/16 drill is 0.1875 in = 4.7625 mm. Here is the full fraction-to-decimal-to-mm table, and why fractional inches survive in modern shops.",
+  "category": "Length",
+  "readingMinutes": 4,
+  "published": "2026-06-10",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Manufacturing & tooling" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ANSI B94.11M drill sizes" },
+  "hero": "Every 64th of an inch has an exact decimal and an exact millimetre value. Once memorised, they let you read any inch drawing without a calculator.",
+  "body": [
+    "Fractional inches survive because drills, taps, wrenches and structural bolts are still manufactured to fractional sizes. A modern machinist reads 3/8-16 UNC as automatically as 10-32 metric. This is the reference table that makes it fluent.",
+    "## The exact factors",
+    "> 1 in = 25.4 mm (exact)\n> 1/64 in = 0.015625 in = 0.396875 mm (exact)\n> 1/32 in = 0.03125 in = 0.79375 mm\n> 1/16 in = 0.0625 in = 1.5875 mm\n> 1/8 in = 0.125 in = 3.175 mm\n> 1/4 in = 0.25 in = 6.35 mm\n> 3/8 in = 0.375 in = 9.525 mm\n> 1/2 in = 0.5 in = 12.7 mm\n> 5/8 in = 0.625 in = 15.875 mm\n> 3/4 in = 0.75 in = 19.05 mm\n> 7/8 in = 0.875 in = 22.225 mm",
+    "## Reading a fraction fast",
+    "Every fraction n/64 in has an exact terminating decimal because 64 is a power of 2, and 25.4 mm converts every one to an exact decimal in mm too. There is no rounding in the fraction system — the imprecision only enters when someone rounds to two decimal places on a drawing.",
+    "## Drill and wrench sizing",
+    "US drill sets step by 1/64 up to 1/2, then by 1/32. A 'letter drill' set fills in between fractional sizes with 26 letters (A = 0.234 in through Z = 0.413 in). A 'number drill' set covers below 1/4 in with 80 sizes. Metric equivalents rarely land within 0.1 mm of a fractional size, which is why a US shop keeps both drill cabinets.",
+    "## Worked example — a 3/8-16 tap",
+    "A 3/8-16 UNC tap needs a tap drill of about 5/16 in = 0.3125 in = 7.938 mm. The closest metric drill (8 mm = 0.315 in) is 0.062 mm larger — enough to reduce thread engagement from 75% to about 68%, which is still functional but marginally weaker. In critical joints, use the fractional drill.",
+    "## The five-second recap",
+    "n/64 inch × 0.396875 = mm. n/16 inch × 1.5875 = mm. Every fractional inch has an exact mm equivalent — the only rounding in imperial machining is voluntary."
+  ],
+  "faqs": [
+    { "q": "Why 1/64 and not 1/100?", "a": "Historical binary halving with dividers. A machinist can bisect a line by eye to 1/64, but not to 1/100." },
+    { "q": "Are metric fasteners taking over?", "a": "In consumer electronics and cars, yes. In US construction and aerospace, fractional-inch bolts still dominate." },
+    { "q": "What is a 'plus one' fractional size?", "a": "One 64th above the nominal. A 3/8+1 drill is 25/64 in = 0.3906 in — used for clearance holes where a plain 3/8 is too tight." }
+  ],
+  "related": [
+    { "label": "inches to mm converter", "href": "/c/length/in-to-mm" },
+    { "label": "mm to inches converter", "href": "/c/length/mm-to-in" },
+    { "label": "thou to mm converter", "href": "/c/length/thou-to-mm" }
+  ]
+}

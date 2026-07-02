@@ -1,0 +1,37 @@
+{
+  "slug": "liters-gallons-fuel-tanks",
+  "title": "Liters and Gallons: Fuel Tank Sizing Across Regions",
+  "h1": "Litres and gallons — reading fuel tank capacities without surprises",
+  "description": "A 15-gallon US tank is not 15 UK gallons. Here is how vehicle fuel-tank capacities convert, and where the US-vs-UK gallon confusion hits hardest.",
+  "category": "Volume",
+  "readingMinutes": 5,
+  "published": "2026-06-11",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Automotive metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST Handbook 44" },
+  "hero": "1 US gallon = 3.785 L. 1 UK gallon = 4.546 L. The 20% gap is the same one that ruins fuel-economy comparisons.",
+  "body": [
+    "The US gallon and the UK (Imperial) gallon share a name and nothing else. A 15-gallon fuel tank on a US pickup holds 56.8 L; the same-sized tank on a UK van rated 15 (Imperial) gallons holds 68.2 L. The 20% difference has caught out fleet managers, importers and every backpacker filling up abroad.",
+    "## The exact factors",
+    "> 1 US gallon = 3.785411784 L (exact)\n> 1 Imperial gallon = 4.54609 L (exact)\n> 1 US gal = 0.8327 UK gal\n> 1 L = 0.2642 US gal = 0.2200 UK gal",
+    "## Regional labelling conventions",
+    "US: gallons everywhere. UK: litres at the pump, gallons in casual fuel-economy talk. Canada: litres exclusively since 1979. Australia: litres. EU: litres. Japan: litres. Only the US retains gallons on the pump.",
+    "## Worked example — a 60 L rental car in the US",
+    "You land in Los Angeles, rent a car with a 60 L tank (16 US gal) and fill up in Nevada for $3.50/gal. 60 L / 3.785 = 15.85 US gal × $3.50 = $55.48. If the same tank were labelled in UK gal you would expect 60/4.546 = 13.2 gal — the mismatch of 2.65 gal at $3.50 is $9.28 you did not budget.",
+    "## Boat and aircraft fuel",
+    "Marine and aviation fuel is often quoted in US gallons regardless of country, because the industry standardised on US convention. A 100-gallon aviation fuel order in the UK is 378.5 L, not 454.6 L. Always confirm at the fuel truck.",
+    "## The five-second recap",
+    "Multiply US gal by 3.785 for L. Multiply UK gal by 4.546 for L. The two gallons differ by 20%. Aviation defaults to US gal worldwide."
+  ],
+  "faqs": [
+    { "q": "Which gallon is the US gallon based on?", "a": "The Queen Anne wine gallon of 1707 — 231 cubic inches exactly. The UK abandoned it in 1824 for the Imperial gallon; the US kept it." },
+    { "q": "How many litres in a barrel of oil?", "a": "1 US oil barrel = 158.987 L = 42 US gal. This is different from a US liquid barrel (119.24 L) or a UK beer barrel (163.66 L)." },
+    { "q": "Does Canada use US or UK gallons?", "a": "Neither in practice — Canada switched to litres in 1979. Legacy references are UK gallons (a Canadian 'gallon' historically = 4.546 L)." }
+  ],
+  "related": [
+    { "label": "US gallon to L converter", "href": "/c/volume/gal_us-to-l" },
+    { "label": "L to US gallon converter", "href": "/c/volume/l-to-gal_us" },
+    { "label": "UK gallon to L converter", "href": "/c/volume/gal_uk-to-l" }
+  ]
+}

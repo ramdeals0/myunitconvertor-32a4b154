@@ -1,0 +1,37 @@
+{
+  "slug": "angstrom-nanometer-wavelength",
+  "title": "Angstroms and Nanometers: Wavelengths and Bond Lengths",
+  "h1": "Ångströms and nanometres — the atomic-scale units",
+  "description": "Chemists still write bond lengths in ångströms. Physicists write wavelengths in nanometres. Here is why both units survive and how to convert without confusion.",
+  "category": "Length",
+  "readingMinutes": 5,
+  "published": "2026-06-04",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Physics & chemistry" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8" },
+  "hero": "1 Å = 0.1 nm — a rounding-friendly relationship that lets two whole scientific disciplines keep their favourite units without arguing.",
+  "body": [
+    "The ångström is not an SI unit, but the Bureau International removed it from the SI supplement in 2019 without asking chemistry. X-ray crystallographers still report unit-cell parameters in Å, protein data bank entries still list bond lengths in Å, and no one who works with electron density is switching soon.",
+    "## The exact factors",
+    "> 1 Å = 0.1 nm = 100 pm = 10⁻¹⁰ m (exact)\n> Visible light: 380–780 nm (3,800–7,800 Å)\n> Typical covalent bond: 1.0–2.5 Å (100–250 pm)\n> Hydrogen atom radius: 0.53 Å",
+    "## Why chemistry stayed on the ångström",
+    "Most covalent bond lengths land between 1 and 2 Å. Reporting them as 0.1–0.2 nm loses a decimal digit of feel — every number becomes 0-point-something. The picometre (100 pm = 1 Å) works too, but a century of literature is written in Å, and re-tabulating it is nobody's job.",
+    "## Why physics moved to nanometres",
+    "Optical wavelengths are 400–800 nm — comfortable three-digit integers. Semiconductor process nodes (5 nm, 3 nm, 2 nm) fit the same range. Once the industry standardised on nm, the ångström stopped appearing in modern optical and semiconductor papers.",
+    "## Worked example — water",
+    "The O–H bond in water is 0.958 Å = 95.8 pm = 0.0958 nm. The H–O–H angle is 104.45°. Molecular dynamics codes usually take Å; DFT codes usually take bohr (0.529 Å); optical codes take nm. Same molecule, three unit conventions, and every input file needs the conversion right.",
+    "## The five-second recap",
+    "1 Å = 0.1 nm = 100 pm. Chemistry uses Å, physics uses nm, quantum chemistry uses bohr. Always check the header of the file before you multiply."
+  ],
+  "faqs": [
+    { "q": "Is the ångström still an SI unit?", "a": "No — it is 'accepted for use with the SI' but not part of it. In practice, chemistry journals accept it without comment." },
+    { "q": "What is a bohr?", "a": "The atomic unit of length: 0.529177 Å. Used almost exclusively in quantum chemistry software input files." },
+    { "q": "Why do semiconductor nodes not match feature size any more?", "a": "The '3 nm' node is a marketing name, not a physical feature. Actual transistor gate pitch is closer to 45 nm." }
+  ],
+  "related": [
+    { "label": "Å to nm converter", "href": "/c/length/ang-to-nm" },
+    { "label": "nm to pm converter", "href": "/c/length/nm-to-pm" },
+    { "label": "µm to nm converter", "href": "/c/length/um-to-nm" }
+  ]
+}

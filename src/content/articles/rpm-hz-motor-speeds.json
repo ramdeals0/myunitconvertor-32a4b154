@@ -1,0 +1,39 @@
+{
+  "slug": "rpm-hz-motor-speeds",
+  "title": "RPM and Hertz: Motor Speeds and Grid Frequency",
+  "h1": "RPM and Hz — the grid frequency written on every motor nameplate",
+  "description": "A 60 Hz motor spins at a different speed than a 50 Hz motor. Here is why grid frequency dictates every industrial motor's RPM and how to convert.",
+  "category": "Frequency",
+  "readingMinutes": 5,
+  "published": "2026-06-24",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Electrical & rotating machinery" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NEMA MG 1 and IEC 60034" },
+  "hero": "A 4-pole motor spins at 1,800 RPM on US 60 Hz power, 1,500 RPM on European 50 Hz. Same motor, 20% speed difference, entirely determined by grid frequency.",
+  "body": [
+    "Every AC induction motor has its rated speed printed on the nameplate — and that speed is a direct function of grid frequency and pole count. Cross a country boundary with the wrong motor and it not only runs at the wrong speed, it can burn out.",
+    "## The core formula",
+    "> Synchronous speed (RPM) = 120 × f / P\n> f = grid frequency (Hz)\n> P = number of poles (2, 4, 6, 8…)",
+    "## Standard synchronous speeds",
+    "60 Hz (US/Canada/most Americas/Korea/parts of Japan): 2-pole = 3,600 RPM, 4-pole = 1,800, 6-pole = 1,200, 8-pole = 900. 50 Hz (Europe/Africa/most Asia): 2-pole = 3,000 RPM, 4-pole = 1,500, 6-pole = 1,000, 8-pole = 750. Actual load speed drops 2–5% below synchronous due to slip in induction motors.",
+    "## Why grid frequency is different",
+    "The US chose 60 Hz in the 1890s (Westinghouse/Tesla), Europe chose 50 Hz (AEG). Both were viable; neither would switch. Japan has both — 50 Hz in the east, 60 Hz in the west, with frequency converters between. This split still shapes every global appliance design.",
+    "## Motor swaps across regions",
+    "Running a 60 Hz motor on 50 Hz power (same voltage) causes 17% overcurrent, 20% slower rotation, and shortened bearing life. Running a 50 Hz motor on 60 Hz undercurrents but speeds up 20% — often OK for short periods, but a pump or fan will draw far more mechanical power. Modern variable-frequency drives (VFDs) sidestep the issue by generating any frequency the motor needs.",
+    "## Worked example — a 5 HP pump moved from EU to US",
+    "A 4-pole 50 Hz pump rated 1,450 RPM = 24.17 Hz mechanical. In the US on 60 Hz: 1,740 RPM = 29 Hz mechanical, 20% faster. A centrifugal pump's flow scales linearly with RPM but power scales with RPM³ — so the 5 HP pump now draws (1.2)³ = 1.73× as much power = 8.6 HP. It will trip the overload immediately.",
+    "## The five-second recap",
+    "RPM = 120 × f / P. Grid frequency dictates motor speed. 50 vs 60 Hz swaps cause 20% RPM shifts and cubic power changes on centrifugal loads."
+  ],
+  "faqs": [
+    { "q": "What is 'slip' in an induction motor?", "a": "The difference between synchronous and actual rotor speed, typically 2–5% under load. Slip is what makes an induction motor produce torque." },
+    { "q": "Can I use a VFD to run any motor at any speed?", "a": "Yes, within bearing and cooling limits. VFDs generate variable-frequency PWM output — most modern industrial motors are VFD-fed." },
+    { "q": "Why does Japan have two grid frequencies?", "a": "The eastern grid bought AEG generators (50 Hz) in 1895; the western grid bought GE (60 Hz). The split persisted; only ~1.2 GW of converter capacity links the two grids." }
+  ],
+  "related": [
+    { "label": "RPM to Hz converter", "href": "/c/frequency/rpm-to-hz" },
+    { "label": "Hz to RPM converter", "href": "/c/frequency/hz-to-rpm" },
+    { "label": "rad/s to RPM converter", "href": "/c/velocity-angular/rads-to-rpm" }
+  ]
+}

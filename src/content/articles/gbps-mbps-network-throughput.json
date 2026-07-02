@@ -1,0 +1,39 @@
+{
+  "slug": "gbps-mbps-network-throughput",
+  "title": "Gbps and Mbps: What Your Internet Speed Really Means",
+  "h1": "Gbps and Mbps — the network speeds behind every ISP promise",
+  "description": "A 1 Gbps fibre plan does not download files at 1 GB/s. Here is the bit-vs-byte math and the overheads that eat the rest.",
+  "category": "Data Transfer",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Networking" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEEE 802.3 and RFC 793 overhead calculations" },
+  "hero": "1 Gbps = 125 MB/s of raw payload. After protocol overhead, real download speed lands around 110 MB/s at best.",
+  "body": [
+    "ISPs advertise link capacity in bits per second because the number is 8× larger than the equivalent bytes-per-second. Consumers download in bytes. The 8× factor is the source of every 'my 500 Mbps plan only downloads at 60 MB/s' complaint.",
+    "## The exact factors",
+    "> 1 byte = 8 bits, always\n> 1 Mbps = 10⁶ bits/s = 125,000 bytes/s = 122.07 KiB/s\n> 1 Gbps = 10⁹ bits/s = 125 MB/s = 119.2 MiB/s\n> 10 Gbps = 1.25 GB/s = 1.164 GiB/s",
+    "## What eats the rest",
+    "Ethernet frame overhead: 38 B per 1500 B payload = 2.5% loss. IP + TCP headers: 40 B per packet = 2.7% at 1500 B MTU. HTTPS: 2–5% extra for TLS. Real payload throughput on a 1 Gbps LAN: ~940 Mbps = 117 MB/s. On the internet, latency and packet loss can drop this to 30–60 MB/s even on 1 Gbps plans.",
+    "## Anchors",
+    "DSL: 5–100 Mbps. Cable: 100 Mbps – 1 Gbps. Fibre-to-home: 100 Mbps – 10 Gbps. WiFi 6: up to ~1 Gbps real-world. Cellular 5G: 100–500 Mbps typical. Local NVMe SSD: 3–7 GB/s = 24–56 Gbps. USB 3.2 Gen 2: 10 Gbps. Thunderbolt 4: 40 Gbps.",
+    "## Worked example — downloading a 10 GB game",
+    "10 GB game (10¹⁰ bytes) on a 500 Mbps plan. 500 Mbps = 62.5 MB/s theoretical. Realistic sustained: 55 MB/s. Time: 10,000 / 55 = 182 s = 3 minutes. On a 100 Mbps plan: 900 s = 15 minutes. On a 1 Gbps plan: 91 s. Diminishing returns above 500 Mbps for most single-flow downloads because the game server tops out first.",
+    "## Symmetric vs asymmetric",
+    "Cable and DSL are asymmetric — download much faster than upload. FTTH is often symmetric (1 Gbps up and down). Consumer expectations of upload speed have risen sharply since videoconferencing became universal; asymmetric plans with 10 Mbps upload are now visibly bottlenecked in real use.",
+    "## The five-second recap",
+    "Divide Mbps by 8 for MB/s. Real throughput is 90–95% of advertised on a clean link. Latency and packet loss can drop it much further."
+  ],
+  "faqs": [
+    { "q": "Is 1 Gbps enough for a family of 4?", "a": "More than enough. Even 4K Netflix streams at 25 Mbps; a family of 4 streaming simultaneously uses 100 Mbps peak. 1 Gbps is future-proofing." },
+    { "q": "Why is my WiFi slower than my ISP plan?", "a": "WiFi has its own overhead. A '1200 Mbps' WiFi 6 router typically delivers 500–700 Mbps real throughput. Distance, walls and interference reduce this further." },
+    { "q": "What is 'up to' in ISP marketing?", "a": "The peak line rate under ideal conditions. Regulatory bodies (FCC, Ofcom) increasingly require published median speeds instead." }
+  ],
+  "related": [
+    { "label": "Mbps to MB/s converter", "href": "/c/data-transfer/mbps-to-mbs" },
+    { "label": "Gbps to MB/s converter", "href": "/c/data-transfer/gbps-to-mbs" },
+    { "label": "MB/s to Mbps converter", "href": "/c/data-transfer/mbs-to-mbps" }
+  ]
+}

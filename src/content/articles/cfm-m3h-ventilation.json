@@ -1,0 +1,37 @@
+{
+  "slug": "cfm-m3h-ventilation",
+  "title": "CFM and m³/h: Sizing Ventilation",
+  "h1": "CFM and m³/h — sizing ductwork across unit systems",
+  "description": "US HVAC catalogs quote fans in CFM. European catalogs quote in m³/h or L/s. Here is the exact factor and how to size ductwork consistently.",
+  "category": "Flow",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "HVAC engineering" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ASHRAE 62.1 and EN 16798" },
+  "hero": "1 CFM = 1.699 m³/h = 0.472 L/s. Simple ratios that hide a bigger issue: ventilation codes across regions target very different air-change rates.",
+  "body": [
+    "Fan datasheets, air handlers, VAV boxes and register throws are all sized by volumetric airflow. The US uses cubic feet per minute (CFM). Europe uses cubic metres per hour (m³/h) or litres per second (L/s). ASHRAE and EN both specify minimum ventilation rates — but in different units and with different assumptions.",
+    "## The exact factors",
+    "> 1 CFM = 1.69901 m³/h = 0.47195 L/s (exact)\n> 1 m³/h = 0.5886 CFM = 0.2778 L/s\n> 1 L/s = 2.119 CFM = 3.6 m³/h",
+    "## Codes",
+    "ASHRAE 62.1: minimum 5 CFM/person + 0.06 CFM/ft² for offices (about 7.5 L/s + 0.3 L/s·m²). EN 16798: 10 L/s/person for good IAQ (Category II). These translate to roughly comparable per-person rates but the per-area component differs materially — a European engineer sizing to EN often exceeds ASHRAE minimums.",
+    "## Air changes per hour",
+    "ACH = fresh air rate / room volume. A 40 m² office at 3 m ceiling = 120 m³. Ventilating at 60 L/s = 216 m³/h gives 1.8 ACH. ASHRAE typically results in 0.5–1.5 ACH for offices, 4–6 for restaurants, 15+ for laboratories. Same physical rate, three different equivalent expressions (CFM, m³/h, ACH) — engineers switch depending on what the datasheet lists.",
+    "## Worked example — a bathroom exhaust fan",
+    "US code (IRC): 50 CFM intermittent or 20 CFM continuous for a residential bath. 50 CFM = 85 m³/h = 23.6 L/s. UK Building Regs Part F: 15 L/s for a bath = 54 m³/h = 31.8 CFM. UK spec is 37% lower than US intermittent — reflecting different assumed run times and moisture-load assumptions.",
+    "## The five-second recap",
+    "Multiply CFM by 1.7 for m³/h. Multiply CFM by 0.47 for L/s. Ventilation codes agree on per-person rates but diverge on per-area rates."
+  ],
+  "faqs": [
+    { "q": "What is a 'ton' of air conditioning?", "a": "12,000 BTU/hr of cooling = 3.517 kW. Historical: the heat needed to melt 1 short ton of ice in 24 hours. Airflow of a 1-ton system is typically ~400 CFM (680 m³/h)." },
+    { "q": "Why is L/s common in Europe?", "a": "EN 16798 chose L/s because per-person ventilation rates land in comfortable single digits. m³/h is more common on equipment datasheets." },
+    { "q": "How does duct velocity compare?", "a": "Typical supply duct velocity: 4–8 m/s (800–1,600 fpm). Higher = noisier. Sizing charts convert between airflow and duct diameter given a target velocity." }
+  ],
+  "related": [
+    { "label": "CFM to m³/h converter", "href": "/c/flow/cfm-to-m3h" },
+    { "label": "CFM to L/s converter", "href": "/c/flow/cfm-to-ls" },
+    { "label": "m³/h to L/s converter", "href": "/c/flow/m3h-to-ls" }
+  ]
+}
