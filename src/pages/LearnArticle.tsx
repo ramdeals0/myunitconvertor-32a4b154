@@ -41,8 +41,11 @@ export default function LearnArticlePage() {
             description: article.description,
             url,
             inLanguage: "en",
-            datePublished: article.published ?? article.updated,
+            datePublished: publishedIso,
             dateModified: article.updated,
+            articleSection: article.category,
+            keywords,
+            wordCount,
             author: { "@type": "Person", name: article.author.name, jobTitle: article.author.role },
             ...(article.reviewer && {
               reviewedBy: { "@type": "Person", name: article.reviewer.name, jobTitle: article.reviewer.credential },
