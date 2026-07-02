@@ -214,6 +214,39 @@ export default function PairPage() {
           <div className="text-xs text-muted-foreground mt-1">Calculated with engineering-grade precision.</div>
         </div>
 
+        {realExamples.length > 0 && (
+          <section className="mt-8 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
+            <h2 className="text-xl md:text-2xl font-semibold mb-2">
+              Real-world examples: {f.symbol} to {t.symbol}
+            </h2>
+            <p className="text-sm text-muted-foreground mb-4">
+              Concrete, everyday quantities to help you visualise {f.name.toLowerCase()} in {t.name.toLowerCase()}.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left text-xs uppercase tracking-wide text-muted-foreground border-b border-border">
+                    <th className="py-2 pr-4 font-semibold">Example</th>
+                    <th className="py-2 pr-4 font-semibold font-mono-num">{f.symbol}</th>
+                    <th className="py-2 font-semibold font-mono-num">{t.symbol}</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {realExamples.map((ex) => (
+                    <tr key={ex.label}>
+                      <td className="py-2.5 pr-4 text-foreground">{ex.label}</td>
+                      <td className="py-2.5 pr-4 font-mono-num text-muted-foreground">{formatResult(ex.fromValue)}</td>
+                      <td className="py-2.5 font-mono-num text-primary font-semibold">{formatResult(ex.toValue)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
+
+
 
         {gen ? (
           <>
