@@ -24,13 +24,14 @@ const ANCHORS: Record<string, Array<{ label: string; base: number }>> = {
     { label: "A small car (Honda Civic)", base: 1350 },
   ],
   temperature: [
-    { label: "Water freezes", base: 273.15 },
-    { label: "Comfortable room temperature", base: 293.15 },
-    { label: "Human body temperature", base: 310.15 },
-    { label: "Water boils (sea level)", base: 373.15 },
-    { label: "Oven — baking bread", base: 463.15 },
-    { label: "Surface of Venus", base: 735 },
+    { label: "Water freezes", base: 0 },
+    { label: "Comfortable room temperature", base: 20 },
+    { label: "Human body temperature", base: 37 },
+    { label: "Water boils (sea level)", base: 100 },
+    { label: "Oven — baking bread", base: 190 },
+    { label: "Surface of Venus", base: 462 },
   ],
+
   volume: [
     { label: "A tablespoon", base: 0.01478676 },
     { label: "A standard wine bottle", base: 0.75 },
