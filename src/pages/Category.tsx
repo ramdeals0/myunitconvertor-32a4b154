@@ -9,6 +9,7 @@ import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import { getCategoryContent } from "@/lib/converters/categoryContent";
 import { getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 import { ArrowRight, TrendingUp } from "lucide-react";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 
 export default function CategoryPage() {
