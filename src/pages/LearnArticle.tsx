@@ -1,4 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { getAllArticles, getArticle } from "@/content/articles";
 import { countWords } from "@/lib/seo/indexability";
