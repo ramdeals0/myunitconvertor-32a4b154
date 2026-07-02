@@ -145,8 +145,8 @@ export default function PairPage() {
             name: `Standards & references for ${f.name} to ${t.name} conversion`,
             headline: `Standards & references for ${f.name} to ${t.name} conversion`,
             url,
-            inLanguage: "en",
-            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+            inLanguage: langTag,
+            isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
             about: {
               "@type": "Thing",
               name: `${f.name} to ${t.name} unit conversion`,
