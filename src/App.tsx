@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { ScientificCalculator } from "@/components/ScientificCalculator";
 import { I18nProvider } from "@/lib/i18n";
+import { LocaleSync } from "@/components/LocaleShell";
 
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
@@ -27,33 +28,48 @@ function ScrollToTop() {
   return null;
 }
 
+// The full app route tree. Rendered once for the default locale (root paths)
+// and once nested under each language prefix (/es/*, /hi/*).
+function AppRoutes() {
+  return (
+    <Routes>
+      <Route index element={<HomePage />} />
+      <Route path="about" element={<AboutPage />} />
+      <Route path="methodology" element={<MethodologyPage />} />
+      <Route path="editorial-policy" element={<EditorialPolicyPage />} />
+      <Route path="learn" element={<LearnPage />} />
+      <Route path="learn/:slug" element={<LearnArticlePage />} />
+      <Route path="converters" element={<ConvertersPage />} />
+      <Route path="privacy" element={<PrivacyPage />} />
+      <Route path="terms" element={<TermsPage />} />
+      <Route path="c/:category" element={<CategoryPage />} />
+      <Route path="c/:category/:pair" element={<PairPage />} />
+      <Route path="convert/:pair" element={<ConvertPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
+}
+
 export default function App() {
   return (
     <I18nProvider>
-      <ScrollToTop />
-      <SiteHeader />
-      <div className="pt-16 min-h-screen flex flex-col">
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/methodology" element={<MethodologyPage />} />
-            <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
-            <Route path="/learn" element={<LearnPage />} />
-            <Route path="/learn/:slug" element={<LearnArticlePage />} />
-            <Route path="/converters" element={<ConvertersPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-            <Route path="/c/:category" element={<CategoryPage />} />
-            <Route path="/c/:category/:pair" element={<PairPage />} />
-            <Route path="/convert/:pair" element={<ConvertPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </main>
-        <SiteFooter />
-      </div>
-      <ScientificCalculator />
-      <SpeedInsights />
+      <LocaleSync>
+        <ScrollToTop />
+        <SiteHeader />
+        <div className="pt-16 min-h-screen flex flex-col">
+          <main className="flex-1">
+            <Routes>
+              <Route path="/es/*" element={<AppRoutes />} />
+              <Route path="/hi/*" element={<AppRoutes />} />
+              <Route path="/en/*" element={<AppRoutes />} />
+              <Route path="/*" element={<AppRoutes />} />
+            </Routes>
+          </main>
+          <SiteFooter />
+        </div>
+        <ScientificCalculator />
+        <SpeedInsights />
+      </LocaleSync>
     </I18nProvider>
   );
 }

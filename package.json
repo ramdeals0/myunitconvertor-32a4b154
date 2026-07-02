@@ -12,6 +12,7 @@
     "build:spa": "vite build",
     "prerender": "node scripts/prerender.mjs",
     "generate:pseo": "bunx tsx scripts/generate-pseo.ts",
+    "translate:i18n": "node scripts/translate-i18n.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."

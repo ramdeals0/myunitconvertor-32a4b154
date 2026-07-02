@@ -1,556 +1,1344 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://turbounitconverter.com/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/converters</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/converters" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/converters" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/converters" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/converters" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/learn</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/learn" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/learn" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/learn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/learn" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/about</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/about" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/methodology</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/methodology" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/methodology" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/methodology" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/methodology" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/editorial-policy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/editorial-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/editorial-policy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/editorial-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/editorial-policy" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/privacy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/privacy" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/terms</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/terms" />
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/acres-hectares-and-the-surveyors-chain</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/amp-hours-watt-hours-batteries</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/angstrom-nanometer-wavelength</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/barns-cross-sections</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/barrels-oil-beer-us-liquid</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/bbl-day-oil-production</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/beaufort-wind-scale</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/bits-vs-bytes-storage</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/calories-vs-kilocalories-food</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/candela-lumen-flashlight</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/carats-vs-karats</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/celsius-fahrenheit-deltas-vs-points</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/cfm-m3h-ventilation</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/cooking-conversions-grams-vs-cups</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/cst-sus-motor-oil-kinematic</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/cubic-yards-concrete-ordering</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/cup-measurements-us-uk-metric</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/curie-becquerel-radiation</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/dbm-mw-rf-power</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/decibels-sound-signal</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/ev-electronvolt-atomic</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/farads-microfarads-capacitor</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/fluid-ounces-us-vs-imperial</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/fuel-economy-mpg-us-uk-l100km</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/gbps-mbps-network-throughput</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/gpm-lpm-m3h-pump-curves</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/grains-bullets-pharmacy</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/grams-ounces-troy-jewellery</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/gray-rad-absorbed-dose</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/hectares-acres-farming</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/hp-vs-kw-vs-ps</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/hz-mhz-ghz-radio-spectrum</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/inch-fractions-decimals</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/inhg-barometer-weather</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/joules-calories-kwh-btu-reconciled</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/kg-to-lb-not-exactly-2-2</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/kgm3-gcm3-api-gravity</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/km-miles-road-signs</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/kwh-mwh-electric-bills</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/light-years-parsecs-au</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/liters-gallons-fuel-tanks</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/lux-footcandles-photography</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/mach-number-supersonic</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/mbps-vs-mbs-the-x8-trap</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/meters-to-feet-and-the-us-survey-foot</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/metric-short-long-ton</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/mm-inches-precision-machining</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/moles-avogadro-chemistry</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/nautical-miles-knots-aviation-feet</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/newtons-kgf-lbf-weight-vs-mass</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/oersted-am-magnetic-field</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/ohms-cable-resistance</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/pascal-mmhg-blood-pressure</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/precision-length-mils-microns-thou</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/psi-vs-bar-turbo-boost-pressure</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/radians-degrees-gradians</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/rankine-kelvin-thermodynamics</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/rpm-hz-motor-speeds</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/sievert-gray-rem-radiation-dose</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/sq-km-sq-mi-country-sizes</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/sqft-sqm-real-estate</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/stones-british-body-weight</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/tablespoons-teaspoons-ml-medicine</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/tesla-gauss-magnetic-flux-density</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/therms-ccf-natural-gas</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/torque-units-nm-lbft-kgfm</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/torr-pascal-vacuum</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/viscosity-cp-pas-oil-grades</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/weber-maxwell-magnetic-flux</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://turbounitconverter.com/learn/yards-meters-sports-fields</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/length</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/length" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/length" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/length" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/length" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/weight</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/weight" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/weight" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/weight" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/weight" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/temperature</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/temperature" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/temperature" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/temperature" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/temperature" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/volume</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/volume" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/volume" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/volume" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/volume" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/area</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/area" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/area" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/area" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/area" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/pressure</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/pressure" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/pressure" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/pressure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/pressure" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/energy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/energy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/energy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/energy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/energy" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/power</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/power" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/power" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/power" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/power" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/force</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/force" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/force" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/force" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/force" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/time</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/time" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/time" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/time" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/time" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/speed</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/speed" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/speed" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/speed" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/speed" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/angle</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/angle" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/angle" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/angle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/angle" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/fuel</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/fuel" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/fuel" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/fuel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/fuel" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/data</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/data" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/data" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/data" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/frequency</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/frequency" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/frequency" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/frequency" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/frequency" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/acceleration</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/acceleration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/acceleration" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/acceleration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/acceleration" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/torque</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/torque" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/torque" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/torque" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/torque" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/current</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/current" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/current" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/current" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/current" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/voltage</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/voltage" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/voltage" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/voltage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/voltage" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/resistance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/resistance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/resistance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/resistance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/resistance" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/flow</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/flow" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/flow" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/flow" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/flow" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/velocity-angular</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/velocity-angular" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/velocity-angular" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/velocity-angular" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/velocity-angular" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/acceleration-angular</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/acceleration-angular" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/acceleration-angular" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/acceleration-angular" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/acceleration-angular" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/specific-volume</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/specific-volume" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/specific-volume" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/specific-volume" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/specific-volume" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/moment-of-inertia</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/moment-of-inertia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/moment-of-inertia" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/moment-of-inertia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/moment-of-inertia" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/moment-of-force</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/moment-of-force" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/moment-of-force" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/moment-of-force" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/moment-of-force" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/fuel-efficiency-mass</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/fuel-efficiency-mass" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/fuel-efficiency-mass" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/fuel-efficiency-mass" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/fuel-efficiency-mass" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/fuel-efficiency-volume</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/fuel-efficiency-volume" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/fuel-efficiency-volume" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/fuel-efficiency-volume" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/fuel-efficiency-volume" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/temperature-interval</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/temperature-interval" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/temperature-interval" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/temperature-interval" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/temperature-interval" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/thermal-expansion</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/thermal-expansion" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/thermal-expansion" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/thermal-expansion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/thermal-expansion" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/thermal-resistance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/thermal-resistance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/thermal-resistance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/thermal-resistance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/thermal-resistance" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/thermal-conductivity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/thermal-conductivity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/thermal-conductivity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/thermal-conductivity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/thermal-conductivity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/specific-heat-capacity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/specific-heat-capacity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/specific-heat-capacity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/specific-heat-capacity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/specific-heat-capacity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/heat-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/heat-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/heat-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/heat-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/heat-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/heat-flux-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/heat-flux-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/heat-flux-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/heat-flux-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/heat-flux-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/heat-transfer-coefficient</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/heat-transfer-coefficient" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/heat-transfer-coefficient" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/heat-transfer-coefficient" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/heat-transfer-coefficient" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/heat-capacity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/heat-capacity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/heat-capacity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/heat-capacity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/heat-capacity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/enthalpy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/enthalpy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/enthalpy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/enthalpy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/enthalpy" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/entropy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/entropy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/entropy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/entropy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/entropy" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/flow-mass</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/flow-mass" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/flow-mass" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/flow-mass" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/flow-mass" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/flow-molar</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/flow-molar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/flow-molar" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/flow-molar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/flow-molar" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/mass-flux-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/mass-flux-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/mass-flux-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/mass-flux-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/mass-flux-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/concentration-molar</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/concentration-molar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/concentration-molar" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/concentration-molar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/concentration-molar" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/concentration-solution</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/concentration-solution" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/concentration-solution" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/concentration-solution" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/concentration-solution" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/viscosity-dynamic</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/viscosity-dynamic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/viscosity-dynamic" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/viscosity-dynamic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/viscosity-dynamic" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/viscosity-kinematic</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/viscosity-kinematic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/viscosity-kinematic" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/viscosity-kinematic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/viscosity-kinematic" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/surface-tension</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/surface-tension" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/surface-tension" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/surface-tension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/surface-tension" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/permeability</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/permeability" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/permeability" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/permeability" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/permeability" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/molality</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/molality" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/molality" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/molality" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/molality" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/osmolarity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/osmolarity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/osmolarity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/osmolarity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/osmolarity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/luminance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/luminance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/luminance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/luminance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/luminance" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/luminous-intensity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/luminous-intensity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/luminous-intensity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/luminous-intensity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/luminous-intensity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/luminous-flux</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/luminous-flux" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/luminous-flux" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/luminous-flux" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/luminous-flux" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/illumination</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/illumination" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/illumination" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/illumination" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/illumination" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/digital-image-resolution</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/digital-image-resolution" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/digital-image-resolution" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/digital-image-resolution" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/digital-image-resolution" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/charge</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/charge" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/charge" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/charge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/charge" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/linear-charge-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/linear-charge-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/linear-charge-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/linear-charge-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/linear-charge-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/surface-charge-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/surface-charge-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/surface-charge-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/surface-charge-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/surface-charge-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/volume-charge-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/volume-charge-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/volume-charge-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/volume-charge-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/volume-charge-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/linear-current-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/linear-current-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/linear-current-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/linear-current-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/linear-current-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/surface-current-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/surface-current-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/surface-current-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/surface-current-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/surface-current-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/electric-field-strength</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/electric-field-strength" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/electric-field-strength" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/electric-field-strength" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/electric-field-strength" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/electric-resistivity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/electric-resistivity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/electric-resistivity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/electric-resistivity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/electric-resistivity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/electric-conductance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/electric-conductance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/electric-conductance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/electric-conductance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/electric-conductance" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/electric-conductivity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/electric-conductivity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/electric-conductivity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/electric-conductivity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/electric-conductivity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/capacitance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/capacitance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/capacitance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/capacitance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/capacitance" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/inductance</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/inductance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/inductance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/inductance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/inductance" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/permittivity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/permittivity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/permittivity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/permittivity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/permittivity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/magnetomotive-force</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/magnetomotive-force" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/magnetomotive-force" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/magnetomotive-force" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/magnetomotive-force" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/magnetic-field-strength</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/magnetic-field-strength" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/magnetic-field-strength" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/magnetic-field-strength" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/magnetic-field-strength" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/magnetic-flux</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/magnetic-flux" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/magnetic-flux" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/magnetic-flux" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/magnetic-flux" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/magnetic-flux-density</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/magnetic-flux-density" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/magnetic-flux-density" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/magnetic-flux-density" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/magnetic-flux-density" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/radiation</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/radiation" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/radiation" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/radiation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/radiation" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/radiation-activity</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/radiation-activity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/radiation-activity" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/radiation-activity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/radiation-activity" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/radiation-exposure</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/radiation-exposure" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/radiation-exposure" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/radiation-exposure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/radiation-exposure" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/radiation-absorbed-dose</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/radiation-absorbed-dose" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/radiation-absorbed-dose" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/radiation-absorbed-dose" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/radiation-absorbed-dose" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/radiation-equivalent-dose</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/radiation-equivalent-dose" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/radiation-equivalent-dose" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/radiation-equivalent-dose" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/radiation-equivalent-dose" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/prefixes</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/prefixes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/prefixes" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/prefixes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/prefixes" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/data-transfer</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/data-transfer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/data-transfer" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/data-transfer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/data-transfer" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/typography</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/typography" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/typography" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/typography" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/typography" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/volume-lumber</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/volume-lumber" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/volume-lumber" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/volume-lumber" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/volume-lumber" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/volume-dry</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/volume-dry" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/volume-dry" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/volume-dry" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/volume-dry" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/sound-level</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turbounitconverter.com/c/sound-level" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es/c/sound-level" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi/c/sound-level" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/c/sound-level" />
   </url>
   <url>
     <loc>https://turbounitconverter.com/c/weight/kg-to-lb</loc>
@@ -1857,426 +2645,6 @@
   <url>
     <loc>https://turbounitconverter.com/c/fuel/kmpl-to-mpg</loc>
     <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/acres-hectares-and-the-surveyors-chain</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/amp-hours-watt-hours-batteries</loc>
-    <lastmod>2026-06-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/angstrom-nanometer-wavelength</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/barns-cross-sections</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/barrels-oil-beer-us-liquid</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/bbl-day-oil-production</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/beaufort-wind-scale</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/bits-vs-bytes-storage</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/calories-vs-kilocalories-food</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/candela-lumen-flashlight</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/carats-vs-karats</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/celsius-fahrenheit-deltas-vs-points</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/cfm-m3h-ventilation</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/cooking-conversions-grams-vs-cups</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/cst-sus-motor-oil-kinematic</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/cubic-yards-concrete-ordering</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/cup-measurements-us-uk-metric</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/curie-becquerel-radiation</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/dbm-mw-rf-power</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/decibels-sound-signal</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/ev-electronvolt-atomic</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/farads-microfarads-capacitor</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/fluid-ounces-us-vs-imperial</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/fuel-economy-mpg-us-uk-l100km</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/gbps-mbps-network-throughput</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/gpm-lpm-m3h-pump-curves</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/grains-bullets-pharmacy</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/grams-ounces-troy-jewellery</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/gray-rad-absorbed-dose</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/hectares-acres-farming</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/hp-vs-kw-vs-ps</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/hz-mhz-ghz-radio-spectrum</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/inch-fractions-decimals</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/inhg-barometer-weather</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/joules-calories-kwh-btu-reconciled</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/kg-to-lb-not-exactly-2-2</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/kgm3-gcm3-api-gravity</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/km-miles-road-signs</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/kwh-mwh-electric-bills</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/light-years-parsecs-au</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/liters-gallons-fuel-tanks</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/lux-footcandles-photography</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/mach-number-supersonic</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/mbps-vs-mbs-the-x8-trap</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/meters-to-feet-and-the-us-survey-foot</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/metric-short-long-ton</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/mm-inches-precision-machining</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/moles-avogadro-chemistry</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/nautical-miles-knots-aviation-feet</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/newtons-kgf-lbf-weight-vs-mass</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/oersted-am-magnetic-field</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/ohms-cable-resistance</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/pascal-mmhg-blood-pressure</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/precision-length-mils-microns-thou</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/psi-vs-bar-turbo-boost-pressure</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/radians-degrees-gradians</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/rankine-kelvin-thermodynamics</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/rpm-hz-motor-speeds</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/sievert-gray-rem-radiation-dose</loc>
-    <lastmod>2026-06-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/sq-km-sq-mi-country-sizes</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/sqft-sqm-real-estate</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/stones-british-body-weight</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/tablespoons-teaspoons-ml-medicine</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/tesla-gauss-magnetic-flux-density</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/therms-ccf-natural-gas</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/torque-units-nm-lbft-kgfm</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/torr-pascal-vacuum</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/viscosity-cp-pas-oil-grades</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/weber-maxwell-magnetic-flux</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://turbounitconverter.com/learn/yards-meters-sports-fields</loc>
-    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

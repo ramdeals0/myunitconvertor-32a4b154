@@ -1,7 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Moon, Sun, Menu, X, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { useI18n, LANGUAGES, Lang } from "@/lib/i18n";
+import { useI18n, LANGUAGES, Lang, withLocalePrefix, stripLocalePrefix } from "@/lib/i18n";
 import logo from "@/assets/Logo_webp.webp";
 
 export function SiteHeader() {
@@ -10,15 +10,18 @@ export function SiteHeader() {
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
   const path = useLocation().pathname;
+  const navigate = useNavigate();
   const { lang, setLang, t } = useI18n();
 
+  // Nav links are locale-aware so switching languages does not lose the prefix.
+  const localizedTo = (to: string) => withLocalePrefix(to, lang);
   const NAV = [
-    { to: "/", label: t("nav.home") },
-    { to: "/c/length", label: t("nav.length") },
-    { to: "/c/weight", label: t("nav.weight") },
-    { to: "/c/temperature", label: t("nav.temperature") },
-    { to: "/converters", label: t("nav.all") },
-    { to: "/learn", label: "Learn" },
+    { to: localizedTo("/"), label: t("nav.home") },
+    { to: localizedTo("/c/length"), label: t("nav.length") },
+    { to: localizedTo("/c/weight"), label: t("nav.weight") },
+    { to: localizedTo("/c/temperature"), label: t("nav.temperature") },
+    { to: localizedTo("/converters"), label: t("nav.all") },
+    { to: localizedTo("/learn"), label: "Learn" },
   ];
 
   useEffect(() => {
@@ -48,7 +51,7 @@ export function SiteHeader() {
   return (
     <header className="bg-surface-elevated/80 backdrop-blur-md border-b border-border fixed top-0 inset-x-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between h-16 px-4 md:px-6">
-        <Link to="/" className="flex items-center gap-2" aria-label="Turbo Unit Converter">
+        <Link to={localizedTo("/")} className="flex items-center gap-2" aria-label="Turbo Unit Converter">
           <img src={logo} alt="Turbo Unit Converter" className="h-9 md:h-10 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-7">
@@ -83,7 +86,15 @@ export function SiteHeader() {
                 {LANGUAGES.map((l) => (
                   <button
                     key={l.code}
-                    onClick={() => { setLang(l.code as Lang); setLangOpen(false); }}
+                    onClick={() => {
+                      const next = l.code as Lang;
+                      setLang(next);
+                      setLangOpen(false);
+                      // Navigate to the equivalent URL under the chosen locale
+                      // so the visible content and canonical stay consistent.
+                      const target = withLocalePrefix(stripLocalePrefix(path), next);
+                      navigate(target);
+                    }}
                     className={`w-full text-left px-3 py-2 text-sm hover:bg-muted transition flex items-center justify-between ${
                       l.code === lang ? "text-primary font-semibold" : "text-foreground"
                     }`}

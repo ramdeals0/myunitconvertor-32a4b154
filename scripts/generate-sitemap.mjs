@@ -14,15 +14,46 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
 const BASE = "https://turbounitconverter.com";
 
+// Supported UI locales — must match src/lib/i18n.tsx LOCALES.
+// English lives at the root; other locales live under /{lang}/… prefixes.
+const LOCALES = ["en", "es", "hi"];
+const DEFAULT_LOCALE = "en";
+function localePath(path, lang) {
+  if (lang === DEFAULT_LOCALE) return path;
+  return path === "/" ? `/${lang}` : `/${lang}${path}`;
+}
+
 // Use tsx to load the TS module — falls back to a regex parse if unavailable.
 async function loadCategories() {
   try {
-    // Prefer dynamic TS import (requires tsx runtime, which is invoked from npm script)
     const mod = await import(resolve(root, "src/lib/converters/data.ts"));
     return mod.CATEGORIES;
   } catch {
     return null;
   }
+}
+
+// A URL entry with hreflang alternates for each supported UI locale.
+function urlTagLocalized(path, { changefreq = "monthly", priority = "0.6", lastmod } = {}) {
+  const loc = `${BASE}${path}`;
+  const alternates = LOCALES.map(
+    (l) =>
+      `    <xhtml:link rel="alternate" hreflang="${l}" href="${BASE}${localePath(path, l)}" />`,
+  );
+  alternates.push(
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE}${localePath(path, DEFAULT_LOCALE)}" />`,
+  );
+  return [
+    "  <url>",
+    `    <loc>${loc}</loc>`,
+    lastmod ? `    <lastmod>${lastmod}</lastmod>` : null,
+    changefreq ? `    <changefreq>${changefreq}</changefreq>` : null,
+    priority ? `    <priority>${priority}</priority>` : null,
+    ...alternates,
+    "  </url>",
+  ]
+    .filter(Boolean)
+    .join("\n");
 }
 
 function urlTag(loc, { changefreq = "monthly", priority = "0.6", lastmod } = {}) {
@@ -106,7 +137,9 @@ async function main() {
   }
 
   const entries = [];
-  for (const r of STATIC_ROUTES) entries.push(urlTag(`${BASE}${r.path}`, { ...r, lastmod: today }));
+  // Static routes and category listings ship hreflang alternates for every
+  // supported UI locale so Google can surface the right language per user.
+  for (const r of STATIC_ROUTES) entries.push(urlTagLocalized(r.path, { ...r, lastmod: today }));
 
   const articleSlugs = await loadArticleSlugs();
   for (const slug of articleSlugs) {
@@ -114,7 +147,7 @@ async function main() {
   }
 
   for (const cat of categories) {
-    entries.push(urlTag(`${BASE}/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
+    entries.push(urlTagLocalized(`/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
   }
 
   // Pair pages: only those in the pSEO launch set.
@@ -148,7 +181,7 @@ async function main() {
 
   const xml = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...entries,
     "</urlset>",
     "",
