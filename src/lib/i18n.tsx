@@ -8,6 +8,34 @@ export const LANGUAGES: { code: Lang; label: string; native: string }[] = [
   { code: "hi", label: "Hindi", native: "हिन्दी" },
 ];
 
+export const LOCALES: Lang[] = ["en", "es", "hi"];
+export const DEFAULT_LOCALE: Lang = "en";
+export const SITE_URL = "https://turbounitconverter.com";
+
+/** Return the locale segment at the start of pathname, or null. */
+export function getLocaleFromPath(pathname: string): Lang | null {
+  const m = pathname.match(/^\/(es|hi|en)(?=\/|$)/);
+  return m ? (m[1] as Lang) : null;
+}
+
+/** Strip a leading /en /es /hi from pathname. Always starts with "/". */
+export function stripLocalePrefix(pathname: string): string {
+  const p = pathname.replace(/^\/(?:en|es|hi)(?=\/|$)/, "");
+  return p === "" ? "/" : p;
+}
+
+/** Prepend the locale prefix (except for default English which lives at root). */
+export function withLocalePrefix(pathname: string, lang: Lang): string {
+  const base = stripLocalePrefix(pathname);
+  if (lang === DEFAULT_LOCALE) return base;
+  return base === "/" ? `/${lang}` : `/${lang}${base}`;
+}
+
+/** Build the fully-qualified canonical URL for a path in a given locale. */
+export function localeHref(pathname: string, lang: Lang): string {
+  return `${SITE_URL}${withLocalePrefix(pathname, lang)}`;
+}
+
 type Dict = Record<string, string>;
 
 const en: Dict = {
@@ -372,14 +400,27 @@ type I18nContextValue = {
 const I18nContext = createContext<I18nContextValue | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const initial: Lang = (() => {
+    if (typeof window === "undefined") return "en";
+    const fromPath = getLocaleFromPath(window.location.pathname);
+    if (fromPath) return fromPath;
+    const saved = localStorage.getItem("lang") as Lang | null;
+    if (saved && DICTS[saved]) return saved;
+    return "en";
+  })();
+  const [lang, setLangState] = useState<Lang>(initial);
 
   useEffect(() => {
-    const saved = (typeof localStorage !== "undefined" && localStorage.getItem("lang")) as Lang | null;
-    if (saved && DICTS[saved]) {
-      setLangState(saved);
-      document.documentElement.lang = saved;
-    }
+    document.documentElement.lang = lang;
+  }, [lang]);
+
+  useEffect(() => {
+    const sync = () => {
+      const fromPath = getLocaleFromPath(window.location.pathname) ?? "en";
+      setLangState((prev) => (prev === fromPath ? prev : fromPath));
+    };
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
   }, []);
 
   const setLang = (l: Lang) => {
