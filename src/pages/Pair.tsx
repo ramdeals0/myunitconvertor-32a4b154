@@ -26,12 +26,15 @@ function parsePair(pair: string): [string, string] {
 
 export default function PairPage() {
   const { category: categoryId, pair } = useParams<{ category: string; pair: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const category = categoryId ? CATEGORY_MAP[categoryId] : undefined;
   const [fromId, toId] = pair ? parsePair(pair) : ["", ""];
   const f = category?.units.find((u) => u.id === fromId);
   const t = category?.units.find((u) => u.id === toId);
 
-  if (!category || !f || !t) return <Navigate to="/404" replace />;
+  if (!category || !f || !t) return <Navigate to={L("/404")} replace />;
 
   const examples = [1, 2, 5, 10, 25, 50, 100, 250, 500, 1000];
   const factor = convert(category, 1, f.id, t.id);
@@ -51,8 +54,10 @@ export default function PairPage() {
     `Convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) instantly. Free, accurate ${category.name.toLowerCase()} converter with formula, examples & no signup.`
   ).slice(0, 160);
   const heading = gen?.meta.h1 || pseo?.h1 || `${f.name} to ${t.name}`;
-  const url = `https://turbounitconverter.com/c/${category.id}/${pair}`;
-  const catUrl = `https://turbounitconverter.com/c/${category.id}`;
+  const url = LU(`/c/${category.id}/${pair}`);
+  const catUrl = LU(`/c/${category.id}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const faqs = [
     { q: `How do I convert ${f.name.toLowerCase()} to ${t.name.toLowerCase()}?`, a: `Multiply the ${f.name.toLowerCase()} value by ${formatResult(factor)} to get the equivalent in ${t.name.toLowerCase()}.` },
