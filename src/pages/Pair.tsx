@@ -35,6 +35,8 @@ export default function PairPage() {
   const examples = [1, 2, 5, 10, 25, 50, 100, 250, 500, 1000];
   const factor = convert(category, 1, f.id, t.id);
   const inverse = convert(category, 1, t.id, f.id);
+  const realExamples = getRealWorldExamples(category, f.id, t.id, 6);
+
 
   // pSEO overrides from the build-time CSV grid (by category + slug).
   const slug = `${f.id}-to-${t.id}`;
