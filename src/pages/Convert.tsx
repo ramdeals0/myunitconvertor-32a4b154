@@ -37,8 +37,11 @@ function resolvePair(pair: string): { category: Category; from: Unit; to: Unit }
 
 export default function ConvertPage() {
   const { pair } = useParams<{ pair: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const resolved = pair ? resolvePair(pair) : null;
-  if (!resolved) return <Navigate to="/404" replace />;
+  if (!resolved) return <Navigate to={L("/404")} replace />;
   const { category, from: f, to: t } = resolved;
 
   const factor = convert(category, 1, f.id, t.id);
@@ -52,7 +55,9 @@ export default function ConvertPage() {
 
   const title = `${fLabel} to ${tLabel} Converter — ${f.name} to ${t.name}`.slice(0, 60);
   const desc = `Instantly convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) online — free, accurate, and engineering-grade precise. 1 ${f.symbol} = ${formatResult(factor)} ${t.symbol}.`.slice(0, 160);
-  const url = `https://turbounitconverter.com/convert/${fSlug}-to-${tSlug}`;
+  const url = LU(`/convert/${fSlug}-to-${tSlug}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const faqs = [
     { q: `How many ${t.name.toLowerCase()} are in a ${f.name.toLowerCase()}?`, a: `1 ${f.symbol} equals ${formatResult(factor)} ${t.symbol}.` },
