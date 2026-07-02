@@ -1,0 +1,39 @@
+{
+  "slug": "torr-pascal-vacuum",
+  "title": "Torr and Pascal: The Vacuum Technology Ladder",
+  "h1": "Torr and pascal — reading vacuum-system datasheets",
+  "description": "Vacuum-chamber datasheets span 12 orders of magnitude of pressure. Here is the low-pressure ladder from rough to ultra-high vacuum in torr, mbar and Pa.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Vacuum engineering & physics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ISO 3529 and AVS vacuum classification" },
+  "hero": "1 torr = 133 Pa. Vacuum spans 15 decades from atmospheric down to 10⁻¹² torr — and each decade needs a different pump technology.",
+  "body": [
+    "Vacuum technology cannot get away with one pump or one gauge. Every ten-fold drop in pressure needs a different technology, and every industry that uses vacuum has picked its favourite unit. Torr survives in the US; mbar dominates Europe; Pa is the SI answer nobody uses in vacuum labs.",
+    "## The exact factors",
+    "> 1 torr = 133.3224 Pa = 1.333 mbar\n> 1 mbar = 100 Pa = 0.7501 torr\n> 1 Pa = 0.0075 torr = 0.01 mbar\n> Atmospheric: 760 torr = 1013 mbar = 101,325 Pa",
+    "## The vacuum ladder (torr / mbar / Pa)",
+    "Rough vacuum: 760 – 1 torr (10³ – 1 mbar). Rotary vane pumps.\nMedium vacuum: 1 – 10⁻³ torr (1 – 10⁻³ mbar). Roots blowers.\nHigh vacuum: 10⁻³ – 10⁻⁸ torr (10⁻³ – 10⁻⁸ mbar). Turbomolecular pumps.\nUltra-high vacuum (UHV): 10⁻⁸ – 10⁻¹² torr. Ion pumps, cryopumps, sublimation pumps.\nExtreme high vacuum (XHV): below 10⁻¹² torr. Combined pumping, extensive baking.",
+    "## What the low-end means physically",
+    "At 10⁻⁶ torr, the mean free path of a gas molecule is about 50 m — molecules travel between chamber walls without colliding with each other. At 10⁻¹⁰ torr (UHV), it takes over an hour for a monolayer of gas to deposit on a clean surface. Surface science and semiconductor deposition need this regime; ordinary vacuum coating does not.",
+    "## Regional convention",
+    "US semiconductor fabs: torr. European semiconductor fabs: mbar. Physics research: increasingly Pa but torr and mbar dominate historical literature. Space environment: Pa (agreeing with ISO). No unification pressure in sight — the labels on gauges match the local convention.",
+    "## Worked example — CVD reactor at 10⁻³ torr",
+    "10⁻³ torr = 133 × 10⁻³ Pa = 0.133 Pa = 10⁻³ mbar. At 300 K this is a molecular density of 3.2 × 10¹³ molecules/cm³. A 10 sccm nitrogen inlet (standard cubic cm/min at 1 atm) is 4.5 × 10¹⁷ molecules/s — the reactor pumps this steadily to maintain the mTorr set point. Gas flow, pumping speed and chamber volume set the equilibrium pressure directly.",
+    "## The five-second recap",
+    "1 torr = 133 Pa = 1.33 mbar. Each decade of vacuum needs a different pump. Torr in US, mbar in EU, Pa in SI-strict labs."
+  ],
+  "faqs": [
+    { "q": "Is torr the same as mmHg?", "a": "To six significant figures, yes. Modern SI-strict practice prefers 'torr' because mmHg depends on mercury density and gravity, while torr is a defined ratio (1/760 atm)." },
+    { "q": "What is 'micron' in vacuum jargon?", "a": "1 micron = 1 millitorr = 0.133 Pa. HVAC vacuum service quotes down to 500 microns for AC line dehydration." },
+    { "q": "Why can't a rotary pump reach UHV?", "a": "Backstreaming oil vapour sets a floor around 10⁻³ torr. UHV requires oil-free pumps (turbo, ion, cryo) and bakeout to drive off adsorbed water." }
+  ],
+  "related": [
+    { "label": "torr to Pa converter", "href": "/c/pressure/torr-to-pa" },
+    { "label": "mbar to Pa converter", "href": "/c/pressure/mbar-to-pa" },
+    { "label": "Pa to torr converter", "href": "/c/pressure/pa-to-torr" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "viscosity-cp-pas-oil-grades",
+  "title": "Centipoise and Pascal-Seconds: Motor Oil Grades",
+  "h1": "Centipoise and pascal-seconds — reading viscosity spec sheets",
+  "description": "Motor oil is spec'd in SAE grades, but underneath is a real viscosity in centipoise or millipascal-seconds. Here is how the units and grades connect.",
+  "category": "Viscosity",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Tribology & lubrication" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against SAE J300 and ASTM D2270" },
+  "hero": "1 cP = 1 mPa·s exactly — the SI system quietly matched the CGS number so nobody had to relearn viscosity tables.",
+  "body": [
+    "Dynamic viscosity is one of the few properties where CGS and SI units produce identical numbers. 1 centipoise = 1 millipascal-second, so a spec sheet can quote either without confusion. What confuses is the mapping to consumer grades — SAE 5W-30, ISO VG 46, AGMA 5 — none of which are viscosities themselves.",
+    "## The exact factors",
+    "> 1 poise (P) = 0.1 Pa·s (exact)\n> 1 centipoise (cP) = 1 mPa·s = 10⁻³ Pa·s\n> Water at 20°C: 1.002 cP\n> Motor oil 40°C: 30–100 cP\n> Honey 25°C: 10,000 cP\n> Kinematic: 1 stokes (St) = 10⁻⁴ m²/s; 1 cSt = 1 mm²/s",
+    "## Dynamic vs kinematic",
+    "Dynamic viscosity (µ, cP or Pa·s) is the resistance to flow under an applied stress. Kinematic viscosity (ν, cSt or mm²/s) is µ divided by density. Oil datasheets list both because different measurement methods produce different natural outputs. ν = µ / ρ, always.",
+    "## SAE motor oil grades",
+    "SAE J300 defines multigrade oils by two numbers. The 'W' number (5W, 10W, 15W) is a low-temperature pumpability spec measured in cP at −20 to −35°C. The second number (30, 40, 50) is a 100°C kinematic viscosity range in cSt: SAE 30 = 9.3–12.5 cSt; SAE 40 = 12.5–16.3 cSt; SAE 50 = 16.3–21.9 cSt. A 5W-30 must pass both a cold pump test and land in the 30-grade viscosity range hot.",
+    "## Industrial oil grades",
+    "ISO VG (Viscosity Grade) numbers the ISO 3448 mid-point kinematic viscosity at 40°C in cSt: ISO VG 32 = 28.8–35.2 cSt at 40°C. ISO VG 68, VG 100, VG 220 follow a 1.5× progression. This system is used for gear, hydraulic and turbine oils worldwide.",
+    "## Worked example — a hydraulic system",
+    "A hydraulic ram spec'd for ISO VG 46 oil operates at 60°C. ISO VG 46 at 40°C is 41.4–50.6 cSt. At 60°C (from a VI = 100 chart) it drops to roughly 22 cSt = 22 mm²/s. Density about 870 kg/m³, so dynamic viscosity µ = 22 × 10⁻⁶ × 870 = 0.0191 Pa·s = 19.1 cP. That figure feeds the Reynolds number for the ram's oil passages.",
+    "## The five-second recap",
+    "1 cP = 1 mPa·s. Kinematic viscosity (cSt) = dynamic / density. SAE and ISO grades map to specific cSt ranges — always check the datasheet's cSt at operating temperature."
+  ],
+  "faqs": [
+    { "q": "Why is water exactly 1 cP?", "a": "Convenient coincidence. The centipoise was defined so that room-temperature water is (nearly) unity, making comparisons intuitive." },
+    { "q": "What is a 'viscosity index'?", "a": "VI is a dimensionless number that describes how viscosity changes with temperature. Higher VI = flatter curve. Multigrade motor oils have VI 150–200; straight-grade oils, 90–100." },
+    { "q": "Does 5W-30 mean the oil is thinner cold?", "a": "It means it passes a cold pump test. Any oil is thicker cold; the 'W' rating specifies how thick it can be at low temperature." }
+  ],
+  "related": [
+    { "label": "cP to Pa·s converter", "href": "/c/viscosity-dynamic/cp-to-pas" },
+    { "label": "cSt to m²/s converter", "href": "/c/viscosity-kinematic/cst-to-m2s" },
+    { "label": "Pa·s to cP converter", "href": "/c/viscosity-dynamic/pas-to-cp" }
+  ]
+}

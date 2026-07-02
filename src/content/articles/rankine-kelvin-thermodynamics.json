@@ -1,0 +1,37 @@
+{
+  "slug": "rankine-kelvin-thermodynamics",
+  "title": "Rankine and Kelvin: Absolute Temperature Scales",
+  "h1": "Rankine and kelvin — the two absolute temperature scales",
+  "description": "Kelvin is SI. Rankine is US customary. Both start at absolute zero. Here is why chemical engineers in the US still use Rankine and how to convert.",
+  "category": "Temperature",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Thermodynamics" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST steam tables and IAPWS IF-97" },
+  "hero": "Kelvin sizes its degree like Celsius. Rankine sizes its degree like Fahrenheit. Both start at absolute zero. Chemical engineers switch based on what units the rest of their equations use.",
+  "body": [
+    "The kelvin (K) is the SI absolute temperature. The Rankine (°R) is its Fahrenheit-sized counterpart. Both are needed because thermodynamic formulas — ideal gas law, Stefan-Boltzmann, Clausius-Clapeyron — require an absolute temperature, and mixing an absolute with a relative scale gives nonsense.",
+    "## The exact factors",
+    "> °R = °F + 459.67\n> K = °C + 273.15\n> °R = K × 9/5\n> Water freezes at 273.15 K = 491.67 °R\n> Water boils at 373.15 K = 671.67 °R",
+    "## Where each is used",
+    "Kelvin: everywhere except US thermodynamics textbooks. Rankine: US chemical, mechanical and petroleum engineering, especially when the rest of the calculation is in Fahrenheit and psi. Steam tables in US units are Rankine. Steam tables in SI units are kelvin.",
+    "## Ideal gas law in both systems",
+    "SI: PV = nRT with R = 8.314 J/(mol·K). US: PV = nRT with R = 10.73 psi·ft³/(lbmol·°R). Same physics, different unit-consistent gas constants. Mixing them — using °F instead of °R — introduces a 459-unit offset error that swamps any signal.",
+    "## Worked example — ideal gas density at 70°F, 14.7 psi",
+    "T = 70 + 459.67 = 529.67 °R. P = 14.7 psi. n/V = P/RT = 14.7 / (10.73 × 529.67) = 2.586 × 10⁻³ lbmol/ft³. For air (M = 28.97 lb/lbmol): ρ = 0.0749 lb/ft³ = 1.200 kg/m³. Compare SI: T = 294.26 K, P = 101,325 Pa, ρ = 101,325 × 0.029 / (8.314 × 294.26) = 1.201 kg/m³. Agreement to 0.1% — as it must be.",
+    "## The five-second recap",
+    "Kelvin: SI absolute, Celsius-sized degree. Rankine: US absolute, Fahrenheit-sized degree. °R = °F + 459.67. Always use absolute temperature in thermodynamic formulas."
+  ],
+  "faqs": [
+    { "q": "What is absolute zero?", "a": "0 K = −273.15°C = −459.67°F = 0 °R. Point at which all classical thermal motion ceases. Unattainable, but modern laser cooling reaches within nanokelvin." },
+    { "q": "Do engineers actually still use Rankine?", "a": "Yes, especially in US HVAC, refrigeration, oil & gas process engineering. Any steam or gas calculation in US units uses Rankine." },
+    { "q": "Is kelvin capitalised?", "a": "The unit name 'kelvin' is lowercase (like 'metre'). The symbol 'K' is capitalised (honouring Lord Kelvin). No degree sign — never '°K'." }
+  ],
+  "related": [
+    { "label": "K to °R converter", "href": "/c/temperature/k-to-r" },
+    { "label": "°F to °R converter", "href": "/c/temperature/f-to-r" },
+    { "label": "°C to K converter", "href": "/c/temperature/c-to-k" }
+  ]
+}
