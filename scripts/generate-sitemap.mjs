@@ -137,7 +137,9 @@ async function main() {
   }
 
   const entries = [];
-  for (const r of STATIC_ROUTES) entries.push(urlTag(`${BASE}${r.path}`, { ...r, lastmod: today }));
+  // Static routes and category listings ship hreflang alternates for every
+  // supported UI locale so Google can surface the right language per user.
+  for (const r of STATIC_ROUTES) entries.push(urlTagLocalized(r.path, { ...r, lastmod: today }));
 
   const articleSlugs = await loadArticleSlugs();
   for (const slug of articleSlugs) {
@@ -145,7 +147,7 @@ async function main() {
   }
 
   for (const cat of categories) {
-    entries.push(urlTag(`${BASE}/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
+    entries.push(urlTagLocalized(`/c/${cat.id}`, { changefreq: "monthly", priority: "0.8", lastmod: today }));
   }
 
   // Pair pages: only those in the pSEO launch set.
@@ -179,7 +181,7 @@ async function main() {
 
   const xml = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...entries,
     "</urlset>",
     "",
