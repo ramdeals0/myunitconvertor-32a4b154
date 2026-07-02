@@ -10,15 +10,18 @@ export function SiteHeader() {
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
   const path = useLocation().pathname;
+  const navigate = useNavigate();
   const { lang, setLang, t } = useI18n();
 
+  // Nav links are locale-aware so switching languages does not lose the prefix.
+  const localizedTo = (to: string) => withLocalePrefix(to, lang);
   const NAV = [
-    { to: "/", label: t("nav.home") },
-    { to: "/c/length", label: t("nav.length") },
-    { to: "/c/weight", label: t("nav.weight") },
-    { to: "/c/temperature", label: t("nav.temperature") },
-    { to: "/converters", label: t("nav.all") },
-    { to: "/learn", label: "Learn" },
+    { to: localizedTo("/"), label: t("nav.home") },
+    { to: localizedTo("/c/length"), label: t("nav.length") },
+    { to: localizedTo("/c/weight"), label: t("nav.weight") },
+    { to: localizedTo("/c/temperature"), label: t("nav.temperature") },
+    { to: localizedTo("/converters"), label: t("nav.all") },
+    { to: localizedTo("/learn"), label: "Learn" },
   ];
 
   useEffect(() => {
