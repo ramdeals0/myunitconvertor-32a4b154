@@ -1,7 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Moon, Sun, Menu, X, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { useI18n, LANGUAGES, Lang } from "@/lib/i18n";
+import { useI18n, LANGUAGES, Lang, withLocalePrefix, stripLocalePrefix } from "@/lib/i18n";
 import logo from "@/assets/Logo_webp.webp";
 
 export function SiteHeader() {
