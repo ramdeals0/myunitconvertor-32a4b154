@@ -5,9 +5,11 @@ import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
 import { CATEGORY_MAP, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
+import { getRealWorldExamples } from "@/lib/converters/realWorldExamples";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 import { pairIndexability } from "@/lib/seo/indexability";
 import { getArticlesByCategoryHint, getAllArticles } from "@/content/articles";
+
 import {
   getGeneratedPair,
   MdParagraphs,
