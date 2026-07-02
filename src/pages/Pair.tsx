@@ -9,6 +9,7 @@ import { getRealWorldExamples } from "@/lib/converters/realWorldExamples";
 import { getPseoOverride, getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
 import { pairIndexability } from "@/lib/seo/indexability";
 import { getArticlesByCategoryHint, getAllArticles } from "@/content/articles";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 import {
   getGeneratedPair,
