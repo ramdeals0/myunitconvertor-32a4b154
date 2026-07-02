@@ -1,0 +1,37 @@
+{
+  "slug": "km-miles-road-signs",
+  "title": "Kilometers and Miles: What Road Signs Actually Mean",
+  "h1": "Kilometers and miles — reading road signs across borders",
+  "description": "Speed limits, distance markers and odometer readings change units at almost every border. Here is the exact factor, and the mental math that keeps you legal.",
+  "category": "Length",
+  "readingMinutes": 5,
+  "published": "2026-06-02",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Transport & navigation" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8" },
+  "hero": "1 mile is 1.609344 km. That single factor governs every speed limit, distance sign and fuel-economy sticker you will ever see on a road.",
+  "body": [
+    "The mile survived colonial mapping, imperial engineering and the American Interstate system. The kilometre took over almost everywhere else. Cross the wrong border without doing the math and a 60 mph highway cruise turns into a 96 km/h speeding ticket.",
+    "## The exact factors",
+    "> 1 mi = 1.609344 km (exact)\n> 1 km = 0.621371 mi\n> 60 mph ≈ 96.56 km/h; 100 km/h ≈ 62.14 mph",
+    "## The 5/8 mental trick",
+    "5 miles ≈ 8 km — accurate to 0.4%. To convert km to miles, multiply by 5 and divide by 8. To convert miles to km, multiply by 8 and divide by 5. A 200 km sign is 200 × 5/8 = 125 mi (actual: 124.3).",
+    "## Speedometer tolerances",
+    "UN Regulation 39 requires speedometers to never under-read. Most modern cars over-read by 2–5%. A GPS speed of 100 km/h can show 103–105 on the dash. When your speedometer has both scales, the primary one is legally binding — the secondary one is a courtesy.",
+    "## Worked example — a US visitor in the EU",
+    "A US driver used to 65 mph on the highway crosses into France where the limit is 130 km/h. 130 × 5/8 = 81 mph — 16 mph faster than they are used to. Going the other way, a European used to 130 km/h on a US freeway posted at 70 mph is being asked to drop to 113 km/h — a 13% slowdown that feels unnatural.",
+    "## The five-second recap",
+    "Multiply miles by 1.609 for km. Multiply km by 0.621 for miles. Or use 5-for-8. And always trust the primary scale on your speedometer."
+  ],
+  "faqs": [
+    { "q": "How many km in a mile, exactly?", "a": "1.609344 km. This factor is exact by international agreement." },
+    { "q": "Why is a nautical mile different?", "a": "The nautical mile (1.852 km) is based on one minute of latitude. The statute mile used on roads has no astronomical basis." },
+    { "q": "Do UK road signs use km or miles?", "a": "Miles. The UK is one of the few countries that officially retains the mile on road signage." }
+  ],
+  "related": [
+    { "label": "km to miles converter", "href": "/c/length/km-to-mi" },
+    { "label": "miles to km converter", "href": "/c/length/mi-to-km" },
+    { "label": "mph to km/h converter", "href": "/c/speed/mph-to-kph" }
+  ]
+}

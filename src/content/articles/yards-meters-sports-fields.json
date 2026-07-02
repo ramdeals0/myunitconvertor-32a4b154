@@ -1,0 +1,39 @@
+{
+  "slug": "yards-meters-sports-fields",
+  "title": "Yards and Meters on the Sports Field",
+  "h1": "Yards and metres — why every sport picked a different scale",
+  "description": "American football measures in yards. Track and field measures in metres. Soccer stadiums straddle both. Here is the conversion, and the sport-by-sport reason.",
+  "category": "Length",
+  "readingMinutes": 5,
+  "published": "2026-06-07",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Sports metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IAAF and FIFA field-of-play specifications" },
+  "hero": "1 yard = 0.9144 m. Close enough to a metre to be confusing, far enough to matter when a world record hangs on hundredths.",
+  "body": [
+    "The yard survives because entire sports were designed around it. The metre survives because most of the world adopted it before those sports were codified elsewhere. The two systems now overlap in awkward ways: FIFA pitches are 90–120 m; NFL fields are exactly 100 yd = 91.44 m; and track meets have quietly abolished the 100-yard dash in favour of the 100 m since the 1970s.",
+    "## The exact factors",
+    "> 1 yd = 0.9144 m (exact) = 3 ft = 36 in\n> 100 yd = 91.44 m; 100 m = 109.36 yd\n> 1 mi = 1,760 yd = 1,609.344 m",
+    "## Track: the 400 m vs 440 yd swap",
+    "US high-school tracks were 440 yd = 402.336 m until the 1970s. When world records unified on the 400 m, tracks were resurfaced 2.34 m shorter. Old records were retired en masse because a 440 yd time is not directly comparable — a 46.0-second 440 is not a 46.0-second 400.",
+    "## American football: the yard is the whole game",
+    "A first down is 10 yd. A field goal from the 20 is a 37-yard kick (including 7 yd of holder setup and the 10 yd end zone). Converting to metric loses the round numbers: a 37-yard kick is 33.83 m, which feels arbitrary. This is why every American broadcaster stays in yards even when the game is played in London.",
+    "## Soccer: pitch tolerances that hide the mismatch",
+    "FIFA specifies 100–110 m long × 64–75 m wide. That translates loosely as 110–120 yd × 70–80 yd. Wembley is 105 × 68 m = 114.8 × 74.4 yd. Most US-built MLS stadiums, converted from football fields, sit at the smaller end of the range because the yard-based footprint they inherited is tighter than a European purpose-built pitch.",
+    "## Worked example — a marathon in yards",
+    "The marathon distance is 42,195 m — set in London 1908 so the race could finish in front of the royal box. Convert: 42,195 / 0.9144 = 46,145 yd = 26 mi 385 yd. That awkward '385 yd' has appeared in every marathon description since.",
+    "## The five-second recap",
+    "1 yd = 0.9144 m. Track uses m. Football uses yd. Soccer straddles. And marathons carry an extra 385 yd because of a 1908 royal viewing preference."
+  ],
+  "faqs": [
+    { "q": "Why 42,195 m for a marathon?", "a": "The 1908 London course was extended from 26 miles so the finish would be in front of Queen Alexandra. The odd number stuck as the official distance in 1921." },
+    { "q": "Are NFL yards the same as UK yards?", "a": "Yes — the international yard has been 0.9144 m exactly since 1959." },
+    { "q": "Is a 100 m dash time comparable to a 100 yd dash?", "a": "Not directly. 100 m is 9.36% longer. A rough conversion: 100 yd time × 1.09 ≈ 100 m time, but acceleration profiles differ enough that world-class sprinters run both separately." }
+  ],
+  "related": [
+    { "label": "yards to m converter", "href": "/c/length/yd-to-m" },
+    { "label": "m to yards converter", "href": "/c/length/m-to-yd" },
+    { "label": "ft to m converter", "href": "/c/length/ft-to-m" }
+  ]
+}

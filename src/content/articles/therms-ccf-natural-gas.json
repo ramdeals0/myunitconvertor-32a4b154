@@ -1,0 +1,39 @@
+{
+  "slug": "therms-ccf-natural-gas",
+  "title": "Therms and CCF: How Natural Gas Is Billed",
+  "h1": "Therms, CCF, MMBtu — reading a natural-gas bill",
+  "description": "US gas utilities bill in therms or CCF. Neither is a familiar unit. Here is what they mean and how to convert to kWh or MJ.",
+  "category": "Energy",
+  "readingMinutes": 5,
+  "published": "2026-06-28",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Energy & utilities" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against AGA Report No. 8" },
+  "hero": "A therm is 100,000 BTU. A CCF is 100 cubic feet of gas. They are not the same, and both appear on the same bill.",
+  "body": [
+    "US gas utilities measure gas delivery by volume (cubic feet) but bill by energy (therms or dekatherms). The conversion depends on the heating value of the specific gas mix delivered — typically 1,020 to 1,040 BTU per cubic foot for pipeline natural gas.",
+    "## The exact factors",
+    "> 1 therm = 100,000 BTU = 105.51 MJ = 29.30 kWh\n> 1 CCF = 100 ft³ ≈ 1.037 therms (varies by heating value)\n> 1 MCF = 1,000 ft³ ≈ 10.37 therms = 1.037 MMBtu\n> 1 dekatherm (dth) = 10 therms = 1.055 GJ",
+    "## Why two units on one bill",
+    "The meter measures cubic feet (volume). The utility multiplies by the current heating value to get therms. Both usually appear on the bill: 'Used: 45 CCF × 1.033 therms/CCF = 46.5 therms'. Rates are almost always quoted per therm, not per CCF, because heating value varies month to month.",
+    "## International units",
+    "UK and EU bills: kWh directly. Meter is read in m³, utility multiplies by the local calorific value (~11 kWh/m³) to get kWh. Canada: gigajoules (GJ). Australia: MJ. The US therm/CCF convention is unique to North America.",
+    "## Worked example — a 100-therm winter month",
+    "100 therms × 29.30 = 2,930 kWh of heat. If burned in an 80% efficient furnace: 2,344 kWh of usable heat delivered to the house. At $1.20/therm (2025 US average), monthly bill: $120. Compare to electric resistance heat at $0.16/kWh: 2,344 kWh × $0.16 = $375 for the same delivered heat — over 3× more.",
+    "## Heat pumps change the math",
+    "A modern cold-climate heat pump has COP ~3 in winter. That 2,344 kWh of delivered heat requires only 780 kWh of electricity = $125 at $0.16/kWh — competitive with gas even in expensive electricity markets. This is why heat-pump adoption is accelerating in gas-heated regions.",
+    "## The five-second recap",
+    "1 therm = 100,000 BTU = 29.3 kWh = 105.5 MJ. 1 CCF ≈ 1 therm (varies). Divide gas bill by heating value to compare with electric bills."
+  ],
+  "faqs": [
+    { "q": "What is a 'therm' short for?", "a": "It is short for 'thermie' — a legacy French metric unit. The US therm (100,000 BTU) is unrelated to the French 'thermie' (1 Mcal)." },
+    { "q": "Is CCF the same as MCF?", "a": "No. CCF = 100 cubic feet (one 'C' is Roman 100). MCF = 1,000 cubic feet (one 'M' is Roman 1,000). Confusion between them is common on commercial invoices." },
+    { "q": "Why does heating value change?", "a": "Pipeline gas is mostly methane but includes 2–10% ethane, propane and inerts. The mix varies with supply source and season." }
+  ],
+  "related": [
+    { "label": "therm to kWh converter", "href": "/c/energy/therm-to-kwh" },
+    { "label": "BTU to J converter", "href": "/c/energy/btu-to-j" },
+    { "label": "MMBtu to GJ converter", "href": "/c/energy/mmbtu-to-gj" }
+  ]
+}

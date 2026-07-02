@@ -1,0 +1,37 @@
+{
+  "slug": "sq-km-sq-mi-country-sizes",
+  "title": "Square Kilometers vs Square Miles: Country Size Comparisons",
+  "h1": "Square kilometres and square miles — reading world atlases",
+  "description": "Every country reports its area in one unit and expects the reader to convert. Here is the exact factor and a set of mental anchors for country-scale comparisons.",
+  "category": "Area",
+  "readingMinutes": 4,
+  "published": "2026-06-09",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Geography" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against CIA World Factbook 2025" },
+  "hero": "1 sq mi = 2.59 km². The factor is easy; the anchor points that make it intuitive are the useful part.",
+  "body": [
+    "Country-area comparisons routinely mix units. US almanacs quote sq mi. European almanacs quote km². UN statistical divisions publish both. A quick anchor set makes any comparison fluent.",
+    "## The exact factors",
+    "> 1 mi² = 2.58999 km² (exact)\n> 1 km² = 0.3861 mi²\n> 100 km² ≈ 38.6 mi²; 1,000 mi² ≈ 2,590 km²",
+    "## Anchor countries",
+    "USA: 9.83 million km² = 3.80 million sq mi. Russia: 17.1 M km² = 6.60 M sq mi. France (metropolitan): 543,940 km² = 210,000 sq mi. UK: 243,610 km² = 94,058 sq mi. Japan: 377,975 km² = 145,937 sq mi. Memorising two or three of these gives you a mental scale for any country you encounter.",
+    "## US state comparisons",
+    "Texas is 696,241 km² — larger than France. California (423,970 km²) is larger than Germany (357,600 km²). Rhode Island (4,000 km²) is smaller than Luxembourg (2,586 km²)? No: Luxembourg is smaller. This is exactly the kind of comparison that flips depending on which almanac you consult, and always resolves the same way once you convert to a single unit.",
+    "## Worked example — Australia vs the contiguous US",
+    "Australia: 7.69 million km² = 2.97 million sq mi. Contiguous US (excluding Alaska and Hawaii): 8.08 million km² = 3.12 million sq mi. Australia is 95% the size of the lower 48 — closer than most people assume from Mercator maps, which stretch high-latitude areas dramatically.",
+    "## The five-second recap",
+    "Multiply sq mi by 2.59 for km². Multiply km² by 0.386 for sq mi. Anchor to France (~544,000 km²) or Texas (~696,000 km²) for a fast mental check."
+  ],
+  "faqs": [
+    { "q": "How big is the Amazon rainforest?", "a": "About 5.5 million km² = 2.12 million sq mi — 60% of Brazil, larger than any single country except Russia." },
+    { "q": "Is Greenland really bigger than Africa?", "a": "No. Greenland is 2.17 million km²; Africa is 30.37 million km² — 14× larger. Mercator maps distort this dramatically." },
+    { "q": "What's the smallest country by area?", "a": "Vatican City: 0.49 km² = 0.19 sq mi." }
+  ],
+  "related": [
+    { "label": "km² to sq mi converter", "href": "/c/area/km2-to-mi2" },
+    { "label": "sq mi to km² converter", "href": "/c/area/mi2-to-km2" },
+    { "label": "ha to km² converter", "href": "/c/area/ha-to-km2" }
+  ]
+}

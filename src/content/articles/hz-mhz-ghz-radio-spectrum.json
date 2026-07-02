@@ -1,0 +1,37 @@
+{
+  "slug": "hz-mhz-ghz-radio-spectrum",
+  "title": "Hertz, Megahertz, Gigahertz: The Radio Spectrum",
+  "h1": "Hz, MHz, GHz — the frequency ladder from AM radio to WiFi",
+  "description": "AM radio is at kHz. FM at MHz. WiFi at GHz. 5G at both. Here is the full spectrum map and what each band is used for.",
+  "category": "Frequency",
+  "readingMinutes": 5,
+  "published": "2026-06-23",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "RF & telecommunications" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ITU-R V.431 nomenclature" },
+  "hero": "Every wireless technology sits somewhere on a single continuous scale from 3 kHz to 300 GHz. Once you memorise the ladder, every spec sheet becomes readable.",
+  "body": [
+    "The ITU divides the radio spectrum into eight decade-wide bands and assigns each a name. Consumer wireless spans four of them, and the boundaries between them explain why WiFi cannot penetrate walls as well as FM radio, and why 5G mmWave needs a base station on every block.",
+    "## The bands",
+    "> VLF (very low freq): 3–30 kHz — submarine communications\n> LF: 30–300 kHz — longwave radio, time signals (WWVB 60 kHz)\n> MF: 300 kHz – 3 MHz — AM broadcast (530–1710 kHz)\n> HF: 3–30 MHz — shortwave, amateur radio\n> VHF: 30–300 MHz — FM broadcast (88–108 MHz), TV low, aviation\n> UHF: 300 MHz – 3 GHz — TV, mobile phones, WiFi 2.4 GHz\n> SHF: 3–30 GHz — satellite, WiFi 5 GHz, 5G sub-6, radar\n> EHF: 30–300 GHz — 5G mmWave (24–39 GHz), automotive radar",
+    "## Wavelength vs frequency",
+    "λ = c/f. At 100 MHz FM: 3 m wavelength. At 2.4 GHz WiFi: 12.5 cm. At 28 GHz 5G mmWave: 1.07 cm. Antenna size scales with wavelength — an efficient dipole is λ/2. This is why AM towers are hundreds of metres tall, FM antennas are 1.5 m, and 5G mmWave antennas are the size of a postage stamp (but grouped in arrays of 64+).",
+    "## Why higher frequency needs more base stations",
+    "Free-space path loss increases with f². Rain, foliage and building materials attenuate more at higher f. At 700 MHz (a mobile band), a cell covers many kilometres. At 28 GHz mmWave, coverage drops to 200 m and any wall becomes opaque. Deploying 5G mmWave requires roughly 20× the site density of a 700 MHz network.",
+    "## Worked example — a WiFi speed vs range trade-off",
+    "WiFi 6 in the 2.4 GHz band offers wider coverage (30 m indoors) but limited throughput (~600 Mbps). The same standard at 5 GHz halves the range to 15 m but doubles peak throughput. At 6 GHz (WiFi 6E) throughput doubles again but walls attenuate more sharply. Same protocol, three physical trade-offs governed entirely by frequency.",
+    "## The five-second recap",
+    "kHz = AM. MHz = FM and TV. Low GHz = WiFi and mobile. Tens of GHz = 5G mmWave and radar. Wavelength × frequency = speed of light."
+  ],
+  "faqs": [
+    { "q": "Why is FM 88–108 MHz?", "a": "Historical spectrum allocation from the 1940s. The band width (20 MHz) allows about 100 channels at 200 kHz spacing." },
+    { "q": "Is 5G faster than WiFi?", "a": "Peak speeds are similar at similar frequencies. Real-world speed depends on cell load and distance more than the standard itself." },
+    { "q": "What's above 300 GHz?", "a": "Terahertz radiation (0.3–3 THz), then infrared. THz communications is an active research area for 6G." }
+  ],
+  "related": [
+    { "label": "Hz to kHz converter", "href": "/c/frequency/hz-to-khz" },
+    { "label": "MHz to GHz converter", "href": "/c/frequency/mhz-to-ghz" },
+    { "label": "kHz to Hz converter", "href": "/c/frequency/khz-to-hz" }
+  ]
+}

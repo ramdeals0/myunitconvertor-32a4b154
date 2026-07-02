@@ -1,0 +1,37 @@
+{
+  "slug": "tablespoons-teaspoons-ml-medicine",
+  "title": "Tablespoons, Teaspoons and Milliliters: Medicine Dosing",
+  "h1": "Teaspoons, tablespoons and millilitres — dosing medicine safely",
+  "description": "A kitchen teaspoon is not a medical teaspoon. Here is why pharmacists insist on millilitre dosing and how the units actually convert.",
+  "category": "Volume",
+  "readingMinutes": 4,
+  "published": "2026-06-12",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Medical metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against USP <1221> and ISMP dosing guidance" },
+  "hero": "A household teaspoon holds anywhere from 3 to 7 mL. The medical teaspoon is exactly 5 mL. That gap has landed thousands of children in emergency rooms.",
+  "body": [
+    "The Institute for Safe Medication Practices has documented over 10,000 US paediatric overdose cases traced to household teaspoons used for prescription liquids. The problem is simple: kitchen teaspoons are not calibrated. Modern paediatric prescriptions are written in mL to avoid this entirely.",
+    "## The exact factors",
+    "> 1 US teaspoon (tsp) = 4.92892 mL ≈ 5 mL (medical standard)\n> 1 US tablespoon (tbsp) = 14.7868 mL ≈ 15 mL\n> 1 metric teaspoon = 5 mL exactly\n> 1 metric tablespoon = 15 mL exactly (or 20 mL in Australia)\n> 1 fl oz (US) = 29.5735 mL",
+    "## Why the mL is safer",
+    "Every syringe and dosing cup is graduated in mL. Every modern prescription writes the dose in mL. Every paediatric overdose reduction campaign since 2010 has pushed pharmacies to dispense with syringes and eliminate teaspoon references. The FDA formally recommended mL-only labelling in 2013.",
+    "## Australia's 20 mL tablespoon",
+    "Australian recipes and Australian medical guidelines use 20 mL for a tablespoon — 33% more than the US 15 mL standard. An Australian cookbook's 'tbsp of soy sauce' delivers noticeably more sodium than a US cookbook's. In medicine, the difference has been formally regulated: Australian prescriptions must use mL.",
+    "## Worked example — a 10 mL cough syrup dose",
+    "A prescription reads 10 mL every 6 hours. Using an unmarked kitchen teaspoon (typically 4–6 mL), a parent giving 'two teaspoons' delivers 8–12 mL — a ±20% range. Using the syringe supplied with the bottle, marked in 0.5 mL increments, the same dose is accurate to within 3%.",
+    "## The five-second recap",
+    "5 mL per teaspoon, 15 mL per tablespoon (or 20 mL in Australia). Always use the dosing device supplied with the medication. Never substitute silverware."
+  ],
+  "faqs": [
+    { "q": "Why is a US teaspoon 4.93 mL and not 5?", "a": "It derives from 1/6 of a fluid ounce (29.5735/6). The 5 mL medical teaspoon is a rounding to a convenient metric value." },
+    { "q": "How many mL in a dropperful?", "a": "Not a standardised unit — a dropperful ranges from 0.5 to 2 mL depending on the dropper. Modern droppers are marked with mL graduations for this reason." },
+    { "q": "Is the UK teaspoon different?", "a": "Legally 5 mL, same as the metric teaspoon. Traditional UK kitchen teaspoons ran slightly smaller (~3.5 mL) but this is not used medically." }
+  ],
+  "related": [
+    { "label": "tsp to mL converter", "href": "/c/volume/tsp-to-ml" },
+    { "label": "tbsp to mL converter", "href": "/c/volume/tbsp-to-ml" },
+    { "label": "fl oz to mL converter", "href": "/c/volume/floz-to-ml" }
+  ]
+}

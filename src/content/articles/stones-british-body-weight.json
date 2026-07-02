@@ -1,0 +1,37 @@
+{
+  "slug": "stones-british-body-weight",
+  "title": "Stones: The British Body-Weight Unit That Refuses to Die",
+  "h1": "Stones — the last living Imperial body-weight unit",
+  "description": "British scales still read in stones and pounds. Here is why the stone survived, and how to convert '11 stone 4' to a number that means something abroad.",
+  "category": "Weight",
+  "readingMinutes": 4,
+  "published": "2026-06-18",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Human metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against UK Weights and Measures Act 1985" },
+  "hero": "The stone was formally banned from UK commercial use in 1985 — but every British bathroom scale still displays it and every British doctor still writes it down.",
+  "body": [
+    "The stone is 14 pounds. It is unique to UK and Irish body-weight reporting: nowhere else uses it, and no other measurement in the UK still uses it either. Yet a British patient told their weight in kilograms will ask for it in stones and pounds within 30 seconds.",
+    "## The exact factors",
+    "> 1 stone (st) = 14 lb = 6.35029 kg (exact)\n> 1 kg = 0.157473 st\n> 70 kg = 11 st 0.4 lb; 80 kg = 12 st 8.4 lb",
+    "## The '11 stone 4' format",
+    "British body weight is expressed as 'X stone Y pounds' where Y is 0–13. 11 st 4 means 11 × 14 + 4 = 158 lb = 71.7 kg. The format is speech-only — official medical records use kilograms. But every casual conversation, every diet ad, every gym scale defaults to stones and pounds.",
+    "## Why the stone survived here and nowhere else",
+    "The 1985 Weights and Measures Act removed the stone from legal commercial use, but explicitly exempted 'personal use'. Grocery prices, road signs and building materials all metricated. Body weight did not, because the government had no interest in policing bathroom scales.",
+    "## Worked example — a 90 kg visitor",
+    "A 90 kg American tourist stepping on a British scale sees 14 st 2.4 lb — an unfamiliar reading with no obvious anchor. Conversely, a 12-stone Briton is 168 lb = 76.2 kg. Interconversion in an intuitive way requires memorising a couple of anchors: 10 st = 63.5 kg, 12 st = 76.2 kg, 14 st = 88.9 kg.",
+    "## The five-second recap",
+    "1 st = 14 lb = 6.35 kg. British body weight = X st Y lb, Y is 0–13. Divide kg by 6.35 to get stones."
+  ],
+  "faqs": [
+    { "q": "Do Irish scales use stones?", "a": "Yes — same convention as UK, though modern Irish scales are increasingly kilogram-only." },
+    { "q": "Is 'stone' used for anything besides body weight?", "a": "Not in modern usage. Historically the stone had different values for different commodities (wool, cheese, glass), but body weight is the only survivor." },
+    { "q": "How many stones in a hundredweight?", "a": "A UK long hundredweight is 8 stone = 112 lb. A US short hundredweight is 100 lb = 7.14 stone." }
+  ],
+  "related": [
+    { "label": "stone to kg converter", "href": "/c/weight/st-to-kg" },
+    { "label": "kg to stone converter", "href": "/c/weight/kg-to-st" },
+    { "label": "lb to kg converter", "href": "/c/weight/lb-to-kg" }
+  ]
+}

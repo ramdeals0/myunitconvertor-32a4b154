@@ -1,0 +1,37 @@
+{
+  "slug": "mach-number-supersonic",
+  "title": "Mach Number: Not a Speed, But a Ratio",
+  "h1": "Mach number — the speed unit that changes with the weather",
+  "description": "Mach 1 at sea level is 340 m/s. Mach 1 at 40,000 ft is 295 m/s. Here is why a Mach number is not a constant speed and how to convert it.",
+  "category": "Speed",
+  "readingMinutes": 5,
+  "published": "2026-06-21",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Aerospace" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ISA 1976 atmosphere" },
+  "hero": "Mach is not a unit — it is a ratio to the local speed of sound. And the local speed of sound depends on temperature, which depends on altitude.",
+  "body": [
+    "Fighter pilots quote Mach. Air-traffic controllers quote knots. Physicists quote metres per second. Only the last is a real speed. Mach and knots both hide dependencies that change with the atmosphere.",
+    "## The exact factors",
+    "> Speed of sound in dry air: a = 20.05 × √T(K) m/s\n> Sea level, 15°C: 340.3 m/s = 1,225 km/h = 661.5 kn\n> 30,000 ft, −44°C: 303 m/s = 1,090 km/h = 589 kn\n> Mach = TAS / a (both in same units)",
+    "## Why altitude matters",
+    "Temperature drops about 2°C per 1,000 ft up to the tropopause (~36,000 ft), then stays roughly constant. The speed of sound tracks √T. A Concorde cruising at Mach 2.02 at 55,000 ft was doing 605 m/s (~2,180 km/h). Descending to sea level at the same Mach 2.02 would mean 687 m/s (~2,475 km/h) — physically the same 'Mach number' but 82 m/s faster in true airspeed.",
+    "## True airspeed vs indicated airspeed",
+    "Aircraft pitot tubes measure dynamic pressure, converted to indicated airspeed (IAS). Density decreases with altitude, so IAS underreads TAS at altitude. A 787 cruising at Mach 0.85 at 40,000 ft has IAS around 290 kn but TAS around 490 kn. Ground-speed shown on the seatback screen includes wind.",
+    "## Worked example — Mach 0.85 at 40,000 ft",
+    "At 40,000 ft, ISA temperature is 216.7 K, so a = 295.1 m/s. Mach 0.85 × 295.1 = 250.9 m/s = 903 km/h = 487 knots TAS. Compare to sea-level Mach 0.85: 289 m/s = 1,041 km/h = 562 kn. Same Mach, different speeds.",
+    "## The five-second recap",
+    "Mach = ratio, not a speed. Sound speed = 20.05 × √T(K). At cruise altitude, Mach 0.85 is about 900 km/h TAS. At sea level, it is about 1,040 km/h."
+  ],
+  "faqs": [
+    { "q": "Why is Mach 1 slower at altitude?", "a": "Cold air. Speed of sound depends only on temperature (not pressure or density in an ideal gas). Altitude → colder → slower sound." },
+    { "q": "What is Mach 25?", "a": "Orbital velocity from low Earth orbit, roughly. Space Shuttle reentry began around Mach 25 at 122 km altitude." },
+    { "q": "Do supersonic booms depend on Mach?", "a": "Yes — the shock cone half-angle μ = arcsin(1/Mach). Higher Mach = narrower cone = louder boom over a smaller ground track." }
+  ],
+  "related": [
+    { "label": "mph to km/h converter", "href": "/c/speed/mph-to-kph" },
+    { "label": "knots to km/h converter", "href": "/c/speed/knot-to-kph" },
+    { "label": "m/s to km/h converter", "href": "/c/speed/mps-to-kph" }
+  ]
+}

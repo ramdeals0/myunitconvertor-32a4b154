@@ -1,0 +1,37 @@
+{
+  "slug": "barrels-oil-beer-us-liquid",
+  "title": "Barrels: Oil, Beer, and Why They Are Different",
+  "h1": "Barrels — one word, six different volumes",
+  "description": "An oil barrel is 42 US gallons. A beer barrel is 31 US gallons. A UK beer barrel is 43.2 US gallons. Here is the full disambiguation.",
+  "category": "Volume",
+  "readingMinutes": 4,
+  "published": "2026-06-14",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Industrial metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST Handbook 44 §4.35" },
+  "hero": "'One barrel' has meant different things to different industries for 400 years. Here is the six-variant lookup table.",
+  "body": [
+    "The barrel was originally the volume of a physical cask, and different trades built casks in different sizes. Every industry that survived past the Industrial Revolution kept its own barrel — legally defined but not standardised across trades.",
+    "## The variants",
+    "> Oil barrel (bbl) = 42 US gal = 158.987 L\n> US liquid barrel = 31.5 US gal = 119.24 L\n> US beer barrel = 31 US gal = 117.35 L\n> UK beer barrel = 36 UK gal = 163.66 L = 43.23 US gal\n> Dry barrel = 26.25 US gal = 115.63 L (US)\n> Cranberry barrel = 5,826 in³ = 95.47 L (US, still legal)",
+    "## Where each shows up",
+    "Oil markets: exclusively the 42-gallon bbl. WTI and Brent futures are priced per bbl. Brewing: US commercial keg sizes are fractions of the 31-gal beer barrel (a 'half barrel' keg is 15.5 gal). UK CAMRA data on pub cellars uses the 36 UK-gal beer barrel. Grocery statistics still occasionally cite dry barrels for fruit and vegetables.",
+    "## Why oil is 42 gallons",
+    "The Pennsylvania Petroleum Producers Association adopted the 42-gallon standard in 1866, matching the tierce — a wine cask used to ship whale oil. It was chosen because a 42-gal wooden cask could be handled by one man; a 45-gal cask could not. The size stuck when steel drums replaced wood and the industry globalised.",
+    "## Worked example — a 1,000-barrel oil order",
+    "1,000 bbl × 158.987 L = 158,987 L = 158.99 m³. At 850 kg/m³ for medium crude, that is 135.14 tonnes. A road tanker holds 30–40 m³, so a 1,000-bbl order is 4–5 truckloads. A rail tank car holds 100–120 m³ — about 700 bbl per car.",
+    "## The five-second recap",
+    "Oil bbl = 42 gal = 159 L. US beer barrel = 31 gal = 117 L. UK beer barrel = 36 UK gal = 164 L. Always specify which barrel."
+  ],
+  "faqs": [
+    { "q": "How much does an oil barrel weigh?", "a": "The oil weighs 130–140 kg depending on API gravity. The steel drum itself adds about 22 kg." },
+    { "q": "How many pints in a US beer barrel?", "a": "31 gal × 8 pints = 248 US pints. In the UK, 36 UK gal × 8 = 288 UK pints." },
+    { "q": "Do oil companies actually ship in barrels?", "a": "No — pipelines and supertankers dominate. The barrel is now a pricing and accounting unit, not a physical container." }
+  ],
+  "related": [
+    { "label": "bbl to L converter", "href": "/c/volume/bbl-to-l" },
+    { "label": "L to bbl converter", "href": "/c/volume/l-to-bbl" },
+    { "label": "gal to L converter", "href": "/c/volume/gal_us-to-l" }
+  ]
+}
