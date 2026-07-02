@@ -184,8 +184,8 @@ export default function PairPage() {
               {
                 "@type": "WebPage",
                 name: "Turbo Unit Converter — Methodology",
-                url: "https://turbounitconverter.com/methodology",
-                isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: "https://turbounitconverter.com/" },
+                url: LU("/methodology"),
+                isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
               },
             ],
           },
