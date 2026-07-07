@@ -1,0 +1,51 @@
+{
+  "slug": "clinical-pressure-units",
+  "title": "mmHg, kPa, cmH₂O: The Three Pressure Units Every Clinician Toggles",
+  "h1": "Clinical pressure units — mmHg, kPa and cmH₂O",
+  "description": "Arterial pressure in mmHg, CVP in cmH₂O, ventilator settings in cmH₂O or kPa. Sloppy conversions misset PEEP by 40%.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "1 mmHg = 0.1333 kPa = 1.36 cmH₂O. A 120 mmHg BP is 16.0 kPa. A 10 cmH₂O PEEP is 7.35 mmHg.",
+  "body": [
+    "Clinical medicine runs on three pressure units simultaneously. The unit each device uses is not chosen for arithmetic convenience — it is historical. Fluency between them is a patient safety issue.",
+    "## The exact factors",
+    "> 1 mmHg = 0.13332 kPa = 1.3595 cmH₂O\n> 1 kPa = 7.5006 mmHg = 10.197 cmH₂O\n> 1 cmH₂O = 0.09806 kPa = 0.7356 mmHg",
+    "## Where each is used",
+    "mmHg: arterial and venous pressures, intraocular pressure, intracranial pressure. cmH₂O: airway pressures, PEEP, CPAP, CVP by water manometer. kPa: European ventilators, arterial blood gas partial pressures, some ICU monitors.",
+    "## Worked example — PEEP misconversion",
+    "Ventilator PEEP prescribed at 10 cmH₂O = 7.4 mmHg = 0.98 kPa. If a device configured in mmHg is set to 10 (thinking cmH₂O), it delivers 13.6 cmH₂O — 36% above prescription and enough to trigger barotrauma in ARDS patients.",
+    "## Recap",
+    "Airway → cmH₂O. Blood → mmHg. Europe → kPa. Convert before you compare."
+  ],
+  "faqs": [
+    {
+      "q": "Why does BP still use mmHg?",
+      "a": "Historical continuity — mercury sphygmomanometers set the reference and modern devices report the same units to preserve interoperability with clinical guidelines."
+    },
+    {
+      "q": "Is torr the same as mmHg?",
+      "a": "To six figures, yes. Modern SI-strict practice prefers torr because mmHg depends on mercury density and local gravity."
+    }
+  ],
+  "related": [
+    {
+      "label": "Pressure converter",
+      "href": "/c/pressure"
+    },
+    {
+      "label": "Pascal and mmHg for blood pressure",
+      "href": "/learn/pascal-mmhg-blood-pressure"
+    }
+  ]
+}

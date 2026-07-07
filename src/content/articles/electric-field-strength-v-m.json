@@ -1,0 +1,51 @@
+{
+  "slug": "electric-field-strength-v-m",
+  "title": "Electric Field Strength: V/m, kV/mm and Dielectric Breakdown",
+  "h1": "Electric field strength units — V/m and kV/mm",
+  "description": "1 kV/mm = 10⁶ V/m. Air breaks down at 3 kV/mm; PET film at 300 kV/mm; SF₆ at 89 kV/mm. Miss the unit and insulation design fails.",
+  "category": "Electric field strength",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Field strength is what breaks down insulators. Voltage matters only in context of thickness.",
+  "body": [
+    "Dielectric breakdown is a field problem, not a voltage problem. A 1 kV signal is fine on 1 mm of Mylar and catastrophic on 1 µm of the same film. Field strength captures this.",
+    "## The exact factors",
+    "> 1 kV/mm = 10⁶ V/m = 1 MV/m\n> 1 V/mil = 39.37 V/mm = 39 370 V/m",
+    "## Dielectric strength of common materials",
+    "Dry air (STP): 3 kV/mm. Distilled water: ~65 kV/mm short term. Mineral oil: 12–15 kV/mm. FR-4: 20 kV/mm. Kapton: 300 kV/mm. SF₆ at 1 bar: 89 kV/mm. Vacuum: geometry-dependent, often 20 kV/mm.",
+    "## Worked example — HV cable insulation",
+    "A 33 kV cable with 8 mm insulation runs at 4.1 kV/mm average — well below XLPE's 50 kV/mm short-term strength, but partial discharge inception starts at 3–5 kV/mm over decades. Design margins live in the field strength number, not the voltage.",
+    "## Recap",
+    "kV/mm is the language. Check both peak and continuous field strength against material limits."
+  ],
+  "faqs": [
+    {
+      "q": "Does frequency matter?",
+      "a": "Yes — AC breakdown is 30–70% of DC breakdown for most solids because heating and partial discharge accumulate."
+    },
+    {
+      "q": "Is 'BIL' the same as dielectric strength?",
+      "a": "No — BIL (basic insulation level) is a system-level voltage rating standardised across a device, not a per-material field strength."
+    }
+  ],
+  "related": [
+    {
+      "label": "Electric field strength converter",
+      "href": "/c/electric-field-strength"
+    },
+    {
+      "label": "Voltage converter",
+      "href": "/c/voltage"
+    }
+  ]
+}

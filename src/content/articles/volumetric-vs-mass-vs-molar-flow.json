@@ -1,0 +1,55 @@
+{
+  "slug": "volumetric-vs-mass-vs-molar-flow",
+  "title": "Volumetric vs Mass vs Molar Flow: Which Rate Does Your Process Actually Care About?",
+  "h1": "Volumetric, mass and molar flow — which one to use",
+  "description": "Volumetric flow (m³/h) is what pumps deliver. Mass flow (kg/h) is what heat balances need. Molar flow (kmol/h) is what reactions consume. Pick wrong, get wrong.",
+  "category": "Flow",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Compressible gases: volumetric flow varies with T and P. Reactions: molar flow is invariant. Heat exchangers: mass flow drives capacity.",
+  "body": [
+    "Three flow measurements coexist because each answers a different physical question. Pumps and compressors deliver volume, boilers and reactors care about mass or moles.",
+    "## The relationships",
+    "> Mass flow ṁ = ρ × Q_volumetric\n> Molar flow ṅ = ṁ / M (M = molar mass in kg/kmol)\n> For an ideal gas: Q at (T₂, P₂) = Q at (T₁, P₁) × (P₁/P₂)(T₂/T₁)",
+    "## When each rules",
+    "Volumetric (m³/h, gpm, L/min): pump and blower sizing, pipe velocity, dispenser output. Mass (kg/h, lb/hr): heat and mass balances, steam generation, fuel consumption. Molar (kmol/h, lbmol/h): stoichiometric reactions, gas mixing ratios, absorption/stripping columns.",
+    "## Worked example — steam boiler feedwater",
+    "A boiler produces 10 000 kg/h of steam. Volumetric feedwater flow at 80 °C is 10 000 / 972 kg/m³ = 10.29 m³/h. The pump datasheet is in m³/h; the boiler heat rate needs kg/h. Convert once at the boiler nozzle, keep both consistent.",
+    "## Recap",
+    "Pumps → m³/h. Boilers → kg/h. Reactors → kmol/h."
+  ],
+  "faqs": [
+    {
+      "q": "Is standard flow mass or volumetric?",
+      "a": "It's volumetric — but referenced to a standard T and P (like SCFM). It behaves numerically like a mass flow because the reference density is fixed."
+    },
+    {
+      "q": "How do I convert m³/h to lb/hr for water?",
+      "a": "Multiply m³/h by density (≈999 kg/m³ at 20 °C) then by 2.2046 lb/kg."
+    }
+  ],
+  "related": [
+    {
+      "label": "Flow converter",
+      "href": "/c/flow"
+    },
+    {
+      "label": "Mass flow converter",
+      "href": "/c/flow-mass"
+    },
+    {
+      "label": "Molar flow converter",
+      "href": "/c/flow-molar"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "dba-dbc-dbz-sound",
+  "title": "dBA, dBC, dBZ: The Weighted Sound Levels That Aren't Interchangeable",
+  "h1": "Sound pressure weightings — dBA, dBC and dBZ",
+  "description": "dBA weights for human ear response. dBC is flatter, keeps low frequencies. dBZ is unweighted. 90 dBA in a factory can be 100 dBC — same sound, different exposure limit.",
+  "category": "Power",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "SPL alone is not enough. The weighting curve determines whether a reading is comparable to a regulatory limit.",
+  "body": [
+    "Sound level meters apply frequency weightings to match the ear's response or to preserve specific spectral content. dBA is the OSHA/EU workplace standard; dBC is used for peak-impulse noise; dBZ (unweighted) is used in acoustics research.",
+    "## The three weightings",
+    "> A-weighting: mimics human ear at moderate SPL (~40 phon). Roll-off below 500 Hz.\n> C-weighting: nearly flat 30 Hz–8 kHz. Used for peak/impulse.\n> Z-weighting: flat 10 Hz–20 kHz. Research use.",
+    "## Where each is used",
+    "dBA: OSHA 8-hour TWA (90 dBA action level), EU workplace directive, environmental noise. dBC: firearm and impact noise, peak SPL limits (140 dBC). dBZ: precise acoustic measurement, room mode analysis.",
+    "## Worked example — factory hearing conservation",
+    "Compressor room: 92 dBA continuous, 100 dBC peak from a stamping press. The 92 dBA drives 8-hour exposure limits; the 100 dBC would only matter above 140 dBC peak (regulatory ceiling). Report dBC alone and you understate the routine hearing damage risk.",
+    "## Recap",
+    "dBA for workplace TWA. dBC for peaks. dBZ for physics."
+  ],
+  "faqs": [
+    {
+      "q": "Can I convert dBA to dBC?",
+      "a": "Only if you know the spectrum. There is no fixed offset — dBC – dBA can be 0 to 20 dB depending on frequency content."
+    },
+    {
+      "q": "Is 'dBSPL' a weighting?",
+      "a": "No — SPL is just the reference (20 µPa). It combines with weightings: dB(A) SPL, dB(C) SPL."
+    }
+  ],
+  "related": [
+    {
+      "label": "Sound and power converters",
+      "href": "/c/power"
+    },
+    {
+      "label": "Decibels for sound and signal",
+      "href": "/learn/decibels-sound-signal"
+    }
+  ]
+}

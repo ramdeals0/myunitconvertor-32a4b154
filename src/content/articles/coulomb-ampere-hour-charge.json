@@ -1,0 +1,51 @@
+{
+  "slug": "coulomb-ampere-hour-charge",
+  "title": "Coulomb, mAh, Ah: Charge Units and Battery Capacity",
+  "h1": "Charge units — coulomb, mAh and ampere-hour",
+  "description": "1 A·h = 3600 C. A 3000 mAh phone battery is 10 800 C. Confusing energy (Wh) with charge (Ah) is the number one battery-spec error.",
+  "category": "Charge",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Charge (C or Ah) is not energy (Wh). Multiply Ah by voltage to get Wh. Ignore voltage and lithium and lead-acid look interchangeable — they are not.",
+  "body": [
+    "Charge and energy are related but distinct. Charge is quantity of electrons; energy is charge times voltage. Battery specs frequently muddle them, and equivalent-sized packs from different chemistries deliver wildly different runtimes.",
+    "## The exact factors",
+    "> 1 A·h = 3600 C\n> 1 mA·h = 3.6 C\n> Energy (W·h) = charge (A·h) × voltage (V)",
+    "## Where each is used",
+    "Coulomb: electrochemistry, capacitor sizing, semiconductor doping. mAh, Ah: batteries, small-signal current integration, plating time. C-rate: discharge/charge current expressed as multiples of Ah capacity (a 3 Ah pack at 2C draws 6 A).",
+    "## Worked example — power bank comparison",
+    "Two power banks: 20 000 mAh at 3.7 V vs 6000 mAh at 12 V. Charge: 20 vs 6 Ah. Energy: 74 vs 72 Wh — essentially identical. Buyers who compare mAh alone miss the voltage rescaling.",
+    "## Recap",
+    "Ah is charge. Wh is energy. Multiply by voltage to compare."
+  ],
+  "faqs": [
+    {
+      "q": "Is 1 F (farad) related to 1 C?",
+      "a": "Yes — 1 F = 1 C/V. A 1 F cap charged to 1 V stores 1 C of charge."
+    },
+    {
+      "q": "What is coulombic efficiency?",
+      "a": "Charge out ÷ charge in per cycle. Lithium is 99.9%+, lead-acid 85–90%."
+    }
+  ],
+  "related": [
+    {
+      "label": "Charge converter",
+      "href": "/c/charge"
+    },
+    {
+      "label": "Amp-hours and watt-hours",
+      "href": "/learn/amp-hours-watt-hours-batteries"
+    }
+  ]
+}

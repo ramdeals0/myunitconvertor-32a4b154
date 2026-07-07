@@ -1,0 +1,57 @@
+{
+  "slug": "gauge-vs-absolute-pressure",
+  "title": "Gauge vs Absolute Pressure: psig, psia, barg, bara",
+  "h1": "Gauge vs absolute pressure — psig, psia, barg, bara",
+  "description": "Gauge pressure reads zero at atmosphere; absolute reads 14.7 psi. Use absolute for gas-law calcs; use gauge for pipe ratings. Confusing them undercounts moles by 13% at 100 psig.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "psia − 14.696 = psig at sea level. Miss the offset in a compressor sizing calc and you either overspend on horsepower or starve the tools.",
+  "body": [
+    "Every pressure gauge on the planet zeros at whatever the atmosphere happens to be that day. Every gas-law equation assumes zero means vacuum. The 14.7 psi offset between them silently corrupts calculations across process, HVAC, refrigeration and pneumatics.",
+    "## The distinction",
+    "> psia (absolute) = psig (gauge) + p_atm\n> At sea level: p_atm ≈ 14.696 psi = 101.325 kPa = 1.01325 bar",
+    "## When to use each",
+    "Absolute: ideal gas law, compressor thermodynamics, altitude-corrected performance, vacuum measurements. Gauge: pipe and vessel ratings, safety relief settings, everyday instrumentation, tyre pressures.",
+    "## Worked example — receiver sizing",
+    "Compressor delivers 100 CFM at 100 psig into a 60 gal receiver from 60 to 100 psig. Wrong (treating psig as psia): pressure ratio 100/60 = 1.67. Right: (100+14.7)/(60+14.7) = 1.53. Cycle time changes 9% — enough to burn out an under-cycled motor.",
+    "## Regional cues",
+    "US: often just 'psi' with 'g' or 'a' inferred from context — dangerous. Europe: 'barg' vs 'bara' explicit on most datasheets. Vacuum work: always absolute (torr, mbar, Pa).",
+    "## Recap",
+    "Suffix matters. Assume gauge on instrumentation, absolute in gas-law formulas, and refuse spec sheets that leave the letter off."
+  ],
+  "faqs": [
+    {
+      "q": "Is atmospheric pressure exactly 14.7 psi?",
+      "a": "14.696 psi at sea level, standard day. Colorado shops work closer to 12.2 psi — enough to shift compressor performance measurably."
+    },
+    {
+      "q": "Is 'kPa (a)' the same as kPaA?",
+      "a": "Yes — many notations. 'kPaG', 'kPa gauge', 'kPa(g)' all mean gauge; 'kPaA', 'kPa abs' mean absolute."
+    }
+  ],
+  "related": [
+    {
+      "label": "Pressure converter",
+      "href": "/c/pressure"
+    },
+    {
+      "label": "psi vs bar in turbo boost",
+      "href": "/learn/psi-vs-bar-turbo-boost-pressure"
+    },
+    {
+      "label": "Torr and Pa vacuum ladder",
+      "href": "/learn/torr-pascal-vacuum"
+    }
+  ]
+}

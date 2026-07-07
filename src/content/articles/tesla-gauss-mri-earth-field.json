@@ -1,0 +1,55 @@
+{
+  "slug": "tesla-gauss-mri-earth-field",
+  "title": "Tesla, Gauss, Millitesla: MRI, Speakers and the Earth's Field",
+  "h1": "Tesla and gauss — MRI, motors and geomagnetism on one scale",
+  "description": "1 T = 10 000 G. Earth's field is 0.5 G; a fridge magnet 50 G; a 3 T MRI is 30 000 G. Same physics, wildly different regimes.",
+  "category": "Magnetism",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "The SI tesla replaced the CGS gauss — but the factor of 10 000 keeps both alive in engineering practice.",
+  "body": [
+    "Magnetic flux density spans nine orders of magnitude in everyday engineering, from geomagnetic anomalies (nanotesla) to fusion-reactor confinement (tens of tesla). Gauss and tesla coexist because each is convenient for its own regime.",
+    "## The exact factor",
+    "> 1 T = 10 000 G = 10⁴ G\n> 1 mT = 10 G\n> 1 µT = 10 mG\n> 1 nT = 10 µG (used in geomagnetism)",
+    "## Where each is used",
+    "Tesla: MRI (1.5 T, 3 T, 7 T), particle physics magnets, generator air gaps. Gauss: audio speakers, magnetic separators, refrigerator magnets, hall-effect current sensors. Milligauss / microtesla: EMF shielding, health-standard compliance. Nanotesla: geomagnetic mapping, magnetometry.",
+    "## Worked example — an MRI room",
+    "A 3 T bore radiates a 5-gauss line typically 3–4 m from isocentre — the safety perimeter for pacemakers and ferrous carts. That 5 G = 0.5 mT = 500 µT, still 10 000× Earth's ambient. Skipping the gauss/tesla conversion when siting equipment can misplace the perimeter by metres.",
+    "## Recap",
+    "Multiply tesla by 10 000 to get gauss. MRI in T, motors and sensors in G, geomagnetism in nT."
+  ],
+  "faqs": [
+    {
+      "q": "Is a 'gauss meter' actually measuring gauss?",
+      "a": "Yes — Hall-effect probes usually report gauss (or milligauss for shielding work). Some scientific units auto-switch to mT."
+    },
+    {
+      "q": "How strong is a rare-earth magnet?",
+      "a": "N52 neodymium surface flux is ~1.4 T (14 000 G). A 3 T MRI bore is roughly twice a strong permanent magnet."
+    }
+  ],
+  "related": [
+    {
+      "label": "Magnetic flux density converter",
+      "href": "/c/magnetic-flux-density"
+    },
+    {
+      "label": "Tesla and gauss",
+      "href": "/learn/tesla-gauss-magnetic-flux-density"
+    },
+    {
+      "label": "Weber and maxwell for flux",
+      "href": "/learn/weber-maxwell-magnetic-flux"
+    }
+  ]
+}

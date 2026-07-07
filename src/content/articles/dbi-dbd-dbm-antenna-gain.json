@@ -1,0 +1,51 @@
+{
+  "slug": "dbi-dbd-dbm-antenna-gain",
+  "title": "dBi, dBd, dBm: RF Gain and Power Units",
+  "h1": "Antenna gain and RF power — dBi, dBd, dBm",
+  "description": "0 dBd = 2.15 dBi. 0 dBm = 1 mW = −30 dBW. Link budgets live on these dB conversions — miss one, misplace an antenna.",
+  "category": "Power",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "dB is a ratio. Reference matters. dBi vs dBd differs by 2.15 dB forever.",
+  "body": [
+    "Antenna gain and RF power sit on decibel scales that reference different quantities. Getting the reference right is what separates a working link from a dead one.",
+    "## The exact relationships",
+    "> dB = 10 log₁₀(P₂/P₁)\n> dBi = gain over isotropic radiator\n> dBd = gain over half-wave dipole\n> dBi − dBd = 2.15 dB (a dipole's own gain over isotropic)\n> dBm = 10 log₁₀(P / 1 mW); dBW = 10 log₁₀(P / 1 W); dBm = dBW + 30",
+    "## Common values",
+    "1 W = 30 dBm = 0 dBW. 100 mW = 20 dBm. 1 µW = −30 dBm. Home Wi-Fi router transmit: 15–20 dBm. 5 dBi antenna = 2.85 dBd. 24 dBi parabolic dish ≈ 22 dBd.",
+    "## Worked example — link budget",
+    "TX 20 dBm, antenna 5 dBi, cable −2 dB, path loss −90 dB, RX antenna 5 dBi, RX sensitivity −80 dBm. Received power = 20 + 5 − 2 − 90 + 5 = −62 dBm. Margin = −62 − (−80) = 18 dB. Read the TX antenna spec as 5 dBd instead: add 2.15 dB, redo — 20 dB margin.",
+    "## Recap",
+    "Reference matters. dBi > dBd by 2.15. dBm = dBW + 30."
+  ],
+  "faqs": [
+    {
+      "q": "Is dB the same as dBA?",
+      "a": "No — dBA is A-weighted sound pressure, unrelated to RF."
+    },
+    {
+      "q": "How do I convert dBm to watts?",
+      "a": "P (W) = 10^((dBm − 30)/10). 30 dBm = 1 W, 20 dBm = 100 mW, 0 dBm = 1 mW."
+    }
+  ],
+  "related": [
+    {
+      "label": "Power converter",
+      "href": "/c/power"
+    },
+    {
+      "label": "dBm and mW for RF power",
+      "href": "/learn/dbm-mw-rf-power"
+    }
+  ]
+}

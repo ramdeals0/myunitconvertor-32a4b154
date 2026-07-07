@@ -1,0 +1,47 @@
+{
+  "slug": "permeability-darcy-m2",
+  "title": "Permeability: Darcy, Millidarcy and m²",
+  "h1": "Rock and material permeability — darcy, millidarcy and m²",
+  "description": "1 darcy = 9.869 × 10⁻¹³ m². Reservoir sandstones are 10–1000 md; shales are <0.01 md. Pump curves and well design run on this factor.",
+  "category": "Fluid permeability",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Darcy is a geology unit; m² is SI. The 12-order-of-magnitude conversion is what separates a producing well from a plugged one.",
+  "body": [
+    "Permeability is the property that turns Darcy's law into flow prediction. Reservoir engineers use darcys and millidarcys; SI-strict soil mechanics uses m². The conversion factor is small — small enough that memorising one figure saves an hour of unit hunting.",
+    "## The exact factor",
+    "> 1 darcy = 9.869233 × 10⁻¹³ m² ≈ 10⁻¹² m²\n> 1 md = 10⁻³ darcy ≈ 10⁻¹⁵ m²",
+    "## Typical values",
+    "High-quality reservoir sandstone: 100–1000 md. Tight gas: 0.1–10 md. Shale (matrix): <0.001 md. Concrete: ~10⁻¹⁹ m² (~0.1 nd). Coarse sand aquifer: 10–100 darcy.",
+    "## Worked example — well productivity",
+    "A 100 md sandstone, 20 m thick, 200 cP viscosity, produces via Darcy: q = k A ΔP / (µ L). Drop k to 1 md (unaltered core → damaged near-well) and productivity falls 100×. Skin damage is a permeability unit conversation dressed up as a well-completion problem.",
+    "## Recap",
+    "1 darcy ≈ 10⁻¹² m². Millidarcys are the working range for tight reservoirs."
+  ],
+  "faqs": [
+    {
+      "q": "Is permeability a fluid or rock property?",
+      "a": "Intrinsic permeability is a rock property. Hydraulic conductivity multiplies it by ρg/µ, giving m/s — this depends on the fluid."
+    },
+    {
+      "q": "What is a nanodarcy?",
+      "a": "10⁻⁹ darcy ≈ 10⁻²¹ m². Used for source-rock shales."
+    }
+  ],
+  "related": [
+    {
+      "label": "Permeability converter",
+      "href": "/c/permeability"
+    }
+  ]
+}

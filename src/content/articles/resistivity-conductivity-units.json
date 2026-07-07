@@ -1,0 +1,51 @@
+{
+  "slug": "resistivity-conductivity-units",
+  "title": "Resistivity and Conductivity: Ω·m, Ω·cmil/ft, S/m, %IACS",
+  "h1": "Resistivity and conductivity — Ω·m, %IACS and S/m",
+  "description": "Copper is 1.72 × 10⁻⁸ Ω·m = 100% IACS. Aluminium is 61% IACS. Silver is 106% IACS. Cable ampacity scales inversely.",
+  "category": "Electric resistivity",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Resistivity is the material property; resistance is the geometry-scaled result. Wire and PCB engineering never leave this equation.",
+  "body": [
+    "Resistivity ρ and conductivity σ = 1/ρ describe how well a material carries current, independent of shape. Cable engineers, PCB designers and materials scientists each keep a different favourite unit.",
+    "## The exact factors",
+    "> 1 Ω·m = 100 Ω·cm = 10⁶ µΩ·cm\n> 1 Ω·cmil/ft = 1.662 × 10⁻⁹ Ω·m\n> %IACS = 100 × (σ_material / σ_annealed_copper), σ_Cu = 5.8001 × 10⁷ S/m",
+    "## Typical values",
+    "Silver: 1.59 × 10⁻⁸ Ω·m (106% IACS). Copper: 1.68–1.72 × 10⁻⁸ Ω·m (100% IACS). Aluminium: 2.65 × 10⁻⁸ Ω·m (61% IACS). Steel: 15 × 10⁻⁸ Ω·m. Nichrome: 110 × 10⁻⁸ Ω·m.",
+    "## Worked example — bus bar",
+    "1000 A bus bar, 10 m long, aluminium (2.65 × 10⁻⁸ Ω·m). Cross-section 500 mm². R = ρL/A = 2.65 × 10⁻⁸ × 10 / 5 × 10⁻⁴ = 530 µΩ. Voltage drop V = IR = 0.53 V. Same bar in copper: 0.34 V. IACS immediately shows the ratio (61%): copper drop = aluminium drop × 0.61.",
+    "## Recap",
+    "%IACS is the cleanest cross-metal comparison. Convert to Ω·m for actual resistance."
+  ],
+  "faqs": [
+    {
+      "q": "Does temperature change resistivity?",
+      "a": "Yes — copper's temperature coefficient is +0.393 %/K. Aluminium is +0.403 %/K. Hot conductors carry less current."
+    },
+    {
+      "q": "What is 'sheet resistance'?",
+      "a": "Resistivity divided by thickness, in Ω/sq (ohms per square) — a shape-independent metric for thin films."
+    }
+  ],
+  "related": [
+    {
+      "label": "Resistivity converter",
+      "href": "/c/electric-resistivity"
+    },
+    {
+      "label": "Conductivity converter",
+      "href": "/c/electric-conductivity"
+    }
+  ]
+}

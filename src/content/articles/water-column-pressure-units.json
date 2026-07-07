@@ -1,0 +1,51 @@
+{
+  "slug": "water-column-pressure-units",
+  "title": "inH₂O, mmH₂O, cmH₂O: Water Column Pressure for Low-Delta Systems",
+  "h1": "Water column pressure units — inH₂O, mmH₂O and cmH₂O",
+  "description": "1 inH₂O ≈ 249 Pa. HVAC static pressure, CPAP therapy and manometers all live in the 0.1–10 inH₂O range where 'close enough' misses target flows.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "1 inH₂O = 249.089 Pa at 4 °C. 1 cmH₂O = 98.07 Pa. Reference temperature shifts the factor ~0.4% across the useful range.",
+  "body": [
+    "Low differential pressures — a few hundred pascals — get their own units built around the height of a water column that would balance them. HVAC, respiratory equipment and lab manometers all live here.",
+    "## The exact factors (at 4 °C, standard gravity)",
+    "> 1 inH₂O = 249.089 Pa = 2.491 mbar = 0.03613 psi\n> 1 cmH₂O = 98.0665 Pa = 0.981 mbar\n> 1 mmH₂O = 9.80665 Pa",
+    "## Where each appears",
+    "inH₂O: US HVAC duct static pressure (typical 0.5–3 inH₂O). cmH₂O: clinical ventilator PEEP and CPAP (typical 5–20 cmH₂O). mmH₂O: European instrumentation, filter differential gauges.",
+    "## Worked example — CPAP therapy",
+    "A CPAP prescribed at 12 cmH₂O = 1177 Pa = 1.18 kPa = 8.83 mmHg. Misread as 12 mmHg (1.6 kPa) and delivered pressure is 36% high — enough to trigger aerophagia or central apneas.",
+    "## Recap",
+    "inH₂O and cmH₂O differ by 2.54×. Neither equals mmHg. Match the unit on the device."
+  ],
+  "faqs": [
+    {
+      "q": "Does water temperature affect the factor?",
+      "a": "Yes — 4 °C water is densest. At 20 °C, water is 0.18% less dense, so the pressure per height is proportionally lower."
+    },
+    {
+      "q": "Is 'water gauge' (WG) the same?",
+      "a": "Yes — 'WG' is a shorthand for 'water gauge' pressure, typically in inches."
+    }
+  ],
+  "related": [
+    {
+      "label": "Pressure converter",
+      "href": "/c/pressure"
+    },
+    {
+      "label": "Pascal and mmHg for blood pressure",
+      "href": "/learn/pascal-mmhg-blood-pressure"
+    }
+  ]
+}

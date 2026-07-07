@@ -1,0 +1,51 @@
+{
+  "slug": "torr-micron-millitorr",
+  "title": "Torr, Millitorr, Micron: One Vacuum Unit with Three Names",
+  "h1": "Torr, millitorr and micron — the vacuum tech vocabulary",
+  "description": "1 micron = 1 mTorr = 0.001 Torr. HVAC and refrigeration techs pull to 500 microns before charging — that is 0.5 Torr.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Micron is a length; in vacuum jargon it is a pressure. Blame Torricelli's mercury: 1 micron = 1 µm of Hg = 1 mTorr.",
+  "body": [
+    "The word 'micron' means two different things depending on who is holding the gauge. In vacuum service it is a pressure — the height in micrometres of a mercury column that would balance the pressure being measured.",
+    "## The exact relationships",
+    "> 1 Torr = 1000 mTorr = 1000 microns\n> 1 mTorr = 1 micron ≈ 0.1333 Pa\n> Atmospheric ≈ 760 000 microns",
+    "## Field practice",
+    "Refrigeration and AC service pull systems to 500 microns (0.5 Torr, 66.7 Pa) before charging. Below that, residual moisture cannot flash to vapour at operating temperatures. Above it, ice forms in the metering device and destroys the compressor months later.",
+    "## Where confusion kicks in",
+    "A field tech reads '500 microns' and interprets it as '0.5 mm of pressure' — a nonsense unit. Or an engineer reads '500 microns' as '500 µm of length'. Both errors have appeared in commissioning reports.",
+    "## Recap",
+    "Micron and millitorr are synonyms in vacuum. 500 microns = deep enough vacuum for a clean AC charge."
+  ],
+  "faqs": [
+    {
+      "q": "What tool measures microns?",
+      "a": "A thermistor or Pirani vacuum gauge. Standard manifold gauges cannot resolve below ~1000 microns."
+    },
+    {
+      "q": "Is 500 microns hard to reach?",
+      "a": "A two-stage rotary vane pump reaches it in 15–30 minutes on a properly evacuated system. Leaks or wet oil hold you above 1000 microns."
+    }
+  ],
+  "related": [
+    {
+      "label": "Pressure converter",
+      "href": "/c/pressure"
+    },
+    {
+      "label": "Torr and Pa vacuum ladder",
+      "href": "/learn/torr-pascal-vacuum"
+    }
+  ]
+}

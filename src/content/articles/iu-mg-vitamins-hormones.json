@@ -1,0 +1,47 @@
+{
+  "slug": "iu-mg-vitamins-hormones",
+  "title": "IU vs mg: International Units for Vitamins, Hormones and Enzymes",
+  "h1": "International units — IU to mg conversions for vitamins",
+  "description": "1 IU vitamin D = 0.025 µg. 1 IU vitamin E = 0.67 mg (natural) or 0.91 mg (synthetic). IU is a bioactivity unit; the mg equivalent depends on the specific compound.",
+  "category": "Solution concentration",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "IU measures bioactivity, not mass. Each substance has its own IU/mg factor. Confuse them and vitamin D dosing errors reach ten-fold.",
+  "body": [
+    "The International Unit is defined per substance by biological potency, not by mass. It survives in vitamins, some hormones and clotting factors. Converting to mg or µg requires the specific factor.",
+    "## The exact factors",
+    "> Vitamin A: 1 IU = 0.3 µg retinol (0.6 µg β-carotene)\n> Vitamin D₂/D₃: 1 IU = 0.025 µg (40 IU per µg)\n> Vitamin E (RRR-α-tocopherol, natural): 1 IU = 0.67 mg\n> Vitamin E (all-rac, synthetic): 1 IU = 0.91 mg\n> Insulin (human): 1 IU = 34.7 µg (historical rabbit assay)",
+    "## Where IU still appears",
+    "Vitamin D supplements: still often labelled in IU. Insulin: uniquely IU-only, dosing never mass-based. Heparin: activity-based, IU/mL. Some enzymes and clotting factors.",
+    "## Worked example — vitamin D3",
+    "Prescription 5000 IU vitamin D₃ = 125 µg = 0.125 mg. Confuse mg with IU and prescribe 5000 mg — a lethal overdose (~40 000× toxic threshold). Documented pharmacy errors have caused hospitalisation.",
+    "## Recap",
+    "IU is bioactivity per substance. Look up the specific factor; do not assume."
+  ],
+  "faqs": [
+    {
+      "q": "Is 1 IU insulin always the same?",
+      "a": "Modern human insulin: 1 IU = 34.7 µg. Older animal insulins used the same IU by historical assay."
+    },
+    {
+      "q": "Why does synthetic vitamin E need more mg per IU?",
+      "a": "Racemic mixture — only some isomers are bioactive."
+    }
+  ],
+  "related": [
+    {
+      "label": "Solution concentration converter",
+      "href": "/c/concentration-solution"
+    }
+  ]
+}

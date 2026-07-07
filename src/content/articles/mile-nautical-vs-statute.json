@@ -1,0 +1,55 @@
+{
+  "slug": "mile-nautical-vs-statute",
+  "title": "Nautical Mile vs Statute Mile vs Kilometre: When 'Mile' Isn't 'Mile'",
+  "h1": "Nautical mile vs statute mile — the mile is not one unit",
+  "description": "1 nautical mile = 1852 m. 1 statute mile = 1609.344 m. Aviation and marine navigation are in nautical; road signs in statute. Difference: 15%.",
+  "category": "Length",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "The nautical mile is a minute of latitude. The statute mile is a Roman inheritance. Same name, 15% apart.",
+  "body": [
+    "'Mile' means one of two things depending on medium. On land, 5280 feet. On water and in the air, one minute of arc along a great circle. The two differ by 15% and the units are not interchangeable in navigation.",
+    "## The exact factors",
+    "> 1 statute mile = 5280 ft = 1609.344 m (land)\n> 1 nautical mile (nm, NM) = 1852 m exactly (marine, aviation)\n> 1 knot = 1 nautical mile per hour = 1.852 km/h\n> 1 mph = 1.609 km/h",
+    "## Where each is used",
+    "Statute mile: US and UK road distances, running events. Nautical mile: maritime charts, aviation flight plans, weather radar range. Kilometre: everywhere else.",
+    "## Worked example — flight plan",
+    "A 500 NM leg = 926 km = 575 statute miles. Fuel calculation using 500 statute miles would understate distance by 15% — enough to plan a flight that runs out of fuel. Aviation forces NM throughout; conversion happens only for pilot briefings to the public.",
+    "## Recap",
+    "Nautical mile = 1852 m. Statute mile = 1609 m. In aviation/marine work, never let them mix."
+  ],
+  "faqs": [
+    {
+      "q": "Is UK nautical mile the same as US?",
+      "a": "Since 1970 they are the same 1852 m. Historically the UK Admiralty mile was 1853.184 m."
+    },
+    {
+      "q": "Why is nautical mile 1852 m?",
+      "a": "One minute of arc on a great circle of the Earth. The exact value was standardised for consistency across nations."
+    }
+  ],
+  "related": [
+    {
+      "label": "Length converter",
+      "href": "/c/length"
+    },
+    {
+      "label": "Kilometres and miles on road signs",
+      "href": "/learn/km-miles-road-signs"
+    },
+    {
+      "label": "Nautical miles and knots",
+      "href": "/learn/nautical-miles-knots-aviation-feet"
+    }
+  ]
+}

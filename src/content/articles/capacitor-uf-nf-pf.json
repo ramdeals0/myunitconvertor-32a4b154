@@ -1,0 +1,53 @@
+{
+  "slug": "capacitor-uf-nf-pf",
+  "title": "µF, nF, pF: Capacitance Units for Real Circuits",
+  "h1": "Capacitance units — µF, nF and pF",
+  "description": "1 µF = 1000 nF = 10⁶ pF. Bulk decoupling in µF; RF bypass in nF; timing and matching in pF. Off by a decade means broken circuit.",
+  "category": "Capacitance",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Same physics, six orders of magnitude in practical values. Datasheets mix units on the same line — read the suffix carefully.",
+  "body": [
+    "Capacitor values span from single picofarads (RF matching) to hundreds of thousands of microfarads (motor start caps). The prefixes are consistent SI, but datasheets and schematics blend them freely.",
+    "## The exact factors",
+    "> 1 F = 10⁶ µF = 10⁹ nF = 10¹² pF\n> 1 µF = 1000 nF = 1 000 000 pF\n> 1 nF = 1000 pF",
+    "## Where each dominates",
+    "pF (1–1000 pF): RF matching, crystal load caps, PCB parasitics, timing networks. nF (1–1000 nF): decoupling, filter caps, high-frequency bypass. µF (1–1000 µF): power supply bulk, motor run/start, audio coupling. mF/F: hold-up capacitors, supercapacitors.",
+    "## Reading old markings",
+    "Ceramic caps: '104' = 10 × 10⁴ pF = 100 nF = 0.1 µF. '473' = 47 nF. '221' = 220 pF. Old European: '4n7' = 4.7 nF; '2µ2' = 2.2 µF. The letter replaces the decimal point.",
+    "## Worked example — decoupling",
+    "Digital IC supply pin needs 100 nF close to the pin (high-frequency bypass) plus 10 µF nearby (mid-frequency reservoir) plus 100 µF at the regulator (bulk). All three cover different frequency decades — designing with a single capacitor value misses two orders of magnitude of impedance.",
+    "## Recap",
+    "µF, nF, pF differ by 1000× steps. Marking codes hide behind two-digit + exponent format."
+  ],
+  "faqs": [
+    {
+      "q": "What is a 'farad'?",
+      "a": "The SI unit — 1 F = 1 C/V. Real capacitors are usually µF and smaller; supercaps hit hundreds of farads."
+    },
+    {
+      "q": "Why bother with pF-scale caps?",
+      "a": "At GHz frequencies, 1 pF has impedance ~50 Ω — significant for RF."
+    }
+  ],
+  "related": [
+    {
+      "label": "Capacitance converter",
+      "href": "/c/capacitance"
+    },
+    {
+      "label": "Farads and microfarads",
+      "href": "/learn/farads-microfarads-capacitor"
+    }
+  ]
+}

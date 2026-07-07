@@ -1,0 +1,51 @@
+{
+  "slug": "specific-heat-capacity-units",
+  "title": "Specific Heat Capacity: J/(kg·K), BTU/(lb·°F) and cal/(g·°C)",
+  "h1": "Specific heat capacity — J/(kg·K), BTU/(lb·°F) and cal/(g·°C)",
+  "description": "Water: 4186 J/(kg·K) = 1 BTU/(lb·°F) = 1 cal/(g·°C). Three unit systems, one number for water — coincidence baked in.",
+  "category": "Specific heat capacity",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Water's specific heat is the reference. Every other material's is quoted as a fraction. Cooling loops sized around wrong units under-deliver by 4×.",
+  "body": [
+    "Specific heat determines how much energy shifts temperature. Water is the universal reference, and the coincidence that its value is close to 1 in three unit systems keeps confusion alive.",
+    "## The exact factors",
+    "> 1 BTU/(lb·°F) = 4186.8 J/(kg·K) = 1 cal/(g·°C)\n> 1 kJ/(kg·K) = 0.239 BTU/(lb·°F)\n> Water: 4.186 kJ/(kg·K) = 1.000 BTU/(lb·°F)",
+    "## Typical values",
+    "Water: 4186 J/(kg·K). Ice: 2100. Steam: 2000. Ethylene glycol: 2400. Aluminium: 900. Copper: 385. Iron: 449. Air (const. P): 1005. Concrete: 880.",
+    "## Worked example — chilled water loop",
+    "Cooling load 100 kW, ΔT 6 °C, water. ṁ = Q/(c ΔT) = 100 000 / (4186 × 6) = 3.98 kg/s ≈ 240 L/min. Use glycol (c = 3600) and flow rises to 4.63 kg/s — 16% more. Miss the glycol correction and the coil is 16% undersized.",
+    "## Recap",
+    "Water is 4186 J/(kg·K). Copper is 385. Miss the factor of 10 and duct/pipe sizing is nonsense."
+  ],
+  "faqs": [
+    {
+      "q": "Is 'cp' constant?",
+      "a": "Weakly — for gases, cp shifts with temperature. For solids and liquids, essentially constant over a working range."
+    },
+    {
+      "q": "Difference between cp and cv?",
+      "a": "cp = at constant pressure, cv = at constant volume. For solids and liquids they are ~identical; for gases cp = cv + R (per mole)."
+    }
+  ],
+  "related": [
+    {
+      "label": "Specific heat capacity converter",
+      "href": "/c/specific-heat-capacity"
+    },
+    {
+      "label": "Joule and calorie reconciled",
+      "href": "/learn/joules-calories-kwh-btu-reconciled"
+    }
+  ]
+}
