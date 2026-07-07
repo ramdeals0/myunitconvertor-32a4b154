@@ -1,0 +1,51 @@
+{
+  "slug": "heat-transfer-coefficient-units",
+  "title": "Heat Transfer Coefficient: W/(m²·K) and BTU/(h·ft²·°F)",
+  "h1": "Heat transfer coefficient — W/(m²·K) and BTU/(h·ft²·°F)",
+  "description": "1 W/(m²·K) = 0.176 BTU/(h·ft²·°F). Natural convection air: 5–25 W/(m²·K). Boiling water: 3000–100 000. Choice of h dictates heat-exchanger area.",
+  "category": "Heat transfer coefficient",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "h joins fluid, geometry and flow. Wrong unit means the exchanger is 5× too big or 5× too small.",
+  "body": [
+    "Heat transfer coefficient h captures the combined effect of convection, boundary layer thickness and fluid properties. It slots directly into Q = hAΔT.",
+    "## The exact factor",
+    "> 1 W/(m²·K) = 0.17611 BTU/(h·ft²·°F)\n> 1 BTU/(h·ft²·°F) = 5.678 W/(m²·K)",
+    "## Typical values",
+    "Natural convection, air: 5–25. Forced convection, air: 25–250. Natural convection, water: 100–1000. Forced water: 500–10 000. Boiling water: 3000–100 000. Condensing steam: 5000–100 000.",
+    "## Worked example — shell-and-tube exchanger",
+    "Water/oil exchanger: h_water = 3000, h_oil = 400. Tube wall thermal resistance ~0.0002 m²·K/W. U = 1 / (1/3000 + 0.0002 + 1/400) = 337 W/(m²·K). Q = UAΔT. For 50 kW and 30 °C LMTD, A = 50 000/(337 × 30) = 4.95 m². Convert h_oil incorrectly and area doubles.",
+    "## Recap",
+    "h in W/(m²·K). Take the reciprocal sum for U through composite walls."
+  ],
+  "faqs": [
+    {
+      "q": "What is a good h for design?",
+      "a": "Depends on fluid and flow. Handbook correlations (Dittus-Boelter, Nusselt) generate h from Re, Pr and geometry."
+    },
+    {
+      "q": "Is fouling accounted for separately?",
+      "a": "Yes — fouling factors (h·ft²·°F/BTU or m²·K/W) add to 1/U and are conservatively assumed for design life."
+    }
+  ],
+  "related": [
+    {
+      "label": "Heat transfer coefficient converter",
+      "href": "/c/heat-transfer-coefficient"
+    },
+    {
+      "label": "Thermal conductivity units",
+      "href": "/learn/thermal-conductivity-units"
+    }
+  ]
+}

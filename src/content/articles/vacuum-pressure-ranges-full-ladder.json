@@ -1,0 +1,51 @@
+{
+  "slug": "vacuum-pressure-ranges-full-ladder",
+  "title": "Rough to XHV: The Full Vacuum Pressure Ladder",
+  "h1": "Vacuum pressure ranges — rough, medium, high, UHV and XHV",
+  "description": "Vacuum spans 15 decades from 1 atm to below 10⁻¹² torr. Each decade needs a different pump. Here is the complete map with torr, mbar and Pa side by side.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "1 atm → 760 torr → 101325 Pa. UHV → 10⁻¹⁰ torr → 10⁻⁸ Pa. Ninteen decades of pressure, five pump families, one messy vocabulary.",
+  "body": [
+    "Vacuum work is stratified by decade of pressure. Each stratum runs on a different pump technology, different gauge, and different chamber material. Convert between them fluently or misspec the pump by three orders of magnitude.",
+    "## The pressure ladder",
+    "> Low vacuum (rough): 1013 – 1 mbar (760 – 0.75 torr). Rotary vane, scroll, diaphragm pumps.\n> Medium vacuum: 1 – 10⁻³ mbar. Roots blowers, oil diffusion.\n> High vacuum (HV): 10⁻³ – 10⁻⁸ mbar. Turbomolecular pumps.\n> Ultra-high vacuum (UHV): 10⁻⁸ – 10⁻¹² mbar. Ion, cryo, titanium sublimation pumps.\n> Extreme high vacuum (XHV): below 10⁻¹² mbar. Combined pumping and baking.",
+    "## Why decade matters",
+    "At 1 mbar the mean free path is a few centimetres; molecules still collide constantly. At 10⁻⁶ mbar it is 50 m; at 10⁻¹⁰ mbar it takes an hour for a monolayer to deposit. Surface science, semiconductor deposition, particle accelerators live in UHV/XHV — everyday coatings do not.",
+    "## Regional units",
+    "US semiconductor: torr and millitorr. European semiconductor and physics: mbar. SI-strict labs: Pa. Charts routinely list all three.",
+    "## Recap",
+    "Rough → 1 mbar. HV → turbo. UHV → ion+cryo+bakeout. Wrong pump for the decade means you never reach base pressure."
+  ],
+  "faqs": [
+    {
+      "q": "What is base pressure?",
+      "a": "The lowest pressure a chamber reaches with pumps running and no gas load. Set by outgassing rate divided by pumping speed."
+    },
+    {
+      "q": "Why bake a UHV chamber?",
+      "a": "Water desorbs from stainless steel walls for weeks at room temperature. A 150–250 °C bakeout drives it off in hours, dropping base pressure two decades."
+    }
+  ],
+  "related": [
+    {
+      "label": "Pressure converter",
+      "href": "/c/pressure"
+    },
+    {
+      "label": "Torr and Pa vacuum ladder",
+      "href": "/learn/torr-pascal-vacuum"
+    }
+  ]
+}

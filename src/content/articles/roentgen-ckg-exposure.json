@@ -1,0 +1,51 @@
+{
+  "slug": "roentgen-ckg-exposure",
+  "title": "Roentgen and C/kg: Radiation Exposure Units",
+  "h1": "Radiation exposure units — roentgen and C/kg",
+  "description": "1 R = 2.58 × 10⁻⁴ C/kg. Exposure measures ionisation in air, distinct from absorbed dose. Legacy R survives in older radiography and civil defence surveys.",
+  "category": "Radiation exposure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Exposure is not dose. It's ionisation of air per mass. Historical but still turns up on Geiger counters.",
+  "body": [
+    "Exposure predates the modern absorbed-dose framework. It measures how much air a radiation field ionises, and it applies only to photons in air.",
+    "## The exact factor",
+    "> 1 R (roentgen) = 2.58 × 10⁻⁴ C/kg (of air)\n> 1 C/kg = 3876 R\n> For diagnostic X-rays in soft tissue: 1 R ≈ 0.87 rad ≈ 8.7 mGy",
+    "## Where each is used",
+    "Roentgen: legacy US radiography, older civil-defence Geiger counters, some geology field surveys. C/kg: SI standard, industrial radiation protection metrology. Modern practice mostly reports air kerma (Gy) instead of exposure.",
+    "## Worked example — Geiger counter reading",
+    "Old CD V-717 civil-defence meter reads 5 R/h. Modern equivalent air kerma rate: 5 × 8.76 mGy/R ≈ 44 mGy/h. Effective dose rate ≈ 44 mSv/h (for photons). Six minutes exposure at this rate delivers annual worker limit.",
+    "## Recap",
+    "R is exposure, not dose. For photons in tissue, 1 R ≈ 1 rad. Modern practice reports Gy directly."
+  ],
+  "faqs": [
+    {
+      "q": "Is R the same as rem?",
+      "a": "For gamma and X-rays in tissue, numerically close (1 R ≈ 0.87 rem). Not for other radiation types."
+    },
+    {
+      "q": "Do modern meters read in R?",
+      "a": "Rarely — most report µSv/h or nGy/h. R is legacy."
+    }
+  ],
+  "related": [
+    {
+      "label": "Radiation exposure converter",
+      "href": "/c/radiation-exposure"
+    },
+    {
+      "label": "Curie and becquerel",
+      "href": "/learn/curie-becquerel-radiation"
+    }
+  ]
+}

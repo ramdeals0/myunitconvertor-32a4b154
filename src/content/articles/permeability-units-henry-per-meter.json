@@ -1,0 +1,51 @@
+{
+  "slug": "permeability-units-henry-per-meter",
+  "title": "Permeability Units: H/m, µ_r and Why Iron is 1000× Air",
+  "h1": "Magnetic permeability units — H/m and relative permeability",
+  "description": "µ₀ = 4π × 10⁻⁷ H/m. Relative permeability µ_r is dimensionless. Iron alloys hit µ_r = 5000+; mu-metal 100 000+.",
+  "category": "Permeability",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "µ = µ₀ × µ_r links B and H: B = µH. Confuse µ with µ_r and you overshoot core sizing by three orders of magnitude.",
+  "body": [
+    "Permeability tells you how effectively a material carries magnetic flux for a given driving field. It is the slope of the B–H curve in the linear region. Two versions coexist: the absolute permeability (H/m) and the dimensionless relative permeability µ_r.",
+    "## The exact relationships",
+    "> µ₀ = 4π × 10⁻⁷ H/m ≈ 1.2566 × 10⁻⁶ H/m (permeability of free space)\n> µ_r = µ / µ₀ (dimensionless)\n> B = µ H = µ_r µ₀ H",
+    "## Typical values",
+    "Air, vacuum, most non-magnetics: µ_r ≈ 1. Aluminium: µ_r ≈ 1.000022. Silicon steel (transformers): µ_r = 4000–10 000. Mu-metal: µ_r up to 100 000. Superconductors (perfect diamagnet): µ_r = 0.",
+    "## Worked example — shielding",
+    "A mu-metal enclosure with µ_r = 80 000 reduces ambient 50 µT (earth field) by roughly µ_r inside a closed shell — down to <1 nT. Same enclosure in aluminium (µ_r ≈ 1) does nothing. Get the unit right or the shielding budget disappears.",
+    "## Recap",
+    "µ_r is a ratio; µ has units of H/m. Multiply µ_r by µ₀ to get absolute permeability."
+  ],
+  "faqs": [
+    {
+      "q": "Is permeability constant?",
+      "a": "No — real materials saturate. µ_r drops sharply as B approaches the saturation value (~2 T for silicon steel)."
+    },
+    {
+      "q": "What about frequency?",
+      "a": "At high frequencies µ becomes complex — the imaginary part accounts for hysteresis and eddy-current loss."
+    }
+  ],
+  "related": [
+    {
+      "label": "Permeability converter",
+      "href": "/c/permeability"
+    },
+    {
+      "label": "Tesla and gauss",
+      "href": "/learn/tesla-gauss-magnetic-flux-density"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "osmolarity-osmolality",
+  "title": "Osmolarity vs Osmolality: Why IV Fluids Come With Both",
+  "h1": "Osmolarity vs osmolality — clinical concentration units",
+  "description": "Osmolarity: osmoles per litre of solution. Osmolality: osmoles per kg of water. Plasma is 285–295 mOsm/kg. Confuse the units and IV fluid causes cell damage.",
+  "category": "Solution concentration",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "One measures solute per volume; the other per solvent mass. Clinical labs use osmolality (temperature-invariant); pharmacy labels use osmolarity.",
+  "body": [
+    "Osmotic pressure across a cell membrane is driven by the number of dissolved particles per unit of water. Two units capture this — osmolarity and osmolality — and they diverge at high concentration or high temperature.",
+    "## The exact relationships",
+    "> Osmolarity: Osm / L of solution\n> Osmolality: Osm / kg of water\n> 1 Osm = 1 mole of osmotically-active particles\n> For 1 mole NaCl dissociating fully: 2 Osm (Na⁺ + Cl⁻)",
+    "## Where each is used",
+    "Osmolality: measured by freezing-point depression, temperature-invariant, standard in clinical labs. Osmolarity: calculated from mass concentrations, convenient for pharmacy labels. Body fluids: 285–295 mOsm/kg is normal serum.",
+    "## Worked example — mannitol infusion",
+    "20% mannitol (200 g/L, MW 182) = 1099 mmol/L = 1099 mOsm/L (mannitol does not dissociate). This is roughly 4× serum osmolality — infused too fast, it pulls water out of cells and drops intracranial pressure fast, but overshooting causes acute kidney injury from tubular collapse.",
+    "## Recap",
+    "Osm/kg for lab measurements. Osm/L for pharmacy calcs. Serum lives in a tight ±5 mOsm/kg window."
+  ],
+  "faqs": [
+    {
+      "q": "Is there a normal osmolar gap?",
+      "a": "Yes — measured minus calculated osmolality is <10 mOsm/kg normally. Elevated gap suggests methanol, ethylene glycol, or other unmeasured solutes."
+    },
+    {
+      "q": "Does dextrose contribute to osmolarity?",
+      "a": "Yes — D5W (5% dextrose) is 278 mOsm/L, iso-osmotic before metabolism."
+    }
+  ],
+  "related": [
+    {
+      "label": "Solution concentration converter",
+      "href": "/c/concentration-solution"
+    },
+    {
+      "label": "Molar concentration converter",
+      "href": "/c/concentration-molar"
+    }
+  ]
+}

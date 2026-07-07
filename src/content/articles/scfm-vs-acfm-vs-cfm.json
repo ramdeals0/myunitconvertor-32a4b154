@@ -1,0 +1,53 @@
+{
+  "slug": "scfm-vs-acfm-vs-cfm",
+  "title": "CFM, SCFM, ACFM: The Compressed-Air Units That Aren't Interchangeable",
+  "h1": "CFM, SCFM and ACFM — compressed air and process flow",
+  "description": "ACFM is actual volumetric flow at line conditions; SCFM normalises to standard T and P. At 100 psig, 1 ACFM ≈ 7.8 SCFM.",
+  "category": "Flow",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "SCFM = ACFM × (P_actual/P_std) × (T_std/T_actual). Miss the correction and compressor sizing overshoots by 30%.",
+  "body": [
+    "Air is compressible, so a volumetric flow rate is meaningless without stating the temperature and pressure it was measured at. SCFM fixes those reference conditions; ACFM lets them float; plain CFM is ambiguous.",
+    "## The exact relationship",
+    "> SCFM = ACFM × (P_actual / P_std) × (T_std / T_actual)\n> Standard varies by industry: ASME uses 14.7 psia, 68 °F. CAGI uses 14.5 psia, 68 °F, 0% RH. ISO 1217 uses 1 bar, 20 °C, 0% RH.",
+    "## Where each is used",
+    "SCFM: compressor ratings, plant air budgets, sizing calcs. ACFM: fan curves, blower selection, actual duct velocity, filtration face velocity. Nm³/h and Sm³/h: European equivalents.",
+    "## Worked example — pneumatic tool sizing",
+    "A tool spec calls for 15 SCFM at 90 psig. At 90 psig line pressure, 15 SCFM = ~2.3 ACFM. Size the drop hose for 2.3 CFM at line pressure, not 15 — velocity and pressure drop drop into spec instead of choking the tool.",
+    "## Regional notes",
+    "'SCFM' varies with the reference standard. Compare specs by the underlying (P, T) — a 15 SCFM (CAGI) rating is ~0.5% different from 15 SCFM (ASME).",
+    "## Recap",
+    "Absolute pressure × volumetric flow is the invariant. SCFM is normalised; ACFM is what actually flowed."
+  ],
+  "faqs": [
+    {
+      "q": "Are Nm³/h and SCFM the same?",
+      "a": "Same idea, different units. Nm³/h uses 0 °C, 1.01325 bar (or 1 bar in ISO). Convert with the ratio 1 Nm³/h ≈ 0.589 SCFM."
+    },
+    {
+      "q": "Does humidity matter?",
+      "a": "For precise work, yes — water vapour displaces air. CAGI and ISO use 0% RH; ambient air at 50% RH is ~1% lower dry-air density."
+    }
+  ],
+  "related": [
+    {
+      "label": "Flow converter",
+      "href": "/c/flow"
+    },
+    {
+      "label": "CFM and m³/h ventilation",
+      "href": "/learn/cfm-m3h-ventilation"
+    }
+  ]
+}

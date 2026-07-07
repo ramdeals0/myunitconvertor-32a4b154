@@ -1,0 +1,51 @@
+{
+  "slug": "iec-vs-si-storage",
+  "title": "GB vs GiB, MB vs MiB: The 4.9% Storage Discrepancy",
+  "h1": "Storage capacity units — GB (SI) vs GiB (IEC)",
+  "description": "1 GB = 10⁹ bytes (SI). 1 GiB = 2³⁰ = 1.074 × 10⁹ bytes (IEC). Drive manufacturers use SI; operating systems mostly show IEC. The 7% gap is why 'my 1 TB drive shows as 931 GB'.",
+  "category": "Data",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "SI multiplies by 1000. IEC binary multiplies by 1024. Everyone kept using GB, MB but pointing at different powers.",
+  "body": [
+    "Storage capacity notation has been ambiguous since the 1970s. Manufacturers report decimal multiples (GB = 10⁹ B). OS tools historically use binary multiples but keep the SI label. The IEC standardised the binary prefixes (Ki, Mi, Gi) in 1999 but adoption remains partial.",
+    "## The exact factors",
+    "> Decimal (SI): 1 kB = 10³ B, 1 MB = 10⁶ B, 1 GB = 10⁹ B, 1 TB = 10¹² B\n> Binary (IEC): 1 KiB = 2¹⁰ = 1024 B, 1 MiB = 2²⁰, 1 GiB = 2³⁰, 1 TiB = 2⁴⁰\n> 1 GiB / 1 GB = 1.0737 (7.4% larger); grows to 10% at TB scale",
+    "## Where each is used",
+    "Decimal (GB, TB): storage drive marketing, network throughput, some file managers (macOS since 10.6). Binary (GiB, TiB): most Linux tools, Windows Explorer, RAM capacity (always binary because address lines are powers of 2).",
+    "## Worked example — 'missing' drive space",
+    "A '1 TB' drive holds 10¹² bytes = 9.31 × 10¹¹ / 1024⁴ = 931 GiB. Windows shows 931 GB (labelled GB but computed as GiB). Neither is wrong — they use different definitions of the same abbreviation.",
+    "## Recap",
+    "GB = 10⁹. GiB = 2³⁰. The gap widens 7.4% (GB), 9.5% (TB), 12% (PB)."
+  ],
+  "faqs": [
+    {
+      "q": "Why does RAM stay binary?",
+      "a": "Memory address lines are natively powers of 2. A 4 GiB DIMM has exactly 4 × 2³⁰ bytes; there is no decimal equivalent."
+    },
+    {
+      "q": "Is network throughput SI or binary?",
+      "a": "Almost always SI. '1 Gbps' = 10⁹ bits per second, not 2³⁰."
+    }
+  ],
+  "related": [
+    {
+      "label": "Data converter",
+      "href": "/c/data"
+    },
+    {
+      "label": "Bits vs bytes",
+      "href": "/learn/bits-vs-bytes-storage"
+    }
+  ]
+}

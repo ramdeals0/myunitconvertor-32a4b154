@@ -1,0 +1,51 @@
+{
+  "slug": "horsepower-variants",
+  "title": "Horsepower Variants: Mechanical, Metric, Electrical, Boiler",
+  "h1": "Horsepower variants — mechanical, metric, electrical, boiler",
+  "description": "1 hp (mechanical) = 745.7 W. 1 PS = 735.5 W. 1 electrical hp = 746 W. 1 boiler hp = 9810 W. Four horsepowers, four numbers.",
+  "category": "Power",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Horsepower is not one unit. Four common variants differ by 1–1300%.",
+  "body": [
+    "The horsepower is a family of units, not a single one. Each variant traces back to a different historical definition — Watt's mechanical hp, continental Europe's metric hp, the electrical industry's rounded value, and the boiler industry's steam-based hp.",
+    "## The exact factors",
+    "> Mechanical hp (US, imperial): 745.6999 W\n> Metric hp / PS / CV: 735.4988 W (1.4% smaller)\n> Electrical hp: 746 W (rounded, motor nameplate standard)\n> Boiler hp: 9809.5 W (evaporation of 34.5 lb water/hr at 212 °F)",
+    "## Where each is used",
+    "Mechanical: US automotive, US pump specs. Metric (PS/CV): European cars, motorcycles. Electrical: US and international motor nameplates. Boiler: steam boiler ratings, industrial heating.",
+    "## Worked example — European vs US car spec",
+    "'300 PS turbo' = 220.65 kW = 295.9 hp mechanical. US press quotes 300 hp — same car, 4 hp discrepancy. On boutique high-output cars, this compounds through engine mods and warranty limits.",
+    "## Recap",
+    "hp without a qualifier is ambiguous. Mechanical vs metric differs by 1.4%; boiler is a completely different scale."
+  ],
+  "faqs": [
+    {
+      "q": "Is 1 hp = 550 ft·lb/s always?",
+      "a": "Only for mechanical hp. Metric hp defined as 75 kgf·m/s = 735.5 W."
+    },
+    {
+      "q": "Which one does a motor nameplate use?",
+      "a": "Electrical hp (746 W) — a convenient rounded value for AC motor ratings."
+    }
+  ],
+  "related": [
+    {
+      "label": "Power converter",
+      "href": "/c/power"
+    },
+    {
+      "label": "hp vs kW vs PS",
+      "href": "/learn/hp-vs-kw-vs-ps"
+    }
+  ]
+}

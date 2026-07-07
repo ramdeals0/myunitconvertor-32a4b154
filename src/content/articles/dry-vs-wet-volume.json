@@ -1,0 +1,51 @@
+{
+  "slug": "dry-vs-wet-volume",
+  "title": "Dry vs Wet Volume: Bushels, Dry Quarts and the Trap",
+  "h1": "Dry vs wet volume — bushel, dry pint, dry quart",
+  "description": "1 US dry quart = 1.101 L. 1 US liquid quart = 0.946 L. 16% difference. Grain sold in dry, milk in liquid — same word, different unit.",
+  "category": "Dry volume",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Dry measure and liquid measure use the same names (pint, quart) for different volumes.",
+  "body": [
+    "US customary preserves two parallel volume systems for historical trade reasons. Dry volumes cover grain, produce, salt — anything measured heaped or level. Liquid volumes cover fluids. Modern practice usually specifies which system, but recipes and shipping manifests occasionally drop the qualifier.",
+    "## The exact factors",
+    "> 1 US dry pint = 550.6 mL\n> 1 US liquid pint = 473.2 mL (14% smaller)\n> 1 US dry quart = 1101.2 mL\n> 1 US bushel = 32 dry quarts = 35.24 L\n> 1 US peck = 8 dry quarts = 8.81 L",
+    "## Where each is used",
+    "Dry: grain (bushel of wheat = 27.22 kg by convention), produce shipping, some spices. Liquid: everything else. Berries — depending on state — sold in either.",
+    "## Worked example — flour recipe",
+    "'2 quarts flour' in a US colonial-recipe book means 2 dry quarts = 2.20 L. Modern cook reads as liquid quarts and uses 1.89 L — 15% shortfall by volume. Baking recipes shift dramatically at 15% off.",
+    "## Recap",
+    "Same word, different volume. Dry ≈ 1.16 × liquid. Recipes and shipping manifests should always specify."
+  ],
+  "faqs": [
+    {
+      "q": "Is 'bushel' a mass or volume?",
+      "a": "Volume by strict definition, but customary trade converts to mass by commodity (wheat bushel = 60 lb, corn = 56 lb)."
+    },
+    {
+      "q": "Do metric systems have this split?",
+      "a": "No — SI uses litres for both. The split is US customary only."
+    }
+  ],
+  "related": [
+    {
+      "label": "Dry volume converter",
+      "href": "/c/volume-dry"
+    },
+    {
+      "label": "Volume converter",
+      "href": "/c/volume"
+    }
+  ]
+}

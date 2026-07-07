@@ -1,0 +1,51 @@
+{
+  "slug": "energy-units-reconciled",
+  "title": "Joule, Calorie, kWh, BTU, eV: One Chart, Every Energy Unit You'll Meet",
+  "h1": "Energy units — joule, calorie, kWh, BTU and eV",
+  "description": "1 kWh = 3.6 MJ = 860 kcal = 3412 BTU = 2.25 × 10²⁵ eV. Same energy, different disciplines' vocabularies.",
+  "category": "Energy",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Nine common energy units, one physical quantity. Rounding errors compound across conversions — do all math in joules, present in whatever the audience reads.",
+  "body": [
+    "Every field kept its favourite energy unit. Physicists use joules and eV. Utilities bill in kWh. Food labels use kcal (calling it Calorie with a capital C). HVAC keeps BTU. Nutrition sometimes reverts to plain calorie. Nuclear engineering slips into eV even in macroscopic calcs.",
+    "## The exact factors",
+    "> 1 J = 1 N·m = 1 W·s\n> 1 kWh = 3.6 × 10⁶ J = 3.6 MJ\n> 1 cal = 4.184 J; 1 kcal (Cal) = 4184 J\n> 1 BTU = 1055.06 J\n> 1 eV = 1.602 × 10⁻¹⁹ J",
+    "## Cross-scale examples",
+    "Chocolate bar: 250 kcal = 1.05 MJ = 0.29 kWh. Home daily electricity: 30 kWh = 108 MJ. Gallon of gasoline: 33.7 kWh = 121 MJ = 115 000 BTU. 1 eV per particle × Avogadro ≈ 96 kJ/mol.",
+    "## Worked example — heating water",
+    "Raise 100 L water from 20 to 60 °C. Q = mcΔT = 100 × 4186 × 40 = 16.7 MJ = 4.65 kWh = 15 875 BTU = 4000 kcal. All four numbers describe the same job — utility bill vs equipment nameplate vs food-science reference just pick different names.",
+    "## Recap",
+    "Work in joules. Present in the audience's unit."
+  ],
+  "faqs": [
+    {
+      "q": "Is 'Calorie' with a capital C the same as calorie?",
+      "a": "No — food 'Calorie' is 1 kcal = 1000 physics calories. It's a permanent source of confusion in nutrition literature."
+    },
+    {
+      "q": "Why is eV used for macroscopic energy?",
+      "a": "Convenient when scaling from single-particle physics — 1 eV/atom × N_A ≈ 96.5 kJ/mol."
+    }
+  ],
+  "related": [
+    {
+      "label": "Energy converter",
+      "href": "/c/energy"
+    },
+    {
+      "label": "Joules and calories reconciled",
+      "href": "/learn/joules-calories-kwh-btu-reconciled"
+    }
+  ]
+}
