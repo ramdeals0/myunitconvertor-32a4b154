@@ -62,7 +62,7 @@ export default function App() {
               <Route path="/es/*" element={<AppRoutes />} />
               <Route path="/hi/*" element={<AppRoutes />} />
               <Route path="/en/*" element={<AppRoutes />} />
-              <Route path="/*" element={<AppRoutes />} />
+              <Route path="/*" element={<LocaleRedirect><AppRoutes /></LocaleRedirect>} />
             </Routes>
           </main>
           <SiteFooter />
