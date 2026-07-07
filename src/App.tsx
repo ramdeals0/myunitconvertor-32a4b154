@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { ScientificCalculator } from "@/components/ScientificCalculator";
 import { I18nProvider } from "@/lib/i18n";
-import { LocaleSync } from "@/components/LocaleShell";
+import { LocaleSync, LocaleRedirect } from "@/components/LocaleShell";
 
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
