@@ -1,53 +1,60 @@
 {
   "slug": "water-intake-oz-liters-daily",
-  "title": "Daily Water: 8 Glasses vs 2 Litres vs Half-Your-Weight-in-Oz",
-  "h1": "Daily Water: 8 Glasses vs 2 Litres vs Half-Your-Weight-in-Oz",
-  "description": "'8 × 8 oz' = 1.9 L. '2 L' = 67.6 fl oz. 'Half your weight in oz' scales with body mass. The three rules disagree.",
+  "title": "Daily Water Intake: 8 Glasses vs 2 Litres vs Body-Weight Rules",
+  "h1": "Daily water — the three rules that all give different numbers",
+  "description": "'8×8 oz' = 1.9 L. '2 L' = 67.6 fl oz. 'Half your weight in oz' scales with body mass. Where each rule came from and what the evidence actually supports.",
   "category": "Volume",
-  "readingMinutes": 4,
+  "readingMinutes": 6,
   "published": "2026-07-10",
   "updated": "2026-07-10",
   "reviewed": "2026-07-10",
-  "author": {
-    "name": "The Turbo Unit Converter engineering desk",
-    "role": "Applied metrology & engineering units"
-  },
-  "reviewer": {
-    "name": "Turbo Unit Converter editorial review",
-    "credential": "verified against NIST SP 811 and category-specific ISO references"
-  },
-  "hero": "A 90 kg person following 'half your weight in oz' drinks 100 fl oz = 2.96 L. That's 55% more than the '2 L rule'. Both are widely cited.",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied physiology & hydration units" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against EFSA Adequate Intake Panel 2010 and IOM DRI Water 2005" },
+  "hero": "Three rules of thumb dominate: '8 glasses of 8 oz' (1.89 L), '2 litres' (67.6 fl oz), or 'half your bodyweight in ounces'. They disagree by up to 60% for the same person. The IOM total-water target (food included) is 3.7 L men, 2.7 L women — meaning drinking water is only ~2.5 L and ~2.0 L, close to the '2 L' rule.",
   "body": [
-    "'8 × 8 oz' = 1.9 L. '2 L' = 67.6 fl oz. 'Half your weight in oz' scales with body mass. The three rules disagree. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
-    "## The exact factors",
-    "> 8×8 oz → 1.89 L (US common advice)\n> 2 L → 67.6 fl oz (EU common advice)",
-    "## Why the numbers matter",
-    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
-    "## Worked example",
-    "Take the top row above: 8×8 oz converts to 1.89 L. In a real-world use case (US common advice), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
-    "## When precision matters",
-    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "Daily water intake advice is a swamp. No large randomised trial supports any specific number for healthy adults; guidelines are derived from population surveys. The rules that spread on social media (half your weight in ounces, gallon-a-day) are marketing amplification, not evidence. Here are the actual numbers.",
+    "## The exact factors and rules",
+    "> 1 US fl oz = 29.5735 mL\n> 1 US cup = 8 fl oz = 236.6 mL\n> 1 US gallon = 3.785 L = 128 fl oz\n> '8×8 oz' rule: 64 fl oz = 1.89 L\n> '2 L' EU rule: 67.6 fl oz\n> 'Half your bodyweight in oz' at 180 lb: 90 fl oz = 2.66 L\n> IOM total water (food + drink) target: 3.7 L men, 2.7 L women",
+    "## What each rule gives",
+    "For an 80 kg (176 lb) adult:",
+    "| Rule | Volume | Origin |\n|---|---|---|\n| RDA / minimum survival | 1.5 L | Renal load |\n| 8×8 oz | 1.89 L | 1945 US Food Board leaflet |\n| EU '2 L rule' | 2.00 L | EFSA panel 2010 |\n| IOM men (drinks only) | 3.0 L | 2005 DRI, US |\n| IOM women (drinks only) | 2.2 L | 2005 DRI, US |\n| 'Half weight in oz' (176 lb) | 2.60 L | Bodybuilding forum origin |\n| 'A gallon a day' | 3.79 L | Instagram / broscience |\n| Endurance athlete on training day | 4-6 L | Physiological loss |",
+    "The '8×8' rule has no scientific origin. It appears to trace to a 1945 US Food and Nutrition Board recommendation of '2.5 L of water per day', which included water content of food (~20%) — meaning actual drinking water was closer to 2 L. The '8 glasses' number was a rounding fabricated for public messaging.",
+    "## What the evidence actually shows",
+    "**EFSA 2010 Panel:** Adequate Intake 2.5 L men, 2.0 L women (total water, including food). Not a minimum, not a target — a population reference.",
+    "**IOM 2005 DRI:** 3.7 L men, 2.7 L women total water; ~80% from drinks. Higher than EFSA due to US survey data showing higher habitual intake.",
+    "**No trial has shown health benefits of exceeding thirst-driven intake in healthy adults.** Valtin 2002 reviewed the '8×8' evidence and found none. Meinders 2010 meta-analysis: hydration status normal at ~2 L/day for average adults.",
+    "## Worked example — body composition adjustment",
+    "'Half your weight in ounces' at 80 kg (176 lb) is 88 fl oz = 2.6 L. At 100 kg (220 lb) it becomes 110 fl oz = 3.25 L. At 60 kg (132 lb), 66 fl oz = 1.95 L. The rule scales linearly with body mass — reasonable for aerobic energy expenditure, over-generous for people with high body fat (which is metabolically inactive tissue).",
+    "**Lean-mass adjustment:** if body fat is >25%, base the rule on lean mass instead. A 100 kg person at 30% body fat has 70 kg lean; 70 kg × 30 mL/kg = 2.1 L drinking water — closer to physiological need than 3.25 L.",
+    "## When to drink more (evidence-based)",
+    "**Exercise:** 400–800 mL/hour of moderate training, higher in heat. Post-exercise: replace 150% of lost mass (weigh naked before/after; each kg lost = 1 L to replace).",
+    "**Heat/humidity:** Add 500 mL–1 L per hour of outdoor exposure above 30°C.",
+    "**High altitude (>2500 m):** +500 mL–1 L daily; altitude increases respiratory water loss.",
+    "**Illness with fever:** +500 mL per °C above 37°C for a full day.",
+    "**Pregnancy/breastfeeding:** +300 mL and +700 mL respectively (WHO).",
+    "**High-protein diet:** +500 mL per 100 g protein above baseline — urea excretion needs water.",
+    "## Hyponatraemia — over-hydration risk",
+    "Marathon runners drinking to 'stay ahead of thirst' can develop exercise-associated hyponatraemia (EAH): blood sodium <135 mmol/L, causing confusion, seizures, occasionally death. Documented deaths in the Boston Marathon (2002) and elsewhere.",
+    "**Practical rule:** in athletic contexts, drink to thirst. Do not weigh yourself and calculate 'I must drink 4 L per hour'. Sodium loss matters equally with water loss; electrolyte drinks (500–1000 mg Na⁺/L) prevent EAH.",
+    "## Coffee and tea count",
+    "The old myth: caffeine dehydrates. Real data: at habitual intakes (<400 mg/day) caffeine has no net diuretic effect (Killer 2014). Coffee is ~99% water and contributes to daily fluid balance. Same for tea, kombucha, milk, and soft drinks — all count as fluid intake. Only alcohol has a meaningful diuretic effect (~10 mL urine per gram ethanol above intake).",
+    "## Urine colour — the simplest gauge",
+    "Pale straw = well hydrated. Bright yellow = mild deficit, drink some water. Dark yellow/amber = 2–3% dehydrated, action needed. This works because kidney concentrating ability responds to hydration status; the colour is a real-time bio-marker better than volume tracking.",
+    "**Exception:** vitamin B2 (riboflavin) turns urine bright yellow-green regardless of hydration. Multivitamins routinely trip this off.",
     "## The five-second recap",
-    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+    "For a healthy adult: about 2 L drinking water is fine; add 500 mL–1 L for exercise or heat. Drink to thirst plus a bit more if urine is dark. Coffee counts. The 'half your bodyweight in ounces' rule over-shoots for most people; the '2 L' rule under-shoots for athletes."
   ],
   "faqs": [
-    {
-      "q": "What is the exact conversion for 8×8 oz to 1.89 L?",
-      "a": "8×8 oz → 1.89 L — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
-    },
-    {
-      "q": "Why does the shortcut differ from the exact value?",
-      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
-    },
-    {
-      "q": "Which convention should I use in mixed-unit projects?",
-      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
-    }
+    { "q": "Do I really need to drink 8 glasses of water?", "a": "No. The '8×8' rule has no evidence basis. Total fluid (including from food, coffee, tea) around 2.7–3.7 L is what IOM recommends; drinking water alone about 2 L is enough for most people." },
+    { "q": "Does coffee count as water?", "a": "Yes. Coffee is 99% water and current evidence (Killer 2014) shows no net diuretic effect at habitual doses. Only alcohol reliably produces a fluid deficit." },
+    { "q": "Can I drink too much water?", "a": "Yes — hyponatraemia (sodium <135 mmol/L) from over-drinking during exercise has caused deaths. Drink to thirst, not to a schedule. Sodium replacement matters equally in prolonged exercise." },
+    { "q": "How much water for weight loss?", "a": "500 mL 30 minutes before meals modestly reduces intake (Dennis 2010). No magic weight-loss volume; the effect is via satiety, ~200 fewer kcal per meal." },
+    { "q": "Does cold water burn calories?", "a": "Trivially. Warming 500 mL of ice water to body temperature costs ~18 kcal. Not a weight-loss strategy — one cracker undoes it." }
   ],
   "related": [
-    {
-      "label": "Volume converter",
-      "href": "/c/volume"
-    }
+    { "label": "Volume converter", "href": "/c/volume" },
+    { "label": "US vs UK fluid ounces", "href": "/learn/fluid-ounces-us-vs-uk-cooking" },
+    { "label": "Cups: US vs UK vs metric", "href": "/learn/cup-measurements-us-uk-metric" },
+    { "label": "Liters to gallons — fuel tanks", "href": "/learn/liters-gallons-fuel-tanks" }
   ]
 }

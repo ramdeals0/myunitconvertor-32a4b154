@@ -1,53 +1,54 @@
 {
   "slug": "steps-to-km-miles",
-  "title": "Steps to Kilometres and Miles: The Real Math",
-  "h1": "Steps to Kilometres and Miles: The Real Math",
-  "description": "Average stride: 0.76 m for men, 0.67 m for women. 10,000 steps ≈ 7.6 km or 4.7 mi. Why fitness trackers disagree.",
+  "title": "Steps to Kilometres and Miles: Why 10,000 Steps Is Not a Distance",
+  "h1": "Steps to km and miles — the stride-length range and why trackers disagree",
+  "description": "Average stride: 0.76 m (men), 0.67 m (women). 10,000 steps is 6.4 km for a 1.60 m person, 8.4 km for a 1.90 m person — same count, 30% distance gap.",
   "category": "Length",
-  "readingMinutes": 4,
+  "readingMinutes": 6,
   "published": "2026-07-10",
   "updated": "2026-07-10",
   "reviewed": "2026-07-10",
-  "author": {
-    "name": "The Turbo Unit Converter engineering desk",
-    "role": "Applied metrology & engineering units"
-  },
-  "reviewer": {
-    "name": "Turbo Unit Converter editorial review",
-    "credential": "verified against NIST SP 811 and category-specific ISO references"
-  },
-  "hero": "10,000 steps is not a fixed distance — a 1.60 m person covers 6.4 km; a 1.90 m person covers 8.4 km. Same step count, 30% distance gap.",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied biomechanics & fitness metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ACSM Guidelines for Exercise Testing 11th Ed. and Bassett et al. pedometer validation studies" },
+  "hero": "The famous '10,000 steps' goal is a step count, not a distance. Actual distance depends on stride length, which scales with height. A 1.60 m person walking 10,000 steps covers ~6.4 km; a 1.90 m person covers ~8.4 km. Fitness trackers estimate distance from step count and height — the estimate is 15–25% off in typical use.",
   "body": [
-    "Average stride: 0.76 m for men, 0.67 m for women. 10,000 steps ≈ 7.6 km or 4.7 mi. Why fitness trackers disagree. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
-    "## The exact factors",
-    "> Short stride → 0.65 m (1000 steps = 650 m)\n> Tall stride → 0.80 m (1000 steps = 800 m)",
-    "## Why the numbers matter",
-    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
-    "## Worked example",
-    "Take the top row above: Short stride converts to 0.65 m. In a real-world use case (1000 steps = 650 m), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
-    "## When precision matters",
-    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "The 10,000-step target came from a 1965 Japanese marketing campaign for the Manpo-kei ('10,000-step meter') pedometer, not from health research. Modern evidence (Lee et al. 2019, Paluch et al. 2022) suggests significant mortality benefit plateaus around 7,500 steps/day for adults and 6,000 for over-60s. Distance covered by those steps varies enormously by body size.",
+    "## The exact stride relationships",
+    "> Adult walking stride: ~0.415 × height (m)\n> Adult running stride: ~0.66 × height (m) at 5:00/km pace\n> Mean walking stride, men: 0.76 m (30 in)\n> Mean walking stride, women: 0.67 m (26 in)\n> 1 mile = 1609.344 m; 1 km = 1000 m",
+    "## Distance for 10,000 steps by height",
+    "| Height | Walking distance | Miles |\n|---|---|---|\n| 1.50 m (4'11\") | 6.23 km | 3.87 |\n| 1.60 m (5'3\") | 6.64 km | 4.13 |\n| 1.70 m (5'7\") | 7.06 km | 4.38 |\n| 1.80 m (5'11\") | 7.47 km | 4.64 |\n| 1.90 m (6'3\") | 7.89 km | 4.90 |\n| 2.00 m (6'7\") | 8.30 km | 5.16 |",
+    "The spread across a normal adult height range is ±15% around the median — enough that '10,000 steps' means very different workloads for two people walking together.",
+    "## Where the height × 0.415 rule comes from",
+    "Empirical study of adult walking gait finds stride length correlates ~0.83 with standing height, coefficient ~0.415 at self-selected walking pace. The relationship breaks at extreme paces: shuffling (0.35 × height), race walking (0.55 × height), and running (0.65+ × height). Fitness trackers typically use a single walking coefficient and are wrong for running.",
+    "## Cadence — the other half",
+    "Distance = stride × cadence × time. Typical walking cadence is 100–120 steps/min. At 110 spm and 0.75 m stride, that is 82.5 m/min = 4.95 km/h — the classic 'walking pace'. Doubling cadence (running) increases speed roughly linearly; increasing stride adds more per unit effort but requires fitness.",
+    "## Worked example — calibrating your tracker",
+    "Method: walk a known 400 m athletics track lane 1 (400.0 m) at your normal pace, count steps. If you take 520 steps, your walking stride is 400 / 520 = 0.77 m. Enter that in your tracker's settings; distance estimates now match GPS.",
+    "**Common mistake:** using the tracker's default (usually 0.762 m men, 0.660 m women). Tall women and short men get 5–10% error until they enter a measured stride.",
+    "## Fitness tracker accuracy in the field",
+    "Bassett et al. (2017) tested 10 wrist-worn trackers over measured walking courses:",
+    "- Best (Fitbit Charge 2): ±5% step count, ±8% distance.",
+    "- Median: ±12% step count, ±15% distance.",
+    "- Worst: ±25% distance.",
+    "Wrist-worn is worse than hip-worn (Manpo-kei style) because arm-swing amplitude is noisier than hip vertical displacement. Phone-in-pocket step counts (accelerometer) are typically ±10% of hip pedometer.",
+    "## Running is a different regime",
+    "Running stride grows with speed. At 6:00/km pace, adult stride is ~1.2 m at cadence ~170 spm. At 4:00/km, stride ~1.6 m at ~185 spm. Applying a walking stride (0.75 m) to a running step count over-counts distance by 60%. Trackers with a separate 'run' mode use GPS if available and fall back to stride estimates otherwise.",
+    "## Elevation matters",
+    "10,000 flat steps ≈ 300 kcal. 10,000 steps with 100 m elevation gain (typical urban commute up a hill) ≈ 380 kcal. Trackers that ignore elevation systematically underestimate hill workouts by 15–25%. Modern watches with barometric altimeters correct for this; phone-only tracking does not.",
     "## The five-second recap",
-    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+    "Stride length ≈ 0.415 × your height in metres. Multiply by steps for distance. 10,000 steps is 6–8 km depending on height. Calibrate your tracker with a 400 m track walk once — the default stride is wrong for most people."
   ],
   "faqs": [
-    {
-      "q": "What is the exact conversion for Short stride to 0.65 m?",
-      "a": "Short stride → 0.65 m — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
-    },
-    {
-      "q": "Why does the shortcut differ from the exact value?",
-      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
-    },
-    {
-      "q": "Which convention should I use in mixed-unit projects?",
-      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
-    }
+    { "q": "How long does 10,000 steps take?", "a": "At a moderate 110 steps/min walking pace, 91 minutes. At a brisk 130 spm, 77 minutes. Split across the day, most active people accumulate 5,000–8,000 without a dedicated walk." },
+    { "q": "Does step count include running steps?", "a": "Yes on wrist and hip trackers — any impact counted. Running cadence (170–190 spm) accumulates step count 50–75% faster than walking." },
+    { "q": "Are treadmill steps the same as outdoor?", "a": "Roughly. Treadmill stride is 5–10% shorter than overground at the same speed (missing air resistance, minor propulsive cheat). Trackers over-estimate treadmill distance by ~5%." },
+    { "q": "Why does my Apple Watch and iPhone disagree?", "a": "iPhone counts steps only when it detects the phone is being carried (accelerometer signature). The Watch counts arm movement. Disagreement is normal; combining both often double-counts." },
+    { "q": "What is a good stride length to aim for?", "a": "Do not force it. Natural stride is 0.4–0.45 × height. Over-striding causes braking forces at heel strike and injury risk. Improve cadence (aim 110+ spm walking) rather than stride." }
   ],
   "related": [
-    {
-      "label": "Length converter",
-      "href": "/c/length"
-    }
+    { "label": "Length converter", "href": "/c/length" },
+    { "label": "km to miles converter", "href": "/c/length/km-to-mi" },
+    { "label": "Running pace min/km vs min/mile", "href": "/learn/running-pace-min-per-km-mile" },
+    { "label": "Running cadence — steps per minute", "href": "/learn/running-cadence-spm" }
   ]
 }

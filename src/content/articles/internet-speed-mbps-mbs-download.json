@@ -1,53 +1,47 @@
 {
   "slug": "internet-speed-mbps-mbs-download",
-  "title": "Internet Speed: Mbps vs MB/s Download Times",
-  "h1": "Internet Speed: Mbps vs MB/s Download Times",
-  "description": "1 GB file at 100 Mbps = 82 seconds. ISPs quote bits; browsers show bytes. The /8 factor confuses everyone.",
+  "title": "Mbps vs MB/s: Why '100 Mbps' Downloads at 12 MB/s",
+  "h1": "Mbps vs MB/s — the factor of 8 that makes your gigabit feel slow",
+  "description": "1 byte = 8 bits, so 100 Mbps ≈ 12.5 MB/s in your browser. Real vs advertised throughput, TCP overhead, and the four places the bits-vs-bytes trap costs you.",
   "category": "Data-transfer",
-  "readingMinutes": 4,
+  "readingMinutes": 6,
   "published": "2026-07-10",
   "updated": "2026-07-10",
   "reviewed": "2026-07-10",
-  "author": {
-    "name": "The Turbo Unit Converter engineering desk",
-    "role": "Applied metrology & engineering units"
-  },
-  "reviewer": {
-    "name": "Turbo Unit Converter editorial review",
-    "credential": "verified against NIST SP 811 and category-specific ISO references"
-  },
-  "hero": "A '100 Mbps' plan downloads at ~12.5 MB/s in Chrome's download bar. The 8× confusion is why '100 Mbps feels slow'.",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Networking & applied data units" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEEE 802.3 and IEC 60027-2 (binary prefixes)" },
+  "hero": "ISPs quote link speed in megabits per second. Your browser, Steam, and file manager show megabytes per second. 1 byte is 8 bits, so a '100 Mbps' plan tops out around 12.5 MB/s in Chrome — not '100 anything' as most users read the number.",
   "body": [
-    "1 GB file at 100 Mbps = 82 seconds. ISPs quote bits; browsers show bytes. The /8 factor confuses everyone. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
-    "## The exact factors",
-    "> 100 Mbps → 12.5 MB/s (1 GB in 82 s)\n> 1 Gbps → 125 MB/s (1 GB in 8 s)",
-    "## Why the numbers matter",
-    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
-    "## Worked example",
-    "Take the top row above: 100 Mbps converts to 12.5 MB/s. In a real-world use case (1 GB in 82 s), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
-    "## When precision matters",
-    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "The bits-vs-bytes split is the single most confused consumer-tech unit. The rule is fixed and universal: **lowercase b is bits, uppercase B is bytes**. 1 Byte = 8 bits, no ambiguity. Mbps = megabits/sec (ISP contract). MB/s = megabytes/sec (browser progress bar). The factor of 8 is why every second person on Reddit thinks their gigabit fibre is broken.",
+    "## The exact factors and the SI-vs-binary trap",
+    "> 1 Byte = 8 bits (exact, always)\n> 1 Mbps = 1,000,000 bits/s (SI decimal)\n> 1 Mbps ÷ 8 = 125,000 Bytes/s = 125 kB/s\n> 100 Mbps ÷ 8 = 12.5 MB/s theoretical peak\n> Windows/macOS display 1 MB = 1,048,576 Bytes (binary MiB, mislabelled)\n> IEC correct: MiB = 2²⁰ Bytes, MB = 10⁶ Bytes",
+    "## Real-world throughput vs link rate",
+    "The 12.5 MB/s figure above is the physical-layer maximum. Actual TCP throughput is lower because of protocol overhead: Ethernet framing ~2%, TCP/IP headers ~5%, ACK round-trips ~5–20% depending on latency. Expect 10–11.5 MB/s from a 100 Mbps link on a well-tuned TCP session, and 8–9 MB/s from a mediocre one. Wi-Fi adds another 15–30% penalty on top.",
+    "## Download-time cheat sheet",
+    "| File size | 25 Mbps | 100 Mbps | 1 Gbps |\n|---|---|---|---|\n| 100 MB photo dump | 32 s | 8 s | <1 s |\n| 1 GB game update | 5 min 20 s | 1 min 20 s | 8 s |\n| 10 GB game install | 53 min | 13 min | 80 s |\n| 50 GB AAA game | 4 h 27 min | 1 h 7 min | 6 min 40 s |\n| 4K movie (25 GB) | 2 h 13 min | 33 min | 3 min 20 s |",
+    "## The four places bits-vs-bytes bites",
+    "**ISP marketing.** '1 Gbps fibre' = 125 MB/s peak = ~110 MB/s real. Selling it as 'gigabit' is technically accurate; users read it as 'a gigabyte per second' and are disappointed.",
+    "**Streaming bitrates.** Netflix 4K peaks at 15 Mbps = 1.9 MB/s. Rated bandwidth needs a 25 Mbps buffer for handshakes and rebuffering. A '15 Mbps stream' downloads a 3-hour 4K movie file worth ~20 GB.",
+    "**Cloud storage upload.** Consumer plans typically have 1/10 the upload of download (100 Mbps down / 10 Mbps up). A 50 GB Time Machine backup at 10 Mbps = 1.25 MB/s = 11 hours 6 minutes — overnight, not lunch break.",
+    "**Video calls.** Zoom HD needs ~1.5 Mbps up and down = 190 kB/s. A '5 Mbps' plan handles three simultaneous HD calls without stutter. This is why work-from-home rarely bottlenecks on modern residential plans.",
+    "## LAN speeds — Gigabit, 2.5G, 10G",
+    "Gigabit Ethernet: 1000 Mbps = 125 MB/s theoretical, ~117 MB/s real over TCP. A single mechanical HDD (150 MB/s sequential) saturates gigabit; a SATA SSD (550 MB/s) does not. 2.5 Gbps Ethernet is the current sweet spot for NAS: 313 MB/s peak matches SATA SSD ceiling. 10 Gbps (1.25 GB/s) only pays off with NVMe storage on both ends.",
+    "## Where the 'MB vs MiB' rounding shows up",
+    "Windows File Explorer labels 1,048,576 Bytes as '1.0 MB' — that is actually 1 MiB. Your 500 GB SSD (500,000,000,000 Bytes decimal) reports as 465.7 GB in Windows (that many GiB). No storage is missing; the drive vendor uses SI decimal and Windows uses binary with the wrong label. macOS switched to decimal (correct MB label) in 10.6 in 2009.",
     "## The five-second recap",
-    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+    "Divide any Mbps number by 8 to get MB/s. 100 Mbps ≈ 12 MB/s in the browser. Uppercase B is bytes, lowercase b is bits — this rule has no exceptions."
   ],
   "faqs": [
-    {
-      "q": "What is the exact conversion for 100 Mbps to 12.5 MB/s?",
-      "a": "100 Mbps → 12.5 MB/s — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
-    },
-    {
-      "q": "Why does the shortcut differ from the exact value?",
-      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
-    },
-    {
-      "q": "Which convention should I use in mixed-unit projects?",
-      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
-    }
+    { "q": "Is 100 Mbps enough for 4K Netflix?", "a": "More than enough. Netflix caps 4K at 15 Mbps, or 1/6 of a 100 Mbps plan. The 'need gigabit for 4K' claim is marketing, not physics." },
+    { "q": "Why does my speed test show more than my plan?", "a": "ISPs provision 5–10% overhead so the plan speed is met after headers. A '100 Mbps' plan often measures 105–115 Mbps to a well-peered speed-test server." },
+    { "q": "What is 'GB' in AWS billing?", "a": "AWS charges decimal GB (10⁹ Bytes). Your OS shows GiB (2³⁰). 100 GB uploaded shows as 93.1 GiB in Windows. Both are correct; different labels for different bases." },
+    { "q": "Can Wi-Fi hit gigabit?", "a": "Wi-Fi 6 rated 1.2 Gbps PHY delivers 700–850 Mbps real in ideal conditions. Wi-Fi 5 (1300 Mbps rated) delivers ~400 Mbps real. Marketing rates always inflate real throughput by 30–50%." },
+    { "q": "Is Mbps the same everywhere?", "a": "Yes. Both SI and IEC agree 1 Mbps = 10⁶ bits/s. Only storage sizes have the SI/binary ambiguity; transfer rates do not." }
   ],
   "related": [
-    {
-      "label": "Data-transfer converter",
-      "href": "/c/data-transfer"
-    }
+    { "label": "Data transfer converter", "href": "/c/data-transfer" },
+    { "label": "Mbps vs MB/s — the ×8 trap", "href": "/learn/mbps-vs-mbs-the-x8-trap" },
+    { "label": "Bits vs Bytes in storage", "href": "/learn/bits-vs-bytes-storage" },
+    { "label": "GiB vs GB storage labels", "href": "/learn/iec-vs-si-storage" }
   ]
 }

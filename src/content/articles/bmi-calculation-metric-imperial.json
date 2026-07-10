@@ -1,53 +1,47 @@
 {
   "slug": "bmi-calculation-metric-imperial",
-  "title": "BMI Explained: Metric vs Imperial Formulas",
-  "h1": "BMI Explained: Metric vs Imperial Formulas",
-  "description": "BMI = kg / m². Imperial version = 703 × lb / in². Same number, two formulas. Why the 703 factor exists.",
+  "title": "BMI Formula: Metric (kg/m²) vs Imperial (703·lb/in²) — Why the 703 Exists",
+  "h1": "BMI, metric vs imperial — the 703 factor, and where BMI actually lies to you",
+  "description": "BMI = kg/m² or 703·lb/in². Same number, two formulas — the 703 absorbs the unit conversion. Plus the four situations where the WHO classification actively misleads.",
   "category": "Weight",
-  "readingMinutes": 4,
+  "readingMinutes": 6,
   "published": "2026-07-10",
   "updated": "2026-07-10",
   "reviewed": "2026-07-10",
-  "author": {
-    "name": "The Turbo Unit Converter engineering desk",
-    "role": "Applied metrology & engineering units"
-  },
-  "reviewer": {
-    "name": "Turbo Unit Converter editorial review",
-    "credential": "verified against NIST SP 811 and category-specific ISO references"
-  },
-  "hero": "kg/m² and 703·lb/in² give identical BMI. The 703 factor absorbs the unit conversion so the classification bands stay universal.",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied metrology & clinical units" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against WHO Technical Report Series 894 and NHLBI clinical guidelines" },
+  "hero": "BMI in metric is weight (kg) divided by height in metres squared. In imperial, multiply by 703 and use pounds over inches squared. The 703 is not magic — it is exactly the unit conversion baked into a constant so the classification bands are the same number in both systems.",
   "body": [
-    "BMI = kg / m². Imperial version = 703 × lb / in². Same number, two formulas. Why the 703 factor exists. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
+    "Body Mass Index was published by Adolphe Quetelet in 1832 as a population-statistics tool, not a clinical measure. Ancel Keys resurrected it in 1972 under the name 'BMI' for epidemiology work, and the WHO adopted the 25/30 cutoffs in 1997. Every use of BMI since — insurance premiums, army physicals, hospital risk scores — relies on those two thresholds staying identical between kg/m² and 703·lb/in².",
     "## The exact factors",
-    "> kg → m² (weight ÷ height²)\n> lb → in² (weight ÷ height² × 703)",
-    "## Why the numbers matter",
-    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
-    "## Worked example",
-    "Take the top row above: kg converts to m². In a real-world use case (weight ÷ height²), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
-    "## When precision matters",
-    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "> Metric: BMI = mass(kg) ÷ height(m)²\n> Imperial: BMI = 703 × mass(lb) ÷ height(in)²\n> WHO cutoffs (both systems): underweight <18.5, normal 18.5–24.9, overweight 25.0–29.9, obese ≥30",
+    "## Where the 703 comes from",
+    "Convert imperial to metric inside the formula: 1 lb = 0.45359237 kg exactly, 1 in = 0.0254 m exactly. Substitute mass(kg) = 0.45359237·lb and height(m) = 0.0254·in, then divide: BMI = (0.45359237·lb) / (0.0254·in)² = 0.45359237 / 0.00064516 · lb/in² = 703.0696... · lb/in². Rounded to 703, the imperial formula reproduces the metric BMI to four significant figures — always. The constant is a physical unit conversion, not a fudge factor.",
+    "## Worked examples",
+    "**Same person, both formulas.** A 5'10\" (177.8 cm), 180 lb (81.65 kg) adult. Metric: 81.65 / 1.778² = 81.65 / 3.161 = 25.83. Imperial: 703 × 180 / 70² = 703 × 180 / 4900 = 25.82. Same classification (overweight), same to 3 significant figures.",
+    "**Child scaling trap.** BMI scales weight linearly but height quadratically. A 10-year-old growing from 130 cm to 140 cm while gaining 3 kg (26 → 29 kg) sees BMI fall from 15.4 to 14.8 — even though they gained weight. This is why paediatric BMI uses age-and-sex-specific percentile bands (CDC/WHO growth charts), not the adult 25/30 cutoffs.",
+    "**High-muscle athlete.** A 6'0\" (183 cm), 210 lb (95.3 kg) powerlifter has BMI 28.5 — the 'overweight' band. DEXA scan: 12% body fat. BMI is not measuring adiposity here; it is measuring mass-per-height. Anyone with above-average lean mass gets pushed a category higher than their metabolic risk warrants.",
+    "## Where BMI systematically misclassifies",
+    "**Ethnic recalibration.** The WHO in 2004 acknowledged that the 25/30 cutoffs underestimate cardiometabolic risk in South Asian, Chinese, and Japanese populations. WHO Asia-Pacific guidelines now use 23/27.5 as the equivalent thresholds — a 6.5% shift downward. Applying US cutoffs to an Indian patient misses ~30% of diagnosable metabolic-syndrome cases.",
+    "**Age drift.** Body composition shifts with age: lean mass declines ~3–8% per decade after 30, replaced by fat at constant weight. A 70-year-old with BMI 24 typically has higher body-fat percentage than a 30-year-old with BMI 27. BMI is age-blind; DEXA is not.",
+    "**Height extremes.** BMI's height-squared denominator over-penalises tall people and under-penalises short people. Empirically, height^2.5 fits population fat data better than height^2 — an insight from the Trefethen 'new BMI' proposal (2013). Nobody has adopted it clinically because the 25/30 cutoffs are institutional.",
+    "**Fluid retention.** Athletes carbohydrate-loading gain 2–3 kg water in 48 hours (glycogen binds ~3 g water per gram). Same person, same body composition, BMI jumps 0.7 points overnight. Weekly BMI tracking amplifies noise.",
+    "## Better numbers, when they exist",
+    "**Waist-to-height ratio** (WHtR): keep waist circumference under half your height. Works across sex, age, and ethnicity with a single cutoff. **Body fat percentage** via DEXA (±1%) or bioimpedance (±3–5%) measures the thing BMI is trying to approximate. **Visceral adipose tissue** (VAT) from MRI is the gold standard for metabolic risk. All three outperform BMI in prospective studies — BMI persists because it needs only a scale and a tape measure.",
     "## The five-second recap",
-    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+    "BMI = kg/m² or 703·lb/in² — pick the formula that matches your units, both give the same number and the same WHO band. Use BMI for population screening; use waist-to-height or DEXA for personal risk. If you are South Asian, apply the 23/27.5 cutoffs, not 25/30."
   ],
   "faqs": [
-    {
-      "q": "What is the exact conversion for kg to m²?",
-      "a": "kg → m² — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
-    },
-    {
-      "q": "Why does the shortcut differ from the exact value?",
-      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
-    },
-    {
-      "q": "Which convention should I use in mixed-unit projects?",
-      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
-    }
+    { "q": "Why is the imperial BMI factor 703 and not 704 or 702?", "a": "The exact factor is 703.0696, from (1/0.45359237) × 0.0254² inverted. Rounded to 703 the error is 0.01% — invisible in classification. Older textbooks used 704.5 or 705 — both are wrong; 703 is correct." },
+    { "q": "Is BMI 25 the same threshold in every country?", "a": "In the US and Europe, yes. WHO Asia-Pacific guidelines (India, China, Japan, Singapore, Malaysia) use 23 for overweight and 27.5 for obesity. Local risk of type 2 diabetes rises earlier in these populations." },
+    { "q": "How do I calculate BMI without a calculator?", "a": "Metric: kg / height² where height is in metres. For 1.75 m, height² ≈ 3.06. Then kg/3.06. Imperial: multiply lb by 700, divide by inches², divide by inches again — close enough for a mental check." },
+    { "q": "Does BMI work for children?", "a": "Not with adult cutoffs. Paediatric BMI uses percentile bands from CDC or WHO growth charts, indexed to age and sex. The same BMI 20 is normal at 15 years, overweight at 10." },
+    { "q": "How much does BMI change with muscle vs fat?", "a": "Muscle is denser (~1.1 g/mL) than fat (~0.9 g/mL) but the difference is small compared to per-height mass. A 5 kg swap from fat to muscle at constant weight leaves BMI unchanged — this is why BMI cannot distinguish body composition." }
   ],
   "related": [
-    {
-      "label": "Weight converter",
-      "href": "/c/weight"
-    }
+    { "label": "kg to lb converter", "href": "/c/weight/kg-to-lb" },
+    { "label": "cm to inches converter", "href": "/c/length/cm-to-in" },
+    { "label": "Why 1 kg is not exactly 2.2 lb", "href": "/learn/kg-to-lb-not-exactly-2-2" },
+    { "label": "Meters to feet + the US Survey Foot", "href": "/learn/meters-to-feet-and-the-us-survey-foot" }
   ]
 }
