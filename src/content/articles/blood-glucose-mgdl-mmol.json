@@ -1,53 +1,48 @@
 {
   "slug": "blood-glucose-mgdl-mmol",
-  "title": "Blood Glucose: mg/dL vs mmol/L",
-  "h1": "Blood Glucose: mg/dL vs mmol/L",
-  "description": "1 mmol/L = 18.02 mg/dL for glucose. US uses mg/dL; most of the world uses mmol/L. CGM apps switch confusingly.",
+  "title": "Blood Glucose: mg/dL vs mmol/L — CGM Conversion Table",
+  "h1": "Blood glucose — mg/dL vs mmol/L and where the 18.02 factor comes from",
+  "description": "100 mg/dL = 5.55 mmol/L for glucose. Convert fasting, post-meal, and A1c targets between US and international units.",
   "category": "Concentration-molar",
-  "readingMinutes": 4,
+  "readingMinutes": 6,
   "published": "2026-07-10",
   "updated": "2026-07-10",
   "reviewed": "2026-07-10",
-  "author": {
-    "name": "The Turbo Unit Converter engineering desk",
-    "role": "Applied metrology & engineering units"
-  },
-  "reviewer": {
-    "name": "Turbo Unit Converter editorial review",
-    "credential": "verified against NIST SP 811 and category-specific ISO references"
-  },
-  "hero": "A fasting glucose of 100 mg/dL = 5.55 mmol/L. Both flag pre-diabetes at the same physiological level, just different scales.",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Clinical chemistry & applied units" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IFCC/IUPAC recommendations and ADA 2024 clinical guidelines" },
+  "hero": "US labs and CGMs report glucose in mg/dL. Most of the world uses mmol/L. The factor is 18.016 (glucose molar mass ÷ 10 for the dL-to-L step), so 100 mg/dL = 5.55 mmol/L and 180 mg/dL = 10.0 mmol/L exactly — the standard fasting-to-post-meal boundary.",
   "body": [
-    "1 mmol/L = 18.02 mg/dL for glucose. US uses mg/dL; most of the world uses mmol/L. CGM apps switch confusingly. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
+    "Blood glucose is a mass concentration in the US (milligrams per decilitre) and a molar concentration in most other countries (millimoles per litre). Both describe the same physical quantity — the conversion factor is fixed by glucose's molar mass (180.16 g/mol) and the dL-to-L unit step (÷10), giving mg/dL × 0.05551 = mmol/L, or equivalently mmol/L × 18.016 = mg/dL. This is unit-specific to glucose; cholesterol uses a different factor (38.67), triglycerides another (88.57).",
     "## The exact factors",
-    "> 100 mg/dL → 5.55 mmol/L (fasting)\n> 180 mg/dL → 10.0 mmol/L (post-meal cap)",
-    "## Why the numbers matter",
-    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
-    "## Worked example",
-    "Take the top row above: 100 mg/dL converts to 5.55 mmol/L. In a real-world use case (fasting), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
-    "## When precision matters",
-    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "> Glucose: mg/dL × 0.05551 = mmol/L (or ÷ 18.016)\n> Glucose: mmol/L × 18.016 = mg/dL\n> Reference: glucose molar mass 180.156 g/mol; 1 dL = 0.1 L\n> HbA1c: DCCT % × 10.929 - 23.5 = IFCC mmol/mol",
+    "## Standard clinical thresholds — both units",
+    "| Category | mg/dL | mmol/L |\n|---|---|---|\n| Hypoglycaemia (severe) | <54 | <3.0 |\n| Hypoglycaemia (mild) | 54-69 | 3.0-3.8 |\n| Fasting normal | 70-99 | 3.9-5.5 |\n| Fasting pre-diabetes | 100-125 | 5.6-6.9 |\n| Fasting diabetes (Dx) | ≥126 | ≥7.0 |\n| Post-meal target (2h) | <140 | <7.8 |\n| Post-meal impaired | 140-199 | 7.8-11.0 |\n| Post-meal diabetes (Dx) | ≥200 | ≥11.1 |\n| Random symptomatic | ≥200 | ≥11.1 |",
+    "## Worked example — CGM alarm setup",
+    "A Libre 3 CGM shipped in a country using mmol/L, brought to the US. Default alarms: low 3.9 mmol/L (= 70 mg/dL), high 13.9 mmol/L (= 250 mg/dL). A US user without conversion might set 'low = 4' thinking it is 4 mg/dL — the app rejects it, but a manual notebook log noting 'BG 5' is ambiguous without the unit. Every CGM lets you switch units in settings; do it once and stay consistent.",
+    "## HbA1c — the other unit ladder",
+    "HbA1c has its own pair: DCCT (%) used in the US, IFCC (mmol/mol) used in most of Europe. Conversion: IFCC = 10.929 × (DCCT − 2.15). Both describe fraction of glycated haemoglobin:",
+    "| DCCT (%) | IFCC (mmol/mol) | eAG mg/dL | eAG mmol/L | Interpretation |\n|---|---|---|---|---|\n| 5.0 | 31 | 97 | 5.4 | Normal |\n| 5.7 | 39 | 117 | 6.5 | Pre-diabetes start |\n| 6.5 | 48 | 140 | 7.8 | Diabetes threshold |\n| 7.0 | 53 | 154 | 8.6 | Good control target |\n| 8.0 | 64 | 183 | 10.2 | Elevated |\n| 10.0 | 86 | 240 | 13.4 | Poor control |",
+    "eAG (estimated average glucose) is derived from A1c by the ADAG formula: eAG (mg/dL) = 28.7 × A1c(%) − 46.7. It maps the long-term marker back to daily-reading units.",
+    "## Where the 5.55 boundary shows up",
+    "Fasting glucose 100 mg/dL = 5.55 mmol/L is not clinically special — the pre-diabetes cutoff (100 mg/dL, 5.6 mmol/L) is defined in the US as 100 and rounded up to 5.6 in mmol/L countries. Both are meant to be the same threshold; the rounding difference is trivial in clinical decisions but visible on lab reports.",
+    "## Fingerstick vs venous vs CGM",
+    "The three measurement methods do not agree exactly. Venous plasma (lab draw) is the reference. Fingerstick capillary reads ~5–7 mg/dL higher after meals due to arterial-side timing. CGM sensors read interstitial fluid, lagging blood glucose by 5–15 minutes when values are moving. All three units convert with the same 18.016 factor — the discrepancies are physiological, not unit issues.",
+    "## Sports and endurance context",
+    "Athletes measuring during long events see values outside the clinical ranges: post-race 40–60 mg/dL (2.2–3.3 mmol/L) is common and asymptomatic in trained individuals; carbohydrate feeding pushes back up to 120–160 mg/dL (6.7–8.9 mmol/L). CGMs in non-diabetic athletes routinely alarm on both ends — the clinical alarm thresholds assume sedentary metabolism.",
     "## The five-second recap",
-    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+    "mg/dL to mmol/L: divide by 18. mmol/L to mg/dL: multiply by 18. The pre-diabetes fasting cutoff is 100 mg/dL = 5.6 mmol/L; diabetes diagnostic is 126 mg/dL = 7.0 mmol/L. Cholesterol uses a different factor — do not reuse the 18."
   ],
   "faqs": [
-    {
-      "q": "What is the exact conversion for 100 mg/dL to 5.55 mmol/L?",
-      "a": "100 mg/dL → 5.55 mmol/L — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
-    },
-    {
-      "q": "Why does the shortcut differ from the exact value?",
-      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
-    },
-    {
-      "q": "Which convention should I use in mixed-unit projects?",
-      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
-    }
+    { "q": "Why exactly 18.016 for glucose?", "a": "Glucose molar mass is 180.156 g/mol. mg/dL is mg per 0.1 L. Converting: (mg/dL) × (1 g / 1000 mg) × (1 mol / 180.156 g) × (10 dL / 1 L) × 1000 (mmol/mol) = mg/dL / 18.016 = mmol/L." },
+    { "q": "Are the diagnostic cutoffs the same worldwide?", "a": "Essentially yes — WHO and ADA agree on 126 mg/dL / 7.0 mmol/L fasting for diabetes, 100 mg/dL / 5.6 mmol/L for pre-diabetes. The 2h post-load test also agrees: 200 mg/dL / 11.1 mmol/L." },
+    { "q": "Can I use the same factor for cholesterol?", "a": "No. Cholesterol has molar mass 386.65 g/mol, giving factor 38.67. Triglycerides use 88.57 (based on tripalmitin approximation). Every analyte has its own conversion." },
+    { "q": "Does 'mg%' mean the same as mg/dL?", "a": "Yes — 'mg%' is an older synonym for 'mg per 100 mL' which equals mg/dL. Still seen in some legacy paperwork." },
+    { "q": "How does the CGM sensor lag affect my readings?", "a": "Interstitial glucose lags blood glucose 5–15 min. During rapid rises (post-meal) the CGM reads low; during rapid falls (exercise, insulin onset) it reads high. Trend arrows matter more than instantaneous values." }
   ],
   "related": [
-    {
-      "label": "Concentration-molar converter",
-      "href": "/c/concentration-molar"
-    }
+    { "label": "mg/dL vs mmol/L clinical", "href": "/learn/mg-dl-mmol-l-clinical" },
+    { "label": "Cholesterol mg/dL vs mmol/L", "href": "/learn/cholesterol-mgdl-mmol" },
+    { "label": "Molarity, molality, normality", "href": "/learn/molarity-molality-normality" },
+    { "label": "Clinical pressure units", "href": "/learn/clinical-pressure-units" }
   ]
 }
