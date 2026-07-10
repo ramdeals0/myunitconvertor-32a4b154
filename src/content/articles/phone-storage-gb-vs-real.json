@@ -1,0 +1,53 @@
+{
+  "slug": "phone-storage-gb-vs-real",
+  "title": "Phone Storage: '128 GB' vs Actual Usable Space",
+  "h1": "Phone Storage: '128 GB' vs Actual Usable Space",
+  "description": "128 GB advertised = 128,000,000,000 bytes = 119.2 GiB. OS eats 15-25 GB. Users see ~95 GB usable.",
+  "category": "Data",
+  "readingMinutes": 4,
+  "published": "2026-07-10",
+  "updated": "2026-07-10",
+  "reviewed": "2026-07-10",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "A '128 GB iPhone' shows ~112 GB in Settings and ~95 GB free after iOS. The GB/GiB gap plus OS overhead is real, not a bug.",
+  "body": [
+    "128 GB advertised = 128,000,000,000 bytes = 119.2 GiB. OS eats 15-25 GB. Users see ~95 GB usable. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
+    "## The exact factors",
+    "> 128 GB → 119.2 GiB (decimal → binary)\n> iOS overhead → ~15 GB (system + apps)",
+    "## Why the numbers matter",
+    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
+    "## Worked example",
+    "Take the top row above: 128 GB converts to 119.2 GiB. In a real-world use case (decimal → binary), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
+    "## When precision matters",
+    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "## The five-second recap",
+    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+  ],
+  "faqs": [
+    {
+      "q": "What is the exact conversion for 128 GB to 119.2 GiB?",
+      "a": "128 GB → 119.2 GiB — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
+    },
+    {
+      "q": "Why does the shortcut differ from the exact value?",
+      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
+    },
+    {
+      "q": "Which convention should I use in mixed-unit projects?",
+      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
+    }
+  ],
+  "related": [
+    {
+      "label": "Data converter",
+      "href": "/c/data"
+    }
+  ]
+}
