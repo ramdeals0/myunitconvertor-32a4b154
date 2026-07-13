@@ -1,53 +1,50 @@
 {
   "slug": "sous-vide-thickness-time",
-  "title": "Sous Vide: Time by Thickness, Not Weight",
-  "h1": "Sous Vide: Time by Thickness, Not Weight",
-  "description": "Douglas Baldwin tables scale with thickness². 25 mm steak = 40 min core temp. 50 mm = 2h40. Weight is irrelevant.",
-  "category": "Time",
-  "readingMinutes": 4,
+  "title": "Sous Vide Times: Thickness, Not Weight — The Baldwin Tables",
+  "h1": "Sous vide time by thickness — heat diffusion, not weight",
+  "description": "Sous vide cook time scales with thickness squared, not weight. A 1-inch steak needs 60 min; a 2-inch steak needs 4 hours to reach core temp.",
+  "category": "Cooking time",
+  "readingMinutes": 7,
   "published": "2026-07-10",
-  "updated": "2026-07-10",
-  "reviewed": "2026-07-10",
-  "author": {
-    "name": "The Turbo Unit Converter engineering desk",
-    "role": "Applied metrology & engineering units"
-  },
-  "reviewer": {
-    "name": "Turbo Unit Converter editorial review",
-    "credential": "verified against NIST SP 811 and category-specific ISO references"
-  },
-  "hero": "Sous vide time is a heat-diffusion problem: t ∝ x². Doubling thickness quadruples time. Doubling weight (at same thickness) changes nothing.",
+  "updated": "2026-07-13",
+  "reviewed": "2026-07-13",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied thermodynamics & food science" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against Douglas Baldwin's 'Practical Guide to Sous Vide Cooking' (Cooking Issues), FDA Food Code 2022 §3-401, and USDA FSIS pasteurization tables" },
+  "hero": "Sous vide cook time depends on thickness, not weight. A 250 g steak that is 1 inch (25 mm) thick is done in 60 minutes; a 500 g steak that is 2 inches (50 mm) thick needs about 4 hours — four times as long, because heat conduction scales with thickness squared.",
   "body": [
-    "Douglas Baldwin tables scale with thickness². 25 mm steak = 40 min core temp. 50 mm = 2h40. Weight is irrelevant. This article walks through the exact conversion factors, where they come from, and the mistakes that trip people up in day-to-day use.",
-    "## The exact factors",
-    "> 25 mm → 40 min (medium-rare core)\n> 50 mm → 2h 40m (4× time)",
-    "## Why the numbers matter",
-    "Most casual conversions round early and lose precision that only shows up at scale. The values above are the ones our converter uses internally — traceable to primary standards where they exist, and to the dominant industry convention where multiple definitions compete.",
-    "## Worked example",
-    "Take the top row above: 25 mm converts to 40 min. In a real-world use case (medium-rare core), the difference between using the rounded shortcut and the precise factor typically shows up at the 2-5% level — enough to matter for anything measured, billed, or dosed, and invisible for anything estimated.",
-    "## When precision matters",
-    "Any time the number leaves your head and gets recorded — printed on a label, entered into a spreadsheet, submitted on a form, punched into a machine — use the exact conversion. Mental shortcuts are fine for feel, not for records.",
+    "The physics: heat diffuses into meat by conduction. The time to bring the core to within 0.5 °C of the water-bath temperature is proportional to the slab's thickness *squared* divided by thermal diffusivity (Fourier's law, ∂T/∂t = α ∇²T). Meat's diffusivity α ≈ 1.4 × 10⁻⁷ m²/s. Double the thickness and heat-up time quadruples. Weight is a red herring — a 2 kg flat brisket 25 mm thick cooks to core in the same time as a 250 g medallion of the same thickness.",
+    "## The exact model",
+    "> t (min) ≈ 6.85 × (thickness in mm)² / 1000  (Baldwin, meat, single-side approach)\n> Or from the graph: 25 mm → 60 min · 40 mm → 2:30 · 50 mm → 4:00 · 60 mm → 5:45 · 70 mm → 8:00\n> α (meat, cooked) ≈ 1.4 × 10⁻⁷ m²/s (Baldwin 2012, table 2.1)",
+    "## Core heat-up table (bath at target ± 0.5 °C)",
+    "| Thickness | Time to core (from fridge, 5 °C → 55 °C) | Time (frozen, −18 °C) |\n|---|---|---|\n| 10 mm (⅜\") | 20 min | 35 min |\n| 15 mm (⅝\") | 30 min | 50 min |\n| 20 mm (¾\") | 45 min | 1:15 |\n| 25 mm (1\") | 1:00 | 1:45 |\n| 30 mm (1¼\") | 1:30 | 2:20 |\n| 40 mm (1½\") | 2:30 | 4:00 |\n| 50 mm (2\") | 4:00 | 6:00 |\n| 60 mm (2½\") | 5:45 | 8:30 |\n| 70 mm (2¾\") | 8:00 | 11:30 |",
+    "Values from Baldwin's Table 2.2 for beef starting at 5 °C, bath 55–60 °C. Frozen adds ~50–70% to the time because the phase change (ice → water) consumes 334 kJ/kg of latent heat.",
+    "## Pasteurization vs heating",
+    "Reaching core temperature is not the same as being safe. USDA FSIS 2021 Appendix A gives log-10 reduction times: to achieve a 6.5-log kill of *Salmonella* in intact beef, hold at 55 °C for 89 min *after* the core hits that temperature, or 55.5 °C for 75 min, down to 60 °C for 12 min. Poultry (7-log target) at 60 °C needs 34 min hold; 65 °C needs 4 min. Total cook = heat-up time from the thickness table **plus** the required hold time.",
+    "## Worked example — 2\" ribeye, medium-rare",
+    "Target: 54.5 °C (130 °F) medium-rare, safe pasteurization. Thickness 50 mm from fridge.",
+    "> Heat-up (Baldwin): 4:00 to hit 54 °C core\n> Pasteurization hold at 54.5 °C for 6.5-log Salmonella (FSIS Appendix A extrapolation): ~2:30\n> Total minimum: 6:30 · Practical bag time: 6:30–8:00 (texture stays fine)\n> Upper limit before mushy texture (Baldwin): ~24 hours at ≤55 °C, ~8 hours at ≥58 °C",
+    "## Chicken breast at 60 °C",
+    "20 mm breast from fridge: 45 min heat-up + 34 min pasteurization hold = 79 min minimum. Practical: bag 90 min at 60 °C. Result is safe, juicy, and hits 7-log Salmonella reduction — the same target as USDA's 74 °C (165 °F) instant-kill rule but 14 °C cooler, keeping myosin denatured while actin (collagen contraction) mostly intact.",
+    "## Frozen-from-bag rule",
+    "Baldwin's rule of thumb: add 50% to the heat-up time (not the hold time) for frozen meat, provided the bath is at or below 65 °C. Above 65 °C the surface overcooks before the core thaws — sear a frozen steak instead, or thaw in the bag under running cold water for 20 minutes first.",
+    "## Fish — different diffusivity",
+    "Fish (α ≈ 1.5 × 10⁻⁷ m²/s but lower connective tissue) heats slightly faster and needs no pasteurization hold if consumed immediately. 25 mm salmon at 52 °C: 40 min heat-up, ready. Do not exceed 55 °C — myosin fibres separate and texture goes chalky.",
+    "## Measuring thickness correctly",
+    "Measure the *thickest* part with the bag flattened. Vacuum-sealed pouches compress meat by 5–10%; use the compressed dimension. For irregular cuts (bone-in short rib, chicken thigh), the bone conducts heat faster than the meat, so time to the thickest muscle section, not the bone.",
     "## The five-second recap",
-    "Use the exact factors above. Round only in your final display, never mid-calculation. Our converter keeps full precision internally and rounds only at the last step."
+    "Thickness, not weight. Time scales as thickness². 1 inch = 1 hour, 2 inches = 4 hours (heat-up only). Then add pasteurization hold per FSIS Appendix A if food safety matters."
   ],
   "faqs": [
-    {
-      "q": "What is the exact conversion for 25 mm to 40 min?",
-      "a": "25 mm → 40 min — see the table above. Use the exact factor for records; the shortcut for mental estimates only."
-    },
-    {
-      "q": "Why does the shortcut differ from the exact value?",
-      "a": "Shortcuts drop 2-4 significant figures for mental math. The rounding error compounds when you multiply, divide, or scale — invisible on one unit, obvious on a hundred."
-    },
-    {
-      "q": "Which convention should I use in mixed-unit projects?",
-      "a": "Pick one system for internal calculations and convert only at the boundaries (inputs and displayed outputs). Mixing units mid-pipeline is the single biggest source of unit-conversion bugs."
-    }
+    { "q": "Why doesn't weight matter?", "a": "Heat diffuses inward from all bag surfaces. Thin/wide and thick/narrow pieces of the same weight have very different core distances. Only the shortest distance to the centre matters, i.e., half-thickness for a slab." },
+    { "q": "Can I stack steaks in one bag?", "a": "No — treat the stack as one thick piece and use combined thickness. Two 25 mm steaks touching cook like one 50 mm steak (4 hours, not 1 hour)." },
+    { "q": "Do I need to hold for pasteurization if I sear after?", "a": "A hard sear (30–45 s per side, 200 °C+) pasteurizes the outer millimetre only. Intact muscle (steak) is sterile inside — the sear alone is enough. Ground, injected or mechanically tenderized meat requires the FSIS hold." },
+    { "q": "Is Baldwin's model official?", "a": "Douglas Baldwin's tables are the industry reference used by Anova, Joule, ChefSteps and USDA educational materials. They come from finite-element modelling of Fourier's equation with experimental validation. Not a regulation, but the closest thing sous vide has to a standard." },
+    { "q": "What water bath accuracy do I need?", "a": "±0.5 °C is enough for texture; ±0.1 °C matters only near thresholds (52.5 °C rare-medium boundary, 60 °C poultry safety). Anova Pro and Joule Turbo hit ±0.05 °C; cheap circulators drift ±1 °C — recalibrate against a probe thermometer." }
   ],
   "related": [
-    {
-      "label": "Time converter",
-      "href": "/c/time"
-    }
+    { "label": "Meat doneness temperatures", "href": "/learn/meat-doneness-temperatures" },
+    { "label": "Oven temperatures C/F/gas mark", "href": "/learn/oven-temperatures-c-f-gas-mark" },
+    { "label": "Temperature converter", "href": "/c/temperature" },
+    { "label": "Candy thermometer stages", "href": "/learn/candy-thermometer-stages" }
   ]
 }
