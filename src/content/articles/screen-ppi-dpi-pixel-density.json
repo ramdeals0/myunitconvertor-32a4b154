@@ -1,0 +1,50 @@
+{
+  "slug": "screen-ppi-dpi-pixel-density",
+  "title": "Screen PPI, DPI and Retina: The Pixel-Density Math That Matters",
+  "h1": "Screen PPI vs DPI — pixel density, viewing distance and 'Retina'",
+  "description": "PPI = √(w² + h²) / diagonal-in-inches. A 27\" 4K panel is 163 PPI, a 15.6\" 1080p laptop is 141 PPI. Here is when density stops mattering.",
+  "category": "Digital image resolution",
+  "readingMinutes": 6,
+  "published": "2026-07-20",
+  "updated": "2026-07-20",
+  "reviewed": "2026-07-20",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied optics & display metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against VESA DisplayHDR specs, Apple HIG (Retina), ISO 12233:2023 (resolution measurement) and Snellen visual-acuity limits" },
+  "hero": "A 27-inch 4K monitor is 163 PPI. A 15.6-inch 1080p laptop is 141 PPI. An iPhone 15 Pro is 460 PPI. The eye can resolve about 60 PPI per degree of view — beyond that, more pixels are wasted photons.",
+  "body": [
+    "PPI (pixels per inch) and DPI (dots per inch) are numerically identical for displays; the terms diverged in the print world, where DPI counts ink drops and PPI counts image pixels. For a rectangular panel, PPI is the diagonal pixel count divided by the diagonal in inches. The full formula: PPI = √(width_px² + height_px²) / diagonal_inches. Manufacturers quote diagonal because that's how TVs have been sold since 1927 (RCA TT-5).",
+    "## The exact formula",
+    "> PPI = √(w_px² + h_px²) / d_in\n> Dot pitch (mm) = 25.4 / PPI\n> Human acuity limit: 60 cycles/degree = 1 arc-minute (Snellen 20/20)\n> Retina threshold: PPI × viewing_distance_in ≥ 3438  (Apple's rule: 1 pixel < 1 arc-min at typical distance)",
+    "## Common panels at a glance",
+    "| Device | Resolution | Diagonal | PPI | Dot pitch |\n|---|---|---|---|---|\n| 65\" 4K TV | 3840×2160 | 65\" | 68 | 0.375 mm |\n| 27\" 4K monitor | 3840×2160 | 27\" | 163 | 0.156 mm |\n| 32\" 4K monitor | 3840×2160 | 32\" | 138 | 0.184 mm |\n| 24\" 1080p | 1920×1080 | 24\" | 92 | 0.277 mm |\n| 15.6\" laptop 1080p | 1920×1080 | 15.6\" | 141 | 0.180 mm |\n| 14\" MacBook Pro | 3024×1964 | 14.2\" | 254 | 0.100 mm |\n| iPad Pro 11\" | 2388×1668 | 11\" | 264 | 0.096 mm |\n| iPhone 15 Pro | 2556×1179 | 6.1\" | 460 | 0.0552 mm |\n| Pixel 8 Pro | 2992×1344 | 6.7\" | 489 | 0.0520 mm |\n| Apple Vision Pro (per eye) | 3660×3200 | 1.42\" | 3386 | 0.0075 mm |",
+    "## The 'Retina' threshold",
+    "Apple's marketing claim: at typical viewing distance, one pixel subtends less than 1 arc-minute — the Snellen 20/20 resolving limit. Math: 1 arc-min = 1/60° = tan⁻¹(pixel_pitch / viewing_distance). Rearranging: PPI × distance_in ≥ 3438. Phone at 12\" → needs 287 PPI. Laptop at 20\" → needs 172 PPI. 27\" monitor at 24\" → needs 143 PPI. TV at 108\" (9 ft) → needs 32 PPI (which is why 1080p looks fine on a 65\" from the couch).",
+    "## Worked example — is 4K wasted on a 24\" monitor?",
+    "24\" 4K = 184 PPI. Typical monitor distance 20\" (arm's length). Required Retina PPI = 3438/20 = 172. Verdict: 184 > 172, so pixels are *just* below arc-minute resolution — you gain crispness in text but the returns are diminishing. At 32\" from the screen (leaned back), required drops to 107 PPI, so 1440p (122 PPI) is already Retina-level. This is why productivity users prefer 27\" 4K (163 PPI, cleaner text scaling at 150%) over 24\" 4K.",
+    "## Print DPI is a different animal",
+    "Print DPI counts ink dots, and each pixel needs 4–16 dots to reproduce colour via halftoning or error diffusion. Rule of thumb: image PPI should be 300 for print quality at reading distance; printers output 600–2400 DPI to render that. A 300-PPI 8×10 photo is 2400×3000 pixels = 7.2 MP — the reason 8 MP cameras were the 2005 sweet spot for consumer photo prints.",
+    "## Viewing distance rules of thumb",
+    "| Content | Optimal distance | Required PPI |\n|---|---|---|\n| Phone (email/reading) | 10–14\" | 245–345 |\n| Tablet | 15–18\" | 190–230 |\n| Laptop | 18–24\" | 143–190 |\n| Desktop monitor | 20–30\" | 115–172 |\n| Living-room TV | 6–10 ft | 29–48 |\n| Cinema screen | 20–40 ft | 7–14 |\n| VR headset (per eye) | ~1.5\" effective | 2300+ (arc-min at wide FOV) |",
+    "## Sub-pixel geometry",
+    "PPI is one dimension of sharpness; sub-pixel layout is another. Standard RGB stripe (LCD, most OLEDs) gives full luminance resolution per pixel. Samsung PenTile diamond OLED shares green sub-pixels — effective resolution is ~82% of the marketed count (Soneira, DisplayMate 2013). This is why 460 PPI on an iPhone (LTPO OLED, RGB) reads sharper than 500 PPI on some older PenTile Androids.",
+    "## Scaling and the '1.5×' curse",
+    "Windows scales UI by 100/125/150/175/200%; macOS uses integer 2× 'HiDPI' + a rendered downsample. Non-integer scaling (150%) forces sub-pixel rounding — 1px CSS borders become 1.5px, get rounded to 1 or 2, producing visible thickness variation. A 3840×2160 27\" at 150% shows fewer artefacts than a 3200×1800 27\" at 150% because the base grid is denser. If you buy a laptop for text work, prefer a PPI that lands cleanly at 200% scaling: 15.6\" 1080p (141 PPI, 100%) or 14\" 3024×1964 (254 PPI, 200%).",
+    "## Angular resolution is what your eye cares about",
+    "60 PPI/degree is the healthy 20/20 limit; 20/10 acuity (rare) doubles it. VR headsets aim for 60 PPD (pixels per degree) with 100°+ FOV — hence the 3386 PPI in Vision Pro. Compared with a 27\" 4K monitor at 24\" distance covering ~60° of vision (with head-turn), the monitor delivers ~64 PPD — right at the Retina limit. Any 5K/8K push on desktop delivers negligible perceived improvement; the money is better spent on colour gamut (DCI-P3, Rec.2020) or refresh rate.",
+    "## The five-second recap",
+    "PPI = √(w²+h²)/diagonal. Retina threshold ≈ 3438 / viewing_distance_in. Beyond ~60 PPD there is no perceivable gain. 4K helps text scaling more than image sharpness."
+  ],
+  "faqs": [
+    { "q": "PPI vs DPI — which term is right for my monitor?", "a": "For displays, use PPI. DPI is a print term meaning ink drops per inch. Windows still labels its scaling slider 'DPI' for historical Win95 reasons, but the value shown (96 default) is actually a PPI reference." },
+    { "q": "Is more PPI always better?", "a": "Only up to your eye's resolving power at the intended distance. Beyond ~60 PPD, extra pixels burn GPU, battery and money for no visible benefit — except in VR where wide FOV keeps hunger for pixels high." },
+    { "q": "Why do 4K TVs look worse than 4K monitors up close?", "a": "TVs use aggressive image processing (motion smoothing, upscaling) tuned for 3 m viewing. Their sub-pixel layout, bit-depth and text rendering optimize for video, not thin fonts. A 40\" 4K TV as a monitor at 60 cm is 110 PPI — sharp on paper, muddy in practice." },
+    { "q": "What PPI does my phone need?", "a": "300+ for comfortable reading at 12\" distance; 400+ for AR-quality overlays. Beyond 500 PPI on a handheld device, gains are measurable in labs but not visible to typical users (source: Soneira DisplayMate 2015 shootouts)." },
+    { "q": "How do I calculate dot pitch?", "a": "Dot pitch (mm between adjacent pixel centres) = 25.4 / PPI. A 92 PPI 1080p 24\" monitor has 0.276 mm dot pitch — the CRT-era 'good enough' standard set by NEC in 1998." }
+  ],
+  "related": [
+    { "label": "Digital image resolution converter", "href": "/c/digital-image-resolution" },
+    { "label": "Typography converter (points, picas)", "href": "/c/typography" },
+    { "label": "Length converter", "href": "/c/length" },
+    { "label": "Mbps vs MB/s network speed", "href": "/learn/mbps-vs-mbps-network-speed" }
+  ]
+}

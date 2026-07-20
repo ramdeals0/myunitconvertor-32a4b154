@@ -1,0 +1,52 @@
+{
+  "slug": "camera-exposure-stops-aperture-iso",
+  "title": "Camera Exposure Stops: Aperture, Shutter, ISO — the EV Equation",
+  "h1": "Exposure stops — the f/√2 ladder that governs every camera",
+  "description": "One stop = 2× light. f/2.8 → f/4 halves light; ISO 100 → 200 doubles gain. The EV formula ties aperture, shutter and ISO into one number.",
+  "category": "Illumination",
+  "readingMinutes": 6,
+  "published": "2026-07-20",
+  "updated": "2026-07-20",
+  "reviewed": "2026-07-20",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied radiometry & imaging science" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ISO 2720:1974 (general-purpose exposure meters), ISO 12232:2019 (digital ISO), and Ansel Adams' 'The Negative' (1948, Zone System foundation)" },
+  "hero": "A 'stop' is a factor-of-two change in light. Aperture stops go f/1.4, f/2, f/2.8, f/4, f/5.6 — each is √2 apart because area scales with radius². Shutter halves cleanly (1/125 → 1/250). ISO doubles (100 → 200). Change any one by a stop and exposure changes by exactly the same amount.",
+  "body": [
+    "Photographic exposure is a light-integration problem: total exposure H (lux·seconds at the sensor) = illuminance × time. The camera has three controls that trade off in factor-of-two increments — 'stops' — so a scene metered at f/8, 1/125, ISO 200 is identical in brightness to f/5.6, 1/250, ISO 200 (opened aperture one stop, sped shutter one stop). This equivalence is codified in the APEX system (ISO 2720:1974) via the Exposure Value: EV = log₂(N²/t) where N is f-number and t is shutter in seconds.",
+    "## The exact math",
+    "> f-number N = focal_length / entrance_pupil_diameter\n> Aperture area ∝ 1/N², so one stop = N × √2\n> EV₁₀₀ = log₂(N²/t)  (at ISO 100)\n> EV at other ISO: EV_S = EV₁₀₀ + log₂(S/100)\n> Sunny 16: EV₁₀₀ = 15 in direct summer sun → f/16 at 1/125 s, or f/11 at 1/250 s, etc.",
+    "## The stop ladders",
+    "| Aperture (f) | Shutter (s) | ISO |\n|---|---|---|\n| f/1.0 | 1 | 25 |\n| f/1.4 | 1/2 | 50 |\n| f/2 | 1/4 | 100 |\n| f/2.8 | 1/8 | 200 |\n| f/4 | 1/15 | 400 |\n| f/5.6 | 1/30 | 800 |\n| f/8 | 1/60 | 1600 |\n| f/11 | 1/125 | 3200 |\n| f/16 | 1/250 | 6400 |\n| f/22 | 1/500 | 12 800 |\n| f/32 | 1/1000 | 25 600 |",
+    "Each row is one full stop from its neighbour. Modern cameras subdivide into 1/3-stop clicks (f/2, f/2.2, f/2.5, f/2.8) — a 26% light change per click.",
+    "## Worked example — the reciprocity trade",
+    "You meter a portrait at f/5.6, 1/60 s, ISO 400. Subject shifts and you want shallower depth of field.",
+    "> Open two stops: f/5.6 → f/4 → f/2.8 (+2 stops of light)\n> To keep exposure equal, drop two stops elsewhere: shutter 1/60 → 1/125 → 1/250, or ISO 400 → 200 → 100.\n> Choice depends on constraint: subject motion (need faster shutter → drop ISO) or noise budget (need low ISO → drop shutter, but risk motion blur).",
+    "## EV, LV and the Sunny 16 rule",
+    "The Sunny 16 rule (published in every Kodak Data Book since 1948): in direct front sun at midday, correct exposure is f/16 at 1/ISO. At ISO 100 → f/16, 1/125 s (EV 15). Overcast bright: EV 13 (f/8, 1/125). Open shade: EV 12. Indoor daylight window: EV 8–9. Full-moon night: EV −3. A camera's meter reads Light Value (LV) directly and reports EV, so an incident meter reading of EV 14 tells you every legal aperture/shutter combination at your working ISO.",
+    "## Why f-numbers are irrational",
+    "Aperture is the *area* of the entrance pupil relative to focal length. Area = π(f/2N)². Doubling area (one stop) requires N × √2 = 1.414. The full-stop series (1, 1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22, 32) is the powers of √2 rounded to two significant figures. Cinema lenses use T-stops instead, correcting for glass absorption losses (typically 0.1–0.4 stops); a T2.8 zoom might be optically f/2.5 but transmits like f/2.8.",
+    "## ISO — the odd one out",
+    "ISO 12232:2019 defines digital ISO via two methods: Standard Output Sensitivity (SOS) — brightness at 18% grey — and Recommended Exposure Index (REI). Doubling ISO doubles the *gain* applied to the sensor signal, not sensitivity itself. Read-noise-limited cameras see roughly 1 stop of dynamic range lost per stop of ISO gain (measured by Bill Claff's photonstophotos.net). Modern dual-gain sensors (Sony IMX571, Canon R6 II) get a free ~1 stop DR bonus at their second gain point (usually ISO 800 or 1600).",
+    "## Depth of field and diffraction",
+    "Depth of field roughly doubles per stop of aperture closing (f/2.8 → f/4 → f/5.6). But diffraction sets a floor: airy-disc diameter d = 2.44 × λ × N. At λ = 550 nm and f/16, d = 21.5 μm — wider than a 3.7 μm APS-C pixel × 4. Full-frame Bayer sensors soften visibly beyond f/11; APS-C beyond f/8; Micro Four Thirds beyond f/5.6; smartphone 1.4 μm sensors beyond f/2.8, which is why phones use fixed f/1.8 apertures and simulate DoF computationally.",
+    "## Flash and guide numbers",
+    "Flash exposure ignores shutter (up to sync speed, typically 1/200 s). Instead, guide number GN = distance × f-number, at ISO 100. Godox V1 has GN 28 m at ISO 100 — at 4 m, correct aperture is 28/4 = f/7 (round to f/8). Double the ISO, halve √2 the aperture: ISO 200 → f/11 at same 4 m. High-speed sync (HSS) beats sync-speed but drops 2–3 stops of flash power because the burst runs through the entire shutter travel window.",
+    "## The Zone System bridge",
+    "Ansel Adams' 11 zones (0 to X) are exactly one stop apart. Zone V is 18% middle grey (EV = meter reading). Zone III is 'textured shadow with detail'; Zone VII is 'textured highlight with detail'. Modern raw workflow: expose to the right (ETTR) means placing highlights near Zone VIII–IX to capture maximum sensor bits, then pull down in post — an ISO stop of noise saving.",
+    "## The five-second recap",
+    "One stop = 2× light. f/√2 ladder for aperture, halving for shutter, doubling for ISO. Sunny 16: f/16 at 1/ISO in direct sun. Diffraction hurts past f/11 on full-frame; higher ISO trades light for noise 1:1."
+  ],
+  "faqs": [
+    { "q": "Is f/2.8 twice as bright as f/4?", "a": "Yes, exactly one stop = 2×. Aperture areas: π(f/5.6)² vs π(f/8)² — the ratio is 2:1 because 5.6/4 = √2." },
+    { "q": "Why does my exposure look different when I only change ISO?", "a": "ISO changes signal gain, not scene light. If you underexpose two stops and push in post, the result matches ISO-raised exposure in mid-tones but shows more noise in shadows on non-ISO-invariant sensors (older Canon DSLRs, most phones). Modern Sony/Nikon sensors are near ISO-invariant above ISO 400." },
+    { "q": "What is the fastest 'safe' handheld shutter?", "a": "Rule of thumb: 1/(focal length × crop factor). 50 mm on full-frame → 1/50 s minimum. In-body stabilization adds 3–7 stops; a Sony A7 IV with 5-stop IBIS at 50 mm can shoot 1/2 s handheld with practice." },
+    { "q": "Do phone cameras have 'real' apertures?", "a": "Yes, but they're tiny (usually f/1.6–f/2.4 fixed). The 'aperture' setting in phone portrait modes is computational — depth is estimated from sensor data or a second lens, then Gaussian blur is applied. Optically, the lens never changes." },
+    { "q": "Why do videographers care about the 180° shutter rule?", "a": "Motion blur looks natural when shutter is 1/(2×fps). 24 fps → 1/48 s (rounded to 1/50). Break the rule and motion looks stroboscopic (Saving Private Ryan) or dreamy (Wong Kar-wai). Setting affects exposure by up to 5 stops vs stills defaults — hence ND filters on video shoots." }
+  ],
+  "related": [
+    { "label": "Illumination converter (lux, footcandles)", "href": "/c/illumination" },
+    { "label": "Lumens vs lux vs candela", "href": "/learn/lumens-vs-lux-vs-candela" },
+    { "label": "UV index, SPF and MED", "href": "/learn/uv-index-sunscreen-spf" },
+    { "label": "Screen PPI, DPI and Retina", "href": "/learn/screen-ppi-dpi-pixel-density" }
+  ]
+}
