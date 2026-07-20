@@ -1708,7 +1708,6 @@ import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z as z4 } from "npm:zod@^4.4.3";
 
 // src/lib/parseConversionQuery.ts
-import { CATEGORIES as CATEGORIES2 } from "npm:@/lib/converters/data";
 var CATEGORY_PRIORITY = [
   "length",
   "weight",
@@ -1742,10 +1741,10 @@ function unitMatches(u2, token) {
 function sortedCategories() {
   const ordered = [];
   for (const id of CATEGORY_PRIORITY) {
-    const c = CATEGORIES2.find((x) => x.id === id);
+    const c = CATEGORIES.find((x) => x.id === id);
     if (c) ordered.push(c);
   }
-  for (const c of CATEGORIES2) if (!ordered.includes(c)) ordered.push(c);
+  for (const c of CATEGORIES) if (!ordered.includes(c)) ordered.push(c);
   return ordered;
 }
 function findUnit(token, restrictTo) {

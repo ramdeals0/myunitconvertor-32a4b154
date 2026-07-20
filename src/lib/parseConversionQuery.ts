@@ -1,5 +1,5 @@
-import { CATEGORIES } from "@/lib/converters/data";
-import type { Category, Unit } from "@/lib/converters/types";
+import { CATEGORIES } from "./converters/data";
+import type { Category, Unit } from "./converters/types";
 
 export interface ParsedQuery {
   category: Category;
