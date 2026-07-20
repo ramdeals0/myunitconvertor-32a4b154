@@ -1,7 +1,7 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { parseConversionQuery } from "@/lib/parseConversionQuery";
-import { convert, formatResult } from "@/lib/converters/data";
+import { parseConversionQuery } from "../../parseConversionQuery";
+import { convert, formatResult } from "../../converters/data";
 
 export default defineTool({
   name: "parse_and_convert",

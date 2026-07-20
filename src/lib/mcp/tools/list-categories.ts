@@ -1,7 +1,7 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { CATEGORIES } from "@/lib/converters/data";
-import { GROUP_LABELS } from "@/lib/converters/types";
+import { CATEGORIES } from "../../converters/data";
+import { GROUP_LABELS } from "../../converters/types";
 
 export default defineTool({
   name: "list_categories",

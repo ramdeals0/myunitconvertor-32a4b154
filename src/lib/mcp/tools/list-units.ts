@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { CATEGORY_MAP } from "@/lib/converters/data";
+import { CATEGORY_MAP } from "../../converters/data";
 
 export default defineTool({
   name: "list_units",

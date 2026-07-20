@@ -8,7 +8,1572 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.24.0";
 // src/lib/mcp/tools/convert.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z } from "npm:zod@^4.4.3";
-import { CATEGORY_MAP, convert, formatResult } from "npm:@/lib/converters/data";
+
+// src/lib/converters/factor.ts
+function u(id, name, symbol, factor = 1, aliases) {
+  return {
+    id,
+    name,
+    symbol,
+    toBase: (v) => v * factor,
+    fromBase: (v) => v / factor,
+    aliases
+  };
+}
+
+// src/lib/converters/data.ts
+var length = {
+  id: "length",
+  name: "Length",
+  description: "Convert meters, feet, inches, miles, kilometers and more.",
+  group: "common",
+  baseUnit: "m",
+  units: [
+    u("m", "Meter", "m", 1, ["meters", "metre"]),
+    u("km", "Kilometer", "km", 1e3),
+    u("cm", "Centimeter", "cm", 0.01),
+    u("mm", "Millimeter", "mm", 1e-3),
+    u("um", "Micrometer", "\xB5m", 1e-6),
+    u("nm", "Nanometer", "nm", 1e-9),
+    u("mi", "Mile", "mi", 1609.344),
+    u("yd", "Yard", "yd", 0.9144),
+    u("ft", "Foot", "ft", 0.3048, ["feet"]),
+    u("in", "Inch", "in", 0.0254, ["inches"]),
+    u("nmi", "Nautical Mile", "nmi", 1852),
+    u("ly", "Light Year", "ly", 94607e11),
+    u("au", "Astronomical Unit", "AU", 149597870700),
+    u("pc", "Parsec", "pc", 30857e12)
+  ],
+  popular: [
+    // Curated from real US search volume (Semrush): mm→cm 74k, in→ft 60k, ft→in 40k, m→cm 40k, nm→m 27k, yd→ft 10k, km→mi & mi→km
+    { from: "cm", to: "in" },
+    { from: "in", to: "cm" },
+    { from: "mm", to: "in" },
+    { from: "in", to: "mm" },
+    { from: "mm", to: "cm" },
+    { from: "cm", to: "mm" },
+    { from: "m", to: "ft" },
+    { from: "ft", to: "m" },
+    { from: "m", to: "cm" },
+    { from: "cm", to: "m" },
+    { from: "ft", to: "in" },
+    { from: "in", to: "ft" },
+    { from: "yd", to: "ft" },
+    { from: "ft", to: "yd" },
+    { from: "km", to: "mi" },
+    { from: "mi", to: "km" },
+    { from: "nm", to: "m" },
+    { from: "m", to: "nm" }
+  ]
+};
+var weight = {
+  id: "weight",
+  name: "Weight & Mass",
+  description: "Kilograms, pounds, ounces, tonnes and more. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "kg",
+  units: [
+    u("kg", "Kilogram", "kg"),
+    u("kg", "Kilogram", "kg", 1).id ? u("kg", "Kilogram", "kg", 1) : u("kg", "Kilogram", "kg", 1),
+    u("g", "Gram", "g", 1e-3),
+    u("mg", "Milligram", "mg", 1e-6),
+    u("t", "Metric Ton", "t", 1e3),
+    u("lb", "Pound", "lb", 0.45359237, ["lbs", "pounds"]),
+    u("oz", "Ounce", "oz", 0.028349523125),
+    u("st", "Stone", "st", 6.35029318),
+    u("ct", "Carat", "ct", 2e-4),
+    u("ton_us", "US Ton (short)", "ton", 907.18474),
+    u("ton_uk", "UK Ton (long)", "ton", 1016.0469088)
+  ].filter((x, i, a) => a.findIndex((y) => y.id === x.id) === i),
+  popular: [
+    // Curated: lb↔oz 90k, mg→g 60k, g→kg 49k, ton→lb 4k, stone→lb
+    { from: "kg", to: "lb" },
+    { from: "lb", to: "kg" },
+    { from: "g", to: "oz" },
+    { from: "oz", to: "g" },
+    { from: "lb", to: "oz" },
+    { from: "oz", to: "lb" },
+    { from: "g", to: "kg" },
+    { from: "kg", to: "g" },
+    { from: "mg", to: "g" },
+    { from: "g", to: "mg" },
+    { from: "t", to: "kg" },
+    { from: "kg", to: "t" },
+    { from: "st", to: "lb" },
+    { from: "lb", to: "st" },
+    { from: "ton_us", to: "lb" },
+    { from: "lb", to: "ton_us" }
+  ]
+};
+weight.units = [
+  u("kg", "Kilogram", "kg", 1),
+  u("g", "Gram", "g", 1e-3),
+  u("mg", "Milligram", "mg", 1e-6),
+  u("t", "Metric Ton", "t", 1e3),
+  u("lb", "Pound", "lb", 0.45359237, ["lbs", "pounds"]),
+  u("oz", "Ounce", "oz", 0.028349523125),
+  u("st", "Stone", "st", 6.35029318),
+  u("ct", "Carat", "ct", 2e-4),
+  u("ton_us", "US Ton (short)", "ton (US)", 907.18474),
+  u("ton_uk", "UK Ton (long)", "ton (UK)", 1016.0469088)
+];
+var temperature = {
+  id: "temperature",
+  name: "Temperature",
+  description: "Celsius, Fahrenheit, Kelvin and Rankine. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "c",
+  units: [
+    { id: "c", name: "Celsius", symbol: "\xB0C", toBase: (v) => v, fromBase: (v) => v },
+    { id: "f", name: "Fahrenheit", symbol: "\xB0F", toBase: (v) => (v - 32) * 5 / 9, fromBase: (v) => v * 9 / 5 + 32 },
+    { id: "k", name: "Kelvin", symbol: "K", toBase: (v) => v - 273.15, fromBase: (v) => v + 273.15 },
+    { id: "r", name: "Rankine", symbol: "\xB0R", toBase: (v) => (v - 491.67) * 5 / 9, fromBase: (v) => (v + 273.15) * 9 / 5 }
+  ],
+  popular: [
+    { from: "c", to: "f" },
+    { from: "f", to: "c" },
+    { from: "c", to: "k" },
+    { from: "k", to: "c" }
+  ]
+};
+var volume = {
+  id: "volume",
+  name: "Volume",
+  description: "Liters, gallons, cups, milliliters and more. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "L",
+  units: [
+    u("L", "Liter", "L", 1),
+    u("mL", "Milliliter", "mL", 1e-3),
+    u("m3", "Cubic Meter", "m\xB3", 1e3),
+    u("cm3", "Cubic Centimeter", "cm\xB3", 1e-3),
+    u("gal_us", "US Gallon", "gal", 3.785411784),
+    u("gal_uk", "UK Gallon", "gal (UK)", 4.54609),
+    u("qt", "US Quart", "qt", 0.946352946),
+    u("pt", "US Pint", "pt", 0.473176473),
+    u("cup", "US Cup", "cup", 0.2365882365),
+    u("floz", "US Fluid Ounce", "fl oz", 0.0295735296),
+    u("tbsp", "Tablespoon", "tbsp", 0.0147867648),
+    u("tsp", "Teaspoon", "tsp", 0.0049289216),
+    u("bbl", "Oil Barrel", "bbl", 158.987294928)
+  ],
+  popular: [
+    // Curated: ml→oz 246k, oz→ml 165k, L→gal 110k, gal→L 27k, tsp/cup/tbsp→ml
+    { from: "L", to: "gal_us" },
+    { from: "gal_us", to: "L" },
+    { from: "mL", to: "floz" },
+    { from: "floz", to: "mL" },
+    { from: "cup", to: "mL" },
+    { from: "mL", to: "cup" },
+    { from: "tbsp", to: "mL" },
+    { from: "mL", to: "tbsp" },
+    { from: "tsp", to: "mL" },
+    { from: "mL", to: "tsp" },
+    { from: "qt", to: "L" },
+    { from: "L", to: "qt" },
+    { from: "pt", to: "mL" },
+    { from: "mL", to: "pt" },
+    { from: "gal_uk", to: "L" },
+    { from: "L", to: "gal_uk" }
+  ]
+};
+var area = {
+  id: "area",
+  name: "Area",
+  description: "Square meters, acres, hectares, square feet. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "m2",
+  units: [
+    u("m2", "Square Meter", "m\xB2", 1),
+    u("km2", "Square Kilometer", "km\xB2", 1e6),
+    u("cm2", "Square Centimeter", "cm\xB2", 1e-4),
+    u("mm2", "Square Millimeter", "mm\xB2", 1e-6),
+    u("ha", "Hectare", "ha", 1e4),
+    u("ac", "Acre", "ac", 4046.8564224),
+    u("ft2", "Square Foot", "ft\xB2", 0.09290304),
+    u("in2", "Square Inch", "in\xB2", 64516e-8),
+    u("yd2", "Square Yard", "yd\xB2", 0.83612736),
+    u("mi2", "Square Mile", "mi\xB2", 2589988110336e-6)
+  ],
+  popular: [
+    // acre↔sqft 14k, hectare↔acre 10k, sqm↔sqft 8k
+    { from: "ac", to: "ft2" },
+    { from: "ft2", to: "ac" },
+    { from: "ha", to: "ac" },
+    { from: "ac", to: "ha" },
+    { from: "m2", to: "ft2" },
+    { from: "ft2", to: "m2" },
+    { from: "km2", to: "mi2" },
+    { from: "mi2", to: "km2" },
+    { from: "cm2", to: "in2" },
+    { from: "in2", to: "cm2" }
+  ]
+};
+var pressure = {
+  id: "pressure",
+  name: "Pressure",
+  description: "Pascals, bars, PSI, atmospheres. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "Pa",
+  units: [
+    u("Pa", "Pascal", "Pa", 1),
+    u("kPa", "Kilopascal", "kPa", 1e3),
+    u("MPa", "Megapascal", "MPa", 1e6),
+    u("bar", "Bar", "bar", 1e5),
+    u("mbar", "Millibar", "mbar", 100),
+    u("psi", "Pound per Sq. Inch", "psi", 6894.757293168),
+    u("atm", "Atmosphere", "atm", 101325),
+    u("torr", "Torr", "Torr", 133.322368421),
+    u("mmHg", "Millimeter of Mercury", "mmHg", 133.322387415)
+  ],
+  popular: [
+    // bar↔psi 33k+15k, kpa→psi 27k
+    { from: "bar", to: "psi" },
+    { from: "psi", to: "bar" },
+    { from: "kPa", to: "psi" },
+    { from: "psi", to: "kPa" },
+    { from: "Pa", to: "psi" },
+    { from: "psi", to: "Pa" },
+    { from: "atm", to: "psi" },
+    { from: "psi", to: "atm" },
+    { from: "mmHg", to: "psi" },
+    { from: "psi", to: "mmHg" },
+    { from: "bar", to: "kPa" },
+    { from: "kPa", to: "bar" }
+  ]
+};
+var energy = {
+  id: "energy",
+  name: "Energy",
+  description: "Joules, calories, kilowatt-hours, BTU. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "J",
+  units: [
+    u("J", "Joule", "J", 1),
+    u("kJ", "Kilojoule", "kJ", 1e3),
+    u("cal", "Calorie", "cal", 4.184),
+    u("kcal", "Kilocalorie", "kcal", 4184),
+    u("Wh", "Watt-hour", "Wh", 3600),
+    u("kWh", "Kilowatt-hour", "kWh", 36e5),
+    u("BTU", "British Thermal Unit", "BTU", 1055.05585262),
+    u("eV", "Electronvolt", "eV", 1602176634e-28),
+    u("ftlb", "Foot-pound", "ft\xB7lb", 1.35581794833)
+  ],
+  popular: [
+    // joules↔calories 8k, kcal→kJ 5k, btu→kwh
+    { from: "J", to: "cal" },
+    { from: "cal", to: "J" },
+    { from: "kcal", to: "kJ" },
+    { from: "kJ", to: "kcal" },
+    { from: "kWh", to: "J" },
+    { from: "J", to: "kWh" },
+    { from: "BTU", to: "kWh" },
+    { from: "kWh", to: "BTU" },
+    { from: "Wh", to: "J" },
+    { from: "J", to: "Wh" }
+  ]
+};
+var power = {
+  id: "power",
+  name: "Power",
+  description: "Watts, horsepower, kilowatts. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "W",
+  units: [
+    u("W", "Watt", "W", 1),
+    u("kW", "Kilowatt", "kW", 1e3),
+    u("MW", "Megawatt", "MW", 1e6),
+    u("hp", "Horsepower (mech)", "hp", 745.6998715822702),
+    u("hp_m", "Horsepower (metric)", "hp (M)", 735.49875),
+    u("BTU_h", "BTU/hour", "BTU/h", 0.29307107),
+    u("ftlb_s", "Foot-pound/second", "ft\xB7lb/s", 1.3558179483)
+  ],
+  popular: [
+    // kw↔hp 22k+10k, MW↔hp
+    { from: "hp", to: "kW" },
+    { from: "kW", to: "hp" },
+    { from: "W", to: "hp" },
+    { from: "hp", to: "W" },
+    { from: "kW", to: "BTU_h" },
+    { from: "BTU_h", to: "kW" },
+    { from: "MW", to: "hp" },
+    { from: "hp", to: "MW" }
+  ]
+};
+var force = {
+  id: "force",
+  name: "Force",
+  description: "Newtons, pounds-force, dynes. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "N",
+  units: [
+    u("N", "Newton", "N", 1),
+    u("kN", "Kilonewton", "kN", 1e3),
+    u("lbf", "Pound-force", "lbf", 4.4482216152605),
+    u("kgf", "Kilogram-force", "kgf", 9.80665),
+    u("dyn", "Dyne", "dyn", 1e-5)
+  ],
+  popular: [
+    { from: "N", to: "lbf" },
+    { from: "lbf", to: "N" },
+    { from: "kN", to: "lbf" },
+    { from: "lbf", to: "kN" },
+    { from: "kgf", to: "N" },
+    { from: "N", to: "kgf" }
+  ]
+};
+var time = {
+  id: "time",
+  name: "Time",
+  description: "Seconds, minutes, hours, days, years. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "s",
+  units: [
+    u("s", "Second", "s", 1),
+    u("ms", "Millisecond", "ms", 1e-3),
+    u("us", "Microsecond", "\xB5s", 1e-6),
+    u("min", "Minute", "min", 60),
+    u("h", "Hour", "h", 3600),
+    u("d", "Day", "d", 86400),
+    u("wk", "Week", "wk", 604800),
+    u("mo", "Month (30 d)", "mo", 2592e3),
+    u("yr", "Year (365 d)", "yr", 31536e3)
+  ],
+  popular: [
+    // minutes↔hours 33k, seconds↔minutes 22k, days↔hours
+    { from: "min", to: "h" },
+    { from: "h", to: "min" },
+    { from: "s", to: "min" },
+    { from: "min", to: "s" },
+    { from: "d", to: "h" },
+    { from: "h", to: "d" },
+    { from: "ms", to: "s" },
+    { from: "s", to: "ms" },
+    { from: "yr", to: "d" },
+    { from: "d", to: "yr" },
+    { from: "wk", to: "d" },
+    { from: "d", to: "wk" }
+  ]
+};
+var speed = {
+  id: "speed",
+  name: "Speed",
+  description: "m/s, km/h, mph, knots. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "mps",
+  units: [
+    u("mps", "Meter/second", "m/s", 1),
+    u("kph", "Kilometer/hour", "km/h", 1 / 3.6),
+    u("mph", "Mile/hour", "mph", 0.44704),
+    u("fps", "Foot/second", "ft/s", 0.3048),
+    u("knot", "Knot", "kn", 0.514444),
+    u("mach", "Mach (sea level)", "M", 340.29)
+  ],
+  popular: [
+    // knots→mph 60k, fps↔mph
+    { from: "mph", to: "kph" },
+    { from: "kph", to: "mph" },
+    { from: "knot", to: "mph" },
+    { from: "mph", to: "knot" },
+    { from: "knot", to: "kph" },
+    { from: "kph", to: "knot" },
+    { from: "mps", to: "mph" },
+    { from: "mph", to: "mps" },
+    { from: "mps", to: "kph" },
+    { from: "kph", to: "mps" },
+    { from: "fps", to: "mph" },
+    { from: "mph", to: "fps" }
+  ]
+};
+var angle = {
+  id: "angle",
+  name: "Angle",
+  description: "Degrees, radians, gradians. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "rad",
+  units: [
+    u("rad", "Radian", "rad", 1),
+    u("deg", "Degree", "\xB0", Math.PI / 180),
+    u("grad", "Gradian", "grad", Math.PI / 200),
+    u("arcmin", "Arcminute", "'", Math.PI / 10800),
+    u("arcsec", "Arcsecond", '"', Math.PI / 648e3),
+    u("turn", "Turn", "tr", Math.PI * 2)
+  ],
+  popular: [{ from: "deg", to: "rad" }, { from: "rad", to: "deg" }]
+};
+var data = {
+  id: "data",
+  name: "Data Storage",
+  description: "Bytes, kilobytes, megabytes, gigabytes. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "B",
+  units: [
+    u("b", "Bit", "b", 0.125),
+    u("B", "Byte", "B", 1),
+    u("KB", "Kilobyte", "KB", 1e3),
+    u("MB", "Megabyte", "MB", 1e6),
+    u("GB", "Gigabyte", "GB", 1e9),
+    u("TB", "Terabyte", "TB", 1e12),
+    u("PB", "Petabyte", "PB", 1e15),
+    u("KiB", "Kibibyte", "KiB", 1024),
+    u("MiB", "Mebibyte", "MiB", 1024 ** 2),
+    u("GiB", "Gibibyte", "GiB", 1024 ** 3),
+    u("TiB", "Tebibyte", "TiB", 1024 ** 4)
+  ]
+};
+var fuel = {
+  id: "fuel",
+  name: "Fuel Consumption",
+  description: "L/100km, MPG (US), MPG (UK), km/L. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "common",
+  baseUnit: "lp100km",
+  units: [
+    { id: "lp100km", name: "Liter/100 km", symbol: "L/100km", toBase: (v) => v, fromBase: (v) => v },
+    { id: "kmpl", name: "Kilometer/Liter", symbol: "km/L", toBase: (v) => 100 / v, fromBase: (v) => 100 / v },
+    { id: "mpg_us", name: "Miles/Gallon (US)", symbol: "mpg", toBase: (v) => 235.214583 / v, fromBase: (v) => 235.214583 / v },
+    { id: "mpg_uk", name: "Miles/Gallon (UK)", symbol: "mpg (UK)", toBase: (v) => 282.480936 / v, fromBase: (v) => 282.480936 / v }
+  ]
+};
+var frequency = {
+  id: "frequency",
+  name: "Frequency",
+  description: "Hertz, kilohertz, megahertz, gigahertz. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "light",
+  baseUnit: "Hz",
+  units: [
+    u("Hz", "Hertz", "Hz", 1),
+    u("kHz", "Kilohertz", "kHz", 1e3),
+    u("MHz", "Megahertz", "MHz", 1e6),
+    u("GHz", "Gigahertz", "GHz", 1e9),
+    u("THz", "Terahertz", "THz", 1e12),
+    u("rpm", "Revolutions/min", "rpm", 1 / 60)
+  ],
+  popular: [
+    // mb↔gb 53k, kb→mb 33k, gb↔tb
+    { from: "MB", to: "GB" },
+    { from: "GB", to: "MB" },
+    { from: "KB", to: "MB" },
+    { from: "MB", to: "KB" },
+    { from: "GB", to: "TB" },
+    { from: "TB", to: "GB" },
+    { from: "B", to: "KB" },
+    { from: "KB", to: "B" },
+    { from: "b", to: "B" },
+    { from: "B", to: "b" },
+    { from: "MiB", to: "MB" },
+    { from: "GiB", to: "GB" }
+  ]
+};
+var density = {
+  id: "density",
+  name: "Density",
+  description: "Kilogram/m\xB3, g/cm\xB3, lb/ft\xB3. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "engineering",
+  baseUnit: "kgm3",
+  units: [
+    u("kgm3", "Kilogram/m\xB3", "kg/m\xB3", 1),
+    u("gcm3", "Gram/cm\xB3", "g/cm\xB3", 1e3),
+    u("gml", "Gram/mL", "g/mL", 1e3),
+    u("lbft3", "Pound/ft\xB3", "lb/ft\xB3", 16.018463374),
+    u("lbin3", "Pound/in\xB3", "lb/in\xB3", 27679.904710203)
+  ]
+};
+var acceleration = {
+  id: "acceleration",
+  name: "Acceleration",
+  description: "m/s\xB2, g-force, ft/s\xB2. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "engineering",
+  baseUnit: "mps2",
+  units: [
+    u("mps2", "Meter/sec\xB2", "m/s\xB2", 1),
+    u("g", "Standard Gravity", "g", 9.80665),
+    u("fps2", "Foot/sec\xB2", "ft/s\xB2", 0.3048),
+    u("gal", "Galileo", "Gal", 0.01)
+  ]
+};
+var torque = {
+  id: "torque",
+  name: "Torque",
+  description: "Newton-meters, foot-pounds. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "engineering",
+  baseUnit: "Nm",
+  units: [
+    u("Nm", "Newton-meter", "N\xB7m", 1),
+    u("kNm", "Kilonewton-meter", "kN\xB7m", 1e3),
+    u("ftlb", "Foot-pound", "ft\xB7lb", 1.355817948),
+    u("inlb", "Inch-pound", "in\xB7lb", 0.112984829),
+    u("kgfm", "Kilogram-force meter", "kgf\xB7m", 9.80665)
+  ]
+};
+var current = {
+  id: "current",
+  name: "Electric Current",
+  description: "Amperes, milliamperes. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "electricity",
+  baseUnit: "A",
+  units: [
+    u("A", "Ampere", "A", 1),
+    u("mA", "Milliampere", "mA", 1e-3),
+    u("uA", "Microampere", "\xB5A", 1e-6),
+    u("kA", "Kiloampere", "kA", 1e3)
+  ]
+};
+var voltage = {
+  id: "voltage",
+  name: "Electric Potential",
+  description: "Volts, millivolts, kilovolts. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "electricity",
+  baseUnit: "V",
+  units: [
+    u("V", "Volt", "V", 1),
+    u("mV", "Millivolt", "mV", 1e-3),
+    u("kV", "Kilovolt", "kV", 1e3),
+    u("MV", "Megavolt", "MV", 1e6)
+  ]
+};
+var resistance = {
+  id: "resistance",
+  name: "Electric Resistance",
+  description: "Ohms, kiloohms, megaohms. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "electricity",
+  baseUnit: "ohm",
+  units: [
+    u("ohm", "Ohm", "\u03A9", 1),
+    u("kohm", "Kiloohm", "k\u03A9", 1e3),
+    u("Mohm", "Megaohm", "M\u03A9", 1e6),
+    u("mohm", "Milliohm", "m\u03A9", 1e-3)
+  ]
+};
+var flow = {
+  id: "flow",
+  name: "Flow Rate",
+  description: "Cubic meters/sec, liters/min, gallons/min. Fast, accurate conversions with engineering-grade precision for everyday and professional use.",
+  group: "fluids",
+  baseUnit: "m3s",
+  units: [
+    u("m3s", "Cubic m/sec", "m\xB3/s", 1),
+    u("Ls", "Liter/sec", "L/s", 1e-3),
+    u("Lmin", "Liter/min", "L/min", 16667e-9),
+    u("gpm_us", "Gallon/min (US)", "gpm", 630902e-10),
+    u("cfm", "Cubic ft/min", "cfm", 471947e-9)
+  ]
+};
+var velocityAngular = {
+  id: "velocity-angular",
+  name: "Angular Velocity",
+  description: "rad/s, deg/s, rpm and more.",
+  group: "engineering",
+  baseUnit: "radps",
+  units: [
+    u("radps", "Radian/second", "rad/s", 1),
+    u("degps", "Degree/second", "\xB0/s", Math.PI / 180),
+    u("revps", "Revolution/second", "rev/s", 2 * Math.PI),
+    u("rpm", "Revolution/minute", "rpm", Math.PI / 30),
+    u("revph", "Revolution/hour", "rev/h", Math.PI / 1800)
+  ]
+};
+var accelerationAngular = {
+  id: "acceleration-angular",
+  name: "Angular Acceleration",
+  description: "rad/s\xB2, deg/s\xB2, rev/s\xB2.",
+  group: "engineering",
+  baseUnit: "radps2",
+  units: [
+    u("radps2", "Radian/second\xB2", "rad/s\xB2", 1),
+    u("degps2", "Degree/second\xB2", "\xB0/s\xB2", Math.PI / 180),
+    u("revps2", "Revolution/second\xB2", "rev/s\xB2", 2 * Math.PI),
+    u("revpm2", "Revolution/minute\xB2", "rev/min\xB2", 2 * Math.PI / 3600)
+  ]
+};
+var specificVolume = {
+  id: "specific-volume",
+  name: "Specific Volume",
+  description: "m\xB3/kg, cm\xB3/g, ft\xB3/lb.",
+  group: "engineering",
+  baseUnit: "m3kg",
+  units: [
+    u("m3kg", "Cubic meter/kilogram", "m\xB3/kg", 1),
+    u("cm3g", "Cubic centimeter/gram", "cm\xB3/g", 1e-3),
+    u("Lkg", "Liter/kilogram", "L/kg", 1e-3),
+    u("ft3lb", "Cubic foot/pound", "ft\xB3/lb", 0.06242796)
+  ]
+};
+var momentOfInertia = {
+  id: "moment-of-inertia",
+  name: "Moment of Inertia",
+  description: "kg\xB7m\xB2, lb\xB7ft\xB2, lb\xB7in\xB2.",
+  group: "engineering",
+  baseUnit: "kgm2",
+  units: [
+    u("kgm2", "Kilogram\xB7meter\xB2", "kg\xB7m\xB2", 1),
+    u("gcm2", "Gram\xB7centimeter\xB2", "g\xB7cm\xB2", 1e-7),
+    u("lbft2", "Pound\xB7foot\xB2", "lb\xB7ft\xB2", 0.04214011),
+    u("lbin2", "Pound\xB7inch\xB2", "lb\xB7in\xB2", 292639e-9),
+    u("slugft2", "Slug\xB7foot\xB2", "slug\xB7ft\xB2", 1.355817948)
+  ]
+};
+var momentOfForce = {
+  id: "moment-of-force",
+  name: "Moment of Force",
+  description: "Newton-meter, kgf\xB7m, lbf\xB7ft.",
+  group: "engineering",
+  baseUnit: "Nm",
+  units: [
+    u("Nm", "Newton-meter", "N\xB7m", 1),
+    u("kNm", "Kilonewton-meter", "kN\xB7m", 1e3),
+    u("mNm", "Millinewton-meter", "mN\xB7m", 1e-3),
+    u("kgfm", "Kilogram-force meter", "kgf\xB7m", 9.80665),
+    u("lbfft", "Pound-force foot", "lbf\xB7ft", 1.355817948),
+    u("lbfin", "Pound-force inch", "lbf\xB7in", 0.112984829)
+  ]
+};
+var fuelEffMass = {
+  id: "fuel-efficiency-mass",
+  name: "Fuel Efficiency (Mass)",
+  description: "J/kg, kJ/kg, BTU/lb.",
+  group: "heat",
+  baseUnit: "Jkg",
+  units: [
+    u("Jkg", "Joule/kilogram", "J/kg", 1),
+    u("kJkg", "Kilojoule/kilogram", "kJ/kg", 1e3),
+    u("calg", "Calorie/gram", "cal/g", 4184),
+    u("kcalkg", "Kilocalorie/kilogram", "kcal/kg", 4184),
+    u("BTUlb", "BTU/pound", "BTU/lb", 2326)
+  ]
+};
+var fuelEffVolume = {
+  id: "fuel-efficiency-volume",
+  name: "Fuel Efficiency (Volume)",
+  description: "J/m\xB3, kJ/m\xB3, BTU/ft\xB3.",
+  group: "heat",
+  baseUnit: "Jm3",
+  units: [
+    u("Jm3", "Joule/cubic meter", "J/m\xB3", 1),
+    u("kJm3", "Kilojoule/cubic meter", "kJ/m\xB3", 1e3),
+    u("calcm3", "Calorie/cubic centimeter", "cal/cm\xB3", 4184e3),
+    u("BTUft3", "BTU/cubic foot", "BTU/ft\xB3", 37258.9458),
+    u("thermgal", "Therm/US gallon", "therm/gal", 2787163e4)
+  ]
+};
+var tempInterval = {
+  id: "temperature-interval",
+  name: "Temperature Interval",
+  description: "Kelvin, Celsius, Fahrenheit intervals.",
+  group: "heat",
+  baseUnit: "K",
+  units: [
+    u("K", "Kelvin", "K", 1),
+    u("C", "Celsius", "\xB0C", 1),
+    u("F", "Fahrenheit", "\xB0F", 5 / 9),
+    u("R", "Rankine", "\xB0R", 5 / 9)
+  ]
+};
+var thermalExpansion = {
+  id: "thermal-expansion",
+  name: "Thermal Expansion",
+  description: "Coefficient of linear expansion.",
+  group: "heat",
+  baseUnit: "perK",
+  units: [
+    u("perK", "1/Kelvin", "1/K", 1),
+    u("perC", "1/Celsius", "1/\xB0C", 1),
+    u("perF", "1/Fahrenheit", "1/\xB0F", 1.8),
+    u("perR", "1/Rankine", "1/\xB0R", 1.8)
+  ]
+};
+var thermalResistance = {
+  id: "thermal-resistance",
+  name: "Thermal Resistance",
+  description: "K/W, \xB0F\xB7h/BTU.",
+  group: "heat",
+  baseUnit: "KW",
+  units: [
+    u("KW", "Kelvin/Watt", "K/W", 1),
+    u("FhBTU", "\xB0F\xB7h/BTU", "\xB0F\xB7h/BTU", 1.895634)
+  ]
+};
+var thermalConductivity = {
+  id: "thermal-conductivity",
+  name: "Thermal Conductivity",
+  description: "W/(m\xB7K), BTU/(h\xB7ft\xB7\xB0F).",
+  group: "heat",
+  baseUnit: "WmK",
+  units: [
+    u("WmK", "Watt/(m\xB7K)", "W/(m\xB7K)", 1),
+    u("calscm", "cal/(s\xB7cm\xB7\xB0C)", "cal/(s\xB7cm\xB7\xB0C)", 418.4),
+    u("BTUhft", "BTU/(h\xB7ft\xB7\xB0F)", "BTU/(h\xB7ft\xB7\xB0F)", 1.730735),
+    u("BTUinft2", "BTU\xB7in/(h\xB7ft\xB2\xB7\xB0F)", "BTU\xB7in/(h\xB7ft\xB2\xB7\xB0F)", 0.144228)
+  ]
+};
+var specificHeat = {
+  id: "specific-heat-capacity",
+  name: "Specific Heat Capacity",
+  description: "J/(kg\xB7K), BTU/(lb\xB7\xB0F).",
+  group: "heat",
+  baseUnit: "JkgK",
+  units: [
+    u("JkgK", "Joule/(kg\xB7K)", "J/(kg\xB7K)", 1),
+    u("kJkgK", "Kilojoule/(kg\xB7K)", "kJ/(kg\xB7K)", 1e3),
+    u("calgC", "Calorie/(g\xB7\xB0C)", "cal/(g\xB7\xB0C)", 4184),
+    u("BTUlbF", "BTU/(lb\xB7\xB0F)", "BTU/(lb\xB7\xB0F)", 4186.8)
+  ]
+};
+var heatDensity = {
+  id: "heat-density",
+  name: "Heat Density",
+  description: "J/m\xB2, BTU/ft\xB2.",
+  group: "heat",
+  baseUnit: "Jm2",
+  units: [
+    u("Jm2", "Joule/m\xB2", "J/m\xB2", 1),
+    u("kJm2", "Kilojoule/m\xB2", "kJ/m\xB2", 1e3),
+    u("calcm2", "Calorie/cm\xB2", "cal/cm\xB2", 41840),
+    u("BTUft2", "BTU/ft\xB2", "BTU/ft\xB2", 11356.5267)
+  ]
+};
+var heatFluxDensity = {
+  id: "heat-flux-density",
+  name: "Heat Flux Density",
+  description: "W/m\xB2, BTU/(h\xB7ft\xB2).",
+  group: "heat",
+  baseUnit: "Wm2",
+  units: [
+    u("Wm2", "Watt/m\xB2", "W/m\xB2", 1),
+    u("kWm2", "Kilowatt/m\xB2", "kW/m\xB2", 1e3),
+    u("calscm2", "cal/(s\xB7cm\xB2)", "cal/(s\xB7cm\xB2)", 41840),
+    u("BTUhft2", "BTU/(h\xB7ft\xB2)", "BTU/(h\xB7ft\xB2)", 3.15459)
+  ]
+};
+var heatTransferCoef = {
+  id: "heat-transfer-coefficient",
+  name: "Heat Transfer Coefficient",
+  description: "W/(m\xB2\xB7K), BTU/(h\xB7ft\xB2\xB7\xB0F).",
+  group: "heat",
+  baseUnit: "Wm2K",
+  units: [
+    u("Wm2K", "Watt/(m\xB2\xB7K)", "W/(m\xB2\xB7K)", 1),
+    u("calscm2C", "cal/(s\xB7cm\xB2\xB7\xB0C)", "cal/(s\xB7cm\xB2\xB7\xB0C)", 41868),
+    u("BTUhft2F", "BTU/(h\xB7ft\xB2\xB7\xB0F)", "BTU/(h\xB7ft\xB2\xB7\xB0F)", 5.678263)
+  ]
+};
+var flowMass = {
+  id: "flow-mass",
+  name: "Mass Flow",
+  description: "kg/s, kg/h, lb/h, ton/h.",
+  group: "fluids",
+  baseUnit: "kgs",
+  units: [
+    u("kgs", "Kilogram/second", "kg/s", 1),
+    u("kgmin", "Kilogram/minute", "kg/min", 1 / 60),
+    u("kgh", "Kilogram/hour", "kg/h", 1 / 3600),
+    u("gs", "Gram/second", "g/s", 1e-3),
+    u("lbs", "Pound/second", "lb/s", 0.45359237),
+    u("lbh", "Pound/hour", "lb/h", 0.45359237 / 3600),
+    u("tonh", "Ton/hour (metric)", "t/h", 1e3 / 3600)
+  ]
+};
+var flowMolar = {
+  id: "flow-molar",
+  name: "Molar Flow",
+  description: "mol/s, mmol/s, kmol/h.",
+  group: "fluids",
+  baseUnit: "mols",
+  units: [
+    u("mols", "Mole/second", "mol/s", 1),
+    u("mmols", "Millimole/second", "mmol/s", 1e-3),
+    u("kmols", "Kilomole/second", "kmol/s", 1e3),
+    u("molmin", "Mole/minute", "mol/min", 1 / 60),
+    u("molh", "Mole/hour", "mol/h", 1 / 3600)
+  ]
+};
+var massFluxDensity = {
+  id: "mass-flux-density",
+  name: "Mass Flux Density",
+  description: "kg/(m\xB2\xB7s), lb/(ft\xB2\xB7s).",
+  group: "fluids",
+  baseUnit: "kgm2s",
+  units: [
+    u("kgm2s", "Kilogram/(m\xB2\xB7s)", "kg/(m\xB2\xB7s)", 1),
+    u("gcm2s", "Gram/(cm\xB2\xB7s)", "g/(cm\xB2\xB7s)", 10),
+    u("lbft2s", "Pound/(ft\xB2\xB7s)", "lb/(ft\xB2\xB7s)", 4.882428)
+  ]
+};
+var concentrationMolar = {
+  id: "concentration-molar",
+  name: "Molar Concentration",
+  description: "mol/m\xB3, mol/L, mmol/L.",
+  group: "fluids",
+  baseUnit: "molm3",
+  units: [
+    u("molm3", "Mole/m\xB3", "mol/m\xB3", 1),
+    u("molL", "Mole/liter", "mol/L", 1e3),
+    u("mmolL", "Millimole/liter", "mmol/L", 1),
+    u("molcm3", "Mole/cm\xB3", "mol/cm\xB3", 1e6)
+  ]
+};
+var concentrationSolution = {
+  id: "concentration-solution",
+  name: "Solution Concentration",
+  description: "kg/m\xB3, g/L, mg/L.",
+  group: "fluids",
+  baseUnit: "kgm3",
+  units: [
+    u("kgm3", "Kilogram/m\xB3", "kg/m\xB3", 1),
+    u("gL", "Gram/liter", "g/L", 1),
+    u("mgL", "Milligram/liter", "mg/L", 1e-3),
+    u("ppm", "Parts per million", "ppm", 1e-3),
+    u("ozgal_us", "Ounce/gallon (US)", "oz/gal", 7.489152)
+  ]
+};
+var viscosityDynamic = {
+  id: "viscosity-dynamic",
+  name: "Dynamic Viscosity",
+  description: "Pa\xB7s, poise, centipoise.",
+  group: "fluids",
+  baseUnit: "Pas",
+  units: [
+    u("Pas", "Pascal\xB7second", "Pa\xB7s", 1),
+    u("mPas", "Millipascal\xB7second", "mPa\xB7s", 1e-3),
+    u("P", "Poise", "P", 0.1),
+    u("cP", "Centipoise", "cP", 1e-3),
+    u("lbfft2s", "lbf\xB7s/ft\xB2", "lbf\xB7s/ft\xB2", 47.880259)
+  ]
+};
+var viscosityKinematic = {
+  id: "viscosity-kinematic",
+  name: "Kinematic Viscosity",
+  description: "m\xB2/s, stokes, centistokes.",
+  group: "fluids",
+  baseUnit: "m2s",
+  units: [
+    u("m2s", "Square meter/second", "m\xB2/s", 1),
+    u("mm2s", "Square millimeter/second", "mm\xB2/s", 1e-6),
+    u("St", "Stokes", "St", 1e-4),
+    u("cSt", "Centistokes", "cSt", 1e-6),
+    u("ft2s", "Square foot/second", "ft\xB2/s", 0.092903)
+  ]
+};
+var surfaceTension = {
+  id: "surface-tension",
+  name: "Surface Tension",
+  description: "N/m, dyn/cm, lbf/in.",
+  group: "fluids",
+  baseUnit: "Nm",
+  units: [
+    u("Nm", "Newton/meter", "N/m", 1),
+    u("mNm", "Millinewton/meter", "mN/m", 1e-3),
+    u("dyncm", "Dyne/centimeter", "dyn/cm", 1e-3),
+    u("lbfin", "Pound-force/inch", "lbf/in", 175.126837)
+  ]
+};
+var permeability = {
+  id: "permeability",
+  name: "Permeability",
+  description: "kg/(Pa\xB7s\xB7m\xB2) and related units.",
+  group: "fluids",
+  baseUnit: "kgPasm2",
+  units: [
+    u("kgPasm2", "Kilogram/(Pa\xB7s\xB7m\xB2)", "kg/(Pa\xB7s\xB7m\xB2)", 1),
+    u("permsi", "Perm (0\xB0C)", "perm", 572135e-16),
+    u("perminsi", "Perm\xB7inch (0\xB0C)", "perm\xB7in", 145322e-17)
+  ]
+};
+var luminance = {
+  id: "luminance",
+  name: "Luminance",
+  description: "cd/m\xB2, lambert, footlambert.",
+  group: "light",
+  baseUnit: "cdm2",
+  units: [
+    u("cdm2", "Candela/m\xB2", "cd/m\xB2", 1),
+    u("cdcm2", "Candela/cm\xB2", "cd/cm\xB2", 1e4),
+    u("cdft2", "Candela/ft\xB2", "cd/ft\xB2", 10.7639),
+    u("lambert", "Lambert", "L", 3183.0989),
+    u("ftL", "Foot-lambert", "fL", 3.4262591),
+    u("nit", "Nit", "nt", 1),
+    u("stilb", "Stilb", "sb", 1e4)
+  ]
+};
+var luminousIntensity = {
+  id: "luminous-intensity",
+  name: "Luminous Intensity",
+  description: "Candela, candlepower.",
+  group: "light",
+  baseUnit: "cd",
+  units: [
+    u("cd", "Candela", "cd", 1),
+    u("cp", "Candlepower", "cp", 0.981),
+    u("HK", "Hefner candle", "HK", 0.903)
+  ]
+};
+var illumination = {
+  id: "illumination",
+  name: "Illumination",
+  description: "Lux, phot, footcandle.",
+  group: "light",
+  baseUnit: "lx",
+  units: [
+    u("lx", "Lux", "lx", 1),
+    u("ph", "Phot", "ph", 1e4),
+    u("fc", "Footcandle", "fc", 10.76391),
+    u("nox", "Nox", "nox", 1e-3)
+  ]
+};
+var dpi = {
+  id: "digital-image-resolution",
+  name: "Digital Image Resolution",
+  description: "DPI, dot/cm, pixel/mm.",
+  group: "light",
+  baseUnit: "dpi",
+  units: [
+    u("dpi", "Dot/inch", "dpi", 1),
+    u("dpcm", "Dot/centimeter", "dpcm", 2.54),
+    u("dpmm", "Dot/millimeter", "dpmm", 25.4),
+    u("ppi", "Pixel/inch", "ppi", 1),
+    u("ppm", "Pixel/meter", "ppm", 0.0254)
+  ]
+};
+var charge = {
+  id: "charge",
+  name: "Electric Charge",
+  description: "Coulomb, ampere-hour, electron charge.",
+  group: "electricity",
+  baseUnit: "C",
+  units: [
+    u("C", "Coulomb", "C", 1),
+    u("mC", "Millicoulomb", "mC", 1e-3),
+    u("uC", "Microcoulomb", "\xB5C", 1e-6),
+    u("nC", "Nanocoulomb", "nC", 1e-9),
+    u("kC", "Kilocoulomb", "kC", 1e3),
+    u("Ah", "Ampere-hour", "Ah", 3600),
+    u("mAh", "Milliampere-hour", "mAh", 3.6),
+    u("e", "Electron charge", "e", 1602176634e-28)
+  ]
+};
+var linearChargeDensity = {
+  id: "linear-charge-density",
+  name: "Linear Charge Density",
+  description: "C/m, C/cm, C/in.",
+  group: "electricity",
+  baseUnit: "Cm",
+  units: [
+    u("Cm", "Coulomb/meter", "C/m", 1),
+    u("Ccm", "Coulomb/centimeter", "C/cm", 100),
+    u("Cin", "Coulomb/inch", "C/in", 39.3700787)
+  ]
+};
+var surfaceChargeDensity = {
+  id: "surface-charge-density",
+  name: "Surface Charge Density",
+  description: "C/m\xB2, C/cm\xB2, C/in\xB2.",
+  group: "electricity",
+  baseUnit: "Cm2",
+  units: [
+    u("Cm2", "Coulomb/m\xB2", "C/m\xB2", 1),
+    u("Ccm2", "Coulomb/cm\xB2", "C/cm\xB2", 1e4),
+    u("Cin2", "Coulomb/in\xB2", "C/in\xB2", 1550.0031)
+  ]
+};
+var volumeChargeDensity = {
+  id: "volume-charge-density",
+  name: "Volume Charge Density",
+  description: "C/m\xB3, C/cm\xB3, C/in\xB3.",
+  group: "electricity",
+  baseUnit: "Cm3",
+  units: [
+    u("Cm3", "Coulomb/m\xB3", "C/m\xB3", 1),
+    u("Ccm3", "Coulomb/cm\xB3", "C/cm\xB3", 1e6),
+    u("Cin3", "Coulomb/in\xB3", "C/in\xB3", 61023.7441)
+  ]
+};
+var linearCurrentDensity = {
+  id: "linear-current-density",
+  name: "Linear Current Density",
+  description: "A/m, A/cm, A/in.",
+  group: "electricity",
+  baseUnit: "Am",
+  units: [
+    u("Am", "Ampere/meter", "A/m", 1),
+    u("Acm", "Ampere/centimeter", "A/cm", 100),
+    u("Ain", "Ampere/inch", "A/in", 39.3700787)
+  ]
+};
+var surfaceCurrentDensity = {
+  id: "surface-current-density",
+  name: "Surface Current Density",
+  description: "A/m\xB2, A/cm\xB2, A/in\xB2.",
+  group: "electricity",
+  baseUnit: "Am2",
+  units: [
+    u("Am2", "Ampere/m\xB2", "A/m\xB2", 1),
+    u("Acm2", "Ampere/cm\xB2", "A/cm\xB2", 1e4),
+    u("Ain2", "Ampere/in\xB2", "A/in\xB2", 1550.0031)
+  ]
+};
+var eFieldStrength = {
+  id: "electric-field-strength",
+  name: "Electric Field Strength",
+  description: "V/m, V/cm, V/in, kV/m.",
+  group: "electricity",
+  baseUnit: "Vm",
+  units: [
+    u("Vm", "Volt/meter", "V/m", 1),
+    u("Vcm", "Volt/centimeter", "V/cm", 100),
+    u("Vin", "Volt/inch", "V/in", 39.3700787),
+    u("kVm", "Kilovolt/meter", "kV/m", 1e3)
+  ]
+};
+var eResistivity = {
+  id: "electric-resistivity",
+  name: "Electric Resistivity",
+  description: "\u03A9\xB7m, \u03A9\xB7cm, \u03A9\xB7in.",
+  group: "electricity",
+  baseUnit: "ohmm",
+  units: [
+    u("ohmm", "Ohm\xB7meter", "\u03A9\xB7m", 1),
+    u("ohmcm", "Ohm\xB7centimeter", "\u03A9\xB7cm", 0.01),
+    u("ohmin", "Ohm\xB7inch", "\u03A9\xB7in", 0.0254)
+  ]
+};
+var eConductance = {
+  id: "electric-conductance",
+  name: "Electric Conductance",
+  description: "Siemens, mho.",
+  group: "electricity",
+  baseUnit: "S",
+  units: [
+    u("S", "Siemens", "S", 1),
+    u("mS", "Millisiemens", "mS", 1e-3),
+    u("uS", "Microsiemens", "\xB5S", 1e-6),
+    u("mho", "Mho", "\u2127", 1)
+  ]
+};
+var eConductivity = {
+  id: "electric-conductivity",
+  name: "Electric Conductivity",
+  description: "S/m, S/cm.",
+  group: "electricity",
+  baseUnit: "Sm",
+  units: [
+    u("Sm", "Siemens/meter", "S/m", 1),
+    u("Scm", "Siemens/centimeter", "S/cm", 100),
+    u("mSm", "Millisiemens/meter", "mS/m", 1e-3)
+  ]
+};
+var capacitance = {
+  id: "capacitance",
+  name: "Electrostatic Capacitance",
+  description: "Farad, microfarad, picofarad.",
+  group: "electricity",
+  baseUnit: "F",
+  units: [
+    u("F", "Farad", "F", 1),
+    u("mF", "Millifarad", "mF", 1e-3),
+    u("uF", "Microfarad", "\xB5F", 1e-6),
+    u("nF", "Nanofarad", "nF", 1e-9),
+    u("pF", "Picofarad", "pF", 1e-12)
+  ]
+};
+var inductance = {
+  id: "inductance",
+  name: "Inductance",
+  description: "Henry, millihenry, microhenry.",
+  group: "electricity",
+  baseUnit: "H",
+  units: [
+    u("H", "Henry", "H", 1),
+    u("mH", "Millihenry", "mH", 1e-3),
+    u("uH", "Microhenry", "\xB5H", 1e-6),
+    u("nH", "Nanohenry", "nH", 1e-9)
+  ]
+};
+var mmf = {
+  id: "magnetomotive-force",
+  name: "Magnetomotive Force",
+  description: "Ampere-turn, gilbert.",
+  group: "magnetism",
+  baseUnit: "At",
+  units: [
+    u("At", "Ampere-turn", "At", 1),
+    u("kAt", "Kiloampere-turn", "kAt", 1e3),
+    u("Gb", "Gilbert", "Gb", 0.795775)
+  ]
+};
+var magneticFieldStrength = {
+  id: "magnetic-field-strength",
+  name: "Magnetic Field Strength",
+  description: "A/m, oersted.",
+  group: "magnetism",
+  baseUnit: "Am",
+  units: [
+    u("Am", "Ampere/meter", "A/m", 1),
+    u("Acm", "Ampere/centimeter", "A/cm", 100),
+    u("Oe", "Oersted", "Oe", 79.5775)
+  ]
+};
+var magneticFlux = {
+  id: "magnetic-flux",
+  name: "Magnetic Flux",
+  description: "Weber, maxwell.",
+  group: "magnetism",
+  baseUnit: "Wb",
+  units: [
+    u("Wb", "Weber", "Wb", 1),
+    u("mWb", "Milliweber", "mWb", 1e-3),
+    u("uWb", "Microweber", "\xB5Wb", 1e-6),
+    u("Mx", "Maxwell", "Mx", 1e-8)
+  ]
+};
+var magneticFluxDensity = {
+  id: "magnetic-flux-density",
+  name: "Magnetic Flux Density",
+  description: "Tesla, gauss.",
+  group: "magnetism",
+  baseUnit: "T",
+  units: [
+    u("T", "Tesla", "T", 1),
+    u("mT", "Millitesla", "mT", 1e-3),
+    u("uT", "Microtesla", "\xB5T", 1e-6),
+    u("G", "Gauss", "G", 1e-4),
+    u("mG", "Milligauss", "mG", 1e-7)
+  ]
+};
+var radiation = {
+  id: "radiation",
+  name: "Radiation Dose Equivalent",
+  description: "Sievert, rem.",
+  group: "radiology",
+  baseUnit: "Sv",
+  units: [
+    u("Sv", "Sievert", "Sv", 1),
+    u("mSv", "Millisievert", "mSv", 1e-3),
+    u("uSv", "Microsievert", "\xB5Sv", 1e-6),
+    u("rem", "Rem", "rem", 0.01),
+    u("mrem", "Millirem", "mrem", 1e-5)
+  ]
+};
+var radiationActivity = {
+  id: "radiation-activity",
+  name: "Radiation Activity",
+  description: "Becquerel, curie.",
+  group: "radiology",
+  baseUnit: "Bq",
+  units: [
+    u("Bq", "Becquerel", "Bq", 1),
+    u("kBq", "Kilobecquerel", "kBq", 1e3),
+    u("MBq", "Megabecquerel", "MBq", 1e6),
+    u("GBq", "Gigabecquerel", "GBq", 1e9),
+    u("Ci", "Curie", "Ci", 37e9),
+    u("mCi", "Millicurie", "mCi", 37e6),
+    u("uCi", "Microcurie", "\xB5Ci", 37e3)
+  ]
+};
+var radiationExposure = {
+  id: "radiation-exposure",
+  name: "Radiation Exposure",
+  description: "Coulomb/kg, roentgen.",
+  group: "radiology",
+  baseUnit: "Ckg",
+  units: [
+    u("Ckg", "Coulomb/kilogram", "C/kg", 1),
+    u("mCkg", "Millicoulomb/kilogram", "mC/kg", 1e-3),
+    u("R", "Roentgen", "R", 258e-6)
+  ]
+};
+var radiationAbsorbed = {
+  id: "radiation-absorbed-dose",
+  name: "Radiation Absorbed Dose",
+  description: "Gray, rad.",
+  group: "radiology",
+  baseUnit: "Gy",
+  units: [
+    u("Gy", "Gray", "Gy", 1),
+    u("mGy", "Milligray", "mGy", 1e-3),
+    u("uGy", "Microgray", "\xB5Gy", 1e-6),
+    u("rad", "Rad", "rad", 0.01),
+    u("mrad", "Millirad", "mrad", 1e-5)
+  ]
+};
+var prefixes = {
+  id: "prefixes",
+  name: "SI Prefixes",
+  description: "Kilo, mega, giga, milli, micro and more.",
+  group: "other",
+  baseUnit: "one",
+  units: [
+    u("one", "One", "1", 1),
+    u("deca", "Deca", "da", 10),
+    u("hecto", "Hecto", "h", 100),
+    u("kilo", "Kilo", "k", 1e3),
+    u("mega", "Mega", "M", 1e6),
+    u("giga", "Giga", "G", 1e9),
+    u("tera", "Tera", "T", 1e12),
+    u("peta", "Peta", "P", 1e15),
+    u("exa", "Exa", "E", 1e18),
+    u("deci", "Deci", "d", 0.1),
+    u("centi", "Centi", "c", 0.01),
+    u("milli", "Milli", "m", 1e-3),
+    u("micro", "Micro", "\xB5", 1e-6),
+    u("nano", "Nano", "n", 1e-9),
+    u("pico", "Pico", "p", 1e-12),
+    u("femto", "Femto", "f", 1e-15),
+    u("atto", "Atto", "a", 1e-18)
+  ]
+};
+var dataTransfer = {
+  id: "data-transfer",
+  name: "Data Transfer",
+  description: "bit/s, kbps, Mbps, Gbps.",
+  group: "other",
+  baseUnit: "bps",
+  units: [
+    u("bps", "Bit/second", "bit/s", 1),
+    u("kbps", "Kilobit/second", "kbit/s", 1e3),
+    u("Mbps", "Megabit/second", "Mbit/s", 1e6),
+    u("Gbps", "Gigabit/second", "Gbit/s", 1e9),
+    u("Tbps", "Terabit/second", "Tbit/s", 1e12),
+    u("Bps", "Byte/second", "B/s", 8),
+    u("KBps", "Kilobyte/second", "KB/s", 8e3),
+    u("MBps", "Megabyte/second", "MB/s", 8e6),
+    u("GBps", "Gigabyte/second", "GB/s", 8e9),
+    u("Kibps", "Kibibit/second", "Kibit/s", 1024),
+    u("Mibps", "Mebibit/second", "Mibit/s", 1024 ** 2)
+  ]
+};
+var typography = {
+  id: "typography",
+  name: "Typography",
+  description: "Points, picas, twips, pixels.",
+  group: "other",
+  baseUnit: "m",
+  units: [
+    u("m", "Meter", "m", 1),
+    u("cm", "Centimeter", "cm", 0.01),
+    u("mm", "Millimeter", "mm", 1e-3),
+    u("in", "Inch", "in", 0.0254),
+    u("pt", "Point", "pt", 0.0254 / 72),
+    u("pica", "Pica", "pc", 0.0254 / 6),
+    u("twip", "Twip", "twip", 0.0254 / 1440),
+    u("px96", "Pixel (96 DPI)", "px", 0.0254 / 96)
+  ]
+};
+var volumeLumber = {
+  id: "volume-lumber",
+  name: "Volume \u2014 Lumber",
+  description: "Board feet, cubic meter, cord.",
+  group: "other",
+  baseUnit: "m3",
+  units: [
+    u("m3", "Cubic meter", "m\xB3", 1),
+    u("ft3", "Cubic foot", "ft\xB3", 0.028316846592),
+    u("in3", "Cubic inch", "in\xB3", 16387064e-12),
+    u("bf", "Board foot", "FBM", 0.002359737216),
+    u("mbf", "Thousand board feet", "MBF", 2.359737216),
+    u("cord", "Cord", "cord", 3.6245563638),
+    u("cordft", "Cord foot", "cord-ft", 0.4530695455),
+    u("cunit", "Cunit", "cu", 2.8316846592)
+  ]
+};
+var volumeDry = {
+  id: "volume-dry",
+  name: "Volume \u2014 Dry",
+  description: "Dry pint, dry quart, peck, bushel.",
+  group: "other",
+  baseUnit: "L",
+  units: [
+    u("L", "Liter", "L", 1),
+    u("dpt_us", "US Dry Pint", "dry pt", 0.5506104714),
+    u("dqt_us", "US Dry Quart", "dry qt", 1.1012209428),
+    u("dgal_us", "US Dry Gallon", "dry gal", 4.4048837712),
+    u("peck_us", "US Peck", "pk", 8.8097675424),
+    u("bushel_us", "US Bushel", "bu", 35.2390701696),
+    u("peck_uk", "UK Peck", "pk (UK)", 9.09218),
+    u("bushel_uk", "UK Bushel", "bu (UK)", 36.36872)
+  ]
+};
+var soundLevel = {
+  id: "sound-level",
+  name: "Sound Level",
+  description: "Decibel, bel, neper. Convert sound pressure and power levels.",
+  group: "other",
+  baseUnit: "dB",
+  units: [
+    u("dB", "Decibel", "dB", 1),
+    u("B", "Bel", "B", 10),
+    u("Np", "Neper", "Np", 8.685889638065035),
+    u("cNp", "Centineper", "cNp", 0.08685889638065)
+  ],
+  popular: [
+    { from: "dB", to: "Np" },
+    { from: "Np", to: "dB" },
+    { from: "dB", to: "B" },
+    { from: "B", to: "dB" }
+  ]
+};
+var luminousFlux = {
+  id: "luminous-flux",
+  name: "Luminous Flux",
+  description: "Lumen, millilumen, kilolumen and candela-steradian. Light output units.",
+  group: "light",
+  baseUnit: "lm",
+  units: [
+    u("lm", "Lumen", "lm", 1),
+    u("mlm", "Millilumen", "mlm", 1e-3),
+    u("klm", "Kilolumen", "klm", 1e3),
+    u("cdsr", "Candela-steradian", "cd\xB7sr", 1)
+  ],
+  popular: [
+    { from: "lm", to: "klm" },
+    { from: "klm", to: "lm" },
+    { from: "lm", to: "mlm" },
+    { from: "mlm", to: "lm" }
+  ]
+};
+var radiationEquivalentDose = {
+  id: "radiation-equivalent-dose",
+  name: "Radiation Equivalent Dose",
+  description: "Sievert, millisievert, rem. Biological effect of ionising radiation.",
+  group: "radiology",
+  baseUnit: "Sv",
+  units: [
+    u("Sv", "Sievert", "Sv", 1),
+    u("mSv", "Millisievert", "mSv", 1e-3),
+    u("uSv", "Microsievert", "\xB5Sv", 1e-6),
+    u("rem", "Rem", "rem", 0.01),
+    u("mrem", "Millirem", "mrem", 1e-5)
+  ],
+  popular: [
+    { from: "Sv", to: "rem" },
+    { from: "rem", to: "Sv" },
+    { from: "mSv", to: "mrem" },
+    { from: "mrem", to: "mSv" },
+    { from: "uSv", to: "mrem" },
+    { from: "Sv", to: "mSv" }
+  ]
+};
+var heatCapacity = {
+  id: "heat-capacity",
+  name: "Heat Capacity",
+  description: "J/K, kJ/K, cal/\xB0C, BTU/\xB0F. Total heat capacity of an object.",
+  group: "heat",
+  baseUnit: "J/K",
+  units: [
+    u("J_K", "Joule per kelvin", "J/K", 1),
+    u("kJ_K", "Kilojoule per kelvin", "kJ/K", 1e3),
+    u("cal_C", "Calorie per \xB0C", "cal/\xB0C", 4.184),
+    u("kcal_C", "Kilocalorie per \xB0C", "kcal/\xB0C", 4184),
+    u("BTU_F", "BTU per \xB0F", "BTU/\xB0F", 1899.100534716)
+  ],
+  popular: [
+    { from: "J_K", to: "kJ_K" },
+    { from: "kJ_K", to: "J_K" },
+    { from: "kcal_C", to: "BTU_F" },
+    { from: "BTU_F", to: "kJ_K" }
+  ]
+};
+var molality = {
+  id: "molality",
+  name: "Molality",
+  description: "Moles of solute per kilogram of solvent. mol/kg, mmol/kg, \xB5mol/kg.",
+  group: "fluids",
+  baseUnit: "mol/kg",
+  units: [
+    u("mol_kg", "Mole per kilogram", "mol/kg", 1),
+    u("mmol_kg", "Millimole per kilogram", "mmol/kg", 1e-3),
+    u("umol_kg", "Micromole per kilogram", "\xB5mol/kg", 1e-6),
+    u("mol_g", "Mole per gram", "mol/g", 1e3)
+  ],
+  popular: [
+    { from: "mol_kg", to: "mmol_kg" },
+    { from: "mmol_kg", to: "mol_kg" },
+    { from: "mol_kg", to: "umol_kg" }
+  ]
+};
+var osmolarity = {
+  id: "osmolarity",
+  name: "Osmolarity",
+  description: "Osm/L, mOsm/L. Osmotic concentration of solutions.",
+  group: "fluids",
+  baseUnit: "Osm/L",
+  units: [
+    u("Osm_L", "Osmole per liter", "Osm/L", 1),
+    u("mOsm_L", "Milliosmole per liter", "mOsm/L", 1e-3),
+    u("Osm_m3", "Osmole per m\xB3", "Osm/m\xB3", 1e-3),
+    u("mOsm_mL", "Milliosmole per mL", "mOsm/mL", 1)
+  ],
+  popular: [
+    { from: "Osm_L", to: "mOsm_L" },
+    { from: "mOsm_L", to: "Osm_L" }
+  ]
+};
+var permittivity = {
+  id: "permittivity",
+  name: "Permittivity",
+  description: "Farad per meter, picofarad per meter. Electric permittivity of media.",
+  group: "electricity",
+  baseUnit: "F/m",
+  units: [
+    u("F_m", "Farad per meter", "F/m", 1),
+    u("mF_m", "Millifarad per meter", "mF/m", 1e-3),
+    u("uF_m", "Microfarad per meter", "\xB5F/m", 1e-6),
+    u("nF_m", "Nanofarad per meter", "nF/m", 1e-9),
+    u("pF_m", "Picofarad per meter", "pF/m", 1e-12)
+  ],
+  popular: [
+    { from: "F_m", to: "pF_m" },
+    { from: "pF_m", to: "F_m" }
+  ]
+};
+var enthalpy = {
+  id: "enthalpy",
+  name: "Specific Enthalpy",
+  description: "J/kg, kJ/kg, kcal/kg, BTU/lb. Enthalpy per unit mass.",
+  group: "heat",
+  baseUnit: "J/kg",
+  units: [
+    u("J_kg", "Joule per kilogram", "J/kg", 1),
+    u("kJ_kg", "Kilojoule per kilogram", "kJ/kg", 1e3),
+    u("cal_g", "Calorie per gram", "cal/g", 4184),
+    u("kcal_kg", "Kilocalorie per kilogram", "kcal/kg", 4184),
+    u("BTU_lb", "BTU per pound", "BTU/lb", 2326)
+  ],
+  popular: [
+    { from: "kJ_kg", to: "BTU_lb" },
+    { from: "BTU_lb", to: "kJ_kg" },
+    { from: "kcal_kg", to: "kJ_kg" }
+  ]
+};
+var entropy = {
+  id: "entropy",
+  name: "Specific Entropy",
+  description: "J/(kg\xB7K), kJ/(kg\xB7K), kcal/(kg\xB7\xB0C), BTU/(lb\xB7\xB0F).",
+  group: "heat",
+  baseUnit: "J/(kg\xB7K)",
+  units: [
+    u("J_kgK", "Joule per kilogram-kelvin", "J/(kg\xB7K)", 1),
+    u("kJ_kgK", "Kilojoule per kilogram-kelvin", "kJ/(kg\xB7K)", 1e3),
+    u("cal_gC", "Calorie per gram-\xB0C", "cal/(g\xB7\xB0C)", 4184),
+    u("kcal_kgC", "Kilocalorie per kilogram-\xB0C", "kcal/(kg\xB7\xB0C)", 4184),
+    u("BTU_lbF", "BTU per pound-\xB0F", "BTU/(lb\xB7\xB0F)", 4186.8)
+  ],
+  popular: [
+    { from: "kJ_kgK", to: "BTU_lbF" },
+    { from: "BTU_lbF", to: "kJ_kgK" }
+  ]
+};
+var CATEGORIES = [
+  length,
+  weight,
+  temperature,
+  volume,
+  area,
+  pressure,
+  energy,
+  power,
+  force,
+  time,
+  speed,
+  angle,
+  fuel,
+  data,
+  frequency,
+  density,
+  acceleration,
+  torque,
+  current,
+  voltage,
+  resistance,
+  flow,
+  // Engineering
+  velocityAngular,
+  accelerationAngular,
+  specificVolume,
+  momentOfInertia,
+  momentOfForce,
+  // Heat
+  fuelEffMass,
+  fuelEffVolume,
+  tempInterval,
+  thermalExpansion,
+  thermalResistance,
+  thermalConductivity,
+  specificHeat,
+  heatDensity,
+  heatFluxDensity,
+  heatTransferCoef,
+  heatCapacity,
+  enthalpy,
+  entropy,
+  // Fluids
+  flowMass,
+  flowMolar,
+  massFluxDensity,
+  concentrationMolar,
+  concentrationSolution,
+  viscosityDynamic,
+  viscosityKinematic,
+  surfaceTension,
+  permeability,
+  molality,
+  osmolarity,
+  // Light
+  luminance,
+  luminousIntensity,
+  luminousFlux,
+  illumination,
+  dpi,
+  // Electricity
+  charge,
+  linearChargeDensity,
+  surfaceChargeDensity,
+  volumeChargeDensity,
+  linearCurrentDensity,
+  surfaceCurrentDensity,
+  eFieldStrength,
+  eResistivity,
+  eConductance,
+  eConductivity,
+  capacitance,
+  inductance,
+  permittivity,
+  // Magnetism
+  mmf,
+  magneticFieldStrength,
+  magneticFlux,
+  magneticFluxDensity,
+  // Radiology
+  radiation,
+  radiationActivity,
+  radiationExposure,
+  radiationAbsorbed,
+  radiationEquivalentDose,
+  // Other
+  prefixes,
+  dataTransfer,
+  typography,
+  volumeLumber,
+  volumeDry,
+  soundLevel
+];
+var CATEGORY_MAP = Object.fromEntries(
+  CATEGORIES.map((c) => [c.id, c])
+);
+function convert(category, value, fromId, toId) {
+  const from = category.units.find((x) => x.id === fromId);
+  const to = category.units.find((x) => x.id === toId);
+  if (!from || !to) return NaN;
+  return to.fromBase(from.toBase(value));
+}
+function formatResult(v) {
+  if (!isFinite(v) || isNaN(v)) return "\u2014";
+  const abs = Math.abs(v);
+  if (abs === 0) return "0";
+  if (abs < 1e-4 || abs >= 1e15) return v.toExponential(6);
+  const digits = abs >= 1 ? Math.min(8, 10 - Math.floor(Math.log10(abs))) : 8;
+  return Number(v.toPrecision(digits)).toString();
+}
+
+// src/lib/mcp/tools/convert.ts
 var convert_default = defineTool({
   name: "convert",
   title: "Convert a value between units",
@@ -28,8 +1593,8 @@ var convert_default = defineTool({
         isError: true
       };
     }
-    const fromUnit = cat.units.find((u) => u.id === from);
-    const toUnit = cat.units.find((u) => u.id === to);
+    const fromUnit = cat.units.find((u2) => u2.id === from);
+    const toUnit = cat.units.find((u2) => u2.id === to);
     if (!fromUnit || !toUnit) {
       return {
         content: [
@@ -64,8 +1629,21 @@ var convert_default = defineTool({
 // src/lib/mcp/tools/list-categories.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z as z2 } from "npm:zod@^4.4.3";
-import { CATEGORIES } from "npm:@/lib/converters/data";
-import { GROUP_LABELS } from "npm:@/lib/converters/types";
+
+// src/lib/converters/types.ts
+var GROUP_LABELS = {
+  common: "Common",
+  engineering: "Engineering",
+  heat: "Heat",
+  fluids: "Fluids",
+  light: "Light",
+  electricity: "Electricity",
+  magnetism: "Magnetism",
+  radiology: "Radiology",
+  other: "Other"
+};
+
+// src/lib/mcp/tools/list-categories.ts
 var list_categories_default = defineTool2({
   name: "list_categories",
   title: "List conversion categories",
@@ -96,7 +1674,6 @@ var list_categories_default = defineTool2({
 // src/lib/mcp/tools/list-units.ts
 import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z as z3 } from "npm:zod@^4.4.3";
-import { CATEGORY_MAP as CATEGORY_MAP2 } from "npm:@/lib/converters/data";
 var list_units_default = defineTool3({
   name: "list_units",
   title: "List units in a category",
@@ -106,18 +1683,18 @@ var list_units_default = defineTool3({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ category }) => {
-    const cat = CATEGORY_MAP2[category];
+    const cat = CATEGORY_MAP[category];
     if (!cat) {
       return {
         content: [{ type: "text", text: `Unknown category '${category}'. Call list_categories to see valid IDs.` }],
         isError: true
       };
     }
-    const units = cat.units.map((u) => ({
-      id: u.id,
-      name: u.name,
-      symbol: u.symbol,
-      aliases: u.aliases ?? []
+    const units = cat.units.map((u2) => ({
+      id: u2.id,
+      name: u2.name,
+      symbol: u2.symbol,
+      aliases: u2.aliases ?? []
     }));
     return {
       content: [{ type: "text", text: JSON.stringify({ category: cat.id, baseUnit: cat.baseUnit, units }, null, 2) }],
@@ -129,8 +1706,106 @@ var list_units_default = defineTool3({
 // src/lib/mcp/tools/parse-and-convert.ts
 import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z as z4 } from "npm:zod@^4.4.3";
-import { parseConversionQuery } from "npm:@/lib/parseConversionQuery";
-import { convert as convert2, formatResult as formatResult2 } from "npm:@/lib/converters/data";
+
+// src/lib/parseConversionQuery.ts
+import { CATEGORIES as CATEGORIES2 } from "npm:@/lib/converters/data";
+var CATEGORY_PRIORITY = [
+  "length",
+  "weight",
+  "temperature",
+  "volume",
+  "area",
+  "time",
+  "speed",
+  "energy",
+  "power",
+  "pressure",
+  "data",
+  "frequency",
+  "angle",
+  "fuel"
+];
+function norm(s) {
+  return s.toLowerCase().replace(/[°\s.]/g, "").replace(/[_-]+/g, "");
+}
+function unitMatches(u2, token) {
+  const t = norm(token);
+  if (!t) return false;
+  if (norm(u2.id) === t) return true;
+  if (norm(u2.symbol) === t) return true;
+  if (norm(u2.name) === t) return true;
+  if (norm(u2.name) + "s" === t) return true;
+  if (norm(u2.name) === t.replace(/s$/, "")) return true;
+  if (u2.aliases?.some((a) => norm(a) === t)) return true;
+  return false;
+}
+function sortedCategories() {
+  const ordered = [];
+  for (const id of CATEGORY_PRIORITY) {
+    const c = CATEGORIES2.find((x) => x.id === id);
+    if (c) ordered.push(c);
+  }
+  for (const c of CATEGORIES2) if (!ordered.includes(c)) ordered.push(c);
+  return ordered;
+}
+function findUnit(token, restrictTo) {
+  const cats = restrictTo ? [restrictTo] : sortedCategories();
+  const out = [];
+  for (const c of cats) {
+    for (const u2 of c.units) {
+      if (unitMatches(u2, token)) out.push({ cat: c, unit: u2 });
+    }
+  }
+  return out;
+}
+var NUM_RE = /-?\d+(?:[.,]\d+)?/;
+function parseConversionQuery(raw) {
+  if (!raw) return null;
+  const cleaned = raw.trim().toLowerCase().replace(/\s+/g, " ");
+  if (!cleaned) return null;
+  const splitRe = /\s+(?:to|in|into|->|=>|=)\s+/;
+  const parts = cleaned.split(splitRe);
+  if (parts.length < 2) return null;
+  const left = parts[0].trim();
+  const right = parts.slice(1).join(" ").trim();
+  const rightTokens = right.split(/[\s,]+/).filter(Boolean);
+  const pairRe = new RegExp(`(${NUM_RE.source})\\s*([a-zA-Z\xB5\xB0"'/\xB2\xB3]+)`, "g");
+  const leftMatches = [];
+  let m;
+  while ((m = pairRe.exec(left)) !== null) {
+    const v = parseFloat(m[1].replace(",", "."));
+    if (!isNaN(v)) leftMatches.push({ value: v, token: m[2] });
+  }
+  if (leftMatches.length === 0) return null;
+  for (const rTok of rightTokens) {
+    const rCandidates = findUnit(rTok);
+    if (!rCandidates.length) continue;
+    for (const { cat: rCat, unit: rUnit } of rCandidates) {
+      const lCandidates = findUnit(leftMatches[0].token, rCat);
+      if (!lCandidates.length) continue;
+      const fromUnit = lCandidates[0].unit;
+      if (leftMatches.length > 1) {
+        let baseTotal = fromUnit.toBase(leftMatches[0].value);
+        let allMatched = true;
+        for (let i = 1; i < leftMatches.length; i++) {
+          const cand = findUnit(leftMatches[i].token, rCat);
+          if (!cand.length) {
+            allMatched = false;
+            break;
+          }
+          baseTotal += cand[0].unit.toBase(leftMatches[i].value);
+        }
+        if (!allMatched) continue;
+        const valueInFrom = fromUnit.fromBase(baseTotal);
+        return { category: rCat, from: fromUnit, to: rUnit, value: valueInFrom, compound: true };
+      }
+      return { category: rCat, from: fromUnit, to: rUnit, value: leftMatches[0].value };
+    }
+  }
+  return null;
+}
+
+// src/lib/mcp/tools/parse-and-convert.ts
 var parse_and_convert_default = defineTool4({
   name: "parse_and_convert",
   title: "Parse a natural-language conversion",
@@ -152,12 +1827,12 @@ var parse_and_convert_default = defineTool4({
         isError: true
       };
     }
-    const result = convert2(parsed.category, parsed.value, parsed.from.id, parsed.to.id);
+    const result = convert(parsed.category, parsed.value, parsed.from.id, parsed.to.id);
     if (!Number.isFinite(result)) {
       return { content: [{ type: "text", text: "Conversion produced a non-finite result." }], isError: true };
     }
-    const formatted = formatResult2(result);
-    const summary = `${formatResult2(parsed.value)} ${parsed.from.symbol} = ${formatted} ${parsed.to.symbol}`;
+    const formatted = formatResult(result);
+    const summary = `${formatResult(parsed.value)} ${parsed.from.symbol} = ${formatted} ${parsed.to.symbol}`;
     return {
       content: [{ type: "text", text: summary }],
       structuredContent: {
