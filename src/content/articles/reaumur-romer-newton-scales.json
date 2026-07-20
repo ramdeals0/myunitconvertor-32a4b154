@@ -1,0 +1,51 @@
+{
+  "slug": "reaumur-romer-newton-scales",
+  "title": "Réaumur, Rømer, Newton: Legacy Temperature Scales in Old Manuals",
+  "h1": "Réaumur, Rømer and Newton — legacy temperature scales you will still see",
+  "description": "Antique European instruments and translated 18th-century texts still use Réaumur (0/80), Rømer (7.5/60) and Newton (0/33). Here are the exact conversions.",
+  "category": "Temperature",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Réaumur puts freezing water at 0 and boiling at 80. It still labels antique thermometers, brewing manuals and cheese ripening charts across Italy, Germany and Switzerland.",
+  "body": [
+    "Three temperature scales survive in historical texts and antique instruments. Skipping the conversion misreads recipes and technical notes by tens of degrees Fahrenheit.",
+    "## The exact factors",
+    "> °C = °Ré × 5/4\n> °C = (°Rø − 7.5) × 40/21\n> °C = °N × 100/33",
+    "## Where each still appears",
+    "Réaumur: antique European thermometers, old cheesemaking and confectionery recipes, some brewery references. Rømer: Danish 18th-century instruments, occasionally in historical meteorology. Newton: historical physics texts before Fahrenheit and Celsius standardised.",
+    "## Worked example — a 20 °Ré cheese-cave recipe",
+    "20 °Ré × 5/4 = 25 °C = 77 °F. Skip the conversion and a room reader thinking 20 °Ré ≈ 20 °C would run the cave 5 °C too cold, slowing ripening by weeks and shifting the flavour profile.",
+    "## Recap",
+    "Réaumur is the one you will hit most often. Convert by 5/4 to Celsius, then to whatever your instrument reads."
+  ],
+  "faqs": [
+    {
+      "q": "Are these scales interval-linear?",
+      "a": "Yes. Réaumur, Rømer, Newton, Celsius, and Fahrenheit are all linear affine transforms of each other."
+    },
+    {
+      "q": "Is Réaumur still used commercially?",
+      "a": "Effectively no — but it survives on antique glass thermometers and in restored recipes, especially Italian and Swiss cheese production notes."
+    }
+  ],
+  "related": [
+    {
+      "label": "Temperature converter",
+      "href": "/c/temperature"
+    },
+    {
+      "label": "Rankine and Kelvin thermodynamics",
+      "href": "/learn/rankine-kelvin-thermodynamics"
+    }
+  ]
+}

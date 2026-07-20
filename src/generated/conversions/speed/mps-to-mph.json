@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "m/s to mph — Convert Meter/second to Mile/hour | Turbo Unit ",
+    "description": "Convert Meter/second (m/s) to Mile/hour (mph) instantly. 1 m/s = 2.2369363 mph. Free, accurate, engineering-grade precision.",
+    "h1": "m/s to mph Converter"
+  },
+  "content": {
+    "intro": "Convert meter/seconds (m/s) to mile/hours (mph) instantly. Both measure speed, so the relationship is strictly linear: each meter/second equals 2.2369363 mile/hours. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One meter/second is equal to **2.2369363 mile/hours**. To go the other way, one mile/hour equals **0.44704 meter/seconds**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> mile/hours = meter/seconds × 2.2369363\n\nWorked example — converting 10 meter/seconds:\n\n10 × 2.2369363 = **22.369363 mph**.\n\nTo invert, divide by 2.2369363 (or multiply by 0.44704).",
+    "conversion_table": "| meter/seconds | mile/hours |\n| --- | --- |\n| 1 m/s | 2.2369363 mph |\n| 2 m/s | 4.4738726 mph |\n| 5 m/s | 11.184681 mph |\n| 10 m/s | 22.369363 mph |\n| 25 m/s | 55.923407 mph |\n| 50 m/s | 111.84681 mph |\n| 100 m/s | 223.69363 mph |\n| 250 m/s | 559.23407 mph |\n| 500 m/s | 1118.468 mph |\n| 1000 m/s | 2236.936 mph |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 m/s ≈ 2.2369363 mph. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Meter/second and Mile/hour both measure speed; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many mile/hours are in 1 meter/second?\n**A:** 2.2369363 mile/hours.\n\n**Q:** What's the formula to convert m/s to mph?\n**A:** mile/hours = meter/seconds × 2.2369363.\n\n**Q:** How do I convert mph back to m/s?\n**A:** Multiply by 0.44704 (or divide by 2.2369363).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this m/s to mph converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile/hour to Meter/second converter",
+      "href": "/c/speed/mph-to-mps"
+    },
+    {
+      "anchor": "All speed conversions",
+      "href": "/c/speed"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mps-to-mph",
+    "canonicalUrl": "https://turbounitconverter.com/c/speed/mps-to-mph",
+    "category": "speed",
+    "pageType": "pair",
+    "keywords": [
+      "meter/second to mile/hour",
+      "m/s to mph",
+      "convert meter/second to mile/hour",
+      "how many mile/hour in a meter/second",
+      "meter/second in mile/hour",
+      "m/s to mph converter",
+      "meter/second vs mile/hour",
+      "meter/second to mile/hour formula",
+      "meter/second to mile/hour calculator"
+    ]
+  },
+  "contentHash": "7283ec2bfbcd"
+}

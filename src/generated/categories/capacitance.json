@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Electrostatic Capacitance Converter — Convert Farad and More",
+    "description": "Free electrostatic capacitance converter for 5+ units including Farad, Millifarad, Microfarad. Instant, accurate, browser-based.",
+    "h1": "Electrostatic Capacitance Converter"
+  },
+  "content": {
+    "intro": "Farad, microfarad, picofarad. Convert between 5 electrostatic capacitance units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electrostatic capacitance in this tool is **F**; every conversion routes through it for consistency.",
+    "formula_section": "Most electrostatic capacitance conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Farad | F |\n| Millifarad | mF |\n| Microfarad | µF |\n| Nanofarad | nF |\n| Picofarad | pF |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electrostatic capacitance converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Farad (F), Millifarad (mF), Microfarad (µF), Nanofarad (nF), Picofarad (pF)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Farad to Millifarad",
+      "href": "/c/capacitance/f-to-mf"
+    },
+    {
+      "anchor": "Millifarad to Farad",
+      "href": "/c/capacitance/mf-to-f"
+    },
+    {
+      "anchor": "Microfarad to Farad",
+      "href": "/c/capacitance/uf-to-f"
+    },
+    {
+      "anchor": "Nanofarad to Farad",
+      "href": "/c/capacitance/nf-to-f"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "capacitance",
+    "canonicalUrl": "https://turbounitconverter.com/c/capacitance",
+    "category": "capacitance",
+    "pageType": "category",
+    "keywords": [
+      "electrostatic capacitance converter",
+      "convert electrostatic capacitance"
+    ]
+  },
+  "contentHash": "2ff41b059ed7"
+}

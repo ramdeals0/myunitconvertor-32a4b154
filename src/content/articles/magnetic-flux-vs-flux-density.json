@@ -1,0 +1,55 @@
+{
+  "slug": "magnetic-flux-vs-flux-density",
+  "title": "Flux vs Flux Density: Weber, Tesla and When They Are Not the Same",
+  "h1": "Magnetic flux vs flux density — weber and tesla explained",
+  "description": "Flux (Wb) is total field through a surface; flux density (T) is field per unit area. 1 T = 1 Wb/m². Confusing them mis-sizes transformer cores.",
+  "category": "Magnetism",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Φ = B × A. A 1 T field through 100 cm² gives 0.01 Wb. Transformer core loss scales with B, not Φ.",
+  "body": [
+    "The two most common magnetic units answer different questions. Flux is a total; flux density is an intensity. Which one you need depends on whether you are computing an EMF or a saturation limit.",
+    "## The exact relationship",
+    "> Φ (weber) = B (tesla) × A (m²)\n> 1 T = 1 Wb/m² = 10 000 G = 10⁸ Mx/cm² (maxwell per cm²)",
+    "## When to use each",
+    "Flux (Wb): induced EMF (Faraday: V = -dΦ/dt), coil linkage, transformer core specification. Flux density (T): saturation limits, motor air-gap fields, MRI strength, magnetic force per area (Maxwell stress).",
+    "## Worked example — transformer",
+    "A 240 V, 50 Hz primary with 500 turns needs peak flux Φ = V/(4.44 fN) = 240/(4.44 × 50 × 500) = 2.16 mWb. In a 6 cm² core cross-section, B_peak = 2.16 × 10⁻³ / 6 × 10⁻⁴ = 3.6 T — well above silicon-steel saturation (~2.0 T). Either add turns or grow the core.",
+    "## Recap",
+    "Flux is total; density is per area. Sizing cores lives in T; induced voltage lives in Wb."
+  ],
+  "faqs": [
+    {
+      "q": "Is maxwell still used?",
+      "a": "In legacy US datasheets and NDT, yes. 1 Wb = 10⁸ Mx. Modern engineering uses weber."
+    },
+    {
+      "q": "What is flux linkage?",
+      "a": "λ = NΦ — the flux threading a coil times the number of turns. It appears directly in inductance L = λ/i."
+    }
+  ],
+  "related": [
+    {
+      "label": "Magnetic flux converter",
+      "href": "/c/magnetic-flux"
+    },
+    {
+      "label": "Weber and maxwell",
+      "href": "/learn/weber-maxwell-magnetic-flux"
+    },
+    {
+      "label": "Tesla and gauss",
+      "href": "/learn/tesla-gauss-magnetic-flux-density"
+    }
+  ]
+}

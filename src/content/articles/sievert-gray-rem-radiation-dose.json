@@ -1,0 +1,48 @@
+{
+  "slug": "sievert-gray-rem-radiation-dose",
+  "title": "Sievert, Gray, Rem: What Each Radiation Unit Actually Measures",
+  "h1": "Sievert, gray and rem — what each radiation unit actually measures",
+  "description": "Grays measure absorbed dose. Sieverts weight that dose for biological effect. Becquerels count decays. Here is the distinction — and the safety-critical reason it matters.",
+  "category": "Radiation",
+  "readingMinutes": 7,
+  "published": "2026-06-02",
+  "updated": "2026-06-29",
+  "reviewed": "2026-06-29",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Radiation protection & health physics reference",
+    "bio": "Reference material for health-physics technicians, medical imaging staff and nuclear-industry engineers reconciling SI and legacy radiological units."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "checked against ICRP Publication 103 and NIST SP 811 §B.8" },
+  "hero": "Radiation units are the one place where getting the unit wrong is not a rounding error — it changes what the number actually means about the risk to a human body.",
+  "body": [
+    "Nuclear and medical dose units are one of the few places where mixing up two units does not just shift the answer by a factor of 100 — it changes what quantity you are actually measuring. This is the plain-language reference to the four units that show up on dosimeter badges, medical imaging reports and environmental monitoring documents: becquerel, gray, sievert, and their legacy counterparts curie, rad and rem.",
+    "## Four different physical quantities",
+    "> **Activity** — how many nuclei decay per second. SI: becquerel (Bq); legacy: curie (Ci). 1 Ci = 3.7 × 10¹⁰ Bq (exact).\n> **Absorbed dose** — energy deposited per unit mass of tissue. SI: gray (Gy = J/kg); legacy: rad. 1 Gy = 100 rad (exact).\n> **Equivalent dose** — absorbed dose weighted for radiation type (α, β, γ, n). SI: sievert (Sv); legacy: rem. 1 Sv = 100 rem (exact).\n> **Exposure** — ionisation in air. SI: coulomb per kg (C/kg); legacy: roentgen (R).",
+    "The critical distinction is between gray (physical energy deposited) and sievert (biological effect estimate). One gray of alpha radiation delivers the same energy as one gray of gamma radiation, but the biological weighting factor is 20 for alphas and 1 for gammas — so 1 Gy of alpha is 20 Sv of equivalent dose, while 1 Gy of gamma is 1 Sv. Reporters and even some safety documents conflate the two, which is how you end up with news stories that mix millisieverts and grays interchangeably.",
+    "## Exact conversions between systems",
+    "> 1 Sv = 100 rem = 1,000 mSv = 1,000,000 µSv\n> 1 Gy = 100 rad = 1 J/kg\n> 1 Bq = 1 decay/s; 1 Ci = 37 GBq\n> 1 R ≈ 0.00876 Gy (in air, for X-ray and gamma at typical medical energies)",
+    "The conversions are exact by definition — the SI/legacy split is a straight decimal factor of 100 for both gray/rad and sievert/rem. Only the roentgen-to-gray relationship has a physics correction inside it (the W-value of air, roughly 33.97 eV per ion pair), which is why exposure is being phased out in favour of the direct dose quantities.",
+    "## Everyday dose numbers, for calibration",
+    "Natural background radiation averages 2–4 mSv/year worldwide, dominated by radon and cosmic rays. A chest X-ray is about 0.02 mSv. A dental bitewing is 0.005 mSv. A CT scan of the abdomen is 8–10 mSv. A single trans-atlantic flight adds 0.05–0.1 mSv from cosmic rays. The annual limit for occupational radiation workers under ICRP recommendations is 20 mSv/year averaged over 5 years, with no single year exceeding 50 mSv.",
+    "### Effective dose vs equivalent dose",
+    "Sievert covers two subtly different quantities: **equivalent dose** (dose to a single tissue, weighted for radiation type) and **effective dose** (whole-body-equivalent, additionally weighted for tissue radiosensitivity). ICRP-103 provides both sets of weighting factors. Medical imaging reports usually quote effective dose so that a 10 mSv abdominal CT can be compared like-for-like against a 0.02 mSv chest X-ray.",
+    "## Worked example — reading a dosimeter",
+    "A monthly dosimeter badge reads 0.42 mSv. Converting to legacy: 0.42 × 100 = 42 mrem. Annualising: 0.42 × 12 = 5.04 mSv/year — well below the 20 mSv/year occupational limit, but above the roughly 2.4 mSv/year global average natural background. If the badge distinguished shallow vs deep dose (Hp(0.07) vs Hp(10)), record both; a large gap suggests beta-heavy exposure that is depositing dose near the skin surface.",
+    "## Activity conversions in practice",
+    "A medical iodine-131 therapy dose is typically 3.7 GBq (100 mCi). A smoke detector americium-241 source is about 37 kBq (1 µCi). Environmental sampling might see 40 mBq/L of tritium in tap water — many orders of magnitude below any effect threshold, but detectable with modern liquid-scintillation counters. The becquerel is 3.7 × 10¹⁰ times smaller than the curie, so watch metric-prefix arithmetic carefully when converting between them.",
+    "## The five-second recap",
+    "**Bq** counts decays. **Gy** measures energy deposited. **Sv** weights that energy for biological effect. Divide sieverts by 100 to get rem; divide grays by 100 to get rad; divide curies by 27 to get GBq (or multiply by 37 to get GBq). And never accept a radiation number in the press without knowing which of these four quantities the reporter meant."
+  ],
+  "faqs": [
+    { "q": "Is a sievert always equal to a gray?", "a": "Only for radiation types where the weighting factor is 1 — X-rays, gamma rays, most beta particles. For alpha radiation the weighting is 20 (so 1 Gy alpha = 20 Sv), and for fast neutrons it ranges 5–20 depending on energy. Never assume Gy = Sv without knowing the radiation type." },
+    { "q": "How many mSv is a chest X-ray?", "a": "About 0.02 mSv effective dose — roughly equivalent to 2–3 days of natural background radiation." },
+    { "q": "Why did SI replace the curie and rem?", "a": "The curie is defined as the activity of one gram of radium-226, a historical accident. The rem was derived from the roentgen with additional conversion factors. Both were replaced with base-SI-derived units (Bq and Sv) that carry their definitions directly from the second, kilogram and joule." },
+    { "q": "What is a lethal radiation dose?", "a": "The LD50/30 (dose lethal to 50% of population within 30 days without treatment) is roughly 4–5 Sv acute whole-body dose. Modern medical treatment can raise survival for doses up to about 6–8 Sv. Doses above 10 Sv are almost always fatal within days." }
+  ],
+  "related": [
+    { "label": "Sievert to rem converter", "href": "/c/radiation/sv-to-rem" },
+    { "label": "Gray to rad converter", "href": "/c/radiation-absorbed-dose/gy-to-rad" },
+    { "label": "Becquerel to curie converter", "href": "/c/radiation-activity/bq-to-ci" }
+  ]
+}

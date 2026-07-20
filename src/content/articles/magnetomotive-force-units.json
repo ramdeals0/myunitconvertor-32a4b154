@@ -1,0 +1,51 @@
+{
+  "slug": "magnetomotive-force-units",
+  "title": "Magnetomotive Force: Ampere-Turns and Gilberts",
+  "h1": "Magnetomotive force units — ampere-turn and gilbert",
+  "description": "MMF = NI, in ampere-turns. 1 Gb = 10/(4π) At ≈ 0.7958 At. Reluctance networks convert MMF to flux the way voltage drives current.",
+  "category": "Magnetomotive force",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Magnetic circuits use MMF the way electrical circuits use EMF. NI in, Φ out, reluctance in between.",
+  "body": [
+    "Magnetomotive force is the magnetic-circuit analogue of EMF. It is what the coil produces; the magnetic reluctance of the core determines the resulting flux.",
+    "## The exact relationships",
+    "> MMF = N × I in ampere-turns (At)\n> 1 gilbert = 10/(4π) At ≈ 0.7958 At\n> Φ = MMF / ℛ, where ℛ is reluctance (A/Wb)",
+    "## Where each is used",
+    "Ampere-turn: modern SI solenoid, transformer and relay design. Gilbert: legacy CGS design texts and some older US datasheets — still used in gapped-core reluctance calculations.",
+    "## Worked example — relay coil",
+    "A relay armature needs 800 At to pull in. A 4000-turn coil requires 0.2 A. Pull-in current ripples with battery droop — set the datasheet input in At, size the coil so operating current still delivers required MMF at end-of-life battery voltage.",
+    "## Recap",
+    "MMF is NI. Convert gilberts to At by multiplying by 0.796."
+  ],
+  "faqs": [
+    {
+      "q": "Why is MMF not in volts?",
+      "a": "It is a magnetic-circuit quantity. The analogy to EMF is dimensional, not literal."
+    },
+    {
+      "q": "Can I add MMFs?",
+      "a": "Yes — series magnetic paths add MMF the way series EMFs add voltage."
+    }
+  ],
+  "related": [
+    {
+      "label": "Magnetomotive force converter",
+      "href": "/c/magnetomotive-force"
+    },
+    {
+      "label": "Weber and maxwell",
+      "href": "/learn/weber-maxwell-magnetic-flux"
+    }
+  ]
+}

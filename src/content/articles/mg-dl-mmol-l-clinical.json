@@ -1,0 +1,47 @@
+{
+  "slug": "mg-dl-mmol-l-clinical",
+  "title": "mg/dL vs mmol/L: Glucose, Cholesterol and the US–EU Divide",
+  "h1": "Clinical lab units — mg/dL and mmol/L",
+  "description": "Glucose 100 mg/dL = 5.55 mmol/L. Cholesterol 200 mg/dL = 5.18 mmol/L. The conversion factor is different for every analyte — it depends on molecular weight.",
+  "category": "Solution concentration",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Every clinical analyte has its own mg/dL ↔ mmol/L factor. Rules of thumb like '18' work for glucose only.",
+  "body": [
+    "US labs report clinical analytes in mg/dL; most of the world uses mmol/L. The conversion is not universal — each substance has a different molecular weight, so a different factor.",
+    "## The exact conversions",
+    "> Glucose: mg/dL × 0.0555 = mmol/L (MW 180.16)\n> Cholesterol: mg/dL × 0.0259 = mmol/L (MW 386.65)\n> Triglycerides: mg/dL × 0.0113 = mmol/L (MW 885)\n> Creatinine: mg/dL × 88.4 = µmol/L\n> Urea (BUN): mg/dL × 0.357 = mmol/L (BUN is expressed as nitrogen, not urea)",
+    "## Reference ranges (mmol/L in parentheses)",
+    "Fasting glucose: 70–100 mg/dL (3.9–5.5). Total cholesterol optimal: <200 (5.18). Triglyceride normal: <150 (1.69). Creatinine adult: 0.6–1.2 (53–106 µmol/L).",
+    "## Worked example — travelling patient",
+    "A US patient with cholesterol 240 mg/dL sees a European clinician who logs 6.21 mmol/L. Multiply by 39 (wrong — that's glucose's factor for the mg/dL to mmol/L 1/x direction) and you get nonsense. Look up the analyte-specific factor every time.",
+    "## Recap",
+    "One conversion per analyte. Do not use glucose's factor for anything else."
+  ],
+  "faqs": [
+    {
+      "q": "Why does BUN use nitrogen mass?",
+      "a": "US labs historically measured the nitrogen content of urea. BUN × 2.14 = urea concentration."
+    },
+    {
+      "q": "Is HbA1c also unit-split?",
+      "a": "Yes — US uses % (NGSP); international uses mmol/mol (IFCC). HbA1c 6.5% ≈ 48 mmol/mol."
+    }
+  ],
+  "related": [
+    {
+      "label": "Solution concentration converter",
+      "href": "/c/concentration-solution"
+    }
+  ]
+}

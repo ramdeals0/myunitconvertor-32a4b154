@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "sdk_version": "0.24.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "turbo-unit-converter-mcp",
+      "version": "0.1.0",
+      "title": "Turbo Unit Converter"
+    },
+    "tools": [
+      {
+        "name": "convert",
+        "title": "Convert a value between units",
+        "description": "Convert a numeric value from one unit to another within a category. Use category/unit IDs returned by `list_categories` and `list_units`. Example: category='length', from='ft', to='cm', value=5.917.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "Category ID, e.g. 'length', 'temperature'."
+            },
+            "from": {
+              "type": "string",
+              "description": "Source unit ID, e.g. 'ft'."
+            },
+            "to": {
+              "type": "string",
+              "description": "Target unit ID, e.g. 'cm'."
+            },
+            "value": {
+              "type": "number",
+              "description": "Numeric value to convert."
+            }
+          },
+          "required": [
+            "category",
+            "from",
+            "to",
+            "value"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_categories",
+        "title": "List conversion categories",
+        "description": "List every supported unit-conversion category (length, weight, temperature, pressure, etc.) with its ID, name, group, and short description.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "group": {
+              "description": "Optional group filter: common, engineering, heat, fluids, light, electricity, magnetism, radiology, other.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_units",
+        "title": "List units in a category",
+        "description": "Return every unit available inside a conversion category. Use the category ID returned by `list_categories` (e.g. 'length', 'weight', 'pressure').",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "Category ID, e.g. 'length', 'temperature', 'pressure'."
+            }
+          },
+          "required": [
+            "category"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "parse_and_convert",
+        "title": "Parse a natural-language conversion",
+        "description": "Parse and evaluate a natural-language conversion query such as '5 ft 11 in to cm', '70 F in C', or '250 grams to ounces'. Returns the detected category, source/target units, and the converted value.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Natural-language conversion query."
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

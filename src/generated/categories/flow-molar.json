@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Molar Flow Converter — Convert Mole/second and More",
+    "description": "Free molar flow converter for 5+ units including Mole/second, Millimole/second, Kilomole/second. Instant, accurate, browser-based.",
+    "h1": "Molar Flow Converter"
+  },
+  "content": {
+    "intro": "mol/s, mmol/s, kmol/h. Convert between 5 molar flow units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for molar flow in this tool is **mols**; every conversion routes through it for consistency.",
+    "formula_section": "Most molar flow conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Mole/second | mol/s |\n| Millimole/second | mmol/s |\n| Kilomole/second | kmol/s |\n| Mole/minute | mol/min |\n| Mole/hour | mol/h |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this molar flow converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Mole/second (mol/s), Millimole/second (mmol/s), Kilomole/second (kmol/s), Mole/minute (mol/min), Mole/hour (mol/h)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mole/second to Millimole/second",
+      "href": "/c/flow-molar/mols-to-mmols"
+    },
+    {
+      "anchor": "Millimole/second to Mole/second",
+      "href": "/c/flow-molar/mmols-to-mols"
+    },
+    {
+      "anchor": "Kilomole/second to Mole/second",
+      "href": "/c/flow-molar/kmols-to-mols"
+    },
+    {
+      "anchor": "Mole/minute to Mole/second",
+      "href": "/c/flow-molar/molmin-to-mols"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "flow-molar",
+    "canonicalUrl": "https://turbounitconverter.com/c/flow-molar",
+    "category": "flow-molar",
+    "pageType": "category",
+    "keywords": [
+      "molar flow converter",
+      "convert molar flow"
+    ]
+  },
+  "contentHash": "b809355214a6"
+}

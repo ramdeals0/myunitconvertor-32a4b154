@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Weight & Mass Converter — Convert Kilogram and More",
+    "description": "Free weight & mass converter for 10+ units including Kilogram, Gram, Milligram. Instant, accurate, browser-based.",
+    "h1": "Weight & Mass Converter"
+  },
+  "content": {
+    "intro": "Kilograms, pounds, ounces, tonnes and more. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 10 weight & mass units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for weight & mass in this tool is **kg**; every conversion routes through it for consistency.",
+    "formula_section": "Most weight & mass conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram | kg |\n| Gram | g |\n| Milligram | mg |\n| Metric Ton | t |\n| Pound | lb |\n| Ounce | oz |\n| Stone | st |\n| Carat | ct |\n| US Ton (short) | ton (US) |\n| UK Ton (long) | ton (UK) |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this weight & mass converter?\n**A:** It uses 10 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram (kg), Gram (g), Milligram (mg), Metric Ton (t), Pound (lb), Ounce (oz), Stone (st), Carat (ct), US Ton (short) (ton (US)), UK Ton (long) (ton (UK))."
+  },
+  "internal_links": [
+    {
+      "anchor": "kg to lb Converter",
+      "href": "/c/weight/kg-to-lb"
+    },
+    {
+      "anchor": "lb to kg Converter",
+      "href": "/c/weight/lb-to-kg"
+    },
+    {
+      "anchor": "g to oz Converter",
+      "href": "/c/weight/g-to-oz"
+    },
+    {
+      "anchor": "oz to g Converter",
+      "href": "/c/weight/oz-to-g"
+    },
+    {
+      "anchor": "kg to st Converter",
+      "href": "/c/weight/kg-to-st"
+    },
+    {
+      "anchor": "st to kg Converter",
+      "href": "/c/weight/st-to-kg"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "weight",
+    "canonicalUrl": "https://turbounitconverter.com/c/weight",
+    "category": "weight",
+    "pageType": "category",
+    "keywords": [
+      "weight & mass converter",
+      "convert weight & mass"
+    ]
+  },
+  "contentHash": "05ba005162fe"
+}

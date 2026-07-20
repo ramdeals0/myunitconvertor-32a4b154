@@ -1,0 +1,47 @@
+{
+  "slug": "joules-calories-kwh-btu-reconciled",
+  "title": "Joules, Calories, kWh, BTU: One Energy, Four Dialects",
+  "h1": "Joules, calories, kWh and BTU: reconciling the four energy dialects",
+  "description": "Utility bills, food labels, thermodynamics texts and HVAC catalogs each use a different energy unit. Here is exactly how they line up, with the calorie fine print no one reads.",
+  "category": "Energy",
+  "readingMinutes": 7,
+  "published": "2026-05-14",
+  "updated": "2026-06-22",
+  "reviewed": "2026-06-22",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Thermodynamics & energy systems",
+    "bio": "Reference material for HVAC designers, utility analysts, and anyone who has ever tried to reconcile a food label with a physics textbook."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "cross-checked against NIST SP 811 §B.8 and IEC 80000-5" },
+  "hero": "A joule is a joule. But the world sells you energy in kWh, quotes you food in kilocalories, sizes your boiler in BTU, and expects you to keep it all straight.",
+  "body": [
+    "Energy is one physical quantity with an SI unit (the joule) and about a dozen alternative dialects that will not go away. This is the reference we wish had been printed on the back of every physics textbook — the exact factors, plus the historical reasons the four biggest units (J, cal, kWh, BTU) all still exist.",
+    "## The four you actually need",
+    "> 1 kWh = 3,600,000 J = 3.6 MJ (exact)\n> 1 cal (thermochemical) = 4.184 J (exact); 1 cal (IT) = 4.1868 J\n> 1 BTU (IT) = 1,055.05585262 J; 1 BTU (thermochemical) = 1,054.35 J\n> 1 kcal = 1,000 cal = 4,184 J (the \"Calorie\" on food labels)",
+    "The calorie is the loudest source of confusion. There are at least five official definitions — thermochemical, International Table (IT), 4 °C, 15 °C, and 20 °C — and they differ by up to 0.2%. For nutrition, all of them are rounded and the difference is inside label-tolerance. For engineering thermodynamics, always specify which calorie the table uses.",
+    "## The kilocalorie / Calorie / calorie tangle",
+    "A food-label \"Calorie\" (capital C) is a kilocalorie — 1,000 physics calories. A 250 Calorie granola bar is 250 kcal = 1,046 kJ ≈ 0.29 kWh of chemical energy. If a physics textbook says \"250 cal of heat\" without a capital, that is 250 small calories = 1.046 kJ — a thousand times less. Every physics teacher watches their students trip on this at least once.",
+    "## Where the BTU comes from",
+    "One British thermal unit is defined as the heat required to raise one pound of water by one degree Fahrenheit. That is roughly 1.055 kJ, which makes 1 kWh = 3,412 BTU — the number every HVAC contractor knows by heart. Refrigeration equipment adds a further wrinkle: a \"ton\" of cooling is 12,000 BTU/hr, the rate at which one short ton of ice melts over 24 hours.",
+    "## Reading a utility bill against physics",
+    "US electric bills quote kWh. Natural-gas bills quote therms (1 therm = 100,000 BTU = 105.5 MJ) or ccf (one hundred cubic feet, with an energy content that varies by wellhead composition). A gallon of gasoline packs roughly 33.7 kWh of chemical energy — which is why EPA MPGe uses that exact number as the yardstick for electric-vehicle efficiency comparisons.",
+    "## Worked example — heating a bath",
+    "A 200 L bath from 15 °C to 40 °C requires ΔE = m·c·ΔT = 200 kg × 4,186 J/(kg·°C) × 25 °C = 20.93 MJ. Convert: 20.93 MJ ÷ 3.6 = 5.81 kWh, or ÷ 1.055 = 19,835 BTU, or ÷ 4.184 = 5,003 kcal. At $0.15/kWh that bath costs about 87 cents in electric water heating, ignoring standby and recovery losses.",
+    "## Where the electron-volt shows up",
+    "In atomic and particle physics energies are so small that the joule is unwieldy. The electron-volt is the energy an electron gains crossing a 1-volt potential: 1 eV = 1.602176634 × 10⁻¹⁹ J. Chemistry uses kJ/mol, spectroscopy uses cm⁻¹ (a reciprocal-length unit that is actually an energy in disguise via E = hcν̃). All of them convert exactly through the joule.",
+    "## The five-second recap",
+    "1 kWh = 3.6 MJ. 1 BTU ≈ 1.055 kJ. 1 kcal (food Calorie) = 4.184 kJ. If a table just says \"cal\" without a capital or a subscript, it means the physicist's small calorie — one one-thousandth of what you see on a granola bar."
+  ],
+  "faqs": [
+    { "q": "How many joules in a kWh?", "a": "Exactly 3,600,000 J. One watt for one second is one joule; a kilowatt-hour is 1,000 W × 3,600 s." },
+    { "q": "How many kWh in a food Calorie?", "a": "1 kcal = 4,184 J = 0.001162 kWh. A 2,000 Calorie diet is about 2.32 kWh of chemical energy per day — less than a modest electric oven uses in an hour." },
+    { "q": "Which calorie should engineering tables use?", "a": "Most modern thermodynamics texts standardise on the thermochemical calorie (4.184 J exactly). Older steam and refrigeration tables use the IT calorie (4.1868 J). Always check the front matter." },
+    { "q": "Is BTU the same as BTU/hr?", "a": "No — the BTU is an energy; the BTU/hr is a power (energy per time). A furnace rated at 80,000 BTU/hr delivers about 23.4 kW of heating capacity." }
+  ],
+  "related": [
+    { "label": "kWh to joules converter", "href": "/c/energy/kwh-to-j" },
+    { "label": "BTU to joules converter", "href": "/c/energy/btu-to-j" },
+    { "label": "calories to joules converter", "href": "/c/energy/cal-to-j" }
+  ]
+}

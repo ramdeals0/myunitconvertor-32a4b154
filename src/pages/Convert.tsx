@@ -1,10 +1,10 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
 import { CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
 import type { Category, Unit } from "@/lib/converters/types";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
 
 function normalize(s: string) {
   return s.toLowerCase().replace(/[\s_]+/g, "-");
@@ -37,8 +37,11 @@ function resolvePair(pair: string): { category: Category; from: Unit; to: Unit }
 
 export default function ConvertPage() {
   const { pair } = useParams<{ pair: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const resolved = pair ? resolvePair(pair) : null;
-  if (!resolved) return <Navigate to="/404" replace />;
+  if (!resolved) return <Navigate to={L("/404")} replace />;
   const { category, from: f, to: t } = resolved;
 
   const factor = convert(category, 1, f.id, t.id);
@@ -50,9 +53,11 @@ export default function ConvertPage() {
   const fLabel = f.symbol.toUpperCase();
   const tLabel = t.symbol.toUpperCase();
 
-  const title = `Fast ${fLabel} to ${tLabel} Converter | Instant ${f.name} to ${t.name} Results`.slice(0, 65);
+  const title = `${fLabel} to ${tLabel} Converter — ${f.name} to ${t.name}`.slice(0, 60);
   const desc = `Instantly convert ${f.name} (${f.symbol}) to ${t.name} (${t.symbol}) online — free, accurate, and engineering-grade precise. 1 ${f.symbol} = ${formatResult(factor)} ${t.symbol}.`.slice(0, 160);
-  const url = `https://turbounitconverter.vercel.app/convert/${fSlug}-to-${tSlug}`;
+  const url = LU(`/convert/${fSlug}-to-${tSlug}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
   const faqs = [
     { q: `How many ${t.name.toLowerCase()} are in a ${f.name.toLowerCase()}?`, a: `1 ${f.symbol} equals ${formatResult(factor)} ${t.symbol}.` },
@@ -74,13 +79,13 @@ export default function ConvertPage() {
         title={title}
         description={desc}
         canonical={url}
-        ogType="article"
+        ogType="website"
         jsonLd={[
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
               { "@type": "ListItem", position: 2, name: `${fLabel} to ${tLabel}`, item: url },
             ],
           },
@@ -103,9 +108,9 @@ export default function ConvertPage() {
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
-          <Link to="/" className="hover:text-primary">Home</Link>
+          <Link to={L("/")} className="hover:text-primary">Home</Link>
           <span className="mx-2">/</span>
-          <Link to={`/c/${category.id}`} className="hover:text-primary">{category.name}</Link>
+          <Link to={L(`/c/${category.id}`)} className="hover:text-primary">{category.name}</Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{fLabel} → {tLabel}</span>
         </nav>
@@ -122,7 +127,7 @@ export default function ConvertPage() {
           </p>
         </div>
 
-        <Converter category={category} initialFrom={f.id} initialTo={t.id} />
+        <Converter category={category} initialFrom={f.id} initialTo={t.id} persistValueInUrl />
 
         <div className="mt-6 bg-primary-soft border border-primary/15 rounded-xl p-5 text-center">
           <div className="text-[11px] uppercase tracking-[0.08em] font-semibold text-primary/80">Conversion factor</div>
@@ -131,7 +136,6 @@ export default function ConvertPage() {
           </div>
         </div>
 
-        <AdBanner className="mt-10" />
 
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About {fLabel} to {tLabel}</h2>
@@ -182,7 +186,7 @@ export default function ConvertPage() {
 
         <section className="mt-10 text-center">
           <Link
-            to={`/c/${category.id}/${f.id}-to-${t.id}`}
+            to={L(`/c/${category.id}/${f.id}-to-${t.id}`)}
             className="text-sm text-primary hover:underline"
           >
             View detailed {f.name} → {t.name} reference →

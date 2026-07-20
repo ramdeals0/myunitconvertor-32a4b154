@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "km to AU Converter — Kilometer to Astronomical Unit",
+    "description": "Convert Kilometer (km) to Astronomical Unit (AU) instantly. 1 km = 6.684587e-9 AU. Free, accurate, browser-based.",
+    "h1": "Kilometer to Astronomical Unit Converter"
+  },
+  "content": {
+    "intro": "Convert kilometers (km) to astronomical units (AU) instantly. Both measure length, so the relationship is strictly linear: each kilometer equals 6.684587e-9 astronomical units. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer is equal to **6.684587e-9 astronomical units**. To go the other way, one astronomical unit equals **150000000 kilometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> astronomical units = kilometers × 6.684587e-9\n\nWorked example — converting 10 kilometers:\n\n10 × 6.684587e-9 = **6.684587e-8 AU**.\n\nTo invert, divide by 6.684587e-9 (or multiply by 150000000).",
+    "conversion_table": "| kilometers | astronomical units |\n| --- | --- |\n| 1 km | 6.684587e-9 AU |\n| 2 km | 1.336917e-8 AU |\n| 5 km | 3.342294e-8 AU |\n| 10 km | 6.684587e-8 AU |\n| 25 km | 1.671147e-7 AU |\n| 50 km | 3.342294e-7 AU |\n| 100 km | 6.684587e-7 AU |\n| 250 km | 1.671147e-6 AU |\n| 500 km | 3.342294e-6 AU |\n| 1000 km | 6.684587e-6 AU |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km ≈ 6.684587e-9 AU. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer and Astronomical Unit both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many astronomical units are in 1 kilometer?\n**A:** 6.684587e-9 astronomical units.\n\n**Q:** What's the formula to convert km to AU?\n**A:** astronomical units = kilometers × 6.684587e-9.\n\n**Q:** How do I convert AU back to km?\n**A:** Multiply by 150000000 (or divide by 6.684587e-9).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km to AU converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Astronomical Unit to Kilometer converter",
+      "href": "/c/length/au-to-km"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "km-to-au",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/km-to-au",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer to astronomical unit",
+      "km to AU",
+      "convert km to AU"
+    ]
+  },
+  "contentHash": "c120e298621d"
+}

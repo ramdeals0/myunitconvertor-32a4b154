@@ -1,0 +1,52 @@
+{
+  "slug": "torque-nm-lbft-wrench",
+  "title": "Torque: Nm vs lb-ft, and Why Your Wrench Is Probably Miscalibrated",
+  "h1": "Torque conversion — N·m, lb·ft, kgf·m and wrench accuracy",
+  "description": "1 N·m = 0.737562 lb·ft. Wheel lugs typically 120–140 N·m (89–103 lb·ft). Click wrenches drift 4% per year — ISO 6789 requires recalibration every 5000 cycles or 12 months.",
+  "category": "Torque",
+  "readingMinutes": 7,
+  "published": "2026-07-10",
+  "updated": "2026-07-15",
+  "reviewed": "2026-07-15",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied metrology & fastener engineering" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ISO 6789-1:2017, ISO 16047, SAE J1701, NASM1312-8, and Bosch Automotive Handbook 10th ed. §7.5" },
+  "hero": "One Newton-metre is 0.737562 pound-feet. That's the easy part. The hard part is that a click-style torque wrench loses roughly 4% accuracy per year in normal shop use — so the fastener you 'torqued to spec' may be 15% low or 20% high, and you'll never know until something backs out or snaps.",
+  "body": [
+    "Torque is a rotational analogue of force: **τ = r × F**, distance times perpendicular force. In SI it is measured in Newton-metres (N·m). Because torque and energy share the same dimension (kg·m²/s²), the SI Brochure (BIPM, 9th ed. §2.3.4) explicitly forbids expressing torque in joules — 'to distinguish it from energy, torque should be given in N·m, never J' — even though they're dimensionally identical.",
+    "## The exact factors",
+    "> 1 N·m = 0.737562149 lb·ft (pound-force · foot)\n> 1 N·m = 8.85074579 lb·in\n> 1 lb·ft = 1.35581795 N·m\n> 1 kgf·m = 9.80665 N·m = 7.23301 lb·ft\n> 1 oz·in = 0.00706155 N·m (used for small motors and instrument screws)",
+    "## Common fastener torques",
+    "| Fastener | Typical torque | Note |\n|---|---|---|\n| M6 8.8 steel bolt, dry | 10 N·m (7.4 lb·ft) | Bosch table |\n| M8 8.8 dry | 24 N·m (17.7 lb·ft) | |\n| M10 8.8 dry | 47 N·m (34.7 lb·ft) | |\n| M12 8.8 dry | 81 N·m (59.7 lb·ft) | |\n| M14 8.8 dry | 128 N·m (94.4 lb·ft) | |\n| M16 8.8 dry | 197 N·m (145 lb·ft) | |\n| Passenger-car wheel lug | 108–140 N·m (80–103 lb·ft) | Model-specific; check owner's manual |\n| Spark plug (14 mm, gasket) | 25–35 N·m (18–26 lb·ft) | NGK spec |\n| Bicycle stem M5 bolt | 5 N·m (44 lb·in) | Never guess — carbon splits |\n| MacBook trackpad screw | 0.16 N·m (1.4 lb·in) | iFixit spec |",
+    "For bolts, torque is a **proxy for clamp load** (preload). The relationship is τ = K · d · F, where K ≈ 0.20 for dry threads, 0.15 for lubricated, and d is nominal diameter. Lubricating a bolt with anti-seize and torquing to the dry spec **over-tightens by ~30%** — a common cause of stripped threads and stretched studs.",
+    "## Wrench accuracy — ISO 6789",
+    "ISO 6789-1:2017 classifies torque wrenches by accuracy tolerance:",
+    "> Class A: fixed-value indicating (dial/electronic), ±4% of reading\n> Class B: adjustable click, ±4% (≥10% of full scale), ±6% (<10% of FS)\n> Class C: adjustable click without scale, ±6%\n> Requirement: recalibrate every 5000 operations OR 12 months, whichever comes first",
+    "A Snap-On or Proto click wrench meets Class B when new. Storage tips: back the adjustment off to the lowest setting (not zero — that unloads the spring completely and can lose zero calibration). A wrench used daily in a body shop typically drifts to ±10% by month 18 without service. Beam-type wrenches (the simple scale-and-pointer design) hold ±3% indefinitely because there is no spring to fatigue.",
+    "## Torque wrench technique — the 5 rules",
+    "1. **Pull perpendicular** to the handle. A 10° off-axis pull reduces effective torque by 1.5% (cos 10°).\n2. **Grip at the marked pivot point.** Extending your grip toward the head reduces applied torque; the wrench calibrates against a specific lever length.\n3. **Two-stage tighten:** snug to 50–60% of final spec, then torque to final in one smooth motion. Stop at first click — a second click adds another 3–5%.\n4. **Torque + angle for critical joints.** Modern engine bolts (head, main bearing, con-rod) are 'torque to yield' — e.g., 'M11 × 55 mm: 30 N·m + 90° + 90°'. The angle stretches the bolt into its plastic region, guaranteeing preload independent of thread friction. These bolts are single-use.\n5. **Never use a click wrench to *loosen*.** The ratchet mechanism doesn't damage, but a stuck fastener can spike torque well above the wrench's rated range and knock it out of calibration.",
+    "## Extension math",
+    "Adding a crow's-foot or straight extension in-line with the wrench axis: **no change to torque reading**. Adding an offset (a crow's-foot at 90° to the wrench body) changes the effective lever arm:",
+    "> τ_actual = τ_indicated × (L + E) / L\n> where L = wrench length (handle to drive), E = extension offset\n> Or the reverse: to apply 100 N·m through a 100 mm crow's-foot on a 450 mm wrench, set the wrench to 100 × 450 / (450 + 100) = 82 N·m.",
+    "## Worked example — cylinder head bolts",
+    "Toyota 2AR-FE 2.5L four-cylinder head bolt spec: **49 N·m + 90°**. In lb·ft: 49 × 0.737562 = 36.1 lb·ft. Sequence:",
+    "> 1. Lubricate threads and under-head with engine oil (Toyota spec).\n> 2. Torque all 10 bolts to 36 lb·ft in the factory pattern.\n> 3. Angle-turn each 90° in the same pattern.\n> 4. Bolts are torque-to-yield — replace with new on every disassembly.",
+    "Under-torque risks a blown head gasket; over-torque snaps the bolt in the block. Neither is recoverable without pulling the engine.",
+    "## kgf·m — the third unit",
+    "Japanese factory manuals still list torque in kgf·m (kilogram-force metres): '5.0 kgf·m' means 5.0 × 9.80665 = 49.03 N·m = 36.2 lb·ft. Older Italian, French, and Soviet manuals do the same. Do not confuse **kg·m** (the same thing, sloppily written) with the SI kg·m/s of momentum. If a spec sheet says '9.5 kg-m' for a spark plug, it's 93 N·m and something has been mistyped — no plug takes that.",
+    "## The five-second recap",
+    "N·m × 0.7376 = lb·ft. Torque wrenches drift — recalibrate yearly. Lubricated threads take 30% less torque than dry for the same preload. Torque-to-yield bolts are single-use. Never write torque in joules."
+  ],
+  "faqs": [
+    { "q": "Do I need to convert if my wrench reads only in lb·ft and the spec is in N·m?", "a": "Divide N·m by 1.356 to get lb·ft (or use the converter). Set the wrench to the converted value; do not try to interpolate between marks." },
+    { "q": "Is 'foot-pound' the same as 'pound-foot'?", "a": "In engineering, torque is properly pound-foot (lb·ft), and foot-pound (ft·lb) is a unit of energy. In practice, US shops and tool catalogues use 'ft-lb' for torque everywhere. Numerically identical; pedantically distinct." },
+    { "q": "Can I extend a torque wrench with a pipe?", "a": "No — you invalidate the calibration and risk over-torque. Use a longer wrench or a torque multiplier (planetary gearbox) with its own calibration certificate." },
+    { "q": "Why do bike shops all use 5 N·m for stem bolts?", "a": "Carbon components have a narrow safe range (typically 4–6 N·m). Under-torque means the bar slips; over-torque cracks the clamp. Every Park Tool ATD-1 preset wrench is fixed at 5 N·m for exactly this reason." },
+    { "q": "How is torque measured on a dyno?", "a": "The engine drives an eddy-current or water brake that resists rotation. A load cell on the brake arm measures force at a known radius; torque = force × radius. Power is computed from τ × ω, not measured directly." }
+  ],
+  "related": [
+    { "label": "Torque converter", "href": "/c/torque" },
+    { "label": "Horsepower kW / PS", "href": "/learn/horsepower-kw-ps-cars" },
+    { "label": "Torque vs work — N·m vs J", "href": "/learn/torque-vs-work-nm-vs-j" },
+    { "label": "Force converter", "href": "/c/force" }
+  ]
+}

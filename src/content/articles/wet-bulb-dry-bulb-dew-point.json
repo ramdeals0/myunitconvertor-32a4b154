@@ -1,0 +1,51 @@
+{
+  "slug": "wet-bulb-dry-bulb-dew-point",
+  "title": "Wet-Bulb vs Dry-Bulb vs Dew Point: Three Temperatures HVAC Engineers Confuse",
+  "h1": "Wet-bulb, dry-bulb, dew point — three psychrometric temperatures",
+  "description": "Cooling tower approach uses wet-bulb, not ambient. Sizing off dry-bulb oversizes chillers by 15–25%. Here is when to use which.",
+  "category": "Temperature",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Dry-bulb reads air temperature. Wet-bulb reads evaporative-cooling limit. Dew point reads condensation onset. All three convert between °C and °F, but they are not interchangeable physical quantities.",
+  "body": [
+    "A single ambient temperature reading answers none of the questions HVAC and data-center engineers actually need. Wet-bulb, dry-bulb and dew point each describe a different air condition, and each drives a different piece of equipment.",
+    "## What each measurement means",
+    "Dry-bulb: temperature a standard thermometer reads in still air. Wet-bulb: temperature a wetted-wick thermometer reads under airflow — bounded by evaporation. Dew point: temperature at which moisture in the air begins to condense.",
+    "## Where they diverge",
+    "In dry desert air, wet-bulb can be 20 °C below dry-bulb — evaporative cooling is highly effective. In humid tropics, all three converge to within 2 °C — cooling towers lose most of their advantage, direct chillers dominate.",
+    "## Worked example — cooling tower sizing",
+    "A tower designed for 24 °C wet-bulb reaches ~29 °C water outlet with 5 °C approach. Same site's 35 °C dry-bulb would push the design to 40 °C outlet — 11 °C hotter — invalidating the process cooling loop.",
+    "## Recap",
+    "Cooling towers and evaporative coolers: wet-bulb. Direct-expansion AC sizing: dry-bulb. Condensation risk and desiccant sizing: dew point."
+  ],
+  "faqs": [
+    {
+      "q": "Can wet-bulb exceed dry-bulb?",
+      "a": "No. Wet-bulb ≤ dry-bulb, always. The two are equal only at 100% relative humidity."
+    },
+    {
+      "q": "Is 'wet-bulb globe temperature' the same?",
+      "a": "No — WBGT is a weighted composite (70% wet-bulb, 20% black-globe, 10% dry-bulb) used for heat-stress limits, not the same as psychrometric wet-bulb."
+    }
+  ],
+  "related": [
+    {
+      "label": "Temperature converter",
+      "href": "/c/temperature"
+    },
+    {
+      "label": "Celsius vs Fahrenheit deltas",
+      "href": "/learn/celsius-fahrenheit-deltas-vs-points"
+    }
+  ]
+}

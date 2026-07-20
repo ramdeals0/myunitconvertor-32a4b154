@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "m to cm — Convert Meter to Centimeter | Turbo Unit Converter",
+    "description": "Convert Meter (m) to Centimeter (cm) instantly. 1 m = 100 cm. Free, accurate, engineering-grade precision.",
+    "h1": "m to cm Converter"
+  },
+  "content": {
+    "intro": "Convert meters (m) to centimeters (cm) instantly. Both measure length, so the relationship is strictly linear: each meter equals 100 centimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One meter is equal to **100 centimeters**. To go the other way, one centimeter equals **0.01 meters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> centimeters = meters × 100\n\nWorked example — converting 10 meters:\n\n10 × 100 = **1000 cm**.\n\nTo invert, divide by 100 (or multiply by 0.01).",
+    "conversion_table": "| meters | centimeters |\n| --- | --- |\n| 1 m | 100 cm |\n| 2 m | 200 cm |\n| 5 m | 500 cm |\n| 10 m | 1000 cm |\n| 25 m | 2500 cm |\n| 50 m | 5000 cm |\n| 100 m | 10000 cm |\n| 250 m | 25000 cm |\n| 500 m | 50000 cm |\n| 1000 m | 100000 cm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 m ≈ 100 cm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Meter and Centimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many centimeters are in 1 meter?\n**A:** 100 centimeters.\n\n**Q:** What's the formula to convert m to cm?\n**A:** centimeters = meters × 100.\n\n**Q:** How do I convert cm back to m?\n**A:** Multiply by 0.01 (or divide by 100).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this m to cm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Centimeter to Meter converter",
+      "href": "/c/length/cm-to-m"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "m-to-cm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/m-to-cm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "meter to centimeter",
+      "m to cm",
+      "convert meter to centimeter",
+      "how many centimeter in a meter",
+      "meter in centimeter",
+      "m to cm converter",
+      "meter vs centimeter",
+      "meter to centimeter formula",
+      "meter to centimeter calculator"
+    ]
+  },
+  "contentHash": "13dff03d9a44"
+}

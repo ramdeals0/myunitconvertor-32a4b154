@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nm to in Converter — Nanometer to Inch",
+    "description": "Convert Nanometer (nm) to Inch (in) instantly. 1 nm = 3.937008e-8 in. Free, accurate, browser-based.",
+    "h1": "Nanometer to Inch Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to inches (in) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 3.937008e-8 inches. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **3.937008e-8 inches**. To go the other way, one inch equals **25400000 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> inches = nanometers × 3.937008e-8\n\nWorked example — converting 10 nanometers:\n\n10 × 3.937008e-8 = **3.937008e-7 in**.\n\nTo invert, divide by 3.937008e-8 (or multiply by 25400000).",
+    "conversion_table": "| nanometers | inches |\n| --- | --- |\n| 1 nm | 3.937008e-8 in |\n| 2 nm | 7.874016e-8 in |\n| 5 nm | 1.968504e-7 in |\n| 10 nm | 3.937008e-7 in |\n| 25 nm | 9.842520e-7 in |\n| 50 nm | 1.968504e-6 in |\n| 100 nm | 3.937008e-6 in |\n| 250 nm | 9.842520e-6 in |\n| 500 nm | 1.968504e-5 in |\n| 1000 nm | 3.937008e-5 in |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 3.937008e-8 in. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Inch both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many inches are in 1 nanometer?\n**A:** 3.937008e-8 inches.\n\n**Q:** What's the formula to convert nm to in?\n**A:** inches = nanometers × 3.937008e-8.\n\n**Q:** How do I convert in back to nm?\n**A:** Multiply by 25400000 (or divide by 3.937008e-8).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to in converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Inch to Nanometer converter",
+      "href": "/c/length/in-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-in",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-in",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to inch",
+      "nm to in",
+      "convert nm to in"
+    ]
+  },
+  "contentHash": "22e3500acd39"
+}

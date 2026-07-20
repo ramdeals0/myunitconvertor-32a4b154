@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "in to m Converter — Inch to Meter",
+    "description": "Convert Inch (in) to Meter (m) instantly. 1 in = 0.0254 m. Free, accurate, browser-based.",
+    "h1": "Inch to Meter Converter"
+  },
+  "content": {
+    "intro": "Convert inches (in) to meters (m) instantly. Both measure length, so the relationship is strictly linear: each inch equals 0.0254 meters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One inch is equal to **0.0254 meters**. To go the other way, one meter equals **39.370079 inches**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> meters = inches × 0.0254\n\nWorked example — converting 10 inches:\n\n10 × 0.0254 = **0.254 m**.\n\nTo invert, divide by 0.0254 (or multiply by 39.370079).",
+    "conversion_table": "| inches | meters |\n| --- | --- |\n| 1 in | 0.0254 m |\n| 2 in | 0.0508 m |\n| 5 in | 0.127 m |\n| 10 in | 0.254 m |\n| 25 in | 0.635 m |\n| 50 in | 1.27 m |\n| 100 in | 2.54 m |\n| 250 in | 6.35 m |\n| 500 in | 12.7 m |\n| 1000 in | 25.4 m |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 in ≈ 0.0254 m. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Inch and Meter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many meters are in 1 inch?\n**A:** 0.0254 meters.\n\n**Q:** What's the formula to convert in to m?\n**A:** meters = inches × 0.0254.\n\n**Q:** How do I convert m back to in?\n**A:** Multiply by 39.370079 (or divide by 0.0254).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this in to m converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Meter to Inch converter",
+      "href": "/c/length/m-to-in"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "in-to-m",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/in-to-m",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "inch to meter",
+      "in to m",
+      "convert in to m"
+    ]
+  },
+  "contentHash": "2dbea672d0c1"
+}

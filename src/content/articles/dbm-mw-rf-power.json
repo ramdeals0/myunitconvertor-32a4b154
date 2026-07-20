@@ -1,0 +1,39 @@
+{
+  "slug": "dbm-mw-rf-power",
+  "title": "dBm and Milliwatts: RF Power the Log Way",
+  "h1": "dBm and mW — decibel-milliwatts across radio links",
+  "description": "Radio engineers speak in dBm. A 20 dBm signal is 100 mW. Here is the log math and why every WiFi and cellular signal ends up expressed this way.",
+  "category": "Power",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "RF & telecommunications" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEEE Std 100 and 3GPP TS 36.101" },
+  "hero": "A 20 dB path loss cuts your signal by 100×. Adding losses in dB is just adding numbers. That is why RF engineers never went back to linear power.",
+  "body": [
+    "Radio signals span 15 orders of magnitude from transmitter (watts) to receiver (femtowatts). Linear units get unreadable. The decibel-milliwatt (dBm) compresses that range into a comfortable ±100 window and turns cascaded loss calculations into addition.",
+    "## The formula",
+    "> P(dBm) = 10 × log₁₀(P/1 mW)\n> 0 dBm = 1 mW\n> +10 dBm = 10 mW\n> +20 dBm = 100 mW\n> +30 dBm = 1 W\n> −30 dBm = 1 µW\n> −60 dBm = 1 nW\n> −90 dBm = 1 pW",
+    "## Why the log",
+    "A link budget adds transmitter power, subtracts path loss, adds antenna gain, subtracts cable loss. In linear terms these are multiplications. In dB they are additions. A 100-page cellular design document works in dB throughout because signed arithmetic beats scientific notation every time.",
+    "## Familiar numbers",
+    "WiFi transmit power: +20 dBm = 100 mW. Cell phone tx: +23 dBm = 200 mW. WiFi receiver sensitivity: −80 dBm = 10 pW. LTE minimum received power: −120 dBm = 1 fW. Bluetooth Class 2: +4 dBm = 2.5 mW. FM broadcast transmitter: +90 dBm = 1 MW.",
+    "## Worked example — a WiFi link budget",
+    "Router transmits at +20 dBm (100 mW). Router antenna gain: +3 dBi. Free-space path loss at 5 m, 2.4 GHz: ~54 dB. Two walls: −10 dB. Client antenna: +0 dBi. Client sensitivity: −72 dBm. Received power = 20 + 3 − 54 − 10 + 0 = −41 dBm. Margin above sensitivity: 31 dB — comfortable. At 20 m with 4 walls: 20 + 3 − 66 − 20 = −63 dBm, margin 9 dB — marginal, packet loss likely.",
+    "## dBi, dBd, dBc — the other decibels",
+    "dBi = gain relative to isotropic radiator. dBd = gain relative to dipole (add 2.15 dB for dBi). dBc = level relative to a carrier. Always read the suffix — a '10 dB antenna' with no suffix is ambiguous.",
+    "## The five-second recap",
+    "0 dBm = 1 mW. Each +10 dB = 10× power. Each +3 dB ≈ 2×. Add dB values through a link; don't multiply linear watts."
+  ],
+  "faqs": [
+    { "q": "Why is dB always divided by 10?", "a": "Because a bel is 10 dB. The bel was a large unit; the deci-bel is more useful for everyday electronics. The name honours Alexander Graham Bell." },
+    { "q": "Is dBm the same as dB?", "a": "No. dB is dimensionless (a ratio). dBm is dB referenced to 1 mW — an absolute power. Similarly dBW is referenced to 1 W (0 dBW = 30 dBm)." },
+    { "q": "What is a good WiFi RSSI?", "a": "Above −60 dBm: excellent. −60 to −70: good. −70 to −80: fair. Below −80: unreliable. Below −90: no connection." }
+  ],
+  "related": [
+    { "label": "dBm to W converter", "href": "/c/power/dbm-to-w" },
+    { "label": "W to dBm converter", "href": "/c/power/w-to-dbm" },
+    { "label": "mW to dBm converter", "href": "/c/power/mw-to-dbm" }
+  ]
+}

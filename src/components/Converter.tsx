@@ -11,25 +11,45 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
+import { addRecentConversion, useFavoritePairForCategory } from "@/lib/recentConversions";
 
 interface Props {
   category: Category;
   initialFrom?: string;
   initialTo?: string;
+  initialValue?: string;
+  /** When true, persist current value to ?value= in URL via history.replaceState. */
+  persistValueInUrl?: boolean;
+  /** When true, use the user's most-frequent pair for this category as the default. */
+  smartDefaults?: boolean;
   compact?: boolean;
 }
 
-export function Converter({ category, initialFrom, initialTo, compact }: Props) {
-  const [from, setFrom] = useState(initialFrom ?? category.units[0].id);
-  const [to, setTo] = useState(initialTo ?? category.units[1]?.id ?? category.units[0].id);
-  const [input, setInput] = useState("1");
+function readUrlValue(): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return new URLSearchParams(window.location.search).get("value");
+  } catch {
+    return null;
+  }
+}
+
+export function Converter({ category, initialFrom, initialTo, initialValue, persistValueInUrl, smartDefaults, compact }: Props) {
+  const favorite = useFavoritePairForCategory(category.id);
+  const resolvedFrom = initialFrom ?? (smartDefaults && favorite ? favorite.fromId : undefined) ?? category.units[0].id;
+  const resolvedTo = initialTo ?? (smartDefaults && favorite ? favorite.toId : undefined) ?? (category.units[1]?.id ?? category.units[0].id);
+
+  const [from, setFrom] = useState(resolvedFrom);
+  const [to, setTo] = useState(resolvedTo);
+  const [input, setInput] = useState(() => initialValue ?? readUrlValue() ?? "1");
   const [copiedResult, setCopiedResult] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
 
   useEffect(() => {
-    setFrom(initialFrom ?? category.units[0].id);
-    setTo(initialTo ?? category.units[1]?.id ?? category.units[0].id);
-  }, [category.id, initialFrom, initialTo]);
+    setFrom(resolvedFrom);
+    setTo(resolvedTo);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [category.id, initialFrom, initialTo, favorite?.fromId, favorite?.toId]);
 
   const result = useMemo(() => {
     const n = parseFloat(input);
@@ -37,11 +57,38 @@ export function Converter({ category, initialFrom, initialTo, compact }: Props) 
     return formatResult(convert(category, n, from, to));
   }, [input, from, to, category]);
 
+  // Persist the value in the URL + record to recents (debounced effect).
+  useEffect(() => {
+    if (!result) return;
+    if (persistValueInUrl && typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      if (input && !isNaN(parseFloat(input))) url.searchParams.set("value", input);
+      else url.searchParams.delete("value");
+      window.history.replaceState({}, "", url.toString());
+    }
+    const t = setTimeout(() => {
+      const fu = category.units.find((u) => u.id === from);
+      const tu = category.units.find((u) => u.id === to);
+      if (!fu || !tu) return;
+      addRecentConversion({
+        categoryId: category.id,
+        fromId: from,
+        toId: to,
+        fromSymbol: fu.symbol,
+        toSymbol: tu.symbol,
+        value: input,
+        result,
+      });
+    }, 800);
+    return () => clearTimeout(t);
+  }, [input, from, to, result, category, persistValueInUrl]);
+
   const swap = () => {
     setFrom(to);
     setTo(from);
     if (result) setInput(result);
   };
+
 
   const copyResult = async () => {
     if (!result) return;

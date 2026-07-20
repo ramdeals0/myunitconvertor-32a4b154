@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "° to rad — Convert Degree to Radian | Turbo Unit Converter",
+    "description": "Convert Degree (°) to Radian (rad) instantly. 1 ° = 0.017453293 rad. Free, accurate, engineering-grade precision.",
+    "h1": "° to rad Converter"
+  },
+  "content": {
+    "intro": "Convert degrees (°) to radians (rad) instantly. Both measure angle, so the relationship is strictly linear: each degree equals 0.017453293 radians. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One degree is equal to **0.017453293 radians**. To go the other way, one radian equals **57.29578 degrees**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> radians = degrees × 0.017453293\n\nWorked example — converting 10 degrees:\n\n10 × 0.017453293 = **0.17453293 rad**.\n\nTo invert, divide by 0.017453293 (or multiply by 57.29578).",
+    "conversion_table": "| degrees | radians |\n| --- | --- |\n| 1 ° | 0.017453293 rad |\n| 2 ° | 0.034906585 rad |\n| 5 ° | 0.087266463 rad |\n| 10 ° | 0.17453293 rad |\n| 25 ° | 0.43633231 rad |\n| 50 ° | 0.87266463 rad |\n| 100 ° | 1.7453293 rad |\n| 250 ° | 4.3633231 rad |\n| 500 ° | 8.7266463 rad |\n| 1000 ° | 17.453293 rad |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ° ≈ 0.017453293 rad. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Degree and Radian both measure angle; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many radians are in 1 degree?\n**A:** 0.017453293 radians.\n\n**Q:** What's the formula to convert ° to rad?\n**A:** radians = degrees × 0.017453293.\n\n**Q:** How do I convert rad back to °?\n**A:** Multiply by 57.29578 (or divide by 0.017453293).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ° to rad converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Radian to Degree converter",
+      "href": "/c/angle/rad-to-deg"
+    },
+    {
+      "anchor": "All angle conversions",
+      "href": "/c/angle"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "deg-to-rad",
+    "canonicalUrl": "https://turbounitconverter.com/c/angle/deg-to-rad",
+    "category": "angle",
+    "pageType": "pair",
+    "keywords": [
+      "degree to radian",
+      "° to rad",
+      "convert degree to radian",
+      "how many radian in a degree",
+      "degree in radian",
+      "° to rad converter",
+      "degree vs radian",
+      "degree to radian formula",
+      "degree to radian calculator"
+    ]
+  },
+  "contentHash": "02a32c8b74f1"
+}

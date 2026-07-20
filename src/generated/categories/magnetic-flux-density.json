@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Magnetic Flux Density Converter — Convert Tesla and More",
+    "description": "Free magnetic flux density converter for 5+ units including Tesla, Millitesla, Microtesla. Instant, accurate, browser-based.",
+    "h1": "Magnetic Flux Density Converter"
+  },
+  "content": {
+    "intro": "Tesla, gauss. Convert between 5 magnetic flux density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for magnetic flux density in this tool is **T**; every conversion routes through it for consistency.",
+    "formula_section": "Most magnetic flux density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Tesla | T |\n| Millitesla | mT |\n| Microtesla | µT |\n| Gauss | G |\n| Milligauss | mG |",
+    "use_cases": "- MRI, NMR, and scientific-instrument field strength.\n- Magnet selection for industrial holding applications.\n- Sensor calibration in gauss vs tesla.\n- Audio and speaker magnet specs.\n- Magnetic shielding design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this magnetic flux density converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Tesla (T), Millitesla (mT), Microtesla (µT), Gauss (G), Milligauss (mG)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Tesla to Millitesla",
+      "href": "/c/magnetic-flux-density/t-to-mt"
+    },
+    {
+      "anchor": "Millitesla to Tesla",
+      "href": "/c/magnetic-flux-density/mt-to-t"
+    },
+    {
+      "anchor": "Microtesla to Tesla",
+      "href": "/c/magnetic-flux-density/ut-to-t"
+    },
+    {
+      "anchor": "Gauss to Tesla",
+      "href": "/c/magnetic-flux-density/g-to-t"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "magnetic-flux-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/magnetic-flux-density",
+    "category": "magnetic-flux-density",
+    "pageType": "category",
+    "keywords": [
+      "magnetic flux density converter",
+      "convert magnetic flux density"
+    ]
+  },
+  "contentHash": "366e213f3d19"
+}

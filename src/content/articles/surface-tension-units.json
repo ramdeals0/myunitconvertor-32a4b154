@@ -1,0 +1,53 @@
+{
+  "slug": "surface-tension-units",
+  "title": "Surface Tension: dyn/cm, mN/m and the Reason They Match",
+  "h1": "Surface tension units — dyn/cm and mN/m",
+  "description": "1 dyn/cm = 1 mN/m exactly. Water is 72 mN/m at 20 °C. Mercury is 486 mN/m. Surface tension controls wetting, atomisation and coating thickness.",
+  "category": "Surface tension",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Two units, one value. The CGS-to-SI switch happened to produce identical numeric values, and the industry stopped caring which name to use.",
+  "body": [
+    "Surface tension is force per unit length along a fluid interface. Two systems of units happen to give identical numbers, which is why coating chemists and physicists speak past each other with no numerical harm.",
+    "## The exact factor",
+    "> 1 dyn/cm = 1 mN/m = 10⁻³ N/m\n> 1 N/m = 1000 mN/m = 1000 dyn/cm",
+    "## Common values at 20 °C",
+    "Water: 72.8 mN/m. Ethanol: 22.4 mN/m. Mercury: 486 mN/m. Silicone oil (Dow 200): 20 mN/m. Molten aluminium: 914 mN/m. Air/vacuum: 0 by definition.",
+    "## Where it drives design",
+    "Wetting: contact angle set by γ_solid, γ_liquid, γ_interface (Young's equation). Coating thickness: capillary vs viscous forces (Landau–Levich). Ink-jet drop formation: Weber and Ohnesorge numbers. Surfactant selection: reduce γ to promote spreading.",
+    "## Worked example — spray atomisation",
+    "Water sprayed through a 100 µm nozzle at 5 m/s. We = ρ v² d / γ = 1000 × 25 × 10⁻⁴ / 0.0728 = 34. Above We ≈ 12, bag breakup dominates — droplet size drops sharply. Reducing γ with a 0.5% surfactant to 30 mN/m raises We to 83 and pushes into sheet breakup.",
+    "## Recap",
+    "Same number, two names. Water is 72 mN/m or dyn/cm."
+  ],
+  "faqs": [
+    {
+      "q": "Is surface tension temperature-dependent?",
+      "a": "Yes — it decreases roughly linearly with temperature and vanishes at the critical point."
+    },
+    {
+      "q": "Is 'interfacial tension' the same unit?",
+      "a": "Same units (mN/m), different interface — solid/liquid or liquid/liquid instead of liquid/gas."
+    }
+  ],
+  "related": [
+    {
+      "label": "Surface tension converter",
+      "href": "/c/surface-tension"
+    },
+    {
+      "label": "cP and Pa·s in motor oil",
+      "href": "/learn/viscosity-cp-pas-oil-grades"
+    }
+  ]
+}

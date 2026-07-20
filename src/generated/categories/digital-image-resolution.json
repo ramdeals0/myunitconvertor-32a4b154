@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Digital Image Resolution Converter — Convert Dot/inch and More",
+    "description": "Free digital image resolution converter for 5+ units including Dot/inch, Dot/centimeter, Dot/millimeter. Instant, accurate, browser-based.",
+    "h1": "Digital Image Resolution Converter"
+  },
+  "content": {
+    "intro": "DPI, dot/cm, pixel/mm. Convert between 5 digital image resolution units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for digital image resolution in this tool is **dpi**; every conversion routes through it for consistency.",
+    "formula_section": "Most digital image resolution conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Dot/inch | dpi |\n| Dot/centimeter | dpcm |\n| Dot/millimeter | dpmm |\n| Pixel/inch | ppi |\n| Pixel/meter | ppm |",
+    "use_cases": "- Photography exposure planning across lumen and lux references.\n- Workspace lighting design to meet ergonomic targets.\n- Display brightness and ambient-light comparisons.\n- Plant-grow lighting setups.\n- Stage and event lighting design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this digital image resolution converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Dot/inch (dpi), Dot/centimeter (dpcm), Dot/millimeter (dpmm), Pixel/inch (ppi), Pixel/meter (ppm)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Dot/inch to Dot/centimeter",
+      "href": "/c/digital-image-resolution/dpi-to-dpcm"
+    },
+    {
+      "anchor": "Dot/centimeter to Dot/inch",
+      "href": "/c/digital-image-resolution/dpcm-to-dpi"
+    },
+    {
+      "anchor": "Dot/millimeter to Dot/inch",
+      "href": "/c/digital-image-resolution/dpmm-to-dpi"
+    },
+    {
+      "anchor": "Pixel/inch to Dot/inch",
+      "href": "/c/digital-image-resolution/ppi-to-dpi"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "digital-image-resolution",
+    "canonicalUrl": "https://turbounitconverter.com/c/digital-image-resolution",
+    "category": "digital-image-resolution",
+    "pageType": "category",
+    "keywords": [
+      "digital image resolution converter",
+      "convert digital image resolution"
+    ]
+  },
+  "contentHash": "7e8785461e4b"
+}

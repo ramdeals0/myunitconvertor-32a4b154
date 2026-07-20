@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "ly to mi Converter — Light Year to Mile",
+    "description": "Convert Light Year (ly) to Mile (mi) instantly. 1 ly = 5.878606e+12 mi. Free, accurate, browser-based.",
+    "h1": "Light Year to Mile Converter"
+  },
+  "content": {
+    "intro": "Convert light years (ly) to miles (mi) instantly. Both measure length, so the relationship is strictly linear: each light year equals 5.878606e+12 miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One light year is equal to **5.878606e+12 miles**. To go the other way, one mile equals **1.701083e-13 light years**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles = light years × 5.878606e+12\n\nWorked example — converting 10 light years:\n\n10 × 5.878606e+12 = **5.878606e+13 mi**.\n\nTo invert, divide by 5.878606e+12 (or multiply by 1.701083e-13).",
+    "conversion_table": "| light years | miles |\n| --- | --- |\n| 1 ly | 5.878606e+12 mi |\n| 2 ly | 1.175721e+13 mi |\n| 5 ly | 2.939303e+13 mi |\n| 10 ly | 5.878606e+13 mi |\n| 25 ly | 1.469652e+14 mi |\n| 50 ly | 2.939303e+14 mi |\n| 100 ly | 5.878606e+14 mi |\n| 250 ly | 1.469652e+15 mi |\n| 500 ly | 2.939303e+15 mi |\n| 1000 ly | 5.878606e+15 mi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ly ≈ 5.878606e+12 mi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Light Year and Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles are in 1 light year?\n**A:** 5.878606e+12 miles.\n\n**Q:** What's the formula to convert ly to mi?\n**A:** miles = light years × 5.878606e+12.\n\n**Q:** How do I convert mi back to ly?\n**A:** Multiply by 1.701083e-13 (or divide by 5.878606e+12).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ly to mi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile to Light Year converter",
+      "href": "/c/length/mi-to-ly"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ly-to-mi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ly-to-mi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "light year to mile",
+      "ly to mi",
+      "convert ly to mi"
+    ]
+  },
+  "contentHash": "5e640a7985a8"
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "board-foot-vs-cubic-foot",
+  "title": "Board Foot, Cord, Cubic Foot: Lumber Volume Units",
+  "h1": "Lumber volume — board foot, cord and cubic foot",
+  "description": "1 board foot = 1 ft × 1 ft × 1 in = 144 in³. 1 cord = 128 ft³ of stacked wood. Different products, different conventions.",
+  "category": "Lumber volume",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Lumber does not sell by volume in metres or gallons — it sells by product-specific historical units.",
+  "body": [
+    "The lumber industry uses several volume units that survive from pre-industrial measurement. Each captures a different aspect of the wood product: dimensional lumber (board foot), fuel wood (cord), and finished panel sheets by area.",
+    "## The exact definitions",
+    "> 1 board foot (bf, fbm) = 144 in³ = 2359.7 cm³\n> 1 cord = 128 ft³ = 3.625 m³ (stacked, including air gaps)\n> 1 face cord = 1/3 of a full cord (varies regionally)\n> 1 MBF (thousand board feet) = 2.36 m³",
+    "## Where each is used",
+    "Board foot: dimensional lumber pricing (2×4s, hardwood boards). Cord: firewood, pulp wood. Cubic foot / cubic metre: engineered lumber, plywood, industrial specification.",
+    "## Worked example — deck project",
+    "A deck needs 320 linear feet of 2×6. Nominal 2×6 = 1.5 × 5.5 in actual. Board feet: 320 × (1.5 × 5.5)/12 = 220 bf. At $2/bf, materials = $440. Estimate in cubic feet (220 × 144/1728 = 18.3 ft³) and the price per ft³ triples the number — same wood, different unit.",
+    "## Recap",
+    "bf ≠ ft³. Cord is stacked volume, includes air. Match units to product convention."
+  ],
+  "faqs": [
+    {
+      "q": "Is nominal size or actual size used?",
+      "a": "Board foot uses nominal size (2×6, 2×4). Actual dimensions are smaller after milling."
+    },
+    {
+      "q": "Is a 'thrown cord' the same as a full cord?",
+      "a": "Thrown (loose) cord is 180 ft³ = 1.4× stacked cord — accounting for random air gaps."
+    }
+  ],
+  "related": [
+    {
+      "label": "Lumber volume converter",
+      "href": "/c/volume-lumber"
+    }
+  ]
+}

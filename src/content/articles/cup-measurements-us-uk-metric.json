@@ -1,0 +1,37 @@
+{
+  "slug": "cup-measurements-us-uk-metric",
+  "title": "Cups: US, UK, Metric — Three Sizes",
+  "h1": "The cup — a recipe unit with three different volumes",
+  "description": "A US cup is 236.6 mL. A metric cup is 250 mL. A UK teacup is 284 mL. Here is why baking recipes cross international lines so badly.",
+  "category": "Volume",
+  "readingMinutes": 4,
+  "published": "2026-06-19",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Culinary metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against USDA and NIST Handbook 44" },
+  "hero": "'One cup of flour' means three different weights of flour depending on which cup — and that is before we get into loose vs sifted.",
+  "body": [
+    "The cup as a cooking measure was standardised in the US at 8 fl oz in the 1890s. Australia and New Zealand later chose 250 mL for round-number metric convenience. The UK never officially adopted a cup at all — traditional British recipes weigh ingredients instead. Modern recipe apps rarely make the distinction clear.",
+    "## The exact factors",
+    "> US legal cup (nutrition labelling) = 240 mL\n> US customary cup = 236.588 mL = 8 US fl oz\n> Metric cup (Australia, NZ, Canada) = 250 mL\n> UK breakfast cup (historic) = 284 mL = 10 UK fl oz\n> Japanese cup (traditional) = 200 mL",
+    "## Ingredient-density gotchas",
+    "1 US cup of all-purpose flour weighs 120 g if spooned lightly, 140 g if scooped, 160 g if scooped and tapped. That is a 33% spread from measurement technique alone, before any unit conversion. This is why serious baking recipes now list grams — the cup is a rough approximation, not a precise volume.",
+    "## Worked example — a 3-cup cookie recipe",
+    "A US recipe calling for 3 cups of flour = 3 × 236.6 = 710 mL. Followed with a metric measuring cup (3 × 250 = 750 mL), you add 5.6% more flour — enough to make the cookies noticeably drier. Followed with a UK teacup (3 × 284 = 852 mL), you add 20% more flour and the recipe fails.",
+    "## When cups are OK",
+    "Liquid ingredients (water, milk, oil): volume is repeatable, and a 5% error is invisible in most dishes. Chopped vegetables, nuts, herbs: cups are a rough estimate anyway. Salt, spices: switch to teaspoons or grams — cup measurements are wildly inaccurate at small scales.",
+    "## The five-second recap",
+    "US cup = 237 mL. Metric cup = 250 mL. UK cup = 284 mL. For baking, weigh ingredients — cups are approximations."
+  ],
+  "faqs": [
+    { "q": "Which cup is on US nutrition labels?", "a": "The 'US legal cup' = 240 mL, mandated by the FDA. It is 3.4 mL bigger than the traditional 236.6 mL cup." },
+    { "q": "Do British recipes use cups?", "a": "Rarely. Traditional UK baking uses ounces and grams. Modern UK cookbooks influenced by US authors may use 250 mL metric cups." },
+    { "q": "What is a 'stick of butter'?", "a": "US convention: 1/2 cup = 4 oz = 113 g. Butter sold outside the US does not come in sticks and this unit does not travel." }
+  ],
+  "related": [
+    { "label": "cup to mL converter", "href": "/c/volume/cup-to-ml" },
+    { "label": "cup to fl oz converter", "href": "/c/volume/cup-to-floz" },
+    { "label": "fl oz to mL converter", "href": "/c/volume/floz-to-ml" }
+  ]
+}

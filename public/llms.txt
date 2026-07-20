@@ -1,14 +1,461 @@
-# UnitPrecise
+# Turbo Unit Converter
 
-> Fast, precise unit conversion for length, weight, temperature, volume, and dozens more categories.
+> Fast, precise unit conversion for length, weight, temperature, volume, and dozens more categories — with a NIST-traceable Learn library of 220+ engineering-grade explainers.
 
-UnitPrecise is a professional unit conversion tool with engineering-grade precision across SI, US Customary, and Imperial systems.
+Turbo Unit Converter is a professional unit conversion tool with engineering-grade precision across SI, US Customary, and Imperial systems. Every conversion factor is verified against NIST SP 811 and the BIPM SI Brochure. The Learn library covers the conversions that trip people up in real work: turbo boost pressure, torque wrench units, fuel economy across regions, radiation dose, data-rate confusion, cooking cup mismatches, and more.
 
-## Pages
+## Core pages
 
 - [Home](/): Search and quick converters for the most common categories.
 - [All converters](/converters): Browse every unit category.
-- [Length](/c/length): Convert meters, feet, inches, miles and more.
-- [Weight](/c/weight): Convert kilograms, pounds, ounces, tonnes and more.
-- [Temperature](/c/temperature): Convert Celsius, Fahrenheit, Kelvin and Rankine.
-- [Volume](/c/volume): Convert liters, gallons, cups and more.
+- [Learn hub](/learn): Index of every explainer article, filterable by category.
+- [Methodology](/methodology): How conversion factors are sourced and verified.
+- [Editorial policy](/editorial-policy): Review and update policy for Learn articles.
+- [About](/about): Who runs the site.
+
+## Converter categories
+
+- [Length](/c/length): meters, feet, inches, miles, nautical miles, ångström, light-years.
+- [Weight](/c/weight): kilograms, pounds, ounces, tonnes, stones, grains, troy weight.
+- [Temperature](/c/temperature): Celsius, Fahrenheit, Kelvin, Rankine, Réaumur.
+- [Volume](/c/volume): liters, gallons, cups, fluid ounces (US/UK), barrels.
+- [Pressure](/c/pressure): pascal, bar, psi, atm, mmHg, torr, inHg.
+- [Energy](/c/energy): joule, calorie, kilowatt-hour, BTU, therm, electronvolt.
+- [Power](/c/power): watt, horsepower (mechanical/metric), BTU/hr, kVA.
+- [Data](/c/data) & [Data transfer](/c/data-transfer): bits/bytes/binary vs decimal, Mbps vs MB/s.
+- [Speed](/c/speed): m/s, km/h, mph, knots, Mach.
+- [Fuel efficiency](/c/fuel-efficiency-volume): MPG (US/UK), L/100km, km/L.
+- [Radiation](/c/radiation): sievert, gray, rem, becquerel, curie.
+
+## Learn library
+
+### Angle
+
+- [GPS Coordinates: Decimal Degrees vs DMS vs UTM](/learn/gps-coordinates-decimal-dms): 40.7128°N = 40°42'46"N. Google Maps takes both. UTM (meters) for surveying. Precision matters.
+- [Radians, Degrees and Gradians: Which and When](/learn/radians-degrees-gradians): Degrees for humans, radians for calculus, gradians for surveyors, mils for artillery. A pragmatic guide to picking the right angle unit…
+
+### Area
+
+- [Acres, Hectares and the Surveyor's Chain](/learn/acres-hectares-and-the-surveyors-chain): A hectare is 2.471 acres, an acre is 43,560 sq ft, and neither number is arbitrary. Here is how land measurement grew from oxen and rope…
+- [Barns: The Unit Nuclear Physicists Named as a Joke](/learn/barns-cross-sections): 1 barn = 10⁻²⁸ m². Nuclear physicists named it because a uranium nucleus is 'as big as a barn' at that scale. Here is where the unit…
+- [Carpet Ordering: Sq Yards vs Sq Metres vs Broadloom Widths](/learn/carpet-yards-meters-rooms): 12-ft broadloom = 3.66 m. 1 sq yd = 0.836 m². Rounding waste up front prevents 2-week reorder delays.
+- [Hectares and Acres for Farmers](/learn/hectares-acres-farming): Yield per acre and yield per hectare do not convert with a round factor. Here is the exact math and why bushels-per-acre and…
+- [Home Size: sq ft vs sq m vs Marla vs Tsubo](/learn/home-square-footage-meters): 1000 sq ft = 92.9 m². Global real estate uses local units: marla (25.29 m²), tsubo (3.31 m²), pyeong (3.31 m²).
+- [Square Kilometers vs Square Miles: Country Size Comparisons](/learn/sq-km-sq-mi-country-sizes): Every country reports its area in one unit and expects the reader to convert. Here is the exact factor and a set of mental anchors for…
+- [Square Feet and Square Meters in Real Estate](/learn/sqft-sqm-real-estate): Apartments listed at 800 sq ft rarely convert to a round metric number. Here is the exact factor, and the local measurement conventions…
+
+### Capacitance
+
+- [µF, nF, pF: Capacitance Units for Real Circuits](/learn/capacitor-uf-nf-pf): 1 µF = 1000 nF = 10⁶ pF. Bulk decoupling in µF; RF bypass in nF; timing and matching in pF. Off by a decade means broken circuit.
+- [Farads and Microfarads: Reading Capacitor Codes](/learn/farads-microfarads-capacitor): A '104' capacitor is 100 nF. Here is the three-digit EIA code and the F/µF/nF/pF ladder every electronics hobbyist needs.
+
+### Charge
+
+- [Amp-hours and Watt-hours: Battery Capacity Explained](/learn/amp-hours-watt-hours-batteries): A 100 Ah battery and a 100 Wh battery are not comparable. Here is why voltage matters and how to convert battery specs across chemistries.
+- [Battery Chemistry: LiFePO4 vs Lead-Acid Usable Wh](/learn/battery-lifepo4-vs-lead-acid-wh): 100 Ah lead-acid @ 50% DoD = 600 Wh usable. 100 Ah LiFePO4 @ 90% DoD = 1152 Wh — nearly 2× real energy.
+- [Battery Capacity: mAh, Wh, and 100 Wh Airline Limit](/learn/battery-mah-wh-airline-limits): Wh = mAh × V / 1000. TSA limits carry-on batteries to 100 Wh. A 27,000 mAh power bank at 3.7 V = 99.9 Wh — right at the line.
+- [Coulomb, mAh, Ah: Charge Units and Battery Capacity](/learn/coulomb-ampere-hour-charge): 1 A·h = 3600 C. A 3000 mAh phone battery is 10 800 C. Confusing energy (Wh) with charge (Ah) is the number one battery-spec error.
+
+### Concentration Molar
+
+- [Moles and Molarity: Reading Chemistry Recipes](/learn/moles-avogadro-chemistry): One mole is 6.022 × 10²³ particles. Here is how to weigh out a mole, dilute a molar solution, and convert between molarity and mass…
+
+### Concentration-molar
+
+- [Blood Glucose: mg/dL vs mmol/L](/learn/blood-glucose-mgdl-mmol): 1 mmol/L = 18.02 mg/dL for glucose. US uses mg/dL; most of the world uses mmol/L. CGM apps switch confusingly.
+- [Cholesterol Units: mg/dL vs mmol/L](/learn/cholesterol-mgdl-mmol): For cholesterol, mmol/L × 38.67 = mg/dL. Triglycerides use × 88.57. Different molecule, different factor.
+- [pH Scale: [H⁺] in mol/L Explained](/learn/ph-scale-hydrogen-ion-molarity): pH = -log₁₀[H⁺]. pH 4 = 10⁻⁴ M. Each unit is 10× — vinegar (2.4) is 4000× more acidic than tomato (4.6).
+
+### Concentration-solution
+
+- [Water Hardness: ppm vs GPG vs French Degrees](/learn/water-hardness-ppm-gpg-grains): 1 GPG = 17.1 ppm CaCO₃. 1°fH = 10 ppm. Water softener sizing uses GPG in US, ppm in EU.
+
+### Cooking & Volume
+
+- [Cooking Conversions: Why Grams Beat Cups Every Time](/learn/cooking-conversions-grams-vs-cups): A US cup of flour can weigh anywhere from 120 g to 155 g depending on the scoop. Here is why serious bakers weigh, and how to convert…
+
+### Data
+
+- [Bits vs Bytes: Marketing Storage Sizes](/learn/bits-vs-bytes-storage): A 1 TB drive holds 931 GiB of files. Here is why the storage industry uses decimal units while your operating system uses binary, and…
+- [Cloud Storage Billing: GiB vs GB Costs](/learn/cloud-storage-gib-vs-gb-billing): AWS charges per GB (10⁹). Local file managers show GiB (2³⁰). A '100 GB' bucket showing 93.1 GiB is correct.
+- [GB vs GiB, MB vs MiB: The 4.9% Storage Discrepancy](/learn/iec-vs-si-storage): 1 GB = 10⁹ bytes (SI). 1 GiB = 2³⁰ = 1.074 × 10⁹ bytes (IEC). Drive manufacturers use SI; operating systems mostly show IEC. The 7% gap…
+- [Mobile Data: How Long Does 5 GB Last?](/learn/mobile-data-gb-month-video): 1 hour Netflix HD = 3 GB. Instagram scroll = 700 MB/hr. Zoom video = 900 MB/hr. Realistic 5 GB month math.
+- [Phone Storage: '128 GB' vs Actual Usable Space](/learn/phone-storage-gb-vs-real): 128 GB advertised = 128,000,000,000 bytes = 119.2 GiB. OS eats 15-25 GB. Users see ~95 GB usable.
+
+### Data Transfer
+
+- [Gbps and Mbps: What Your Internet Speed Really Means](/learn/gbps-mbps-network-throughput): A 1 Gbps fibre plan does not download files at 1 GB/s. Here is the bit-vs-byte math and the overheads that eat the rest.
+
+### Data rate
+
+- [Mbps vs MB/s: The ×8 Trap That Tricks Every New Broadband Customer](/learn/mbps-vs-mbs-the-x8-trap): Your 100 Mbps plan does not download at 100 MB per second — it downloads at 12.5 MB/s. Here is why, and where the network overhead goes.
+
+### Data-transfer
+
+- [4K vs 1080p: Bitrates and Storage](/learn/4k-vs-1080p-bitrate): 1080p HEVC ≈ 8 Mbps. 4K HEVC ≈ 25 Mbps. Netflix caps 4K at 15 Mbps. Compression hides the pixel math.
+- [HDD vs SATA SSD vs NVMe: MB/s Real Numbers](/learn/hdd-vs-ssd-mb-s): 7200 RPM HDD: 150 MB/s. SATA SSD: 550 MB/s. NVMe Gen4: 7000 MB/s. Bus limits vs media limits.
+- [Internet Speed: Mbps vs MB/s Download Times](/learn/internet-speed-mbps-mbs-download): 1 GB file at 100 Mbps = 82 seconds. ISPs quote bits; browsers show bytes. The /8 factor confuses everyone.
+- [DDR4 vs DDR5 Bandwidth: MT/s vs GB/s](/learn/ram-ddr4-ddr5-bandwidth): DDR4-3200 = 25.6 GB/s per channel. DDR5-5600 = 44.8 GB/s. MT/s ≠ MHz — the doubling is real.
+- [Wi-Fi 6 'Gigabit' vs Real Throughput](/learn/wifi-6-gbps-real-throughput): Wi-Fi 6 rated 1.2 Gbps ≈ 700 Mbps real. Overhead, MIMO streams, channel width — the marketing math.
+
+### Density
+
+- [kg/m³, g/cm³ and API Gravity: Density Across Disciplines](/learn/kgm3-gcm3-api-gravity): Water is 1,000 kg/m³, or 1 g/cm³, or 10 °API… almost. Here is how physics, chemistry and petroleum engineering describe the same…
+
+### Digital-image-resolution
+
+- [Monitor PPI: 4K 27" vs 1440p 27" vs 5K](/learn/monitor-ppi-4k-27-inch): PPI = √(w² + h²) / diagonal. 4K 27" = 163 PPI. Retina target = 218 PPI. Text scaling math.
+- [Camera Megapixels vs Sensor Size](/learn/smartphone-camera-mp-vs-sensor-size): Megapixels ≠ image quality. Sensor area matters more. iPhone 1/1.28" @ 48 MP vs full-frame 24 MP.
+
+### Distance & Speed
+
+- [Nautical Miles, Knots and Why Aviation Still Uses Feet](/learn/nautical-miles-knots-aviation-feet): The aviation world runs on nautical miles, knots and feet — and there are surprisingly good reasons why the last hold-out of Imperial…
+
+### Dry volume
+
+- [Dry vs Wet Volume: Bushels, Dry Quarts and the Trap](/learn/dry-vs-wet-volume): 1 US dry quart = 1.101 L. 1 US liquid quart = 0.946 L. 16% difference. Grain sold in dry, milk in liquid — same word, different unit.
+
+### Dynamic viscosity
+
+- [Pa·s, cP, Poise: The Three Names for Dynamic Viscosity](/learn/viscosity-pas-cp-poise): 1 Pa·s = 10 P = 1000 cP. Water at 20 °C is 1 cP. Oil at 40 °C is 30–500 cP. SI insists on Pa·s; industry keeps cP.
+
+### Electric field strength
+
+- [Electric Field Strength: V/m, kV/mm and Dielectric Breakdown](/learn/electric-field-strength-v-m): 1 kV/mm = 10⁶ V/m. Air breaks down at 3 kV/mm; PET film at 300 kV/mm; SF₆ at 89 kV/mm. Miss the unit and insulation design fails.
+
+### Electric resistivity
+
+- [Resistivity and Conductivity: Ω·m, Ω·cmil/ft, S/m, %IACS](/learn/resistivity-conductivity-units): Copper is 1.72 × 10⁻⁸ Ω·m = 100% IACS. Aluminium is 61% IACS. Silver is 106% IACS. Cable ampacity scales inversely.
+
+### Energy
+
+- [Calories vs Kilojoules on Food Labels](/learn/calories-kilojoules-food-labels): 1 kcal = 4.184 kJ. EU/AU labels use kJ; US uses kcal (labelled 'calories'). Convert your daily intake.
+- [Calories vs Kilocalories: The Food-Label Fudge](/learn/calories-vs-kilocalories-food): A 'calorie' on a US food label is actually a kilocalorie. Here is why nutrition co-opted the unit and how to reconcile it with the joule.
+- [Joule, Calorie, kWh, BTU, eV: One Chart, Every Energy Unit You'll Meet](/learn/energy-units-reconciled): 1 kWh = 3.6 MJ = 860 kcal = 3412 BTU = 2.25 × 10²⁵ eV. Same energy, different disciplines' vocabularies.
+- [Electronvolts: The Currency of Atomic Physics](/learn/ev-electronvolt-atomic): Chemistry uses eV. Nuclear physics uses MeV. Particle physics uses GeV and TeV. Here is what an electronvolt actually is and where each…
+- [Gasoline vs Diesel Energy Density](/learn/gasoline-vs-diesel-energy-density): Gasoline 34.2 MJ/L. Diesel 38.6 MJ/L (13% more). Explains diesel's better MPG at same displacement.
+- [Joules, Calories, kWh, BTU: One Energy, Four Dialects](/learn/joules-calories-kwh-btu-reconciled): Utility bills, food labels, thermodynamics texts and HVAC catalogs each use a different energy unit. Here is exactly how they line up,…
+- [kWh and MWh: Reading an Electric Bill](/learn/kwh-mwh-electric-bills): Your house is billed in kWh. Your factory is billed in MWh. A power plant produces GWh. Here is how the units scale and how to…
+- [Therms and CCF: How Natural Gas Is Billed](/learn/therms-ccf-natural-gas): US gas utilities bill in therms or CCF. Neither is a familiar unit. Here is what they mean and how to convert to kWh or MJ.
+- [Water Heater: BTU/hr vs kW vs Therms/Month](/learn/water-heater-btu-kwh-therms): 40,000 BTU/hr = 11.72 kW gas. Electric heater: 4.5 kW. Therms billing: 1 therm = 29.3 kWh. Cost math.
+
+### Flow
+
+- [Barrels per Day: The Oil Industry's Flow Unit](/learn/bbl-day-oil-production): OPEC quotes production in million barrels per day. Here is how bbl/d converts to m³/h, litres/second and real refinery throughput.
+- [CFM and m³/h: Sizing Ventilation](/learn/cfm-m3h-ventilation): US HVAC catalogs quote fans in CFM. European catalogs quote in m³/h or L/s. Here is the exact factor and how to size ductwork consistently.
+- [GPM, LPM, m³/h: The Pump-Curve Trio](/learn/gpm-lpm-m3h-pump-conversion): 1 US gpm = 3.785 L/min = 0.2271 m³/h. Pump curves from US, EU and IEC vendors all use different units on the same graph.
+- [CFM, SCFM, ACFM: The Compressed-Air Units That Aren't Interchangeable](/learn/scfm-vs-acfm-vs-cfm): ACFM is actual volumetric flow at line conditions; SCFM normalises to standard T and P. At 100 psig, 1 ACFM ≈ 7.8 SCFM.
+- [VO2 Max: ml/kg/min and MET Equivalents](/learn/vo2-max-ml-kg-min): VO2 max in ml O₂/kg/min. 1 MET = 3.5 ml/kg/min. Convert lab results to daily-activity language.
+- [Volumetric vs Mass vs Molar Flow: Which Rate Does Your Process Actually Care About?](/learn/volumetric-vs-mass-vs-molar-flow): Volumetric flow (m³/h) is what pumps deliver. Mass flow (kg/h) is what heat balances need. Molar flow (kmol/h) is what reactions…
+- [Shower Flow Rate: GPM vs LPM Regulations](/learn/water-flow-gpm-lpm-shower): US federal cap: 2.5 GPM = 9.46 LPM. EU eco-label: 6-9 LPM. Same shower head labelled differently.
+
+### Fluid permeability
+
+- [Permeability: Darcy, Millidarcy and m²](/learn/permeability-darcy-m2): 1 darcy = 9.869 × 10⁻¹³ m². Reservoir sandstones are 10–1000 md; shales are <0.01 md. Pump curves and well design run on this factor.
+
+### Force
+
+- [Dyne vs Newton: CGS vs SI](/learn/dyne-newton-cgs-si): 1 N = 100,000 dyne. Legacy physics texts and older biophysics papers still use dynes. Muscle physiology in dynes/cm².
+- [Newtons, kgf and lbf: Why Weight Is Not Mass](/learn/newtons-kgf-lbf-weight-vs-mass): A 100 kg mass weighs 100 kgf on Earth and 16.5 kgf on the Moon. Here is how the kgf and lbf survived alongside the newton, and where the…
+
+### Frequency
+
+- [Earthquake Magnitude: Richter vs Moment vs Mercalli](/learn/earthquake-magnitude-richter-mw): Richter M4 → M5 = 10× amplitude, 32× energy. Modern USGS uses Moment magnitude (Mw). Mercalli is felt intensity.
+- [Audio Frequency Response: 20 Hz - 20 kHz Reality](/learn/frequency-response-hz-audiophile): Human hearing: 20 Hz - 20 kHz theoretical, 40 Hz - 16 kHz typical adult. Speaker specs oversell high end.
+- [Heart Rate Zones: %HRmax vs %HRR (Karvonen)](/learn/heart-rate-zones-percentage): %HRmax and %HRR give different zone boundaries. Zone 2 at 70% HRmax ≠ 70% HRR. Coaches disagree — here is why.
+- [Hertz, Megahertz, Gigahertz: The Radio Spectrum](/learn/hz-mhz-ghz-radio-spectrum): AM radio is at kHz. FM at MHz. WiFi at GHz. 5G at both. Here is the full spectrum map and what each band is used for.
+- [Noise Dose: dBA vs OSHA/NIOSH 8-Hour Limits](/learn/noise-dba-osha-hearing): OSHA 90 dBA/8 hr. NIOSH 85 dBA/8 hr. Every +3 dB halves safe exposure. Concerts hit 110 dB — 30 s limit.
+- [RPM and Hertz: Motor Speeds and Grid Frequency](/learn/rpm-hz-motor-speeds): A 60 Hz motor spins at a different speed than a 50 Hz motor. Here is why grid frequency dictates every industrial motor's RPM and how to…
+- [Running Cadence: Steps per Minute](/learn/running-cadence-spm): 180 spm is the coaching target. Elite runners actually range 170-200. Cadence × stride = pace — the math.
+- [Wavelength vs Frequency vs Photon Energy](/learn/wavelength-frequency-photon-energy): λ·f = c. E = hf. Visible 400-700 nm = 430-750 THz = 1.77-3.1 eV. Three ways to describe one photon.
+
+### Fuel economy
+
+- [MPG (US) vs MPG (UK) vs L/100km: Fuel Economy Without Bragging Rights](/learn/fuel-economy-mpg-us-uk-l100km): A 40 mpg car in the US and a 40 mpg car in the UK do not sip fuel at the same rate. Here is the exact conversion and why L/100 km is the…
+
+### Fuel-efficiency-volume
+
+- [EV Efficiency: kWh/100mi vs Wh/mi vs MPGe](/learn/ev-range-kwh-per-100mi): Tesla Model 3: 250 Wh/mi = 25 kWh/100mi. MPGe uses 33.7 kWh/gal equivalent. EPA math translated.
+- [MPG US vs UK vs L/100km: EPA vs WLTP](/learn/mpg-us-uk-l100km-real): 30 mpg US = 36 mpg UK = 7.84 L/100km. EPA and WLTP test cycles diverge further. Real vs sticker.
+
+### Heat flux density
+
+- [Heat Flux Density: W/m², BTU/(h·ft²) and Solar Constant](/learn/heat-flux-density-units): Solar constant: 1361 W/m² = 431 BTU/(h·ft²). Comfortable radiant panel: 200 W/m². Combustion flame: >100 kW/m². Scales matter.
+
+### Heat transfer coefficient
+
+- [Heat Transfer Coefficient: W/(m²·K) and BTU/(h·ft²·°F)](/learn/heat-transfer-coefficient-units): 1 W/(m²·K) = 0.176 BTU/(h·ft²·°F). Natural convection air: 5–25 W/(m²·K). Boiling water: 3000–100 000. Choice of h dictates…
+
+### Illumination
+
+- [Lumens vs Lux vs Candela: Bulbs, Rooms, Torches](/learn/lumens-vs-lux-vs-candela): Lumens = total output. Lux = lm/m² at a surface. Candela = directional intensity. Three different questions.
+- [Lux and Foot-Candles: Lighting Design](/learn/lux-footcandles-photography): US lighting codes quote foot-candles. Everywhere else quotes lux. Here is the exact factor and how to hit an IES-recommended illuminance…
+
+### Inductance
+
+- [µH, mH, nH: Inductance Units in Power and RF](/learn/inductance-uh-nh-mh): 1 mH = 1000 µH = 10⁶ nH. Power inductors in µH–mH; RF chokes in nH–µH; PCB trace inductance in nH per mm.
+
+### Kinematic viscosity
+
+- [Kinematic Viscosity: cSt, SUS and ISO VG Grades](/learn/kinematic-viscosity-cst-sus): 1 cSt = 1 mm²/s. ISO VG 32 is 32 cSt at 40 °C. SUS is a legacy timed-flow measurement. Confuse the columns and pump sizing drifts.
+
+### Length
+
+- [Altitude: Feet vs Meters in Aviation and Hiking](/learn/altitude-feet-meters-aviation): Cruising 35,000 ft = 10,668 m. Everest 8848 m = 29,029 ft. Aviation is ft globally; hiking varies.
+- [Angstroms and Nanometers: Wavelengths and Bond Lengths](/learn/angstrom-nanometer-wavelength): Chemists still write bond lengths in ångströms. Physicists write wavelengths in nanometres. Here is why both units survive and how to…
+- [Brake Disc Thickness: mm vs Thou Wear Limits](/learn/brake-disc-thickness-mm-inch): New disc 25 mm. Wear limit 23 mm. US thickness gauges read in thou (0.001"). 2 mm = 78.7 thou wear.
+- [Clothing Sizes: US vs UK vs EU vs Asian Fits](/learn/clothing-sizes-international): US 6 = UK 10 = EU 36 = Asian L. Same waist/bust cm mapped to different labels. Online shopping trap.
+- [Drill Bits: Metric vs Fractional vs Number/Letter Sizes](/learn/drill-bit-metric-vs-fractional): 1/4" = 6.35 mm. Nearest metric: 6 or 6.5 mm. Tap drill charts assume one system — swapping shifts thread engagement.
+- [Hiking Elevation Gain: Cumulative vs Net](/learn/hiking-elevation-gain-loss): Cumulative gain sums every uphill segment. Net = end - start. Trail difficulty depends on cumulative — apps disagree.
+- [Inch Fractions and Decimals: A Reference Chart](/learn/inch-fractions-decimals): A 3/16 drill is 0.1875 in = 4.7625 mm. Here is the full fraction-to-decimal-to-mm table, and why fractional inches survive in modern shops.
+- [Kilometers and Miles: What Road Signs Actually Mean](/learn/km-miles-road-signs): Speed limits, distance markers and odometer readings change units at almost every border. Here is the exact factor, and the mental math…
+- [Astronomy Distances: AU, Light-Year, Parsec](/learn/light-year-parsec-au-distances): 1 AU = 150 M km. 1 ly = 63,241 AU. 1 pc = 3.26 ly. Solar system uses AU; galactic uses pc.
+- [Light-years, Parsecs and Astronomical Units](/learn/light-years-parsecs-au): Astronomers switch units by discipline: AU for planets, parsecs for stars, light-years for the public. Here is how the three scales…
+- [Lumber: 2x4 Nominal vs 38x89 mm Actual](/learn/lumber-dimensional-nominal-actual): '2x4' = 1.5" × 3.5" = 38 × 89 mm. Planing loses 1/2" per dimension. Metric-imperial framing math.
+- [Meters to Feet — and the US Survey Foot Nobody Talks About](/learn/meters-to-feet-and-the-us-survey-foot): There are two feet in the United States. Confusing them puts survey markers hundreds of feet off across a country. Here is the story.
+- [Nautical Mile vs Statute Mile vs Kilometre: When 'Mile' Isn't 'Mile'](/learn/mile-nautical-vs-statute): 1 nautical mile = 1852 m. 1 statute mile = 1609.344 m. Aviation and marine navigation are in nautical; road signs in statute.…
+- [Millimeters and Inches on the Shop Floor](/learn/mm-inches-precision-machining): A 0.001-inch tolerance is not a 0.01 mm tolerance. Here is how to convert cleanly between mm and inches without accumulating rounding…
+- [Mils, Microns and Thou: Precision Length in Machining](/learn/precision-length-mils-microns-thou): Thousandths of an inch, micrometres, mils and gauge numbers all describe fractions of a millimetre. Here is how machinists switch…
+- [Shoe Sizes: US vs UK vs EU vs Japan](/learn/shoe-size-us-uk-eu-jp): US 10 = UK 9 = EU 43 = JP 28. Half sizes step 4.23 mm. Cross-country buying charts differ 1 size.
+- [Steps to Kilometres and Miles: The Real Math](/learn/steps-to-km-miles): Average stride: 0.76 m for men, 0.67 m for women. 10,000 steps ≈ 7.6 km or 4.7 mi. Why fitness trackers disagree.
+- [Swimming: Short Course Meters vs Yards vs Long Course](/learn/swimming-pool-lengths-meters-yards): SCY = 25 yd, SCM = 25 m, LCM = 50 m. World records split by pool type. Times don't convert linearly.
+- [Tire Sizes: 225/45R17 vs Overall Diameter](/learn/tire-size-metric-vs-inch): 225/45R17: 225 mm wide, 45% aspect ratio sidewall, 17" rim. Overall diameter = 631 mm = 24.8".
+- [Yards and Meters on the Sports Field](/learn/yards-meters-sports-fields): American football measures in yards. Track and field measures in metres. Soccer stadiums straddle both. Here is the conversion, and the…
+
+### Lumber volume
+
+- [Board Foot, Cord, Cubic Foot: Lumber Volume Units](/learn/board-foot-vs-cubic-foot): 1 board foot = 1 ft × 1 ft × 1 in = 144 in³. 1 cord = 128 ft³ of stacked wood. Different products, different conventions.
+
+### Luminance
+
+- [Laptop Display Brightness: Nits and Sunlight](/learn/laptop-display-nits-brightness): Nits = cd/m². Office use 250. Outdoor readable 500+. HDR spec starts 1000. iPhone hits 2000 peak.
+
+### Luminous Intensity
+
+- [Candela and Lumen: What Flashlight Specs Actually Mean](/learn/candela-lumen-flashlight): A 1,000-lumen flashlight and a 10,000-candela flashlight are not comparable. Here is what each unit measures and how throw versus flood…
+
+### Magnetic Field Strength
+
+- [Oersteds and A/m: Magnetic Field Strength](/learn/oersted-am-magnetic-field): The oersted is the CGS unit of H-field. The A/m is its SI equivalent. Here is why permanent-magnet datasheets still use oersteds and how…
+
+### Magnetic Flux
+
+- [Webers and Maxwells: Magnetic Flux Units](/learn/weber-maxwell-magnetic-flux): The weber is the SI unit of magnetic flux. The maxwell is its CGS ancestor, 10⁸ times smaller. Here is where each still appears.
+
+### Magnetism
+
+- [Amp-Turn, Oersted, A/m: Magnetic Field Strength Units](/learn/amp-turn-oersted-ampere-per-meter): 1 Oe = 79.577 A/m. Amp-turn = current × turns and drives H directly. Coil designers, transformer engineers and NDT technicians all need…
+- [Nanotesla: The Units of Geomagnetic Surveys and UXO Detection](/learn/geomagnetic-nt-anomaly-mapping): Earth's field averages 50 000 nT. Buried steel objects cause anomalies of tens to hundreds of nT. Magnetometers read to 0.01 nT.
+- [Flux vs Flux Density: Weber, Tesla and When They Are Not the Same](/learn/magnetic-flux-vs-flux-density): Flux (Wb) is total field through a surface; flux density (T) is field per unit area. 1 T = 1 Wb/m². Confusing them mis-sizes transformer…
+- [Tesla and Gauss: The 10,000-to-1 Split in Magnetism](/learn/tesla-gauss-magnetic-flux-density): One tesla equals 10,000 gauss. Simple arithmetic; deep history. How SI and CGS diverged in magnetism and why MRI, geophysics and…
+- [Tesla, Gauss, Millitesla: MRI, Speakers and the Earth's Field](/learn/tesla-gauss-mri-earth-field): 1 T = 10 000 G. Earth's field is 0.5 G; a fridge magnet 50 G; a 3 T MRI is 30 000 G. Same physics, wildly different regimes.
+
+### Magnetomotive force
+
+- [Magnetomotive Force: Ampere-Turns and Gilberts](/learn/magnetomotive-force-units): MMF = NI, in ampere-turns. 1 Gb = 10/(4π) At ≈ 0.7958 At. Reluctance networks convert MMF to flux the way voltage drives current.
+
+### Moment-of-inertia
+
+- [Moment of Inertia: kg·m² vs slug·ft²](/learn/moment-of-inertia-slug-kg): 1 slug·ft² = 1.356 kg·m². Aerospace uses slugs; SI uses kg·m². Rotor inertia specs still mixed.
+
+### Permeability
+
+- [Permeability Units: H/m, µ_r and Why Iron is 1000× Air](/learn/permeability-units-henry-per-meter): µ₀ = 4π × 10⁻⁷ H/m. Relative permeability µ_r is dimensionless. Iron alloys hit µ_r = 5000+; mu-metal 100 000+.
+
+### Power
+
+- [Air Conditioner Sizing: BTU/hr vs Tons vs kW](/learn/air-conditioner-btu-tons-kw): 1 ton AC = 12,000 BTU/hr = 3.517 kW. A '3-ton unit' = 36,000 BTU/hr — sized to about 1500 sq ft.
+- [EV Charging Speed: kW vs Miles per Hour Added](/learn/charging-speed-kw-miles-per-hour): 150 kW DC fast = 600 mi/hr added to a Model 3. Level 2 at 11 kW = 30 mi/hr. AC vs DC — different math.
+- [Cycling Watts per Kilogram: Power-to-Weight](/learn/cycling-watts-per-kg): W/kg is the universal fitness marker. 4 W/kg = strong amateur; 6 W/kg = pro. Convert lb-based numbers.
+- [dBA, dBC, dBZ: The Weighted Sound Levels That Aren't Interchangeable](/learn/dba-dbc-dbz-sound): dBA weights for human ear response. dBC is flatter, keeps low frequencies. dBZ is unweighted. 90 dBA in a factory can be 100 dBC — same…
+- [dBi, dBd, dBm: RF Gain and Power Units](/learn/dbi-dbd-dbm-antenna-gain): 0 dBd = 2.15 dBi. 0 dBm = 1 mW = −30 dBW. Link budgets live on these dB conversions — miss one, misplace an antenna.
+- [dBm and Milliwatts: RF Power the Log Way](/learn/dbm-mw-rf-power): Radio engineers speak in dBm. A 20 dBm signal is 100 mW. Here is the log math and why every WiFi and cellular signal ends up expressed…
+- [Car Horsepower: hp, PS, kW, and BHP](/learn/horsepower-kw-ps-cars): 1 mechanical hp = 0.7457 kW. 1 PS = 0.7355 kW. BMW quotes PS in EU, hp in US — 3% difference in the same engine.
+- [Horsepower Variants: Mechanical, Metric, Electrical, Boiler](/learn/horsepower-variants): 1 hp (mechanical) = 745.7 W. 1 PS = 735.5 W. 1 electrical hp = 746 W. 1 boiler hp = 9810 W. Four horsepowers, four numbers.
+- [HP vs kW vs PS: Three Horsepowers, One Engine](/learn/hp-vs-kw-vs-ps): Metric, mechanical, electrical, brake — there are at least four "horsepowers" and they disagree by up to 1.4%. Here is which one your…
+- [Watt, Horsepower, BTU/h, Ton: The Power Units of HVAC and Motors](/learn/power-units-hp-kw-btuh): 1 hp = 746 W. 1 ton refrigeration = 12 000 BTU/h = 3.517 kW. Same physical quantity, four different sales sheets.
+- [Solar Panels: W per m² vs Peak Sun Hours](/learn/solar-panel-w-per-m2-kwh): Modern panels 200 W/m². Peak sun hours 4-6/day. 400 W panel × 5 PSH = 2 kWh/day. Real yield math.
+- [USB-C Power Delivery: Watts, Volts, Amps](/learn/usb-c-watts-pd): PD 3.0 profiles: 60W (20V/3A), 100W (20V/5A), 240W (48V/5A). Cable rating matters — not all USB-C are equal.
+- [Wind Turbine: Nameplate MW vs Capacity Factor](/learn/wind-turbine-kw-mw-kwh): 2 MW turbine × 30% capacity factor = 5256 MWh/yr. Nameplate rating vs real output — the 3× gap.
+
+### Pressure
+
+- [Aircraft Cabin Pressure: 8000 ft Altitude Effect](/learn/air-pressure-cabin-altitude): Cruise cabin = 8000 ft equivalent = 75.3 kPa = 10.9 psi. 25% less oxygen than sea level — jet lag physiology.
+- [Bar, Barg, Bara, Millibar: The European Pressure Vocabulary](/learn/bar-barg-bara-mbar): 1 bar = 100 kPa = 14.504 psi. 'barg' is gauge, 'bara' absolute, 'mbar' meteorology's favourite. Missing the suffix leaves 1 atm of…
+- [mmHg, kPa, cmH₂O: The Three Pressure Units Every Clinician Toggles](/learn/clinical-pressure-units): Arterial pressure in mmHg, CVP in cmH₂O, ventilator settings in cmH₂O or kPa. Sloppy conversions misset PEEP by 40%.
+- [Gauge vs Absolute Pressure: psig, psia, barg, bara](/learn/gauge-vs-absolute-pressure): Gauge pressure reads zero at atmosphere; absolute reads 14.7 psi. Use absolute for gas-law calcs; use gauge for pipe ratings. Confusing…
+- [Inches of Mercury: Weather Barometers Explained](/learn/inhg-barometer-weather): US weather reports quote pressure in inHg. Aviation altimeters use it too. Here is how it maps to millibar and hectopascal, and where…
+- [Blood Pressure: mmHg vs kPa Around the World](/learn/mmhg-blood-pressure-kpa): 120/80 mmHg = 16/10.7 kPa. Some EU countries chart in kPa. Same hypertension threshold, different numbers.
+- [Pascals and mmHg: Why Blood Pressure Stayed Old-School](/learn/pascal-mmhg-blood-pressure): Every medical blood-pressure reading is in mmHg. SI would say kPa. Here is why medicine kept mmHg and how the two convert.
+- [Psi vs Bar: Turbo Boost Pressure, Finally Explained](/learn/psi-vs-bar-turbo-boost-pressure): Why turbo boost gauges argue about psi and bar, how the two relate, and the mistake almost every first-time tuner makes about absolute…
+- [Scuba Diving: Depth in Meters/Feet vs Bar Pressure](/learn/scuba-diving-depth-bars): Every 10 m of seawater adds 1 bar. 30 m dive = 4 bar absolute. Nitrogen loading tables scale with pressure, not depth.
+- [Tire Pressure: PSI vs Bar vs kPa on Door Placards](/learn/tire-pressure-psi-bar-kpa): 32 psi = 2.21 bar = 221 kPa. EU cars list bar; US lists psi; Japanese kPa. Same value, three numbers.
+- [Torr, Millitorr, Micron: One Vacuum Unit with Three Names](/learn/torr-micron-millitorr): 1 micron = 1 mTorr = 0.001 Torr. HVAC and refrigeration techs pull to 500 microns before charging — that is 0.5 Torr.
+- [Torr and Pascal: The Vacuum Technology Ladder](/learn/torr-pascal-vacuum): Vacuum-chamber datasheets span 12 orders of magnitude of pressure. Here is the low-pressure ladder from rough to ultra-high vacuum in…
+- [Rough to XHV: The Full Vacuum Pressure Ladder](/learn/vacuum-pressure-ranges-full-ladder): Vacuum spans 15 decades from 1 atm to below 10⁻¹² torr. Each decade needs a different pump. Here is the complete map with torr, mbar and…
+- [inH₂O, mmH₂O, cmH₂O: Water Column Pressure for Low-Delta Systems](/learn/water-column-pressure-units): 1 inH₂O ≈ 249 Pa. HVAC static pressure, CPAP therapy and manometers all live in the 0.1–10 inH₂O range where 'close enough' misses…
+
+### Radiation
+
+- [Curie and Becquerel: Radiation Activity Units](/learn/curie-becquerel-radiation): The becquerel is one decay per second. The curie is 37 billion. Here is why both units exist and where each is used.
+- [Radiation Dose: Flight, CT, Chest X-ray in µSv](/learn/radiation-dose-flight-scan): Chest X-ray 20 µSv. NYC-LON flight 40 µSv. Abdominal CT 8000 µSv. Background 2400 µSv/yr.
+- [Sievert, Gray, Rem: What Each Radiation Unit Actually Measures](/learn/sievert-gray-rem-radiation-dose): Grays measure absorbed dose. Sieverts weight that dose for biological effect. Becquerels count decays. Here is the distinction — and the…
+- [UV Index and SPF: How the Numbers Combine](/learn/uv-index-sunscreen-spf): UV 10 delivers a burn dose in 20 min unprotected; SPF 30 extends to 10 hours in theory, 2 hours in practice.
+
+### Radiation Absorbed Dose
+
+- [Gray and Rad: Absorbed Radiation Dose](/learn/gray-rad-absorbed-dose): The gray is joules per kilogram. The rad is 1/100 of that. Here is how absorbed dose differs from equivalent dose, and where each unit fits.
+
+### Radiation absorbed dose
+
+- [Sievert vs Gray vs Rem vs Rad: Radiation Dose Explained](/learn/sievert-gray-rem-rad): 1 Gy = 100 rad = absorbed dose. 1 Sv = 100 rem = equivalent dose weighted by radiation type. Confuse them and dose limits go out by 20×.
+
+### Radiation activity
+
+- [Becquerel vs Curie: Radioactivity Units and Sample Sizes](/learn/becquerel-curie-radioactivity): 1 Ci = 3.7 × 10¹⁰ Bq = 37 GBq. Medical isotopes in MBq to GBq; environmental samples in Bq; regulatory limits mix both.
+
+### Radiation exposure
+
+- [Roentgen and C/kg: Radiation Exposure Units](/learn/roentgen-ckg-exposure): 1 R = 2.58 × 10⁻⁴ C/kg. Exposure measures ionisation in air, distinct from absorbed dose. Legacy R survives in older radiography and…
+
+### Resistance
+
+- [Ohms and Milliohms: Cable Resistance and Voltage Drop](/learn/ohms-cable-resistance): A 100 A load through 20 m of 6 mm² copper drops nearly 6 volts. Here is the resistance math behind wire sizing.
+
+### Solution concentration
+
+- [IU vs mg: International Units for Vitamins, Hormones and Enzymes](/learn/iu-mg-vitamins-hormones): 1 IU vitamin D = 0.025 µg. 1 IU vitamin E = 0.67 mg (natural) or 0.91 mg (synthetic). IU is a bioactivity unit; the mg equivalent…
+- [mg/dL vs mmol/L: Glucose, Cholesterol and the US–EU Divide](/learn/mg-dl-mmol-l-clinical): Glucose 100 mg/dL = 5.55 mmol/L. Cholesterol 200 mg/dL = 5.18 mmol/L. The conversion factor is different for every analyte — it depends…
+- [Molarity, Molality, Normality: Solution Concentration Units](/learn/molarity-molality-normality): Molarity (mol/L) uses solution volume. Molality (mol/kg) uses solvent mass. Normality is molarity × valence. Miss the difference and…
+- [Osmolarity vs Osmolality: Why IV Fluids Come With Both](/learn/osmolarity-osmolality): Osmolarity: osmoles per litre of solution. Osmolality: osmoles per kg of water. Plasma is 285–295 mOsm/kg. Confuse the units and IV…
+
+### Sound Level
+
+- [Decibels: Sound Pressure vs Signal Power](/learn/decibels-sound-signal): SPL dB uses 20 log. Power dB uses 10 log. Here is why sound and signal share a unit but not the math, and how to keep them straight.
+
+### Specific heat capacity
+
+- [Specific Heat Capacity: J/(kg·K), BTU/(lb·°F) and cal/(g·°C)](/learn/specific-heat-capacity-units): Water: 4186 J/(kg·K) = 1 BTU/(lb·°F) = 1 cal/(g·°C). Three unit systems, one number for water — coincidence baked in.
+
+### Speed
+
+- [The Beaufort Wind Scale in mph, km/h and knots](/learn/beaufort-wind-scale): Beaufort 8 is 'gale force'. But what is that in knots or km/h? Here is the full 0–12 scale with modern-unit equivalents.
+- [Mach Number: Not a Speed, But a Ratio](/learn/mach-number-supersonic): Mach 1 at sea level is 340 m/s. Mach 1 at 40,000 ft is 295 m/s. Here is why a Mach number is not a constant speed and how to convert it.
+- [Running Pace: min/km vs min/mile](/learn/running-pace-min-per-km-mile): 6:00/km = 9:39/mile. Marathon pace tables assume one system — here is the exact conversion for training zones.
+- [Wind Speed: mph, kph, Knots, and Beaufort](/learn/wind-speed-mph-kph-knots-beaufort): 20 knots = 37 kph = 23 mph = Beaufort 5. Sailing uses knots; weather uses local; hurricanes always mph.
+
+### Surface current density
+
+- [Current Density: A/cm², A/mm² and A/in²](/learn/current-density-a-cm2): 1 A/mm² = 100 A/cm² = 645 A/in². PCB traces run 20 A/mm². Motor windings hit 5 A/mm² continuous, 15 A/mm² short-term.
+
+### Surface tension
+
+- [Surface Tension: dyn/cm, mN/m and the Reason They Match](/learn/surface-tension-units): 1 dyn/cm = 1 mN/m exactly. Water is 72 mN/m at 20 °C. Mercury is 486 mN/m. Surface tension controls wetting, atomisation and coating…
+
+### Temperature
+
+- [Absolute vs Relative Temperature: When Kelvin Actually Matters](/learn/absolute-vs-relative-temperature): Ideal gas law, Carnot efficiency and radiative heat transfer only work in absolute temperature. Here is when to switch from Celsius to…
+- [Air Fryer vs Oven: Temperature and Time Conversion](/learn/air-fryer-vs-oven-time-temp): Air fryer: reduce oven temp by 25°F (14°C), cut time by 20%. The convection math behind the rule.
+- [Candy Stages: Thread, Soft Ball, Hard Crack](/learn/candy-thermometer-stages): Thread 110°C. Soft ball 116°C. Hard crack 149°C. Older recipes list only stage names — modern kitchens need °C or °F.
+- [Celsius vs Fahrenheit: The Delta Trap Nobody Warns You About](/learn/celsius-fahrenheit-deltas-vs-points): Converting 20 °C to Fahrenheit is one formula. Converting a 20 °C temperature rise is a different formula. Here is how to keep them…
+- [Meat Doneness: Internal Temperatures by Cut](/learn/meat-doneness-temperatures): Chicken 74°C. Beef medium 63°C. Pork 63°C. USDA vs Serious Eats vs French guidance disagrees by 5-10°C.
+- [Oven Temperatures: °C, °F, Gas Mark, and 'Moderate'](/learn/oven-temperatures-c-f-gas-mark): 180°C = 350°F = Gas Mark 4 = 'moderate'. UK/US/AU recipes use different systems — here is the full ladder.
+- [Rankine and Kelvin: Absolute Temperature Scales](/learn/rankine-kelvin-thermodynamics): Kelvin is SI. Rankine is US customary. Both start at absolute zero. Here is why chemical engineers in the US still use Rankine and how…
+- [Réaumur, Rømer, Newton: Legacy Temperature Scales in Old Manuals](/learn/reaumur-romer-newton-scales): Antique European instruments and translated 18th-century texts still use Réaumur (0/80), Rømer (7.5/60) and Newton (0/33). Here are the…
+- [Heat Index: Temperature + Humidity in °F/°C](/learn/temperature-humidity-heat-index): 30°C at 70% RH feels like 35°C. Heat index formulas differ US vs metric — same physiological load.
+- [Temperature Interval vs Point: Why 1 °C ≠ 1 °F Ever](/learn/temperature-interval-vs-point): A 1 °C interval always equals 1.8 °F, no 32° offset. Confusing intervals with points is the most common HVAC and process-control unit error.
+- [Thermocouple Millivolt to Temperature: Type K, J, T Conversion Traps](/learn/thermocouple-mv-to-temperature): Thermocouples output millivolts, not degrees. A Type K at 500 °C produces 20.64 mV. Skip cold-junction compensation and readings drift…
+- [Thermostat: Setting °C vs °F Comfort Zones](/learn/thermostat-c-f-comfort-zone): 20°C = 68°F 'cool'. 22°C = 72°F 'warm'. A single °C = 1.8°F — HVAC pros use the 5-9 rule for headroom.
+- [Wet-Bulb vs Dry-Bulb vs Dew Point: Three Temperatures HVAC Engineers Confuse](/learn/wet-bulb-dry-bulb-dew-point): Cooling tower approach uses wet-bulb, not ambient. Sizing off dry-bulb oversizes chillers by 15–25%. Here is when to use which.
+
+### Thermal conductivity
+
+- [Thermal Conductivity: W/(m·K), BTU·in/(h·ft²·°F) and R-value](/learn/thermal-conductivity-units): 1 W/(m·K) = 6.933 BTU·in/(h·ft²·°F). Copper is 400 W/(m·K); fibreglass batt is 0.04. Insulation specs mix R-values, k-values and…
+
+### Thermal expansion
+
+- [CTE Units: ppm/°C vs ppm/°F vs 10⁻⁶/K](/learn/cte-thermal-expansion-units): CTE is quoted as ppm/°C, µm/(m·°C) or 10⁻⁶/K — all numerically equal. But ppm/°F is 5/9 of the °C value. Confusing them cracks optical…
+
+### Thermal-resistance
+
+- [Insulation: R-value (US) vs RSI (metric)](/learn/insulation-r-value-rsi): R-13 US = RSI 2.29 m²·K/W. Same physical resistance, different units. Attic minimums: R-38 US, RSI 6.7 EU.
+
+### Time
+
+- [Bluetooth Codec Latency: SBC, AAC, aptX, LDAC](/learn/bluetooth-audio-codec-latency): SBC ~200 ms. aptX Low Latency ~40 ms. Gaming target <60 ms. Why AirPods lag on Android.
+- [Half-Life: Bq, Ci, and Cumulative Dose](/learn/radioactive-half-life-decay): N(t) = N₀ · 2^(-t/T½). Tc-99m: T½ = 6 hr. After 24 hr, 6% remains. Nuclear medicine dose scheduling.
+- [Sleep Cycles: 90-Minute Blocks and REM Timing](/learn/sleep-hours-cycles): One cycle ≈ 90 min. 5 cycles = 7.5 h. Waking mid-cycle vs between cycles feels different — the math of alarm timing.
+- [Sous Vide: Time by Thickness, Not Weight](/learn/sous-vide-thickness-time): Douglas Baldwin tables scale with thickness². 25 mm steak = 40 min core temp. 50 mm = 2h40. Weight is irrelevant.
+- [Swim Splits: 500m to 1000m Pace Predictors](/learn/swimming-splits-500-1000): 500 free time × 2 + 15 s ≈ 1000 free time. Distance-per-stroke and fatigue arc make the doubling non-linear.
+
+### Torque
+
+- [Wheel Torque: Nm vs lb-ft vs kgf-m](/learn/torque-nm-lbft-wrench): 100 Nm = 73.76 lb-ft = 10.2 kgf-m. Lug nut torque specs in service manuals — three units for the same value.
+- [Torque Wrench Units: Nm, lb-ft and kgf·m Without the Guesswork](/learn/torque-units-nm-lbft-kgfm): Your torque spec is in Nm and your wrench is in lb-ft — or vice versa. Here is the exact conversion and the sign of trouble when they…
+- [Nm as Torque vs Nm as Work: Why the Units Look Identical](/learn/torque-vs-work-nm-vs-j): 1 Nm torque and 1 J of work have identical dimensions but different physical meaning. When to use which.
+
+### Velocity-angular
+
+- [Angular Velocity: RPM vs rad/s vs deg/s](/learn/angular-velocity-rpm-rad): 1 RPM = 0.1047 rad/s = 6 deg/s. Motor specs: RPM. Physics: rad/s. Servos: deg/s. Three habits.
+
+### Viscosity
+
+- [Centipoise and Pascal-Seconds: Motor Oil Grades](/learn/viscosity-cp-pas-oil-grades): Motor oil is spec'd in SAE grades, but underneath is a real viscosity in centipoise or millipascal-seconds. Here is how the units and…
+
+### Viscosity Kinematic
+
+- [Centistokes and SUS: Kinematic Viscosity of Lubricants](/learn/cst-sus-motor-oil-kinematic): Old motor-oil catalogs list SUS instead of cSt. Here is how the two relate and why modern spec sheets have quietly dropped SUS.
+
+### Viscosity-kinematic
+
+- [Engine Oil: 5W-30, 0W-20, and SAE Grades](/learn/engine-oil-viscosity-sae): 5W-30: 5 winter grade, 30 hot grade. 0W-20 flows better cold, thinner hot. cSt at 100°C defines the second number.
+
+### Volume
+
+- [Alcohol Units: UK, US, AU Standard Drinks](/learn/alcohol-units-standard-drinks): UK unit = 10 mL pure ethanol. US = 14 g = 17.7 mL. AU = 10 g = 12.7 mL. Same beer, different unit counts.
+- [Barrels: Oil, Beer, and Why They Are Different](/learn/barrels-oil-beer-us-liquid): An oil barrel is 42 US gallons. A beer barrel is 31 US gallons. A UK beer barrel is 43.2 US gallons. Here is the full disambiguation.
+- [Cocktail Jiggers: 1 oz vs 1.5 oz vs 30 mL vs 45 mL](/learn/cocktail-jigger-oz-ml): US jigger = 1.5 fl oz = 44.4 mL. UK 'jigger' = 25 or 35 mL. Home bar recipes assume US convention.
+- [Cubic Yards and Cubic Meters: Ordering Concrete](/learn/cubic-yards-concrete-ordering): US ready-mix trucks deliver in cubic yards. European ones deliver in cubic metres. Here is how to specify a slab, foundation, or column…
+- [Cups: US, UK, Metric — Three Sizes](/learn/cup-measurements-us-uk-metric): A US cup is 236.6 mL. A metric cup is 250 mL. A UK teacup is 284 mL. Here is why baking recipes cross international lines so badly.
+- [Engine Displacement: cc vs Litres vs Cubic Inches](/learn/engine-displacement-cc-l-ci): 1 L = 1000 cc = 61.02 CI. A '5.0 L Mustang' = 5000 cc = 305 CI. Legacy US badges still use CI.
+- [Fluid Ounces: US vs Imperial and the 4% Recipe Error](/learn/fluid-ounces-us-vs-imperial): The US fluid ounce and the Imperial fluid ounce are not the same volume. Here is exactly how far off they are, and why cooking,…
+- [US vs UK Fluid Ounces: Why Recipe Conversions Silently Fail](/learn/fluid-ounces-us-vs-uk-cooking): 1 US fl oz = 29.57 mL. 1 UK (Imperial) fl oz = 28.41 mL. Close, but pint sizes diverge 20%. Recipes assume one system.
+- [Insulin U-100 vs U-40 vs U-500](/learn/insulin-units-ml): U-100 = 100 units per mL. U-500 is 5× stronger. Syringe/pen mismatches are a documented pharmacy-error class.
+- [Liters and Gallons: Fuel Tank Sizing Across Regions](/learn/liters-gallons-fuel-tanks): A 15-gallon US tank is not 15 UK gallons. Here is how vehicle fuel-tank capacities convert, and where the US-vs-UK gallon confusion hits…
+- [Paint Coverage: L/m² vs Gallons per Square Foot](/learn/paint-coverage-liters-gallons): 1 gallon paint ≈ 350 sq ft = 32.5 m². Metric spec: 12 m²/L. Two coats halves that. Real math for a room.
+- [Tablespoons, Teaspoons and Milliliters: Medicine Dosing](/learn/tablespoons-teaspoons-ml-medicine): A kitchen teaspoon is not a medical teaspoon. Here is why pharmacists insist on millilitre dosing and how the units actually convert.
+- [Daily Water: 8 Glasses vs 2 Litres vs Half-Your-Weight-in-Oz](/learn/water-intake-oz-liters-daily): '8 × 8 oz' = 1.9 L. '2 L' = 67.6 fl oz. 'Half your weight in oz' scales with body mass. The three rules disagree.
+
+### Volumetric Flow
+
+- [GPM, L/min and m³/h: Reading Pump Curves Across Regions](/learn/gpm-lpm-m3h-pump-curves): Pump catalogs from three continents use three different flow units. Here is how to read a curve, apply the right correction, and avoid…
+
+### Weight
+
+- [Baby Weight: kg vs lb-oz Growth Charts](/learn/baby-weight-kg-lb-percentile): 3.4 kg = 7 lb 8 oz. WHO charts use kg; US paediatricians use lb-oz. Percentile bands are unit-agnostic.
+- [BMI Explained: Metric vs Imperial Formulas](/learn/bmi-calculation-metric-imperial): BMI = kg / m². Imperial version = 703 × lb / in². Same number, two formulas. Why the 703 factor exists.
+- [Body Fat Percentage: DEXA vs Bioimpedance vs Calipers](/learn/body-fat-percentage-methods): DEXA is ±1%, bioimpedance ±3-5%, calipers ±3-4%. Why home scales overestimate lean mass in the morning.
+- [Butter: US Sticks vs Grams vs Cups vs Tablespoons](/learn/butter-sticks-grams-cups): 1 US stick = 113 g = 1/2 cup = 8 tbsp. European butter is sold in 250 g blocks — recipe scaling breaks.
+- [Caffeine mg: Coffee, Tea, Energy Drinks, Pre-Workout](/learn/caffeine-mg-drinks): Espresso 63 mg. Drip coffee 95 mg. Red Bull 80 mg. Pre-workout 200-400 mg. FDA safe upper: 400 mg/day.
+- [Carats vs Karats: Diamonds and Gold Purity](/learn/carats-vs-karats): A 2-carat diamond weighs 0.4 g. A 14-karat gold ring is 58.3% pure. Same word, different meaning. Here is the disambiguation.
+- [Chocolate: % Cacao vs Cocoa Mass vs Cocoa Butter](/learn/chocolate-percentage-vs-cocoa-mass): 70% chocolate = 70% cocoa solids + cocoa butter total. Fat/solid ratio varies 40/30 or 30/40. Ganache math cares.
+- [Coffee Ratios: 1:15, 1:16, 1:17 by Weight](/learn/coffee-ratio-grams-water): 15 g coffee to 240 g water = 1:16. SCA gold standard = 1:18. Ratios control extraction and strength.
+- [Crypto Denominations: Satoshi, Gwei, Wei](/learn/crypto-satoshi-bitcoin-gwei): 1 BTC = 100,000,000 satoshi. 1 ETH = 10⁹ gwei = 10¹⁸ wei. Micro-transactions and gas math.
+- [Egg Sizes: US Large vs UK Medium vs EU Grades](/learn/egg-sizes-medium-large-xl): US large = 57 g. UK medium = 53-63 g. EU large = 63-73 g. Recipes assuming one grade fail on another.
+- [Flour: Cup Measurements Aren't Weights](/learn/flour-cups-grams-density): 1 cup all-purpose flour = 120-160 g depending on scoop technique. Baking by weight fixes 30% variance.
+- [Grains: From Wheat Kernels to Bullet Weights](/learn/grains-bullets-pharmacy): Bullet weights, arrow-shaft weights and old pharmacy prescriptions are all in grains. Here is the 64.8 mg factor and where it still matters.
+- [Grams, Ounces and Troy Ounces in Jewellery](/learn/grams-ounces-troy-jewellery): Silver and gold are weighed in troy ounces, which are heavier than kitchen ounces. Here is how a 1 oz gold coin actually weighs 31.1 g,…
+- [Baker's Percentage and Bread Hydration](/learn/hydration-baker-percentage): Flour = 100%. Water at 70% hydration = 700 g per 1000 g flour. Levain, salt scale off flour weight.
+- [Why 1 kg is Not Exactly 2.2 lb (and When That Matters)](/learn/kg-to-lb-not-exactly-2-2): The 2.2 shortcut is wrong by 0.05%. Here is where that half-a-gram becomes a real problem, from luggage limits to pharmaceutical dosing.
+- [Metric Tonne, Short Ton, Long Ton: Three Tons](/learn/metric-short-long-ton): A 100-ton crane rated in the US, UK and EU lifts three different weights. Here is the exact difference between metric, short and long tons.
+- [Protein Grams per Pound vs per Kg: Fitness Targets](/learn/protein-grams-per-pound-kg): 0.8 g/lb ≈ 1.76 g/kg. Sports nutrition guidelines quoted both ways — here is how to convert without over/under-dosing.
+- [Salt: Kosher vs Table vs Sea by Volume vs Weight](/learn/salt-kosher-table-sea): 1 tsp table = 6 g. 1 tsp Diamond Crystal kosher = 3 g. Same 'teaspoon', 2× the sodium. Recipe over-salting root cause.
+- [Stones: The British Body-Weight Unit That Refuses to Die](/learn/stones-british-body-weight): British scales still read in stones and pounds. Here is why the stone survived, and how to convert '11 stone 4' to a number that means…
+- [Sugar Weights: Granulated, Brown, Powdered per Cup](/learn/sugar-brown-vs-granulated): 1 cup granulated = 200 g. Brown packed = 220 g. Powdered = 120 g. Same volume, wildly different weights.
+- [Barbell Plates: kg vs lb Loading](/learn/weightlifting-plates-kg-lb): 20 kg bar = 44.09 lb. Adding 45 lb plates ≠ 20 kg plates. Gym conversions cost you PRs.
+- [Yeast: Fresh vs Active Dry vs Instant Conversions](/learn/yeast-fresh-active-instant): 1 g instant = 1.25 g active dry = 3 g fresh. Bread recipes rarely specify — here is the exact ratio.
+
+## Optional
+
+- [Privacy](/privacy): Data and cookie policy.
+- [Terms](/terms): Terms of use.

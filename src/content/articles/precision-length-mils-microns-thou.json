@@ -1,0 +1,47 @@
+{
+  "slug": "precision-length-mils-microns-thou",
+  "title": "Mils, Microns and Thou: Precision Length in Machining",
+  "h1": "Mils, microns and thou: precision length units machinists actually use",
+  "description": "Thousandths of an inch, micrometres, mils and gauge numbers all describe fractions of a millimetre. Here is how machinists switch between them without losing a decimal.",
+  "category": "Length",
+  "readingMinutes": 7,
+  "published": "2026-05-04",
+  "updated": "2026-06-18",
+  "reviewed": "2026-06-18",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Mechanical & manufacturing metrology",
+    "bio": "Our engineering desk maintains conversion factors, tolerance tables and reference material for machinists, tool-and-die shops and precision manufacturing teams."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "checked against NIST SP 811 §B.8 and ISO 286" },
+  "hero": "In a machine shop nobody talks in metres. Everything happens in the last three decimals — and half the world uses one language, half uses another.",
+  "body": [
+    "Walk into a Midwestern job shop and you will hear \"knock five thou off the OD\". Walk into a German prototype shop and the same instruction is \"minus zwölfhundertstel Millimeter\". Both operators are asking for the same 0.127 mm cut. The units differ; the physics does not. This guide covers the four precision length units — thou, mil, micron and micrometre — that engineers actually use for fits, coatings, PCB traces and gauge blocks.",
+    "## The four units, exact",
+    "> 1 thou = 1 mil = 0.001 in = 25.4 µm (exact)\n> 1 µm (micron) = 0.001 mm = 0.0000393701 in\n> 1 tenth (\"one-tenth thou\") = 0.0001 in = 2.54 µm\n> 1 gauge block grade AA tolerance = ±0.05 µm on a 25 mm block",
+    "The word \"mil\" collides with several other units — the NATO angular mil, the Scandinavian mile — but in machining and coatings a mil is always 0.001 inch. \"Thou\" is the same number, more common in the UK aerospace industry. \"Micron\" is deprecated in SI (the correct term is micrometre, µm) but every catalog still uses it, and every technician will always call it a micron.",
+    "## Reading fits and tolerances across systems",
+    "ISO 286 tolerance grades run from IT01 (sub-micron) to IT18 (millimetres). A common shaft-basis running fit like H7/g6 on a 50 mm shaft allows +25 µm on the hole and −9 to −25 µm on the shaft. Translated to inches, that is +0.00098 in on the hole and −0.00035 to −0.00098 in on the shaft — the same 16 µm clearance window, printed in a language US inspectors can read against their gauges.",
+    "### The trap: rounding tolerance bands",
+    "Never round tolerances when translating units. A drawing calling for +0.0005 / −0.0000 in cannot become +0.013 mm / −0.000 mm on the shop floor: the correct number is +0.0127 mm. The 0.0003 mm you lose to rounding is 30% of a modern surface-finish measurement and will burn parts.",
+    "## PCB traces, coatings and adhesive films",
+    "Copper thickness on printed circuit boards is quoted in ounces per square foot, but for design rules that maps to a mil: 1 oz Cu ≈ 1.4 mil = 35 µm. Powder-coat paint is normally 2–4 mil (50–100 µm). Anodising is 5–25 µm. Adhesive tapes are quoted in mil overall thickness. Every one of these numbers converts cleanly through the 25.4 µm/mil constant.",
+    "## Gauge-block precision and the temperature honesty",
+    "A grade K reference gauge block is certified at ±0.30 µm on a 100 mm length — three parts in a million. That precision is only real at 20 °C. Steel expands roughly 11 µm per metre per °C, so working at 23 °C already adds 3.3 µm of length to that 100 mm block. This is why professional metrology labs quote uncertainty budgets in both µm and thermal-drift terms.",
+    "## Worked example — a 0.5 mil interference fit",
+    "A ceramic bushing is spec'd for a 0.5 mil interference on a 12.000 mm steel shaft. Convert: 0.5 mil = 12.7 µm. Target bore diameter = 12.000 − 0.0127 = 11.9873 mm. Working in inches instead, shaft = 0.47244 in, bore = 0.47194 in. Both numbers describe the same press fit and both round differently when you truncate — always keep the interference itself as the exact value.",
+    "## The three-second recap",
+    "Multiply thou by 25.4 to get microns. Divide microns by 25.4 to get thou. Never round tolerance windows during conversion — round the nominal size, not the band. And when someone quotes a drawing tolerance in \"tenths\", they mean tenths of a thou (0.0001 in = 2.54 µm), not tenths of a millimetre."
+  ],
+  "faqs": [
+    { "q": "Are a mil and a millimetre the same?", "a": "No — this is the single most common mistake in engineering communication. A mil is 0.001 inch = 25.4 µm. A millimetre is 1,000 µm — about 40 times larger." },
+    { "q": "How many microns in a thou?", "a": "Exactly 25.4 µm. A thou and a mil are the same unit." },
+    { "q": "What is a 'tenth' in a machine shop?", "a": "One ten-thousandth of an inch (0.0001 in = 2.54 µm). Not to be confused with 0.1 mm, which is 100 µm — nearly 40 times larger." },
+    { "q": "Why is 'micron' still used if SI dropped it?", "a": "SI adopted the name micrometre in 1967, but the older name persisted in optics, coatings, filtration and machining catalogs. Both refer to 10⁻⁶ metre — they are interchangeable in modern usage." }
+  ],
+  "related": [
+    { "label": "mm to inches converter", "href": "/c/length/mm-to-in" },
+    { "label": "inches to mm converter", "href": "/c/length/in-to-mm" },
+    { "label": "µm to mm converter", "href": "/c/length/um-to-mm" }
+  ]
+}

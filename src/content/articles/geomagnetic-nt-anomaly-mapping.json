@@ -1,0 +1,51 @@
+{
+  "slug": "geomagnetic-nt-anomaly-mapping",
+  "title": "Nanotesla: The Units of Geomagnetic Surveys and UXO Detection",
+  "h1": "Nanotesla — geomagnetic anomaly units",
+  "description": "Earth's field averages 50 000 nT. Buried steel objects cause anomalies of tens to hundreds of nT. Magnetometers read to 0.01 nT.",
+  "category": "Magnetism",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "1 nT = 10⁻⁵ Gauss = 10⁻⁹ T. Small numbers — but big enough to map buried pipelines, unexploded ordnance and archaeological features.",
+  "body": [
+    "Geomagnetism lives four decades below MRI physics. The tools are the same (measure B), but the units — nanotesla — reflect signals millions of times smaller than a fridge magnet.",
+    "## The exact factors",
+    "> 1 T = 10⁹ nT\n> Earth's total field: 25 000–65 000 nT depending on latitude\n> Diurnal variation: 20–80 nT\n> Solar storm: hundreds of nT for hours",
+    "## Where each is used",
+    "Nanotesla: geological surveys, archaeological prospection, UXO clearance, borehole logging. Gamma (γ): a legacy CGS unit, 1 γ = 1 nT exactly. Milligauss: sometimes used in older US survey literature (1 mG = 100 nT).",
+    "## Worked example — buried oil drum",
+    "A 200 L steel drum buried 2 m deep creates a magnetic anomaly of ~10–30 nT at the surface. Instrument noise floor is ~0.1 nT, diurnal drift ~5 nT/hr — surveys correct for base-station reference readings to keep signal above noise.",
+    "## Recap",
+    "nT for geomagnetism. Correct for diurnal drift. Same physics as MRI, six orders of magnitude smaller."
+  ],
+  "faqs": [
+    {
+      "q": "Is 'gamma' still used?",
+      "a": "In older survey reports, yes. 1 γ = 1 nT — the switch was purely nomenclature."
+    },
+    {
+      "q": "How sensitive are modern magnetometers?",
+      "a": "Fluxgate ~0.1 nT, proton precession ~0.01 nT, SQUIDs down to femtotesla in shielded rooms."
+    }
+  ],
+  "related": [
+    {
+      "label": "Magnetic flux density converter",
+      "href": "/c/magnetic-flux-density"
+    },
+    {
+      "label": "Tesla and gauss",
+      "href": "/learn/tesla-gauss-magnetic-flux-density"
+    }
+  ]
+}

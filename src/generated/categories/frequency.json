@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Frequency Converter — Convert Hertz and More",
+    "description": "Free frequency converter for 6+ units including Hertz, Kilohertz, Megahertz. Instant, accurate, browser-based.",
+    "h1": "Frequency Converter"
+  },
+  "content": {
+    "intro": "Hertz, kilohertz, megahertz, gigahertz. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 6 frequency units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for frequency in this tool is **Hz**; every conversion routes through it for consistency.",
+    "formula_section": "Most frequency conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Hertz | Hz |\n| Kilohertz | kHz |\n| Megahertz | MHz |\n| Gigahertz | GHz |\n| Terahertz | THz |\n| Revolutions/min | rpm |",
+    "use_cases": "- Photography exposure planning across lumen and lux references.\n- Workspace lighting design to meet ergonomic targets.\n- Display brightness and ambient-light comparisons.\n- Plant-grow lighting setups.\n- Stage and event lighting design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this frequency converter?\n**A:** It uses 6 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Hertz (Hz), Kilohertz (kHz), Megahertz (MHz), Gigahertz (GHz), Terahertz (THz), Revolutions/min (rpm)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Hz to kHz Converter",
+      "href": "/c/frequency/Hz-to-kHz"
+    },
+    {
+      "anchor": "kHz to Hz Converter",
+      "href": "/c/frequency/kHz-to-Hz"
+    },
+    {
+      "anchor": "MHz to GHz Converter",
+      "href": "/c/frequency/MHz-to-GHz"
+    },
+    {
+      "anchor": "GHz to MHz Converter",
+      "href": "/c/frequency/GHz-to-MHz"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "frequency",
+    "canonicalUrl": "https://turbounitconverter.com/c/frequency",
+    "category": "frequency",
+    "pageType": "category",
+    "keywords": [
+      "frequency converter",
+      "convert frequency"
+    ]
+  },
+  "contentHash": "d74012cc48a7"
+}

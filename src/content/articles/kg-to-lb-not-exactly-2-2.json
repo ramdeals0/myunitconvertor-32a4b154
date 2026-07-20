@@ -1,0 +1,37 @@
+{
+  "slug": "kg-to-lb-not-exactly-2-2",
+  "title": "Why 1 kg is Not Exactly 2.2 lb (and When That Matters)",
+  "h1": "Why 1 kg is not exactly 2.2 lb — and when the difference actually bites",
+  "description": "The 2.2 shortcut is wrong by 0.05%. Here is where that half-a-gram becomes a real problem, from luggage limits to pharmaceutical dosing.",
+  "category": "Weight",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "Everyone learned it as \"1 kilo is about two point two pounds.\" That shortcut is wrong by roughly half a gram per kilo — usually harmless, sometimes not.",
+  "body": [
+    "The international pound has been defined as exactly 0.45359237 kilograms since 1959, when the US, UK, Canada, Australia, New Zealand and South Africa signed the International Yard and Pound Agreement. Invert that number and you get the exact factor: 1 kg = 2.20462262184878 lb. The familiar 2.2 shortcut throws away everything after the second decimal, which is a 0.05% error. For weighing a suitcase that is fine. For a lot of other things it is not.",
+    "## Where 0.05% is a problem",
+    "**Airline luggage limits.** A 23 kg checked bag is exactly 50.706 lb. Round down to 50 lb and you are 706 g over the printed limit on a US carrier — enough to trigger the overweight surcharge at check-in. Round up to 51 lb and you are safe.",
+    "**Pharmaceutical dosing by weight.** Paediatric drug doses are prescribed in mg/kg. A 30 kg child dosed at the \"about 2.2 lb per kg\" shortcut instead of the true factor is dosed as if they weighed 30.06 kg — invisible for most drugs, but real for narrow-therapeutic-index medicines. Hospitals use the exact factor for exactly this reason.",
+    "**Freight and postage.** Postal services calculate rates on either kg or lb depending on the country. A 10 kg parcel that gets rounded to 22 lb on a US carrier is charged for 22 lb (9.979 kg) — under-declared by 21 g, which is a problem if you cross a rate band.",
+    "## The exact conversion, three ways",
+    "> 1 kg = 2.20462262184878 lb\n> 1 lb = 0.45359237 kg (exact)\n> 1 kg = 35.27396195 oz",
+    "Everything else follows from the pound. One ounce is 1/16 of a pound, so 1 oz = 28.349523125 g exactly. One stone is 14 lb = 6.35029318 kg exactly. There is no ambiguity in any of these numbers — the definitions have been fixed since 1959.",
+    "## The tricky exceptions",
+    "There are a few pounds that are not the international pound. The **troy pound**, used for precious metals, is 373.2417216 g — about 18% lighter. When a gold bar is quoted at 10 troy pounds, that is 3.732 kg, not 4.536 kg. The **avoirdupois** pound is the one everyone else uses; it is what we mean by \"pound\" throughout our converters unless explicitly labelled otherwise.",
+    "There is also the distinction between **mass and force**. A pound-force (lbf) is the gravitational pull on one pound-mass at standard gravity. Kilograms measure mass; kilograms-force are almost never used any more. On Earth's surface the numeric distinction rarely matters, but in orbital mechanics, propulsion or spring calibration it absolutely does.",
+    "## The five-second version",
+    "For a mental estimate, multiply kilograms by 2.2 and add 10%. For anything that will be printed, weighed, dosed or invoiced, use the exact factor 2.20462262184878. Our converter uses the exact factor, so results you copy from it will match a laboratory scale to at least six significant figures."
+  ],
+  "faqs": [
+    { "q": "What is the exact factor from kg to lb?", "a": "1 kg = 2.20462262184878 lb, derived from the 1959 definition 1 lb = 0.45359237 kg exactly." },
+    { "q": "How much is 70 kg in pounds?", "a": "70 × 2.20462262184878 = 154.324 lb, or about 154 lb 5.2 oz." },
+    { "q": "Is the pound defined the same way in the US and UK?", "a": "Yes. The international avoirdupois pound has been 0.45359237 kg exactly since the 1959 agreement between the US, UK, Canada, Australia, New Zealand and South Africa." },
+    { "q": "What is a troy pound?", "a": "A different unit used only for precious metals. 1 troy pound = 373.2417216 g, so it is about 18% lighter than a normal pound." }
+  ],
+  "related": [
+    { "label": "kg to lb converter", "href": "/c/weight/kg-to-lb" },
+    { "label": "lb to kg converter", "href": "/c/weight/lb-to-kg" },
+    { "label": "g to oz converter", "href": "/c/weight/g-to-oz" }
+  ]
+}

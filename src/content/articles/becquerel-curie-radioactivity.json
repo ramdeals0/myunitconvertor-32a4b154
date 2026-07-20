@@ -1,0 +1,53 @@
+{
+  "slug": "becquerel-curie-radioactivity",
+  "title": "Becquerel vs Curie: Radioactivity Units and Sample Sizes",
+  "h1": "Radioactivity units — becquerel and curie",
+  "description": "1 Ci = 3.7 × 10¹⁰ Bq = 37 GBq. Medical isotopes in MBq to GBq; environmental samples in Bq; regulatory limits mix both.",
+  "category": "Radiation activity",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Bq is one decay per second. Ci is 3.7 × 10¹⁰ of them. Twelve orders of magnitude, one unit conversion.",
+  "body": [
+    "Activity measures the rate of nuclear decays. The SI unit (becquerel) is trivially small — one decay per second — so real sources are always quoted in prefixed forms (kBq, MBq, GBq) or in the legacy curie.",
+    "## The exact factors",
+    "> 1 Bq = 1 decay per second\n> 1 Ci = 3.7 × 10¹⁰ Bq = 37 GBq (defined by original radium standard)\n> 1 mCi = 37 MBq; 1 µCi = 37 kBq",
+    "## Where each dominates",
+    "Bq: environmental measurements, food safety limits, radon in air. kBq/MBq: laboratory tracers. GBq: nuclear medicine doses, industrial radiography sources. Ci: US regulatory language, older US medical literature. TBq/kCi: reactor inventories.",
+    "## Typical values",
+    "Banana ⁴⁰K activity: ~15 Bq. Radon action level (EPA): 148 Bq/m³ = 4 pCi/L. Bone scan dose: 800 MBq ⁹⁹ᵐTc. Cs-137 sealed source (calibration): 10–100 MBq.",
+    "## Worked example — bone scan preparation",
+    "Prescription: 20 mCi ⁹⁹ᵐTc-MDP. Equivalent 740 MBq. The dose calibrator reads in mCi; the modern regulatory paperwork wants MBq. Miss the 37× factor and you either dispense 27 mCi (30× overdose in old units — but actually right in MBq) or underdose by the same factor. Real errors traced to this exact conversion have reached patients.",
+    "## Recap",
+    "1 Ci = 37 GBq. Modern practice is Bq; US clinical still runs on mCi/µCi."
+  ],
+  "faqs": [
+    {
+      "q": "Is activity the same as dose?",
+      "a": "No — activity is decays per second; dose is energy per kg received by tissue. Both matter separately."
+    },
+    {
+      "q": "Why 3.7 × 10¹⁰?",
+      "a": "Historically defined as the activity of 1 g of radium-226. Later redefined as an exact number but retained the same value."
+    }
+  ],
+  "related": [
+    {
+      "label": "Radiation activity converter",
+      "href": "/c/radiation-activity"
+    },
+    {
+      "label": "Curie and becquerel",
+      "href": "/learn/curie-becquerel-radiation"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "temperature-interval-vs-point",
+  "title": "Temperature Interval vs Point: Why 1 °C ≠ 1 °F Ever",
+  "h1": "Temperature interval vs point — the HVAC unit bug that misconfigures PID loops",
+  "description": "A 1 °C interval always equals 1.8 °F, no 32° offset. Confusing intervals with points is the most common HVAC and process-control unit error.",
+  "category": "Temperature",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "1 °C interval = 1.8 °F interval. But 1 °C point = 33.8 °F. Get them backwards and a 6 °C chiller ΔT becomes a nonsense 42.8 °F swing.",
+  "body": [
+    "Interval and point temperatures look identical on paper but obey different arithmetic. A point is a location on the scale; an interval is a distance between two points. Only the interval survives conversion cleanly by the ratio of degree sizes.",
+    "## The exact factors for intervals",
+    "> 1 K = 1 °C = 1.8 °F = 1.8 °R\n> 5 °C interval = 9 °F interval (never 41 °F)",
+    "## Where it breaks in practice",
+    "Chiller ΔT specs, thermostat deadbands, PID proportional bands, heat-exchanger approach temperatures, thermocouple accuracy tolerances (±2.2 °C). Every one of these is an interval — plugging a spec sheet's '±2.2 °C' into a UI expecting Fahrenheit points and you have quietly recalibrated the deadband by 30 °F.",
+    "## Worked example — cooling tower approach",
+    "A tower designed with a 5 °C approach at 25 °C wet-bulb targets a 30 °C water outlet. Convert the approach as a point (41 °F) and the target becomes 118 °F — nonsense. Convert as an interval (9 °F) and the true 86 °F outlet drops out.",
+    "## Recap",
+    "Intervals scale linearly by degree ratio. Points need the offset. When in doubt: ask if the number represents a difference between two temperatures, or a temperature by itself."
+  ],
+  "faqs": [
+    {
+      "q": "Do controllers use interval or point?",
+      "a": "Setpoint is a point. Deadband, proportional band, hysteresis, and rate limits are intervals."
+    },
+    {
+      "q": "Is Rankine an interval or point scale?",
+      "a": "Rankine is an absolute point scale like Kelvin. But 1 °R interval = 1 °F interval — the degree size is the same as Fahrenheit."
+    }
+  ],
+  "related": [
+    {
+      "label": "Temperature interval converter",
+      "href": "/c/temperature-interval"
+    },
+    {
+      "label": "Temperature converter",
+      "href": "/c/temperature"
+    },
+    {
+      "label": "Celsius vs Fahrenheit deltas",
+      "href": "/learn/celsius-fahrenheit-deltas-vs-points"
+    }
+  ]
+}

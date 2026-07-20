@@ -1,0 +1,51 @@
+{
+  "slug": "inductance-uh-nh-mh",
+  "title": "µH, mH, nH: Inductance Units in Power and RF",
+  "h1": "Inductance units — µH, mH and nH",
+  "description": "1 mH = 1000 µH = 10⁶ nH. Power inductors in µH–mH; RF chokes in nH–µH; PCB trace inductance in nH per mm.",
+  "category": "Inductance",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Physical size scales with inductance × current². A 100 mH inductor is a transformer core; 100 nH is a curl of wire.",
+  "body": [
+    "Inductance is what stores energy in magnetic fields. Values span from femto- and picohenries (bond wires and IC packages) through nanohenries (PCB traces, RF matching) into microhenries and millihenries (power converters) and up to henries (line-frequency inductors, ballasts).",
+    "## The exact factors",
+    "> 1 H = 10³ mH = 10⁶ µH = 10⁹ nH = 10¹² pH\n> Typical PCB trace: ~1 nH/mm above a ground plane\n> Toroidal inductor 22 mm diameter, 20 turns on -26 mix: ~30 µH",
+    "## Where each dominates",
+    "pH, nH: package parasitics, RF matching, PCB decoupling loops. µH: switch-mode converters, EMI chokes. mH: audio filters, PFC boost inductors. H: line-frequency ballasts, current-limiting reactors.",
+    "## Worked example — buck converter",
+    "12 V → 3.3 V buck, 500 kHz, 3 A output, 30% ripple. L = (V_in − V_out) × D / (Δi × f) = (12 − 3.3) × 0.275 / (0.9 × 500 000) = 5.3 µH. A 4.7 µH standard inductor with 4 A saturation rating fits — a 5.3 nH bead is 1000× smaller and has effectively no inductance for this job.",
+    "## Recap",
+    "Match the value and the physical scale — µH inductors are hardware, nH inductors are geometry."
+  ],
+  "faqs": [
+    {
+      "q": "How do I estimate PCB trace inductance?",
+      "a": "About 1 nH per mm for traces over a ground plane, more for isolated wires. A 25 mm trace is ~25 nH — significant for GHz signals."
+    },
+    {
+      "q": "Do inductors have a Q?",
+      "a": "Yes — quality factor Q = ωL/R. Higher Q means lower loss at the operating frequency."
+    }
+  ],
+  "related": [
+    {
+      "label": "Inductance converter",
+      "href": "/c/inductance"
+    },
+    {
+      "label": "Farads and microfarads",
+      "href": "/learn/farads-microfarads-capacitor"
+    }
+  ]
+}

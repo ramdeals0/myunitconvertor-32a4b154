@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Electric Conductivity Converter — Convert Siemens/meter and More",
+    "description": "Free electric conductivity converter for 3+ units including Siemens/meter, Siemens/centimeter, Millisiemens/meter. Instant, accurate, browser-based.",
+    "h1": "Electric Conductivity Converter"
+  },
+  "content": {
+    "intro": "S/m, S/cm. Convert between 3 electric conductivity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for electric conductivity in this tool is **Sm**; every conversion routes through it for consistency.",
+    "formula_section": "Most electric conductivity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Siemens/meter | S/m |\n| Siemens/centimeter | S/cm |\n| Millisiemens/meter | mS/m |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this electric conductivity converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Siemens/meter (S/m), Siemens/centimeter (S/cm), Millisiemens/meter (mS/m)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Siemens/meter to Siemens/centimeter",
+      "href": "/c/electric-conductivity/sm-to-scm"
+    },
+    {
+      "anchor": "Siemens/centimeter to Siemens/meter",
+      "href": "/c/electric-conductivity/scm-to-sm"
+    },
+    {
+      "anchor": "Millisiemens/meter to Siemens/meter",
+      "href": "/c/electric-conductivity/msm-to-sm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "electric-conductivity",
+    "canonicalUrl": "https://turbounitconverter.com/c/electric-conductivity",
+    "category": "electric-conductivity",
+    "pageType": "category",
+    "keywords": [
+      "electric conductivity converter",
+      "convert electric conductivity"
+    ]
+  },
+  "contentHash": "dc39ebd4ffbd"
+}

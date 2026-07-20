@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Surface Tension Converter — Convert Newton/meter and More",
+    "description": "Free surface tension converter for 4+ units including Newton/meter, Millinewton/meter, Dyne/centimeter. Instant, accurate, browser-based.",
+    "h1": "Surface Tension Converter"
+  },
+  "content": {
+    "intro": "N/m, dyn/cm, lbf/in. Convert between 4 surface tension units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for surface tension in this tool is **Nm**; every conversion routes through it for consistency.",
+    "formula_section": "Most surface tension conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Newton/meter | N/m |\n| Millinewton/meter | mN/m |\n| Dyne/centimeter | dyn/cm |\n| Pound-force/inch | lbf/in |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this surface tension converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Newton/meter (N/m), Millinewton/meter (mN/m), Dyne/centimeter (dyn/cm), Pound-force/inch (lbf/in)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Newton/meter to Millinewton/meter",
+      "href": "/c/surface-tension/nm-to-mnm"
+    },
+    {
+      "anchor": "Millinewton/meter to Newton/meter",
+      "href": "/c/surface-tension/mnm-to-nm"
+    },
+    {
+      "anchor": "Dyne/centimeter to Newton/meter",
+      "href": "/c/surface-tension/dyncm-to-nm"
+    },
+    {
+      "anchor": "Pound-force/inch to Newton/meter",
+      "href": "/c/surface-tension/lbfin-to-nm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "surface-tension",
+    "canonicalUrl": "https://turbounitconverter.com/c/surface-tension",
+    "category": "surface-tension",
+    "pageType": "category",
+    "keywords": [
+      "surface tension converter",
+      "convert surface tension"
+    ]
+  },
+  "contentHash": "03f363b20810"
+}

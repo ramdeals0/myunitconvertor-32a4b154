@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "ft to in — Convert Foot to Inch | Turbo Unit Converter",
+    "description": "Convert Foot (ft) to Inch (in) instantly. 1 ft = 12 in. Free, accurate, engineering-grade precision.",
+    "h1": "ft to in Converter"
+  },
+  "content": {
+    "intro": "Convert feet (ft) to inches (in) instantly. Both measure length, so the relationship is strictly linear: each foot equals 12 inches. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One foot is equal to **12 inches**. To go the other way, one inch equals **0.083333333 feet**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> inches = feet × 12\n\nWorked example — converting 10 feet:\n\n10 × 12 = **120 in**.\n\nTo invert, divide by 12 (or multiply by 0.083333333).",
+    "conversion_table": "| feet | inches |\n| --- | --- |\n| 1 ft | 12 in |\n| 2 ft | 24 in |\n| 5 ft | 60 in |\n| 10 ft | 120 in |\n| 25 ft | 300 in |\n| 50 ft | 600 in |\n| 100 ft | 1200 in |\n| 250 ft | 3000 in |\n| 500 ft | 6000 in |\n| 1000 ft | 12000 in |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ft ≈ 12 in. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Foot and Inch both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many inches are in 1 foot?\n**A:** 12 inches.\n\n**Q:** What's the formula to convert ft to in?\n**A:** inches = feet × 12.\n\n**Q:** How do I convert in back to ft?\n**A:** Multiply by 0.083333333 (or divide by 12).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ft to in converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Inch to Foot converter",
+      "href": "/c/length/in-to-ft"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ft-to-in",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/ft-to-in",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "foot to inch",
+      "ft to in",
+      "convert foot to inch",
+      "how many inch in a foot",
+      "foot in inch",
+      "ft to in converter",
+      "foot vs inch",
+      "foot to inch formula",
+      "foot to inch calculator"
+    ]
+  },
+  "contentHash": "1ca7fbc832f1"
+}

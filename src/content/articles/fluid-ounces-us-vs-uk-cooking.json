@@ -1,0 +1,51 @@
+{
+  "slug": "fluid-ounces-us-vs-uk-cooking",
+  "title": "US vs UK Fluid Ounces: Why Recipe Conversions Silently Fail",
+  "h1": "US vs UK fluid ounces — the recipe conversion trap",
+  "description": "1 US fl oz = 29.57 mL. 1 UK (Imperial) fl oz = 28.41 mL. Close, but pint sizes diverge 20%. Recipes assume one system.",
+  "category": "Volume",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "US fluid ounce is 4% larger than UK's. But a US pint is 16 fl oz; a UK pint is 20 fl oz. So US pint (473 mL) is 20% smaller than UK pint (568 mL).",
+  "body": [
+    "The single most confusing everyday unit family in English measures. US and UK fluid ounces are close in size, but the numbers of ounces in higher units differ, producing a 20% divergence in pints, quarts and gallons.",
+    "## The exact factors",
+    "> 1 US fl oz = 29.5735 mL\n> 1 UK (Imperial) fl oz = 28.4131 mL\n> 1 US pint = 16 US fl oz = 473.176 mL\n> 1 UK pint = 20 UK fl oz = 568.261 mL\n> 1 US gal = 3.785 L; 1 UK gal = 4.546 L (20% larger)",
+    "## Where the error appears",
+    "Cocktail recipes (US convention). Beer serving sizes (UK pint on tap in UK, US pint elsewhere). Auto fluid capacities in older UK spec sheets. Baking recipes crossing the Atlantic.",
+    "## Worked example — baking scale-up",
+    "US recipe: 2 cups milk = 16 fl oz = 473 mL. UK cook reads '16 fl oz' and pours 16 Imperial fl oz = 455 mL. Off by 4% — enough to shift batter viscosity on a delicate recipe. Doubled to 1 gallon, the error is 761 mL — the difference between filling a jug and overflowing.",
+    "## Recap",
+    "US fl oz ≈ UK fl oz. But everything above (pint, quart, gallon) diverges 20% because the unit ratios differ."
+  ],
+  "faqs": [
+    {
+      "q": "Which system does a 'cup' use?",
+      "a": "US 'cup' = 8 US fl oz = 237 mL. Metric 'cup' = 250 mL. UK 'cup' historically 10 UK fl oz = 284 mL (rarely used in modern UK recipes)."
+    },
+    {
+      "q": "Are UK litres and US litres the same?",
+      "a": "Yes — the litre is universal (1 L = 1000 mL exactly)."
+    }
+  ],
+  "related": [
+    {
+      "label": "Volume converter",
+      "href": "/c/volume"
+    },
+    {
+      "label": "Fluid ounces US vs Imperial",
+      "href": "/learn/fluid-ounces-us-vs-imperial"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "kgm3-gcm3-api-gravity",
+  "title": "kg/m³, g/cm³ and API Gravity: Density Across Disciplines",
+  "h1": "kg/m³, g/cm³ and API gravity — density in the language of every discipline",
+  "description": "Water is 1,000 kg/m³, or 1 g/cm³, or 10 °API… almost. Here is how physics, chemistry and petroleum engineering describe the same property in three incompatible dialects.",
+  "category": "Density",
+  "readingMinutes": 6,
+  "published": "2026-05-30",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Fluid properties & petrochemical reference",
+    "bio": "Reference material for chemists, petroleum engineers, brewers, jewellers and anyone who has ever tried to reconcile a density spec across two industries."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "cross-checked against NIST WebBook and API MPMS Chapter 11.1" },
+  "hero": "Density is one property with three unit systems, an inverted petroleum scale, and a well-known reference — water — that is not actually as stable as the textbook says.",
+  "body": [
+    "Density looks like a simple ratio: mass over volume. It is. But the unit systems in daily use disagree by factors of 1,000, one of them is inverted, and the reference substance (water) shifts by tenths of a percent with temperature. This article covers the four density conventions engineers see most — kg/m³, g/cm³, lb/ft³ and °API — plus the specific-gravity shortcut that ties them together.",
+    "## The exact factors",
+    "> 1 g/cm³ = 1,000 kg/m³ = 1 kg/L (exact)\n> 1 lb/ft³ = 16.0184633739 kg/m³\n> 1 lb/in³ = 27,679.9047102 kg/m³\n> Water at 4 °C = 999.972 kg/m³ (usually rounded to 1,000)\n> API gravity: SG = 141.5 / (131.5 + °API); density = SG × 999.012 kg/m³ at 60 °F",
+    "SI writes density in kg/m³. Chemistry writes in g/cm³ (or g/mL) because typical laboratory samples land in the 0.5–20 g/cm³ range where the numbers are readable. Convert either way with a factor of 1,000. The lb/ft³ used in US structural and geotechnical work runs from about 40 (softwood) to 490 (steel) — the mid-range is close to human intuition, which is why it survived.",
+    "## Specific gravity — the dimensionless shortcut",
+    "Specific gravity (SG) is a substance's density divided by water's density, at a specified reference temperature. Because water is very close to 1,000 kg/m³, the SG number is numerically identical to density in g/cm³. Engine oil at SG 0.86 is 860 kg/m³ or 0.86 g/cm³. This makes SG a convenient 'universal density' for hydrometers, refractometers and quick lab checks. Watch the reference temperature: SG measured at 15/15 °C is different from SG at 20/4 °C by up to 0.3%.",
+    "## API gravity — the petroleum inversion",
+    "The American Petroleum Institute measures crude oil on an inverted scale that runs higher for lighter fluids. Water is 10 °API by definition; a light sweet crude might be 40 °API (SG 0.825, 823 kg/m³); heavy Venezuelan crude might be 8 °API (SG 1.014, denser than water). The inversion made hydrometer readings easier for 19th-century oil-field workers, and no one has ever managed to retire it. Convert with SG = 141.5 / (131.5 + °API).",
+    "### Temperature correction is not optional in petroleum",
+    "Petroleum densities are quoted at 60 °F (15.56 °C) in the US and 15 °C in the EU — different reference temperatures by 0.56 °C, which shifts crude density by about 0.5 kg/m³. Custody-transfer accuracy for crude oil is 0.1 kg/m³, so the reference temperature is always specified and correction tables (API MPMS 11.1) are always applied. The three-digit density on the invoice is the corrected number, not the raw hydrometer reading.",
+    "## Brix, Baumé and Plato — density in food and drink",
+    "Brewers use degrees Plato (°P) or specific gravity to track fermentation. Wort at 12 °P has an SG of about 1.048 and a density of 1,048 kg/m³. Winemakers use degrees Baumé for sugar content. Bottled water and beverage industries use degrees Brix for sugar concentration (1 °Bx = 1 g sucrose per 100 g solution, which correlates to SG through a well-tabulated relationship). All of these are density measurements dressed as concentration units.",
+    "## Worked example — an industrial coolant",
+    "A propylene-glycol coolant is spec'd at 1,038 kg/m³ at 25 °C. In g/cm³ that is 1.038. In lb/ft³ it is 1,038 ÷ 16.018 = 64.8 lb/ft³. SG = 1.038 / 0.99700 (water at 25 °C) = 1.041. Every downstream calculation — pump head, heat capacity, freeze point — needs a consistent density figure at the operating temperature, which is why coolant datasheets always publish a density-versus-temperature curve.",
+    "## The five-second recap",
+    "1 g/cm³ = 1,000 kg/m³. 1 lb/ft³ ≈ 16.02 kg/m³. Specific gravity ≈ density in g/cm³ for anything measured near room temperature. API gravity is inverted — higher numbers mean lighter fluids. And always cite the reference temperature for anything above lab-bench precision."
+  ],
+  "faqs": [
+    { "q": "How many kg/m³ in 1 g/cm³?", "a": "Exactly 1,000. This is one of the cleanest conversions in the SI: 1 g/cm³ = 1 kg/L = 1,000 kg/m³." },
+    { "q": "What is the density of pure water?", "a": "999.972 kg/m³ at 4 °C (maximum density); 999.10 kg/m³ at 15 °C; 997.05 kg/m³ at 25 °C. Practical work rounds to 1,000 kg/m³, at the cost of about 0.3% error at room temperature." },
+    { "q": "Is API gravity a density?", "a": "Yes — API gravity is a rescaled inverse of specific gravity, invented so lighter petroleum products get higher numbers. The formula SG = 141.5 / (131.5 + °API) converts it back to a normal density." },
+    { "q": "Why do brewers use degrees Plato instead of SG?", "a": "Both work; Plato is roughly the percentage of sucrose by mass that would produce the same specific gravity. Some brewers find that mental model easier for tracking fermentation than four-decimal SG numbers." }
+  ],
+  "related": [
+    { "label": "kg/m³ to g/cm³ converter", "href": "/c/density/kgm3-to-gcm3" },
+    { "label": "lb/ft³ to kg/m³ converter", "href": "/c/density/lbft3-to-kgm3" },
+    { "label": "g/cm³ to lb/ft³ converter", "href": "/c/density/gcm3-to-lbft3" }
+  ]
+}

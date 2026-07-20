@@ -1,0 +1,37 @@
+{
+  "slug": "grams-ounces-troy-jewellery",
+  "title": "Grams, Ounces and Troy Ounces in Jewellery",
+  "h1": "Grams, ounces and troy ounces — the precious-metal weight trap",
+  "description": "Silver and gold are weighed in troy ounces, which are heavier than kitchen ounces. Here is how a 1 oz gold coin actually weighs 31.1 g, not 28.3 g.",
+  "category": "Weight",
+  "readingMinutes": 5,
+  "published": "2026-06-15",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Precious metals metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against LBMA Good Delivery specification" },
+  "hero": "An avoirdupois ounce is 28.35 g. A troy ounce is 31.10 g. Precious metals use troy — and the 10% gap has funded generations of shady dealers.",
+  "body": [
+    "Two ounces coexist in modern commerce. The avoirdupois ounce weighs your groceries, your baby and your postage. The troy ounce weighs your silver spoons and gold coins. They are not interchangeable, and the difference is exactly the margin a dishonest buyer needs to underpay by 10% on a bullion trade.",
+    "## The exact factors",
+    "> 1 avoirdupois oz = 28.349523125 g (exact)\n> 1 troy oz (ozt) = 31.1034768 g (exact)\n> 1 troy oz = 1.09714 avoirdupois oz\n> 1 troy pound = 12 troy oz = 373.24 g (not 16 troy oz — troy pounds have 12 ounces)",
+    "## Why two ounces",
+    "The avoirdupois system was designed for bulk commodities and standardised in England in 1959. The troy system, named after Troyes in France, was the medieval money weight — kept for precious metals because refined-metal accounting predated the avoirdupois system. Every LBMA gold bar today is weighed in troy ounces to the second decimal.",
+    "## Worked example — a 1 oz gold Krugerrand",
+    "A Krugerrand is 'one troy ounce of fine gold' — 31.1035 g of pure gold. But the coin itself weighs 33.93 g because it is alloyed with 8.33% copper for durability. Buyers pay by the gold content (troy ounce), not the coin's total weight. Confusing the two is the classic beginner mistake.",
+    "## Silver flatware and hallmarks",
+    "US sterling silver is 92.5% pure. A 100 g silverware set contains 92.5 g = 2.975 troy oz of silver. UK antique silver is often stamped with the weight in troy ounces and pennyweights (dwt) — 1 dwt = 1/20 troy oz = 1.555 g.",
+    "## The five-second recap",
+    "Precious metals: troy ounces (31.10 g). Everything else: avoirdupois (28.35 g). Never let a dealer weigh your gold on a kitchen scale."
+  ],
+  "faqs": [
+    { "q": "How many grams in a gold sovereign?", "a": "7.98805 g total weight, containing 7.322 g (0.2354 troy oz) of pure gold." },
+    { "q": "What is a pennyweight?", "a": "20 pennyweights (dwt) = 1 troy oz. So 1 dwt = 1.555 g. Still used in jewellery." },
+    { "q": "Are diamonds weighed in troy ounces?", "a": "No — diamonds and gemstones use carats. 1 carat = 0.2 g exactly." }
+  ],
+  "related": [
+    { "label": "troy oz to g converter", "href": "/c/weight/ozt-to-g" },
+    { "label": "oz to g converter", "href": "/c/weight/oz-to-g" },
+    { "label": "carat to g converter", "href": "/c/weight/ct-to-g" }
+  ]
+}

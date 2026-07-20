@@ -1,0 +1,47 @@
+{
+  "slug": "tesla-gauss-magnetic-flux-density",
+  "title": "Tesla and Gauss: The 10,000-to-1 Split in Magnetism",
+  "h1": "Tesla and gauss — the 10,000-to-1 split that still divides magnetism",
+  "description": "One tesla equals 10,000 gauss. Simple arithmetic; deep history. How SI and CGS diverged in magnetism and why MRI, geophysics and hard-drive engineering still use different units.",
+  "category": "Magnetism",
+  "readingMinutes": 6,
+  "published": "2026-06-06",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Electromagnetics reference",
+    "bio": "Reference material for physicists, MRI engineers, materials scientists and geophysicists working between SI and CGS-Gaussian magnetic units."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8 and IEC 80000-6" },
+  "hero": "A refrigerator magnet is about 5 milliteslas. Earth's field is 50 microteslas. An MRI is 3 teslas. In gauss all of those numbers change by a factor of 10,000 — but not by any physics.",
+  "body": [
+    "Magnetism is the last redoubt of the CGS-Gaussian system in professional science. Physics undergraduates learn tesla and weber; astrophysics papers still print gauss and maxwell; MRI machines are spec'd in tesla; geomagnetic maps show nanotesla; hard-drive coercivity is still often quoted in oersteds. This is the reference to bridge them cleanly.",
+    "## The four exact factors",
+    "> 1 T (tesla) = 10,000 G (gauss) — magnetic flux density (B)\n> 1 Wb (weber) = 10⁸ Mx (maxwell) — magnetic flux (Φ)\n> 1 A/m = 4π/1000 Oe ≈ 0.01257 Oe — magnetic field strength (H)\n> 1 A·turn = 4π/10 gilbert ≈ 1.257 Gb — magnetomotive force",
+    "The 10,000-to-1 factor is not arbitrary. It comes from the CGS-Gaussian system using centimetres, grams and seconds where SI uses metres, kilograms and seconds. Because B has units of kg / (A·s²), the metre-to-centimetre change in the underlying length scales through to the compound unit as a factor of 10⁴. There is nothing physical about the split — it is a bookkeeping consequence of picking a different base length.",
+    "## B vs H — the distinction that survives every unit system",
+    "**B (magnetic flux density)** is what a Hall sensor or MRI coil actually measures. Units: tesla, gauss. **H (magnetic field strength)** is the applied field, related to B through B = μ₀(H + M) in SI. Units: A/m, oersted. In vacuum, 1 T of B corresponds to about 795,775 A/m of H (that is 1/μ₀). Confusing them is easy in casual conversation and impossible in materials science, where every hysteresis loop is drawn with H on one axis and B on the other.",
+    "## Common field strengths, for calibration",
+    "Earth's surface field: 25–65 µT (0.25–0.65 G) depending on latitude. Refrigerator magnet: 5 mT (50 G). Neodymium magnet at the pole face: 0.5–1.4 T (5,000–14,000 G). Clinical MRI: 1.5–3 T; research MRI: 7–11.7 T. NMR spectrometers: up to 28.2 T (1.2 GHz proton frequency). The strongest continuous laboratory magnets exceed 45 T; pulsed magnets briefly reach ~100 T. Neutron star surface: 10⁸ T (10¹² G).",
+    "## Where each unit still dominates",
+    "**Tesla** — MRI, engineering, physics education, superconductor spec sheets. **Gauss** — legacy geophysics, older astrophysics papers, permanent magnet datasheets from the pre-2000 era, EMC survey meters. **Nanotesla and gamma** — geomagnetic anomaly maps (1 γ = 1 nT). **Oersted** — magnetic hard-drive media coercivity, older permanent-magnet catalogs. **Maxwell** — flux through a coil in older transformer literature; still occasionally taught in electrical engineering programmes.",
+    "## The megahertz-per-tesla shortcut",
+    "In NMR spectroscopy the gyromagnetic ratio of the proton means that in a field of B teslas, the Larmor frequency is 42.577 × B MHz. A 1.5 T MRI produces a proton signal at 63.87 MHz; a 3 T MRI at 127.7 MHz; a 900 MHz NMR spectrometer runs at 21.14 T. Any spec that quotes MRI or NMR machines by frequency is implicitly quoting field strength, and vice versa.",
+    "## Worked example — a hard-drive write field",
+    "A perpendicular-recording hard-drive write head produces a peak field of about 24,000 Oe at the recording layer. Convert to A/m: 24,000 × 79.577 ≈ 1.91 × 10⁶ A/m. In the recording layer (assume μ_r ≈ 1), the corresponding B is μ₀ × H = 4π × 10⁻⁷ × 1.91 × 10⁶ = 2.4 T. Cross-check: 24,000 Oe → 2.4 T uses the fact that in CGS-Gaussian B and H have the same numerical value in vacuum (1 G B ↔ 1 Oe H), and 24,000 G = 2.4 T. Both routes give the same physical field.",
+    "## The five-second recap",
+    "Tesla for modern SI. Gauss for legacy and astrophysics. Divide gauss by 10,000 to get tesla. Divide A/m by 79.577 to get oersted (or multiply oersted by 79.577 to get A/m). And if a paper mixes B (tesla, gauss) and H (A/m, oersted) without saying which is which, treat the whole thing as suspect until you have identified each variable."
+  ],
+  "faqs": [
+    { "q": "How many gauss in a tesla?", "a": "Exactly 10,000. This is a fixed SI/CGS-Gaussian conversion, not a measured value." },
+    { "q": "What is Earth's magnetic field in tesla?", "a": "25–65 µT at the surface — weakest near the equator, strongest near the poles. Aviation and marine charts still often print it as 0.25–0.65 gauss." },
+    { "q": "Is tesla an SI base unit?", "a": "No — the tesla is a derived unit: 1 T = 1 kg / (A·s²) = 1 V·s/m². The base units involved are the kilogram, ampere and second." },
+    { "q": "Why do MRI machines quote field strength in tesla?", "a": "Because signal strength scales roughly linearly with B, and every clinical guideline and safety limit (FDA, IEC 60601-2-33) is written in tesla. Moving to gauss would multiply every number by 10,000 with no clinical benefit." }
+  ],
+  "related": [
+    { "label": "Tesla to gauss converter", "href": "/c/magnetic-flux-density/t-to-g" },
+    { "label": "Weber to maxwell converter", "href": "/c/magnetic-flux/wb-to-mx" },
+    { "label": "A/m to oersted converter", "href": "/c/magnetic-field-strength/am-to-oe" }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "current-density-a-cm2",
+  "title": "Current Density: A/cm², A/mm² and A/in²",
+  "h1": "Current density units — A/cm², A/mm² and A/in²",
+  "description": "1 A/mm² = 100 A/cm² = 645 A/in². PCB traces run 20 A/mm². Motor windings hit 5 A/mm² continuous, 15 A/mm² short-term.",
+  "category": "Surface current density",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Current density sets the temperature rise. Miss the unit and copper melts.",
+  "body": [
+    "Current density (A per unit area) is what actually heats a conductor. Different disciplines use different area units, and the factors are not friendly numbers.",
+    "## The exact factors",
+    "> 1 A/mm² = 100 A/cm² = 10⁶ A/m² = 645.16 A/in²\n> 1 A/cm² = 6.452 A/in²\n> 1 A/in² = 0.00155 A/mm²",
+    "## Typical safe values",
+    "Copper wire in still air (residential): 3–5 A/mm². Copper wire in cable trays: 2–3 A/mm². Motor windings (Class F, continuous): 4–6 A/mm². PCB internal trace: 20 A/mm² for short lengths. Electroplating cathodes: 0.01–0.1 A/cm².",
+    "## Worked example — motor rewind",
+    "A rewind spec says 5 A/mm² for continuous duty. A 100 A motor needs 20 mm² of copper — 4 mm × 5 mm strap, or 26 turns of AWG 6 magnet wire. Miscopy the spec as 5 A/cm² and you install 2000 mm² of copper — 100× oversized, physically impossible.",
+    "## Recap",
+    "A/mm² and A/cm² differ by 100. Match the unit on the datasheet."
+  ],
+  "faqs": [
+    {
+      "q": "What determines safe current density?",
+      "a": "Temperature rise. Insulation class, cooling, and duty cycle all shift the limit."
+    },
+    {
+      "q": "Is bus-bar current density different?",
+      "a": "Yes — solid bar dissipates heat over larger surface area. Typical values 1.5–3 A/mm² for continuous."
+    }
+  ],
+  "related": [
+    {
+      "label": "Surface current density converter",
+      "href": "/c/surface-current-density"
+    },
+    {
+      "label": "Current converter",
+      "href": "/c/current"
+    }
+  ]
+}

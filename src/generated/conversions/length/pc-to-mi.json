@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "pc to mi Converter — Parsec to Mile",
+    "description": "Convert Parsec (pc) to Mile (mi) instantly. 1 pc = 1.917365e+13 mi. Free, accurate, browser-based.",
+    "h1": "Parsec to Mile Converter"
+  },
+  "content": {
+    "intro": "Convert parsecs (pc) to miles (mi) instantly. Both measure length, so the relationship is strictly linear: each parsec equals 1.917365e+13 miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One parsec is equal to **1.917365e+13 miles**. To go the other way, one mile equals **5.215491e-14 parsecs**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> miles = parsecs × 1.917365e+13\n\nWorked example — converting 10 parsecs:\n\n10 × 1.917365e+13 = **1.917365e+14 mi**.\n\nTo invert, divide by 1.917365e+13 (or multiply by 5.215491e-14).",
+    "conversion_table": "| parsecs | miles |\n| --- | --- |\n| 1 pc | 1.917365e+13 mi |\n| 2 pc | 3.834730e+13 mi |\n| 5 pc | 9.586825e+13 mi |\n| 10 pc | 1.917365e+14 mi |\n| 25 pc | 4.793413e+14 mi |\n| 50 pc | 9.586825e+14 mi |\n| 100 pc | 1.917365e+15 mi |\n| 250 pc | 4.793413e+15 mi |\n| 500 pc | 9.586825e+15 mi |\n| 1000 pc | 1.917365e+16 mi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 pc ≈ 1.917365e+13 mi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Parsec and Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many miles are in 1 parsec?\n**A:** 1.917365e+13 miles.\n\n**Q:** What's the formula to convert pc to mi?\n**A:** miles = parsecs × 1.917365e+13.\n\n**Q:** How do I convert mi back to pc?\n**A:** Multiply by 5.215491e-14 (or divide by 1.917365e+13).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this pc to mi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Mile to Parsec converter",
+      "href": "/c/length/mi-to-pc"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "pc-to-mi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/pc-to-mi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "parsec to mile",
+      "pc to mi",
+      "convert pc to mi"
+    ]
+  },
+  "contentHash": "b746c58af993"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "running-pace-min-per-km-mile",
+  "title": "Running Pace: min/km vs min/mile — Full Conversion Table",
+  "h1": "Running pace — min/km vs min/mile and the 1.609 factor",
+  "description": "5:00/km = 8:03/mile. Convert training pace, race splits and marathon targets between km and mile with the exact 1.609344 factor.",
+  "category": "Speed",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-13",
+  "reviewed": "2026-07-13",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied metrology & sports science" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against BIPM SI Brochure, IAAF/World Athletics course measurement rules and Daniels' Running Formula (3rd ed.)" },
+  "hero": "A 5:00/km pace is 8:03/mile — the mile is 1.609344 km, so pace-per-mile is always slower-looking by that same factor. Get the mapping wrong at marathon distance and a 3:30 goal quietly becomes a 3:35 finish.",
+  "body": [
+    "Pace is time per distance, so the conversion is the inverse of the distance factor. 1 mile = 1.609344 km exactly (defined by the international yard and pound agreement of 1959, adopted by NIST SP 811). To convert min/km to min/mile, multiply by 1.609344. To convert the other way, divide. That is it — every pace chart in every running book uses this one number.",
+    "## The exact factors",
+    "> min/mile = min/km × 1.609344\n> min/km = min/mile ÷ 1.609344\n> Speed (kph) = 60 ÷ (min/km)\n> Speed (mph) = 60 ÷ (min/mile)\n> Reference: 1 mile = 1609.344 m (NIST SP 811, §B.8)",
+    "## Full pace ladder",
+    "| min/km | min/mile | kph | mph | Effort |\n|---|---|---|---|---|\n| 3:00 | 4:49 | 20.0 | 12.4 | Elite 5K |\n| 3:30 | 5:38 | 17.1 | 10.6 | Sub-elite 10K |\n| 4:00 | 6:26 | 15.0 | 9.3 | Trained 5K race |\n| 4:30 | 7:14 | 13.3 | 8.3 | 10K race (recreational) |\n| 5:00 | 8:03 | 12.0 | 7.5 | Threshold / tempo |\n| 5:30 | 8:51 | 10.9 | 6.8 | Marathon pace (3:52) |\n| 6:00 | 9:39 | 10.0 | 6.2 | Easy long run |\n| 6:30 | 10:28 | 9.2 | 5.7 | Recovery run |\n| 7:00 | 11:16 | 8.6 | 5.3 | Jog / warm-up |\n| 8:00 | 12:52 | 7.5 | 4.7 | Brisk walk / run-walk |",
+    "## Race-distance targets",
+    "Because a marathon is 42.195 km = 26.219 miles (World Athletics Rule 240), a target time maps directly to pace. A 3:30 marathon is 210 min ÷ 42.195 km = 4:59/km = 8:01/mile. A 3:00 goal is 4:16/km = 6:52/mile. Elite men run about 2:52/km (4:37/mile); the current world record (Kelvin Kiptum, Chicago 2023, 2:00:35) averages 2:51.6/km = 4:36.3/mile.",
+    "## Worked example — the 3:35 mistake",
+    "A runner training in km sets a 5:00/km goal for a marathon and books a US race that publishes pace bands in min/mile. They line up behind the 8:00/mile pacer, thinking it is 'about the same'. Actual pace: 8:00/mile = 4:58.4/km — 1.6 seconds/km faster. Over 42.195 km that is +67 seconds, so goal 3:30:44 → finish 3:31:51. In the other direction (following the 8:10/mile pacer for a 5:00/km target), the runner ends up 3:37:20 — five minutes off. The 1.609 factor is small in feel, huge over the distance.",
+    "## GPS watches and treadmill mismatches",
+    "Modern GPS watches (Garmin Forerunner, Coros Pace 3, Apple Watch Ultra) let you switch pace units per activity — set it to match the race, not your training preference. Treadmills sold in the US show mph and min/mile; European gyms show kph and min/km. A treadmill set to 12.0 kph = 5:00/km = 8:03/mile = 7.46 mph. The treadmill's own conversion is rounded to 0.1 mph, so 12.0 kph often displays as 7.5 mph — expect a 3–5 second/mile display error.",
+    "## Grade-adjusted pace (GAP)",
+    "Strava, Garmin and TrainingPeaks show grade-adjusted pace to compare hilly to flat efforts. The standard model (based on Alberto Minetti's 2002 energy-cost curves, *J. Appl. Physiol.* 93:1039–1046) adds roughly 12–15 seconds/km per 1% incline at moderate paces, and returns 6–8 seconds/km per 1% decline. Convert the flat-equivalent pace with 1.609344 the same way — GAP is a pace, not a separate unit.",
+    "## Half-marathon splits reference",
+    "| Half time | min/km | min/mile |\n|---|---|---|\n| 1:15 | 3:33 | 5:43 |\n| 1:30 | 4:16 | 6:52 |\n| 1:45 | 4:59 | 8:00 |\n| 2:00 | 5:41 | 9:09 |\n| 2:15 | 6:24 | 10:18 |\n| 2:30 | 7:07 | 11:27 |",
+    "## The five-second recap",
+    "min/mile = min/km × 1.609344. Round only for display. Marathon 3:30 = 4:59/km = 8:01/mile. Always sanity-check pacer bands before a race in the other unit system."
+  ],
+  "faqs": [
+    { "q": "Why 1.609344 and not 1.609?", "a": "The mile was fixed at exactly 1609.344 metres by the 1959 international yard and pound agreement (NIST SP 811, Appendix B). All modern conversions use the full value; 1.609 introduces a 0.02% rounding error — about 0.5 s over a 42.195 km marathon." },
+    { "q": "How do I convert kph to min/km in my head?", "a": "min/km = 60 ÷ kph. 12 kph = 5:00/km, 10 kph = 6:00/km, 15 kph = 4:00/km. Every whole kph between 8 and 20 gives a clean pace anchor." },
+    { "q": "Is my treadmill's pace display accurate?", "a": "Belt speed is usually within ±3% of display (ISO 20957-6 test tolerance). Add GPS or a footpod for training data; use the treadmill number for effort control only." },
+    { "q": "Do World Athletics records use km or miles?", "a": "Records are set at metric distances (5000 m, 10 000 m, marathon 42.195 km). The mile is one of the few imperial events still ratified — the world record (Hicham El Guerrouj, 3:43.13, 1999) equals 3:26.4/km = 5:32.5/mile average." },
+    { "q": "Why does my watch's average pace not match my split pace?", "a": "GPS smooths position over a 1–3 s window, so instantaneous pace lags. Auto-lap averages across the lap and matches better; use lap pace for pacing decisions, not the live display." }
+  ],
+  "related": [
+    { "label": "Speed converter (kph / mph / m/s)", "href": "/c/speed" },
+    { "label": "Steps to km and miles", "href": "/learn/steps-to-km-miles" },
+    { "label": "Heart rate zones", "href": "/learn/heart-rate-zones-percentage" },
+    { "label": "VO2 max ml/kg/min", "href": "/learn/vo2-max-ml-kg-min" }
+  ]
+}

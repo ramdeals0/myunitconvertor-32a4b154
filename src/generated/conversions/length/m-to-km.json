@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "m to km — Convert Meter to Kilometer | Turbo Unit Converter",
+    "description": "Convert Meter (m) to Kilometer (km) instantly. 1 m = 0.001 km. Free, accurate, engineering-grade precision.",
+    "h1": "m to km Converter"
+  },
+  "content": {
+    "intro": "Convert meters (m) to kilometers (km) instantly. Both measure length, so the relationship is strictly linear: each meter equals 0.001 kilometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One meter is equal to **0.001 kilometers**. To go the other way, one kilometer equals **1000 meters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometers = meters × 0.001\n\nWorked example — converting 10 meters:\n\n10 × 0.001 = **0.01 km**.\n\nTo invert, divide by 0.001 (or multiply by 1000).",
+    "conversion_table": "| meters | kilometers |\n| --- | --- |\n| 1 m | 0.001 km |\n| 2 m | 0.002 km |\n| 5 m | 0.005 km |\n| 10 m | 0.01 km |\n| 25 m | 0.025 km |\n| 50 m | 0.05 km |\n| 100 m | 0.1 km |\n| 250 m | 0.25 km |\n| 500 m | 0.5 km |\n| 1000 m | 1 km |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 m ≈ 0.001 km. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Meter and Kilometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometers are in 1 meter?\n**A:** 0.001 kilometers.\n\n**Q:** What's the formula to convert m to km?\n**A:** kilometers = meters × 0.001.\n\n**Q:** How do I convert km back to m?\n**A:** Multiply by 1000 (or divide by 0.001).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this m to km converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer to Meter converter",
+      "href": "/c/length/km-to-m"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "m-to-km",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/m-to-km",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "meter to kilometer",
+      "m to km",
+      "convert meter to kilometer",
+      "how many kilometer in a meter",
+      "meter in kilometer",
+      "m to km converter",
+      "meter vs kilometer",
+      "meter to kilometer formula",
+      "meter to kilometer calculator"
+    ]
+  },
+  "contentHash": "6f5f72e110f3"
+}

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Seo } from "@/components/Seo";
 import { CATEGORIES } from "@/lib/converters/data";
-import { AdBanner } from "@/components/AdBanner";
 import { useI18n } from "@/lib/i18n";
 import { GROUP_LABELS, CategoryGroup } from "@/lib/converters/types";
 import {
@@ -35,7 +34,7 @@ export default function ConvertersPage() {
       <Seo
         title="All Converters — Turbo Unit Converter"
         description="Browse our complete directory of professional-grade conversion tools, organized by scientific and engineering disciplines."
-        canonical="https://turbounitconverter.vercel.app/converters"
+        canonical="https://turbounitconverter.com/converters"
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="mb-10 text-center max-w-3xl mx-auto">
@@ -54,7 +53,6 @@ export default function ConvertersPage() {
           />
         </div>
 
-        <AdBanner className="mb-12" />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {GROUP_ORDER.map((g) => {

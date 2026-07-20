@@ -1,0 +1,57 @@
+{
+  "slug": "absolute-vs-relative-temperature",
+  "title": "Absolute vs Relative Temperature: When Kelvin Actually Matters",
+  "h1": "Absolute vs relative temperature — Kelvin, Rankine and when they matter",
+  "description": "Ideal gas law, Carnot efficiency and radiative heat transfer only work in absolute temperature. Here is when to switch from Celsius to Kelvin and why the offset silently doubles predicted efficiencies.",
+  "category": "Temperature",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Every T that gets multiplied or divided in a formula is an absolute temperature. Plug 25 °C into PV = nRT and the mole count is off by 12×.",
+  "body": [
+    "Celsius and Fahrenheit are interval scales — their zeros are arbitrary reference points (freezing water, brine equilibrium). Kelvin and Rankine start at absolute zero, the point at which molecular motion stops. Anywhere temperature appears as a factor rather than a difference, you need one of the absolute scales.",
+    "## Where absolute temperature is mandatory",
+    "Ideal gas law: PV = nRT. Stefan–Boltzmann: q = εσT⁴. Carnot efficiency: 1 − T_cold/T_hot. Radiative heat exchange, blackbody spectra, Nernst equation, Arrhenius rate constants. All of them break if you feed °C or °F.",
+    "## The exact conversions",
+    "> K = °C + 273.15\n> °R = °F + 459.67\n> °R = 1.8 × K",
+    "## Worked example — Carnot cycle",
+    "A power plant runs between 550 °C boiler and 30 °C condenser. Wrong: 1 − 30/550 = 94.5%. Right: 1 − 303.15/823.15 = 63.2%. The offset error turns an unremarkable steam cycle into a physics-violating miracle machine.",
+    "## Where relative is fine",
+    "Setpoints on a controller, weather forecasts, cooking recipes, HVAC comfort ranges. Anywhere the answer is a difference or a threshold, °C and °F are perfectly serviceable — and a lot easier to read.",
+    "## Recap",
+    "If T is multiplied or divided, use K or °R. If T is compared to another T, °C or °F work. The mistake costs a factor of 3–10 in typical engineering calculations."
+  ],
+  "faqs": [
+    {
+      "q": "Is 0 K the same as 0 °R?",
+      "a": "Yes — both scales start at absolute zero. Rankine just uses Fahrenheit-sized degrees, so 0 °R = 0 K = −273.15 °C = −459.67 °F."
+    },
+    {
+      "q": "Do I need Kelvin for a ΔT?",
+      "a": "No — a ΔT of 10 °C equals a ΔT of 10 K exactly, because both scales share the same degree size. It is only absolute values that need converting."
+    }
+  ],
+  "related": [
+    {
+      "label": "Temperature converter",
+      "href": "/c/temperature"
+    },
+    {
+      "label": "Rankine and Kelvin in thermodynamics",
+      "href": "/learn/rankine-kelvin-thermodynamics"
+    },
+    {
+      "label": "Celsius vs Fahrenheit deltas",
+      "href": "/learn/celsius-fahrenheit-deltas-vs-points"
+    }
+  ]
+}

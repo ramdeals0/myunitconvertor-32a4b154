@@ -1,0 +1,37 @@
+{
+  "slug": "candela-lumen-flashlight",
+  "title": "Candela and Lumen: What Flashlight Specs Actually Mean",
+  "h1": "Candela and lumen — the flashlight spec you have been misreading",
+  "description": "A 1,000-lumen flashlight and a 10,000-candela flashlight are not comparable. Here is what each unit measures and how throw versus flood are specified.",
+  "category": "Luminous Intensity",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Optics & lighting" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ANSI/PLATO FL 1 flashlight performance standard" },
+  "hero": "Lumens measure total light output. Candela measure how much is aimed in one direction. A cheap flashlight can win on lumens and lose on throw — because a reflector focuses candela, not lumens.",
+  "body": [
+    "Flashlight advertising has been dominated by lumens for two decades, but candela is what determines how far the beam reaches. ANSI FL 1 requires both to be published; most manufacturers now do, but consumers often ignore the more useful of the two numbers.",
+    "## The exact relationship",
+    "> Luminous intensity I (cd) = luminous flux Φ (lm) / solid angle Ω (sr)\n> 1 cd = 1 lm/sr\n> An isotropic 100 lm source: 100/(4π) = 7.96 cd in every direction\n> A tightly focused 100 lm beam in 0.01 sr: 10,000 cd (throw of 200 m)",
+    "## FL 1 metrics",
+    "ANSI/PLATO FL 1 specifies four numbers for flashlights: lumens (total output), candela (peak beam intensity), throw distance (where beam drops to 0.25 lux — 'starlight' level), and runtime. A 1,000-lm floodlight with poor focus may throw only 50 m. A 300-lm penlight with a tight optic may throw 200 m. Both are correct, both useful — for different tasks.",
+    "## The 0.25 lux throw definition",
+    "0.25 lux is roughly the illuminance from a full moon on the ground. A beam with candela I illuminates a surface at distance d with E = I/d². Setting E = 0.25 lx and solving: d = √(I / 0.25) = 2√I. A flashlight with 10,000 cd throws to 200 m. This formula is the entire back-of-the-page math on any flashlight review.",
+    "## Worked example — comparing two lights",
+    "Light A: 1,500 lm, 8,000 cd (typical wide-flood LED). Throw = 2√8000 = 179 m. Illuminates a garage brilliantly. Light B: 500 lm, 30,000 cd (long-throw hunter). Throw = 2√30000 = 346 m. Barely lights the garage but reveals eyes at 300 m. Buying A for hunting or B for close-quarters both disappoint — because lumens alone cannot tell you the shape of the beam.",
+    "## The five-second recap",
+    "Lumens = total light. Candela = focused light in one direction. Throw distance = 2 × √candela metres. Always read both numbers on a flashlight spec."
+  ],
+  "faqs": [
+    { "q": "How many lumens is one candela?", "a": "It depends on the beam angle. 1 cd = 1 lm/sr, so an isotropic point source of 1 cd emits 4π ≈ 12.57 lm total. A tightly focused beam emits many fewer lumens for the same peak candela." },
+    { "q": "Is a 'candlepower' rating the same as candela?", "a": "'Candlepower' (a legacy US flashlight marketing unit) sometimes equals candela and sometimes equals peak beam candlepower — usually candela. Modern FL 1 specs use candela." },
+    { "q": "Why is a car headlight in candela, not lumens?", "a": "Because headlight regulations (SAE, ECE) control peak intensity and beam pattern, both measured in candela. Total lumens are secondary." }
+  ],
+  "related": [
+    { "label": "cd to lm converter", "href": "/c/luminous-intensity/cd-to-lm" },
+    { "label": "lm to cd converter", "href": "/c/luminous-flux/lm-to-cd" },
+    { "label": "cd to lx converter", "href": "/c/illumination/cd-to-lx" }
+  ]
+}

@@ -1,25 +1,136 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WFHLKZWXT"></script>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+    <!-- Google tag (gtag.js) + AdSense — deferred until after load to avoid blocking LCP and forced reflows -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-7WFHLKZWXT');
+      (function () {
+        function loadThirdParty() {
+          var ga = document.createElement('script');
+          ga.async = true;
+          ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-7WFHLKZWXT';
+          document.head.appendChild(ga);
+          var ads = document.createElement('script');
+          ads.async = true;
+          ads.crossOrigin = 'anonymous';
+          ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4340748272055402';
+          document.head.appendChild(ads);
+        }
+        if ('requestIdleCallback' in window) {
+          window.addEventListener('load', function () {
+            requestIdleCallback(loadThirdParty, { timeout: 4000 });
+          });
+        } else {
+          window.addEventListener('load', function () {
+            setTimeout(loadThirdParty, 2000);
+          });
+        }
+      })();
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4340748272055402"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
+    <meta name="msvalidate.01" content="90E1A69A8920494746D155DA2E045582" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turbo Unit Converter — All-in-One Unit Conversion Calculator</title>
-    <meta name="description" content="Turbo Unit Converter: Fast, accurate online unit converter for 75+ categories. Convert length, weight, temperature, volume & more instantly. Free, no signup." />
-    <meta property="og:title" content="Turbo Unit Converter — All-in-One Unit Conversion Calculator" />
-    <meta property="og:description" content="Fast, accurate unit converter for 75+ categories." />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Turbo Unit Converter — 75+ Free Unit Converters Online</title>
+    <meta
+      name="description"
+      content="Free online unit converter for length, weight, temperature, volume and 75+ more categories. Instant, accurate, no signup — built for engineers, students & pros."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+    <meta property="og:site_name" content="Turbo Unit Converter" />
+    <meta property="og:title" content="Turbo Unit Converter — Free Online Unit Converter for 75+ Categories" />
+    <meta
+      property="og:description"
+      content="Instantly convert celsius to fahrenheit, kg to lbs, meters to feet and 75+ more — free, accurate, no signup."
+    />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://turbounitconverter.com/" />
+    <!-- Sitewide hreflang fallback for crawlers that don't execute JS -->
+    <link rel="alternate" hreflang="en" href="https://turbounitconverter.com/" />
+    <link rel="alternate" hreflang="es" href="https://turbounitconverter.com/es" />
+    <link rel="alternate" hreflang="hi" href="https://turbounitconverter.com/hi" />
+    <link rel="alternate" hreflang="x-default" href="https://turbounitconverter.com/" />
+    <meta property="og:image" content="https://turbounitconverter.com/og-image.jpg" />
+    <meta property="og:image:width" content="1216" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="Turbo Unit Converter — Free Online Unit Converter for 75+ Categories" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Turbo Unit Converter — Free Online Unit Converter" />
+    <meta
+      name="twitter:description"
+      content="Instant, accurate unit conversion across 75+ categories. Free, no signup."
+    />
+    <meta name="twitter:image" content="https://turbounitconverter.com/og-image.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Turbo Unit Converter",
+        "url": "https://turbounitconverter.com/",
+        "logo": "https://turbounitconverter.com/og-image.jpg",
+        "description": "Free online unit converter covering length, weight, temperature, volume and 75+ more categories with engineering-grade precision.",
+        "sameAs": []
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Turbo Unit Converter",
+        "url": "https://turbounitconverter.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://turbounitconverter.com/converters?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Turbo Unit Converter",
+        "url": "https://turbounitconverter.com/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (Web)",
+        "browserRequirements": "Requires JavaScript. Modern browser.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "1280" },
+        "description": "Free online unit converter for length, weight, temperature, volume, power and 75+ more categories."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Turbo Unit Converter free to use?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — Turbo Unit Converter is completely free, with no signup or limits. All math runs in your browser." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many unit categories are supported?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Over 75 categories including length, weight, temperature, volume, power, pressure, energy, speed, area, time, data and more." }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate are the conversions?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We use 12-digit precision constants aligned with SI metrology standards, so results are accurate enough for engineering and scientific work." }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

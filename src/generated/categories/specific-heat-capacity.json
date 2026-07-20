@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Specific Heat Capacity Converter — Convert Joule/(kg·K) and More",
+    "description": "Free specific heat capacity converter for 4+ units including Joule/(kg·K), Kilojoule/(kg·K), Calorie/(g·°C). Instant, accurate, browser-based.",
+    "h1": "Specific Heat Capacity Converter"
+  },
+  "content": {
+    "intro": "J/(kg·K), BTU/(lb·°F). Convert between 4 specific heat capacity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for specific heat capacity in this tool is **JkgK**; every conversion routes through it for consistency.",
+    "formula_section": "Most specific heat capacity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Joule/(kg·K) | J/(kg·K) |\n| Kilojoule/(kg·K) | kJ/(kg·K) |\n| Calorie/(g·°C) | cal/(g·°C) |\n| BTU/(lb·°F) | BTU/(lb·°F) |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this specific heat capacity converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Joule/(kg·K) (J/(kg·K)), Kilojoule/(kg·K) (kJ/(kg·K)), Calorie/(g·°C) (cal/(g·°C)), BTU/(lb·°F) (BTU/(lb·°F))."
+  },
+  "internal_links": [
+    {
+      "anchor": "Joule/(kg·K) to Kilojoule/(kg·K)",
+      "href": "/c/specific-heat-capacity/jkgk-to-kjkgk"
+    },
+    {
+      "anchor": "Kilojoule/(kg·K) to Joule/(kg·K)",
+      "href": "/c/specific-heat-capacity/kjkgk-to-jkgk"
+    },
+    {
+      "anchor": "Calorie/(g·°C) to Joule/(kg·K)",
+      "href": "/c/specific-heat-capacity/calgc-to-jkgk"
+    },
+    {
+      "anchor": "BTU/(lb·°F) to Joule/(kg·K)",
+      "href": "/c/specific-heat-capacity/btulbf-to-jkgk"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "specific-heat-capacity",
+    "canonicalUrl": "https://turbounitconverter.com/c/specific-heat-capacity",
+    "category": "specific-heat-capacity",
+    "pageType": "category",
+    "keywords": [
+      "specific heat capacity converter",
+      "convert specific heat capacity"
+    ]
+  },
+  "contentHash": "d38087772017"
+}

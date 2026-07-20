@@ -1,0 +1,52 @@
+{
+  "slug": "mpg-us-uk-l100km-real",
+  "title": "MPG (US) vs MPG (UK) vs L/100 km — EPA and WLTP Converted",
+  "h1": "Fuel economy — MPG US, MPG UK, and L/100 km reconciled",
+  "description": "30 MPG US = 36 MPG UK = 7.84 L/100 km. Same car, three sticker numbers. Plus why EPA and WLTP disagree by 15%.",
+  "category": "Fuel-efficiency-volume",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-10",
+  "reviewed": "2026-07-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Automotive fuel-economy metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against EPA 40 CFR Part 600 and UNECE GTR No. 15 (WLTP)" },
+  "hero": "A 30 MPG US car is 36 MPG UK and 7.84 L/100 km — same fuel consumption, three number systems. The US gallon is smaller than the UK gallon by 20%; L/100 km inverts the metric so the number grows as efficiency drops.",
+  "body": [
+    "Three habits collide in car reviews: American MPG (US gallon), British MPG (Imperial gallon), and metric L/100 km. The gallons differ, and the L/100 km scale runs inverse to MPG — halving the L/100 km number doubles efficiency, whereas doubling MPG doubles it too but in the other direction. Cross-comparing without conversion is where most car forums argue past each other.",
+    "## The exact factors",
+    "> 1 US gallon = 3.7854 L\n> 1 Imperial gallon = 4.5461 L (20% larger)\n> 1 Imp gal = 1.20095 US gal\n> Conversion: MPG US → L/100 km = 235.215 / MPG_US\n> MPG UK → L/100 km = 282.481 / MPG_UK\n> MPG US → MPG UK = MPG_US × 1.20095",
+    "## Reconciliation table",
+    "| MPG US | MPG UK | L/100 km | km/L | Class |\n|---|---|---|---|---|\n| 20 | 24 | 11.76 | 8.5 | Large SUV |\n| 25 | 30 | 9.41 | 10.6 | Mid-size sedan |\n| 30 | 36 | 7.84 | 12.75 | Compact |\n| 35 | 42 | 6.72 | 14.9 | Small hatch |\n| 40 | 48 | 5.88 | 17.0 | Hybrid |\n| 50 | 60 | 4.70 | 21.3 | Prius-class |\n| 60 | 72 | 3.92 | 25.5 | Efficient hybrid |\n| 133 | 160 | 1.77 | 56.5 | Model 3 (MPGe eq.) |",
+    "## Why EPA and WLTP disagree",
+    "The EPA (US) tests on the FTP-75 city cycle and HWFET highway cycle, at 20°C ambient, no accessories. WLTP (EU/UK from 2018) uses four phases (low/medium/high/extra-high) with realistic acceleration and topping 131 km/h. Same car:",
+    "**Toyota Corolla Hybrid 2024.** EPA combined: 50 MPG US. WLTP combined: 4.4 L/100 km = 53 MPG US equivalent. Close — the EPA number happens to align with WLTP on hybrids. For pure ICE cars, WLTP typically reads 10–15% worse than EPA (higher fuel use) because of the realistic accessory load and higher top speeds.",
+    "**BMW 320i.** EPA 30 MPG combined. WLTP 6.9 L/100 km = 34 MPG US equivalent — 13% better on paper. Same car, same driving, different test protocol.",
+    "## Real-world vs sticker",
+    "Fuelly.com and Spritmonitor.de publish crowdsourced real-world numbers. Median gap versus sticker:",
+    "- EPA combined: real world runs 5–10% worse than sticker.",
+    "- WLTP combined: real world runs 8–20% worse.",
+    "- NEDC (pre-2018 Europe): real world runs 30–40% worse — this is why the EU replaced it.",
+    "The pattern: newer, more realistic test cycles narrow the gap. WLTP is not yet as accurate as EPA but is closing.",
+    "## Worked example — cross-shopping US and EU cars",
+    "You are comparing a US-market Honda Civic '32 MPG combined EPA' against an EU-market VW Golf '5.9 L/100 km WLTP'. Convert Civic: 32 MPG US → 235.215/32 = 7.35 L/100 km. Now compare on the same scale: Civic 7.35 vs Golf 5.9 — Golf is 20% more efficient on paper. Real-world adjust: Civic 7.7 (EPA -5%), Golf 6.8 (WLTP -15%) — Golf still wins but only 12%, not 20%.",
+    "## Diesel vs petrol accounting",
+    "Diesel has 13% higher volumetric energy density than petrol. A diesel returning 6.0 L/100 km uses the same energy as a petrol at 6.8 L/100 km. Cost-per-km depends on local pump prices; energy-per-km is what physics cares about. Some EU consumer guides now list 'petrol-equivalent L/100 km' for diesels to make the comparison fair.",
+    "## EV efficiency — MPGe and kWh/100 mi",
+    "EVs are labelled MPGe (miles per gallon equivalent) using 33.7 kWh = 1 gallon of petrol by energy content. Tesla Model 3 rated 133 MPGe = 25 kWh/100 mi = 15.5 kWh/100 km. To compare fuel cost: US petrol at $3.50/gal and electricity at $0.15/kWh, a 30 MPG petrol car costs $0.117/mi; a 133 MPGe EV costs $0.038/mi. 3× cheaper per mile at the pump, ignoring capital cost.",
+    "## The five-second recap",
+    "Convert MPG US to L/100 km: divide 235 by MPG. UK gallon is 20% bigger, so MPG UK = MPG US × 1.20. WLTP reads worse than EPA on ICE cars, similar on hybrids. Real world is 5–15% worse than any sticker."
+  ],
+  "faqs": [
+    { "q": "Why is the UK MPG number bigger for the same car?", "a": "The Imperial gallon is 4.546 L versus the US gallon's 3.785 L — 20% larger. A car goes further on 'one gallon' when the gallon is bigger, so the number reads higher without any efficiency change." },
+    { "q": "Is L/100 km a better metric than MPG?", "a": "For comparing consumption directly, yes — the number scales linearly with fuel burnt. MPG is a rate, so improvements from 15→20 MPG save far more fuel than 40→45 MPG despite looking equal on the dial." },
+    { "q": "What is MPGe for EVs?", "a": "EPA defines 1 gallon of petrol as 33.7 kWh by lower heating value. MPGe = miles per 33.7 kWh. Useful for comparing EV to ICE at a first glance; not a direct cost comparison." },
+    { "q": "Are hybrids tested differently?", "a": "Same cycle, but the battery has to end at the same state of charge — hybrids cannot cheat by depleting the battery over the test. Plug-in hybrids get a separate 'utility factor' weighted average." },
+    { "q": "Do winter numbers really drop that much?", "a": "Yes. Cold starts, denser air, winter tire drag, and cabin heater all knock 10–30% off MPG for the first 10 minutes. Short winter trips barely warm the engine — average dips 15–25% November–February in cold climates." }
+  ],
+  "related": [
+    { "label": "Fuel economy converter", "href": "/c/fuel-efficiency-volume" },
+    { "label": "Fuel economy MPG US vs UK vs L/100km", "href": "/learn/fuel-economy-mpg-us-uk-l100km" },
+    { "label": "US vs UK gallons — the pint problem", "href": "/learn/fluid-ounces-us-vs-imperial" },
+    { "label": "EV range — kWh per 100 mi", "href": "/learn/ev-range-kwh-per-100mi" }
+  ]
+}

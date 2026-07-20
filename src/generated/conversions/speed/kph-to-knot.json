@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "km/h to kn — Convert Kilometer/hour to Knot | Turbo Unit Con",
+    "description": "Convert Kilometer/hour (km/h) to Knot (kn) instantly. 1 km/h = 0.53995727 kn. Free, accurate, engineering-grade precision.",
+    "h1": "km/h to kn Converter"
+  },
+  "content": {
+    "intro": "Convert kilometer/hours (km/h) to knots (kn) instantly. Both measure speed, so the relationship is strictly linear: each kilometer/hour equals 0.53995727 knots. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One kilometer/hour is equal to **0.53995727 knots**. To go the other way, one knot equals **1.8519984 kilometer/hours**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> knots = kilometer/hours × 0.53995727\n\nWorked example — converting 10 kilometer/hours:\n\n10 × 0.53995727 = **5.3995727 kn**.\n\nTo invert, divide by 0.53995727 (or multiply by 1.8519984).",
+    "conversion_table": "| kilometer/hours | knots |\n| --- | --- |\n| 1 km/h | 0.53995727 kn |\n| 2 km/h | 1.0799145 kn |\n| 5 km/h | 2.6997863 kn |\n| 10 km/h | 5.3995727 kn |\n| 25 km/h | 13.498932 kn |\n| 50 km/h | 26.997863 kn |\n| 100 km/h | 53.995727 kn |\n| 250 km/h | 134.98932 kn |\n| 500 km/h | 269.97863 kn |\n| 1000 km/h | 539.95727 kn |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 km/h ≈ 0.53995727 kn. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Kilometer/hour and Knot both measure speed; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many knots are in 1 kilometer/hour?\n**A:** 0.53995727 knots.\n\n**Q:** What's the formula to convert km/h to kn?\n**A:** knots = kilometer/hours × 0.53995727.\n\n**Q:** How do I convert kn back to km/h?\n**A:** Multiply by 1.8519984 (or divide by 0.53995727).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this km/h to kn converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Knot to Kilometer/hour converter",
+      "href": "/c/speed/knot-to-kph"
+    },
+    {
+      "anchor": "All speed conversions",
+      "href": "/c/speed"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "kph-to-knot",
+    "canonicalUrl": "https://turbounitconverter.com/c/speed/kph-to-knot",
+    "category": "speed",
+    "pageType": "pair",
+    "keywords": [
+      "kilometer/hour to knot",
+      "km/h to kn",
+      "convert kilometer/hour to knot",
+      "how many knot in a kilometer/hour",
+      "kilometer/hour in knot",
+      "km/h to kn converter",
+      "kilometer/hour vs knot",
+      "kilometer/hour to knot formula",
+      "kilometer/hour to knot calculator"
+    ]
+  },
+  "contentHash": "2b8c92e3a39b"
+}

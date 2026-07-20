@@ -1,0 +1,37 @@
+{
+  "slug": "hp-vs-kw-vs-ps",
+  "title": "HP vs kW vs PS: Three Horsepowers, One Engine",
+  "h1": "HP vs kW vs PS: three horsepowers, one engine",
+  "description": "Metric, mechanical, electrical, brake — there are at least four \"horsepowers\" and they disagree by up to 1.4%. Here is which one your car brochure is quoting.",
+  "category": "Power",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "The horsepower on your car's window sticker is not the same horsepower on the brochure. Here is why the same engine can have three different peak power figures.",
+  "body": [
+    "Watts are unambiguous. Horsepowers are not. There are three horsepowers you will run into on any modern car spec, plus a fourth that shows up on electric motors and pumps.",
+    "## The four horsepowers, exact",
+    "> 1 mechanical horsepower (hp, sometimes hp(I)) = 745.6998715822702 W\n> 1 metric horsepower (PS, ch, cv, pk) = 735.49875 W (exact)\n> 1 electrical horsepower = 746 W (exact, by convention)\n> 1 boiler horsepower = 9,809.5 W (heat-flow, not vehicular)",
+    "The metric horsepower (PS in Germany, ch in France, cv in Italy and Spain, pk in the Netherlands, hk in Scandinavia) is defined as the power needed to lift 75 kilogram-force by one metre in one second. That works out to exactly 735.49875 W. The mechanical horsepower — the one used in the UK, US and most English-language car magazines — is defined as 550 foot-pounds per second, which comes out to 745.7 W.",
+    "## The three-number game",
+    "Take a car often quoted at 300 PS. That is 300 × 735.49875 = 220,649 W, or 220.6 kW, or 295.9 mechanical hp. So the same engine is honestly \"300 PS / 296 hp / 221 kW\". Automotive marketing usually rounds the mechanical hp figure back to a round number, so you will often see \"300 PS = 300 hp\" printed side by side — a 1.4% white lie.",
+    "**Why 1.4% matters.** In production-based motorsport a 1.4% power advantage is enormous. In dyno testing certification the standards specify which horsepower the value is quoted in, and independent test houses publish both.",
+    "## Where kW is honest",
+    "Kilowatts sidestep the whole argument. The EU has mandated kW as the primary power unit on vehicle documents since the 1970s, with PS or hp allowed as an additional value. Electric vehicles are almost always specified in kW first for exactly this reason — 150 kW is 150 kW whether you translate it into metric or mechanical horsepower afterwards.",
+    "## SAE net vs DIN vs ECE",
+    "Even within one horsepower unit, different test standards produce different numbers. **SAE J1349** (used in the US) measures net power at the flywheel with all accessories fitted; **DIN 70020** measures similarly and typically gives numbers within 1% of SAE net; **JIS D 1001** (Japan) produces slightly optimistic figures. \"Gross\" horsepower, common on 1960s and 70s American muscle cars, was measured without alternator, water pump or exhaust — inflating the number by 20% or more. When comparing modern to vintage horsepower ratings, always check the standard.",
+    "## The five-second recap",
+    "kW × 1.34102 = hp. kW × 1.35962 = PS. PS × 0.98632 = hp. And whenever a car magazine reports \"400 hp / 400 PS\" as if they were the same number, either the engineers quietly used two different units or the marketing team rounded — the two figures cannot both be exact."
+  ],
+  "faqs": [
+    { "q": "How many kW is 100 hp?", "a": "100 mechanical hp = 100 × 0.7457 = 74.57 kW. 100 metric PS = 100 × 0.7355 = 73.55 kW." },
+    { "q": "Is PS the same as hp?", "a": "No. PS = 735.5 W, hp = 745.7 W. PS is about 1.4% smaller." },
+    { "q": "Why do EU vehicle documents use kW?", "a": "kW is the SI unit of power. EU type-approval regulations mandate kW as the primary figure, with PS/hp allowed as informational secondary values." },
+    { "q": "What is brake horsepower (bhp)?", "a": "Mechanical horsepower measured at the crankshaft with a brake dynamometer. Numerically identical to hp; the \"brake\" only signals the measurement method." }
+  ],
+  "related": [
+    { "label": "kW to hp converter", "href": "/c/power/kW-to-hp" },
+    { "label": "hp to kW converter", "href": "/c/power/hp-to-kW" },
+    { "label": "PS to kW converter", "href": "/c/power/ps-to-kW" }
+  ]
+}

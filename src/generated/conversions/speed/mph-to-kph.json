@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "mph to km/h — Convert Mile/hour to Kilometer/hour | Turbo Un",
+    "description": "Convert Mile/hour (mph) to Kilometer/hour (km/h) instantly. 1 mph = 1.609344 km/h. Free, accurate, engineering-grade precision.",
+    "h1": "mph to km/h Converter"
+  },
+  "content": {
+    "intro": "Convert mile/hours (mph) to kilometer/hours (km/h) instantly. Both measure speed, so the relationship is strictly linear: each mile/hour equals 1.609344 kilometer/hours. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One mile/hour is equal to **1.609344 kilometer/hours**. To go the other way, one kilometer/hour equals **0.62137119 mile/hours**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometer/hours = mile/hours × 1.609344\n\nWorked example — converting 10 mile/hours:\n\n10 × 1.609344 = **16.09344 km/h**.\n\nTo invert, divide by 1.609344 (or multiply by 0.62137119).",
+    "conversion_table": "| mile/hours | kilometer/hours |\n| --- | --- |\n| 1 mph | 1.609344 km/h |\n| 2 mph | 3.218688 km/h |\n| 5 mph | 8.04672 km/h |\n| 10 mph | 16.09344 km/h |\n| 25 mph | 40.2336 km/h |\n| 50 mph | 80.4672 km/h |\n| 100 mph | 160.9344 km/h |\n| 250 mph | 402.336 km/h |\n| 500 mph | 804.672 km/h |\n| 1000 mph | 1609.344 km/h |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 mph ≈ 1.609344 km/h. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Mile/hour and Kilometer/hour both measure speed; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometer/hours are in 1 mile/hour?\n**A:** 1.609344 kilometer/hours.\n\n**Q:** What's the formula to convert mph to km/h?\n**A:** kilometer/hours = mile/hours × 1.609344.\n\n**Q:** How do I convert km/h back to mph?\n**A:** Multiply by 0.62137119 (or divide by 1.609344).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this mph to km/h converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer/hour to Mile/hour converter",
+      "href": "/c/speed/kph-to-mph"
+    },
+    {
+      "anchor": "All speed conversions",
+      "href": "/c/speed"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mph-to-kph",
+    "canonicalUrl": "https://turbounitconverter.com/c/speed/mph-to-kph",
+    "category": "speed",
+    "pageType": "pair",
+    "keywords": [
+      "mile/hour to kilometer/hour",
+      "mph to km/h",
+      "convert mile/hour to kilometer/hour",
+      "how many kilometer/hour in a mile/hour",
+      "mile/hour in kilometer/hour",
+      "mph to km/h converter",
+      "mile/hour vs kilometer/hour",
+      "mile/hour to kilometer/hour formula",
+      "mile/hour to kilometer/hour calculator"
+    ]
+  },
+  "contentHash": "5c30ce550905"
+}

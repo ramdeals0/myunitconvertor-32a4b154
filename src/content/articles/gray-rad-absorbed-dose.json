@@ -1,0 +1,37 @@
+{
+  "slug": "gray-rad-absorbed-dose",
+  "title": "Gray and Rad: Absorbed Radiation Dose",
+  "h1": "Gray and rad — energy actually deposited per kilogram of tissue",
+  "description": "The gray is joules per kilogram. The rad is 1/100 of that. Here is how absorbed dose differs from equivalent dose, and where each unit fits.",
+  "category": "Radiation Absorbed Dose",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Health physics & radiotherapy" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ICRU Report 85 and IAEA Safety Report Series" },
+  "hero": "1 Gy = 1 J/kg = 100 rad. Radiotherapy delivers 2 Gy per fraction. A lethal whole-body dose is about 5 Gy. Numbers this small have consequences this big.",
+  "body": [
+    "Absorbed dose is the actual energy per unit mass deposited by ionising radiation. Unlike activity (Bq, Ci), which measures the source, absorbed dose measures what tissue receives. And unlike equivalent dose (Sv, rem), it does not weight for radiation type.",
+    "## The exact factors",
+    "> 1 gray (Gy) = 1 joule per kilogram = 1 J/kg (SI)\n> 1 rad = 0.01 Gy = 1 cGy (legacy US)\n> 100 rad = 1 Gy\n> Dental X-ray: ~5 µGy\n> Chest CT: ~10 mGy\n> Radiotherapy fraction: ~2 Gy\n> Whole-body 50% lethal (LD50/30): ~4.5 Gy",
+    "## Gy vs Sv",
+    "The gray measures energy deposited. The sievert weights that energy by biological effectiveness: alpha particles are 20× more damaging per Gy than gammas, so 1 Gy of alpha = 20 Sv equivalent dose. For X-rays and gammas, 1 Gy ≈ 1 Sv. For neutrons and alphas, the equivalence factor is much larger.",
+    "## Radiotherapy prescription",
+    "External-beam radiotherapy typically delivers 50–70 Gy total to a tumour over 25–35 fractions of 1.8–2 Gy each. Fractionation lets healthy tissue repair between doses while tumour repair is impaired. Prescriptions are always in Gy — never in Sv, because the beam is calibrated for absorbed energy, not biological weighting.",
+    "## Worked example — a chest CT dose to a lung nodule",
+    "Effective dose from a chest CT is ~7 mSv (biologically weighted). Absorbed dose to lung tissue is ~10 mGy — about 700× a chest X-ray, but only 0.5% of a single radiotherapy fraction. Perspective helps patient consent conversations.",
+    "## The five-second recap",
+    "Gy = J/kg absorbed. rad = 0.01 Gy. For X-rays/gammas, Gy ≈ Sv. Radiotherapy fractions: 2 Gy. LD50/30: ~4.5 Gy."
+  ],
+  "faqs": [
+    { "q": "Why do radiotherapy prescriptions use Gy not Sv?", "a": "Because dose is prescribed to a specific volume with a specific beam type, and clinical outcomes are tied directly to absorbed dose (Gy). Sv adds biological weighting that varies by tissue and radiation type and would obscure the physical prescription." },
+    { "q": "How much radiation is a banana?", "a": "About 0.1 µSv per banana (from K-40). Negligible — background natural radiation is ~2–3 mSv/year." },
+    { "q": "What is 'cGy'?", "a": "Centigray = 0.01 Gy = 1 rad. Common in older radiotherapy documentation because the numerical values match rad exactly." }
+  ],
+  "related": [
+    { "label": "Gy to rad converter", "href": "/c/radiation-absorbed-dose/gy-to-rad" },
+    { "label": "rad to Gy converter", "href": "/c/radiation-absorbed-dose/rad-to-gy" },
+    { "label": "mGy to Gy converter", "href": "/c/radiation-absorbed-dose/mgy-to-gy" }
+  ]
+}

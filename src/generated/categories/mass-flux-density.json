@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Mass Flux Density Converter — Convert Kilogram/(m²·s) and More",
+    "description": "Free mass flux density converter for 3+ units including Kilogram/(m²·s), Gram/(cm²·s), Pound/(ft²·s). Instant, accurate, browser-based.",
+    "h1": "Mass Flux Density Converter"
+  },
+  "content": {
+    "intro": "kg/(m²·s), lb/(ft²·s). Convert between 3 mass flux density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for mass flux density in this tool is **kgm2s**; every conversion routes through it for consistency.",
+    "formula_section": "Most mass flux density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram/(m²·s) | kg/(m²·s) |\n| Gram/(cm²·s) | g/(cm²·s) |\n| Pound/(ft²·s) | lb/(ft²·s) |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this mass flux density converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram/(m²·s) (kg/(m²·s)), Gram/(cm²·s) (g/(cm²·s)), Pound/(ft²·s) (lb/(ft²·s))."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilogram/(m²·s) to Gram/(cm²·s)",
+      "href": "/c/mass-flux-density/kgm2s-to-gcm2s"
+    },
+    {
+      "anchor": "Gram/(cm²·s) to Kilogram/(m²·s)",
+      "href": "/c/mass-flux-density/gcm2s-to-kgm2s"
+    },
+    {
+      "anchor": "Pound/(ft²·s) to Kilogram/(m²·s)",
+      "href": "/c/mass-flux-density/lbft2s-to-kgm2s"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "mass-flux-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/mass-flux-density",
+    "category": "mass-flux-density",
+    "pageType": "category",
+    "keywords": [
+      "mass flux density converter",
+      "convert mass flux density"
+    ]
+  },
+  "contentHash": "079e8a9acf05"
+}

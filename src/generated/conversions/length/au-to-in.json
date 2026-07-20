@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "AU to in Converter — Astronomical Unit to Inch",
+    "description": "Convert Astronomical Unit (AU) to Inch (in) instantly. 1 AU = 5.889680e+12 in. Free, accurate, browser-based.",
+    "h1": "Astronomical Unit to Inch Converter"
+  },
+  "content": {
+    "intro": "Convert astronomical units (AU) to inches (in) instantly. Both measure length, so the relationship is strictly linear: each astronomical unit equals 5.889680e+12 inches. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One astronomical unit is equal to **5.889680e+12 inches**. To go the other way, one inch equals **1.697885e-13 astronomical units**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> inches = astronomical units × 5.889680e+12\n\nWorked example — converting 10 astronomical units:\n\n10 × 5.889680e+12 = **5.889680e+13 in**.\n\nTo invert, divide by 5.889680e+12 (or multiply by 1.697885e-13).",
+    "conversion_table": "| astronomical units | inches |\n| --- | --- |\n| 1 AU | 5.889680e+12 in |\n| 2 AU | 1.177936e+13 in |\n| 5 AU | 2.944840e+13 in |\n| 10 AU | 5.889680e+13 in |\n| 25 AU | 1.472420e+14 in |\n| 50 AU | 2.944840e+14 in |\n| 100 AU | 5.889680e+14 in |\n| 250 AU | 1.472420e+15 in |\n| 500 AU | 2.944840e+15 in |\n| 1000 AU | 5.889680e+15 in |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 AU ≈ 5.889680e+12 in. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Astronomical Unit and Inch both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many inches are in 1 astronomical unit?\n**A:** 5.889680e+12 inches.\n\n**Q:** What's the formula to convert AU to in?\n**A:** inches = astronomical units × 5.889680e+12.\n\n**Q:** How do I convert in back to AU?\n**A:** Multiply by 1.697885e-13 (or divide by 5.889680e+12).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this AU to in converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Inch to Astronomical Unit converter",
+      "href": "/c/length/in-to-au"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "au-to-in",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/au-to-in",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "astronomical unit to inch",
+      "AU to in",
+      "convert AU to in"
+    ]
+  },
+  "contentHash": "2e1c17a99a30"
+}

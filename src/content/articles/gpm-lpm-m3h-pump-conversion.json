@@ -1,0 +1,51 @@
+{
+  "slug": "gpm-lpm-m3h-pump-conversion",
+  "title": "GPM, LPM, m³/h: The Pump-Curve Trio",
+  "h1": "Pump flow units — GPM, LPM and m³/h",
+  "description": "1 US gpm = 3.785 L/min = 0.2271 m³/h. Pump curves from US, EU and IEC vendors all use different units on the same graph.",
+  "category": "Flow",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Same pump curve, three flow axes. Pick the wrong one and best-efficiency-point drifts by 20%.",
+  "body": [
+    "Centrifugal pump curves come with the flow axis in whatever the manufacturer's home country prefers. Selecting a pump means matching duty flow — and unit — precisely, or you land off the BEP and destroy efficiency.",
+    "## The exact factors",
+    "> 1 US gpm = 3.7854 L/min = 0.22712 m³/h = 0.06309 L/s\n> 1 UK gpm = 4.546 L/min = 0.27277 m³/h (20% larger than US gpm)\n> 1 m³/h = 4.403 US gpm = 3.666 UK gpm = 16.67 L/min",
+    "## Where each is used",
+    "US gpm: North American water, HVAC, fire pumps. UK gpm: UK water utilities, occasional legacy specs. L/min and L/s: European water and HVAC. m³/h: process industry, chemical, EU pump vendors. bbl/day: oil production.",
+    "## Worked example — HVAC chiller loop",
+    "A chiller specced 200 US gpm = 45.4 m³/h = 757 L/min. A European pump vendor's 45 m³/h pump is right on duty. A pump specced '200 gpm' from a UK vendor is 20% higher than intended — wildly oversized, throttling wastes 30% power.",
+    "## Recap",
+    "US and UK gallons differ by 20%. Convert to m³/h or L/min once, compare."
+  ],
+  "faqs": [
+    {
+      "q": "Is US gpm the same as fluid-ounce-based gpm?",
+      "a": "US gpm uses 128 fl oz per gallon by the US gallon (231 in³). Do not use UK fl oz to derive it."
+    },
+    {
+      "q": "Which unit for oil-field pumps?",
+      "a": "bbl/day for production, gpm or L/min for surface pumps. Convert with 1 bbl = 42 US gal."
+    }
+  ],
+  "related": [
+    {
+      "label": "Flow converter",
+      "href": "/c/flow"
+    },
+    {
+      "label": "GPM, LPM and m³/h",
+      "href": "/learn/gpm-lpm-m3h-pump-curves"
+    }
+  ]
+}

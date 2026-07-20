@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Mass Flow Converter — Convert Kilogram/second and More",
+    "description": "Free mass flow converter for 7+ units including Kilogram/second, Kilogram/minute, Kilogram/hour. Instant, accurate, browser-based.",
+    "h1": "Mass Flow Converter"
+  },
+  "content": {
+    "intro": "kg/s, kg/h, lb/h, ton/h. Convert between 7 mass flow units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for mass flow in this tool is **kgs**; every conversion routes through it for consistency.",
+    "formula_section": "Most mass flow conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Kilogram/second | kg/s |\n| Kilogram/minute | kg/min |\n| Kilogram/hour | kg/h |\n| Gram/second | g/s |\n| Pound/second | lb/s |\n| Pound/hour | lb/h |\n| Ton/hour (metric) | t/h |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this mass flow converter?\n**A:** It uses 7 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Kilogram/second (kg/s), Kilogram/minute (kg/min), Kilogram/hour (kg/h), Gram/second (g/s), Pound/second (lb/s), Pound/hour (lb/h), Ton/hour (metric) (t/h)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilogram/second to Kilogram/minute",
+      "href": "/c/flow-mass/kgs-to-kgmin"
+    },
+    {
+      "anchor": "Kilogram/minute to Kilogram/second",
+      "href": "/c/flow-mass/kgmin-to-kgs"
+    },
+    {
+      "anchor": "Kilogram/hour to Kilogram/second",
+      "href": "/c/flow-mass/kgh-to-kgs"
+    },
+    {
+      "anchor": "Gram/second to Kilogram/second",
+      "href": "/c/flow-mass/gs-to-kgs"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "flow-mass",
+    "canonicalUrl": "https://turbounitconverter.com/c/flow-mass",
+    "category": "flow-mass",
+    "pageType": "category",
+    "keywords": [
+      "mass flow converter",
+      "convert mass flow"
+    ]
+  },
+  "contentHash": "3a9b8de97a2b"
+}

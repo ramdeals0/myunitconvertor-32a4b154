@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Flow Rate Converter — Convert Cubic m/sec and More",
+    "description": "Free flow rate converter for 5+ units including Cubic m/sec, Liter/sec, Liter/min. Instant, accurate, browser-based.",
+    "h1": "Flow Rate Converter"
+  },
+  "content": {
+    "intro": "Cubic meters/sec, liters/min, gallons/min. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 5 flow rate units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for flow rate in this tool is **m3s**; every conversion routes through it for consistency.",
+    "formula_section": "Most flow rate conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Cubic m/sec | m³/s |\n| Liter/sec | L/s |\n| Liter/min | L/min |\n| Gallon/min (US) | gpm |\n| Cubic ft/min | cfm |",
+    "use_cases": "- Recipe scaling and bartending where measures span metric and imperial.\n- Fuel economy comparisons across regions.\n- Lab dosing and reagent prep across mL, L, and US/UK units.\n- Aquarium, pool, and tank capacity calculations.\n- Shipping fluid product specs across markets.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this flow rate converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Cubic m/sec (m³/s), Liter/sec (L/s), Liter/min (L/min), Gallon/min (US) (gpm), Cubic ft/min (cfm)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Cubic m/sec to Liter/sec",
+      "href": "/c/flow/m3s-to-ls"
+    },
+    {
+      "anchor": "Liter/sec to Cubic m/sec",
+      "href": "/c/flow/ls-to-m3s"
+    },
+    {
+      "anchor": "Liter/min to Cubic m/sec",
+      "href": "/c/flow/lmin-to-m3s"
+    },
+    {
+      "anchor": "Gallon/min (US) to Cubic m/sec",
+      "href": "/c/flow/gpm_us-to-m3s"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "flow",
+    "canonicalUrl": "https://turbounitconverter.com/c/flow",
+    "category": "flow",
+    "pageType": "category",
+    "keywords": [
+      "flow rate converter",
+      "convert flow rate"
+    ]
+  },
+  "contentHash": "47a011a0eaf8"
+}

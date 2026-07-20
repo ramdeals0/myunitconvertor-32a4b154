@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "µm to cm Converter — Micrometer to Centimeter",
+    "description": "Convert Micrometer (µm) to Centimeter (cm) instantly. 1 µm = 1.000000e-4 cm. Free, accurate, browser-based.",
+    "h1": "Micrometer to Centimeter Converter"
+  },
+  "content": {
+    "intro": "Convert micrometers (µm) to centimeters (cm) instantly. Both measure length, so the relationship is strictly linear: each micrometer equals 1.000000e-4 centimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One micrometer is equal to **1.000000e-4 centimeters**. To go the other way, one centimeter equals **10000 micrometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> centimeters = micrometers × 1.000000e-4\n\nWorked example — converting 10 micrometers:\n\n10 × 1.000000e-4 = **0.001 cm**.\n\nTo invert, divide by 1.000000e-4 (or multiply by 10000).",
+    "conversion_table": "| micrometers | centimeters |\n| --- | --- |\n| 1 µm | 1.000000e-4 cm |\n| 2 µm | 0.0002 cm |\n| 5 µm | 0.0005 cm |\n| 10 µm | 0.001 cm |\n| 25 µm | 0.0025 cm |\n| 50 µm | 0.005 cm |\n| 100 µm | 0.01 cm |\n| 250 µm | 0.025 cm |\n| 500 µm | 0.05 cm |\n| 1000 µm | 0.1 cm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 µm ≈ 1.000000e-4 cm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Micrometer and Centimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many centimeters are in 1 micrometer?\n**A:** 1.000000e-4 centimeters.\n\n**Q:** What's the formula to convert µm to cm?\n**A:** centimeters = micrometers × 1.000000e-4.\n\n**Q:** How do I convert cm back to µm?\n**A:** Multiply by 10000 (or divide by 1.000000e-4).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this µm to cm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Centimeter to Micrometer converter",
+      "href": "/c/length/cm-to-um"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "um-to-cm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/um-to-cm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "micrometer to centimeter",
+      "µm to cm",
+      "convert µm to cm"
+    ]
+  },
+  "contentHash": "ab209fd40296"
+}

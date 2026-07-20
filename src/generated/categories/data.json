@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Data Storage Converter — Convert Bit and More",
+    "description": "Free data storage converter for 11+ units including Bit, Byte, Kilobyte. Instant, accurate, browser-based.",
+    "h1": "Data Storage Converter"
+  },
+  "content": {
+    "intro": "Bytes, kilobytes, megabytes, gigabytes. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 11 data storage units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for data storage in this tool is **B**; every conversion routes through it for consistency.",
+    "formula_section": "Most data storage conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Bit | b |\n| Byte | B |\n| Kilobyte | KB |\n| Megabyte | MB |\n| Gigabyte | GB |\n| Terabyte | TB |\n| Petabyte | PB |\n| Kibibyte | KiB |\n| Mebibyte | MiB |\n| Gibibyte | GiB |\n| Tebibyte | TiB |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this data storage converter?\n**A:** It uses 11 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Bit (b), Byte (B), Kilobyte (KB), Megabyte (MB), Gigabyte (GB), Terabyte (TB), Petabyte (PB), Kibibyte (KiB), Mebibyte (MiB), Gibibyte (GiB), Tebibyte (TiB)."
+  },
+  "internal_links": [
+    {
+      "anchor": "GB to MB Converter",
+      "href": "/c/data/GB-to-MB"
+    },
+    {
+      "anchor": "MB to GB Converter",
+      "href": "/c/data/MB-to-GB"
+    },
+    {
+      "anchor": "KB to MB Converter",
+      "href": "/c/data/KB-to-MB"
+    },
+    {
+      "anchor": "MB to KB Converter",
+      "href": "/c/data/MB-to-KB"
+    },
+    {
+      "anchor": "TB to GB Converter",
+      "href": "/c/data/TB-to-GB"
+    },
+    {
+      "anchor": "GB to TB Converter",
+      "href": "/c/data/GB-to-TB"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "data",
+    "canonicalUrl": "https://turbounitconverter.com/c/data",
+    "category": "data",
+    "pageType": "category",
+    "keywords": [
+      "data storage converter",
+      "convert data storage"
+    ]
+  },
+  "contentHash": "e4ac498869a7"
+}

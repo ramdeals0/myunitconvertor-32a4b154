@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "wk to d — Convert Week to Day | Turbo Unit Converter",
+    "description": "Convert Week (wk) to Day (d) instantly. 1 wk = 7 d. Free, accurate, engineering-grade precision.",
+    "h1": "wk to d Converter"
+  },
+  "content": {
+    "intro": "Convert weeks (wk) to days (d) instantly. Both measure time, so the relationship is strictly linear: each week equals 7 days. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One week is equal to **7 days**. To go the other way, one day equals **0.14285714 weeks**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> days = weeks × 7\n\nWorked example — converting 10 weeks:\n\n10 × 7 = **70 d**.\n\nTo invert, divide by 7 (or multiply by 0.14285714).",
+    "conversion_table": "| weeks | days |\n| --- | --- |\n| 1 wk | 7 d |\n| 2 wk | 14 d |\n| 5 wk | 35 d |\n| 10 wk | 70 d |\n| 25 wk | 175 d |\n| 50 wk | 350 d |\n| 100 wk | 700 d |\n| 250 wk | 1750 d |\n| 500 wk | 3500 d |\n| 1000 wk | 7000 d |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 wk ≈ 7 d. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Week and Day both measure time; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many days are in 1 week?\n**A:** 7 days.\n\n**Q:** What's the formula to convert wk to d?\n**A:** days = weeks × 7.\n\n**Q:** How do I convert d back to wk?\n**A:** Multiply by 0.14285714 (or divide by 7).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this wk to d converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Day to Week converter",
+      "href": "/c/time/d-to-wk"
+    },
+    {
+      "anchor": "All time conversions",
+      "href": "/c/time"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "wk-to-d",
+    "canonicalUrl": "https://turbounitconverter.com/c/time/wk-to-d",
+    "category": "time",
+    "pageType": "pair",
+    "keywords": [
+      "week to day",
+      "wk to d",
+      "convert week to day",
+      "how many day in a week",
+      "week in day",
+      "wk to d converter",
+      "week vs day",
+      "week to day formula",
+      "week to day calculator"
+    ]
+  },
+  "contentHash": "457dc018a03e"
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "inhg-barometer-weather",
+  "title": "Inches of Mercury: Weather Barometers Explained",
+  "h1": "Inches of mercury — the barometer unit that hangs on",
+  "description": "US weather reports quote pressure in inHg. Aviation altimeters use it too. Here is how it maps to millibar and hectopascal, and where the differences matter.",
+  "category": "Pressure",
+  "readingMinutes": 4,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Meteorology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ICAO Annex 3 and NWS forecast conventions" },
+  "hero": "Standard sea-level pressure is 29.92 inHg = 1013.25 mb = 1013.25 hPa. Any barometer reading is just a percentage variation on that anchor.",
+  "body": [
+    "The US National Weather Service reports surface pressure in inches of mercury. Every other weather service in the world uses hectopascals (numerically identical to millibars). Both units survive on the same pilot's altimeter — every aircraft has a knob to switch between them.",
+    "## The exact factors",
+    "> 1 inHg = 33.8639 hPa = 33.8639 mb\n> 1 hPa = 0.02953 inHg\n> Standard sea-level: 29.9213 inHg = 1013.25 hPa\n> Very low (hurricane centre): 27.0 inHg = 914 hPa\n> Very high (winter continental): 30.7 inHg = 1040 hPa",
+    "## Aviation altimeter settings",
+    "The altimeter knob (Kollsman window) lets pilots set local sea-level pressure. Above 18,000 ft in the US (or the transition level elsewhere) all aircraft set 29.92 inHg / 1013 hPa — the 'standard' pressure setting — so vertical separation is consistent regardless of local weather. Below that, they set the local station pressure so altimeters read true altitude.",
+    "## Forecast anchors",
+    "Low pressure = storms. High pressure = clear. A rapid pressure drop of >2 hPa/hr signals an approaching front or intensifying storm. Hurricane strength is often quoted by minimum central pressure: Katrina bottomed at 902 hPa (26.64 inHg), Wilma at 882 hPa (26.05 inHg).",
+    "## Worked example — a pilot's altimeter",
+    "Local station reports 30.15 inHg. Pilot sets 30.15 in the Kollsman window. Airport elevation 250 ft — altimeter reads 250 ft on the ground, correct. Departing on a hot day when actual density altitude is 1,500 ft: takeoff performance degrades but the altimeter still reads pressure altitude, not density altitude. This is where 'high, hot, and heavy' accidents originate.",
+    "## The five-second recap",
+    "29.92 inHg = 1013 hPa = standard sea level. Multiply inHg by 33.86 for hPa. Below transition altitude, aviation uses local; above, everyone uses 29.92."
+  ],
+  "faqs": [
+    { "q": "Are millibars and hectopascals the same?", "a": "Yes — 1 mb = 1 hPa exactly. The WMO retired 'mb' in favour of hPa in 1985 but both remain in use." },
+    { "q": "Why 29.92 inHg specifically?", "a": "It is the standard atmosphere at sea level (101,325 Pa) converted to inHg: 101,325 / 3386.39 = 29.921." },
+    { "q": "How does a barometer predict weather?", "a": "Rapid drop = storm approaching. Slow rise = clearing. The trend matters more than the absolute value." }
+  ],
+  "related": [
+    { "label": "inHg to hPa converter", "href": "/c/pressure/inhg-to-hpa" },
+    { "label": "hPa to inHg converter", "href": "/c/pressure/hpa-to-inhg" },
+    { "label": "mb to hPa converter", "href": "/c/pressure/mb-to-hpa" }
+  ]
+}

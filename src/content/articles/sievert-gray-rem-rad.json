@@ -1,0 +1,53 @@
+{
+  "slug": "sievert-gray-rem-rad",
+  "title": "Sievert vs Gray vs Rem vs Rad: Radiation Dose Explained",
+  "h1": "Radiation dose units — sievert, gray, rem, rad",
+  "description": "1 Gy = 100 rad = absorbed dose. 1 Sv = 100 rem = equivalent dose weighted by radiation type. Confuse them and dose limits go out by 20×.",
+  "category": "Radiation absorbed dose",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Absorbed dose is energy per kg. Equivalent dose weights by biological damage. Effective dose weights again by organ sensitivity. Three different physical quantities, one unit family.",
+  "body": [
+    "Radiation protection uses three related but distinct dose quantities. Each has an SI and a legacy unit. Mixing them by name has produced medical dosing errors that hit the news.",
+    "## The exact factors",
+    "> Absorbed dose: 1 Gy (gray) = 1 J/kg = 100 rad\n> Equivalent dose: 1 Sv (sievert) = Σ w_R × D = 100 rem\n> w_R = 1 for photons/electrons, 20 for alpha, 5–20 for neutrons",
+    "## Where each applies",
+    "Gy (or rad): what the tissue absorbs — used in radiotherapy. Sv (or rem): biologically-weighted, used for occupational and public dose limits. Effective dose (also Sv): further weighted by organ sensitivity, used for whole-body risk.",
+    "## Typical values",
+    "Natural background: 2–3 mSv/year. Chest X-ray: 0.1 mSv. CT abdomen: 10 mSv. Radiation worker limit: 20 mSv/year (5-year average). Acute radiation syndrome threshold: ~1 Sv whole body.",
+    "## Worked example — nuclear medicine",
+    "A 200 MBq ⁹⁹ᵐTc bone scan delivers ~4 mSv effective dose. Confuse 4 mSv with 4 rem (40 mSv) and you overstate radiation risk by 10× — potentially delaying a diagnostic scan the patient needs.",
+    "## Recap",
+    "Gy is absorbed. Sv is biological-equivalent. rad and rem are the legacy CGS versions, each 100× smaller."
+  ],
+  "faqs": [
+    {
+      "q": "Is 1 Gy always 1 Sv?",
+      "a": "Only for photons and electrons (w_R = 1). Alpha particles: 1 Gy = 20 Sv. Neutrons: 1 Gy = 5–20 Sv."
+    },
+    {
+      "q": "What's the difference between equivalent and effective dose?",
+      "a": "Equivalent dose is per organ, weighted by radiation type. Effective dose is whole-body, further weighted by organ sensitivity."
+    }
+  ],
+  "related": [
+    {
+      "label": "Radiation absorbed dose converter",
+      "href": "/c/radiation-absorbed-dose"
+    },
+    {
+      "label": "Sievert, gray, rem",
+      "href": "/learn/sievert-gray-rem-radiation-dose"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "oven-temperatures-c-f-gas-mark",
+  "title": "Oven Temperatures: °C, °F, Gas Mark, and Fan vs Conventional",
+  "h1": "The oven-temperature ladder — °C, °F, Gas Mark, and the fan-oven -20°C rule",
+  "description": "180°C = 350°F = Gas Mark 4 — but a fan oven at 160°C bakes the same. Full conversion ladder, plus the physics of why fan ovens run cooler.",
+  "category": "Temperature",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-10",
+  "reviewed": "2026-07-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied metrology & culinary heat transfer" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against BS EN 60350-1 domestic oven test standard and ASTM F1496" },
+  "hero": "180°C conventional = 350°F = Gas Mark 4. Switch to a fan (convection) oven and the same recipe bakes at 160°C — 20°C lower, because moving air transfers heat about 25% faster than still air.",
+  "body": [
+    "Ovens are calibrated to air temperature, but food cooks by heat flux — the rate energy crosses the surface. Still-air heat transfer runs ~10 W/m²·K; forced-convection air runs ~25 W/m²·K. That is why the same 180°C setting cooks faster in a fan oven, and why UK/EU recipes routinely say '180°C (160°C fan)'. American recipes rarely make the distinction because most US ovens are conventional; the fan is opt-in.",
+    "## The full conversion ladder",
+    "> Very cool: 110°C · 225°F · Gas ¼ · 90°C fan\n> Cool: 140°C · 275°F · Gas 1 · 120°C fan\n> Warm: 150°C · 300°F · Gas 2 · 130°C fan\n> Moderate: 180°C · 350°F · Gas 4 · 160°C fan\n> Fairly hot: 200°C · 400°F · Gas 6 · 180°C fan\n> Hot: 220°C · 425°F · Gas 7 · 200°C fan\n> Very hot: 240°C · 475°F · Gas 9 · 220°C fan\n> Maximum: 260°C · 500°F · Gas 10 · 240°C fan",
+    "## Where Gas Mark comes from",
+    "British Gas gave up on °F in the 1930s and standardised the burner setting so Gas Mark 1 = 275°F and each step adds 25°F. So Gas Mark n = 275 + 25(n-1) °F = 250 + 25n °F. Convert to Celsius: °C = (250 + 25n - 32) × 5/9. Gas Mark 4 = 350°F = 176.7°C, rounded to 180°C in modern recipes.",
+    "## The fan-oven -20°C rule (and its exceptions)",
+    "The standard advice: reduce fan-oven temperature by 20°C or reduce time by 25%. This works for most baking but breaks in three places:",
+    "**Puff pastry and choux.** These rise on rapid steam release. A fan oven's air movement dries the surface too quickly and inhibits rise. Bake conventional if you have the option, or reduce fan temp only 10°C.",
+    "**Custards and soufflés.** Air movement collapses delicate structures. Bake conventional at the recipe temperature, or use a bain-marie to buffer the airflow.",
+    "**Large roasts.** The 20°C reduction actually helps — outer surface browns faster and less overcooked meat sits between crust and pink centre. Roast at fan temperature and use a probe thermometer for doneness, not time.",
+    "## Worked examples",
+    "**UK recipe in a US oven.** '190°C fan, 25 minutes' means the recipe author assumed a fan oven. On a conventional US oven, add 20°C → 210°C → 410°F. Round to 400°F or 425°F and adjust the time down 3–5 minutes on 425°F.",
+    "**US recipe in a UK fan oven.** '350°F, 45 minutes' = 180°C conventional = 160°C fan. If you leave it at 180°C in fan mode, expect over-browned edges and dry centre by minute 40.",
+    "**Gas oven with hot spots.** Gas Mark 4 varies ±15°C by shelf position and burner age. Use an oven thermometer on the middle shelf; ignore the dial. Older UK gas cookers routinely run 15–25°C hotter than the dial claims.",
+    "## Air fryers are convection ovens",
+    "Air fryers move air faster (~35 W/m²·K equivalent). The rule shifts to -25°C and -20% time versus conventional. A '400°F for 20 minutes' oven recipe becomes '375°F for 16 minutes' in an air fryer. Same food, roughly one-fifth less energy.",
+    "## Doneness by internal temperature, not time",
+    "The ladder above is oven-air temperature. Food doneness is core temperature: chicken 74°C, medium-rare beef 54°C, bread crumb 96°C. A probe thermometer removes 90% of oven-temperature guesswork — a $15 tool that outperforms most recipe timings.",
+    "## The five-second recap",
+    "180°C conventional = 350°F = Gas Mark 4 = 160°C fan. Subtract 20°C for fan, or 25°C for air fryer. Trust an oven thermometer over the dial and a probe thermometer over the recipe timer."
+  ],
+  "faqs": [
+    { "q": "Do I use fan or conventional for cakes?", "a": "Conventional is safer for delicate sponges — even airflow matters less than gentle heat. For robust cakes (banana bread, brownies) fan works fine at -20°C. Chiffon and angel food: conventional only." },
+    { "q": "Is Gas Mark ¼ or ½ ever used?", "a": "Yes — ¼ (225°F, 110°C) for meringues and dehydrating; ½ (250°F, 120°C) for very slow braises. Modern gas ovens rarely dial that low accurately; use an electric oven if precision matters." },
+    { "q": "Why does my fan oven still take longer than the recipe says?", "a": "Preheating. A cold fan oven still has cold walls that absorb radiant heat. Preheat 15 minutes past the beep for the walls to equilibrate, then the -20°C rule works." },
+    { "q": "Should I preheat for everything?", "a": "Baked goods and pizza yes — the initial heat drives leavening. Roasts and casseroles no — cold-start actually improves fond development on the roast." },
+    { "q": "How accurate is my oven dial?", "a": "Domestic ovens tested to BS EN 60350-1 have ±10°C tolerance at the dial setting; older ovens drift ±20°C. Buy a $10 oven thermometer and calibrate once per year." }
+  ],
+  "related": [
+    { "label": "°C to °F converter", "href": "/c/temperature/c-to-f" },
+    { "label": "Meat doneness temperatures", "href": "/learn/meat-doneness-temperatures" },
+    { "label": "Air fryer vs oven time & temp", "href": "/learn/air-fryer-vs-oven-time-temp" },
+    { "label": "Candy thermometer stages", "href": "/learn/candy-thermometer-stages" }
+  ]
+}

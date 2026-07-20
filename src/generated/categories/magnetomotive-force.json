@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Magnetomotive Force Converter — Convert Ampere-turn and More",
+    "description": "Free magnetomotive force converter for 3+ units including Ampere-turn, Kiloampere-turn, Gilbert. Instant, accurate, browser-based.",
+    "h1": "Magnetomotive Force Converter"
+  },
+  "content": {
+    "intro": "Ampere-turn, gilbert. Convert between 3 magnetomotive force units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for magnetomotive force in this tool is **At**; every conversion routes through it for consistency.",
+    "formula_section": "Most magnetomotive force conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Ampere-turn | At |\n| Kiloampere-turn | kAt |\n| Gilbert | Gb |",
+    "use_cases": "- MRI, NMR, and scientific-instrument field strength.\n- Magnet selection for industrial holding applications.\n- Sensor calibration in gauss vs tesla.\n- Audio and speaker magnet specs.\n- Magnetic shielding design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this magnetomotive force converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Ampere-turn (At), Kiloampere-turn (kAt), Gilbert (Gb)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Ampere-turn to Kiloampere-turn",
+      "href": "/c/magnetomotive-force/at-to-kat"
+    },
+    {
+      "anchor": "Kiloampere-turn to Ampere-turn",
+      "href": "/c/magnetomotive-force/kat-to-at"
+    },
+    {
+      "anchor": "Gilbert to Ampere-turn",
+      "href": "/c/magnetomotive-force/gb-to-at"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "magnetomotive-force",
+    "canonicalUrl": "https://turbounitconverter.com/c/magnetomotive-force",
+    "category": "magnetomotive-force",
+    "pageType": "category",
+    "keywords": [
+      "magnetomotive force converter",
+      "convert magnetomotive force"
+    ]
+  },
+  "contentHash": "389b39b52ea6"
+}

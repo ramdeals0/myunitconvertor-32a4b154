@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "ac to ha — Convert Acre to Hectare | Turbo Unit Converter",
+    "description": "Convert Acre (ac) to Hectare (ha) instantly. 1 ac = 0.40468564 ha. Free, accurate, engineering-grade precision.",
+    "h1": "ac to ha Converter"
+  },
+  "content": {
+    "intro": "Convert acres (ac) to hectares (ha) instantly. Both measure area, so the relationship is strictly linear: each acre equals 0.40468564 hectares. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One acre is equal to **0.40468564 hectares**. To go the other way, one hectare equals **2.4710538 acres**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> hectares = acres × 0.40468564\n\nWorked example — converting 10 acres:\n\n10 × 0.40468564 = **4.0468564 ha**.\n\nTo invert, divide by 0.40468564 (or multiply by 2.4710538).",
+    "conversion_table": "| acres | hectares |\n| --- | --- |\n| 1 ac | 0.40468564 ha |\n| 2 ac | 0.80937128 ha |\n| 5 ac | 2.0234282 ha |\n| 10 ac | 4.0468564 ha |\n| 25 ac | 10.117141 ha |\n| 50 ac | 20.234282 ha |\n| 100 ac | 40.468564 ha |\n| 250 ac | 101.17141 ha |\n| 500 ac | 202.34282 ha |\n| 1000 ac | 404.68564 ha |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 ac ≈ 0.40468564 ha. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Acre and Hectare both measure area; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many hectares are in 1 acre?\n**A:** 0.40468564 hectares.\n\n**Q:** What's the formula to convert ac to ha?\n**A:** hectares = acres × 0.40468564.\n\n**Q:** How do I convert ha back to ac?\n**A:** Multiply by 2.4710538 (or divide by 0.40468564).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this ac to ha converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Hectare to Acre converter",
+      "href": "/c/area/ha-to-ac"
+    },
+    {
+      "anchor": "All area conversions",
+      "href": "/c/area"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "ac-to-ha",
+    "canonicalUrl": "https://turbounitconverter.com/c/area/ac-to-ha",
+    "category": "area",
+    "pageType": "pair",
+    "keywords": [
+      "acre to hectare",
+      "ac to ha",
+      "convert acre to hectare",
+      "how many hectare in a acre",
+      "acre in hectare",
+      "ac to ha converter",
+      "acre vs hectare",
+      "acre to hectare formula",
+      "acre to hectare calculator"
+    ]
+  },
+  "contentHash": "6eb971c82b22"
+}

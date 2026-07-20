@@ -1,0 +1,47 @@
+{
+  "slug": "acres-hectares-and-the-surveyors-chain",
+  "title": "Acres, Hectares and the Surveyor's Chain",
+  "h1": "Acres, hectares and the surveyor's chain — why land parcels don't round",
+  "description": "A hectare is 2.471 acres, an acre is 43,560 sq ft, and neither number is arbitrary. Here is how land measurement grew from oxen and rope into the modern cadastral system.",
+  "category": "Area",
+  "readingMinutes": 6,
+  "published": "2026-05-10",
+  "updated": "2026-06-20",
+  "reviewed": "2026-06-20",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Land surveying & geodesy",
+    "bio": "Reference material curated for surveyors, real-estate professionals and GIS analysts working across mixed metric and US Customary parcels."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8 and the NGS Geodetic Glossary" },
+  "hero": "A hectare and an acre both come from working humans and working animals — one from a Roman schoolroom, the other from a medieval ox team. The exact numbers are still with us.",
+  "body": [
+    "Every land document larger than a suburban lot uses either the acre or the hectare, and every cross-border deed has a moment where those two numbers need to line up. The conversion factor — 1 ha = 2.47105381 acres — is exact, but where it comes from and why land is still measured in \"chains\" in some US counties is a longer story than the calculator alone tells.",
+    "## The exact factors",
+    "> 1 acre = 43,560 sq ft = 4,046.8564224 m² (exact)\n> 1 hectare = 10,000 m² = 2.4710538147 acres\n> 1 square mile = 640 acres = 2.589988110336 km²\n> 1 chain = 66 ft = 20.1168 m; 1 acre = 10 sq chain",
+    "The 66-foot chain is the anchor of the entire US Public Land Survey System. Edmund Gunter designed it in 1620 so that ten square chains would equal exactly one acre — a decimal-friendly relationship inside an otherwise imperial system. Every township, section and quarter-section line in the American Midwest was originally paced out by two rod-men dragging a physical 66-foot chain across the prairie.",
+    "## Where hectares came from",
+    "The metric system's designers wanted a land unit that scaled nicely: 1 are = 100 m², 1 hectare = 10,000 m² = 100 ares, 1 km² = 100 hectares. Farmers found the are too small (roughly a rugby try-zone) and the km² too large, so the hectare became the practical unit for fields, forestry parcels and cadastral maps almost everywhere outside the US and UK.",
+    "## The US survey foot problem",
+    "Until 2022 the US had two definitions of the foot: the international foot (0.3048 m exactly) and the older US survey foot (1200/3937 m ≈ 0.30480061 m). The difference is 6.4 mm per 100 km — invisible on a house lot, but a full square metre on a section-line acre in Nebraska. NIST retired the US survey foot on 31 December 2022, but every legacy plat and every state-plane coordinate written before that date still uses it. When you see \"US acre\" instead of just \"acre\", the surveyor is warning you.",
+    "## Working the conversion in practice",
+    "A 120-hectare Bavarian farm is being marketed to a Californian investor. Convert once: 120 × 2.47105 = 296.53 acres. Which is 296 acres and 21,400 sq ft, or in the older rural US phrasing, roughly \"296 acres and half a lot\". A single decimal error here — 296 vs 2,965 — is the difference between a farm and a subdivided ranch, so always sanity-check by comparing hectares to the m² figure the deed already lists.",
+    "## Roofing, floor plans and the 'square'",
+    "Below the acre scale, the same units branch: builders in the US quote roofing in \"squares\" (1 square = 100 sq ft = 9.2903 m²), while European roofers quote m² directly. Real-estate listings mix things further — Australian house floor plans are often in m² and \"squares\" simultaneously, where 1 (Australian building) square = 100 sq ft. Always check which convention the listing is using.",
+    "## Worked example — a 5-acre house lot",
+    "5 acres × 4,046.856 = 20,234.28 m² = 2.023 hectares. That is a square about 142 m on a side, or about 466 ft on a side — roughly one-and-a-half American football fields end-to-end. Land buyers who have only ever thought in city blocks systematically under-estimate acreage by 2–3× on their first purchase; converting to a mental picture (a football field is 1.32 acres) helps.",
+    "## The five-second recap",
+    "One hectare is about two-and-a-half acres. One acre is 43,560 square feet. One square mile is 640 acres. If a deed says \"US survey foot\" or \"US acre\", track that flag through every downstream calculation — the 2 ppm difference is real."
+  ],
+  "faqs": [
+    { "q": "How many acres in a hectare?", "a": "1 hectare = 2.4710538147 acres. Equivalently, 1 acre = 0.4046856422 hectare." },
+    { "q": "How many square feet in an acre?", "a": "Exactly 43,560 sq ft. This is defined as 10 square chains, a Gunter's-chain relationship dating from 1620." },
+    { "q": "Is a US acre different from an international acre?", "a": "For all practical purposes no — the difference is roughly 0.004 sq ft per acre, from the retired US survey foot. Modern deeds use the international definition." },
+    { "q": "How large is a football field in acres?", "a": "An American football field including the end zones is about 1.32 acres. A FIFA soccer pitch is roughly 1.76 acres. A rugby pitch is about 2.2 acres." }
+  ],
+  "related": [
+    { "label": "acres to hectares converter", "href": "/c/area/ac-to-ha" },
+    { "label": "hectares to acres converter", "href": "/c/area/ha-to-ac" },
+    { "label": "sq ft to sq m converter", "href": "/c/area/ft2-to-m2" }
+  ]
+}

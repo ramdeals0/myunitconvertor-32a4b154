@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Radiation Activity Converter — Convert Becquerel and More",
+    "description": "Free radiation activity converter for 7+ units including Becquerel, Kilobecquerel, Megabecquerel. Instant, accurate, browser-based.",
+    "h1": "Radiation Activity Converter"
+  },
+  "content": {
+    "intro": "Becquerel, curie. Convert between 7 radiation activity units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for radiation activity in this tool is **Bq**; every conversion routes through it for consistency.",
+    "formula_section": "Most radiation activity conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Becquerel | Bq |\n| Kilobecquerel | kBq |\n| Megabecquerel | MBq |\n| Gigabecquerel | GBq |\n| Curie | Ci |\n| Millicurie | mCi |\n| Microcurie | µCi |",
+    "use_cases": "- Medical imaging dose tracking.\n- Radiation protection calculations.\n- Material activity assays.\n- Lab radiation source labeling.\n- Industrial NDT inspections.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this radiation activity converter?\n**A:** It uses 7 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Becquerel (Bq), Kilobecquerel (kBq), Megabecquerel (MBq), Gigabecquerel (GBq), Curie (Ci), Millicurie (mCi), Microcurie (µCi)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Becquerel to Kilobecquerel",
+      "href": "/c/radiation-activity/bq-to-kbq"
+    },
+    {
+      "anchor": "Kilobecquerel to Becquerel",
+      "href": "/c/radiation-activity/kbq-to-bq"
+    },
+    {
+      "anchor": "Megabecquerel to Becquerel",
+      "href": "/c/radiation-activity/mbq-to-bq"
+    },
+    {
+      "anchor": "Gigabecquerel to Becquerel",
+      "href": "/c/radiation-activity/gbq-to-bq"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "radiation-activity",
+    "canonicalUrl": "https://turbounitconverter.com/c/radiation-activity",
+    "category": "radiation-activity",
+    "pageType": "category",
+    "keywords": [
+      "radiation activity converter",
+      "convert radiation activity"
+    ]
+  },
+  "contentHash": "c4a172501034"
+}

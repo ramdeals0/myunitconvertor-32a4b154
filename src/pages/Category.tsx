@@ -1,41 +1,83 @@
 import { Link, useParams, Navigate } from "react-router-dom";
+
 import { Seo } from "@/components/Seo";
 import { Converter } from "@/components/Converter";
-import { AdBanner } from "@/components/AdBanner";
+import { TurboSearchBar } from "@/components/TurboSearchBar";
+import { RecentConversions } from "@/components/RecentConversions";
 import { CATEGORY_MAP, CATEGORIES, convert, formatResult } from "@/lib/converters/data";
 import { GROUP_SCENARIOS } from "@/lib/converters/content";
-import { ArrowRight } from "lucide-react";
+import { getCategoryContent } from "@/lib/converters/categoryContent";
+import { getLaunchPairsByCategory, getTopLaunchPairs } from "@/lib/converters/pseoGrid";
+import { ArrowRight, TrendingUp } from "lucide-react";
+import { useLocalizedPath, useLocalizedUrl, useI18n, BCP47, SITE_URL } from "@/lib/i18n";
+
 
 export default function CategoryPage() {
   const { category: categoryId } = useParams<{ category: string }>();
+  const L = useLocalizedPath();
+  const LU = useLocalizedUrl();
+  const { lang } = useI18n();
   const category = categoryId ? CATEGORY_MAP[categoryId] : undefined;
 
-  if (!category) return <Navigate to="/404" replace />;
+  if (!category) return <Navigate to={L("/404")} replace />;
 
   const related = CATEGORIES.filter((c) => c.group === category.group && c.id !== category.id).slice(0, 6);
   const featured = category.popular?.[0] ?? { from: category.units[0]?.id, to: category.units[1]?.id };
   const f = category.units.find((u) => u.id === featured.from);
   const t = category.units.find((u) => u.id === featured.to);
   const factor = f && t ? convert(category, 1, f.id, t.id) : null;
+  const launchPairCount = getLaunchPairsByCategory(category.id, 24).length;
+  // Only serve ads on hubs that anchor a real launch cluster (≥3 pair pages of long copy).
+  const adsAllowed = launchPairCount >= 3;
+  // Non-launch category hubs stay indexable (they list units) but are lower priority.
 
   const title = `${category.name} Converter — Turbo Unit Converter`;
-  const description = `${category.name} converter with ${category.units.length} units. ${category.description}`.slice(0, 160);
-  const url = `https://turbounitconverter.vercel.app/c/${category.id}`;
+  const description = `Free ${category.name.toLowerCase()} converter — ${category.units.length} units, instant results, engineering-grade accuracy. ${category.description}`.slice(0, 160);
+  const url = LU(`/c/${category.id}`);
+  const homeUrl = LU("/");
+  const langTag = BCP47[lang];
 
-  const faqs = [
-    { q: "How precise is this tool?", a: "We use 12-digit precision constants aligned with international metrology standards." },
-    { q: `Which ${category.name.toLowerCase()} units are supported?`, a: `${category.units.length} units across SI, US Customary, and Imperial systems where applicable.` },
-    { q: "Is it free to use?", a: "Yes, the web tool is completely free for personal, educational, and professional use." },
-  ];
+  const content = getCategoryContent(category);
+  const faqs = content.faqs.map((item) => ({ q: item.q, a: item.a }));
 
   const jsonLd: Record<string, unknown>[] = [
     {
       "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: title,
+      description,
+      url,
+      inLanguage: langTag,
+      isPartOf: { "@type": "WebSite", name: "Turbo Unit Converter", url: `${SITE_URL}/` },
+      mainEntity: {
+        "@type": "WebApplication",
+        name: `${category.name} Unit Converter`,
+        applicationCategory: "UtilitiesApplication",
+      },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${SITE_URL}/?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://turbounitconverter.vercel.app/" },
+        { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
         { "@type": "ListItem", position: 2, name: category.name, item: url },
       ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: `${category.name} Unit Converter`,
+      url,
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Any",
+      browserRequirements: "Requires JavaScript. Works in any modern browser.",
+      description: `Free online ${category.name.toLowerCase()} converter with ${category.units.length} units.`,
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     },
     {
       "@context": "https://schema.org",
@@ -72,7 +114,7 @@ export default function CategoryPage() {
       />
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav className="text-xs text-muted-foreground mb-4">
-          <Link to="/" className="hover:text-primary">Home</Link>
+          <Link to={L("/")} className="hover:text-primary">Home</Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{category.name}</span>
         </nav>
@@ -82,7 +124,12 @@ export default function CategoryPage() {
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{category.description}</p>
         </header>
 
-        <Converter category={category} />
+        <TurboSearchBar className="max-w-3xl mx-auto mb-6" />
+
+        <Converter category={category} smartDefaults />
+
+        <RecentConversions className="mt-6" categoryId={category.id} />
+
 
         {f && t && factor !== null && (
           <div className="mt-6 bg-primary-soft border border-primary/15 rounded-xl p-5 text-center">
@@ -96,16 +143,16 @@ export default function CategoryPage() {
           </div>
         )}
 
-        <AdBanner className="mt-10" />
 
         <section className="mt-12 bg-surface-elevated border border-border rounded-xl p-6 md:p-8 shadow-[var(--shadow-card)]">
           <h2 className="text-xl md:text-2xl font-semibold mb-3">About the {category.name.toLowerCase()} converter</h2>
-          <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-            The {category.name} Converter translates values between {category.units.length} different {category.name.toLowerCase()} units
-            — including SI, US Customary, and Imperial measures where applicable — using 12-digit precision constants aligned with
-            international metrology standards. {category.description} Enter any value on the left and the result updates instantly,
-            so you can compare units, double-check a calculation, or generate reference tables without leaving the page.
-          </p>
+          <div className="space-y-4">
+            {content.intro.map((paragraph, i) => (
+              <p key={i} className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
 
           <h3 className="text-base md:text-lg font-semibold mt-6 mb-2">Common real-world scenarios</h3>
           <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground leading-relaxed">
@@ -139,47 +186,53 @@ export default function CategoryPage() {
           )}
         </section>
 
-        {category.popular?.length ? (
-          <section className="mt-12">
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">Popular {category.name.toLowerCase()} conversions</h2>
+        {(() => {
+          const launchPairs = getLaunchPairsByCategory(category.id, 12);
+          if (!launchPairs.length) return null;
+          return (
+            <section className="mt-12">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="h-5 w-5 text-primary" />
+                <h2 className="text-xl md:text-2xl font-semibold">
+                  Popular {category.name.toLowerCase()} conversions
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground mb-5 max-w-2xl">
+                The most-searched {category.name.toLowerCase()} pairs. Each opens a dedicated converter with
+                formula, examples, and FAQs.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {launchPairs.map((p) => {
+                  const pf = category.units.find((u) => u.id === p.fromUnit);
+                  const pt = category.units.find((u) => u.id === p.toUnit);
+                  if (!pf || !pt) return null;
+                  const f1 = convert(category, 1, pf.id, pt.id);
+                  return (
+                    <Link
+                      key={p.slug}
+                      to={L(`/c/${category.id}/${p.slug}`)}
+                      className="group bg-surface-elevated border border-border rounded-xl p-4 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
+                    >
+                      <div className="flex items-center justify-between text-sm font-semibold">
+                        <span>{pf.symbol} <ArrowRight className="inline h-3 w-3 mx-0.5 text-muted-foreground" /> {pt.symbol}</span>
+                        <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition" />
+                      </div>
+                      <div className="mt-2 font-mono-num text-xs text-muted-foreground">
+                        1 {pf.symbol} = <span className="text-primary font-semibold">{formatResult(f1)}</span> {pt.symbol}
+                      </div>
+                      <div className="mt-1 text-[11px] text-muted-foreground capitalize">
+                        {pf.name.toLowerCase()} to {pt.name.toLowerCase()}
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })()}
 
-            <div className="bg-surface-elevated border border-border rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
-              <table className="w-full text-sm">
-                <thead className="bg-muted/40 text-xs uppercase tracking-wider text-muted-foreground">
-                  <tr>
-                    <th className="text-left p-3 font-semibold">From</th>
-                    <th className="text-left p-3 font-semibold">To</th>
-                    <th className="text-right p-3 font-semibold">Open</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  {category.popular.flatMap((p) => {
-                    const pf = category.units.find((u) => u.id === p.from);
-                    const pt = category.units.find((u) => u.id === p.to);
-                    if (!pf || !pt) return [];
-                    return [1, 5, 10, 25].map((v) => (
-                      <tr key={`${p.from}-${p.to}-${v}`} className="hover:bg-muted/30">
-                        <td className="p-3 font-mono-num">{v} {pf.name}</td>
-                        <td className="p-3 font-mono-num text-primary font-semibold">
-                          {formatResult(convert(category, v, pf.id, pt.id))} {pt.name}
-                        </td>
-                        <td className="p-3 text-right">
-                          <Link to={`/c/${category.id}/${pf.id}-to-${pt.id}`}
-                            className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
-                            {pf.symbol} <ArrowRight className="h-3 w-3" /> {pt.symbol}
-                          </Link>
-                        </td>
-                      </tr>
-                    ));
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        ) : null}
-
-        {f && t && factor !== null && (
-          <section className="mt-12 grid md:grid-cols-2 gap-6">
+        <section className="mt-12 grid md:grid-cols-2 gap-6">
+          {f && t && factor !== null ? (
             <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
               <h2 className="text-lg font-semibold mb-3">
                 How to convert {f.name.toLowerCase()} to {t.name.toLowerCase()}
@@ -191,28 +244,36 @@ export default function CategoryPage() {
               <div className="mt-4 rounded-lg border border-dashed border-border bg-muted/30 p-4 font-mono-num text-sm">
                 {t.name} = {f.name} × {formatResult(factor)}
               </div>
-              <Link to={`/c/${category.id}/${f.id}-to-${t.id}`}
+              <Link to={L(`/c/${category.id}/${f.id}-to-${t.id}`)}
                 className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
                 Read full technical guide <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-
+          ) : (
             <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
-              <h2 className="text-lg font-semibold mb-4">Frequently asked questions</h2>
-              <div className="divide-y divide-border">
-                {faqs.map((item) => (
-                  <details key={item.q} className="group py-3">
-                    <summary className="cursor-pointer list-none flex items-center justify-between text-sm font-semibold">
-                      {item.q}
-                      <span className="text-primary group-open:rotate-45 transition-transform text-lg leading-none">+</span>
-                    </summary>
-                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.a}</p>
-                  </details>
-                ))}
-              </div>
+              <h2 className="text-lg font-semibold mb-3">About this converter</h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {category.description} All {category.units.length} supported units are listed in the reference table below,
+                each stored with 12-digit precision constants aligned with NIST SP 811.
+              </p>
             </div>
-          </section>
-        )}
+          )}
+
+          <div className="bg-surface-elevated border border-border rounded-xl p-6 shadow-[var(--shadow-card)]">
+            <h2 className="text-lg font-semibold mb-4">Frequently asked questions</h2>
+            <div className="divide-y divide-border">
+              {faqs.map((item) => (
+                <details key={item.q} className="group py-3">
+                  <summary className="cursor-pointer list-none flex items-center justify-between text-sm font-semibold gap-3">
+                    <span>{item.q}</span>
+                    <span className="text-primary group-open:rotate-45 transition-transform text-lg leading-none shrink-0">+</span>
+                  </summary>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="mt-12">
           <h2 className="text-xl font-semibold mb-4">All {category.name.toLowerCase()} units</h2>
@@ -238,12 +299,40 @@ export default function CategoryPage() {
           </div>
         </section>
 
+        {content.related.length > 0 && (
+          <section className="mt-12">
+            <h2 className="text-xl font-semibold mb-1">Suggested related conversions</h2>
+            <p className="text-sm text-muted-foreground mb-5 max-w-2xl">
+              Categories most often used alongside {category.name.toLowerCase()} — each links to its own converter, unit table and FAQ.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {content.related.map((r) => {
+                const target = CATEGORY_MAP[r.id];
+                if (!target) return null;
+                return (
+                  <Link
+                    key={r.id}
+                    to={L(`/c/${r.id}`)}
+                    className="group bg-surface-elevated border border-border rounded-xl p-4 hover:border-primary hover:shadow-[var(--shadow-card)] transition"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm font-semibold">{r.label}</span>
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition" />
+                    </div>
+                    <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">{r.reason}</p>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
         {related.length > 0 && (
           <section className="mt-12">
-            <h2 className="text-xl font-semibold mb-4">Related converters</h2>
+            <h2 className="text-xl font-semibold mb-4">More in {category.group === "other" ? "this group" : `${category.group}`}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {related.map((c) => (
-                <Link key={c.id} to={`/c/${c.id}`}
+                <Link key={c.id} to={L(`/c/${c.id}`)}
                   className="bg-surface-elevated border border-border rounded-xl p-3 text-sm font-medium hover:border-primary transition text-center">
                   {c.name}
                 </Link>

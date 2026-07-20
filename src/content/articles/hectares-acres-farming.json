@@ -1,0 +1,37 @@
+{
+  "slug": "hectares-acres-farming",
+  "title": "Hectares and Acres for Farmers",
+  "h1": "Hectares and acres — land units that decide crop yields",
+  "description": "Yield per acre and yield per hectare do not convert with a round factor. Here is the exact math and why bushels-per-acre and tonnes-per-hectare disagree by 40%.",
+  "category": "Area",
+  "readingMinutes": 5,
+  "published": "2026-06-08",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Agricultural metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against USDA and FAO conversion tables" },
+  "hero": "1 hectare = 2.471 acres. Convert wrong and a farm bid, a fertiliser order or a subsidy claim can be off by nearly 40%.",
+  "body": [
+    "Farm auctions in Iowa quote acres. Farm auctions in France quote hectares. Farm auctions in Brazil quote alqueires (which vary by state). This unit chaos is not academic — it drives fertiliser purchases, crop insurance and land prices.",
+    "## The exact factors",
+    "> 1 ac = 4,046.8564224 m² = 0.404686 ha (exact)\n> 1 ha = 10,000 m² = 2.471054 ac (exact)\n> 1 km² = 100 ha = 247.1 ac",
+    "## Yield conversion is not one factor",
+    "Corn yield in the US is bushels per acre (bu/ac). Corn yield in Europe is tonnes per hectare (t/ha). Two factors apply at once — area and mass. A US corn bushel is 56 lb (25.4 kg). So 200 bu/ac × 25.4 kg/bu / 0.4047 ha/ac = 12,554 kg/ha = 12.55 t/ha. Multiply bu/ac by 0.0628 for a direct shortcut, but only for corn; wheat bushels are 60 lb.",
+    "## Worked example — a 250-acre wheat farm",
+    "250 ac × 0.4047 = 101.2 ha. At a US wheat yield of 55 bu/ac × 60 lb = 3,300 lb/ac = 3.70 t/ac = 9.14 t/ha, the farm produces 250 × 3.70 = 925 short tons = 839 tonnes annually. Cross-check: 101.2 ha × 9.14 t/ha = 925 tonnes. Both routes agree when the bushel weight and area factor are handled cleanly.",
+    "## Historic units that still appear",
+    "The alqueire varies from 2.42 ha (São Paulo) to 4.84 ha (Bahia). The Turkish dönüm is 0.1 ha. The Chinese mǔ (亩) is 666.7 m² = 0.0667 ha. Land contracts in these countries still quote local units alongside hectares — always confirm the regional definition before signing.",
+    "## The five-second recap",
+    "Multiply acres by 0.4047 for hectares. For yield, multiply bu/ac by 0.0628 for corn (t/ha), by 0.0673 for wheat, by 0.0561 for soybeans. And check the local land unit if you are buying anywhere south of the Rio Grande."
+  ],
+  "faqs": [
+    { "q": "How big is a football pitch in hectares?", "a": "A regulation FIFA pitch (105 × 68 m) is 0.714 ha = 1.76 acres." },
+    { "q": "Why is the acre 4,046 m² and not a round number?", "a": "The acre was defined as one furlong (660 ft) by one chain (66 ft) — a shape that could be ploughed by one ox team in a day. The metric conversion is unavoidably awkward." },
+    { "q": "Is the acre exact?", "a": "Yes — 4,046.8564224 m² exactly since the international foot was defined as 0.3048 m in 1959." }
+  ],
+  "related": [
+    { "label": "acre to ha converter", "href": "/c/area/ac-to-ha" },
+    { "label": "ha to acre converter", "href": "/c/area/ha-to-ac" },
+    { "label": "acre to sq ft converter", "href": "/c/area/ac-to-ft2" }
+  ]
+}

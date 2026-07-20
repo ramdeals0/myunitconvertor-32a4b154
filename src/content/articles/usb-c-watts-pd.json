@@ -1,0 +1,49 @@
+{
+  "slug": "usb-c-watts-pd",
+  "title": "USB-C Power Delivery: Watts, Volts, Amps and the PD 3.1 Extended Range",
+  "h1": "USB-C wattage — PD profiles, PPS and the 240 W EPR ceiling",
+  "description": "USB-C PD tops out at 240 W (48 V × 5 A) since PD 3.1 EPR. Here is every voltage/current combo, the cable-marking rules, and why your laptop charges slowly.",
+  "category": "Power",
+  "readingMinutes": 7,
+  "published": "2026-07-10",
+  "updated": "2026-07-13",
+  "reviewed": "2026-07-13",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied electrical engineering & standards" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against USB-IF USB Power Delivery Specification Revision 3.1 v1.8 (2023), USB Type-C Cable and Connector Specification Release 2.3, and IEC 62680-1-2" },
+  "hero": "USB-C Power Delivery scales from 15 W (5 V × 3 A) up to 240 W (48 V × 5 A) since the PD 3.1 Extended Power Range was published in 2021. Between those extremes are seven fixed voltage rails and a variable Programmable Power Supply mode — and the wrong cable silently caps you at 60 W.",
+  "body": [
+    "USB-C is a connector; USB Power Delivery (USB PD) is the negotiation protocol running over the CC pins. When a laptop plugs into a charger, the two sides exchange PDOs (Power Data Objects) and agree on a voltage/current pair. Higher wattage requires (a) a charger that advertises the profile, (b) a device that requests it, and (c) an e-marked cable rated for the current. Miss any of the three and you fall back to 5 V × 3 A = 15 W, no matter what the label promises.",
+    "## The exact PD profile ladder",
+    "> P = V × I. USB PD fixed profiles (SPR, Standard Power Range):\n> 5 V × 3 A = 15 W · 9 V × 3 A = 27 W · 15 V × 3 A = 45 W · 20 V × 3 A = 60 W · 20 V × 5 A = 100 W\n> PD 3.1 EPR (Extended Power Range) adds:\n> 28 V × 5 A = 140 W · 36 V × 5 A = 180 W · 48 V × 5 A = 240 W\n> PPS (Programmable Power Supply, PD 3.0+): 3.3–21 V in 20 mV steps, current in 50 mA steps",
+    "## Cable current rating",
+    "| Cable type | e-marker chip | Max current | Max power |\n|---|---|---|---|\n| Passive USB 2.0, unmarked | No | 3 A | 60 W @ 20 V |\n| Passive USB 2.0, 5 A marked | Yes | 5 A | 100 W @ 20 V |\n| Passive USB 3.2, 5 A marked | Yes | 5 A | 100 W |\n| Passive USB4/Thunderbolt, 5 A | Yes | 5 A | 240 W @ 48 V (EPR-capable) |\n| Any cable without EPR marking | — | 5 A max | 100 W ceiling |",
+    "USB-IF requires all cables above 3 A and all EPR (>100 W) cables to carry an e-marker chip that the host reads before requesting the profile. Fake USB-C cables from bargain shops often lack the chip — negotiation falls back to 3 A regardless of the printed rating.",
+    "## Why your laptop 'slow charges'",
+    "A MacBook Pro 16\" (M3 Max, 2023) requests 20 V × 7.5 A = 140 W via EPR. Plug it into a 100 W charger: charger tops out at 20 V × 5 A, laptop accepts, charge rate ~30% slower. Plug it into a 96 W charger with a non-EPR cable: same 100 W ceiling. Plug it into a 140 W charger with a non-EPR cable: cable rejects EPR, negotiation drops to 20 V × 5 A = 100 W. To hit the full 140 W you need charger + laptop + EPR cable, all three.",
+    "## PPS — why phones charge in 20 minutes",
+    "Programmable Power Supply is a PD 3.0 subset that lets the device request an exact voltage. Samsung's 45 W Super Fast Charging 2.0 uses PPS at 10 V × 4.5 A, ramping voltage down to 5 V as the battery approaches 100%. This avoids the buck converter inside the phone (efficiency ~92%) and delivers heat directly to the battery cells (less thermal loss). Only PPS-capable chargers (Samsung EP-T4510, Anker 715 Nano II, Google 45 W) do this — a generic PD charger will fall back to 9 V × 3 A = 27 W.",
+    "## Worked example — MacBook Pro 14\" charging math",
+    "MacBook Pro 14\" M3 ships with a 70 W (base) or 96 W (Pro/Max) adapter. Battery = 72.4 Wh. Charging from 0 → 80% at 70 W: energy needed 57.9 Wh ÷ (70 W × 0.92 efficiency) = 54 min. From 80–100% the controller trickles at ~30 W to protect Li-ion cell longevity, adding another 25 min. Total 0 → 100%: ~1 h 20 min. With a 96 W adapter and EPR cable, 0 → 80% drops to ~40 min because the fast-charge phase is charger-limited, not battery-limited.",
+    "## PD 3.1 EPR voltage rules",
+    "EPR voltages (28/36/48 V) are only available when both ends are certified for EPR *and* the cable reports itself EPR-capable. If the device does not opt in, EPR chargers stay in SPR mode (max 100 W). This is why a Framework Laptop 16 (180 W AVS) needs a specifically 180 W-rated USB-C brick — 240 W EPR chargers will work, but 140 W EPR chargers cap at their own limit.",
+    "## Wattage vs C rate",
+    "Battery charge rate is often quoted as C. For a 5000 mAh (19 Wh) phone battery, 1C = 19 W, 2C = 38 W. Sustained charging above 1C accelerates cell ageing; PPS lets the phone stay at 2C only during the 0–50% window when cell internal resistance is lowest.",
+    "## Common failure modes",
+    "1. **Charger advertises 100 W but uses USB-A → C cable** — USB-A cannot negotiate PD, caps at 5 V × 2.4 A = 12 W (BC 1.2) or 5 V × 3 A = 15 W (QC mode). 2. **Two 100 W USB-C ports** — most chargers split when both are used: 65 W + 30 W, not 100 W + 100 W. Check the label for 'when using single port'. 3. **Car USB-C ports** — often PD 3.0 SPR only, 45 W max even with a 100 W-rated cable.",
+    "## The five-second recap",
+    "USB-C PD = 15 W to 240 W. Everything above 60 W needs an e-marked cable. Everything above 100 W needs an EPR-rated cable and EPR-capable charger and device. Fast phone charging above 27 W requires PPS support on both ends."
+  ],
+  "faqs": [
+    { "q": "Does a 240 W charger damage a small device?", "a": "No. PD negotiates the profile — a phone requesting 9 V × 3 A gets exactly that. The charger's higher ceiling is unused. Both sides must agree before power flows above 5 V." },
+    { "q": "Is Thunderbolt 4 the same as USB PD 3.1?", "a": "Thunderbolt 4 requires USB PD but not EPR. Most TB4 hubs and cables are 100 W max. Passive TB4/USB4 cables can be EPR-rated (240 W) if explicitly marked." },
+    { "q": "Why is 20 V the highest 'safe' USB-C voltage?", "a": "Historical — pre-PD 3.1 the connector was rated to 20 V DC for wet-insertion safety. EPR (28/36/48 V) requires stricter connector cleanliness checks and higher-voltage isolation; the connector itself is rated to 50 V in the 2.3 spec." },
+    { "q": "Does cable length matter?", "a": "Passive cables above 1 m struggle with resistive loss at 5 A — most 5 A cables are ≤1 m. Longer runs use active cables with retimers (Thunderbolt 4 active, up to 2 m at 240 W)." },
+    { "q": "Can I charge a laptop from a phone-charger brick?", "a": "If the brick supports at least 20 V × 3 A = 60 W and the laptop can accept 60 W (most 13\" laptops do, most 15\"+ throttle). MacBook Air M2 charges fully from a 45 W USB-C charger; MacBook Pro 16\" only slow-charges." }
+  ],
+  "related": [
+    { "label": "Power converter (W / kW / hp)", "href": "/c/power" },
+    { "label": "Charging speed kW to miles/hour", "href": "/learn/charging-speed-kw-miles-per-hour" },
+    { "label": "Battery mAh to Wh", "href": "/learn/battery-mah-wh-airline-limits" },
+    { "label": "Voltage converter", "href": "/c/voltage" }
+  ]
+}

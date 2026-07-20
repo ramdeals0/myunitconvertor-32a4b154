@@ -1,0 +1,48 @@
+{
+  "slug": "coffee-ratio-grams-water",
+  "title": "Coffee Brew Ratios: Grams of Coffee to Grams of Water",
+  "h1": "Coffee brew ratios — grams, grinds and the SCA Golden Cup",
+  "description": "60 g coffee per 1 L water is the SCA standard. Espresso is 1:2, pour-over is 1:16, cold brew is 1:8 concentrate. Full ratio and extraction math.",
+  "category": "Cooking / Mass:volume",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-13",
+  "reviewed": "2026-07-13",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied food chemistry & sensory science" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against SCA Golden Cup Standard (2003, updated 2020), Rao's 'Everything but Espresso', and Illy 'Espresso Coffee: The Science of Quality' 2nd ed." },
+  "hero": "The Specialty Coffee Association defines the 'Golden Cup' as 55–60 g of coffee per 1 L of water, brewing to 18–22% extraction and 1.15–1.35% total dissolved solids. Every popular ratio — 1:15 pour-over, 1:2 espresso, 1:8 cold brew — sits inside that same math.",
+  "body": [
+    "Brewing coffee is dissolution: hot water pulls soluble organics out of ground beans. Two numbers matter — extraction yield (% of the bean mass dissolved) and strength (% of the resulting brew that is dissolved solids). SCA's Golden Cup targets 20% extraction, 1.25% TDS. Every ratio-and-time recipe is a way to land inside that target box. Under-extracted coffee is sour and salty; over-extracted is bitter and dry. The ratio sets your starting point; the grind, temperature, and time steer you around inside it.",
+    "## The exact numbers",
+    "> Brew ratio = coffee mass : water mass (both in grams; 1 mL water = 1 g)\n> SCA Golden Cup: 55–60 g coffee / 1 L water = 1:16.6 to 1:18.2\n> Extraction yield = (coffee mass dissolved) / (dry coffee mass) — target 18–22%\n> TDS = dissolved solids / brew mass — target 1.15–1.35% (drip), 8–12% (espresso)\n> Retained water: brewed grounds hold ~2× their weight in water — subtract from expected yield",
+    "## Ratio ladder — every brew method",
+    "| Method | Ratio (coffee : water) | Grind | Time | TDS |\n|---|---|---|---|---|\n| Turkish / ibrik | 1:10 | Powder | 3–5 min | 3.0–4.0% |\n| Espresso (Italian) | 1:2 | Fine | 25–30 s | 8–12% |\n| Espresso (modern light roast) | 1:2.5 to 1:3 | Fine | 30–40 s | 6–9% |\n| Moka pot | 1:7 | Fine-medium | 4–5 min | 3.0–5.0% |\n| AeroPress inverted | 1:12 to 1:15 | Medium-fine | 1:30 | 1.4–1.8% |\n| Pour-over V60 | 1:15 to 1:17 | Medium | 2:30–3:30 | 1.2–1.4% |\n| Chemex | 1:16 to 1:17 | Medium-coarse | 4:00–5:00 | 1.2–1.4% |\n| French press | 1:15 | Coarse | 4:00 | 1.3–1.5% |\n| Batch brew (drip) | 1:16 to 1:18 | Medium | 5–6 min | 1.15–1.35% |\n| Cold brew concentrate | 1:5 to 1:8 | Coarse | 12–18 h | 2.5–4.0% |\n| Cold brew ready-to-drink | 1:12 to 1:15 | Coarse | 12–18 h | 1.3–1.6% |",
+    "## Worked example — V60 for two people",
+    "Target: 500 g final brew at 1:16 ratio.",
+    "> Coffee: 500 / 16 = 31.25 g → round to 31 g.\n> Water: 31 × 16 = 496 g. Add 15% for grounds absorption: pour ~570 g water through to end up with ~500 g in the cup.\n> Bloom: 60 g water for 45 s (2× coffee mass; degasses CO₂ that would otherwise cause channelling).\n> Main pour: 570 − 60 = 510 g over 3 pours, finish drawdown at 3:30 total.\n> Water temp: 93–96°C (99% of solubles extract in this range; above 96°C introduces astringent tannins per Illy Ch. 8).",
+    "## Espresso ratio names",
+    "| Name | Ratio (dry coffee : liquid espresso) | Yield from 18 g |\n|---|---|---|\n| Ristretto | 1:1 to 1:1.5 | 18–27 g |\n| Normale | 1:2 (classic Italian) | 36 g |\n| Lungo | 1:3 to 1:4 | 54–72 g |\n| Modern light-roast espresso | 1:2.5 to 1:3 | 45–54 g |\n| Turbo shot (Barista Hustle) | 1:3 in 12–18 s | 54 g |",
+    "Espresso is measured by *out weight*, not volume. Crema evaporates; a 30 mL 'shot' can weigh 18–24 g depending on grind and dose. Modern espresso machines use scales built into the drip tray (La Marzocco KB90, Sanremo YOU) so baristas stop by weight, not sight.",
+    "## Water mineral content matters",
+    "SCA water spec (2015): 150 ppm total hardness (as CaCO₃), 40 ppm bicarbonate alkalinity, pH 6.5–7.5. Soft water (<50 ppm) under-extracts and tastes flat. Hard water (>250 ppm) over-extracts bitter compounds and scales the boiler. Reverse osmosis + remineralization is the standard for competition; at home, filtered tap in the 100–200 ppm range works. TWW, Third Wave Water, and Lotus Water sachets remineralize distilled to spec.",
+    "## Grind by method (Baratza Encore reference)",
+    "| Method | Encore setting | Sieve retention |\n|---|---|---|\n| Espresso | 5–12 | 200–400 µm |\n| Moka | 12–15 | 300–500 µm |\n| AeroPress | 12–18 | 400–600 µm |\n| Pour-over | 18–22 | 500–800 µm |\n| Drip | 22–28 | 700–900 µm |\n| French press | 30–40 | 900–1200 µm |\n| Cold brew | 40 (max) | 1200 µm+ |",
+    "## Extraction math — do the numbers add up?",
+    "Brew 60 g coffee → 1000 g water → measure 950 g brew (50 g retained). TDS refractometer reads 1.30%. Dissolved solids = 950 × 0.013 = 12.35 g. Extraction yield = 12.35 / 60 = 20.6%. Inside the Golden Cup window. If TDS reads 1.05% (12.35 / 60 = 17.5% yield) → under-extracted, grind finer or brew longer. If 1.55% (24.5% yield) → over-extracted, grind coarser.",
+    "## The five-second recap",
+    "Weigh coffee AND water in grams. Pour-over 1:16. Espresso 1:2. Cold brew concentrate 1:8. Adjust grind to hit 18–22% extraction. Ratio is the starting point; grind is the steering wheel."
+  ],
+  "faqs": [
+    { "q": "Why grams instead of scoops?", "a": "Roasted coffee density varies from 0.30 g/mL (light roast, whole bean) to 0.45 g/mL (dark roast, ground). One 'tablespoon' can vary ±40% by mass. Every specialty guide uses grams because it removes that variable." },
+    { "q": "Is 1 mL of water really 1 g?", "a": "At 4°C, exactly. At 93°C brew temperature, water density drops to 0.963 g/mL — negligible for home brewing. Filtered water and RO with minerals are within 0.1% of pure water." },
+    { "q": "What TDS meter should I use?", "a": "For coffee, an optical refractometer (Atago PAL-COFFEE, VST LAB Coffee III) — reads 0–20% Brix and includes coffee-specific correction. Electrical conductivity TDS pens sold for pool water read wrong for coffee (organic solubles vs ionic)." },
+    { "q": "Does bean weight change with roast level?", "a": "Yes — beans lose 12–18% water and organic mass during roasting. Light roast is denser (more mass per bean); dark roast is lighter. Recipes specify roasted-bean weight, not green-bean." },
+    { "q": "Cold brew ratio for a Toddy?", "a": "Toddy uses 1:5 (340 g coffee, 1.7 L water) for 12–18 h at room temperature, filtered through the pad. Dilute the concentrate 1:1 to 1:3 with water/milk to serve." }
+  ],
+  "related": [
+    { "label": "Volume converter (mL / oz / cups)", "href": "/c/volume" },
+    { "label": "Weight converter (g / oz)", "href": "/c/weight" },
+    { "label": "Caffeine mg per drink", "href": "/learn/caffeine-mg-drinks" },
+    { "label": "Flour cups to grams by density", "href": "/learn/flour-cups-grams-density" }
+  ]
+}

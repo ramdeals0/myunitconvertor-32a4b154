@@ -1,0 +1,37 @@
+{
+  "slug": "decibels-sound-signal",
+  "title": "Decibels: Sound Pressure vs Signal Power",
+  "h1": "Decibels — the same word for two different things",
+  "description": "SPL dB uses 20 log. Power dB uses 10 log. Here is why sound and signal share a unit but not the math, and how to keep them straight.",
+  "category": "Sound Level",
+  "readingMinutes": 5,
+  "published": "2026-06-30",
+  "updated": "2026-06-30",
+  "reviewed": "2026-06-30",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Acoustics & signal processing" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEC 61672-1 and ANSI S1.4" },
+  "hero": "A 10 dB increase is 10× the power — or 3.16× the pressure. Whether you double or 10× depends on whether it is a power quantity or a field quantity.",
+  "body": [
+    "The decibel is a ratio. The confusion is which ratio: power ratios use 10 log, field-amplitude ratios (voltage, pressure) use 20 log. Both give the same 'per bel of ratio' meaning because power is proportional to amplitude squared, so 10 log(P²/P₀²) = 20 log(P/P₀).",
+    "## The formulas",
+    "> Power dB: L = 10 × log₁₀(P/Pref)\n> Field dB: L = 20 × log₁₀(A/Aref)\n> Sound pressure level (SPL, dB re 20 µPa): 20 × log₁₀(p / 20 µPa)\n> +3 dB power = 2× power. +10 dB power = 10× power.\n> +6 dB SPL = 2× pressure. +20 dB SPL = 10× pressure.",
+    "## SPL reference — 20 µPa",
+    "20 microPascals is the human hearing threshold at 1 kHz. Every dB SPL number is referenced to it. 0 dB SPL = 20 µPa (threshold). 60 dB = conversation. 85 dB = OSHA action level. 100 dB = jackhammer. 120 dB = pain threshold. 194 dB = maximum possible in air (limited by atmospheric pressure).",
+    "## A, B, C weighting",
+    "The human ear is not equally sensitive at all frequencies. dBA applies a frequency filter matching low-level hearing (used for OSHA and traffic-noise regulation). dBC is flatter (used for peak measurements). dBZ is unweighted. A jet engine at 130 dBC may be 125 dBA — the two are not interchangeable.",
+    "## Worked example — noise doubling",
+    "Two identical machines each producing 80 dBA at 1 m. Combined SPL is not 160 dBA (never — dB is not a linear quantity to add). Instead: pressures add in quadrature. Each contributes 0.2 Pa; two contribute √(0.2² + 0.2²) = 0.283 Pa. That is 20 × log(0.283/20e-6) = 83 dBA — +3 dB above one machine. Doubling identical noise sources adds 3 dB, always.",
+    "## The five-second recap",
+    "Power dB: 10 log. Field/pressure dB: 20 log. SPL reference: 20 µPa. Doubling identical sources = +3 dB. 10× power = +10 dB = 3.16× pressure."
+  ],
+  "faqs": [
+    { "q": "Is 40 dB twice as loud as 20 dB?", "a": "10× the pressure, 100× the power, but only about 4× as loud perceptually. Human loudness roughly doubles every 10 dB." },
+    { "q": "Can dB be negative?", "a": "Yes — anything below the reference. −10 dBm = 0.1 mW. Anechoic chambers reach −20 dBA SPL." },
+    { "q": "Why is dB SPL capped at 194?", "a": "At 194 dB SPL (~101 kPa peak), sound-pressure oscillation equals atmospheric pressure. Above that, the wave becomes a shock wave, not a sound wave." }
+  ],
+  "related": [
+    { "label": "dB to dBm converter", "href": "/c/sound-level/db-to-dbm" },
+    { "label": "Pa to dB SPL converter", "href": "/c/pressure/pa-to-dbspl" },
+    { "label": "dBm to W converter", "href": "/c/power/dbm-to-w" }
+  ]
+}

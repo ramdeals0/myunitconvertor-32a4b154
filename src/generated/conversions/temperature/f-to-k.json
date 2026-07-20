@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "°F to K — Convert Fahrenheit to Kelvin | Turbo Unit Converte",
+    "description": "Convert Fahrenheit (°F) to Kelvin (K) instantly. 1 °F = 255.92778 K. Free, accurate, engineering-grade precision.",
+    "h1": "°F to K Converter"
+  },
+  "content": {
+    "intro": "Convert fahrenheits (°F) to kelvins (K) instantly. Both measure temperature, so the relationship is strictly linear: each fahrenheit equals 255.92778 kelvins. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One fahrenheit is equal to **255.92778 kelvins**. To go the other way, one kelvin equals **-457.87 fahrenheits**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kelvins = fahrenheits × 255.92778\n\nWorked example — converting 10 fahrenheits:\n\n10 × 255.92778 = **260.92778 K**.\n\nTo invert, divide by 255.92778 (or multiply by -457.87).",
+    "conversion_table": "| fahrenheits | kelvins |\n| --- | --- |\n| 1 °F | 255.92778 K |\n| 2 °F | 256.48333 K |\n| 5 °F | 258.15 K |\n| 10 °F | 260.92778 K |\n| 25 °F | 269.26111 K |\n| 50 °F | 283.15 K |\n| 100 °F | 310.92778 K |\n| 250 °F | 394.26111 K |\n| 500 °F | 533.15 K |\n| 1000 °F | 810.92778 K |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 °F ≈ 255.92778 K. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Fahrenheit and Kelvin both measure temperature; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kelvins are in 1 fahrenheit?\n**A:** 255.92778 kelvins.\n\n**Q:** What's the formula to convert °F to K?\n**A:** kelvins = fahrenheits × 255.92778.\n\n**Q:** How do I convert K back to °F?\n**A:** Multiply by -457.87 (or divide by 255.92778).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this °F to K converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kelvin to Fahrenheit converter",
+      "href": "/c/temperature/k-to-f"
+    },
+    {
+      "anchor": "All temperature conversions",
+      "href": "/c/temperature"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "f-to-k",
+    "canonicalUrl": "https://turbounitconverter.com/c/temperature/f-to-k",
+    "category": "temperature",
+    "pageType": "pair",
+    "keywords": [
+      "fahrenheit to kelvin",
+      "°f to k",
+      "convert fahrenheit to kelvin",
+      "how many kelvin in a fahrenheit",
+      "fahrenheit in kelvin",
+      "°f to k converter",
+      "fahrenheit vs kelvin",
+      "fahrenheit to kelvin formula",
+      "fahrenheit to kelvin calculator"
+    ]
+  },
+  "contentHash": "ac8ee08a9d90"
+}

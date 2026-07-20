@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "in to nmi Converter — Inch to Nautical Mile",
+    "description": "Convert Inch (in) to Nautical Mile (nmi) instantly. 1 in = 1.371490e-5 nmi. Free, accurate, browser-based.",
+    "h1": "Inch to Nautical Mile Converter"
+  },
+  "content": {
+    "intro": "Convert inches (in) to nautical miles (nmi) instantly. Both measure length, so the relationship is strictly linear: each inch equals 1.371490e-5 nautical miles. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One inch is equal to **1.371490e-5 nautical miles**. To go the other way, one nautical mile equals **72913.4 inches**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> nautical miles = inches × 1.371490e-5\n\nWorked example — converting 10 inches:\n\n10 × 1.371490e-5 = **0.00013714903 nmi**.\n\nTo invert, divide by 1.371490e-5 (or multiply by 72913.4).",
+    "conversion_table": "| inches | nautical miles |\n| --- | --- |\n| 1 in | 1.371490e-5 nmi |\n| 2 in | 2.742981e-5 nmi |\n| 5 in | 6.857451e-5 nmi |\n| 10 in | 0.00013714903 nmi |\n| 25 in | 0.00034287257 nmi |\n| 50 in | 0.00068574514 nmi |\n| 100 in | 0.0013714903 nmi |\n| 250 in | 0.0034287257 nmi |\n| 500 in | 0.0068574514 nmi |\n| 1000 in | 0.013714903 nmi |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 in ≈ 1.371490e-5 nmi. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Inch and Nautical Mile both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many nautical miles are in 1 inch?\n**A:** 1.371490e-5 nautical miles.\n\n**Q:** What's the formula to convert in to nmi?\n**A:** nautical miles = inches × 1.371490e-5.\n\n**Q:** How do I convert nmi back to in?\n**A:** Multiply by 72913.4 (or divide by 1.371490e-5).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this in to nmi converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Nautical Mile to Inch converter",
+      "href": "/c/length/nmi-to-in"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "in-to-nmi",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/in-to-nmi",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "inch to nautical mile",
+      "in to nmi",
+      "convert in to nmi"
+    ]
+  },
+  "contentHash": "7e457e42de77"
+}

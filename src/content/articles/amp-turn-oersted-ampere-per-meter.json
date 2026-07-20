@@ -1,0 +1,51 @@
+{
+  "slug": "amp-turn-oersted-ampere-per-meter",
+  "title": "Amp-Turn, Oersted, A/m: Magnetic Field Strength Units",
+  "h1": "Magnetic field strength units — A/m, ampere-turn and oersted",
+  "description": "1 Oe = 79.577 A/m. Amp-turn = current × turns and drives H directly. Coil designers, transformer engineers and NDT technicians all need this table.",
+  "category": "Magnetism",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "H is what the current produces; B is what the material responds. Get the input unit wrong and B saturates unexpectedly.",
+  "body": [
+    "Magnetic field strength (H) is the field the current source produces. Magnetic flux density (B) is the field that includes the material's response. Confusing units for the two lands you in the wrong part of a B–H curve.",
+    "## The exact factors",
+    "> 1 A/m = 0.01257 Oe (Oe = oersted)\n> 1 Oe = 79.577 A/m ≈ 79.58 A/m\n> Amp-turn (At) is current × turns; 1 At on 1 m mean path = 1 A/m",
+    "## Where each is used",
+    "A/m: SI-strict transformer and coil design, magnetic hysteresis loop axes. Oersted: US permanent-magnet datasheets, magnetic-particle NDT, legacy motor design. Amp-turn: solenoid and relay design.",
+    "## Worked example — solenoid",
+    "A solenoid with 1000 turns and 0.5 A over a 0.1 m core produces H = NI/ℓ = 500 / 0.1 = 5000 A/m = 62.8 Oe. On a soft-iron B–H curve this is well below saturation (~15000 A/m). Read the datasheet as gauss/oersted, work in A/m internally, cross-check.",
+    "## Recap",
+    "H drives B through μ. A/m in SI, Oe in datasheets, amp-turn in windings."
+  ],
+  "faqs": [
+    {
+      "q": "Is oersted still current?",
+      "a": "In US and some legacy datasheets, yes. Modern SI-consistent datasheets use A/m."
+    },
+    {
+      "q": "How does H relate to coercivity?",
+      "a": "Coercivity is the H field needed to demagnetise a saturated material, reported in Oe or A/m — usually thousands of oersteds for rare-earth magnets."
+    }
+  ],
+  "related": [
+    {
+      "label": "Magnetic field strength converter",
+      "href": "/c/magnetic-field-strength"
+    },
+    {
+      "label": "Oersted and A/m",
+      "href": "/learn/oersted-am-magnetic-field"
+    }
+  ]
+}

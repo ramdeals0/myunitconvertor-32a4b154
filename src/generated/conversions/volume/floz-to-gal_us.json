@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "fl oz to gal — Convert US Fluid Ounce to US Gallon | Turbo U",
+    "description": "Convert US Fluid Ounce (fl oz) to US Gallon (gal) instantly. 1 fl oz = 0.0078125 gal. Free, accurate, engineering-grade precision.",
+    "h1": "fl oz to gal Converter"
+  },
+  "content": {
+    "intro": "Convert us fluid ounces (fl oz) to us gallons (gal) instantly. Both measure volume, so the relationship is strictly linear: each us fluid ounce equals 0.0078125 us gallons. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One us fluid ounce is equal to **0.0078125 us gallons**. To go the other way, one us gallon equals **128 us fluid ounces**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> us gallons = us fluid ounces × 0.0078125\n\nWorked example — converting 10 us fluid ounces:\n\n10 × 0.0078125 = **0.078125 gal**.\n\nTo invert, divide by 0.0078125 (or multiply by 128).",
+    "conversion_table": "| us fluid ounces | us gallons |\n| --- | --- |\n| 1 fl oz | 0.0078125 gal |\n| 2 fl oz | 0.015625 gal |\n| 5 fl oz | 0.0390625 gal |\n| 10 fl oz | 0.078125 gal |\n| 25 fl oz | 0.1953125 gal |\n| 50 fl oz | 0.390625 gal |\n| 100 fl oz | 0.78125 gal |\n| 250 fl oz | 1.953125 gal |\n| 500 fl oz | 3.90625 gal |\n| 1000 fl oz | 7.8125 gal |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 fl oz ≈ 0.0078125 gal. For rough mental math, round to the nearest sensible digit.\n\nMind the units. US Fluid Ounce and US Gallon both measure volume; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many us gallons are in 1 us fluid ounce?\n**A:** 0.0078125 us gallons.\n\n**Q:** What's the formula to convert fl oz to gal?\n**A:** us gallons = us fluid ounces × 0.0078125.\n\n**Q:** How do I convert gal back to fl oz?\n**A:** Multiply by 128 (or divide by 0.0078125).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this fl oz to gal converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "US Gallon to US Fluid Ounce converter",
+      "href": "/c/volume/gal_us-to-floz"
+    },
+    {
+      "anchor": "All volume conversions",
+      "href": "/c/volume"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "floz-to-gal_us",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume/floz-to-gal_us",
+    "category": "volume",
+    "pageType": "pair",
+    "keywords": [
+      "us fluid ounce to us gallon",
+      "fl oz to gal",
+      "convert us fluid ounce to us gallon",
+      "how many us gallon in a us fluid ounce",
+      "us fluid ounce in us gallon",
+      "fl oz to gal converter",
+      "us fluid ounce vs us gallon",
+      "us fluid ounce to us gallon formula",
+      "us fluid ounce to us gallon calculator"
+    ]
+  },
+  "contentHash": "ad088da72749"
+}

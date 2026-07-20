@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Heat Flux Density Converter — Convert Watt/m² and More",
+    "description": "Free heat flux density converter for 4+ units including Watt/m², Kilowatt/m², cal/(s·cm²). Instant, accurate, browser-based.",
+    "h1": "Heat Flux Density Converter"
+  },
+  "content": {
+    "intro": "W/m², BTU/(h·ft²). Convert between 4 heat flux density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for heat flux density in this tool is **Wm2**; every conversion routes through it for consistency.",
+    "formula_section": "Most heat flux density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Watt/m² | W/m² |\n| Kilowatt/m² | kW/m² |\n| cal/(s·cm²) | cal/(s·cm²) |\n| BTU/(h·ft²) | BTU/(h·ft²) |",
+    "use_cases": "- Cooking, baking, and oven temperature checks across recipes.\n- Weather and climate comparisons across regions.\n- HVAC sizing, where loads are quoted in BTU, kW, or tons.\n- Lab work and material processing temperature setpoints.\n- Industrial process control in mixed-unit environments.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this heat flux density converter?\n**A:** It uses 4 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Watt/m² (W/m²), Kilowatt/m² (kW/m²), cal/(s·cm²) (cal/(s·cm²)), BTU/(h·ft²) (BTU/(h·ft²))."
+  },
+  "internal_links": [
+    {
+      "anchor": "Watt/m² to Kilowatt/m²",
+      "href": "/c/heat-flux-density/wm2-to-kwm2"
+    },
+    {
+      "anchor": "Kilowatt/m² to Watt/m²",
+      "href": "/c/heat-flux-density/kwm2-to-wm2"
+    },
+    {
+      "anchor": "cal/(s·cm²) to Watt/m²",
+      "href": "/c/heat-flux-density/calscm2-to-wm2"
+    },
+    {
+      "anchor": "BTU/(h·ft²) to Watt/m²",
+      "href": "/c/heat-flux-density/btuhft2-to-wm2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "heat-flux-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/heat-flux-density",
+    "category": "heat-flux-density",
+    "pageType": "category",
+    "keywords": [
+      "heat flux density converter",
+      "convert heat flux density"
+    ]
+  },
+  "contentHash": "2774b871de98"
+}

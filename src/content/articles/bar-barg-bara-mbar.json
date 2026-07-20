@@ -1,0 +1,51 @@
+{
+  "slug": "bar-barg-bara-mbar",
+  "title": "Bar, Barg, Bara, Millibar: The European Pressure Vocabulary",
+  "h1": "Bar, barg, bara and mbar — European pressure notation",
+  "description": "1 bar = 100 kPa = 14.504 psi. 'barg' is gauge, 'bara' absolute, 'mbar' meteorology's favourite. Missing the suffix leaves 1 atm of ambiguity.",
+  "category": "Pressure",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "1 bar = 100 000 Pa exactly. It is not an SI unit but it is accepted for use with SI, and it dominates European datasheets.",
+  "body": [
+    "The bar wins on convenience: one bar is close enough to one atmosphere that engineers use them interchangeably in rough calculations, but 100 kPa exactly is a round SI-friendly number. What confuses newcomers is the g/a suffix that turns bar into a full absolute or gauge specification.",
+    "## The exact factors",
+    "> 1 bar = 100 kPa = 14.5038 psi = 750.06 mmHg = 0.98692 atm\n> 1 mbar = 100 Pa = 1 hPa\n> barg = gauge, referenced to local atmosphere\n> bara = absolute, referenced to vacuum",
+    "## Where each is used",
+    "Bar: European industrial specs, hydraulic ratings, automotive turbo. barg / bara: chemical process, gas systems, cryogenic vessels. mbar: meteorology (as hPa), leak-testing, low-pressure vacuum. Pneumatic tyres in Europe: 2.0–2.5 bar (gauge, implicit).",
+    "## Worked example — nitrogen cylinder",
+    "A 200 bar cylinder is 200 barg → 201 bara → 2915 psig → 2930 psia. Miss the g/a in a manifold design and relief valve sizing is off by one atmosphere — usually harmless, occasionally a citation on a pressure vessel audit.",
+    "## Recap",
+    "1 bar = 14.5 psi. Always ask 'g or a?' unless the datasheet says. Mbar and hPa are identical."
+  ],
+  "faqs": [
+    {
+      "q": "Is 1 bar the same as 1 atm?",
+      "a": "Close but not identical. 1 atm = 1.01325 bar. In practical work they are interchangeable; in cryogenic and chemical thermodynamics they are not."
+    },
+    {
+      "q": "Why do weather charts use hPa?",
+      "a": "hPa (hectopascal) equals mbar exactly. Meteorology switched notation to align with SI without changing the numeric values."
+    }
+  ],
+  "related": [
+    {
+      "label": "Pressure converter",
+      "href": "/c/pressure"
+    },
+    {
+      "label": "psi vs bar in turbo boost",
+      "href": "/learn/psi-vs-bar-turbo-boost-pressure"
+    }
+  ]
+}

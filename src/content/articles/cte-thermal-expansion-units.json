@@ -1,0 +1,51 @@
+{
+  "slug": "cte-thermal-expansion-units",
+  "title": "CTE Units: ppm/°C vs ppm/°F vs 10⁻⁶/K",
+  "h1": "Coefficient of thermal expansion units — ppm/°C, ppm/°F and 10⁻⁶/K",
+  "description": "CTE is quoted as ppm/°C, µm/(m·°C) or 10⁻⁶/K — all numerically equal. But ppm/°F is 5/9 of the °C value. Confusing them cracks optical mounts and glass-to-metal seals.",
+  "category": "Thermal expansion",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Steel's CTE is ~12 × 10⁻⁶/K. Invar's is 1.2 × 10⁻⁶/K — ten times lower. Precision optics need ppb-level control across a ±5 °C window.",
+  "body": [
+    "Coefficient of thermal expansion controls how much a part grows per degree. The units mix SI and imperial degree sizes freely, and the ratio matters when you copy a spec from a European datasheet to a US drawing.",
+    "## The exact conversions",
+    "> 1 ppm/°C = 1 × 10⁻⁶/K = 1 µm/(m·°C)\n> 1 ppm/°F = 5/9 ppm/°C ≈ 0.556 ppm/°C\n> 1 ppm/°C = 9/5 ppm/°F = 1.8 ppm/°F",
+    "## Common values",
+    "Invar 36: 1.2 ppm/°C. Fused silica: 0.55 ppm/°C. Borosilicate glass: 3.3 ppm/°C. Steel: 12 ppm/°C. Aluminium: 23 ppm/°C. Polycarbonate: 65 ppm/°C.",
+    "## Worked example — telescope mirror mount",
+    "A 300 mm steel mount holding a Zerodur mirror (0.05 ppm/°C) contracts 3.6 µm across a 1 °C swing. Zerodur contracts 0.015 µm — a 240× mismatch that flexes the mirror surface out of λ/10 in a single night's temperature drop.",
+    "## Recap",
+    "Multiply ppm/°F by 1.8 to get ppm/°C. Match materials by CTE, not by strength."
+  ],
+  "faqs": [
+    {
+      "q": "Is 'in/in/°F' the same as ppm/°F?",
+      "a": "Yes — in/in/°F is a strain-per-degree ratio, dimensionally identical to ppm/°F."
+    },
+    {
+      "q": "Does CTE change with temperature?",
+      "a": "Yes — datasheets quote average CTE over a stated range (often 20–100 °C). At cryogenic or high temperatures the value can shift by 30–50%."
+    }
+  ],
+  "related": [
+    {
+      "label": "Thermal expansion converter",
+      "href": "/c/thermal-expansion"
+    },
+    {
+      "label": "Temperature interval converter",
+      "href": "/c/temperature-interval"
+    }
+  ]
+}

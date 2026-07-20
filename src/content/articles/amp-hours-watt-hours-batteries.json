@@ -1,0 +1,39 @@
+{
+  "slug": "amp-hours-watt-hours-batteries",
+  "title": "Amp-hours and Watt-hours: Battery Capacity Explained",
+  "h1": "Ah, Wh, mAh — the battery capacity units nobody explains",
+  "description": "A 100 Ah battery and a 100 Wh battery are not comparable. Here is why voltage matters and how to convert battery specs across chemistries.",
+  "category": "Charge",
+  "readingMinutes": 5,
+  "published": "2026-06-29",
+  "updated": "2026-06-29",
+  "reviewed": "2026-06-29",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Battery & storage" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against IEC 61960 lithium-ion battery standards" },
+  "hero": "Amp-hours count electrons. Watt-hours count energy. To compare batteries fairly, always multiply by voltage.",
+  "body": [
+    "Phone batteries are labelled in mAh. Laptop batteries in Wh. Car batteries in Ah. EV batteries in kWh. Every capacity spec picks a different unit and none are directly comparable without knowing the nominal voltage.",
+    "## The relationship",
+    "> Wh = Ah × V\n> mAh × V (in V) / 1000 = Wh\n> 1 kWh = 1,000 Wh = 1,000 Ah at 1 V (or 100 Ah at 10 V, or 10 Ah at 100 V)",
+    "## Chemistry-specific voltages",
+    "Alkaline: 1.5 V/cell nominal. Lead-acid: 2.0 V/cell (12 V battery = 6 cells). NiMH: 1.2 V/cell. Lithium-ion (LCO, NMC, NCA): 3.7 V/cell nominal. LiFePO₄: 3.2 V/cell. Understanding the voltage lets you back out the true energy content from any Ah rating.",
+    "## Worked example — comparing two 'big' batteries",
+    "A 100 Ah lead-acid car battery: 100 Ah × 12 V = 1,200 Wh = 1.2 kWh. A 100 Ah LiFePO₄ home-battery module: 100 Ah × 12.8 V = 1,280 Wh. But usable capacity differs — lead-acid discharge to 50% for cycle life, so real usable = 600 Wh. LiFePO₄ discharge to 90%: usable = 1,150 Wh. Same Ah rating, 2× usable energy.",
+    "## Phone vs laptop vs EV",
+    "iPhone 15 Pro: 3,274 mAh × 3.87 V = 12.67 Wh. MacBook Pro 14: 70 Wh (= 5,527 mAh at 12.67 V or 18,919 mAh at 3.7 V — depends on which voltage is quoted). Tesla Model 3 Long Range: 82 kWh = 82,000 Wh. Ratios: laptop is 5.5× a phone, EV is 1,170× a laptop.",
+    "## C-rating and real capacity",
+    "Battery capacity is voltage-and-current-dependent. A '100 Ah at C/20' battery may deliver only 60 Ah at C/1 (one-hour discharge). Lead-acid loses capacity dramatically at high discharge rates (Peukert's law). Lithium is much flatter — 5% loss from C/2 to 2C is typical.",
+    "## The five-second recap",
+    "Wh = Ah × V. Always multiply by voltage before comparing capacities. Chemistry sets the voltage; capacity in mAh alone is meaningless."
+  ],
+  "faqs": [
+    { "q": "Why does my 5,000 mAh power bank not fully charge my 3,000 mAh phone?", "a": "The power bank is 5,000 mAh at 3.7 V = 18.5 Wh. Charging through USB requires stepping up to 5 V, which loses 15–20%. Net delivered energy: ~15 Wh. Your phone needs 3,000 × 3.87 / 1000 = 11.6 Wh — so you should get one full charge plus 30% left over. If you get less, the power bank is under-rated." },
+    { "q": "Are 18650 cells still standard?", "a": "For legacy laptops and vaping, yes. Modern EVs use 2170 (Tesla Model 3/Y) or 4680 cells. Cell format is a mechanical choice; capacity is chemistry-dependent." },
+    { "q": "How many kWh in a car battery?", "a": "Lead-acid starter: ~1 kWh. Hybrid: 1.5–2 kWh. Plug-in hybrid: 10–20 kWh. Full EV: 50–150 kWh." }
+  ],
+  "related": [
+    { "label": "Ah to Wh converter", "href": "/c/charge/ah-to-wh" },
+    { "label": "mAh to Wh converter", "href": "/c/charge/mah-to-wh" },
+    { "label": "Wh to kWh converter", "href": "/c/energy/wh-to-kwh" }
+  ]
+}

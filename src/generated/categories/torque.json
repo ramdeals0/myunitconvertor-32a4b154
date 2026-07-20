@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Torque Converter — Convert Newton-meter and More",
+    "description": "Free torque converter for 5+ units including Newton-meter, Kilonewton-meter, Foot-pound. Instant, accurate, browser-based.",
+    "h1": "Torque Converter"
+  },
+  "content": {
+    "intro": "Newton-meters, foot-pounds. Fast, accurate conversions with engineering-grade precision for everyday and professional use. Convert between 5 torque units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for torque in this tool is **Nm**; every conversion routes through it for consistency.",
+    "formula_section": "Most torque conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Newton-meter | N·m |\n| Kilonewton-meter | kN·m |\n| Foot-pound | ft·lb |\n| Inch-pound | in·lb |\n| Kilogram-force meter | kgf·m |",
+    "use_cases": "- Reading datasheets where SI and imperial units appear side by side.\n- Cross-checking CAD drawings against fabrication specs in a different system.\n- Converting torque, pressure, or stress values for procurement.\n- Translating field measurements into engineering reports.\n- Spec'ing parts from international suppliers.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this torque converter?\n**A:** It uses 5 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Newton-meter (N·m), Kilonewton-meter (kN·m), Foot-pound (ft·lb), Inch-pound (in·lb), Kilogram-force meter (kgf·m)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Newton-meter to Kilonewton-meter",
+      "href": "/c/torque/nm-to-knm"
+    },
+    {
+      "anchor": "Kilonewton-meter to Newton-meter",
+      "href": "/c/torque/knm-to-nm"
+    },
+    {
+      "anchor": "Foot-pound to Newton-meter",
+      "href": "/c/torque/ftlb-to-nm"
+    },
+    {
+      "anchor": "Inch-pound to Newton-meter",
+      "href": "/c/torque/inlb-to-nm"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "torque",
+    "canonicalUrl": "https://turbounitconverter.com/c/torque",
+    "category": "torque",
+    "pageType": "category",
+    "keywords": [
+      "torque converter",
+      "convert torque"
+    ]
+  },
+  "contentHash": "fc626c48d1c2"
+}

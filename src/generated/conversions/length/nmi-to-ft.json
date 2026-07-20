@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nmi to ft Converter — Nautical Mile to Foot",
+    "description": "Convert Nautical Mile (nmi) to Foot (ft) instantly. 1 nmi = 6076.115 ft. Free, accurate, browser-based.",
+    "h1": "Nautical Mile to Foot Converter"
+  },
+  "content": {
+    "intro": "Convert nautical miles (nmi) to feet (ft) instantly. Both measure length, so the relationship is strictly linear: each nautical mile equals 6076.115 feet. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nautical mile is equal to **6076.115 feet**. To go the other way, one foot equals **0.00016457883 nautical miles**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> feet = nautical miles × 6076.115\n\nWorked example — converting 10 nautical miles:\n\n10 × 6076.115 = **60761.2 ft**.\n\nTo invert, divide by 6076.115 (or multiply by 0.00016457883).",
+    "conversion_table": "| nautical miles | feet |\n| --- | --- |\n| 1 nmi | 6076.115 ft |\n| 2 nmi | 12152.2 ft |\n| 5 nmi | 30380.6 ft |\n| 10 nmi | 60761.2 ft |\n| 25 nmi | 151900 ft |\n| 50 nmi | 303810 ft |\n| 100 nmi | 607610 ft |\n| 250 nmi | 1519000 ft |\n| 500 nmi | 3038000 ft |\n| 1000 nmi | 6076000 ft |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nmi ≈ 6076.115 ft. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nautical Mile and Foot both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many feet are in 1 nautical mile?\n**A:** 6076.115 feet.\n\n**Q:** What's the formula to convert nmi to ft?\n**A:** feet = nautical miles × 6076.115.\n\n**Q:** How do I convert ft back to nmi?\n**A:** Multiply by 0.00016457883 (or divide by 6076.115).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nmi to ft converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Foot to Nautical Mile converter",
+      "href": "/c/length/ft-to-nmi"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nmi-to-ft",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nmi-to-ft",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nautical mile to foot",
+      "nmi to ft",
+      "convert nmi to ft"
+    ]
+  },
+  "contentHash": "4703599b7e5d"
+}

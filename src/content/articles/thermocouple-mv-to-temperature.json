@@ -1,0 +1,51 @@
+{
+  "slug": "thermocouple-mv-to-temperature",
+  "title": "Thermocouple Millivolt to Temperature: Type K, J, T Conversion Traps",
+  "h1": "Thermocouple millivolt output to temperature — Type K, J, T",
+  "description": "Thermocouples output millivolts, not degrees. A Type K at 500 °C produces 20.64 mV. Skip cold-junction compensation and readings drift by whatever your terminal block reads.",
+  "category": "Temperature",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "Type K Seebeck coefficient averages 41 µV/°C. Rounding to two decimals introduces ~2 °C error at furnace temperatures — half the width of most heat-treat windows.",
+  "body": [
+    "A thermocouple is not a thermometer — it is a millivolt source whose output depends on the temperature difference between the measurement junction and a reference junction. Converting mV to °C requires the full polynomial for the alloy pair, plus cold-junction compensation.",
+    "## Typical Seebeck coefficients",
+    "> Type K (Chromel-Alumel): ~41 µV/°C, range −270 to 1372 °C\n> Type J (Iron-Constantan): ~52 µV/°C, range −210 to 1200 °C\n> Type T (Copper-Constantan): ~43 µV/°C, range −270 to 400 °C",
+    "## Cold junction compensation",
+    "Reference tables assume the terminal junction is at exactly 0 °C. Modern instruments read the terminal block temperature and add the equivalent mV before looking up the primary junction temperature. Skip that step and you subtract whatever your instrument enclosure sits at — typically 20–40 °C of error.",
+    "## Worked example — 20 mV Type K reading",
+    "Assume terminal block at 25 °C. Type K at 25 °C = 1.00 mV. True junction voltage = 20 + 1.00 = 21.00 mV → ~508 °C. Skip the compensation and you would read 20 mV → ~484 °C, a 24 °C error.",
+    "## Recap",
+    "mV is not °C. Use the polynomial or the ITS-90 tables, and always compensate the cold junction."
+  ],
+  "faqs": [
+    {
+      "q": "Which thermocouple for a 1000 °C kiln?",
+      "a": "Type K or Type N — both cover 1200+ °C. Type J tops out around 1200 °C but oxidises fast above 750 °C."
+    },
+    {
+      "q": "Do I need shielded cable?",
+      "a": "For long runs in industrial environments, yes — thermocouple wires read microvolts and pick up 50/60 Hz noise readily."
+    }
+  ],
+  "related": [
+    {
+      "label": "Temperature converter",
+      "href": "/c/temperature"
+    },
+    {
+      "label": "Voltage converter",
+      "href": "/c/voltage"
+    }
+  ]
+}

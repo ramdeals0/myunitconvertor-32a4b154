@@ -1,0 +1,37 @@
+{
+  "slug": "cubic-yards-concrete-ordering",
+  "title": "Cubic Yards and Cubic Meters: Ordering Concrete",
+  "h1": "Cubic yards and cubic metres — ordering concrete without waste",
+  "description": "US ready-mix trucks deliver in cubic yards. European ones deliver in cubic metres. Here is how to specify a slab, foundation, or column without over-ordering.",
+  "category": "Volume",
+  "readingMinutes": 5,
+  "published": "2026-06-13",
+  "updated": "2026-06-28",
+  "reviewed": "2026-06-28",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Construction & civil engineering" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against ASTM C94 and ACI 318" },
+  "hero": "1 cubic yard = 0.7646 m³. A US 10-yard truck delivers 7.65 m³. Order by the wrong unit and you either short the pour or eat $300 of returned concrete.",
+  "body": [
+    "Ready-mix concrete is one of the last industries where the US-metric split is a daily operational headache. Batch plants dispatch loads in whole yards or whole cubes, and drivers charge return fees if you send back more than a small overage.",
+    "## The exact factors",
+    "> 1 yd³ = 0.764554857984 m³ (exact)\n> 1 m³ = 1.30795 yd³\n> Standard US mixer truck: 8–11 yd³ (6.1–8.4 m³)\n> Standard EU mixer truck: 6–10 m³",
+    "## Calculating a slab pour",
+    "For a slab: length × width × thickness, all in the same unit. Convert at the end. A 20 ft × 30 ft × 6 in slab = 20 × 30 × 0.5 = 300 ft³ = 11.11 yd³ = 8.50 m³. Always add 5–10% for over-excavation and waste — 11.11 yd³ becomes an 11.7 yd³ order, rounded up to 12 yd³ to fit the batch plant's whole-unit dispatch.",
+    "## The 'short load' penalty",
+    "Most US ready-mix plants charge a short-load fee below 3–4 yd³ (2.3–3.1 m³) because a partial truckload still costs a full truck and driver to dispatch. Fees are typically $150–$300. For small pours, wheelbarrow bags (60 lb = 0.017 yd³ each) are often cheaper up to about 1 yd³.",
+    "## Worked example — a foundation for a two-car garage",
+    "A monolithic slab 24 × 24 ft with a 12-inch thickened perimeter edge. Slab: 24 × 24 × 4/12 = 192 ft³ = 7.11 yd³. Edge (thickened by 8 in over an 18-in-wide footing, perimeter 96 ft): 96 × 1.5 × 8/12 = 96 ft³ = 3.56 yd³. Total: 10.67 yd³ + 10% waste = 11.74 yd³, order 12 yd³ (9.17 m³). Cost at $180/yd³: $2,160.",
+    "## The five-second recap",
+    "Multiply yd³ by 0.7646 for m³. Multiply m³ by 1.308 for yd³. Add 5–10% waste. Round up to the next whole unit the batch plant dispatches."
+  ],
+  "faqs": [
+    { "q": "How many 60-lb concrete bags in a cubic yard?", "a": "About 60 bags (60 lb yields 0.45 ft³; 27 ft³/yd³ ÷ 0.45 ≈ 60)." },
+    { "q": "What is a 'yard' in concrete slang?", "a": "One cubic yard — 27 ft³ = 0.7646 m³ = about 2 tons of mixed concrete." },
+    { "q": "Do European trucks deliver in half-cubes?", "a": "Yes — most EU plants dispatch in 0.5 m³ increments, with a minimum of 3–4 m³ before short-load fees apply." }
+  ],
+  "related": [
+    { "label": "yd³ to m³ converter", "href": "/c/volume/yd3-to-m3" },
+    { "label": "m³ to yd³ converter", "href": "/c/volume/m3-to-yd3" },
+    { "label": "ft³ to m³ converter", "href": "/c/volume/ft3-to-m3" }
+  ]
+}

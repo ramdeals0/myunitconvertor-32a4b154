@@ -1,0 +1,39 @@
+{
+  "slug": "nautical-miles-knots-aviation-feet",
+  "title": "Nautical Miles, Knots and Why Aviation Still Uses Feet",
+  "h1": "Nautical miles, knots and why aviation still uses feet",
+  "description": "The aviation world runs on nautical miles, knots and feet — and there are surprisingly good reasons why the last hold-out of Imperial units is in the cockpit.",
+  "category": "Distance & Speed",
+  "readingMinutes": 5,
+  "updated": "2026-06-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Metrology & tooling" },
+  "hero": "China flies in metres. Russia flies in metres. Almost everyone else — including the entirety of ICAO airspace — files flight plans in feet, nautical miles and knots. There is a reason.",
+  "body": [
+    "The nautical mile is one of the few Imperial units with a genuinely elegant definition. It is the length of one minute of arc along a meridian of the Earth — 1/60th of a degree of latitude. Because the Earth is not perfectly spherical, the modern nautical mile is fixed at exactly 1,852 metres, chosen to match the average.",
+    "That single definition is the reason ships and aircraft do not use kilometres. If you are sailing at latitude 30° N and need to get to latitude 45° N, that is 15 degrees × 60 arc-minutes × 1 nautical mile = 900 nautical miles. Try the same calculation in kilometres and the answer is 1,667 km — a number that means nothing on a chart. Nautical miles are the natural unit of the Earth.",
+    "## The exact numbers",
+    "> 1 nautical mile = 1,852 m (exact) = 1.15078 statute miles\n> 1 knot = 1 nautical mile per hour = 1.852 km/h = 0.514444 m/s\n> 1 foot = 0.3048 m (exact)\n> 1 flight level (FL 350) = 35,000 ft above 1013.25 hPa datum",
+    "## Why knots, not km/h",
+    "A knot is one nautical mile per hour. Speed × time gives distance in the same units used on the chart. A plane doing 480 knots for two hours has covered 960 nautical miles of Earth. In kilometres per hour that would be 889 km/h, and the distance covered would be 1,778 km — same journey, more arithmetic. Every autopilot, every FMS, every radar controller works in knots because it eliminates a conversion at every step.",
+    "## Why feet, not metres",
+    "This is more historical than mathematical. Early aviation instruments were built in Britain and the United States, both feet-first. When ICAO was founded in 1944 the world's altimeters, glass cockpits, radio calls, and separation standards were already in feet — a 1,000-foot vertical separation minimum is a global rule now. The cost of re-graduating every instrument, retraining every controller, and rewriting every SOP has always outweighed the benefit of switching. Russia and China stayed on metres and have to convert at every airspace boundary, which is exactly the pain everyone else avoids by staying on feet.",
+    "The one place aviation *does* use metres is visibility — a runway visual range of 550 metres is the same all over the world.",
+    "## The flight-planning shortcut every pilot learns",
+    "**Knots to nautical miles per minute**: divide by 60. 480 knots = 8 nm/min. That is why the ubiquitous \"1 in 60 rule\" for course corrections works — one minute of arc off course, corrected over 60 nm, is 1 nm of lateral drift.",
+    "**Feet per minute climb rate**: descend from FL 350 to FL 100 (25,000 ft) at 1,500 fpm takes 16.7 minutes. At an approach speed of 240 knots that is 66.7 nm — the top-of-descent point.",
+    "**Statute mile ↔ nautical mile**: multiply nm by 1.15 to get statute miles, or knots by 1.15 to get mph. Small aircraft speedometers sometimes read in mph; ATC always talks in knots.",
+    "## The bottom line",
+    "For anything to do with navigation or weather, use nautical miles and knots — the units align with the Earth. For anything to do with vertical separation or altitude, use feet — that is what the rules and the instruments are written in. Convert only when you need to talk to a customer who lives in the metric world. Our knots, nautical miles, and feet converters carry the exact factors so a flight plan you check here matches what your EFB gives you."
+  ],
+  "faqs": [
+    { "q": "How fast is 100 knots in mph?", "a": "100 knots × 1.15078 = 115.08 mph, or 185.2 km/h." },
+    { "q": "Why is the nautical mile 1,852 metres?", "a": "It is the modern length that matches one arc-minute along an average meridian, standardised in 1929." },
+    { "q": "How high is FL 350?", "a": "35,000 feet above the standard pressure datum of 1013.25 hPa — not above sea level, which is why it depends on local pressure." },
+    { "q": "Do all countries use feet for altitude?", "a": "No. Russia, China and a few others use metres. ICAO airspace elsewhere uses feet." }
+  ],
+  "related": [
+    { "label": "knot to mph converter", "href": "/c/speed/knot-to-mph" },
+    { "label": "nautical mile to km converter", "href": "/c/length/nmi-to-km" },
+    { "label": "feet to metres converter", "href": "/c/length/ft-to-m" }
+  ]
+}

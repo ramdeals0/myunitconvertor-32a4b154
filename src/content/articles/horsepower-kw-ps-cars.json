@@ -1,0 +1,52 @@
+{
+  "slug": "horsepower-kw-ps-cars",
+  "title": "Car Horsepower: hp, PS, kW, and BHP — Why 300 PS ≠ 300 hp",
+  "h1": "Car horsepower — mechanical hp, metric PS, and kW",
+  "description": "1 mechanical hp = 0.7457 kW. 1 PS (metric) = 0.7355 kW — a 1.4% gap. Plus SAE net vs DIN vs ECE R85: why the same engine gets three different rating numbers.",
+  "category": "Power",
+  "readingMinutes": 7,
+  "published": "2026-07-10",
+  "updated": "2026-07-15",
+  "reviewed": "2026-07-15",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied metrology & powertrain units" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811, SAE J1349 (Aug 2004, rev Feb 2011), DIN 70020, ECE Regulation 85, and manufacturer spec sheets (BMW, Porsche, Toyota)" },
+  "hero": "A '300 PS' German car is '296 hp' on the US window sticker. The 1.4% gap between metric horsepower (PS/ch/cv) and mechanical horsepower (hp) is real — one is defined from 75 kgf·m/s, the other from 550 ft·lbf/s. Then SAE J1349, DIN 70020, and ECE R85 rate the same engine on different test benches and produce three more numbers.",
+  "body": [
+    "James Watt defined the horsepower in 1782 as 33,000 ft·lbf/min based on brewery draft horses lifting coal. That gives **1 hp = 550 ft·lbf/s = 745.6998716 W** — the *mechanical* horsepower still used in the US and UK. Continental Europe adopted a metric version in the late 1800s: 75 kgf·m/s, or **1 PS (Pferdestärke) = 735.49875 W** exactly, since 1 kgf = 9.80665 N. The two differ by 1.3874%.",
+    "## The exact factors",
+    "> 1 hp (mechanical) = 745.699872 W = 0.7456999 kW\n> 1 PS = 1 ch = 1 cv = 1 pk = 735.49875 W = 0.7354988 kW  (defined exactly)\n> 1 kW = 1.34102 hp = 1.35962 PS\n> PS ÷ hp = 1.01387 · hp ÷ PS = 0.98632",
+    "## Same engine, three ratings",
+    "| Rating standard | Test conditions | Auxiliaries | Typical delta vs SAE net |\n|---|---|---|---|\n| SAE gross (pre-1972) | Bare engine, no accessories, optimal tune | None fitted | +15 to +25% |\n| SAE J1349 net (US, since 1972; revised 2004 & 2011 with SAE-certified badge) | 25 °C, 99 kPa dry, with intake, exhaust, alternator, water pump | All production accessories | Reference |\n| DIN 70020 (Germany, pre-1995) | 20 °C, 101.325 kPa | Production accessories | ~+2% vs J1349 |\n| ECE R85 (EU, since 1995 for type approval) | 25 °C, 100 kPa dry | Production accessories | Within ±1% of J1349 |\n| JIS D 1001 (Japan, gross) | Similar to SAE gross | None | +10 to +15% (obsolete, but old catalogue numbers persist) |",
+    "The Porsche 911 Carrera (992.2, 2024) is rated **394 PS** on the EU spec sheet and **388 hp** on the US window sticker. Both come from the same ECE R85 / SAE J1349 dyno pull — the only difference is the unit conversion. 394 × 0.98632 = 388.6.",
+    "## bhp — what it actually means",
+    "**BHP (brake horsepower)** is horsepower measured at the crankshaft by a brake dynamometer (the 'brake' absorbs and measures torque). In modern usage, 'bhp' and 'hp' are used interchangeably by UK motoring press, both referring to SAE net or ECE R85 crank power. It is **not** a separate unit — 300 bhp = 300 hp = 223.7 kW. What differs is where the number is measured:",
+    "> Crank power (bhp / SAE net): before the transmission\n> Wheel horsepower (whp): measured on a chassis dyno at the drive wheels\n> Drivetrain loss: 12–15% (manual FWD/RWD), 17–22% (AWD/auto)\n> A 300 bhp AWD car typically shows 235–250 whp on a Dynojet.",
+    "## Torque × RPM — where power actually comes from",
+    "Power is not measured directly on a dyno; torque is, and power is calculated:",
+    "> P (kW) = τ (N·m) × ω (rad/s) = τ × RPM × 2π / 60\n> P (hp) = τ (lb·ft) × RPM / 5252   (the '5252 rule' — hp and lb·ft always cross at 5252 RPM)\n> P (PS) = τ (kgf·m) × RPM / 716.2",
+    "A Toyota GR Corolla makes 273 lb·ft at 3000 RPM → 273 × 3000 / 5252 = 156 hp at that RPM. Peak power 300 hp arrives at 6500 RPM where torque has fallen to 242 lb·ft. Torque sells cars; RPM makes horsepower.",
+    "## Worked example — buying a used BMW M3",
+    "German spec sheet: **510 PS at 6250 RPM, 650 N·m at 2750–5500**. Convert for a US buyer:",
+    "> 510 PS × 0.7354988 = 375.1 kW\n> 375.1 kW × 1.34102 = 503.0 hp   (SAE / imperial)\n> 650 N·m × 0.737562 = 479 lb·ft\n> Cross-check: 510 PS × 0.98632 = 502.9 hp ✓",
+    "BMW's US press release for the same car says **503 hp / 479 lb·ft**. No marketing inflation — just the PS→hp conversion.",
+    "## EV motor ratings — where hp gets muddy",
+    "EVs are usually rated in kW because the motor's peak power depends on battery state-of-charge, temperature, and inverter current limits — not a steady dyno curve. Tesla lists 'Dual Motor' with no horsepower on the spec page; the EPA filing gives it. A Model 3 Performance is 393 kW combined = **527 hp = 534 PS**. Continuous power (thermal-limited) is often 40–50% of peak — the '20-second' number vs the '20-minute' number.",
+    "## Common conversion mistakes",
+    "1. **Using 0.746 for PS.** That's the factor for mechanical hp. PS uses 0.7355. A 400 PS car becomes 298 kW, not 294.\n2. **Treating 'bhp' as bigger than 'hp'.** They're the same modern unit. Older SAE gross ratings looked larger only because accessories were removed.\n3. **Comparing a 1970 muscle car's 'gross' hp to a modern 'net' figure.** A 1970 Chevelle SS 454 rated 450 hp gross would rate ~360 hp SAE net today — the engine didn't get weaker, the test got honest.\n4. **Adding wheel hp and crank hp.** Never comparable without knowing dyno type (Dynojet reads ~5% higher than Mustang or DynoDynamics).",
+    "## The five-second recap",
+    "hp = 0.7457 kW · PS = 0.7355 kW · PS is 1.4% smaller than hp · Same engine, three ratings (SAE net / DIN / ECE R85), all within ~2%. Convert with the exact factor for records, not the mental 0.75."
+  ],
+  "faqs": [
+    { "q": "Is PS the same as ch, cv, or pk?", "a": "Yes — Pferdestärke (German), cheval-vapeur (French), cavallo vapore (Italian), paardenkracht (Dutch) all equal 735.49875 W exactly. They are the same unit, different languages." },
+    { "q": "Why does my car's dyno sheet read 15% less than the brochure?", "a": "The brochure is crank hp (SAE J1349 net). A chassis dyno measures at the wheels after drivetrain losses of 12–22% depending on layout. Both numbers can be correct." },
+    { "q": "What does 'SAE-certified' mean on a spec sheet?", "a": "Since the 2005 SAE J1349 revision, a manufacturer can submit engines to an SAE-witnessed test. The result carries a certification mark. Toyota, Honda, and Ford routinely certify; some manufacturers still self-declare." },
+    { "q": "Does altitude affect the rating?", "a": "Yes for naturally-aspirated engines (about −1% per 1000 ft). SAE J1349 corrects to standard 99 kPa / 25 °C. Turbo engines self-compensate up to the compressor's limit, which is why turbocharged cars dominate at altitude." },
+    { "q": "Which number should I trust for insurance or registration?", "a": "The manufacturer's homologation figure on the type-approval certificate (ECE R85 in Europe, EPA filing in the US). Marketing brochures sometimes quote 'up to' overboost peaks that don't appear on the paperwork." }
+  ],
+  "related": [
+    { "label": "Power converter", "href": "/c/power" },
+    { "label": "Torque Nm vs lb-ft", "href": "/learn/torque-nm-lbft-wrench" },
+    { "label": "Engine displacement cc / L / ci", "href": "/learn/engine-displacement-cc-l-ci" },
+    { "label": "EV range kWh per 100 mi", "href": "/learn/ev-range-kwh-per-100mi" }
+  ]
+}

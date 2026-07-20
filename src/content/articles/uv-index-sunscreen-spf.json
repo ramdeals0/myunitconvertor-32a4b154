@@ -1,0 +1,51 @@
+{
+  "slug": "uv-index-sunscreen-spf",
+  "title": "UV Index, SPF and MED: How Much Sunscreen Actually Blocks",
+  "h1": "UV index, SPF, MED — the sunscreen math dermatologists use",
+  "description": "SPF 30 blocks 96.7% of UVB, SPF 50 blocks 98%. UV Index 8 gives a fair-skinned person sunburn in ~15 min unprotected. Here is how the numbers combine.",
+  "category": "Radiation",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-13",
+  "reviewed": "2026-07-13",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied radiometry & dermatology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against WHO Global Solar UV Index (2002), ISO 24444:2019 (in vivo SPF test), FDA 21 CFR §201.327 and American Academy of Dermatology guidelines" },
+  "hero": "The UV Index is a normalized scale where 1 unit = 25 mW/m² of erythemally weighted UV. SPF is a multiplier on your Minimum Erythemal Dose (MED). Combine them and you get exactly how long you can stay in the sun before pink turns to burn.",
+  "body": [
+    "The WHO/WMO UV Index (UVI) is a dimensionless number: UVI = weighted UV irradiance (W/m²) × 40. UVI 10 therefore equals 250 mW/m² of erythema-weighted UV — the CIE-84 action spectrum that reddens human skin. Sunscreen SPF is defined by ISO 24444:2019 as the ratio of protected-skin MED to unprotected-skin MED, measured on Fitzpatrick I–III volunteers with 2 mg/cm² applied. Real-world SPF is usually one-half to one-third of label because people apply 0.5–1 mg/cm².",
+    "## The exact numbers",
+    "> UV Index: 1 UVI = 25 mW/m² erythemal irradiance (WHO 2002)\n> SPF n blocks 1 − 1/n of UVB: SPF 15 = 93.3%, SPF 30 = 96.7%, SPF 50 = 98.0%, SPF 100 = 99.0%\n> Time-to-burn (protected) = MED / (erythemal irradiance × (1 − block%))\n> Fair skin (type II) MED ≈ 250 J/m²; medium (type IV) ≈ 450 J/m²; dark (type VI) ≈ 1000 J/m²",
+    "## UV Index vs sunburn time (unprotected, Fitzpatrick II)",
+    "| UVI | Category (WHO) | Time to redness | Time to first-degree burn |\n|---|---|---|---|\n| 1–2 | Low | 60+ min | 4+ hours |\n| 3–5 | Moderate | 30–45 min | 1–2 h |\n| 6–7 | High | 20–25 min | 45 min |\n| 8–10 | Very High | 12–15 min | 25 min |\n| 11+ | Extreme | 8–10 min | 15 min |",
+    "## Adding sunscreen to the math",
+    "SPF multiplies the safe window. Fair-skinned person, UVI 8, SPF 30 correctly applied: 15 min × 30 = 7.5 hours before burn — if reapplied every 2 hours, no water, no sweat. Real-world halving: cut it to 3.7 hours. Same person under-applies to 1 mg/cm²: effective SPF drops to ~SPF 8 (per Petersen & Wulf, *Photodermatol Photoimmunol Photomed* 2014), so 15 × 8 = 2 hours to burn.",
+    "## Worked example — beach day, UVI 10",
+    "Person: fair skin (Fitzpatrick II, MED ≈ 250 J/m²). UVI 10 = 250 mW/m². Unprotected time to MED: 250 / 0.250 = 1000 s ≈ 17 min.",
+    "> With SPF 50, 2 mg/cm² applied: blocks 98%. Effective irradiance 5 mW/m². Time to MED = 250 / 0.005 = 50 000 s ≈ 14 h.\n> Reality: SPF 50 applied at 1 mg/cm² performs at ~SPF 15. Blocks 93%. Time to MED = 250 / 0.0175 = 14 300 s ≈ 4 h.\n> After swimming/sweating: reapply every 80 min (ISO 24444 water-resistant claim = tested for 40 min immersion twice).",
+    "## Why SPF 100 is not '2× SPF 50'",
+    "Diminishing returns: SPF 50 blocks 98.0%, SPF 100 blocks 99.0% — one extra percentage point of UVB. Where SPF 100 does help: photosensitive skin (lupus, drug-induced), high-altitude/snow (UVI 12+), and people who habitually under-apply. The FDA proposed capping labels at 'SPF 60+' in 2019 to reduce false confidence; the rule is not yet finalized.",
+    "## UVA vs UVB",
+    "SPF measures UVB (290–320 nm), which causes acute sunburn. UVA (320–400 nm) penetrates deeper, causes tanning, photoaging, and contributes to melanoma. UVA protection is measured by PPD (Japan/EU) or the 'broad spectrum' pass/fail (US FDA). Look for: PA++++ (Asia), UVA circle logo (EU, PPD ≥ SPF/3), or 'Broad Spectrum SPF 30+' (US).",
+    "## Altitude, water, snow amplification",
+    "UV rises ~10% per 1000 m elevation (Blumthaler et al., *Ambio* 1997). At 4000 m, UVI 8 at sea level becomes UVI ~12. Water reflects 10–30% (rough water reflects less than mirror-flat), fresh snow 80–90%, dry sand 15–20%. Skiing on a UVI 5 mountain day gets effective UVI ~9 on your face.",
+    "## Clothing and shade",
+    "UPF (Ultraviolet Protection Factor) works the same way as SPF: UPF 50 blocks 98% of UV. A dry cotton white T-shirt is ~UPF 5–7; wet drops to UPF 3. Rated swim shirts (Coolibar, Patagonia sun hoody) claim UPF 50+. Umbrella shade cuts direct UV by 50–75% but not scattered sky UV — beach umbrella + sunscreen is standard because either alone is insufficient at UVI 8+.",
+    "## Vitamin D trade-off",
+    "Full-body noon exposure at UVI 3+ for ~10 min (light skin) or 25 min (dark skin) produces ~1000 IU vitamin D (Holick, *NEJM* 2007). Beyond that dose, D synthesis plateaus while burn risk continues to climb. Sunscreen SPF 30 reduces D synthesis by <5% in real use because coverage is imperfect — the 'sunscreen causes deficiency' claim is not supported by clinical data.",
+    "## The five-second recap",
+    "UVI × 25 = mW/m². SPF n blocks (1 − 1/n) of UVB. Time-to-burn (unprotected) × SPF = protected time, halved for real-world application. Reapply every 2 hours or after swimming."
+  ],
+  "faqs": [
+    { "q": "How much sunscreen is 2 mg/cm²?", "a": "About 1 oz (30 mL, a shot glass) for a full adult body, or ~1/2 tsp for face + neck. Most people apply 25–50% of that dose, which is why label SPF exceeds real SPF by 2–4×." },
+    { "q": "What does 'water resistant 80 minutes' mean?", "a": "ISO 24444: SPF retained after two 20-min immersions with 20-min rest between. 'Water resistant 40 min' = one immersion cycle. Neither is 'waterproof' — that word was banned by the FDA in 2011." },
+    { "q": "Is UVI accurate at 8 AM?", "a": "Yes — WHO UVI is instantaneous erythemal irradiance from actual measurement or model. Peak UVI is 11 AM–3 PM in summer. Weather-app UVI is usually clear-sky forecast; cloud cover reduces UV by 10–50% but thin cloud can *increase* it (broken cumulus reflection)." },
+    { "q": "Do phone camera lenses work for UV?", "a": "No — glass and standard sensors filter UV below 380 nm. Consumer 'UV camera' apps read the UVI feed from weather APIs; they do not measure." },
+    { "q": "SPF for melasma or scar prevention?", "a": "Dermatologists recommend SPF 50+ broad-spectrum daily for melasma, post-inflammatory hyperpigmentation, and scar prevention, plus iron-oxide-containing tint for visible-light protection (VL contributes to pigmentation in Fitzpatrick IV–VI)." }
+  ],
+  "related": [
+    { "label": "Radiation dose flight scan", "href": "/learn/radiation-dose-flight-scan" },
+    { "label": "Wavelength frequency photon energy", "href": "/learn/wavelength-frequency-photon-energy" },
+    { "label": "Lumens vs lux vs candela", "href": "/learn/lumens-vs-lux-vs-candela" },
+    { "label": "Illumination converter", "href": "/c/illumination" }
+  ]
+}

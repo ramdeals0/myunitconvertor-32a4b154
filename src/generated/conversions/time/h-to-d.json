@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "h to d — Convert Hour to Day | Turbo Unit Converter",
+    "description": "Convert Hour (h) to Day (d) instantly. 1 h = 0.041666667 d. Free, accurate, engineering-grade precision.",
+    "h1": "h to d Converter"
+  },
+  "content": {
+    "intro": "Convert hours (h) to days (d) instantly. Both measure time, so the relationship is strictly linear: each hour equals 0.041666667 days. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One hour is equal to **0.041666667 days**. To go the other way, one day equals **24 hours**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> days = hours × 0.041666667\n\nWorked example — converting 10 hours:\n\n10 × 0.041666667 = **0.41666667 d**.\n\nTo invert, divide by 0.041666667 (or multiply by 24).",
+    "conversion_table": "| hours | days |\n| --- | --- |\n| 1 h | 0.041666667 d |\n| 2 h | 0.083333333 d |\n| 5 h | 0.20833333 d |\n| 10 h | 0.41666667 d |\n| 25 h | 1.0416667 d |\n| 50 h | 2.0833333 d |\n| 100 h | 4.1666667 d |\n| 250 h | 10.416667 d |\n| 500 h | 20.833333 d |\n| 1000 h | 41.666667 d |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 h ≈ 0.041666667 d. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Hour and Day both measure time; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many days are in 1 hour?\n**A:** 0.041666667 days.\n\n**Q:** What's the formula to convert h to d?\n**A:** days = hours × 0.041666667.\n\n**Q:** How do I convert d back to h?\n**A:** Multiply by 24 (or divide by 0.041666667).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this h to d converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Day to Hour converter",
+      "href": "/c/time/d-to-h"
+    },
+    {
+      "anchor": "All time conversions",
+      "href": "/c/time"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "h-to-d",
+    "canonicalUrl": "https://turbounitconverter.com/c/time/h-to-d",
+    "category": "time",
+    "pageType": "pair",
+    "keywords": [
+      "hour to day",
+      "h to d",
+      "convert hour to day",
+      "how many day in a hour",
+      "hour in day",
+      "h to d converter",
+      "hour vs day",
+      "hour to day formula",
+      "hour to day calculator"
+    ]
+  },
+  "contentHash": "4bd394f2f6a0"
+}

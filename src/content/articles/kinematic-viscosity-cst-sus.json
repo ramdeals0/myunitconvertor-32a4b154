@@ -1,0 +1,53 @@
+{
+  "slug": "kinematic-viscosity-cst-sus",
+  "title": "Kinematic Viscosity: cSt, SUS and ISO VG Grades",
+  "h1": "Kinematic viscosity — cSt, SUS and ISO VG",
+  "description": "1 cSt = 1 mm²/s. ISO VG 32 is 32 cSt at 40 °C. SUS is a legacy timed-flow measurement. Confuse the columns and pump sizing drifts.",
+  "category": "Kinematic viscosity",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "ν = µ/ρ. Kinematic viscosity is what pipe-flow and pump-curve calculations actually take.",
+  "body": [
+    "Kinematic viscosity is dynamic viscosity divided by density. It has the units of area over time. It is what Reynolds number and centrifugal pump curves are built around, and it is the number on ISO viscosity grade charts.",
+    "## The exact factors",
+    "> 1 cSt = 1 mm²/s = 10⁻⁶ m²/s\n> 1 stokes (St) = 100 cSt = 10⁻⁴ m²/s\n> SUS (Saybolt Universal Seconds) is an empirical timed measurement, non-linear with cSt below 30 cSt",
+    "## ISO VG grades",
+    "ISO VG 32 → 32 cSt at 40 °C, tolerance ±10%. VG 46, 68, 100, 150, 220, 320, 460 follow the R10 series. Hydraulic fluid: typically VG 32–68. Gearbox oil: VG 150–460.",
+    "## SUS conversion",
+    "Above 100 cSt: cSt ≈ SUS / 4.635. Between 30 and 100 cSt: use the ASTM D2161 table. Below 30 cSt the relationship becomes strongly non-linear — do not use a linear factor.",
+    "## Worked example — hydraulic pump",
+    "A pump spec calls for ISO VG 46. Fluid choice: 46 cSt at 40 °C, ~7 cSt at 100 °C. In an outdoor unit that reaches 100 °C bulk oil temperature, pump volumetric efficiency drops with viscosity — VG 46 at 100 °C is too thin, upgrade to VG 68.",
+    "## Recap",
+    "cSt = mm²/s. Match ISO VG grade to operating temperature. Skip SUS unless the spec forces you into it."
+  ],
+  "faqs": [
+    {
+      "q": "Is cSt the same as centistokes?",
+      "a": "Yes — 'cSt' and 'centistokes' are interchangeable."
+    },
+    {
+      "q": "Why does ISO VG use 40 °C?",
+      "a": "It is a representative operating temperature for industrial hydraulics and gearboxes."
+    }
+  ],
+  "related": [
+    {
+      "label": "Kinematic viscosity converter",
+      "href": "/c/viscosity-kinematic"
+    },
+    {
+      "label": "cSt and SUS in motor oil",
+      "href": "/learn/cst-sus-motor-oil-kinematic"
+    }
+  ]
+}

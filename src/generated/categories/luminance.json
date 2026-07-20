@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Luminance Converter — Convert Candela/m² and More",
+    "description": "Free luminance converter for 7+ units including Candela/m², Candela/cm², Candela/ft². Instant, accurate, browser-based.",
+    "h1": "Luminance Converter"
+  },
+  "content": {
+    "intro": "cd/m², lambert, footlambert. Convert between 7 luminance units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for luminance in this tool is **cdm2**; every conversion routes through it for consistency.",
+    "formula_section": "Most luminance conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Candela/m² | cd/m² |\n| Candela/cm² | cd/cm² |\n| Candela/ft² | cd/ft² |\n| Lambert | L |\n| Foot-lambert | fL |\n| Nit | nt |\n| Stilb | sb |",
+    "use_cases": "- Photography exposure planning across lumen and lux references.\n- Workspace lighting design to meet ergonomic targets.\n- Display brightness and ambient-light comparisons.\n- Plant-grow lighting setups.\n- Stage and event lighting design.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this luminance converter?\n**A:** It uses 7 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Candela/m² (cd/m²), Candela/cm² (cd/cm²), Candela/ft² (cd/ft²), Lambert (L), Foot-lambert (fL), Nit (nt), Stilb (sb)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Candela/m² to Candela/cm²",
+      "href": "/c/luminance/cdm2-to-cdcm2"
+    },
+    {
+      "anchor": "Candela/cm² to Candela/m²",
+      "href": "/c/luminance/cdcm2-to-cdm2"
+    },
+    {
+      "anchor": "Candela/ft² to Candela/m²",
+      "href": "/c/luminance/cdft2-to-cdm2"
+    },
+    {
+      "anchor": "Lambert to Candela/m²",
+      "href": "/c/luminance/lambert-to-cdm2"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "luminance",
+    "canonicalUrl": "https://turbounitconverter.com/c/luminance",
+    "category": "luminance",
+    "pageType": "category",
+    "keywords": [
+      "luminance converter",
+      "convert luminance"
+    ]
+  },
+  "contentHash": "bfe01dcc48ad"
+}

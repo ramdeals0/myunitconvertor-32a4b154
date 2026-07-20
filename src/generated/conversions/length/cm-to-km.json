@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "cm to km Converter — Centimeter to Kilometer",
+    "description": "Convert Centimeter (cm) to Kilometer (km) instantly. 1 cm = 1.000000e-5 km. Free, accurate, browser-based.",
+    "h1": "Centimeter to Kilometer Converter"
+  },
+  "content": {
+    "intro": "Convert centimeters (cm) to kilometers (km) instantly. Both measure length, so the relationship is strictly linear: each centimeter equals 1.000000e-5 kilometers. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One centimeter is equal to **1.000000e-5 kilometers**. To go the other way, one kilometer equals **100000 centimeters**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> kilometers = centimeters × 1.000000e-5\n\nWorked example — converting 10 centimeters:\n\n10 × 1.000000e-5 = **0.0001 km**.\n\nTo invert, divide by 1.000000e-5 (or multiply by 100000).",
+    "conversion_table": "| centimeters | kilometers |\n| --- | --- |\n| 1 cm | 1.000000e-5 km |\n| 2 cm | 2.000000e-5 km |\n| 5 cm | 5.000000e-5 km |\n| 10 cm | 0.0001 km |\n| 25 cm | 0.00025 km |\n| 50 cm | 0.0005 km |\n| 100 cm | 0.001 km |\n| 250 cm | 0.0025 km |\n| 500 cm | 0.005 km |\n| 1000 cm | 0.01 km |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 cm ≈ 1.000000e-5 km. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Centimeter and Kilometer both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many kilometers are in 1 centimeter?\n**A:** 1.000000e-5 kilometers.\n\n**Q:** What's the formula to convert cm to km?\n**A:** kilometers = centimeters × 1.000000e-5.\n\n**Q:** How do I convert km back to cm?\n**A:** Multiply by 100000 (or divide by 1.000000e-5).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this cm to km converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Kilometer to Centimeter converter",
+      "href": "/c/length/km-to-cm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "cm-to-km",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/cm-to-km",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "centimeter to kilometer",
+      "cm to km",
+      "convert cm to km"
+    ]
+  },
+  "contentHash": "ed55e8735c44"
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "nm to mm Converter — Nanometer to Millimeter",
+    "description": "Convert Nanometer (nm) to Millimeter (mm) instantly. 1 nm = 1.000000e-6 mm. Free, accurate, browser-based.",
+    "h1": "Nanometer to Millimeter Converter"
+  },
+  "content": {
+    "intro": "Convert nanometers (nm) to millimeters (mm) instantly. Both measure length, so the relationship is strictly linear: each nanometer equals 1.000000e-6 millimeters. Use the converter above for any value, or read on for the formula, a quick lookup table, and practical tips.",
+    "result_section": "One nanometer is equal to **1.000000e-6 millimeters**. To go the other way, one millimeter equals **1000000 nanometers**. For everyday use, rounding to 2–4 decimal places is usually enough; for engineering or scientific work, keep the full precision shown by the converter.",
+    "formula_section": "The conversion is a single multiplication:\n\n> millimeters = nanometers × 1.000000e-6\n\nWorked example — converting 10 nanometers:\n\n10 × 1.000000e-6 = **1.000000e-5 mm**.\n\nTo invert, divide by 1.000000e-6 (or multiply by 1000000).",
+    "conversion_table": "| nanometers | millimeters |\n| --- | --- |\n| 1 nm | 1.000000e-6 mm |\n| 2 nm | 2.000000e-6 mm |\n| 5 nm | 5.000000e-6 mm |\n| 10 nm | 1.000000e-5 mm |\n| 25 nm | 2.500000e-5 mm |\n| 50 nm | 5.000000e-5 mm |\n| 100 nm | 0.0001 mm |\n| 250 nm | 0.00025 mm |\n| 500 nm | 0.0005 mm |\n| 1000 nm | 0.001 mm |",
+    "use_cases": "- Cooking and recipe conversions when switching between metric and imperial measurements.\n- Travel planning where signage and maps use different unit systems.\n- DIY and home-improvement projects that mix metric materials with imperial tools.\n- Fitness tracking when devices report in one system and goals are set in another.\n- Shipping and logistics where weight and dimensions drive cost.",
+    "tips": "Keep the factor handy: 1 nm ≈ 1.000000e-6 mm. For rough mental math, round to the nearest sensible digit.\n\nMind the units. Nanometer and Millimeter both measure length; squared or cubic variants need a different factor (factor², factor³).\n\nWhen precision matters (engineering, lab work, dosing), avoid rounding mid-calculation — convert once at the final step using the full factor.",
+    "faq": "**Q:** How many millimeters are in 1 nanometer?\n**A:** 1.000000e-6 millimeters.\n\n**Q:** What's the formula to convert nm to mm?\n**A:** millimeters = nanometers × 1.000000e-6.\n\n**Q:** How do I convert mm back to nm?\n**A:** Multiply by 1000000 (or divide by 1.000000e-6).\n\n**Q:** Is rounding to 2 decimal places accurate enough?\n**A:** For most everyday uses, yes. For scientific or engineering work, use the full precision from the converter.\n\n**Q:** Does this nm to mm converter work offline?\n**A:** Yes — all math runs in your browser, no network required after the page loads."
+  },
+  "internal_links": [
+    {
+      "anchor": "Millimeter to Nanometer converter",
+      "href": "/c/length/mm-to-nm"
+    },
+    {
+      "anchor": "All length conversions",
+      "href": "/c/length"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "nm-to-mm",
+    "canonicalUrl": "https://turbounitconverter.com/c/length/nm-to-mm",
+    "category": "length",
+    "pageType": "pair",
+    "keywords": [
+      "nanometer to millimeter",
+      "nm to mm",
+      "convert nm to mm"
+    ]
+  },
+  "contentHash": "f3631129b283"
+}

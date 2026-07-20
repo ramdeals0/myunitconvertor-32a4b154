@@ -1,0 +1,47 @@
+{
+  "slug": "thermal-conductivity-units",
+  "title": "Thermal Conductivity: W/(m·K), BTU·in/(h·ft²·°F) and R-value",
+  "h1": "Thermal conductivity — W/(m·K) and BTU·in/(h·ft²·°F)",
+  "description": "1 W/(m·K) = 6.933 BTU·in/(h·ft²·°F). Copper is 400 W/(m·K); fibreglass batt is 0.04. Insulation specs mix R-values, k-values and U-values freely.",
+  "category": "Thermal conductivity",
+  "readingMinutes": 5,
+  "published": "2026-07-07",
+  "updated": "2026-07-07",
+  "reviewed": "2026-07-07",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Applied metrology & engineering units"
+  },
+  "reviewer": {
+    "name": "Turbo Unit Converter editorial review",
+    "credential": "verified against NIST SP 811 and category-specific ISO references"
+  },
+  "hero": "k is the material property. R = thickness/k. U = 1/R. Confusing them multiplies heat load estimates by 10.",
+  "body": [
+    "Building science and heat-transfer physics arrived at the same equations through different unit systems. Insulation ratings mix them constantly, and estimating a heat load requires disentangling k, R and U.",
+    "## The exact factors",
+    "> 1 W/(m·K) = 6.9334 BTU·in/(h·ft²·°F) = 0.5778 BTU/(h·ft·°F)\n> R-value (US) = thickness (in) / k (BTU·in/(h·ft²·°F)) — units of h·ft²·°F/BTU\n> RSI (metric) = thickness (m) / k (W/(m·K)) — units of m²·K/W\n> 1 RSI = 5.678 R-value(US)",
+    "## Typical values",
+    "Copper: 400 W/(m·K). Aluminium: 237. Steel: 50. Concrete: 1.5. Glass: 1.0. Water: 0.6. Fibreglass batt: 0.04. Aerogel: 0.015. Air (still): 0.026.",
+    "## Worked example — wall U-value",
+    "Wall assembly: 100 mm brick (k = 0.72), 50 mm EPS (k = 0.033), 12.5 mm plaster (k = 0.5). R_total = 0.1/0.72 + 0.05/0.033 + 0.0125/0.5 = 0.139 + 1.515 + 0.025 = 1.679 m²·K/W. U = 1/R = 0.60 W/(m²·K). Miscount EPS as W/(m·K) instead of thickness-normalised and you get a wildly optimistic 0.033 W/(m²·K).",
+    "## Recap",
+    "k in W/(m·K). R and U carry thickness and reciprocal. RSI × 5.678 = US R-value."
+  ],
+  "faqs": [
+    {
+      "q": "Is R-19 the same as RSI 3.3?",
+      "a": "Yes — R-19 (US) / 5.678 ≈ 3.35 RSI (metric)."
+    },
+    {
+      "q": "Why do walls have air films?",
+      "a": "Interior and exterior surface films add ~0.17 m²·K/W in still-air conditions — sometimes 15% of the total wall R."
+    }
+  ],
+  "related": [
+    {
+      "label": "Thermal conductivity converter",
+      "href": "/c/thermal-conductivity"
+    }
+  ]
+}

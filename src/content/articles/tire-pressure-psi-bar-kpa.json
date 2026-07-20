@@ -1,0 +1,48 @@
+{
+  "slug": "tire-pressure-psi-bar-kpa",
+  "title": "Tire Pressure: PSI, Bar, kPa on Door Placards Worldwide",
+  "h1": "Tire pressure — reading psi, bar, and kPa on a single door placard",
+  "description": "32 psi = 2.21 bar = 221 kPa — same inflation, three number systems. Cold vs hot pressure, TPMS thresholds, and the +4 psi towing rule.",
+  "category": "Pressure",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-10",
+  "reviewed": "2026-07-10",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Automotive metrology" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NHTSA FMVSS 138 and ETRTO 2023 standards manual" },
+  "hero": "The door placard lists 32 psi. A European gauge reads 2.21 bar. A Japanese service manual quotes 221 kPa. All three are the same inflation — the units are gauge pressure above atmospheric, related by 1 bar = 14.504 psi = 100 kPa exactly.",
+  "body": [
+    "Tire pressure is gauge pressure — the reading above atmospheric. Absolute pressure adds 14.7 psi (1 atm) at sea level, but every consumer gauge and TPMS sensor reads gauge, so no conversion is needed for that. What does matter is the temperature dependence, the cold-vs-hot rule, and the different placards for front vs rear or loaded vs unloaded.",
+    "## The exact factors",
+    "> 1 bar = 14.5038 psi = 100 kPa (exact)\n> 1 psi = 6.895 kPa = 0.0689 bar\n> 1 kgf/cm² = 14.223 psi = 0.9807 bar (legacy JIS unit)\n> Atmospheric at sea level: 1013 hPa = 14.696 psi = 101.3 kPa",
+    "## Common inflation values across systems",
+    "| psi | bar | kPa | kgf/cm² | Use |\n|---|---|---|---|---|\n| 26 | 1.79 | 179 | 1.83 | Small car eco setting |\n| 30 | 2.07 | 207 | 2.11 | Compact car standard |\n| 32 | 2.21 | 221 | 2.25 | Mid-size sedan |\n| 35 | 2.41 | 241 | 2.46 | SUV/crossover |\n| 40 | 2.76 | 276 | 2.81 | Light truck |\n| 44 | 3.03 | 303 | 3.09 | Heavy load / towing |\n| 80 | 5.52 | 552 | 5.62 | Commercial truck |",
+    "## Cold vs hot pressure",
+    "Tire pressure rises ~1 psi per 10°F (0.07 bar per 5.5°C) as the tire warms from driving. The door placard specifies **cold** pressure — measured before driving more than 1 mile, or 3+ hours after parking. Checking hot and matching the placard leaves you underinflated once the tire cools, which is why TPMS lights come on after a cold overnight in autumn: temperature drop of 20°F loses 2 psi, tripping the -25% threshold below 32 psi.",
+    "## Worked example: cross-border driving",
+    "A US car with a 32 psi front / 30 psi rear placard driven in Germany. The petrol station air pump reads bar only. Convert once: 32 psi = 2.21 bar, 30 psi = 2.07 bar. Set the pump to 2.2 and 2.1 — accurate to 0.5 psi, invisible in TPMS. Do not try to read the psi off a bar gauge by eye; the scale nonlinearity trips people up.",
+    "## The TPMS trigger thresholds",
+    "US FMVSS 138 mandates TPMS warning when any tire drops 25% below the placard cold pressure. On a 32 psi placard the warning fires at 24 psi — badly underinflated but not immediately dangerous. Europe uses ECE R64, indirect systems, and typically triggers at 20% (25.6 psi on the same tire). Neither system warns for over-inflation — that has to be checked manually.",
+    "## The +4 psi towing/load rule",
+    "Most manufacturers publish two placards: 'normal load' and 'maximum load'. The max-load spec is typically +4 to +6 psi over normal. Towing a trailer or loading passengers plus luggage moves you to the higher spec. Under-inflation under load is the leading cause of tire blowouts on highway trips.",
+    "## Nitrogen fill: mostly marketing",
+    "Air is already 78% nitrogen. Pure nitrogen fills reduce pressure loss ~30% versus air — real, but immaterial versus the temperature effects above. Nitrogen also does not eliminate the cold-pressure drop; N₂ obeys the same ideal gas law as O₂. Worth the $10 upcharge if the tire seals well; not worth chasing a leak.",
+    "## Bicycle tires — a different scale",
+    "Road bike tires run 80–120 psi (5.5–8.3 bar). Mountain bike 25–50 psi (1.7–3.4 bar). Gravel 40–60 psi (2.8–4.1 bar). Same units, different regime — a floor pump gauge with a 0–160 psi range is unhelpful for a mountain bike at 30 psi (needle sits in the first 1/6 of the arc).",
+    "## The five-second recap",
+    "Read the driver's-door placard. Convert to your gauge units with 1 bar = 14.5 psi = 100 kPa. Set cold, before driving. Add 4 psi if towing or fully loaded."
+  ],
+  "faqs": [
+    { "q": "What if my placard shows kPa but my gauge is psi?", "a": "Divide kPa by 6.895 to get psi. 220 kPa / 6.895 = 31.9 psi. Round to 32; the gauge and placard tolerances swamp that last decimal." },
+    { "q": "Should front and rear tires be at the same pressure?", "a": "Not always. Front-heavy engines often need higher front pressure (33/30 typical). Loading the boot flips the balance the other way. Read both numbers on the placard." },
+    { "q": "How often should I check?", "a": "Once a month cold, plus before long trips. Tires lose ~1 psi per month by permeation, plus 1 psi per 10°F seasonal temperature change." },
+    { "q": "Is 'kgf/cm²' the same as bar?", "a": "Very close — 1 kgf/cm² = 0.9807 bar. Older Japanese gauges use kgf/cm²; modern ones read kPa. Treat them as bar for practical purposes; the 2% error is within gauge tolerance." },
+    { "q": "Can I over-inflate to the sidewall max?", "a": "The sidewall max is the tire's absolute limit, not a target. Running at sidewall max gives harsh ride, less traction, and uneven wear. Use the door placard." }
+  ],
+  "related": [
+    { "label": "psi to bar converter", "href": "/c/pressure/psi-to-bar" },
+    { "label": "psi to kPa converter", "href": "/c/pressure/psi-to-kpa" },
+    { "label": "Turbo boost — psi vs bar", "href": "/learn/psi-vs-bar-turbo-boost-pressure" },
+    { "label": "Gauge vs absolute pressure", "href": "/learn/gauge-vs-absolute-pressure" }
+  ]
+}

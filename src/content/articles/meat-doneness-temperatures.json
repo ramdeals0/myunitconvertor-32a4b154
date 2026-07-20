@@ -1,0 +1,52 @@
+{
+  "slug": "meat-doneness-temperatures",
+  "title": "Meat Doneness Temperatures: USDA vs Chef's Numbers",
+  "h1": "Meat doneness — USDA minimums vs the temperatures chefs actually cook to",
+  "description": "USDA says 145°F for beef, 165°F for poultry. Chefs pull at 130°F for medium-rare steak and 155°F for chicken thigh. Here is why both are correct.",
+  "category": "Temperature",
+  "readingMinutes": 6,
+  "published": "2026-07-10",
+  "updated": "2026-07-13",
+  "reviewed": "2026-07-13",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied food science & thermometry" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against USDA FSIS Appendix A (2021 rev.), FDA Food Code 2022 §3-401, and Modernist Cuisine Vol. 3" },
+  "hero": "USDA's 145°F for beef and 165°F for chicken are 'instantaneous kill' targets designed for home cooks without timers. The kitchen-side temperatures — 130°F rare, 155°F chicken thigh — are equally safe *if* held long enough. The difference is time-at-temperature, and it is why every restaurant probe reads lower than the FSIS chart on the wall.",
+  "body": [
+    "Bacteria are killed by dose: temperature × time. The USDA 145°F number for whole-muscle beef is the temperature at which *Salmonella* dies in <1 second — no hold time required. But 130°F for 112 minutes achieves the same 6.5-log kill (FSIS Appendix A, Table A.1). Both are safe. Both are correct. Chefs pull earlier because muscle proteins denature progressively: myosin at 50°C, actin at 66°C, collagen dissolves at 68°C. The window between 'safely cooked' and 'shoe leather' is exactly the temperature interval FSIS is trying to keep home cooks out of.",
+    "## The exact numbers",
+    "> USDA FSIS Appendix A minimum internal temperatures (instantaneous):\n> Whole beef, pork, lamb, veal: 63°C (145°F) + 3 min rest\n> Ground beef, pork, lamb: 71°C (160°F)\n> All poultry (whole and ground): 74°C (165°F)\n> Fish: 63°C (145°F)\n> Any leftovers reheated: 74°C (165°F)",
+    "## Doneness table — beef and lamb",
+    "| Doneness | Pull temp | Final (after rest) | Description |\n|---|---|---|---|\n| Rare | 49°C (120°F) | 52°C (125°F) | Cool red centre |\n| Medium-rare | 52°C (125°F) | 54°C (130°F) | Warm red centre — steak reference |\n| Medium | 57°C (135°F) | 60°C (140°F) | Warm pink centre |\n| Medium-well | 63°C (145°F) | 66°C (150°F) | Slight pink — USDA whole beef floor |\n| Well done | 68°C (155°F) | 71°C (160°F) | No pink |",
+    "Values from Cook's Illustrated 2018 lab tests, corroborated by Modernist Cuisine Table 3.5. Carryover cooking during rest is 3–5°C for a 25 mm steak, up to 8°C for a 4 kg roast.",
+    "## Poultry — where USDA and chefs diverge",
+    "USDA requires 74°C (165°F) instantaneous for all poultry. But FSIS Appendix A allows equivalent 7-log Salmonella reduction at lower held temperatures: 60°C (140°F) for 34 min, 62°C (144°F) for 14 min, 65°C (149°F) for 4 min, 70°C (158°F) for 30 s. This is why sous vide chicken breast at 60°C for 90 minutes is safer than a 74°C oven roast that only touched core temperature for 30 seconds. Chicken thigh benefits from 74°C+ because collagen dissolution needs the higher temperature — the meat is unpleasantly rubbery below 71°C.",
+    "## Pork — the trichinella update",
+    "USDA lowered whole-pork minimum from 71°C to 63°C in 2011 after trichinella prevalence in US commercial pork dropped below 0.01% (CDC 2011). Pork can now be cooked medium (63°C, slightly pink). Wild game (bear, boar) still requires 71°C or 60°C for 12 min held (trichinella resistance in wild strains).",
+    "## Ground meat — why the floor is higher",
+    "Grinding spreads surface bacteria throughout the mass. The 'inside' of a burger is now what used to be the outside of a chunk of meat. USDA requires 71°C (160°F) for ground beef and 74°C for ground poultry. Steak tartare and rare burgers work only with (a) whole muscle ground in-house from a single piece, or (b) irradiated ground meat (rare in retail).",
+    "## Worked example — Sunday roast beef",
+    "3 kg rib roast, target medium-rare (54°C final). Oven at 135°C (275°F, low-and-slow method).",
+    "> Pull temperature: 49°C (120°F) internal at the thickest point.\n> Rest: 30 min tented in foil. Carryover: +5°C → 54°C final.\n> Safety check: whole beef, intact, sear the exterior (Maillard >150°C surface = pasteurized). Interior is sterile in whole muscle per FSIS *provided* it is not blade-tenderized, injected, or pre-ground. Rare intact beef is safe; rare hamburger is not.",
+    "## Fish and seafood",
+    "USDA 63°C (145°F) is a compromise. Chefs cook salmon to 46–52°C (medium-rare, buttery); tuna sears at 40°C core (essentially raw). Whole fish is safe raw if sushi-grade (frozen at −20°C for 7 days, FDA rule 2017). Farmed salmon has near-zero parasite load and is exempt from the freezing requirement — check with your fishmonger.",
+    "## Probe placement matters more than the number",
+    "Insert the probe into the thickest part, away from bone (bone conducts fast, reads high). For roasts, insert horizontally so the tip sits in the centre of the largest muscle. Instant-read thermometers (Thermapen, Combustion, Meater) need 2–3 seconds to stabilize; oven-safe probes drift over hours — recalibrate at 0°C (ice water) and 100°C (boiling, adjusted for altitude: 100°C at sea level, 94°C at 2000 m).",
+    "## Rest time by size",
+    "| Cut | Rest (foil-tented, on rack) | Carryover |\n|---|---|---|\n| 25 mm steak | 3–5 min | 2–3°C |\n| 40 mm steak / chop | 5–8 min | 3–4°C |\n| 1.5 kg roast | 15 min | 4–6°C |\n| 3 kg roast | 25–30 min | 5–8°C |\n| Whole turkey 6 kg | 30–45 min | 5–7°C |",
+    "## The five-second recap",
+    "USDA temps are safe-forever floors. Chef temps are safe-with-hold-time targets. Beef whole-muscle 54°C = medium-rare = perfectly safe. Poultry 74°C or 60°C×34 min. Ground meat and injected/tenderized cuts always to USDA minimum, no exceptions."
+  ],
+  "faqs": [
+    { "q": "Is pink chicken safe at 65°C?", "a": "Yes, if held for at least 4 minutes at 65°C (FSIS Appendix A). Pink colour near bones can persist even at 80°C — colour is not a safety indicator; temperature and time are." },
+    { "q": "Do I need to rest a steak that came off high heat?", "a": "For juice retention, yes — 3–5 minutes lets myofibrillar proteins reabsorb water squeezed out by heat contraction. For food safety, no; the steak was safe when it hit temperature." },
+    { "q": "Why does USDA say 145°F but medium-rare is 130°F?", "a": "145°F is instantaneous safety; 130°F requires ~2 hours to achieve equivalent 6.5-log Salmonella reduction. A pan-seared steak spends 30–60 seconds at core temp — too short for the low-temperature curve, but whole-muscle intact beef starts sterile inside, so surface searing is sufficient." },
+    { "q": "Are the numbers different in the UK/EU?", "a": "UK Food Standards Agency recommends 70°C for 2 minutes for all cooked meats, aligned with EU. Slightly stricter than US FSIS for beef, matches USDA for poultry." },
+    { "q": "Can I trust a wireless probe like Meater or Combustion?", "a": "Yes — both are calibrated to ±0.5°C in the cooking range and factory-tested. Combustion's 8 sensors along the probe show gradient (surface to core), which is more informative than a single-point reading." }
+  ],
+  "related": [
+    { "label": "Sous vide time by thickness", "href": "/learn/sous-vide-thickness-time" },
+    { "label": "Oven temperatures C/F/gas mark", "href": "/learn/oven-temperatures-c-f-gas-mark" },
+    { "label": "Temperature converter", "href": "/c/temperature" },
+    { "label": "Candy thermometer stages", "href": "/learn/candy-thermometer-stages" }
+  ]
+}

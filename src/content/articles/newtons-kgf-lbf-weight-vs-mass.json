@@ -1,0 +1,47 @@
+{
+  "slug": "newtons-kgf-lbf-weight-vs-mass",
+  "title": "Newtons, kgf and lbf: Why Weight Is Not Mass",
+  "h1": "Newtons, kilograms-force and pounds-force — the weight-vs-mass slip",
+  "description": "A 100 kg mass weighs 100 kgf on Earth and 16.5 kgf on the Moon. Here is how the kgf and lbf survived alongside the newton, and where the distinction actually matters.",
+  "category": "Force",
+  "readingMinutes": 6,
+  "published": "2026-05-18",
+  "updated": "2026-06-24",
+  "reviewed": "2026-06-24",
+  "author": {
+    "name": "The Turbo Unit Converter engineering desk",
+    "role": "Structural & mechanical engineering",
+    "bio": "Reference material for structural engineers, physicists and industrial specifiers working across metric-technical and US Customary force units."
+  },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 §B.8 and ISO 80000-4" },
+  "hero": "The newton is the SI unit of force. The kilogram-force and pound-force refuse to leave. Here is when to use each, and the standard-gravity constant they all secretly agree on.",
+  "body": [
+    "Physicists write F = ma and use newtons. Older European engineering drawings quote loads in \"kg\" that are actually kilograms-force. American torque wrenches read in pounds-force feet, not pound-mass feet. The distinction between force and mass matters more than modern physics education implies, especially the moment you leave Earth's surface or write code that touches structural analysis.",
+    "## The exact factors",
+    "> 1 kgf = 9.80665 N (exact — this is the definition of standard gravity, gₙ)\n> 1 lbf = 4.4482216152605 N (exact)\n> 1 N = 0.101972 kgf = 0.224809 lbf\n> 1 dyne (CGS) = 10⁻⁵ N; 1 kip = 1,000 lbf = 4.448 kN",
+    "The kilogram-force is the weight of one kilogram-mass in standard gravity — a defined, invariant 9.80665 m/s². It is not \"weight on Earth\" in the loose sense: local gravity varies from about 9.78 m/s² at the equator to 9.83 m/s² at the poles, so a 1 kg mass calibrated in Ecuador reads 0.5% lighter than one calibrated in Norway if you measure with a spring scale. A balance scale (comparing to a reference mass) does not have this problem — which is why laboratories use balances, not springs.",
+    "## Pound-mass vs pound-force",
+    "The English-language pound is doubly overloaded. The pound-mass (lbm) is 0.45359237 kg exactly. The pound-force (lbf) is the weight of 1 lbm in standard gravity — 4.4482 N. On Earth they are numerically equal, so most consumer contexts use \"pound\" for both. In engineering the difference is critical: `F = m × a` written in US Customary requires a factor of gₙ or the unit gc to close, which is where the slug (32.174 lbm) and the poundal come from.",
+    "### The slug and the poundal",
+    "A slug is defined so that 1 lbf = 1 slug × 1 ft/s² — the US Customary equivalent of the SI kg·m/s². It is rarely written on drawings but shows up in fluid-mechanics textbooks. The poundal is its mirror-image (1 lbm × 1 ft/s² = 1 poundal ≈ 0.138 N). Neither survives outside academia, but recognising them saves you from thinking a homework problem has typos.",
+    "## Where the confusion bites",
+    "European crane load charts often print capacity in tonnes — which usually means metric tons of mass (1,000 kg) but sometimes tonnes-force (1,000 kgf = 9.807 kN). Structural drawings from the 1960s and 70s frequently use kp (kilopond, identical to kgf). Torque wrench dials show kgf·m or N·m. And in aerospace, thrust is almost always quoted in kN or lbf, never in kg — precisely because a rocket engine's thrust does not scale with local gravity.",
+    "## Worked example — a 2,000 kg lift",
+    "A crane rated for 2,000 kg lifting capacity (mass basis) can lift a load whose weight is 2,000 × 9.80665 = 19,613 N ≈ 19.6 kN ≈ 4,409 lbf. If the load chart is instead labelled 2,000 kgf, the answer is the same — the two labels are numerically equivalent under standard gravity. But if the crane is rated for 19.6 kN and you try to hang a 2,200 kg load, you are 10% over — because 2,200 kg × 9.80665 = 21.6 kN.",
+    "## Aerospace and the honest units",
+    "SpaceX quotes Merlin engine thrust as 845 kN (sea level) or 190,000 lbf. Rocket engineers never say \"kg of thrust\" because rockets fly in free fall, where kg-force would be zero regardless of engine output. Aircraft engine thrust follows the same convention: a 787's GEnx-1B is 340 kN (76,000 lbf), and any spec that reports \"76,000 kg of thrust\" is being sloppy — the engineers mean 76,000 kgf, which is the same as 745 kN.",
+    "## The five-second recap",
+    "Newtons for physics and modern engineering. Kgf and lbf for legacy drawings, torque wrenches, and everyday spring-scale weights. Multiply kgf by 9.80665 to get N. Multiply lbf by 4.4482 to get N. And remember: a scale on the Moon shows 16.5% of Earth weight, but the mass in kilograms has not changed at all."
+  ],
+  "faqs": [
+    { "q": "Is kg a unit of weight or mass?", "a": "Mass, strictly. The kilogram is one of the seven SI base units, and it is defined via Planck's constant — not via gravity. When a bathroom scale reads 70 kg, it is actually measuring 686 N of weight and dividing by standard gravity to display kilograms." },
+    { "q": "How many newtons in a pound?", "a": "1 pound-force (lbf) = 4.4482216152605 N. This is exact by international definition." },
+    { "q": "What is 1 g of acceleration in newtons per kilogram?", "a": "9.80665 N/kg exactly. Which is why a 1 kg mass weighs 9.80665 N on Earth — the numbers match by construction." },
+    { "q": "Do I ever need the slug?", "a": "Only if you are doing US Customary Newtonian dynamics by hand: F = m × a becomes F(lbf) = m(slug) × a(ft/s²). Modern practice is to convert everything to SI first, or to use lbm with a gc factor." }
+  ],
+  "related": [
+    { "label": "kgf to N converter", "href": "/c/force/kgf-to-n" },
+    { "label": "lbf to N converter", "href": "/c/force/lbf-to-n" },
+    { "label": "N to kN converter", "href": "/c/force/n-to-kn" }
+  ]
+}

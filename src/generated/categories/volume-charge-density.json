@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Volume Charge Density Converter — Convert Coulomb/m³ and More",
+    "description": "Free volume charge density converter for 3+ units including Coulomb/m³, Coulomb/cm³, Coulomb/in³. Instant, accurate, browser-based.",
+    "h1": "Volume Charge Density Converter"
+  },
+  "content": {
+    "intro": "C/m³, C/cm³, C/in³. Convert between 3 volume charge density units instantly, with engineering-grade precision and no signup required.",
+    "result_section": "Pick any two units below to convert between them. The base unit for volume charge density in this tool is **Cm3**; every conversion routes through it for consistency.",
+    "formula_section": "Most volume charge density conversions are a single multiplication by a fixed factor. Temperature is the notable exception — it uses additive offsets, not just multiplication. The converter handles both transparently.",
+    "conversion_table": "| Unit | Symbol |\n| --- | --- |\n| Coulomb/m³ | C/m³ |\n| Coulomb/cm³ | C/cm³ |\n| Coulomb/in³ | C/in³ |",
+    "use_cases": "- Power supply sizing and load calculations.\n- Battery capacity comparisons across mAh, Wh, and J.\n- Electric vehicle range estimates.\n- Solar and renewable system sizing.\n- Lab and bench-test electrical measurements.",
+    "tips": "Bookmark the conversions you use most — each pair has its own dedicated page with formulas, a lookup table, and FAQs.\n\nWhen working with derived units (area, volume), remember the factor scales with the dimension: a length factor f becomes f² for area and f³ for volume.",
+    "faq": "**Q:** How accurate is this volume charge density converter?\n**A:** It uses 3 canonical unit definitions and 12-digit precision constants.\n\n**Q:** Is it free?\n**A:** Yes — completely free, no signup, no limits.\n\n**Q:** Which units are supported?\n**A:** Coulomb/m³ (C/m³), Coulomb/cm³ (C/cm³), Coulomb/in³ (C/in³)."
+  },
+  "internal_links": [
+    {
+      "anchor": "Coulomb/m³ to Coulomb/cm³",
+      "href": "/c/volume-charge-density/cm3-to-ccm3"
+    },
+    {
+      "anchor": "Coulomb/cm³ to Coulomb/m³",
+      "href": "/c/volume-charge-density/ccm3-to-cm3"
+    },
+    {
+      "anchor": "Coulomb/in³ to Coulomb/m³",
+      "href": "/c/volume-charge-density/cin3-to-cm3"
+    }
+  ],
+  "seo": {
+    "canonicalSlug": "volume-charge-density",
+    "canonicalUrl": "https://turbounitconverter.com/c/volume-charge-density",
+    "category": "volume-charge-density",
+    "pageType": "category",
+    "keywords": [
+      "volume charge density converter",
+      "convert volume charge density"
+    ]
+  },
+  "contentHash": "bdbda96579dd"
+}
