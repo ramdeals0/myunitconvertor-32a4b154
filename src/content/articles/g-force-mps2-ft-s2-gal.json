@@ -1,0 +1,46 @@
+{
+  "slug": "g-force-mps2-ft-s2-gal",
+  "title": "g-force, m/s², ft/s² and the gal: Acceleration Units",
+  "h1": "g-force is an acceleration — m/s², ft/s² and the galileo",
+  "description": "1 g = 9.80665 m/s² exactly = 32.174 ft/s² = 980.665 Gal. Standard gravity, the gal gravimeters print, and why an accelerometer at rest already reads about 1 g.",
+  "category": "Acceleration",
+  "readingMinutes": 6,
+  "published": "2026-11-18",
+  "updated": "2026-11-18",
+  "reviewed": "2026-11-18",
+  "author": { "name": "The Turbo Unit Converter engineering desk", "role": "Applied dynamics & gravimetry" },
+  "reviewer": { "name": "Turbo Unit Converter editorial review", "credential": "verified against NIST SP 811 (standard gravity), the 3rd CGPM (1901) value of gₙ, and the 1959 international foot" },
+  "hero": "One g is not a force. It is exactly 9.80665 metres per second squared — 32.174 feet per second squared, or 980.665 gal. An accelerometer sitting still on a desk already reads about 1 g.",
+  "body": [
+    "Acceleration is the change of velocity per unit time. The SI unit is the metre per second squared (m/s²). Everything else that shows up in workshops, cockpits and gravity surveys — the g, the foot per second squared, and the gal — is a fixed multiple of that unit. The trap is the name. 'g-force' sounds like a force. It is an acceleration, equal to the conventional standard acceleration of free fall. Force comes later, when you multiply by mass.",
+    "## The exact factors",
+    "> 1 g = gₙ = 9.80665 m/s² (exact, standard gravity)\n> 1 ft/s² = 0.3048 m/s² (exact, international foot)\n> 1 g = 32.1740486 ft/s²\n> 1 Gal = 1 cm/s² = 0.01 m/s² (exact)\n> 1 g = 980.665 Gal\n> 1 mGal = 10⁻⁵ m/s²",
+    "Standard gravity gₙ was fixed at 9.80665 m/s² by the 3rd General Conference on Weights and Measures in 1901, and NIST SP 811 still uses that exact value when it converts kilogram-force and pound-force. It is not the gravity at your latitude. On the GRS80 reference ellipsoid, normal gravity is about 9.780 m/s² at the equator and about 9.832 m/s² at the poles — a swing of roughly half a percent. A spring scale or an accelerometer follows local g. A conversion that quotes 'g' almost always means the conventional 9.80665, not whatever the instrument felt that morning.",
+    "The international foot has been 0.3048 m exactly since the 1959 agreement between the English-speaking countries. Dividing standard gravity by that foot gives 32.1740486 ft/s². Rounding to 32.2 ft/s² is fine for a braking estimate and wrong for a dynamics answer that is graded to four figures. The older US survey foot (1200/3937 m) was deprecated for most work at the end of 2022; it does not belong in an ft/s² conversion.",
+    "## The gal, the unit gravimeters actually print",
+    "The galileo (symbol Gal, capital G, so nobody confuses it with the gallon) is one centimetre per second squared. It is not an SI unit, but geodesy never dropped it: a relative gravity meter reports anomalies in milligals. Standard gravity is exactly 980.665 Gal, because 9.80665 m/s² divided by 0.01 m/s² is 980.665. One milligal is 10⁻⁵ m/s², about one part in a million of g. The free-air gradient is about 0.3086 mGal for each metre of elevation, so a 10 m staircase changes measured g by roughly 3 mGal. A phone accelerometer cannot see that. A mineral survey is built out of it.",
+    "## Where each unit shows up",
+    "Metres per second squared belong in SI dynamics, in vehicle specifications written to ISO, and in any calculation you intend to multiply by a mass in kilograms to get newtons. Feet per second squared survive in US aerospace notes and older flight-test reports; the same 1 g is 32.174 ft/s². The bare 'g' is the cockpit unit and the roller-coaster unit. A dry-pavement emergency stop in a modern passenger car is often 0.8–1.0 g. Many steel coasters briefly reach 3.5–4.5 g. A fighter designed for a sustained +9 g is asking the pilot to tolerate 88.3 m/s², which is 9 × 9.80665. The gal stays inside gravimetry. It does not belong on a wrench, a tyre placard, or a car brochure.",
+    "## What an accelerometer is actually reading",
+    "Proper acceleration is what a scale or an accelerometer reports. Leave the sensor on a desk and it reads about +1 g upward — the desk pushing back — not zero. Drop it and, once it is in free fall, the reading falls toward 0 g, even though its speed toward the ground is changing at nearly 9.8 m/s². Coordinate acceleration (the dv/dt a textbook problem asks for) and proper acceleration (the number on the instrument) differ by local gravity. Mixing them is how a 1 g braking specification gets double-counted as 2 g, and how a 'zero-g' flight is described as having no acceleration when the aeroplane is simply following a ballistic arc.",
+    "## Worked example — stopping from 100 km/h",
+    "A car stops from 100 km/h at a steady 0.8 g on dry pavement. Convert the acceleration before the distance. 0.8 × 9.80665 = 7.845 m/s². The same figure is 0.8 × 32.174 = 25.74 ft/s², or 784.5 Gal. Speed is 100 / 3.6 = 27.778 m/s. Braking distance, with reaction time left out, is v² / (2a) = 771.6 / 15.69 = 49.2 m, which is 161 ft. Swap 32.174 for the rounded 32.2 and the foot-per-second-squared result moves by less than a tenth of a percent. Replace 9.80665 with a flat 10 and the stopping distance comes out about 2% short. That is the size of the error hiding in 'just use 10'.",
+    "## The kilogram-force cousin",
+    "Divide a force in newtons by a mass in kilograms and you are back in m/s². Under standard gravity a 1 kg mass weighs 9.80665 N, which is why a bathroom scale can print '1 kg' after it has measured about 9.81 N and divided by gₙ. The kilogram-force and the pound-force are forces defined by multiplying a mass by this same standard gravity. They are not acceleration units. If a drawing says '5 g shock', it means an acceleration of 5 × 9.80665 m/s², and the force on a bracket is that acceleration times the bracket's mass. The hinge between the two families of units is the single number 9.80665.",
+    "## The five-second recap",
+    "1 g = 9.80665 m/s² = 32.174 ft/s² = 980.665 Gal. g is an acceleration, not a force. An accelerometer at rest reads about 1 g. Gravimeters speak milligals, and one milligal is 10⁻⁵ m/s²."
+  ],
+  "faqs": [
+    { "q": "Is 1 g exactly 9.8 or 9.81?", "a": "Neither, when you need the defined constant. Standard gravity gₙ is 9.80665 m/s² exactly. 9.81 is a three-figure rounding. 9.8 is fine for a sketch and about 0.07% low." },
+    { "q": "Why does my phone show 1 g when I am not moving?", "a": "The accelerometer measures proper acceleration — the contact force from the desk or your hand — not coordinate acceleration. At rest that contact force balances weight, so the reading is about 1 g. In free fall it falls toward 0 g." },
+    { "q": "Is a gal the same as a gallon?", "a": "No. The galileo, symbol Gal, is an acceleration of 0.01 m/s². A US gallon is a volume. The capital G in Gal is there so the two are not swapped in a sentence." },
+    { "q": "How many ft/s² are in one g?", "a": "32.1740486 ft/s², from 9.80665 divided by 0.3048. The textbook shortcut 32.2 ft/s² is within 0.1%." },
+    { "q": "What is a milligal in everyday terms?", "a": "1 mGal = 10⁻⁵ m/s², about one millionth of standard gravity. Ten metres of extra elevation changes gravity by roughly 3 mGal. A phone cannot resolve it. A relative gravimeter can." }
+  ],
+  "related": [
+    { "label": "g to m/s² converter", "href": "/c/acceleration/g-to-mps2" },
+    { "label": "ft/s² to m/s² converter", "href": "/c/acceleration/fps2-to-mps2" },
+    { "label": "gal to m/s² converter", "href": "/c/acceleration/gal-to-mps2" },
+    { "label": "Newtons, kgf and lbf", "href": "/learn/newtons-kgf-lbf-weight-vs-mass" }
+  ]
+}
